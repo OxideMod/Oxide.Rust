@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <PropertyGroup>
+    <Version>2.0.0.0</Version>
+    <AssemblyName>Oxide.Rust</AssemblyName>
+    <Authors>Oxide and Contributors</Authors>
+    <Description>Rust extension for the Oxide modding framework</Description>
+    <RepositoryUrl>https://github.com/OxideMod/Oxide.Rust</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/OxideMod/Oxide.Rust/blob/develop/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/OxideMod/Oxide.Rust</PackageProjectUrl>
+    <PackageIconUrl>https://avatars1.githubusercontent.com/u/10712027?s=64</PackageIconUrl>
+    <Copyright>Copyright (c) 2014-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
+    <PackageTags>gaming modding plugins unity unity3d</PackageTags>
+    <TargetFramework>net35</TargetFramework>
+    <ManagedDir>RustDedicated_Data\Managed</ManagedDir>
+    <SteamAppId>258550</SteamAppId>
+    <SteamBranch>public</SteamBranch>
+    <SteamLogin>anonymous</SteamLogin>
+    <!--
+      Workaround for targeting net35 with dotnet CLI
+      https://github.com/Microsoft/msbuild/issues/1333#issuecomment-296346352
+    -->
+    <FrameworkPathOverride Condition="'$(TargetFramework)' == 'net35' And '$(OS)' == 'Windows_NT'">C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Client</FrameworkPathOverride>
+    <FrameworkPathOverride Condition="'$(TargetFramework)' == 'net35' And '$(OS)' == 'OSX'">/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/2.0-api</FrameworkPathOverride>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Oxide.References" Version="2.0.*" />
+    <PackageReference Include="Oxide.Core" Version="2.0.*" />
+    <PackageReference Include="Oxide.CSharp" Version="2.0.*" />
+    <PackageReference Include="Oxide.Unity" Version="2.0.*" />
+    <Reference Include="Assembly-CSharp">
+      <HintPath>Dependencies\$(ManagedDir)\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>Dependencies\$(ManagedDir)\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Console">
+      <HintPath>Dependencies\$(ManagedDir)\Facepunch.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Network">
+      <HintPath>Dependencies\$(ManagedDir)\Facepunch.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Rcon">
+      <HintPath>Dependencies\$(ManagedDir)\Facepunch.Rcon.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks">
+      <HintPath>Dependencies\$(ManagedDir)\Facepunch.Steamworks.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.System">
+      <HintPath>Dependencies\$(ManagedDir)\Facepunch.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Unity">
+      <HintPath>Dependencies\$(ManagedDir)\Facepunch.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.UnityEngine">
+      <HintPath>Dependencies\$(ManagedDir)\Facepunch.UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>Dependencies\$(ManagedDir)\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>Dependencies\$(ManagedDir)\System.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Data">
+      <HintPath>Dependencies\$(ManagedDir)\Rust.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Global">
+      <HintPath>Dependencies\$(ManagedDir)\Rust.Global.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>Dependencies\$(ManagedDir)\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Dependencies\$(ManagedDir)\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Dependencies\$(ManagedDir)\websocket-sharp.dll</HintPath>
+    </Reference>
+    <None Remove="DepotDownloader.config" />
+    <None Remove="Files\**" />
+    <None Remove="Patched\**" />
+  </ItemGroup>
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+  <Target Name="Clean">
+    <RemoveDir Directories="$(ProjectDir)\Bundle; $(ProjectDir)\Dependencies\$(ManagedDir)" />
+  </Target>
+  <Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%(FileName)' == 'Oxide.References'">
+        <Aliases>Oxide</Aliases>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
+  <Target Name="BeforeBuild">
+    <!-- Currently only works on Windows due to Windows-only tools used -->
+    <Exec Command="powershell -ExecutionPolicy Bypass $(SolutionDir)\Steam.ps1 -project $(AssemblyName) -dotnet $(TargetFramework) -appid $(SteamAppId) -branch '$(SteamBranch)' -managed '$(ManagedDir)'" />
+  </Target>
+  <Target Name="AfterBuild">
+    <ItemGroup>
+      <CoreFiles Include="$(TargetDir)\Oxide.*.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\$(ManagedDir)\Assembly-CSharp.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\$(ManagedDir)\Facepunch.Console.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\$(ManagedDir)\Facepunch.Rcon.dll" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\content\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\content\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*; $(SolutionDir)\packages\oxide.mysql\**\content\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*; $(SolutionDir)\packages\oxide.sqlite\**\content\*.*" />
+      <ContentX64Files Include="$(SolutionDir)\packages\oxide.references\**\content\x64\*.*" />
+      <ContentX86Files Include="$(SolutionDir)\packages\oxide.references\**\content\x86\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(CoreFiles)" DestinationFiles="@(CoreFiles->'$(ProjectDir)\Bundle\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(PatchedFiles)" DestinationFiles="@(PatchedFiles->'$(ProjectDir)\Bundle\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(ContentFiles)" DestinationFiles="@(ContentFiles->'$(ProjectDir)\Bundle\$(ManagedDir)\%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(ContentX64Files)" DestinationFiles="@(ContentX64Files->'$(ProjectDir)\Bundle\$(ManagedDir)\x64\%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(ContentX86Files)" DestinationFiles="@(ContentX86Files->'$(ProjectDir)\Bundle\$(ManagedDir)\x86\%(Filename)%(Extension)')" />
+    <!--<Exec Command="pdb2mdb %(ManagedFiles.Identity)" Condition="'$(Configuration)' == 'Debug' And '$(OS)' == 'Windows_NT'" IgnoreExitCode="true" />-->
+  </Target>
+  <Target Name="LocalDeploy" AfterTargets="AfterBuild" Condition="Exists('$(SolutionDir)\.deploy')">
+    <Exec Command="start /b /wait taskkill /f /im RustDedicated.exe /fi &quot;memusage gt 2&quot;" Condition="'$(OS)' == 'Windows_NT'" />
+    <Exec Command="start /b /wait taskkill /f /im CSharpCompiler.exe /fi &quot;memusage gt 2&quot;" Condition="'$(OS)' == 'Windows_NT'" />
+    <ReadLinesFromFile File="$(SolutionDir)\.deploy">
+      <Output PropertyName="DeployPath" TaskParameter="Lines" />
+    </ReadLinesFromFile>
+    <ItemGroup>
+      <DeployFiles Include="$(ProjectDir)\Bundle\**\*.*" />
+    </ItemGroup>
+    <Copy Condition="'$(DeployPath)' != ''" SourceFiles="@(DeployFiles)" DestinationFiles="@(DeployFiles->'$(DeployPath)\%(RecursiveDir)%(Filename)%(Extension)')" />
+  </Target>
+  <Target Name="NuGetPack" AfterTargets="AfterBuild" Condition="'$(Appveyor)' == 'True' Or '$(LocalDev)' == 'True'">
+    <Exec Command="dotnet pack $(MSBuildProjectFile) --no-build -c $(Configuration)" />
+    <ItemGroup>
+      <NugetPackages Include="bin\$(Configuration)\*.nupkg" />
+    </ItemGroup>
+    <Copy SourceFiles="@(NugetPackages)" DestinationFolder="$(UserProfile)\.nuget\packages\$(PackageId)\$(PackageVersion)" />
+  </Target>
+</Project>

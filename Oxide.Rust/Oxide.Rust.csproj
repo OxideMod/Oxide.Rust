@@ -78,9 +78,7 @@
     <Reference Include="websocket-sharp">
       <HintPath>Dependencies\$(ManagedDir)\websocket-sharp.dll</HintPath>
     </Reference>
-    <None Remove="DepotDownloader.config" />
-    <None Remove="Files\**" />
-    <None Remove="Patched\**" />
+    <None Remove="DepotDownloader.config; Bundle\**; Files\**; Patched\**" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Target Name="Clean">

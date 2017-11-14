@@ -13,6 +13,7 @@
     <Copyright>Copyright (c) 2014-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
     <PackageTags>gaming modding plugins unity unity3d</PackageTags>
     <TargetFramework>net35</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <ManagedDir>RustDedicated_Data\Managed</ManagedDir>
     <SteamAppId>258550</SteamAppId>
     <SteamBranch>public</SteamBranch>
@@ -126,12 +127,5 @@
       <DeployFiles Include="$(ProjectDir)\Bundle\**\*.*" />
     </ItemGroup>
     <Copy Condition="'$(DeployPath)' != ''" SourceFiles="@(DeployFiles)" DestinationFiles="@(DeployFiles->'$(DeployPath)\%(RecursiveDir)%(Filename)%(Extension)')" />
-  </Target>
-  <Target Name="NuGetPack" AfterTargets="AfterBuild" Condition="'$(Appveyor)' == 'True' Or '$(LocalDev)' == 'True'">
-    <Exec Command="dotnet pack $(MSBuildProjectFile) --no-build -c $(Configuration)" />
-    <ItemGroup>
-      <NugetPackages Include="bin\$(Configuration)\*.nupkg" />
-    </ItemGroup>
-    <Copy SourceFiles="@(NugetPackages)" DestinationFolder="$(UserProfile)\.nuget\packages\$(PackageId)\$(PackageVersion)" />
   </Target>
 </Project>

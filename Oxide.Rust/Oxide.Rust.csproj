@@ -16,7 +16,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <ManagedDir>RustDedicated_Data\Managed</ManagedDir>
     <SteamAppId>258550</SteamAppId>
-    <SteamBranch>public</SteamBranch>
+    <SteamBranch>staging</SteamBranch>
     <SteamLogin>anonymous</SteamLogin>
     <!--
       Workaround for targeting net35 with dotnet CLI
@@ -78,7 +78,7 @@
     <Reference Include="websocket-sharp">
       <HintPath>Dependencies\$(ManagedDir)\websocket-sharp.dll</HintPath>
     </Reference>
-    <None Remove="DepotDownloader.config; Bundle\**; Files\**; Patched\**" />
+    <None Remove="Bundle\**; Files\**; Patched\**; *.config; *.opj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Target Name="Clean">

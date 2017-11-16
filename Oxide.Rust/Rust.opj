@@ -831,7 +831,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "G+8BK48hKKqGui4z5t6z9yb9J6SGyBkufD1Ng5bwEUw=",
+            "MSILHash": "dXoticx89ULAGfupwirhgWrp8QLQLwfbh5j+Vj6nLSc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2353,7 +2353,7 @@
               {
                 "OpCode": "ldstr",
                 "OpType": "String",
-                "Operand": ",oxide,modded"
+                "Operand": ",modded,oxide"
               },
               {
                 "OpCode": "call",
@@ -2378,7 +2378,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "3RTbCQBFwr3j+Ty+X+n3f03y5kq7+osSodPVarWAAhM=",
+            "MSILHash": "xwZZdX2RuuxYc15JMivR8qk6Ny+GpkjuiYXqXxPWyjU=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2782,7 +2782,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "T2wuNa7nPPo1lBpkAev+quLs710QqckRxqCURk/4MVI=",
+            "MSILHash": "tatUQkAr9M1n2D+Q6f5S28I0hZCnMRI9Zskfxit0ujA=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }

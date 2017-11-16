@@ -35,6 +35,7 @@ function Find-Dependencies {
     if (!(Test-Path "$project.csproj")) {
         Write-Host "Could not find a .csproj file for $game_name"
         exit 1
+        if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
     }
 
     # Copy any local dependencies
@@ -55,6 +56,7 @@ function Find-Dependencies {
         } catch {
             Write-Host "Could not get references or none found in $project.csproj"
             Write-Host $_.Exception.Message
+            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
 
@@ -78,6 +80,7 @@ function Get-Downloader {
         } catch {
             Write-Host "Could not get DepotDownloader information from GitHub"
             Write-Host $_.Exception.Message
+            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
 
@@ -88,6 +91,7 @@ function Get-Downloader {
         } catch {
             Write-Host "Could not download DepotDownloader from GitHub"
             Write-Host $_.Exception.Message
+            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
 
@@ -119,14 +123,16 @@ function Get-Dependencies {
                 if ($steam_login.Length -ne 2) {
                     Write-Host "Steam username AND password not set in .steamlogin file"
                     exit 1
+                    if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
                 } else {
                     $login = "-username $($steam_login[0]) -password $($steam_login[1])"
                 }
             } elseif ($env:STEAM_USERNAME -and $env:STEAM_PASSWORD) {
                 $login = "-username $env:STEAM_USERNAME -password $env:STEAM_PASSWORD"
             } else {
-                Write-Host "No Steam credentials found, skipping build for $game"
+                Write-Host "No Steam credentials found, skipping build for $game_name"
                 exit 1
+                if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             }
         }
 
@@ -141,6 +147,7 @@ function Get-Dependencies {
         } catch {
             Write-Host "Could not start or complete DepotDownloader process"
             Write-Host $_.Exception.Message
+            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
 
@@ -150,7 +157,7 @@ function Get-Dependencies {
 
     # TODO: Check Oxide.Core.dll version and update if needed
     # Grab latest Oxide.Core.dll build
-    Write-Host "Copying latest build of Oxide.Core.dll for $game"
+    Write-Host "Copying latest build of Oxide.Core.dll for $game_name"
     #$core_version = Get-ChildItem -Directory $core_path | Where-Object { $_.PSIsContainer } | Sort-Object CreationTime -desc | Select-Object -f 1
     if (!(Test-Path "$deps_dir\Oxide.Core.dll")) {
         try {
@@ -158,6 +165,7 @@ function Get-Dependencies {
         } catch {
             Write-Host "Could not copy Oxide.Core.dll to $deps_dir"
             Write-Host $_.Exception.Message
+            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
     }
@@ -169,6 +177,7 @@ function Get-Dependencies {
         } catch {
             Write-Host "Could not copy Oxide.Core.dll to $managed_dir"
             Write-Host $_.Exception.Message
+            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
     }
@@ -196,6 +205,7 @@ function Get-Deobfuscators {
             } catch {
                 Write-Host "Could not download de4dot from AppVeyor"
                 Write-Host $_.Exception.Message
+                if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
                 exit 1
             }
 
@@ -226,6 +236,7 @@ function Start-Deobfuscator {
         } catch {
             Write-Host "Could not start or complete de4dot deobufcation process"
             Write-Host $_.Exception.Message
+            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
 
@@ -252,6 +263,7 @@ function Get-Patcher {
         } catch {
             Write-Host "Could not download OxidePatcher.exe from GitHub"
             Write-Host $_.Exception.Message
+            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
     } else {
@@ -276,6 +288,7 @@ function Start-Patcher {
     } catch {
         Write-Host "Could not start or complete OxidePatcher process"
         Write-Host $_.Exception.Message
+        if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
         exit 1
     }
 }

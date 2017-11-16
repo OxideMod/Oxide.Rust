@@ -13,6 +13,7 @@
     <Copyright>Copyright (c) 2014-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
     <PackageTags>gaming modding plugins unity unity3d</PackageTags>
     <TargetFramework>net35</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <ManagedDir>RustDedicated_Data\Managed</ManagedDir>
     <SteamAppId>258550</SteamAppId>
     <SteamBranch>public</SteamBranch>
@@ -77,9 +78,7 @@
     <Reference Include="websocket-sharp">
       <HintPath>Dependencies\$(ManagedDir)\websocket-sharp.dll</HintPath>
     </Reference>
-    <None Remove="DepotDownloader.config" />
-    <None Remove="Files\**" />
-    <None Remove="Patched\**" />
+    <None Remove="Bundle\**; Files\**; Patched\**; *.config; *.opj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Target Name="Clean">
@@ -102,12 +101,12 @@
       <PatchedFiles Include="$(ProjectDir)\Dependencies\$(ManagedDir)\Assembly-CSharp.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\$(ManagedDir)\Facepunch.Console.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\$(ManagedDir)\Facepunch.Rcon.dll" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\content\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\content\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*; $(SolutionDir)\packages\oxide.mysql\**\content\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*; $(SolutionDir)\packages\oxide.sqlite\**\content\*.*" />
-      <ContentX64Files Include="$(SolutionDir)\packages\oxide.references\**\content\x64\*.*" />
-      <ContentX86Files Include="$(SolutionDir)\packages\oxide.references\**\content\x86\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*; $(SolutionDir)\packages\oxide.mysql\**\lib\any\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\*.*" />
+      <ContentX64Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x64\*.*" />
+      <ContentX86Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x86\*.*" />
     </ItemGroup>
     <Copy SourceFiles="@(CoreFiles)" DestinationFiles="@(CoreFiles->'$(ProjectDir)\Bundle\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
     <Copy SourceFiles="@(PatchedFiles)" DestinationFiles="@(PatchedFiles->'$(ProjectDir)\Bundle\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
@@ -126,12 +125,5 @@
       <DeployFiles Include="$(ProjectDir)\Bundle\**\*.*" />
     </ItemGroup>
     <Copy Condition="'$(DeployPath)' != ''" SourceFiles="@(DeployFiles)" DestinationFiles="@(DeployFiles->'$(DeployPath)\%(RecursiveDir)%(Filename)%(Extension)')" />
-  </Target>
-  <Target Name="NuGetPack" AfterTargets="AfterBuild" Condition="'$(Appveyor)' == 'True' Or '$(LocalDev)' == 'True'">
-    <Exec Command="dotnet pack $(MSBuildProjectFile) --no-build -c $(Configuration)" />
-    <ItemGroup>
-      <NugetPackages Include="bin\$(Configuration)\*.nupkg" />
-    </ItemGroup>
-    <Copy SourceFiles="@(NugetPackages)" DestinationFolder="$(UserProfile)\.nuget\packages\$(PackageId)\$(PackageVersion)" />
   </Target>
 </Project>

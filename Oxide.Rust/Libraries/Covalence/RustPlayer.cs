@@ -244,7 +244,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                     break;
 
                 case CommandType.Console:
-                    Command($"echo {string.Format(message, args)}");
+                    Command($"echo {string.Format(Formatter.ToPlaintext(message), args)}");
                     break;
             }
         }
@@ -253,7 +253,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// Replies to the player with the specified message
         /// </summary>
         /// <param name="message"></param>
-        public void Reply(string message) => Message(message, null);
+        public void Reply(string message) => Reply(message, null);
 
         /// <summary>
         /// Runs the specified console command on the player

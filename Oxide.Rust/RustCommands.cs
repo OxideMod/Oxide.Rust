@@ -653,12 +653,12 @@ namespace Oxide.Game.Rust
             {
                 player.Reply($"Protocol: {Server.Protocol}\nBuild Date: {BuildInfo.Current.BuildDate}\n" +
                 $"Unity Version: {UnityEngine.Application.unityVersion}\nChangeset: {BuildInfo.Current.Scm.ChangeId}\n" +
-                $"Branch: {BuildInfo.Current.Scm.Branch}\nOxide Version: {OxideMod.Version}");
+                $"Branch: {BuildInfo.Current.Scm.Branch}\nOxide.Rust Version: {OxideMod.Version}");
             }
             else
             {
                 var format = Covalence.FormatText(lang.GetMessage("Version", this, player.Id));
-                player.Reply(string.Format(format, OxideMod.Version, Covalence.GameName, Server.Version, Server.Protocol));
+                player.Reply(string.Format(format, RustExtension.AssemblyVersion, Covalence.GameName, Server.Version, Server.Protocol));
             }
         }
 

@@ -20,6 +20,7 @@ TestResult.xml
 # NuGet packages
 *.nupkg
 **/packages/*
+**/tools/*
 !**/packages/build/
 !**/packages/repositories.config
 

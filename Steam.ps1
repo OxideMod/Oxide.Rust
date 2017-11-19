@@ -19,14 +19,14 @@ if ($depot) { $depot = "-depot $depot" }
 $root_dir = $PSScriptRoot
 $project_dir = "$root_dir\$project"
 $deps_dir = "$project_dir\Dependencies"
-$depot_dir = "$deps_dir\.DepotDownloader"
+$tools_dir = "$root_dir\tools"
 if ("$branch" -ne "public" -and (Test-Path "$project_dir\$game_name-$branch.opj")) {
     $opj_name = "$project_dir\$project-$branch"
 } else {
     $opj_name = "$project_dir\$game_name"
 }
 $managed_dir = "$deps_dir\$managed"
-New-Item "$depot_dir", "$deps_dir", "$managed_dir" -ItemType Directory -Force
+New-Item "$tools_dir", "$deps_dir", "$managed_dir" -ItemType Directory -Force
 
 # TODO: Add support for GitHub API tokens for higher rate limit
 
@@ -52,7 +52,7 @@ function Find-Dependencies {
         try {
             # TODO: Exclude dependencies included in repository
             $hint_path = "Dependencies\\\$\(ManagedDir\)\\"
-            ($xml.selectNodes("//Reference") | Select-Object HintPath -ExpandProperty HintPath | Select-String -Pattern "Oxide" -NotMatch) -Replace $hint_path | Out-File "$deps_dir\.references"
+            ($xml.selectNodes("//Reference") | Select-Object HintPath -ExpandProperty HintPath | Select-String -Pattern "Oxide" -NotMatch) -Replace $hint_path | Out-File "$tools_dir\.references"
         } catch {
             Write-Host "Could not get references or none found in $project.csproj"
             Write-Host $_.Exception.Message
@@ -68,7 +68,7 @@ function Find-Dependencies {
 
 function Get-Downloader {
     # Check if DepotDownloader is already downloaded
-    $depot_exe = "$depot_dir\DepotDownloader.exe"
+    $depot_exe = "$tools_dir\DepotDownloader.exe"
     if (!(Test-Path "$depot_exe") -or ((Get-ChildItem "$depot_exe").CreationTime -gt (Get-Date).AddDays(-7))) {
         # Get latest release info for DepotDownloader
         Write-Host "Determining latest release of DepotDownloader"
@@ -87,7 +87,7 @@ function Get-Downloader {
         # Download and extract DepotDownloader
         Write-Host "Downloading version $version of DepotDownloader"
         try {
-            Invoke-WebRequest $json.assets[0].browser_download_url -Out "$depot_dir\$release_zip"
+            Invoke-WebRequest $json.assets[0].browser_download_url -Out "$tools_dir\$release_zip"
         } catch {
             Write-Host "Could not download DepotDownloader from GitHub"
             Write-Host $_.Exception.Message
@@ -97,15 +97,15 @@ function Get-Downloader {
 
         # TODO: Compare size and hash of .zip vs. what GitHub has via API
         Write-Host "Extracting DepotDownloader release files"
-        Expand-Archive "$depot_dir\$release_zip" -DestinationPath "$depot_dir" -Force
+        Expand-Archive "$tools_dir\$release_zip" -DestinationPath "$tools_dir" -Force
 
-        if (!(Test-Path "$depot_dir\DepotDownloader.exe")) {
+        if (!(Test-Path "$tools_dir\DepotDownloader.exe")) {
             Get-Downloader # TODO: Add infinite loop prevention
             return
         }
 
         # Cleanup downloaded .zip file
-        Remove-Item "$depot_dir\depotdownloader-*.zip"
+        Remove-Item "$tools_dir\depotdownloader-*.zip"
     } else {
         Write-Host "Latest version of DepotDownloader already downloaded"
     }
@@ -143,7 +143,7 @@ function Get-Dependencies {
 
         # Attempt to run DepotDownloader to get game DLLs
         try {
-            Start-Process "$depot_dir\DepotDownloader.exe" -ArgumentList "$login -app $appid -branch $branch $depot -dir $deps_dir -filelist $deps_dir\.references" -NoNewWindow -Wait
+            Start-Process "$tools_dir\DepotDownloader.exe" -ArgumentList "$login -app $appid -branch $branch $depot -dir $deps_dir -filelist $tools_dir\.references" -NoNewWindow -Wait
         } catch {
             Write-Host "Could not start or complete DepotDownloader process"
             Write-Host $_.Exception.Message
@@ -159,11 +159,11 @@ function Get-Dependencies {
     # Grab latest Oxide.Core.dll build
     Write-Host "Copying latest build of Oxide.Core.dll for $game_name"
     #$core_version = Get-ChildItem -Directory $core_path | Where-Object { $_.PSIsContainer } | Sort-Object CreationTime -desc | Select-Object -f 1
-    if (!(Test-Path "$deps_dir\Oxide.Core.dll")) {
+    if (!(Test-Path "$tools_dir\Oxide.Core.dll")) {
         try {
-            Copy-Item "$root_dir\packages\oxide.core\*\lib\$dotnet\Oxide.Core.dll" "$deps_dir" -Force
+            Copy-Item "$root_dir\packages\oxide.core\*\lib\$dotnet\Oxide.Core.dll" "$tools_dir" -Force
         } catch {
-            Write-Host "Could not copy Oxide.Core.dll to $deps_dir"
+            Write-Host "Could not copy Oxide.Core.dll to $tools_dir"
             Write-Host $_.Exception.Message
             if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
@@ -192,7 +192,7 @@ function Get-Dependencies {
 function Get-Deobfuscators {
     # Check for which deobfuscator to get and use
     if ($deobf.ToLower() -eq "de4dot") {
-        $de4dot_dir = "$deps_dir\.de4dot"
+        $de4dot_dir = "$tools_dir\.de4dot"
         New-Item "$de4dot_dir" -ItemType Directory -Force
 
         # Check if de4dot is already downloaded
@@ -232,7 +232,7 @@ function Start-Deobfuscator {
     if ($deobf.ToLower() -eq "de4dot") {
         # Attempt to deobfuscate game file(s)
         try {
-            Start-Process "$deps_dir\.de4dot\de4dot.exe" -WorkingDirectory "$managed_dir" -ArgumentList "-r $managed_dir -ru" -NoNewWindow -Wait
+            Start-Process "$tools_dir\.de4dot\de4dot.exe" -WorkingDirectory "$managed_dir" -ArgumentList "-r $managed_dir -ru" -NoNewWindow -Wait
         } catch {
             Write-Host "Could not start or complete de4dot deobufcation process"
             Write-Host $_.Exception.Message
@@ -253,7 +253,7 @@ function Start-Deobfuscator {
 function Get-Patcher {
     # TODO: MD5 comparision of local OxidePatcher.exe and remote header
     # Check if OxidePatcher is already downloaded
-    $patcher_exe = "$deps_dir\OxidePatcher.exe"
+    $patcher_exe = "$tools_dir\OxidePatcher.exe"
     if (!(Test-Path "$patcher_exe") -or (Get-ChildItem "$patcher_exe").CreationTime -lt (Get-Date).AddDays(-7)) {
         # Download latest Oxide Patcher build
         Write-Host "Downloading latest build of OxidePatcher"
@@ -275,7 +275,7 @@ function Get-Patcher {
 
 function Start-Patcher {
     # Check if we need to get the Oxide patcher
-    if (!(Test-Path "$deps_dir\OxidePatcher.exe")) {
+    if (!(Test-Path "$tools_dir\OxidePatcher.exe")) {
         Get-Patcher # TODO: Add infinite loop prevention
         return
     }
@@ -284,7 +284,7 @@ function Start-Patcher {
 
     # Attempt to patch game using the Oxide patcher
     try {
-        Start-Process "$deps_dir\OxidePatcher.exe" -WorkingDirectory "$managed_dir" -ArgumentList "-c -p `"$managed_dir`" $opj_name.opj" -NoNewWindow -Wait
+        Start-Process "$tools_dir\OxidePatcher.exe" -WorkingDirectory "$managed_dir" -ArgumentList "-c -p `"$managed_dir`" $opj_name.opj" -NoNewWindow -Wait
     } catch {
         Write-Host "Could not start or complete OxidePatcher process"
         Write-Host $_.Exception.Message

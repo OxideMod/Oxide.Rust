@@ -29,6 +29,8 @@
     <PackageReference Include="Oxide.References" Version="2.0.*" />
     <PackageReference Include="Oxide.Core" Version="2.0.*" />
     <PackageReference Include="Oxide.CSharp" Version="2.0.*" />
+    <PackageReference Include="Oxide.MySql" Version="2.0.*" />
+    <PackageReference Include="Oxide.SQLite" Version="2.0.*" />
     <PackageReference Include="Oxide.Unity" Version="2.0.*" />
     <Reference Include="Assembly-CSharp">
       <HintPath>Dependencies\$(ManagedDir)\Assembly-CSharp.dll</HintPath>
@@ -82,7 +84,7 @@
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Target Name="Clean">
-    <RemoveDir Directories="$(ProjectDir)\bin\**\*.*" Condition="Exists('$(ProjectDir)\bin')" />
+    <RemoveDir Directories="$(ProjectDir)\bin" Condition="Exists('$(ProjectDir)\bin')" />
   </Target>
   <Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
     <ItemGroup>

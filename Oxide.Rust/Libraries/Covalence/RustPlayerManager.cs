@@ -25,6 +25,9 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         private IDictionary<string, RustPlayer> allPlayers;
         private IDictionary<string, RustPlayer> connectedPlayers;
 
+        /// <summary>
+        /// Initializes player data
+        /// </summary>
         internal void Initialize()
         {
             Utility.DatafileToProto<Dictionary<string, PlayerRecord>>("oxide.covalence");
@@ -35,6 +38,11 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             foreach (var pair in playerData) allPlayers.Add(pair.Key, new RustPlayer(pair.Value.Id, pair.Value.Name));
         }
 
+        /// <summary>
+        /// When a player joins
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="name"></param>
         internal void PlayerJoin(ulong userId, string name)
         {
             var id = userId.ToString();
@@ -53,17 +61,28 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 playerData.Add(id, record);
                 allPlayers.Add(id, new RustPlayer(userId, name));
             }
-
-            ProtoStorage.Save(playerData, "oxide.covalence");
         }
 
+        /// <summary>
+        /// When a player connects
+        /// </summary>
+        /// <param name="player"></param>
         internal void PlayerConnected(BasePlayer player)
         {
             allPlayers[player.UserIDString] = new RustPlayer(player);
             connectedPlayers[player.UserIDString] = new RustPlayer(player);
         }
 
+        /// <summary>
+        /// When a player disconnects
+        /// </summary>
+        /// <param name="player"></param>
         internal void PlayerDisconnected(BasePlayer player) => connectedPlayers.Remove(player.UserIDString);
+
+        /// <summary>
+        /// To save the current player data
+        /// </summary>
+        internal void SavePlayerData() => ProtoStorage.Save(playerData, "oxide.covalence");
 
         #region Player Finding
 

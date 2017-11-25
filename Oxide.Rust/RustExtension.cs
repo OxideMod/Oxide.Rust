@@ -193,27 +193,35 @@ namespace Oxide.Game.Rust
 
             if (type == LogType.Warning)
             {
+                Interface.CallHook("OnServerLog", LogType.Warning, message, stackTrace);
                 color = ConsoleColor.Yellow;
                 remoteType = "warning";
             }
             else if (type == LogType.Error)
             {
+                Interface.CallHook("OnServerLog", LogType.Error, message, stackTrace);
                 color = ConsoleColor.Red;
                 remoteType = "error";
             }
             else if (type == LogType.Exception)
             {
+                Interface.CallHook("OnServerLog", LogType.Exception, message, stackTrace);
                 color = ConsoleColor.Red;
                 remoteType = "error";
             }
             else if (type == LogType.Assert)
             {
+                Interface.CallHook("OnServerLog", LogType.Assert, message, stackTrace);
                 color = ConsoleColor.Red;
                 remoteType = "error";
             }
             else if (message.ToLower().StartsWith("[chat]"))
             {
                 remoteType = "chat";
+            }
+            else
+            {
+                Interface.CallHook("OnServerLog", LogType.Log, message, stackTrace);
             }
 
             Interface.Oxide.ServerConsole.AddMessage(message, color);

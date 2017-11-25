@@ -7,10 +7,10 @@ using Oxide.Game.Rust.Libraries.Covalence;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Reflection;
 using System.Text;
 using UnityEngine;
+using Timer = Oxide.Core.Libraries.Timer;
 
 namespace Oxide.Game.Rust
 {
@@ -92,6 +92,7 @@ namespace Oxide.Game.Rust
 
             // Add core misc commands
             AddCovalenceCommand(new[] { "oxide.lang", "o.lang" }, "LangCommand");
+            AddCovalenceCommand(new[] { "oxide.save", "o.save" }, "SaveCommand");
             AddCovalenceCommand(new[] { "oxide.version", "o.version" }, "VersionCommand");
 
             // Register messages for localization
@@ -149,14 +150,32 @@ namespace Oxide.Game.Rust
                 Interface.Oxide.LogWarning("The server is currently listed under Community. Please be aware that Facepunch only allows admin tools" +
                                            "(that do not affect gameplay) under the Community section");
 
+            // Custom save timer if server save interval is high (prevents data from never being saved if server crashes)
+            if (ConVar.Server.saveinterval > 3600)
+                new Timer().Repeat(600, 0, Interface.Oxide.OnSave);
+
             serverInitialized = true;
+        }
+
+        /// <summary>
+        /// Called when the server is saved
+        /// </summary>
+        [HookMethod("OnServerSave")]
+        private void OnServerSave()
+        {
+            Interface.Oxide.OnSave();
+            Covalence.PlayerManager.SavePlayerData();
         }
 
         /// <summary>
         /// Called when the server is shutting down
         /// </summary>
         [HookMethod("OnServerShutdown")]
-        private void OnServerShutdown() => Interface.Oxide.OnShutdown();
+        private void OnServerShutdown()
+        {
+            Interface.Oxide.OnShutdown();
+            Covalence.PlayerManager.SavePlayerData();
+        } 
 
         #endregion Core Hooks
 

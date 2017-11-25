@@ -663,5 +663,18 @@ namespace Oxide.Game.Rust
         }
 
         #endregion Version Command
+
+        #region Save Command
+
+        [HookMethod("SaveCommand")]
+        private void SaveCommand(IPlayer player, string command, string[] args)
+        {
+            if (!PermissionsLoaded(player)) return;
+
+            Interface.Oxide.OnSave();
+            player.Reply(lang.GetMessage("OxideSaved", this, player.Id));
+        }
+
+        #endregion
     }
 }

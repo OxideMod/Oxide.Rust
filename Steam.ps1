@@ -17,13 +17,13 @@ if ($depot) { $depot = "-depot $depot" }
 
 # Set directory variables and create directories
 $root_dir = $PSScriptRoot
-$project_dir = "$root_dir\$project"
+$project_dir = "$root_dir\src"
 $deps_dir = "$project_dir\Dependencies"
 $tools_dir = "$root_dir\tools"
-if ("$branch" -ne "public" -and (Test-Path "$project_dir\$game_name-$branch.opj")) {
-    $opj_name = "$project_dir\$project-$branch"
+if ("$branch" -ne "public" -and (Test-Path "$root_dir\resources\$game_name-$branch.opj")) {
+    $opj_name = "$root_dir\resources\$game_name-$branch.opj"
 } else {
-    $opj_name = "$project_dir\$game_name"
+    $opj_name = "$root_dir\resources\$game_name.opj"
 }
 $managed_dir = "$deps_dir\$managed"
 New-Item "$tools_dir", "$deps_dir", "$managed_dir" -ItemType Directory -Force
@@ -280,11 +280,17 @@ function Start-Patcher {
         return
     }
 
+    # Remove patched file(s) and replace with _Original file(s)
+    Get-ChildItem "$managed_dir\*_Original.*" -Recurse | ForEach-Object {
+        Remove-Item $_.FullName.Replace("_Original", "")
+        Rename-Item $_ $_.Name.Replace("_Original", "")
+    }
+
     # TODO: Make sure dependencies exist before trying to patch
 
     # Attempt to patch game using the Oxide patcher
     try {
-        Start-Process "$tools_dir\OxidePatcher.exe" -WorkingDirectory "$managed_dir" -ArgumentList "-c -p `"$managed_dir`" $opj_name.opj" -NoNewWindow -Wait
+        Start-Process "$tools_dir\OxidePatcher.exe" -WorkingDirectory "$managed_dir" -ArgumentList "-c -p `"$managed_dir`" $opj_name" -NoNewWindow -Wait
     } catch {
         Write-Host "Could not start or complete OxidePatcher process"
         Write-Host $_.Exception.Message

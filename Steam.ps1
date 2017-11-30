@@ -26,7 +26,13 @@ if ("$branch" -ne "public" -and (Test-Path "$root_dir\resources\$game_name-$bran
     $opj_name = "$root_dir\resources\$game_name.opj"
 }
 $managed_dir = "$deps_dir\$managed"
-New-Item "$tools_dir", "$deps_dir", "$managed_dir" -ItemType Directory -Force
+New-Item "$tools_dir", "$deps_dir", "$managed_dir" -ItemType Directory -Force | Out-Null
+
+# Remove patched file(s) and replace with _Original file(s)
+Get-ChildItem "$managed_dir\*_Original.*" -Recurse | ForEach-Object {
+    Remove-Item $_.FullName.Replace("_Original", "")
+    Rename-Item $_ $_.Name.Replace("_Original", "")
+}
 
 # TODO: Add support for GitHub API tokens for higher rate limit
 
@@ -193,7 +199,7 @@ function Get-Deobfuscators {
     # Check for which deobfuscator to get and use
     if ($deobf.ToLower() -eq "de4dot") {
         $de4dot_dir = "$tools_dir\.de4dot"
-        New-Item "$de4dot_dir" -ItemType Directory -Force
+        New-Item "$de4dot_dir" -ItemType Directory -Force | Out-Null
 
         # Check if de4dot is already downloaded
         $de4dot_exe = "$de4dot_dir\de4dot.exe"
@@ -278,12 +284,6 @@ function Start-Patcher {
     if (!(Test-Path "$tools_dir\OxidePatcher.exe")) {
         Get-Patcher # TODO: Add infinite loop prevention
         return
-    }
-
-    # Remove patched file(s) and replace with _Original file(s)
-    Get-ChildItem "$managed_dir\*_Original.*" -Recurse | ForEach-Object {
-        Remove-Item $_.FullName.Replace("_Original", "")
-        Rename-Item $_ $_.Name.Replace("_Original", "")
     }
 
     # TODO: Make sure dependencies exist before trying to patch

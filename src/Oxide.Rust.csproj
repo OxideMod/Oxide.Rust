@@ -74,15 +74,6 @@
     <Reference Include="UnityEngine">
       <HintPath>Dependencies\$(ManagedDir)\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>Dependencies\$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>Dependencies\$(ManagedDir)\UnityEngine.PhysicsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>Dependencies\$(ManagedDir)\UnityEngine.TextRenderingModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Dependencies\$(ManagedDir)\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -114,8 +105,8 @@
       <PatchedFiles Include="$(ProjectDir)\Dependencies\$(ManagedDir)\Facepunch.Rcon.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\any\*.*; $(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\any\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*" />
       <ContentX64Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x64\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\x64\*.*" />
       <ContentX86Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x86\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\x86\*.*" />
     </ItemGroup>

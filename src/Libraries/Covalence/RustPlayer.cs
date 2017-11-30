@@ -244,7 +244,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                     break;
 
                 case CommandType.Console:
-                    Command($"echo {string.Format(Formatter.ToPlaintext(message), args)}");
+                    player.ConsoleMessage(string.Format(Formatter.ToPlaintext(message), args));
                     break;
             }
         }

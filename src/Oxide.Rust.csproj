@@ -84,7 +84,7 @@
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Target Name="Clean">
-    <RemoveDir Directories="$(ProjectDir)\bin" Condition="Exists('$(ProjectDir)\bin')" />
+    <RemoveDir Directories="$(ProjectDir)\bin\Bundle\$(PackageId)" Condition="Exists('$(ProjectDir)\bin\Bundle\$(PackageId)')" />
   </Target>
   <Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
     <ItemGroup>
@@ -105,16 +105,16 @@
       <PatchedFiles Include="$(ProjectDir)\Dependencies\$(ManagedDir)\Facepunch.Rcon.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*; $(SolutionDir)\packages\oxide.mysql\**\lib\any\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\*.*" />
-      <ContentX64Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x64\*.*" />
-      <ContentX86Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x86\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\any\*.*; $(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\any\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*" />
+      <ContentX64Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x64\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\x64\*.*" />
+      <ContentX86Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x86\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\x86\*.*" />
     </ItemGroup>
-    <Copy SourceFiles="@(CoreFiles)" DestinationFiles="@(CoreFiles->'$(ProjectDir)\bin\Bundle\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
-    <Copy SourceFiles="@(PatchedFiles)" DestinationFiles="@(PatchedFiles->'$(ProjectDir)\bin\Bundle\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
-    <Copy SourceFiles="@(ContentFiles)" DestinationFiles="@(ContentFiles->'$(ProjectDir)\bin\Bundle\$(ManagedDir)\%(Filename)%(Extension)')" />
-    <Copy SourceFiles="@(ContentX64Files)" DestinationFiles="@(ContentX64Files->'$(ProjectDir)\bin\Bundle\$(ManagedDir)\x64\%(Filename)%(Extension)')" />
-    <Copy SourceFiles="@(ContentX86Files)" DestinationFiles="@(ContentX86Files->'$(ProjectDir)\bin\Bundle\$(ManagedDir)\x86\%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(CoreFiles)" DestinationFiles="@(CoreFiles->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(PatchedFiles)" DestinationFiles="@(PatchedFiles->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(ContentFiles)" DestinationFiles="@(ContentFiles->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(ContentX64Files)" DestinationFiles="@(ContentX64Files->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\x64\%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(ContentX86Files)" DestinationFiles="@(ContentX86Files->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\x86\%(Filename)%(Extension)')" />
     <!--<Exec Command="pdb2mdb %(ManagedFiles.Identity)" Condition="'$(Configuration)' == 'Debug' And '$(OS)' == 'Windows_NT'" IgnoreExitCode="true" />-->
   </Target>
   <Target Name="LocalDeploy" AfterTargets="AfterBuild" Condition="Exists('$(SolutionDir)\.deploy')">
@@ -124,7 +124,7 @@
       <Output PropertyName="DeployPath" TaskParameter="Lines" />
     </ReadLinesFromFile>
     <ItemGroup>
-      <DeployFiles Include="$(ProjectDir)\bin\Bundle\**\*.*" />
+      <DeployFiles Include="$(ProjectDir)\bin\Bundle\$(PackageId)\**\*.*" />
     </ItemGroup>
     <Copy Condition="'$(DeployPath)' != ''" SourceFiles="@(DeployFiles)" DestinationFiles="@(DeployFiles->'$(DeployPath)\%(RecursiveDir)%(Filename)%(Extension)')" />
   </Target>

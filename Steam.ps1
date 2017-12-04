@@ -17,16 +17,19 @@ if ($depot) { $depot = "-depot $depot" }
 
 # Set directory variables and create directories
 $root_dir = $PSScriptRoot
+$tools_dir = "$root_dir\tools"
 $project_dir = "$root_dir\src"
 $deps_dir = "$project_dir\Dependencies"
-$tools_dir = "$root_dir\tools"
+$patch_dir = "$deps_dir\Patched"
+$managed_dir = "$patch_dir\$managed"
+New-Item "$tools_dir", "$managed_dir" -ItemType Directory -Force | Out-Null
+
+# Set name for Oxide patcher file (.opj)
 if ("$branch" -ne "public" -and (Test-Path "$root_dir\resources\$game_name-$branch.opj")) {
     $opj_name = "$root_dir\resources\$game_name-$branch.opj"
 } else {
     $opj_name = "$root_dir\resources\$game_name.opj"
 }
-$managed_dir = "$deps_dir\$managed"
-New-Item "$tools_dir", "$deps_dir", "$managed_dir" -ItemType Directory -Force | Out-Null
 
 # Remove patched file(s) and replace with _Original file(s)
 Get-ChildItem "$managed_dir\*_Original.*" -Recurse | ForEach-Object {
@@ -45,8 +48,8 @@ function Find-Dependencies {
     }
 
     # Copy any local dependencies
-    if (Test-Path "$project_dir\Dependencies\*.dll") {
-        Copy-Item "$project_dir\Dependencies\*.dll" "$managed_dir" -Force
+    if (Test-Path "$deps_dir\Original\*.dll") {
+        Copy-Item "$deps_dir\Original\*.dll" "$managed_dir" -Force
     }
 
     # Check if Steam is used for game dependencies
@@ -57,7 +60,7 @@ function Find-Dependencies {
         Write-Host "Getting references for $branch branch of $appid"
         try {
             # TODO: Exclude dependencies included in repository
-            $hint_path = "Dependencies\\\$\(ManagedDir\)\\"
+            $hint_path = "Dependencies\\Patched\\\$\(ManagedDir\)\\"
             ($xml.selectNodes("//Reference") | Select-Object HintPath -ExpandProperty HintPath | Select-String -Pattern "Oxide" -NotMatch) -Replace $hint_path | Out-File "$tools_dir\.references"
         } catch {
             Write-Host "Could not get references or none found in $project.csproj"
@@ -149,7 +152,7 @@ function Get-Dependencies {
 
         # Attempt to run DepotDownloader to get game DLLs
         try {
-            Start-Process "$tools_dir\DepotDownloader.exe" -ArgumentList "$login -app $appid -branch $branch $depot -dir $deps_dir -filelist $tools_dir\.references" -NoNewWindow -Wait
+            Start-Process "$tools_dir\DepotDownloader.exe" -ArgumentList "$login -app $appid -branch $branch $depot -dir $patch_dir -filelist $tools_dir\.references" -NoNewWindow -Wait
         } catch {
             Write-Host "Could not start or complete DepotDownloader process"
             Write-Host $_.Exception.Message
@@ -176,7 +179,6 @@ function Get-Dependencies {
         }
     }
     Write-Host "Copying latest build of Oxide.Core.dll for OxidePatcher"
-    Write-Host $managed_dir
     if (!(Test-Path "$managed_dir\Oxide.Core.dll")) {
         try {
             Copy-Item "$root_dir\packages\oxide.core\*\lib\$dotnet\Oxide.Core.dll" "$managed_dir" -Force

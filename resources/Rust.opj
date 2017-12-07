@@ -6306,7 +6306,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 9,
+            "InjectionIndex": 5,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0",
@@ -6324,7 +6324,7 @@
                 "ConsoleSystem/Arg"
               ]
             },
-            "MSILHash": "UtHWRiVApq17kfEzcgBc0/mJkKjcg5d9EV7zWsuoWUs=",
+            "MSILHash": "RXyHScb8jTz38X8XUTVM04PKMfcBwzCxeTlRVU4HrP4=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -6332,18 +6332,13 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 58,
-            "RemoveCount": 4,
+            "InjectionIndex": 41,
+            "RemoveCount": 1,
             "Instructions": [
               {
-                "OpCode": "ldc_i4_1",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "clt",
-                "OpType": "None",
-                "Operand": null
+                "OpCode": "bge_s",
+                "OpType": "Instruction",
+                "Operand": 43
               }
             ],
             "HookTypeName": "Modify",
@@ -6360,7 +6355,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "+DKb9/xKHRR0XgVGw1cEJNTwNjTm8tew4XOTwI847rs=",
+            "MSILHash": "aUqksG/Vue+Ee9YQ02XTxPp4N3p/dzLWm2+USDGcVRQ=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -6384,7 +6379,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "oOKKUrp6a9c9LtIdOmEvzccMXZewK4t5W4T+66vzEm4=",
+            "MSILHash": "6tnwpqNZCWReCMBF3W+5VhyHXaD55AaqTVukarR1Vb8=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -6392,18 +6387,13 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 76,
-            "RemoveCount": 4,
+            "InjectionIndex": 56,
+            "RemoveCount": 1,
             "Instructions": [
               {
-                "OpCode": "ldc_i4_1",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "clt",
-                "OpType": "None",
-                "Operand": null
+                "OpCode": "bge_s",
+                "OpType": "Instruction",
+                "Operand": 58
               }
             ],
             "HookTypeName": "Modify",
@@ -6420,7 +6410,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "+DKb9/xKHRR0XgVGw1cEJNTwNjTm8tew4XOTwI847rs=",
+            "MSILHash": "aUqksG/Vue+Ee9YQ02XTxPp4N3p/dzLWm2+USDGcVRQ=",
             "BaseHookName": "SingleCharCmdPrefix [patch]",
             "HookCategory": "_Patches"
           }

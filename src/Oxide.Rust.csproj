@@ -16,7 +16,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <ManagedDir>RustDedicated_Data\Managed</ManagedDir>
     <SteamAppId>258550</SteamAppId>
-    <SteamBranch>public</SteamBranch>
+    <SteamBranch>staging</SteamBranch>
     <SteamLogin>anonymous</SteamLogin>
     <!--
       Workaround for targeting net35 with dotnet CLI
@@ -82,9 +82,6 @@
     </Reference>
     <None Remove="Bundle\**; Files\**; Patched\**; **\Original\**; *.config; *.opj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dependencies\" />
-  </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Target Name="Clean">
     <RemoveDir Directories="$(ProjectDir)\bin\Bundle\$(PackageId)" Condition="Exists('$(ProjectDir)\bin\Bundle\$(PackageId)')" />
@@ -118,7 +115,7 @@
     <Copy SourceFiles="@(ContentFiles)" DestinationFiles="@(ContentFiles->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\%(Filename)%(Extension)')" />
     <Copy SourceFiles="@(ContentX64Files)" DestinationFiles="@(ContentX64Files->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\x64\%(Filename)%(Extension)')" />
     <Copy SourceFiles="@(ContentX86Files)" DestinationFiles="@(ContentX86Files->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\x86\%(Filename)%(Extension)')" />
-    <!--<Exec Command="pdb2mdb %(ManagedFiles.Identity)" Condition="'$(Configuration)' == 'Debug' And '$(OS)' == 'Windows_NT'" IgnoreExitCode="true" />-->
+    <!--<Exec Command="pdb2mdb %(PatchedFiles.Identity)" Condition="'$(Configuration)' == 'Debug' And '$(OS)' == 'Windows_NT'" IgnoreExitCode="true" />-->
   </Target>
   <Target Name="LocalDeploy" AfterTargets="AfterBuild" Condition="Exists('$(SolutionDir)\.deploy')">
     <Exec Command="start /b /wait taskkill /f /im RustDedicated.exe /fi &quot;memusage gt 2&quot;" Condition="'$(OS)' == 'Windows_NT'" />

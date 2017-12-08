@@ -33,54 +33,54 @@
     <PackageReference Include="Oxide.SQLite" Version="2.0.*" />
     <PackageReference Include="Oxide.Unity" Version="2.0.*" />
     <Reference Include="Assembly-CSharp">
-      <HintPath>Dependencies\$(ManagedDir)\Assembly-CSharp.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>Dependencies\$(ManagedDir)\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Console">
-      <HintPath>Dependencies\$(ManagedDir)\Facepunch.Console.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Console.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Network">
-      <HintPath>Dependencies\$(ManagedDir)\Facepunch.Network.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Network.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Rcon">
-      <HintPath>Dependencies\$(ManagedDir)\Facepunch.Rcon.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Rcon.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Steamworks">
-      <HintPath>Dependencies\$(ManagedDir)\Facepunch.Steamworks.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Steamworks.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.System">
-      <HintPath>Dependencies\$(ManagedDir)\Facepunch.System.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.System.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Unity">
-      <HintPath>Dependencies\$(ManagedDir)\Facepunch.Unity.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.UnityEngine">
-      <HintPath>Dependencies\$(ManagedDir)\Facepunch.UnityEngine.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
-      <HintPath>Dependencies\$(ManagedDir)\mscorlib.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>Dependencies\$(ManagedDir)\System.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\System.dll</HintPath>
     </Reference>
     <Reference Include="Rust.Data">
-      <HintPath>Dependencies\$(ManagedDir)\Rust.Data.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\Rust.Data.dll</HintPath>
     </Reference>
     <Reference Include="Rust.Global">
-      <HintPath>Dependencies\$(ManagedDir)\Rust.Global.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\Rust.Global.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>Dependencies\$(ManagedDir)\UnityEngine.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>Dependencies\$(ManagedDir)\UnityEngine.UI.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>Dependencies\$(ManagedDir)\websocket-sharp.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(ManagedDir)\websocket-sharp.dll</HintPath>
     </Reference>
-    <None Remove="Bundle\**; Files\**; Patched\**; *.config; *.opj" />
+    <None Remove="Bundle\**; Files\**; Patched\**; **\Original\**; *.config; *.opj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Target Name="Clean">
@@ -95,14 +95,14 @@
   </Target>
   <Target Name="BeforeBuild">
     <!-- Currently only works on Windows due to Windows-only tools used -->
-    <Exec Command="powershell -ExecutionPolicy Bypass $(SolutionDir)\Steam.ps1 -project $(AssemblyName) -dotnet $(TargetFramework) -appid $(SteamAppId) -branch '$(SteamBranch)' -managed '$(ManagedDir)'" />
+    <Exec Command="powershell -ExecutionPolicy Bypass &quot;$(SolutionDir)\Steam.ps1&quot; -project $(AssemblyName) -dotnet $(TargetFramework) -appid $(SteamAppId) -branch '$(SteamBranch)' -managed '$(ManagedDir)'" />
   </Target>
   <Target Name="AfterBuild">
     <ItemGroup>
       <CoreFiles Include="$(TargetDir)\Oxide.*.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\$(ManagedDir)\Assembly-CSharp.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\$(ManagedDir)\Facepunch.Console.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\$(ManagedDir)\Facepunch.Rcon.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Console.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Rcon.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\any\*.*; $(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*" />
@@ -115,7 +115,7 @@
     <Copy SourceFiles="@(ContentFiles)" DestinationFiles="@(ContentFiles->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\%(Filename)%(Extension)')" />
     <Copy SourceFiles="@(ContentX64Files)" DestinationFiles="@(ContentX64Files->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\x64\%(Filename)%(Extension)')" />
     <Copy SourceFiles="@(ContentX86Files)" DestinationFiles="@(ContentX86Files->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\x86\%(Filename)%(Extension)')" />
-    <!--<Exec Command="pdb2mdb %(ManagedFiles.Identity)" Condition="'$(Configuration)' == 'Debug' And '$(OS)' == 'Windows_NT'" IgnoreExitCode="true" />-->
+    <!--<Exec Command="pdb2mdb %(PatchedFiles.Identity)" Condition="'$(Configuration)' == 'Debug' And '$(OS)' == 'Windows_NT'" IgnoreExitCode="true" />-->
   </Target>
   <Target Name="LocalDeploy" AfterTargets="AfterBuild" Condition="Exists('$(SolutionDir)\.deploy')">
     <Exec Command="start /b /wait taskkill /f /im RustDedicated.exe /fi &quot;memusage gt 2&quot;" Condition="'$(OS)' == 'Windows_NT'" />

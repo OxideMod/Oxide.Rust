@@ -66,8 +66,8 @@ _ReSharper*/
 _TeamCity*
 
 # Other files
-Bundle/
-Dependencies/
+**/Bundle/
+**/Patched/
 DepotDownloader.config
 .DepotDownloader/
 .deploy

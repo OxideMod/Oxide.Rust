@@ -162,7 +162,7 @@ namespace Oxide.Game.Rust
 
             Interface.Oxide.ServerConsole.Status3Left = () =>
             {
-                var gameTime = (!TOD_Sky.Instance ? DateTime.Now : TOD_Sky.Instance.Cycle.DateTime).ToString("h:mm tt");
+                var gameTime = (TOD_Sky.Instance?.Cycle?.DateTime != null ? TOD_Sky.Instance.Cycle.DateTime : DateTime.Now).ToString("h:mm tt");
                 return $"{gameTime.ToLower()}, {ConVar.Server.level} [{ConVar.Server.worldsize}, {ConVar.Server.seed}]";
             };
             Interface.Oxide.ServerConsole.Status3Right = () => $"Oxide.Rust {AssemblyVersion} for {BuildInfo.Current.Build.Number} ({Protocol.printable})";

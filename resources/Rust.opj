@@ -2516,13 +2516,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 24,
+            "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "a0, l1",
+            "ArgumentString": "a0, a1",
             "HookTypeName": "Simple",
-            "Name": "OnCreateWorldProjectile",
-            "HookName": "OnCreateWorldProjectile",
+            "Name": "CanCreateWorldProjectile",
+            "HookName": "CanCreateWorldProjectile",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
             "Flagged": false,
@@ -5604,6 +5604,140 @@
             "MSILHash": "cs31idW4kqQ84re852s9Sjjdf6hI01nYVkgXrJ3AnNE=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnTurretClearList",
+            "HookName": "OnTurretClearList",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ClearList",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "rJHYQ0bB5jz5a4Dv0i3MwXaqKLuEUzDWre0VTVhdVzc=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 22,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnTurretModeToggle",
+            "HookName": "OnTurretModeToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetPeacekeepermode",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "9imma7EQ8oZOEofkUdGk1B1R4/S4dIaf3DyYV3POV+4=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 41,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCreateWorldProjectile",
+            "HookName": "OnCreateWorldProjectile",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "CreateWorldProjectile",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo",
+                "ItemDefinition",
+                "ItemModProjectile",
+                "Projectile",
+                "Item"
+              ]
+            },
+            "MSILHash": "7em7OTe/CdUzMGI0HbmkG/2txT8rUOUdSVOCXmWLxCQ=",
+            "BaseHookName": "CanCreateWorldProjectile",
+            "HookCategory": "Weapon"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 53,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerActiveItemChanged",
+            "HookName": "OnPlayerActiveItemChanged",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "UpdateActiveItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.UInt32"
+              ]
+            },
+            "MSILHash": "N0BzG6FdkRf06CMWa7F09kAE7krqfv67+7clDbYhviA=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 40,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnSwitchAmmo",
+            "HookName": "OnSwitchAmmo",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseProjectile",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SwitchAmmoTo",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "eSv6iaBUf6hKYouk6Wz2r2Eh/FKuhFRnUzcDA30kqmM=",
+            "BaseHookName": null,
+            "HookCategory": "Weapon"
           }
         }
       ],

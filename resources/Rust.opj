@@ -5739,6 +5739,32 @@
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerVoice",
+            "HookName": "OnPlayerVoice",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnReceivedVoice",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Byte[]"
+              ]
+            },
+            "MSILHash": "mLx7xSfz0bIKY1emdvWpK8edPloCjSTAh7K0tplG9o0=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

@@ -5765,6 +5765,97 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 68,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldloca_s",
+                "OpType": "Variable",
+                "Operand": 0
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Facepunch.System|Facepunch.Pool|FreeList[UnityEngine|UnityEngine.RaycastHit]"
+              },
+              {
+                "OpCode": "ldloca_s",
+                "OpType": "Variable",
+                "Operand": 1
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Facepunch.System|Facepunch.Pool|FreeList[UnityEngine|UnityEngine.RaycastHit]"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanBeTargeted [flameturret] [cleanup]",
+            "HookName": "CanBeTargeted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FlameTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CheckTrigger",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "tf6eD5tuXkLVQFBGwXmYFTr3286kBlW+HBbM+M6X1Qw=",
+            "BaseHookName": "CanBeTargeted [flameturret]",
+            "HookCategory": "_PoolPatches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 54,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldloca_s",
+                "OpType": "Variable",
+                "Operand": 0
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Facepunch.System|Facepunch.Pool|FreeList[UnityEngine|UnityEngine.RaycastHit]"
+              },
+              {
+                "OpCode": "ldloca_s",
+                "OpType": "Variable",
+                "Operand": 1
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Facepunch.System|Facepunch.Pool|FreeList[UnityEngine|UnityEngine.RaycastHit]"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanBeTargeted [guntrap] [cleanup]",
+            "HookName": "CanBeTargeted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GunTrap",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CheckTrigger",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.Single",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "fVR6Tmdto1NGL3rNoXXUlquuUk03is5WzftBZY9u3H4=",
+            "BaseHookName": "CanBeTargeted [guntrap]",
+            "HookCategory": "_PoolPatches"
+          }
         }
       ],
       "Modifiers": [

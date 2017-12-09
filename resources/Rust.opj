@@ -5790,7 +5790,7 @@
               {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Facepunch.System|Facepunch.Pool|FreeList[UnityEngine|UnityEngine.RaycastHit]"
+                "Operand": "Facepunch.System|Facepunch.Pool|FreeList[Assembly-CSharp|BasePlayer]"
               }
             ],
             "HookTypeName": "Modify",
@@ -5834,7 +5834,7 @@
               {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Facepunch.System|Facepunch.Pool|FreeList[UnityEngine|UnityEngine.RaycastHit]"
+                "Operand": "Facepunch.System|Facepunch.Pool|FreeList[Assembly-CSharp|BasePlayer]"
               }
             ],
             "HookTypeName": "Modify",

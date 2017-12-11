@@ -3,9 +3,8 @@ using Facepunch.Extend;
 using Network;
 using Oxide.Core;
 using Oxide.Core.Extensions;
-using Oxide.Core.RemoteConsole;
+using Oxide.Core.Unity;
 using Oxide.Plugins;
-using Rust;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -165,7 +164,7 @@ namespace Oxide.Game.Rust
                 var gameTime = (TOD_Sky.Instance?.Cycle?.DateTime != null ? TOD_Sky.Instance.Cycle.DateTime : DateTime.Now).ToString("h:mm tt");
                 return $"{gameTime.ToLower()}, {ConVar.Server.level} [{ConVar.Server.worldsize}, {ConVar.Server.seed}]";
             };
-            Interface.Oxide.ServerConsole.Status3Right = () => $"Oxide.Rust {AssemblyVersion} for {BuildInfo.Current.Build.Number} ({Protocol.printable})";
+            Interface.Oxide.ServerConsole.Status3Right = () => $"Oxide.Rust {AssemblyVersion}";
             Interface.Oxide.ServerConsole.Status3RightColor = ConsoleColor.Yellow;
 
             Interface.Oxide.ServerConsole.Input += ServerConsoleOnInput;
@@ -184,46 +183,11 @@ namespace Oxide.Game.Rust
             if (!string.IsNullOrEmpty(input)) ConsoleSystem.Run(ConsoleSystem.Option.Server, input);
         }
 
-        private static void HandleLog(string message, string stackTrace, LogType type)
+        private static void HandleLog(string message, string stackTrace, LogType logType)
         {
             if (string.IsNullOrEmpty(message) || Filter.Any(message.Contains)) return;
 
-            var color = ConsoleColor.Gray;
-            var remoteType = "generic";
-
-            if (type == LogType.Warning)
-            {
-                color = ConsoleColor.Yellow;
-                remoteType = "warning";
-            }
-            else if (type == LogType.Error)
-            {
-                color = ConsoleColor.Red;
-                remoteType = "error";
-            }
-            else if (type == LogType.Exception)
-            {
-                color = ConsoleColor.Red;
-                remoteType = "error";
-            }
-            else if (type == LogType.Assert)
-            {
-                color = ConsoleColor.Red;
-                remoteType = "error";
-            }
-            else if (message.ToLower().StartsWith("[chat]"))
-            {
-                remoteType = "chat";
-            }
-
-            Interface.Oxide.ServerConsole.AddMessage(message, color);
-            Interface.Oxide.RemoteConsole.SendMessage(new RemoteMessage
-            {
-                Message = message,
-                Identifier = 0,
-                Type = remoteType,
-                Stacktrace = stackTrace
-            });
+            Interface.Oxide.RootLogger.HandleMessage(message, stackTrace, logType.ToLogType());
         }
     }
 }

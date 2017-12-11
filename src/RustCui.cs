@@ -119,6 +119,23 @@ namespace Oxide.Game.Rust.Cui
             return name;
         }
 
+        public string Add(CuiInputField inputField, string parent = "Hud", string name = null)
+        {
+            if (string.IsNullOrEmpty(name)) name = CuiHelper.GetGuid();
+            Add(new CuiElement
+            {
+                Name = name,
+                Parent = parent,
+                FadeOut = inputField.FadeOut,
+                Components =
+                {
+                    inputField.InputField,
+                    inputField.RectTransform
+                }
+            });
+            return name;
+        }
+
         public string ToJson() => ToString();
 
         public override string ToString() => CuiHelper.ToJson(this);
@@ -144,6 +161,13 @@ namespace Oxide.Game.Rust.Cui
     public class CuiLabel
     {
         public CuiTextComponent Text { get; } = new CuiTextComponent();
+        public CuiRectTransformComponent RectTransform { get; } = new CuiRectTransformComponent();
+        public float FadeOut { get; set; }
+    }
+
+    public class CuiInputField
+    {
+        public CuiInputFieldComponent InputField { get; } = new CuiInputFieldComponent();
         public CuiRectTransformComponent RectTransform { get; } = new CuiRectTransformComponent();
         public float FadeOut { get; set; }
     }
@@ -434,5 +458,666 @@ namespace Oxide.Game.Rust.Cui
         public override bool CanConvert(Type objectType) => objectType == typeof(ICuiComponent);
 
         public override bool CanWrite => false;
+    }
+
+    /// <summary>
+    /// UI Color object
+    /// </summary>
+    public class CuiColor
+    {
+        public byte Red { get; set; } = 0;
+        public byte Green { get; set; } = 0;
+        public byte Blue { get; set; } = 0;
+        public float Alpha { get; set; } = 0f;
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public CuiColor() { }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="red">Red color value</param>
+        /// <param name="green">Green color value</param>
+        /// <param name="blue">Blue color value</param>
+        /// <param name="alpha">Opacity</param>
+        public CuiColor(byte red, byte green, byte blue, float alpha)
+        {
+            Red = red;
+            Green = green;
+            Blue = blue;
+            Alpha = alpha;
+        }
+
+        /// <summary>
+        /// Transform the values to a CuiColor string
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString() => $"{(double)Red / 255} {(double)Green / 255} {(double)Blue / 255} {Alpha}";
+    }
+
+    /// <summary>
+    /// Element position object
+    /// </summary>
+    public class CuiRect
+    {
+        public float Top { get; set; } = 0f;
+        public float Bottom { get; set; } = 0f;
+        public float Left { get; set; } = 0f;
+        public float Right { get; set; } = 0f;
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public CuiRect() { }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="top">Relative top position</param>
+        /// <param name="bottom">Relative bottom position</param>
+        /// <param name="left">Relative left position</param>
+        /// <param name="right">Relative right position</param>
+        public CuiRect(float top, float bottom, float left, float right)
+        {
+            Top = top;
+            Bottom = bottom;
+            Left = left;
+            Right = right;
+        }
+
+        /// <summary>
+        /// Return Left-Bottom as a string
+        /// </summary>
+        /// <returns></returns>
+        public string GetPosMin() => $"{Left} {Bottom}";
+        /// <summary>
+        /// Return Right-Top as a string
+        /// </summary>
+        /// <returns></returns>
+        public string GetPosMax() => $"{Right} {Top}";
+    }
+
+    /// <summary>
+    /// Predefined default color set
+    /// </summary>
+    public class CuiDefaultColors
+    {
+        public static CuiColor Black { get; } = new CuiColor() { Red = 0, Green = 0, Blue = 0, Alpha = 1f };
+        public static CuiColor Maroon { get; } = new CuiColor() { Red = 128, Green = 0, Blue = 0, Alpha = 1f };
+        public static CuiColor Green { get; } = new CuiColor() { Red = 0, Green = 128, Blue = 0, Alpha = 1f };
+        public static CuiColor Olive { get; } = new CuiColor() { Red = 128, Green = 128, Blue = 0, Alpha = 1f };
+        public static CuiColor Navy { get; } = new CuiColor() { Red = 0, Green = 0, Blue = 128, Alpha = 1f };
+        public static CuiColor Purple { get; } = new CuiColor() { Red = 128, Green = 0, Blue = 128, Alpha = 1f };
+        public static CuiColor Teal { get; } = new CuiColor() { Red = 0, Green = 128, Blue = 128, Alpha = 1f };
+        public static CuiColor Gray { get; } = new CuiColor() { Red = 128, Green = 128, Blue = 128, Alpha = 1f };
+        public static CuiColor Silver { get; } = new CuiColor() { Red = 192, Green = 192, Blue = 192, Alpha = 1f };
+        public static CuiColor Red { get; } = new CuiColor() { Red = 255, Green = 0, Blue = 0, Alpha = 1f };
+        public static CuiColor Lime { get; } = new CuiColor() { Red = 0, Green = 255, Blue = 0, Alpha = 1f };
+        public static CuiColor Yellow { get; } = new CuiColor() { Red = 255, Green = 255, Blue = 0, Alpha = 1f };
+        public static CuiColor Blue { get; } = new CuiColor() { Red = 0, Green = 0, Blue = 255, Alpha = 1f };
+        public static CuiColor Fuchsia { get; } = new CuiColor() { Red = 255, Green = 0, Blue = 255, Alpha = 1f };
+        public static CuiColor Aqua { get; } = new CuiColor() { Red = 0, Green = 255, Blue = 255, Alpha = 1f };
+        public static CuiColor LightGray { get; } = new CuiColor() { Red = 211, Green = 211, Blue = 211, Alpha = 1f };
+        public static CuiColor MediumGray { get; } = new CuiColor() { Red = 160, Green = 160, Blue = 164, Alpha = 1f };
+        public static CuiColor DarkGray { get; } = new CuiColor() { Red = 169, Green = 169, Blue = 169, Alpha = 1f };
+        public static CuiColor White { get; } = new CuiColor() { Red = 255, Green = 255, Blue = 255, Alpha = 1f };
+        public static CuiColor MoneyGreen { get; } = new CuiColor() { Red = 192, Green = 220, Blue = 192, Alpha = 1f };
+        public static CuiColor SkyBlue { get; } = new CuiColor() { Red = 166, Green = 202, Blue = 240, Alpha = 1f };
+        public static CuiColor Cream { get; } = new CuiColor() { Red = 255, Green = 251, Blue = 240, Alpha = 1f };
+
+        /// <summary>
+        /// Default background color
+        /// </summary>
+        public static CuiColor Background { get; } = new CuiColor() { Red = 240, Green = 240, Blue = 240, Alpha = 0.3f };
+        /// <summary>
+        /// Medium-dark background color
+        /// </summary>
+        public static CuiColor BackgroundMedium { get; } = new CuiColor() { Red = 76, Green = 74, Blue = 72, Alpha = 0.83f };
+        /// <summary>
+        /// Dark background color
+        /// </summary>
+        public static CuiColor BackgroundDark { get; } = new CuiColor() { Red = 42, Green = 42, Blue = 42, Alpha = 0.93f };
+        /// <summary>
+        /// Default button color
+        /// </summary>
+        public static CuiColor Button { get; } = new CuiColor() { Red = 42, Green = 42, Blue = 42, Alpha = 0.9f };
+        /// <summary>
+        /// Inactive button color
+        /// </summary>
+        public static CuiColor ButtonInactive { get; } = new CuiColor() { Red = 168, Green = 168, Blue = 168, Alpha = 0.9f };
+        /// <summary>
+        /// Accept button color
+        /// </summary>
+        public static CuiColor ButtonAccept { get; } = new CuiColor() { Red = 0, Green = 192, Blue = 0, Alpha = 0.9f };
+        /// <summary>
+        /// Decline/Cancel button color
+        /// </summary>
+        public static CuiColor ButtonDecline { get; } = new CuiColor() { Red = 192, Green = 0, Blue = 0, Alpha = 0.9f };
+        /// <summary>
+        /// Default text color ( Black )
+        /// </summary>
+        public static CuiColor Text { get; } = new CuiColor() { Red = 0, Green = 0, Blue = 0, Alpha = 1f };
+        /// <summary>
+        /// Alternate default text color ( White )
+        /// </summary>
+        public static CuiColor TextAlt { get; } = new CuiColor() { Red = 255, Green = 255, Blue = 255, Alpha = 1f };
+        /// <summary>
+        /// Muted text color
+        /// </summary>
+        public static CuiColor TextMuted { get; } = new CuiColor() { Red = 147, Green = 147, Blue = 147, Alpha = 1f };
+        /// <summary>
+        /// Title text color ( Red-brown )
+        /// </summary>
+        public static CuiColor TextTitle { get; } = new CuiColor() { Red = 206, Green = 66, Blue = 43, Alpha = 1f };
+
+        /// <summary>
+        /// Fully opaque color
+        /// </summary>
+        public static CuiColor None { get; } = new CuiColor() { Red = 0, Green = 0, Blue = 0, Alpha = 0f };
+    }
+
+    /// <summary>
+    /// Rust UI object
+    /// </summary>
+    public class Cui
+    {
+        /// <summary>
+        /// The default Hud parent name
+        /// </summary>
+        public const string PARENT_HUD = "Hud";
+        /// <summary>
+        /// The default Overlay parent name
+        /// </summary>
+        public const string PARENT_OVERLAY = "Overlay";
+
+        /// <summary>
+        /// The main panel name
+        /// </summary>
+        public string MainPanelName { get; set; }
+
+        private BasePlayer player;
+        private CuiElementContainer container = new CuiElementContainer();
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="player">The player this object is meant for</param>
+        public Cui(BasePlayer player)
+        {
+            this.player = player;
+        }
+
+        /// <summary>
+        /// Add a new panel
+        /// </summary>
+        /// <param name="parent">The parent object name</param>
+        /// <param name="anchor">The object's relative position</param>
+        /// <param name="cursorEnabled">The panel requires the cursor</param>
+        /// <param name="fadeOut">Fade-out time</param>
+        /// <param name="color">Image color</param>
+        /// <param name="sprite">Image sprite</param>
+        /// <param name="material">Image material</param>
+        /// <param name="imageType">Image type</param>
+        /// <param name="png">Image PNG file path</param>
+        /// <param name="fadeIn">Image fade-in time</param>
+        /// <returns>New object name</returns>
+        public string AddPanel(string parent,
+                               CuiRect anchor,
+                               bool cursorEnabled,
+                               float fadeOut,
+                               CuiColor color = null,
+                               string sprite = "Assets/Content/UI/UI.Background.Tile.psd",
+                               string material = "Assets/Icons/IconMaterial.mat",
+                               Image.Type imageType = Image.Type.Simple,
+                               string png = null,
+                               float fadeIn = 0f)
+        {
+            CuiRect offset = new CuiRect();
+            return AddRawPanel(parent, anchor, offset, cursorEnabled, fadeOut, color, sprite, material, imageType, png, fadeIn, null, null, null, null, null, 0f);
+        }
+
+        /// <summary>
+        /// Add a new panel
+        /// </summary>
+        /// <param name="parent">The parent object name</param>
+        /// <param name="anchor">The object's relative position</param>
+        /// <param name="offset">The object's relative offset</param>
+        /// <param name="cursorEnabled">The panel requires the cursor</param>
+        /// <param name="fadeOut">Fade-out time</param>
+        /// <param name="color">Image color</param>
+        /// <param name="sprite">Image sprite</param>
+        /// <param name="material">Image material</param>
+        /// <param name="imageType">Image type</param>
+        /// <param name="png">Image PNG file path</param>
+        /// <param name="fadeIn">Image fade-in time</param>
+        /// <returns>New object name</returns>
+        public string AddPanel(string parent,
+                               CuiRect anchor,
+                               CuiRect offset,
+                               bool cursorEnabled,
+                               float fadeOut,
+                               CuiColor color = null,
+                               string sprite = "Assets/Content/UI/UI.Background.Tile.psd",
+                               string material = "Assets/Icons/IconMaterial.mat",
+                               Image.Type imageType = Image.Type.Simple,
+                               string png = null,
+                               float fadeIn = 0f)
+        {
+            return AddRawPanel(parent, anchor, offset, cursorEnabled, fadeOut, color, sprite, material, imageType, png, fadeIn, null, null, null, null, null, 0f);
+        }
+
+        /// <summary>
+        /// Add a new panel
+        /// </summary>
+        /// <param name="parent">The parent object name</param>
+        /// <param name="anchor">The object's relative position</param>
+        /// <param name="cursorEnabled">The panel requires the cursor</param>
+        /// <param name="fadeOut">Fade-out time</param>
+        /// <param name="color">Image color</param>
+        /// <param name="sprite">Image sprite</param>
+        /// <param name="material">Image material</param>
+        /// <param name="imageType">Image type</param>
+        /// <param name="png">Image PNG file path</param>
+        /// <param name="fadeIn">Image fade-in time</param>
+        /// <param name="rawColor">Raw image color</param>
+        /// <param name="rawSprite">Raw image sprite</param>
+        /// <param name="rawMaterial">Raw image material</param>
+        /// <param name="rawUrl">Raw image file url</param>
+        /// <param name="rawPng">Raw image PNG file path</param>
+        /// <param name="rawFadeIn">Raw image fade-in time</param>
+        /// <returns>New object name</returns>
+        public string AddRawPanel(string parent,
+                               CuiRect anchor,
+                               bool cursorEnabled,
+                               float fadeOut,
+                               CuiColor color = null,
+                               string sprite = "Assets/Content/UI/UI.Background.Tile.psd",
+                               string material = "Assets/Icons/IconMaterial.mat",
+                               Image.Type imageType = Image.Type.Simple,
+                               string png = null,
+                               float fadeIn = 0f,
+                               CuiColor rawColor = null,
+                               string rawSprite = "Assets/Icons/rust.png",
+                               string rawMaterial = null,
+                               string rawUrl = null,
+                               string rawPng = null,
+                               float rawFadeIn = 0f)
+        {
+            CuiRect offset = new CuiRect();
+            return AddRawPanel(parent, anchor, offset, cursorEnabled, fadeOut, color, sprite, material, imageType, png, fadeIn, rawColor, rawSprite, rawMaterial, rawUrl, rawPng, rawFadeIn);
+        }
+
+        /// <summary>
+        /// Add a new panel
+        /// </summary>
+        /// <param name="parent">The parent object name</param>
+        /// <param name="anchor">The object's relative position</param>
+        /// <param name="offset">The object's relative offset</param>
+        /// <param name="cursorEnabled">The panel requires the cursor</param>
+        /// <param name="fadeOut">Fade-out time</param>
+        /// <param name="color">Image color</param>
+        /// <param name="sprite">Image sprite</param>
+        /// <param name="material">Image material</param>
+        /// <param name="imageType">Image type</param>
+        /// <param name="png">Image PNG file path</param>
+        /// <param name="fadeIn">Image fade-in time</param>
+        /// <param name="rawColor">Raw image color</param>
+        /// <param name="rawSprite">Raw image sprite</param>
+        /// <param name="rawMaterial">Raw image material</param>
+        /// <param name="rawUrl">Raw image file url</param>
+        /// <param name="rawPng">Raw image PNG file path</param>
+        /// <param name="rawFadeIn">Raw image fade-in time</param>
+        /// <returns>New object name</returns>
+        public string AddRawPanel(string parent,
+                               CuiRect anchor,
+                               CuiRect offset,
+                               bool cursorEnabled,
+                               float fadeOut,
+                               CuiColor color = null,
+                               string sprite = "Assets/Content/UI/UI.Background.Tile.psd",
+                               string material = "Assets/Icons/IconMaterial.mat",
+                               Image.Type imageType = Image.Type.Simple,
+                               string png = null,
+                               float fadeIn = 0f,
+                               CuiColor rawColor = null,
+                               string rawSprite = "Assets/Icons/rust.png",
+                               string rawMaterial = null,
+                               string rawUrl = null,
+                               string rawPng = null,
+                               float rawFadeIn = 0f)
+        {
+            CuiPanel panel = new CuiPanel()
+            {
+                Image = null,
+                RectTransform =
+                {
+                    AnchorMin = anchor.GetPosMin(),
+                    AnchorMax = anchor.GetPosMax(),
+                    OffsetMin = offset.GetPosMin(),
+                    OffsetMax = offset.GetPosMax()
+                },
+                CursorEnabled = cursorEnabled,
+                FadeOut = fadeOut
+            };
+
+            if (!string.IsNullOrEmpty(sprite) ||
+                !string.IsNullOrEmpty(material) ||
+                !string.IsNullOrEmpty(png) ||
+                (color != null))
+            {
+                panel.Image = new CuiImageComponent()
+                {
+                    Sprite = sprite,
+                    Material = material,
+                    Color = color.ToString(),
+                    ImageType = imageType,
+                    Png = png,
+                    FadeIn = fadeIn
+                };
+            }
+
+            if (!string.IsNullOrEmpty(rawSprite) ||
+                !string.IsNullOrEmpty(rawMaterial) ||
+                !string.IsNullOrEmpty(rawUrl) ||
+                !string.IsNullOrEmpty(rawPng) ||
+                (rawColor != null))
+            {
+                panel.RawImage = new CuiRawImageComponent()
+                {
+                    Sprite = rawSprite,
+                    Material = rawMaterial,
+                    Color = rawColor.ToString(),
+                    Url = rawUrl,
+                    Png = rawPng,
+                    FadeIn = rawFadeIn
+                };
+            }
+
+            return container.Add(panel, parent);
+        }
+
+        /// <summary>
+        /// Add a new label
+        /// </summary>
+        /// <param name="parent">The parent object name</param>
+        /// <param name="anchor">The object's relative position</param>
+        /// <param name="fadeOut">Fade-out time</param>
+        /// <param name="color">Text color</param>
+        /// <param name="text">Text to show</param>
+        /// <param name="fontSize">Font size</param>
+        /// <param name="align">Text alignment</param>
+        /// <param name="font">Text font</param>
+        /// <param name="fadeIn">Fade-in time</param>
+        /// <returns>New object name</returns>
+        public string AddLabel(string parent,
+                               CuiRect anchor,
+                               float fadeOut,
+                               CuiColor color,
+                               string text,
+                               int fontSize = 14,
+                               TextAnchor align = TextAnchor.UpperLeft,
+                               string font = "RobotoCondensed-Bold.ttf",
+                               float fadeIn = 0f)
+        {
+            CuiRect offset = new CuiRect();
+            return AddLabel(parent, anchor, offset, fadeOut, color, text, fontSize, align, font, fadeIn);
+        }
+
+        /// <summary>
+        /// Add a new label
+        /// </summary>
+        /// <param name="parent">The parent object name</param>
+        /// <param name="anchor">The object's relative position</param>
+        /// <param name="offset">The object's relative offset</param>
+        /// <param name="fadeOut">Fade-out time</param>
+        /// <param name="color">Text color</param>
+        /// <param name="text">Text to show</param>
+        /// <param name="fontSize">Font size</param>
+        /// <param name="align">Text alignment</param>
+        /// <param name="font">Text font</param>
+        /// <param name="fadeIn">Fade-in time</param>
+        /// <returns>New object name</returns>
+        public string AddLabel(string parent,
+                               CuiRect anchor,
+                               CuiRect offset,
+                               float fadeOut,
+                               CuiColor color,
+                               string text,
+                               int fontSize = 14,
+                               TextAnchor align = TextAnchor.UpperLeft,
+                               string font = "RobotoCondensed-Bold.ttf",
+                               float fadeIn = 0f)
+        {
+            return container.Add(new CuiLabel()
+            {
+                Text =
+                {
+                    Text = text,
+                    FontSize = fontSize,
+                    Font = font,
+                    Align = align,
+                    Color = color.ToString(),
+                    FadeIn = fadeIn
+                },
+                RectTransform =
+                {
+                    AnchorMin = anchor.GetPosMin(),
+                    AnchorMax = anchor.GetPosMax(),
+                    OffsetMin = offset.GetPosMin(),
+                    OffsetMax = offset.GetPosMax()
+                },
+                FadeOut = fadeOut
+            }, parent);
+        }
+
+        /// <summary>
+        /// Add a new button
+        /// </summary>
+        /// <param name="parent">The parent object name</param>
+        /// <param name="anchor">The object's relative position</param>
+        /// <param name="fadeOut">Fade-out time</param>
+        /// <param name="buttonColor">Button background color</param>
+        /// <param name="textColor">Text color</param>
+        /// <param name="text">Text to show</param>
+        /// <param name="command">OnClick event callback command</param>
+        /// <param name="close">Panel to close</param>
+        /// <param name="fontSize">Font size</param>
+        /// <param name="align">Text alignment</param>
+        /// <param name="font">Text font</param>
+        /// <param name="sprite">Image sprite</param>
+        /// <param name="material">Image material</param>
+        /// <param name="imageType">Image type</param>
+        /// <param name="fadeIn">Fade-in time</param>
+        /// <returns>New object name</returns>
+        public string AddButton(string parent,
+                                CuiRect anchor,
+                                float fadeOut,
+                                CuiColor buttonColor,
+                                CuiColor textColor,
+                                string text,
+                                string command = "",
+                                string close = "",
+                                int fontSize = 14,
+                                TextAnchor align = TextAnchor.MiddleCenter,
+                                string font = "RobotoCondensed-Bold.ttf",
+                                string sprite = "Assets/Content/UI/UI.Background.Tile.psd",
+                                string material = "Assets/Icons/IconMaterial.mat",
+                                Image.Type imageType = Image.Type.Simple,
+                                float fadeIn = 0f)
+        {
+            CuiRect offset = new CuiRect();
+            return AddButton(parent, anchor, offset, fadeOut, buttonColor, textColor, text, command, close, fontSize, align, font, sprite, material, imageType, fadeIn);
+        }
+
+        /// <summary>
+        /// Add a new button
+        /// </summary>
+        /// <param name="parent">The parent object name</param>
+        /// <param name="anchor">The object's relative position</param>
+        /// <param name="offset">The object's relative offset</param>
+        /// <param name="fadeOut">Fade-out time</param>
+        /// <param name="buttonColor">Button background color</param>
+        /// <param name="textColor">Text color</param>
+        /// <param name="text">Text to show</param>
+        /// <param name="command">OnClick event callback command</param>
+        /// <param name="close">Panel to close</param>
+        /// <param name="fontSize">Font size</param>
+        /// <param name="align">Text alignment</param>
+        /// <param name="font">Text font</param>
+        /// <param name="sprite">Image sprite</param>
+        /// <param name="material">Image material</param>
+        /// <param name="imageType">Image type</param>
+        /// <param name="fadeIn">Fade-in time</param>
+        /// <returns>New object name</returns>
+        public string AddButton(string parent,
+                                CuiRect anchor,
+                                CuiRect offset,
+                                float fadeOut,
+                                CuiColor buttonColor,
+                                CuiColor textColor,
+                                string text,
+                                string command = "",
+                                string close = "",
+                                int fontSize = 14,
+                                TextAnchor align = TextAnchor.MiddleCenter,
+                                string font = "RobotoCondensed-Bold.ttf",
+                                string sprite = "Assets/Content/UI/UI.Background.Tile.psd",
+                                string material = "Assets/Icons/IconMaterial.mat",
+                                Image.Type imageType = Image.Type.Simple,
+                                float fadeIn = 0f)
+        {
+            return container.Add(new CuiButton()
+            {
+                Button =
+                {
+                    Command = command ??"",
+                    Close = close ??"",
+                    Sprite = sprite,
+                    Material = material,
+                    Color = buttonColor.ToString(),
+                    ImageType = imageType,
+                    FadeIn = fadeIn
+                },
+                RectTransform =
+                {
+                    AnchorMin = anchor.GetPosMin(),
+                    AnchorMax = anchor.GetPosMax(),
+                    OffsetMin = offset.GetPosMin(),
+                    OffsetMax = offset.GetPosMax()
+                },
+                Text =
+                {
+                    Text = text,
+                    FontSize = fontSize,
+                    Font = font,
+                    Align = align,
+                    Color = textColor.ToString(),
+                    FadeIn = fadeIn
+                },
+                FadeOut = fadeOut
+            }, parent);
+        }
+
+        /// <summary>
+        /// Add a new input field
+        /// </summary>
+        /// <param name="parent">The parent object name</param>
+        /// <param name="anchor">The object's relative position</param>
+        /// <param name="fadeOut">Fade-out time</param>
+        /// <param name="color">Text color</param>
+        /// <param name="text">Text to show</param>
+        /// <param name="command">OnChanged event callback command</param>
+        /// <param name="fontSize">Font size</param>
+        /// <param name="align">Text alignment</param>
+        /// <param name="font">Text font</param>
+        /// <returns>New object name</returns>
+        public string AddInputField(string parent,
+                                    CuiRect anchor,
+                                    float fadeOut,
+                                    CuiColor color,
+                                    string text = "Text",
+                                    string command = "",
+                                    int fontSize = 14,
+                                    TextAnchor align = TextAnchor.MiddleLeft,
+                                    string font = "RobotoCondensed-Bold.ttf")
+        {
+            CuiRect offset = new CuiRect();
+            return AddInputField(parent, anchor, offset, fadeOut, color, text, command, fontSize, align, font);
+        }
+
+        /// <summary>
+        /// Add a new input field
+        /// </summary>
+        /// <param name="parent">The parent object name</param>
+        /// <param name="anchor">The object's relative position</param>
+        /// <param name="offset">The object's relative offset</param>
+        /// <param name="fadeOut">Fade-out time</param>
+        /// <param name="color">Text color</param>
+        /// <param name="text">Text to show</param>
+        /// <param name="command">OnChanged event callback command</param>
+        /// <param name="fontSize">Font size</param>
+        /// <param name="align">Text alignment</param>
+        /// <param name="font">Text font</param>
+        /// <returns>New object name</returns>
+        public string AddInputField(string parent,
+                                    CuiRect anchor,
+                                    CuiRect offset,
+                                    float fadeOut,
+                                    CuiColor color,
+                                    string text = "Text",
+                                    string command = "",
+                                    int fontSize = 14,
+                                    TextAnchor align = TextAnchor.MiddleLeft,
+                                    string font = "RobotoCondensed-Bold.ttf")
+        {
+            return container.Add(new CuiInputField()
+            {
+                InputField =
+                {
+                    Text = text,
+                    FontSize = fontSize,
+                    Font = font,
+                    Align = align,
+                    Color = color.ToString(),
+                    CharsLimit = 100,
+                    Command = command ??"",
+                    IsPassword = false
+                },
+                RectTransform =
+                {
+                    AnchorMin = anchor.GetPosMin(),
+                    AnchorMax = anchor.GetPosMax(),
+                    OffsetMin = offset.GetPosMin(),
+                    OffsetMax = offset.GetPosMax()
+                },
+                FadeOut = fadeOut
+            }, parent);
+        }
+
+        /// <summary>
+        /// Draw the UI to the player's client
+        /// </summary>
+        /// <returns>Success</returns>
+        public bool Draw()
+        {
+            if (!string.IsNullOrEmpty(MainPanelName))
+                return CuiHelper.AddUi(player, container);
+
+            return false;
+        }
+
+        /// <summary>
+        /// Remove the UI from the player's client
+        /// </summary>
+        /// <returns>Success</returns>
+        public bool Destroy()
+        {
+            if (!string.IsNullOrEmpty(MainPanelName))
+                return CuiHelper.DestroyUi(player, MainPanelName);
+
+            return false;
+        }
     }
 }

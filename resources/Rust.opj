@@ -5856,6 +5856,137 @@
             "BaseHookName": "CanBeTargeted [guntrap]",
             "HookCategory": "_PoolPatches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 5,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnLiftUse",
+            "HookName": "OnLiftUse",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ProceduralLift",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_UseLift",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "m4kJISAVE+VWXovQ+yFVViLnB7YY5qCsmkFa8tECmhg=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 16,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanLootEntity [corpse]",
+            "HookName": "CanLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "LootableCorpse",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_LootCorpse",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "8XJF5gH7PqM7Zf+EHaGLEDWBg0AAsHDBZGHAv5J7SK0=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "CanLootEntity [resource container]",
+            "HookName": "CanLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ResourceContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "StartLootingContainer",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "NVH08AZcqYVEeC1w/cfVXvD04mdvkTeQTVHui4/WMSo=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanLootEntity [drop container]",
+            "HookName": "CanLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DroppedItemContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_OpenLoot",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "czTl8kHR9/+861ZgoLcw/opcdEJ6TYciYhearwwCNQc=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanLootEntity [storage container]",
+            "HookName": "CanLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "StorageContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerOpenLoot",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.String"
+              ]
+            },
+            "MSILHash": "2yj+5PAsYYM7zWaKZo4D84R6SCUNZZpNNe5r+JvwL1w=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

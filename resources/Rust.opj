@@ -5987,6 +5987,33 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCreateConstruction",
+            "HookName": "OnCreateConstruction",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Construction",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CreateConstruction",
+              "ReturnType": "BaseEntity",
+              "Parameters": [
+                "Construction/Target",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "0nt6a6YwFN0NIe9DN1vTL1bwC8NGPpMGvTTzDYb3wXw=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

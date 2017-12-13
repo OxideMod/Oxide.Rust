@@ -5991,28 +5991,28 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
+            "InjectionIndex": 60,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
-            "ArgumentString": null,
+            "ArgumentString": "",
             "HookTypeName": "Simple",
-            "Name": "OnCreateConstruction",
-            "HookName": "OnCreateConstruction",
+            "Name": "CanBuildEntity",
+            "HookName": "CanBuildEntity",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Construction",
+            "TypeName": "Planner",
             "Flagged": false,
             "Signature": {
               "Exposure": 2,
-              "Name": "CreateConstruction",
-              "ReturnType": "BaseEntity",
+              "Name": "DoBuild",
+              "ReturnType": "System.Void",
               "Parameters": [
                 "Construction/Target",
-                "System.Boolean"
+                "Construction"
               ]
             },
-            "MSILHash": "0nt6a6YwFN0NIe9DN1vTL1bwC8NGPpMGvTTzDYb3wXw=",
-            "BaseHookName": null,
-            "HookCategory": null
+            "MSILHash": "TQjRLAK+zd34JTrLbeo5E1BjXsGlf7ebbmiGabAXBco=",
+            "BaseHookName": "OnEntityBuilt",
+            "HookCategory": "Structure"
           }
         }
       ],

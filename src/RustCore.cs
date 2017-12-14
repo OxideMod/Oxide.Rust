@@ -216,60 +216,6 @@ namespace Oxide.Game.Rust
             args = arglist.ToArray();
         }
 
-        /// <summary>
-        /// Called when a server command was run
-        /// </summary>
-        /// <param name="arg"></param>
-        /// <returns></returns>
-        [HookMethod("IOnServerCommand")]
-        private object IOnServerCommand(ConsoleSystem.Arg arg)
-        {
-            if (arg?.cmd == null) return null;
-            if (Interface.Call("OnServerCommand", arg) != null) return true;
-
-            // Get the args
-            var str = arg.GetString(0);
-            if (string.IsNullOrEmpty(str)) return null;
-
-            // Check if command is from a player
-            var player = arg.Connection?.player as BasePlayer;
-            if (player == null) return null;
-
-            // Get the full command
-            var message = str.TrimStart('/');
-
-            // Parse it
-            string cmd;
-            string[] args;
-            ParseCommand(message, out cmd, out args);
-            if (cmd == null) return null;
-
-            // Get the covalence player
-            var iplayer = player.IPlayer;
-            if (iplayer == null) return null;
-
-            // Is the command blocked?
-            var blockedSpecific = Interface.Call("OnPlayerCommand", arg);
-            var blockedCovalence = Interface.Call("OnUserCommand", iplayer, cmd, args);
-            if (blockedSpecific != null || blockedCovalence != null) return true;
-
-            // Is it a chat command?
-            if (arg.cmd.FullName != "chat.say") return null;
-            if (str[0] != '/') return null; // TODO: Return if no arguments given
-
-            // Is it a valid chat command?
-            if (!Covalence.CommandSystem.HandleChatMessage(iplayer, str) && !cmdlib.HandleChatCommand(player, cmd, args))
-            {
-                if (!Interface.Oxide.Config.Options.Modded) return null;
-
-                iplayer.Reply(string.Format(lang.GetMessage("UnknownCommand", this, iplayer.Id), cmd));
-                arg.ReplyWith(string.Empty);
-                return true;
-            }
-
-            return null;
-        }
-
         #endregion Command Handling
 
         #region Helpers

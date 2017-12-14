@@ -672,7 +672,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "Xs8iCjz1lvs+nma2maEHq8Z2hMlZqXLwvBUVA8Upbt8=",
+            "MSILHash": "ihmI9V2gfDcAP5d2oEawFW+MTsy3iyGPT74INqwscDE=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -831,7 +831,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "UMgyUsdOrSDIIE1dRDlPa7WLpfT4h1eT0lk/Ur1jj/c=",
+            "MSILHash": "NxW7PimIA/kFJ2U1to+imAn61cYVBpVVQKQi8v6viWc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -857,7 +857,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "gM9uJGSLIjAZr8Kj3qpzLFYMdhgOCb+pixynk4vqX5k=",
+            "MSILHash": "Apqw1Zk19MkeijLP/HtfdIIHTKywKdseMaMNU3txJCo=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -1537,13 +1537,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 149,
+            "InjectionIndex": 100,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 2,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnPlayerChat",
-            "HookName": "OnPlayerChat",
+            "Name": "IOnPlayerChat [internal]",
+            "HookName": "IOnPlayerChat",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ConVar.Chat",
             "Flagged": false,
@@ -2378,7 +2378,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "LoJkq7hlgcNkOQhl5bNoZMB0cdl7fvx3/aGQ8LbEYgE=",
+            "MSILHash": "q1VS25gPzEooherRgkvrtVFqgkoz1qT73DNkpgB7HLc=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2782,7 +2782,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "RmcQ9V4PhT6Blg3IedTVlyZ5W/q91MlLgDSNbAjKBeM=",
+            "MSILHash": "nUU2jmGRs3eAgnw9BckbyNVtrKQIQnhrKMhqd72N3KI=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -3520,7 +3520,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "0Wwf57TLa14iziWvpZ7bSPeix8DYNmElYcLMDkfyOi0=",
+            "MSILHash": "RHL0gc+5NI+6m7UGt4+2+CRyoYCk7IuNnsTZk5JX+y8=",
             "BaseHookName": null,
             "HookCategory": "Vending"
           }
@@ -6649,27 +6649,6 @@
             ]
           },
           "MSILHash": "kVL92pigX7ac3yT3u4K9NlX/5KUf6GPmdyvaftjepCw="
-        },
-        {
-          "Name": "BasePlayer::GetBuildingPrivilege",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BasePlayer",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GetBuildingPrivilege",
-            "FullTypeName": "BuildingPrivlidge",
-            "Parameters": [
-              "OBB"
-            ]
-          },
-          "MSILHash": "VrR7NFBCmbTtHEJqCwK+Lmr38FTPG/AnvUVex4BaNBo="
         }
       ],
       "Fields": [

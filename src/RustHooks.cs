@@ -1,5 +1,6 @@
 ﻿using Network;
 using Oxide.Core;
+using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using Oxide.Core.RemoteConsole;
 using Oxide.Core.ServerConsole;
@@ -88,6 +89,17 @@ namespace Oxide.Game.Rust
                 ConsoleSystem.Run(options, str, value);
             }
             return false;
+        }
+
+        /// <summary>
+        /// Called when a server command was run
+        /// </summary>
+        /// <param name="arg"></param>
+        /// <returns></returns>
+        [HookMethod("IOnServerCommand")]
+        private object IOnServerCommand(ConsoleSystem.Arg arg)
+        {
+            return arg?.cmd.FullName != "chat.say" ? Interface.Call("OnServerCommand", arg) : null;
         }
 
         #endregion Server Hooks
@@ -271,11 +283,47 @@ namespace Oxide.Game.Rust
         /// </summary>
         /// <param name="arg"></param>
         /// <returns></returns>
-        [HookMethod("OnPlayerChat")]
-        private object OnPlayerChat(ConsoleSystem.Arg arg)
+        [HookMethod("IOnPlayerChat")]
+        private object IOnPlayerChat(ConsoleSystem.Arg arg)
         {
-            var iplayer = (arg.Connection.player as BasePlayer).IPlayer;
-            return string.IsNullOrEmpty(arg.GetString(0)) ? null : Interface.Call("OnUserChat", iplayer, arg.GetString(0));
+            // Get the full chat string
+            var str = Formatter.ToPlaintext(arg.GetString(0).Trim());
+            if (string.IsNullOrEmpty(str)) return null;
+
+            // Get player objects
+            var player = arg.Connection.player as BasePlayer;
+            var iplayer = player.IPlayer;
+
+            // Check if it is a chat command
+            if (str[0] == '/')
+            {
+                // Parse it
+                string cmd;
+                string[] args;
+                ParseCommand(str.TrimStart('/'), out cmd, out args);
+
+                // Is the command blocked?
+                var commandSpecific = Interface.Call("OnPlayerCommand", arg);
+                var commandCovalence = Interface.Call("OnUserCommand", iplayer, cmd, args);
+                if (commandSpecific != null || commandCovalence != null) return true;
+
+                // Is it a valid chat command?
+                if (!Covalence.CommandSystem.HandleChatMessage(iplayer, str) && !cmdlib.HandleChatCommand(player, cmd, args))
+                {
+                    if (!Interface.Oxide.Config.Options.Modded) return null;
+
+                    iplayer.Reply(string.Format(lang.GetMessage("UnknownCommand", this, iplayer.Id), cmd));
+                    arg.ReplyWith(string.Empty);
+                    return true;
+                }
+
+                return true;
+            }
+
+            // Call game and covalence hooks
+            var chatSpecific = Interface.Call("OnPlayerChat", arg);
+            var chatCovalence = Interface.Call("OnUserChat", iplayer, str);
+            return chatSpecific ?? chatCovalence; // TODO: Fix 'RustCore' hook conflict when both return
         }
 
         /// <summary>

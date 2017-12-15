@@ -291,7 +291,8 @@ namespace Oxide.Game.Rust
 
             // Get player objects
             var player = arg.Connection.player as BasePlayer;
-            var iplayer = player.IPlayer;
+            var iplayer = player?.IPlayer;
+            if (iplayer == null) return null;
 
             // Check if it is a chat command
             if (str[0] == '/')

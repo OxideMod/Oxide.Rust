@@ -1,6 +1,5 @@
 ﻿using Network;
 using Oxide.Core;
-using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using Oxide.Core.RemoteConsole;
 using Oxide.Core.ServerConsole;
@@ -287,7 +286,7 @@ namespace Oxide.Game.Rust
         private object IOnPlayerChat(ConsoleSystem.Arg arg)
         {
             // Get the full chat string
-            var str = Formatter.ToPlaintext(arg.GetString(0).Trim());
+            var str = arg.GetString(0).Trim();
             if (string.IsNullOrEmpty(str)) return null;
 
             // Get player objects

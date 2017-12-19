@@ -5987,6 +5987,33 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 60,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "CanBuildEntity",
+            "HookName": "CanBuildEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Planner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoBuild",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Construction/Target",
+                "Construction"
+              ]
+            },
+            "MSILHash": "TQjRLAK+zd34JTrLbeo5E1BjXsGlf7ebbmiGabAXBco=",
+            "BaseHookName": "OnEntityBuilt",
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [

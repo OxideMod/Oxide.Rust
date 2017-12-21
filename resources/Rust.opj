@@ -672,7 +672,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "ihmI9V2gfDcAP5d2oEawFW+MTsy3iyGPT74INqwscDE=",
+            "MSILHash": "2+30+yMt3rlNmpV3LqqSeNBMR+F0FTqOVjdsiIclXk8=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -831,7 +831,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "NxW7PimIA/kFJ2U1to+imAn61cYVBpVVQKQi8v6viWc=",
+            "MSILHash": "3KfKKSbPvPaIWmZH3p4gKCr/cirwYO2k3KDBp7nIepw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -857,7 +857,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Apqw1Zk19MkeijLP/HtfdIIHTKywKdseMaMNU3txJCo=",
+            "MSILHash": "oRSocsUTIJkHBjB+jqHpRDlakEAkQWk6SLlwzpTwAxI=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -2378,7 +2378,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "q1VS25gPzEooherRgkvrtVFqgkoz1qT73DNkpgB7HLc=",
+            "MSILHash": "z+RxSwrMDRjyR0KDrZklEJFbDKCTY/6hyi1WYaAeEwI=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2782,7 +2782,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "nUU2jmGRs3eAgnw9BckbyNVtrKQIQnhrKMhqd72N3KI=",
+            "MSILHash": "a6TqRyUklSWiXwf90DqhQoiKW/sUSTv7RgYMBpjxEMg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -6317,25 +6317,6 @@
             ],
             "Name": "_health",
             "FullTypeName": "System.Single BaseCombatEntity::_health",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "BaseCombatEntity::_lastAttackedTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseCombatEntity",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "_lastAttackedTime",
-            "FullTypeName": "System.Single BaseCombatEntity::_lastAttackedTime",
             "Parameters": []
           },
           "MSILHash": ""

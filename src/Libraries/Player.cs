@@ -434,10 +434,25 @@ namespace Oxide.Game.Rust.Libraries
         public PlayerInventory Inventory(BasePlayer player) => player.inventory;
 
         /// <summary>
+        /// Resets the inventory of the player
+        /// </summary>
+        /// <param name="player"></param>
+        public void ResetInventory(BasePlayer player)
+        {
+            PlayerInventory inventory = Inventory(player);
+
+            if (inventory != null)
+            {
+                inventory.DoDestroy();
+                inventory.ServerInit(player);
+            }
+        }
+
+        /// <summary>
         /// Clears the inventory of the player
         /// </summary>
         /// <param name="player"></param>
-        public void ClearInventory(BasePlayer player) => Inventory(player)?.DoDestroy();
+        public void ClearInventory(BasePlayer player) => Inventory(player)?.Strip();
 
         #endregion Inventory Handling
     }

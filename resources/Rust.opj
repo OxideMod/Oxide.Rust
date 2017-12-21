@@ -1336,6 +1336,32 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "l1, l0",
             "HookTypeName": "Simple",
+            "Name": "CanResearchItem",
+            "HookName": "CanResearchItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ResearchTable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoResearch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "GdlvBcwjwCQwACysixC8sevc/FDK39JpaR5sN/u3rdo=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 40,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
             "Name": "OnItemResearch",
             "HookName": "OnItemResearch",
             "AssemblyName": "Assembly-CSharp.dll",
@@ -1350,33 +1376,7 @@
               ]
             },
             "MSILHash": "GdlvBcwjwCQwACysixC8sevc/FDK39JpaR5sN/u3rdo=",
-            "BaseHookName": null,
-            "HookCategory": "Item"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 40,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 1,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "OnItemResearchStart",
-            "HookName": "OnItemResearchStart",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ResearchTable",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "DoResearch",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "GdlvBcwjwCQwACysixC8sevc/FDK39JpaR5sN/u3rdo=",
-            "BaseHookName": "OnItemResearch",
+            "BaseHookName": "CanResearchItem",
             "HookCategory": "Item"
           }
         },
@@ -1388,8 +1388,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2 => l2",
             "HookTypeName": "Simple",
-            "Name": "OnItemResearchEnd",
-            "HookName": "OnItemResearchEnd",
+            "Name": "OnItemResearched",
+            "HookName": "OnItemResearched",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ResearchTable",
             "Flagged": false,

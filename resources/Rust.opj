@@ -6683,6 +6683,44 @@
             ]
           },
           "MSILHash": "kVL92pigX7ac3yT3u4K9NlX/5KUf6GPmdyvaftjepCw="
+        },
+        {
+          "Name": "BasePlayer::lifeStory",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lifeStory",
+            "FullTypeName": "ProtoBuf.PlayerLifeStory BasePlayer::lifeStory",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCombatEntity::lastAttackedTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCombatEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "lastAttackedTime",
+            "FullTypeName": "System.Single BaseCombatEntity::lastAttackedTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

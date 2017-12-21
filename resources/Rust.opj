@@ -1359,8 +1359,8 @@
           "Hook": {
             "InjectionIndex": 40,
             "ReturnBehavior": 0,
-            "ArgumentBehavior": 1,
-            "ArgumentString": "",
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1, l0",
             "HookTypeName": "Simple",
             "Name": "OnItemResearch",
             "HookName": "OnItemResearch",

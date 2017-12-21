@@ -601,13 +601,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 80,
-            "ReturnBehavior": 0,
+            "InjectionIndex": 60,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l1",
+            "ArgumentString": "this, a1, a0",
             "HookTypeName": "Simple",
-            "Name": "OnEntityBuilt",
-            "HookName": "OnEntityBuilt",
+            "Name": "CanBuild [Target]",
+            "HookName": "CanBuild",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Planner",
             "Flagged": false,
@@ -2165,7 +2165,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1, a0.position",
             "HookTypeName": "Simple",
-            "Name": "CanBuild",
+            "Name": "CanBuild [ProtoBuf]",
             "HookName": "CanBuild",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Planner",
@@ -5986,6 +5986,59 @@
             "MSILHash": "2yj+5PAsYYM7zWaKZo4D84R6SCUNZZpNNe5r+JvwL1w=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 102,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnEntityBuilt",
+            "HookName": "OnEntityBuilt",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Planner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoBuild",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Construction/Target",
+                "Construction"
+              ]
+            },
+            "MSILHash": "TQjRLAK+zd34JTrLbeo5E1BjXsGlf7ebbmiGabAXBco=",
+            "BaseHookName": "CanBuild [Target]",
+            "HookCategory": "Structure"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 30,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnDoorKnocked",
+            "HookName": "OnDoorKnocked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Door",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_KnockDoor",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Kq5xVz/5RW/z5TfPew5u+XSP/IZQANe8x9Y1wGp/h1g=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
           }
         }
       ],

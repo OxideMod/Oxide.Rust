@@ -287,7 +287,7 @@ namespace Oxide.Game.Rust
         {
             // Get the full chat string
             var str = arg.GetString(0).Trim();
-            if (string.IsNullOrEmpty(str) || str.Length <= 1) return null;
+            if (string.IsNullOrEmpty(str) || str.Length <= 1) return true;
 
             // Get player objects
             var player = arg.Connection.player as BasePlayer;

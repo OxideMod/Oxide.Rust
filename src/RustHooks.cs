@@ -301,6 +301,7 @@ namespace Oxide.Game.Rust
                 string cmd;
                 string[] args;
                 ParseCommand(str.TrimStart('/'), out cmd, out args);
+                if (cmd == null) return null;
 
                 // Is the command blocked?
                 var commandSpecific = Interface.Call("OnPlayerCommand", arg);

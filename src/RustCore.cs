@@ -91,7 +91,7 @@ namespace Oxide.Game.Rust
             AddCovalenceCommand(new[] { "oxide.usergroup", "o.usergroup", "perm.usergroup" }, "UserGroupCommand", "oxide.usergroup");
 
             // Add core misc commands
-            AddCovalenceCommand(new[] { "oxide.lang", "o.lang" }, "LangCommand");
+            AddCovalenceCommand(new[] { "oxide.lang", "o.lang", "lang" }, "LangCommand");
             AddCovalenceCommand(new[] { "oxide.version", "o.version" }, "VersionCommand");
 
             // Register messages for localization

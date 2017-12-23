@@ -434,6 +434,12 @@ namespace Oxide.Game.Rust.Libraries
         public PlayerInventory Inventory(BasePlayer player) => player.inventory;
 
         /// <summary>
+        /// Clears the inventory of the player
+        /// </summary>
+        /// <param name="player"></param>
+        public void ClearInventory(BasePlayer player) => Inventory(player)?.Strip();
+
+        /// <summary>
         /// Resets the inventory of the player
         /// </summary>
         /// <param name="player"></param>
@@ -446,12 +452,6 @@ namespace Oxide.Game.Rust.Libraries
                 inventory.ServerInit(player);
             }
         }
-
-        /// <summary>
-        /// Clears the inventory of the player
-        /// </summary>
-        /// <param name="player"></param>
-        public void ClearInventory(BasePlayer player) => Inventory(player)?.Strip();
 
         #endregion Inventory Handling
     }

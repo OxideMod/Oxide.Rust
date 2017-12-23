@@ -287,7 +287,7 @@ namespace Oxide.Game.Rust
         {
             // Get the full chat string
             var str = arg.GetString(0).Trim();
-            if (string.IsNullOrEmpty(str) || str.Length <= 1) return true;
+            if (string.IsNullOrEmpty(str)) return true;
 
             // Get player objects
             var player = arg.Connection.player as BasePlayer;
@@ -297,6 +297,8 @@ namespace Oxide.Game.Rust
             // Check if it is a chat command
             if (str[0] == '/')
             {
+                if (str.Length <= 1) return true;
+
                 // Parse it
                 string cmd;
                 string[] args;

@@ -59,6 +59,7 @@ namespace Oxide.Game.Rust
         private bool PermissionsLoaded(IPlayer player)
         {
             if (permission.IsLoaded) return true;
+
             player.Reply(string.Format(lang.GetMessage("PermissionsNotLoaded", this, player.Id), permission.LastException.Message));
             return false;
         }
@@ -91,7 +92,7 @@ namespace Oxide.Game.Rust
             AddCovalenceCommand(new[] { "oxide.usergroup", "o.usergroup", "perm.usergroup" }, "UserGroupCommand", "oxide.usergroup");
 
             // Add core misc commands
-            AddCovalenceCommand(new[] { "oxide.lang", "o.lang" }, "LangCommand");
+            AddCovalenceCommand(new[] { "oxide.lang", "o.lang", "lang" }, "LangCommand");
             AddCovalenceCommand(new[] { "oxide.version", "o.version" }, "VersionCommand");
 
             // Register messages for localization

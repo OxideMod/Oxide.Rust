@@ -705,7 +705,7 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 111,
-            "ReturnBehavior": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0, l6",
             "HookTypeName": "Simple",
@@ -1638,7 +1638,7 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 28,
-            "ReturnBehavior": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l3, a0.player, this",
             "HookTypeName": "Simple",
@@ -1742,7 +1742,7 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 59,
-            "ReturnBehavior": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l4, a0.player",
             "HookTypeName": "Simple",
@@ -3272,7 +3272,7 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 101,
-            "ReturnBehavior": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l5, a0.player",
             "HookTypeName": "Simple",

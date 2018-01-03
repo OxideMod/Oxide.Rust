@@ -5200,32 +5200,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnNpcTarget",
-            "HookName": "OnNpcTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseNpc",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "GetWantsToAttack",
-              "ReturnType": "System.Single",
-              "Parameters": [
-                "BaseEntity"
-              ]
-            },
-            "MSILHash": "jqblFXYqlGSCbMi7JuiulJX1MtOCxJCwYAV5gzIxsqM=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 6,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
@@ -6039,6 +6013,32 @@
             "MSILHash": "Kq5xVz/5RW/z5TfPew5u+XSP/IZQANe8x9Y1wGp/h1g=",
             "BaseHookName": null,
             "HookCategory": "Structure"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNpcTarget",
+            "HookName": "OnNpcTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseNpc",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "WantsToAttack",
+              "ReturnType": "System.Single",
+              "Parameters": [
+                "BaseEntity"
+              ]
+            },
+            "MSILHash": "NpnOB2F3GxQjExeHUsJXCRle86DKXYkWuQPtzaZayQ0=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
           }
         }
       ],

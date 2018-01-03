@@ -6721,6 +6721,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "MetabolismAttribute::lastValue",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MetabolismAttribute",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "lastValue",
+            "FullTypeName": "System.Single MetabolismAttribute::lastValue",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

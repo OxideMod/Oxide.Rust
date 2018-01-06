@@ -420,8 +420,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
             "HookTypeName": "Simple",
-            "Name": "IOnLootEntity [internal]",
-            "HookName": "IOnLootEntity",
+            "Name": "OnLootEntity",
+            "HookName": "OnLootEntity",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlayerLoot",
             "Flagged": false,
@@ -447,8 +447,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
             "HookTypeName": "Simple",
-            "Name": "IOnLootItem [internal]",
-            "HookName": "IOnLootItem",
+            "Name": "OnLootItem",
+            "HookName": "OnLootItem",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlayerLoot",
             "Flagged": false,
@@ -473,8 +473,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
             "HookTypeName": "Simple",
-            "Name": "IOnLootPlayer [internal]",
-            "HookName": "IOnLootPlayer",
+            "Name": "OnLootPlayer",
+            "HookName": "OnLootPlayer",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlayerLoot",
             "Flagged": false,
@@ -739,8 +739,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
             "HookTypeName": "Simple",
-            "Name": "IOnPlayerAttack [melee, internal]",
-            "HookName": "IOnPlayerAttack",
+            "Name": "OnPlayerAttack [melee]",
+            "HookName": "OnPlayerAttack",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseMelee",
             "Flagged": false,
@@ -868,10 +868,10 @@
             "InjectionIndex": 10,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player",
+            "ArgumentString": "this, a0.player, null",
             "HookTypeName": "Simple",
-            "Name": "IOnStructureImmediateDemolish [internal]",
-            "HookName": "IOnStructureImmediateDemolish",
+            "Name": "OnStructureDemolish [immediate = true]",
+            "HookName": "OnStructureDemolish",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BuildingBlock",
             "Flagged": false,
@@ -2493,10 +2493,10 @@
             "InjectionIndex": 11,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player",
+            "ArgumentString": "this, a0.player, null",
             "HookTypeName": "Simple",
-            "Name": "IOnStructureDemolish [internal]",
-            "HookName": "IOnStructureDemolish",
+            "Name": "OnStructureDemolish [immediate = falsel]",
+            "HookName": "OnStructureDemolish",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BuildingBlock",
             "Flagged": false,
@@ -3146,8 +3146,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
             "HookTypeName": "Simple",
-            "Name": "IOnPlayerRevive [internal]",
-            "HookName": "IOnPlayerRevive",
+            "Name": "OnPlayerRevive",
+            "HookName": "OnPlayerRevive",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MedicalTool",
             "Flagged": false,
@@ -6039,6 +6039,261 @@
             "MSILHash": "NpnOB2F3GxQjExeHUsJXCRle86DKXYkWuQPtzaZayQ0=",
             "BaseHookName": null,
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 33,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "UnityEngine|UnityEngine.Component|GetComponent[Assembly-CSharp|BasePlayer]"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnLootEntity [patch]",
+            "HookName": "OnLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerLoot",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartLootingEntity",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "QEDRnYF/c0jtjO8XxW4RQ0JvN6j1pBrX+abaLHZS4Iw=",
+            "BaseHookName": "OnLootEntity",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 38,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "UnityEngine|UnityEngine.Component|GetComponent[Assembly-CSharp|BasePlayer]"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnLootItem [patch]",
+            "HookName": "OnLootItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerLoot",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartLootingItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item"
+              ]
+            },
+            "MSILHash": "09pahSDr1zGkUzGqCAB5IkiuRGdBtKBpcocXl4UpyvU=",
+            "BaseHookName": "OnLootItem",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 43,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "UnityEngine|UnityEngine.Component|GetComponent[Assembly-CSharp|BasePlayer]"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnLootPlayer [patch]",
+            "HookName": "OnLootPlayer",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerLoot",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartLootingPlayer",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "hlJX8mTIARG5eXNz3dcO41GUJj46aHztsq3YKggc6mY=",
+            "BaseHookName": "OnLootPlayer",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 6,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|HeldEntity|GetOwnerPlayer"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnPlayerAttack [melee, patch]",
+            "HookName": "OnPlayerAttack",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMelee",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoAttackShared",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "sBsuVQDH9v4bkdYWFxefVbfaT8eKasw2Lqnhj8lmdLs=",
+            "BaseHookName": "OnPlayerAttack [melee]",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 51,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|HeldEntity|GetOwnerPlayer"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnPlayerRevive [patch]",
+            "HookName": "OnPlayerRevive",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MedicalTool",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "GiveEffectsTo",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "HSRlDngFhcfylcHeX9msCqFq7pWVRZWilp3va6OnZJo=",
+            "BaseHookName": "OnPlayerRevive",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 25,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Boolean"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnStructureDemolish [false, patch]",
+            "HookName": "OnStructureDemolish",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BuildingBlock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "DoDemolish",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "PGCWfW4PkfnEOSBSyVNxXZIkhdPSHt3Y+/NM9Fw+pTc=",
+            "BaseHookName": "OnStructureDemolish [immediate = falsel]",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 24,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "ldc_i4_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Boolean"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnStructureDemolish [true, patch]",
+            "HookName": "OnStructureDemolish",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BuildingBlock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "DoImmediateDemolish",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "amBsf7avJ3/8AjvSVafQ5SJ7+B7jRxk50ylQODmL0JA=",
+            "BaseHookName": "OnStructureDemolish [immediate = true]",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 30,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.serverInput",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerInput",
+            "HookName": "OnPlayerInput",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "OnReceiveTick",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "PlayerTick",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "FvLBZ2pVzzDNRpS/kbocb4mxx8qKNeYDbF/D2xHFplw=",
+            "BaseHookName": "OnPlayerTick",
+            "HookCategory": "Player"
           }
         }
       ],

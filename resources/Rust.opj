@@ -6995,6 +6995,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "CodeLock::hasCode",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CodeLock",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hasCode",
+            "FullTypeName": "System.Boolean CodeLock::hasCode",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CodeLock::hasGuestCode",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CodeLock",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hasGuestCode",
+            "FullTypeName": "System.Boolean CodeLock::hasGuestCode",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

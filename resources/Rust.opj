@@ -573,7 +573,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 94,
+            "InjectionIndex": 98,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1",
@@ -593,36 +593,9 @@
                 "System.UInt32"
               ]
             },
-            "MSILHash": "NTDySp9FycPhcGi4Ab4Fe8guP7m/8M+io9Ut/8monjM=",
+            "MSILHash": "x7umVRr0vQhUcRyfmiAoLpn6vPZylz+gnv3SX57E5l8=",
             "BaseHookName": null,
             "HookCategory": "Item"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 60,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, a1, a0",
-            "HookTypeName": "Simple",
-            "Name": "CanBuild [Target]",
-            "HookName": "CanBuild",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Planner",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "DoBuild",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Construction/Target",
-                "Construction"
-              ]
-            },
-            "MSILHash": "TQjRLAK+zd34JTrLbeo5E1BjXsGlf7ebbmiGabAXBco=",
-            "BaseHookName": null,
-            "HookCategory": "Structure"
           }
         },
         {
@@ -680,7 +653,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 54,
+            "InjectionIndex": 69,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 0,
             "ArgumentString": null,
@@ -696,7 +669,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "x3WGbgoZk0WwsTEnVhb/tXaeneT+zWxQ+ANh2IylTTg=",
+            "MSILHash": "J1uHgC4pBmRx0rT81TkAGAENJqkGHABNh1loXn82Taw=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -831,7 +804,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "jYSGyv4HVbIHMWjwweOGC0PHgAi0NctGOg6HPnpeuwc=",
+            "MSILHash": "xg+FmXrbFYXvXvLEGa/vJKO2SHx2Ya8YoDdwqfX08QY=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2160,12 +2133,12 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 53,
+            "InjectionIndex": 140,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l1, a0.position",
+            "ArgumentString": "this, l1, l2",
             "HookTypeName": "Simple",
-            "Name": "CanBuild [ProtoBuf]",
+            "Name": "CanBuild",
             "HookName": "CanBuild",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Planner",
@@ -2178,7 +2151,7 @@
                 "ProtoBuf.CreateBuilding"
               ]
             },
-            "MSILHash": "ASqxoaGoDcAYZLAzd7JQ60+UznBH+GQBdCGr9Q6qa+k=",
+            "MSILHash": "Vke6xoFRi9mXtBdq8Z0AM/G70EViXdj5tzQlnvlqotk=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -2378,7 +2351,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "UVknIAMExpQeIDkA0qZqwu7ksa85CZ0ycc2GAAZaRpU=",
+            "MSILHash": "dube94kvyNm50DyTbB/MvXRGQDCIzYqas3HuHGzRcAU=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2782,7 +2755,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "o7oigeTSnzIrUgW2vsyNiC3UIy+8j0G0rPR6YK90jJw=",
+            "MSILHash": "FEFVJeZYE+3lRn3F3scEb3Hm2OUGeFOicS1gapvT86g=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -4204,7 +4177,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 30,
+            "InjectionIndex": 28,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
@@ -5965,7 +5938,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 102,
+            "InjectionIndex": 80,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1",
@@ -5984,8 +5957,8 @@
                 "Construction"
               ]
             },
-            "MSILHash": "TQjRLAK+zd34JTrLbeo5E1BjXsGlf7ebbmiGabAXBco=",
-            "BaseHookName": "CanBuild [Target]",
+            "MSILHash": "bKNBQt/Tww6QXIxBxwhvQWLFJZQd+sKq3D92t5J+I/g=",
+            "BaseHookName": null,
             "HookCategory": "Structure"
           }
         },

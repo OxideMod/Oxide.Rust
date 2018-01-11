@@ -141,49 +141,7 @@ namespace Oxide.Game.Rust
         {
             return isPlayerTakingDamage ? null : Interface.Call("OnEntityTakeDamage", player, info);
         }
-
-        /// <summary>
-        /// Called when the player starts looting an entity
-        /// </summary>
-        /// <param name="source"></param>
-        /// <param name="entity"></param>
-        [HookMethod("IOnLootEntity")]
-        private void IOnLootEntity(PlayerLoot source, BaseEntity entity) => Interface.Call("OnLootEntity", source.GetComponent<BasePlayer>(), entity);
-
-        /// <summary>
-        /// Called when the player starts looting an item
-        /// </summary>
-        /// <param name="source"></param>
-        /// <param name="item"></param>
-        [HookMethod("IOnLootItem")]
-        private void IOnLootItem(PlayerLoot source, Item item) => Interface.Call("OnLootItem", source.GetComponent<BasePlayer>(), item);
-
-        /// <summary>
-        /// Called when the player starts looting another player
-        /// </summary>
-        /// <param name="source"></param>
-        /// <param name="target"></param>
-        [HookMethod("IOnLootPlayer")]
-        private void IOnLootPlayer(PlayerLoot source, BasePlayer target) => Interface.Call("OnLootPlayer", source.GetComponent<BasePlayer>(), target);
-
-        /// <summary>
-        /// Called when the player attacks something
-        /// </summary>
-        /// <param name="melee"></param>
-        /// <param name="info"></param>
-        /// <returns></returns>
-        [HookMethod("IOnPlayerAttack")]
-        private object IOnPlayerAttack(BaseMelee melee, HitInfo info) => Interface.Call("OnPlayerAttack", melee.GetOwnerPlayer(), info);
-
-        /// <summary>
-        /// Called when the player revives another player
-        /// </summary>
-        /// <param name="tool"></param>
-        /// <param name="target"></param>
-        /// <returns></returns>
-        [HookMethod("IOnPlayerRevive")]
-        private object IOnPlayerRevive(MedicalTool tool, BasePlayer target) => Interface.Call("OnPlayerRevive", tool.GetOwnerPlayer(), target);
-
+        
         /// <summary>
         /// Called when a server group is set for an ID (i.e. banned)
         /// </summary>
@@ -396,15 +354,7 @@ namespace Oxide.Game.Rust
             var iplayer = player.IPlayer;
             if (iplayer != null) Interface.Call("OnUserRespawned", iplayer);
         }
-
-        /// <summary>
-        /// Called when the player tick is received from a client
-        /// </summary>
-        /// <param name="player"></param>
-        /// <returns></returns>
-        [HookMethod("OnPlayerTick")]
-        private object OnPlayerTick(BasePlayer player) => Interface.Call("OnPlayerInput", player, player.serverInput);
-
+        
         #endregion Player Hooks
 
         #region Entity Hooks
@@ -445,27 +395,5 @@ namespace Oxide.Game.Rust
         }
 
         #endregion Item Hooks
-
-        #region Structure Hooks
-
-        /// <summary>
-        /// Called when the player selects Demolish from the BuildingBlock menu
-        /// </summary>
-        /// <param name="block"></param>
-        /// <param name="player"></param>
-        /// <returns></returns>
-        [HookMethod("IOnStructureDemolish")]
-        private object IOnStructureDemolish(BuildingBlock block, BasePlayer player) => Interface.Call("OnStructureDemolish", block, player, false);
-
-        /// <summary>
-        /// Called when the player selects Demolish Immediate from the BuildingBlock menu
-        /// </summary>
-        /// <param name="block"></param>
-        /// <param name="player"></param>
-        /// <returns></returns>
-        [HookMethod("IOnStructureImmediateDemolish")]
-        private object IOnStructureImmediateDemolish(BuildingBlock block, BasePlayer player) => Interface.Call("OnStructureDemolish", block, player, true);
-
-        #endregion Structure Hooks
     }
 }

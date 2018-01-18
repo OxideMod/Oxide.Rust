@@ -48,7 +48,7 @@ namespace Oxide.Game.Rust
         /// </summary>
         internal static readonly HashSet<string> DefaultReferences = new HashSet<string>
         {
-            "ApexAI", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "Rust.Data", "Rust.Global", "Rust.Workshop"
+            "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "Rust.Data", "Rust.Global", "Rust.Workshop"
         };
 
         /// <summary>

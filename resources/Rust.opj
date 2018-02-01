@@ -246,7 +246,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Ob5RuXzGEr+uP08loXDAT/Fqu4rLJ2kddTwzdH8tTlQ=",
+            "MSILHash": "kLtswJpxWQ8zTZRUPNjp/pTmpQTN+7Q9dpJmhphX+bc=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -804,7 +804,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "ld3aug6DwO/jtnXTDGyQTQfsFwFNElT2IN9EmwnIlvk=",
+            "MSILHash": "fGL+S6H5bFXSGmI1JOVjHxwvpJjT0YEO8Di8+2jxaQ8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -969,7 +969,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 38,
+            "InjectionIndex": 28,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -987,7 +987,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "uyF3atIIVQEqDpsLAyk6Zao/9TKU29MGV5gzDXoaQyU=",
+            "MSILHash": "Y6Mbx6c+JuYojHPdA0T+xuqTEVcBsJZNch2Y2itGoT8=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -1192,7 +1192,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "Tg9rhnlfjlPD/YzDXaoQEVEv5DFmG6WlcRUOaGQuRdg=",
+            "MSILHash": "t16D7SBBfdkQkr9hTna8y5OTFdibJHOHPckCOhcLnFE=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1476,7 +1476,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "ptqh65EQICiminGrHaqSfxsKs/1AR+CaQd6uc6al9ag=",
+            "MSILHash": "C/5xPmzfIOG6TkHlNIWJ8xK0eMrwGdNv6W4o3Z8T4eo=",
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
@@ -1628,7 +1628,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Np1C50OcJTqhUDUE7YAVY+ZQ2i77VDhkzwMgookpwOE=",
+            "MSILHash": "iwfo2ND6TcmxsigXIKN1WtzAyGbuAcCown6mcu0OhmM=",
             "BaseHookName": null,
             "HookCategory": "Resource"
           }
@@ -2351,7 +2351,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "J6bbRAGkxn8BjwKhASl1q9aBiQXfpKSKYyB4reRnbfY=",
+            "MSILHash": "gE8pFjUbOb/YvHQyDlmHz6cR9rAb5PKbQqbKpQ7sfUc=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2755,7 +2755,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "njZ4kY0amOTCs12Uhw/U6AYDdkYbg5xM6M/hLlxHWL4=",
+            "MSILHash": "nx4/OrKP4P9GJDPxGRjvfE0n6I7Nv4oSIRoxp5GC7Dc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2782,7 +2782,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "NVttglTDLlLaLJ43k2CRSDppw2i8E+XyAvdeK1FPtnc=",
+            "MSILHash": "GgUAMUZg11vIxASs8BVYsMh+u7/qlxW31L21gFZKQHo=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2859,7 +2859,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "NVttglTDLlLaLJ43k2CRSDppw2i8E+XyAvdeK1FPtnc=",
+            "MSILHash": "GgUAMUZg11vIxASs8BVYsMh+u7/qlxW31L21gFZKQHo=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -3938,7 +3938,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "T0FU0mpNG630m+lOVJTPjBxtLNzSjQzCQETkeQqkpcI=",
+            "MSILHash": "RDcdYFzCn66Y36q3qgm88xfD8as5qqw473XoFH5LuFY=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -5273,7 +5273,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 79,
+            "InjectionIndex": 82,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l2, l2.authStatus",
@@ -5291,7 +5291,7 @@
                 "EasyAntiCheat.Server.Hydra.ClientStatusUpdate`1<EasyAntiCheat.Server.Hydra.Client>"
               ]
             },
-            "MSILHash": "DcU72HuRxjVpBShcGIWXkgU1PzHj5rhsgVc9abDZE8A=",
+            "MSILHash": "oOwsbcTP7Dvrm6dCulB66LUr36XfwlPdtPvWOwJh1r0=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }

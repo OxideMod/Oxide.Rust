@@ -6268,6 +6268,40 @@
             "BaseHookName": "OnPlayerTick",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 25,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Int32"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "FileStorageFix",
+            "HookName": "FileStorageFix",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FileStorage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Store",
+              "ReturnType": "System.UInt32",
+              "Parameters": [
+                "System.Byte[]",
+                "FileStorage/Type",
+                "System.UInt32",
+                "System.UInt32"
+              ]
+            },
+            "MSILHash": "NR/5EJVVMHo/31YoEyCd0RCOxE/e89JyrvotlFkSoO8=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

@@ -309,6 +309,11 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="args"></param>
         public void Message(BasePlayer player, string message, string prefix, ulong userId = 0, params object[] args)
         {
+            if (string.IsNullOrEmpty(message))
+            {
+                return;
+            }
+
             message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), args) : Formatter.ToUnity(message);
             var formatted = prefix != null ? $"{prefix} {message}" : message;
             player.SendConsoleCommand("chat.add", userId, formatted, 1.0);

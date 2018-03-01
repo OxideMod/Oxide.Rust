@@ -81,7 +81,7 @@ function Get-Downloader {
     if (!(Test-Path "$depot_exe") -or ((Get-ChildItem "$depot_exe").CreationTime -gt (Get-Date).AddDays(-7))) {
         # Get latest release info for DepotDownloader
         Write-Host "Determining latest release of DepotDownloader"
-        try {
+        try {[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
             $json = (Invoke-WebRequest "https://api.github.com/repos/SteamRE/DepotDownloader/releases" | ConvertFrom-Json)[0]
             # TODO: Implement auth/token handling for GitHub API
             $version = $json.tag_name -Replace '\w+(\d+(?:\.\d+)+)', '$1'
@@ -95,7 +95,7 @@ function Get-Downloader {
 
         # Download and extract DepotDownloader
         Write-Host "Downloading version $version of DepotDownloader"
-        try {
+        try {[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
             Invoke-WebRequest $json.assets[0].browser_download_url -Out "$tools_dir\$release_zip"
         } catch {
             Write-Host "Could not download DepotDownloader from GitHub"
@@ -208,7 +208,7 @@ function Get-Deobfuscators {
         if (!(Test-Path "$de4dot_exe") -or ((Get-ChildItem "$de4dot_exe").CreationTime -gt (Get-Date).AddDays(-7))) {
             # Download and extract de4dot
             Write-Host "Downloading latest version of de4dot" # TODO: Get and show version
-            try {
+            try {[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
                 Invoke-WebRequest "https://ci.appveyor.com/api/projects/0xd4d/de4dot/artifacts/de4dot.zip" -Out "$de4dot_dir\de4dot.zip"
             } catch {
                 Write-Host "Could not download de4dot from AppVeyor"
@@ -266,7 +266,7 @@ function Get-Patcher {
         # Download latest Oxide Patcher build
         Write-Host "Downloading latest build of OxidePatcher"
         $patcher_url = "https://github.com/OxideMod/OxidePatcher/releases/download/latest/OxidePatcher.exe"
-        try {
+        try {[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
             Invoke-WebRequest $patcher_url -Out "$patcher_exe"
         } catch {
             Write-Host "Could not download OxidePatcher.exe from GitHub"

@@ -5178,7 +5178,7 @@
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnNpcPlayerTarget",
+            "Name": "OnNpcPlayerTarget [murderer]",
             "HookName": "OnNpcPlayerTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "NPCPlayerApex",
@@ -5989,32 +5989,6 @@
           }
         },
         {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnNpcTarget",
-            "HookName": "OnNpcTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseNpc",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 3,
-              "Name": "WantsToAttack",
-              "ReturnType": "System.Single",
-              "Parameters": [
-                "BaseEntity"
-              ]
-            },
-            "MSILHash": "NpnOB2F3GxQjExeHUsJXCRle86DKXYkWuQPtzaZayQ0=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 33,
@@ -6267,6 +6241,54 @@
             "MSILHash": "FvLBZ2pVzzDNRpS/kbocb4mxx8qKNeYDbF/D2xHFplw=",
             "BaseHookName": "OnPlayerTick",
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 506,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.AiContext.AIAgent.AttackTarget",
+            "HookTypeName": "Simple",
+            "Name": "OnNpcPlayerTarget [scientist]",
+            "HookName": "OnNpcPlayerTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "AggroBestScorePlayerOrClosestAnimal",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "jKUpbuqrexwsqf0pbiLnUMCS7O7NASCUHgVdZMX9lTA=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 235,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.AiContext.AIAgent.AttackTarget",
+            "HookTypeName": "Simple",
+            "Name": "OnNpcTarget [animals]",
+            "HookName": "OnNpcTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseNpc",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "AggroClosestEnemy",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "FrRQn/4rgFFCJ7u+obKpYLtwhjp0kWUikzySf0DBB0U=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
           }
         }
       ],

@@ -382,7 +382,6 @@ namespace Oxide.Game.Rust
         private object IOnNpcPlayerTarget(NPCPlayerApex npc, BaseEntity target)
         {
             var callHook = Interface.Call("OnNpcPlayerTarget", npc, target);
-
             if (callHook != null)
             {
                 if (npc is NPCMurderer)
@@ -397,6 +396,27 @@ namespace Oxide.Game.Rust
                 npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightCrouched, 0);
                 npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightStanding, 0);
                 npc.AiContext.AIAgent.AttackTarget = null;
+                return true;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Called when an NPC animal tries to target an entity
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        [HookMethod("IOnNpcTarget")]
+        private object IOnNpcTarget(BaseNpc npc, BaseEntity target)
+        {
+            var callHook = Interface.Call("OnNpcTarget", npc, target);
+            if (callHook != null)
+            {
+                npc.SetFact(BaseNpc.Facts.HasEnemy, 0);
+                npc.SetFact(BaseNpc.Facts.EnemyRange, 3);
+                npc.SetFact(BaseNpc.Facts.AfraidRange, 1);
                 return true;
             }
 

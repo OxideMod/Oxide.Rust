@@ -141,7 +141,7 @@ namespace Oxide.Game.Rust
         {
             return isPlayerTakingDamage ? null : Interface.Call("OnEntityTakeDamage", player, info);
         }
-        
+
         /// <summary>
         /// Called when a server group is set for an ID (i.e. banned)
         /// </summary>
@@ -354,7 +354,7 @@ namespace Oxide.Game.Rust
             var iplayer = player.IPlayer;
             if (iplayer != null) Interface.Call("OnUserRespawned", iplayer);
         }
-        
+
         #endregion Player Hooks
 
         #region Entity Hooks
@@ -370,6 +370,37 @@ namespace Oxide.Game.Rust
         private object IOnBaseCombatEntityHurt(BaseCombatEntity entity, HitInfo info)
         {
             return entity is BasePlayer ? null : Interface.Call("OnEntityTakeDamage", entity, info);
+        }
+
+        /// <summary>
+        /// Called when an NPC player tries to target an entity
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        [HookMethod("IOnNpcPlayerTarget")]
+        private object IOnNpcPlayerTarget(NPCPlayerApex npc, BaseEntity target)
+        {
+            var callHook = Interface.Call("OnNpcPlayerTarget", npc, target);
+
+            if (callHook != null)
+            {
+                if (npc is NPCMurderer)
+                {
+                    return 0f;
+                }
+
+                npc.SetFact(NPCPlayerApex.Facts.HasEnemy, 0);
+                npc.SetFact(NPCPlayerApex.Facts.EnemyRange, 5);
+                npc.SetFact(NPCPlayerApex.Facts.AfraidRange, 1);
+                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSight, 0);
+                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightCrouched, 0);
+                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightStanding, 0);
+                npc.AiContext.AIAgent.AttackTarget = null;
+                return true;
+            }
+
+            return null;
         }
 
         #endregion Entity Hooks
@@ -390,7 +421,7 @@ namespace Oxide.Game.Rust
             amount = (float)arguments[1];
             var condition = item.condition;
             item.condition -= amount;
-            if ((item.condition <= 0f) && (item.condition < condition)) item.OnBroken();
+            if (item.condition <= 0f && item.condition < condition) item.OnBroken();
             return true;
         }
 

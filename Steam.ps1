@@ -10,6 +10,7 @@ param (
 )
 
 Clear-Host
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 # Format game name and set depot ID if provided
 $game_name = $project -Replace "Oxide."

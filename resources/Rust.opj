@@ -5178,8 +5178,8 @@
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnNpcPlayerTarget [murderer]",
-            "HookName": "OnNpcPlayerTarget",
+            "Name": "IOnNpcPlayerTarget [murderer, internal]",
+            "HookName": "IOnNpcPlayerTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "NPCPlayerApex",
             "Flagged": false,
@@ -6246,13 +6246,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 506,
+            "InjectionIndex": 438,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, this.AiContext.AIAgent.AttackTarget",
             "HookTypeName": "Simple",
-            "Name": "OnNpcPlayerTarget [scientist]",
-            "HookName": "OnNpcPlayerTarget",
+            "Name": "IOnNpcPlayerTarget [scientist, internal]",
+            "HookName": "IOnNpcPlayerTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "NPCPlayerApex",
             "Flagged": false,
@@ -6270,10 +6270,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 235,
+            "InjectionIndex": 0,
             "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, this.AiContext.AIAgent.AttackTarget",
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
             "HookTypeName": "Simple",
             "Name": "OnNpcTarget [animals]",
             "HookName": "OnNpcTarget",
@@ -6281,12 +6281,14 @@
             "TypeName": "BaseNpc",
             "Flagged": false,
             "Signature": {
-              "Exposure": 0,
-              "Name": "AggroClosestEnemy",
-              "ReturnType": "System.Void",
-              "Parameters": []
+              "Exposure": 2,
+              "Name": "GetWantsToAttack",
+              "ReturnType": "System.Single",
+              "Parameters": [
+                "BaseEntity"
+              ]
             },
-            "MSILHash": "FrRQn/4rgFFCJ7u+obKpYLtwhjp0kWUikzySf0DBB0U=",
+            "MSILHash": "jqblFXYqlGSCbMi7JuiulJX1MtOCxJCwYAV5gzIxsqM=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }

@@ -7075,6 +7075,102 @@
             ]
           },
           "MSILHash": "PdfRUt9Duv6IxSvlqSpfzNXmL84oPLY2sZAOKKwejME="
+        },
+        {
+          "Name": "BuildingBlock::StartBeingDemolishable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StartBeingDemolishable",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "coadxjId8oZDwZBRhdz35lN2jBEEvUVzx203HVl3H3A="
+        },
+        {
+          "Name": "BuildingBlock::StartBeingRotatable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StartBeingRotatable",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "yr3pxQadBNFMkO05DjjpCAgkEfLedhgxN1M15n5ht5o="
+        },
+        {
+          "Name": "BuildingBlock::StopBeingDemolishable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StopBeingDemolishable",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "89IunwxVgONdQ6ozI+KDgwcM2ElEab7hVIAs8/nn+0g="
+        },
+        {
+          "Name": "BuildingBlock::StopBeingRotatable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StopBeingRotatable",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "APrexchVET2xfrSDwXHH3pDsG0MWoLCrwyMmP3S3obs="
+        },
+        {
+          "Name": "UserPersistance::blueprints",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "UserPersistance",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "blueprints",
+            "FullTypeName": "Facepunch.Sqlite.Database UserPersistance::blueprints",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

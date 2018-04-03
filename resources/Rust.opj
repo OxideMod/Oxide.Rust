@@ -6316,6 +6316,45 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseCombatEntity|IsDead"
+              },
+              {
+                "OpCode": "brtrue",
+                "OpType": "Instruction",
+                "Operand": 13
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnPlayerRecover [patch]",
+            "HookName": "OnPlayerRecover",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopWounded",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "Rx2JwT/TkCPbIznSMnVf0K9DHAaVlqXmbf2Xq+AU+jE=",
+            "BaseHookName": "OnPlayerRecover",
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

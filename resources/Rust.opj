@@ -4560,13 +4560,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 18,
-            "ReturnBehavior": 1,
+            "InjectionIndex": 22,
+            "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnPlayerRecover",
-            "HookName": "OnPlayerRecover",
+            "Name": "OnPlayerRecovered",
+            "HookName": "OnPlayerRecovered",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
             "Flagged": false,

@@ -1330,7 +1330,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 40,
+            "InjectionIndex": 30,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1, l0",
@@ -2703,7 +2703,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 21,
+            "InjectionIndex": 20,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -2790,7 +2790,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 72,
+            "InjectionIndex": 62,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1",
@@ -2840,7 +2840,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 286,
+            "InjectionIndex": 279,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l1",
@@ -3114,7 +3114,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 45,
+            "InjectionIndex": 35,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -3244,7 +3244,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 101,
+            "InjectionIndex": 87,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l5, a0.player",
@@ -4309,7 +4309,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 32,
+            "InjectionIndex": 22,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -4358,7 +4358,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 25,
+            "InjectionIndex": 15,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -4389,7 +4389,7 @@
               {
                 "OpCode": "bgt",
                 "OpType": "Instruction",
-                "Operand": 25
+                "Operand": 15
               },
               {
                 "OpCode": "ret",
@@ -5325,7 +5325,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 69,
+            "InjectionIndex": 59,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "ArgumentString": "",
@@ -5377,7 +5377,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 81,
+            "InjectionIndex": 71,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "ArgumentString": null,
@@ -5403,7 +5403,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 95,
+            "InjectionIndex": 85,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -5608,7 +5608,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 41,
+            "InjectionIndex": 31,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, l1",
@@ -5716,7 +5716,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 68,
+            "InjectionIndex": 58,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -5760,7 +5760,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 54,
+            "InjectionIndex": 44,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -5991,7 +5991,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 33,
+            "InjectionIndex": 29,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -6023,7 +6023,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 38,
+            "InjectionIndex": 34,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -6054,7 +6054,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 43,
+            "InjectionIndex": 39,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -6085,7 +6085,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 6,
+            "InjectionIndex": 2,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -6116,7 +6116,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 51,
+            "InjectionIndex": 38,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -6147,7 +6147,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 25,
+            "InjectionIndex": 15,
             "RemoveCount": 1,
             "Instructions": [
               {
@@ -6183,7 +6183,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 24,
+            "InjectionIndex": 14,
             "RemoveCount": 1,
             "Instructions": [
               {
@@ -6219,7 +6219,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 30,
+            "InjectionIndex": 29,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, this.serverInput",

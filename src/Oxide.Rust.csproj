@@ -29,6 +29,7 @@
   <ItemGroup>
     <PackageReference Include="GitInfo" Version="2.0.*" />
     <PackageReference Include="Oxide.References" Version="2.0.*" />
+    <PackageReference Include="Oxide.Core" Version="2.0.*" />
     <PackageReference Include="Oxide.CSharp" Version="2.0.*" />
     <PackageReference Include="Oxide.MySql" Version="2.0.*" />
     <PackageReference Include="Oxide.SQLite" Version="2.0.*" />
@@ -62,9 +63,6 @@
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>Dependencies\Patched\$(ManagedDir)\mscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="Oxide.Core">
-      <HintPath>..\..\Oxide.Core\Oxide.Core\bin\Release\net35\Oxide.Core.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <HintPath>Dependencies\Patched\$(ManagedDir)\System.dll</HintPath>

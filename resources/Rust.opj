@@ -7212,6 +7212,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ItemDefinition::_skins2",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ItemDefinition",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_skins2",
+            "FullTypeName": "Facepunch.Steamworks.Inventory/Definition[] ItemDefinition::_skins2",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

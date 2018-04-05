@@ -21,7 +21,7 @@ do
     -server.globalchat true \
     -server.description "Powered by Oxide" \
     -server.headerimage "http://i.imgur.com/xNyLhMt.jpg" \
-    -server.url "http://oxidemod.org"
+    -server.url "https://oxidemod.org"
 
     echo "\nRestarting server...\n"
     sleep 10

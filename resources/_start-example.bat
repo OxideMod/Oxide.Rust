@@ -19,7 +19,7 @@ RustDedicated.exe -batchmode -nographics ^
 +server.globalchat true ^
 +server.description "Powered by Oxide" ^
 +server.headerimage "http://i.imgur.com/xNyLhMt.jpg" ^
-+server.url "http://oxidemod.org"
++server.url "https://oxidemod.org"
 
 echo.
 echo Restarting server...

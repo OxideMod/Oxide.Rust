@@ -6357,6 +6357,80 @@
             "BaseHookName": "OnPlayerRecover",
             "HookCategory": "_Patches"
           }
+        },
+		{
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, this",
+            "HookTypeName": "Simple",
+            "Name": "CanHackCrate",
+            "HookName": "CanHackCrate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_Hack",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "656YcBJDoZJCzXE5egPt7MHt62tMeHVDI37uFMQpy9I=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnStartHackingCrate",
+            "HookName": "OnStartHackingCrate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartHacking",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "ia44+SbhOnf6fOJlizvbpwLlrgTHgFGJpHrHXM3684M=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+		{
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnFinishedHackingCrate",
+            "HookName": "OnFinishedHackingCrate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "HackProgress",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "1sFPoo+dBF3WmIgJtwAwJbwVIJUcP3NJyJ4xh2vxSgw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

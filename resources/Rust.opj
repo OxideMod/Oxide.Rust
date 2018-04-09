@@ -733,7 +733,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 904,
+            "InjectionIndex": 909,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -751,7 +751,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "1EZ+Gz4bwpjwU5S81rkqFy10hCsbvisFxLA4aq/zagc=",
+            "MSILHash": "D24OriVDRNaqi1PItyl6xlqPL1uab6vIahr3BAdjqNg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -804,7 +804,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "sKuMIDIBGE6oWTPI/h22NH1+JNJ8Uv4twSJoOSpz0dM=",
+            "MSILHash": "V8Cb8Oejin8f0WqeIEB73KV1zP3Dc4ZZALhVJA4fBdg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1330,7 +1330,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 40,
+            "InjectionIndex": 30,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1, l0",
@@ -1432,7 +1432,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 173,
+            "InjectionIndex": 182,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, l8",
@@ -2351,7 +2351,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "s0w+VoKP/oG0kgu+3Nfuse86F564GX9y04pff+59gFQ=",
+            "MSILHash": "rhcNw05NnPKZTadRmqL6NwxyHS6VlbA4HlqGoQonoRA=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2703,7 +2703,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 21,
+            "InjectionIndex": 20,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -2755,7 +2755,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "dJ+Ehb8wUf1P0c56cvAfRGck4jN83TGXgRf24kmU7Gw=",
+            "MSILHash": "kM510WnXebyIqTFqOAj7iTGf4r4mAJP/BHXQ69kbhtk=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2790,7 +2790,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 72,
+            "InjectionIndex": 62,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1",
@@ -2840,7 +2840,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 286,
+            "InjectionIndex": 279,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l1",
@@ -3114,7 +3114,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 45,
+            "InjectionIndex": 35,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -3244,8 +3244,8 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 102,
-            "ReturnBehavior": 1,
+            "InjectionIndex": 87,
+            "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l5, a0.player",
             "HookTypeName": "Simple",
@@ -4309,7 +4309,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 32,
+            "InjectionIndex": 22,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -4358,7 +4358,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 25,
+            "InjectionIndex": 15,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -4389,7 +4389,7 @@
               {
                 "OpCode": "bgt",
                 "OpType": "Instruction",
-                "Operand": 25
+                "Operand": 15
               },
               {
                 "OpCode": "ret",
@@ -4398,8 +4398,8 @@
               }
             ],
             "HookTypeName": "Modify",
-            "Name": "CanCombineDroppedItem [patch]",
-            "HookName": "CanCombineDroppedItem [patch]",
+            "Name": "CanCombineDroppedItem [patch 1]",
+            "HookName": "CanCombineDroppedItem [patch 1]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "DroppedItem",
             "Flagged": false,
@@ -5318,7 +5318,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "qf9t8VCkPx+zclYuR6xKamFQDrKmbyfdlIYTJZM97tw=",
+            "MSILHash": "j2RKO3uBHf1ihNKLPs8gYk78DuIh6YsZEbJ/m3XhY0o=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5326,7 +5326,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 75,
+            "InjectionIndex": 106,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -5345,7 +5345,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "qf9t8VCkPx+zclYuR6xKamFQDrKmbyfdlIYTJZM97tw=",
+            "MSILHash": "j2RKO3uBHf1ihNKLPs8gYk78DuIh6YsZEbJ/m3XhY0o=",
             "BaseHookName": "CanDismountEntity",
             "HookCategory": "Player"
           }
@@ -5379,7 +5379,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 81,
+            "InjectionIndex": 71,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "ArgumentString": null,
@@ -5405,7 +5405,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 95,
+            "InjectionIndex": 85,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -5610,7 +5610,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 32,
+            "InjectionIndex": 20,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, l1",
@@ -5718,7 +5718,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 68,
+            "InjectionIndex": 58,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -5762,7 +5762,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 54,
+            "InjectionIndex": 44,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -5993,7 +5993,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 33,
+            "InjectionIndex": 29,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -6025,7 +6025,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 38,
+            "InjectionIndex": 34,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -6056,7 +6056,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 43,
+            "InjectionIndex": 39,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -6087,7 +6087,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 6,
+            "InjectionIndex": 2,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -6118,7 +6118,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 51,
+            "InjectionIndex": 37,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -6149,7 +6149,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 25,
+            "InjectionIndex": 15,
             "RemoveCount": 1,
             "Instructions": [
               {
@@ -6185,7 +6185,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 24,
+            "InjectionIndex": 14,
             "RemoveCount": 1,
             "Instructions": [
               {
@@ -6221,7 +6221,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 30,
+            "InjectionIndex": 29,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, this.serverInput",
@@ -6338,7 +6338,7 @@
               {
                 "OpCode": "brtrue",
                 "OpType": "Instruction",
-                "Operand": 13
+                "Operand": 6
               }
             ],
             "HookTypeName": "Modify",
@@ -6356,6 +6356,154 @@
             "MSILHash": "Rx2JwT/TkCPbIznSMnVf0K9DHAaVlqXmbf2Xq+AU+jE=",
             "BaseHookName": "OnPlayerRecover",
             "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, this",
+            "HookTypeName": "Simple",
+            "Name": "CanHackCrate",
+            "HookName": "CanHackCrate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_Hack",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "656YcBJDoZJCzXE5egPt7MHt62tMeHVDI37uFMQpy9I=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCrateHack",
+            "HookName": "OnCrateHack",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartHacking",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "ia44+SbhOnf6fOJlizvbpwLlrgTHgFGJpHrHXM3684M=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCrateHackEnd",
+            "HookName": "OnCrateHackEnd",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "HackProgress",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "1sFPoo+dBF3WmIgJtwAwJbwVIJUcP3NJyJ4xh2vxSgw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCrateLanded",
+            "HookName": "OnCrateLanded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "LandCheck",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "DD1HYBPhZbigbe8mRfUZ/0UYYu5/WJqApK12RFzRlOw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCrateDropped",
+            "HookName": "OnCrateDropped",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetWasDropped",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "mhSqNmf+VDg5DcxfzqPk/m3o5yDMdSdrqR0zk00wNaA=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this.pendingBlueprint",
+            "HookTypeName": "Simple",
+            "Name": "CanExperiment",
+            "HookName": "CanExperiment",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Workbench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_BeginExperiment",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "3yA1M0aObDDLZhjNAtrYzTwSnikfk7J4q5/paReoQUU=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
           }
         }
       ],

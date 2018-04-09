@@ -93,6 +93,7 @@ namespace Oxide.Game.Rust
             "Warning, null renderer for ScaleRenderer!",
             "[AmplifyColor]",
             "[AmplifyOcclusion]",
+            "[CustomProbe]",
             "[Manifest] URI IS",
             "[SpawnHandler] populationCounts"
         };

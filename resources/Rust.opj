@@ -733,7 +733,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 904,
+            "InjectionIndex": 909,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -751,7 +751,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "1EZ+Gz4bwpjwU5S81rkqFy10hCsbvisFxLA4aq/zagc=",
+            "MSILHash": "D24OriVDRNaqi1PItyl6xlqPL1uab6vIahr3BAdjqNg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -804,7 +804,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "sKuMIDIBGE6oWTPI/h22NH1+JNJ8Uv4twSJoOSpz0dM=",
+            "MSILHash": "V8Cb8Oejin8f0WqeIEB73KV1zP3Dc4ZZALhVJA4fBdg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2351,7 +2351,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "s0w+VoKP/oG0kgu+3Nfuse86F564GX9y04pff+59gFQ=",
+            "MSILHash": "rhcNw05NnPKZTadRmqL6NwxyHS6VlbA4HlqGoQonoRA=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2755,7 +2755,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "dJ+Ehb8wUf1P0c56cvAfRGck4jN83TGXgRf24kmU7Gw=",
+            "MSILHash": "kM510WnXebyIqTFqOAj7iTGf4r4mAJP/BHXQ69kbhtk=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5318,7 +5318,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "qf9t8VCkPx+zclYuR6xKamFQDrKmbyfdlIYTJZM97tw=",
+            "MSILHash": "j2RKO3uBHf1ihNKLPs8gYk78DuIh6YsZEbJ/m3XhY0o=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5326,7 +5326,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 65,
+            "InjectionIndex": 106,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -5345,7 +5345,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "qf9t8VCkPx+zclYuR6xKamFQDrKmbyfdlIYTJZM97tw=",
+            "MSILHash": "j2RKO3uBHf1ihNKLPs8gYk78DuIh6YsZEbJ/m3XhY0o=",
             "BaseHookName": "CanDismountEntity",
             "HookCategory": "Player"
           }

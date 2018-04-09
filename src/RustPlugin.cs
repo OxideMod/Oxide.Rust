@@ -79,9 +79,9 @@ namespace Oxide.Plugins
         private void base_OnPlayerInit(BasePlayer player) => AddOnlinePlayer(player);
 
         [HookMethod("OnPlayerDisconnected")]
-        private void base_OnPlayerDisconnected(BasePlayer player)
+        private void base_OnPlayerDisconnected(BasePlayer player, string reason)
         {
-            // Delay removing player until OnPlayerDisconnect has fired in plugin
+            // Delay removing player until OnPlayerDisconnected has fired in plugin
             NextTick(() =>
             {
                 foreach (var pluginField in onlinePlayerFields) pluginField.Call("Remove", player);

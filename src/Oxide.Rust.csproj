@@ -29,8 +29,8 @@
   <ItemGroup>
     <PackageReference Include="GitInfo" Version="2.0.*" />
     <PackageReference Include="Oxide.References" Version="2.0.*" />
-    <PackageReference Include="Oxide.Core" Version="2.0.3797-develop" />
-    <PackageReference Include="Oxide.CSharp" Version="2.0.3829-develop" />
+    <PackageReference Include="Oxide.Core" Version="2.0.*" />
+    <PackageReference Include="Oxide.CSharp" Version="2.0.*" />
     <PackageReference Include="Oxide.MySql" Version="2.0.*" />
     <PackageReference Include="Oxide.SQLite" Version="2.0.*" />
     <PackageReference Include="Oxide.Unity" Version="2.0.*" />

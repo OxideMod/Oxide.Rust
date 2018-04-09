@@ -6357,6 +6357,154 @@
             "BaseHookName": "OnPlayerRecover",
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, this",
+            "HookTypeName": "Simple",
+            "Name": "CanHackCrate",
+            "HookName": "CanHackCrate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_Hack",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "656YcBJDoZJCzXE5egPt7MHt62tMeHVDI37uFMQpy9I=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCrateHack",
+            "HookName": "OnCrateHack",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartHacking",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "ia44+SbhOnf6fOJlizvbpwLlrgTHgFGJpHrHXM3684M=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCrateHackEnd",
+            "HookName": "OnCrateHackEnd",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "HackProgress",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "1sFPoo+dBF3WmIgJtwAwJbwVIJUcP3NJyJ4xh2vxSgw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCrateLanded",
+            "HookName": "OnCrateLanded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "LandCheck",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "DD1HYBPhZbigbe8mRfUZ/0UYYu5/WJqApK12RFzRlOw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCrateDropped",
+            "HookName": "OnCrateDropped",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetWasDropped",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "mhSqNmf+VDg5DcxfzqPk/m3o5yDMdSdrqR0zk00wNaA=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this.pendingBlueprint",
+            "HookTypeName": "Simple",
+            "Name": "CanExperiment",
+            "HookName": "CanExperiment",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Workbench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_BeginExperiment",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "3yA1M0aObDDLZhjNAtrYzTwSnikfk7J4q5/paReoQUU=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

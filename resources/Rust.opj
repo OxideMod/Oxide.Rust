@@ -804,7 +804,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "V8Cb8Oejin8f0WqeIEB73KV1zP3Dc4ZZALhVJA4fBdg=",
+            "MSILHash": "gEMQh9JvpkIe8RLf5doIfUFwq7cAhUHaUpMinheuMOw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2351,7 +2351,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "rhcNw05NnPKZTadRmqL6NwxyHS6VlbA4HlqGoQonoRA=",
+            "MSILHash": "bwFSTt+JphMwRWx6V9YHExf/ckC/kORNENYkm9ziHRw=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2755,7 +2755,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "kM510WnXebyIqTFqOAj7iTGf4r4mAJP/BHXQ69kbhtk=",
+            "MSILHash": "vtLGCODG4EshnE4ew81MhLK8O2lfi/24ldPTzv7442E=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -3244,7 +3244,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 87,
+            "InjectionIndex": 89,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l5, a0.player",
@@ -5318,7 +5318,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "j2RKO3uBHf1ihNKLPs8gYk78DuIh6YsZEbJ/m3XhY0o=",
+            "MSILHash": "S2E/7yrbBXGCcBft/UQI88vfO+P2MdAYD9nNQAn6vnE=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5326,7 +5326,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 106,
+            "InjectionIndex": 139,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -5345,7 +5345,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "j2RKO3uBHf1ihNKLPs8gYk78DuIh6YsZEbJ/m3XhY0o=",
+            "MSILHash": "S2E/7yrbBXGCcBft/UQI88vfO+P2MdAYD9nNQAn6vnE=",
             "BaseHookName": "CanDismountEntity",
             "HookCategory": "Player"
           }

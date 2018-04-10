@@ -7542,7 +7542,7 @@
             "InjectionIndex": 4,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this.context.UserEndPoint.Address, a0.Data",
+            "ArgumentString": "this.Context.UserEndPoint, a0.Data",
             "HookTypeName": "Simple",
             "Name": "IOnRconCommand [internal]",
             "HookName": "IOnRconCommand",

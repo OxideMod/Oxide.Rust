@@ -43,29 +43,34 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
-        /// Called when a remote console command was run
+        /// Called when a remote console command is received
         /// </summary>
         /// <returns></returns>
         /// <param name="sender"></param>
         /// <param name="message"></param>
         [HookMethod("IOnRconCommand")]
-        private object IOnRconCommand(IPAddress sender, string message)
+        private object IOnRconCommand(IPEndPoint sender, string message)
         {
-            if (string.IsNullOrEmpty(message)) return null;
-
-            var msg = RemoteMessage.GetMessage(message);
-            if (msg == null) return null;
-
-            var args = msg.Message.Split(' ');
-            var cmd = args[0];
-            var call = Interface.Call("OnRconCommand", sender, cmd, (args.Length > 1) ? args.Skip(1).ToArray() : null);
-            if (call != null) return true;
+            if (sender != null && !string.IsNullOrEmpty(message))
+            {
+                RemoteMessage msg = RemoteMessage.GetMessage(message);
+                if (msg != null)
+                {
+                    string[] args = msg.Message.Split(' ');
+                    string cmd = args[0];
+                    object call = Interface.Call("OnRconCommand", sender, cmd, args.Length > 1 ? args.Skip(1).ToArray() : null);
+                    if (call != null)
+                    {
+                        return true;
+                    }
+                }
+            }
 
             return null;
         }
 
         /// <summary>
-        /// Called when RCon is initialized
+        /// Called when the remote console is initialized
         /// </summary>
         /// <returns></returns>
         [HookMethod("IOnRconInitialize")]

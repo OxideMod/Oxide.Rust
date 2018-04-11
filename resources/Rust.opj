@@ -2101,7 +2101,7 @@
             },
             "MSILHash": "hJmenfTdtPXjORLmt0ioruue5eyDKWVBTcxSIDcqmZY=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Vehicle"
           }
         },
         {
@@ -4171,7 +4171,7 @@
             },
             "MSILHash": "XemtmsnNh7apk6yZcqxHf9UIdosH4EfBCwagFJepzzs=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Vehicle"
           }
         },
         {
@@ -5071,7 +5071,7 @@
             },
             "MSILHash": "RiYyYXQ7q8OvGqojqM/aCp545bRZ3rqL6itR8iliUjI=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Vehicle"
           }
         },
         {
@@ -5095,7 +5095,7 @@
             },
             "MSILHash": "ihMISRUnqBiATWKmp6+jAsgparz6MvP3qQidn4IIeq0=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Vehicle"
           }
         },
         {
@@ -5119,7 +5119,7 @@
             },
             "MSILHash": "75TP6JJcuXHkyhYF2s4bYct8U5I4og97j4UP3oMI9ZU=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Vehicle"
           }
         },
         {
@@ -5143,7 +5143,7 @@
             },
             "MSILHash": "WjsgMeT0gIlS0KMxRQsLgEmSCySXL7nu0ayBkjWGNRA=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Vehicle"
           }
         },
         {
@@ -5217,7 +5217,7 @@
             },
             "MSILHash": "aRyjm1VxkEyfCozM38XJsmsFfaWI9bI8CJbL+zgQplg=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Vehicle"
           }
         },
         {
@@ -5241,7 +5241,7 @@
             },
             "MSILHash": "DAjwZUqa+gn3AFYdpDR0WNBXIFs+sGJm11rKV0s+RmA=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Vehicle"
           }
         },
         {
@@ -5267,7 +5267,7 @@
             },
             "MSILHash": "/LR7uwfqkA/tjjucTZw0cNLKKbdaVkgFR1RBb9kG/2k=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Vehicle"
           }
         },
         {
@@ -6504,6 +6504,156 @@
             "MSILHash": "3yA1M0aObDDLZhjNAtrYzTwSnikfk7J4q5/paReoQUU=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "CanHelicopterDropCrate",
+            "HookName": "CanHelicopterDropCrate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CH47HelicopterAIController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanDropCrate",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "hVOHZa1GSkeMwsNR/QWYjxXGZzBIekjy5IE4gN1xWq4=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 32,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnHelicopterDropCrate",
+            "HookName": "OnHelicopterDropCrate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CH47HelicopterAIController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DropCrate",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "qaBog8dO57Gu6XXj5WwHWQe3M45Vxxank+C6gpzR2Ck=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnHelicopterAttacked",
+            "HookName": "OnHelicopterAttacked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CH47HelicopterAIController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnAttacked",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "7ImvyEpQnkWtbCvPnIhkT079NccERy7xWdrAivKGzLY=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnHelicopterKilled",
+            "HookName": "OnHelicopterKilled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CH47HelicopterAIController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnKilled",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "ZuHFg5Hc51tTFzqbL7D3Z4tI11StoLBGPcsUOqemeLQ=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnHelicopterOutOfCrates",
+            "HookName": "OnHelicopterOutOfCrates",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CH47HelicopterAIController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OutOfCrates",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "qSooLOvcnKH8tiapvI+ZsWYw9aqFW9gQHsM6zceQRBg=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnHelicopterDropDoorOpen",
+            "HookName": "OnHelicopterDropDoorOpen",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CH47HelicopterAIController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetDropDoorOpen",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "wKf1j81MuFi18MKnPStnWt+LbdMUl+2g4aevO3A+yIw=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
           }
         },
         {

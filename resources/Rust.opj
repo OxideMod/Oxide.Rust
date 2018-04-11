@@ -6505,6 +6505,78 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 3,
+            "RemoveCount": 4,
+            "Instructions": [
+              {
+                "OpCode": "brtrue",
+                "OpType": "Instruction",
+                "Operand": 7
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BasePlayer|get_IsAdmin"
+              },
+              {
+                "OpCode": "brtrue",
+                "OpType": "Instruction",
+                "Operand": 8
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "FixUsingHelicopter [patch]",
+            "HookName": "FixUsingHelicopter [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CH47HelicopterAIController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AttemptMount",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "qqqIlwaIs4wunGVYCOTh8PZ3TX4iUE5xe4ANR79Q184=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanUseHelicopter",
+            "HookName": "CanUseHelicopter",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CH47HelicopterAIController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AttemptMount",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "qqqIlwaIs4wunGVYCOTh8PZ3TX4iUE5xe4ANR79Q184=",
+            "BaseHookName": "FixUsingHelicopter [patch]",
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

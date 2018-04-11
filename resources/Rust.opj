@@ -2682,7 +2682,7 @@
             "InjectionIndex": 16,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "",
+            "ArgumentString": "l1",
             "HookTypeName": "Simple",
             "Name": "OnRconConnection",
             "HookName": "OnRconConnection",
@@ -2703,7 +2703,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 20,
+            "InjectionIndex": 21,
             "RemoveCount": 0,
             "Instructions": [
               {

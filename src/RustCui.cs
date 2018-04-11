@@ -1,8 +1,7 @@
-﻿extern alias Oxide;
-
-using Oxide::Newtonsoft.Json;
-using Oxide::Newtonsoft.Json.Converters;
-using Oxide::Newtonsoft.Json.Linq;
+﻿extern alias References;
+using References::Newtonsoft.Json;
+using References::Newtonsoft.Json.Converters;
+using References::Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,12 +14,10 @@ namespace Oxide.Game.Rust.Cui
     {
         public static string ToJson(List<CuiElement> elements, bool format = false)
         {
-            return JsonConvert.SerializeObject(elements,
-                format ? Formatting.Indented : Formatting.None,
-                new JsonSerializerSettings
-                {
-                    DefaultValueHandling = DefaultValueHandling.Ignore
-                }).Replace("\\n", "\n");
+            return JsonConvert.SerializeObject(elements, format ? Formatting.Indented : Formatting.None, new JsonSerializerSettings
+            {
+                DefaultValueHandling = DefaultValueHandling.Ignore
+            }).Replace("\\n", "\n");
         }
 
         public static List<CuiElement> FromJson(string json) => JsonConvert.DeserializeObject<List<CuiElement>>(json);
@@ -31,18 +28,24 @@ namespace Oxide.Game.Rust.Cui
 
         public static bool AddUi(BasePlayer player, string json)
         {
-            if (player?.net == null) return false;
+            if (player?.net != null)
+            {
+                CommunityEntity.ServerInstance.ClientRPCEx(new Network.SendInfo { connection = player.net.connection }, null, "AddUI", json);
+                return true;
+            }
 
-            CommunityEntity.ServerInstance.ClientRPCEx(new Network.SendInfo { connection = player.net.connection }, null, "AddUI", json);
-            return true;
+            return false;
         }
 
         public static bool DestroyUi(BasePlayer player, string elem)
         {
-            if (player?.net == null) return false;
+            if (player?.net != null)
+            {
+                CommunityEntity.ServerInstance.ClientRPCEx(new Network.SendInfo { connection = player.net.connection }, null, "DestroyUI", elem);
+                return true;
+            }
 
-            CommunityEntity.ServerInstance.ClientRPCEx(new Network.SendInfo { connection = player.net.connection }, null, "DestroyUI", elem);
-            return true;
+            return false;
         }
 
         public static void SetColor(this ICuiColor elem, Color color)
@@ -57,7 +60,11 @@ namespace Oxide.Game.Rust.Cui
     {
         public string Add(CuiButton button, string parent = "Hud", string name = null)
         {
-            if (string.IsNullOrEmpty(name)) name = CuiHelper.GetGuid();
+            if (string.IsNullOrEmpty(name))
+            {
+                name = CuiHelper.GetGuid();
+            }
+
             Add(new CuiElement
             {
                 Name = name,
@@ -87,7 +94,11 @@ namespace Oxide.Game.Rust.Cui
 
         public string Add(CuiLabel label, string parent = "Hud", string name = null)
         {
-            if (string.IsNullOrEmpty(name)) name = CuiHelper.GetGuid();
+            if (string.IsNullOrEmpty(name))
+            {
+                name = CuiHelper.GetGuid();
+            }
+
             Add(new CuiElement
             {
                 Name = name,
@@ -104,17 +115,33 @@ namespace Oxide.Game.Rust.Cui
 
         public string Add(CuiPanel panel, string parent = "Hud", string name = null)
         {
-            if (string.IsNullOrEmpty(name)) name = CuiHelper.GetGuid();
-            var element = new CuiElement
+            if (string.IsNullOrEmpty(name))
+            {
+                name = CuiHelper.GetGuid();
+            }
+
+            CuiElement element = new CuiElement
             {
                 Name = name,
                 Parent = parent,
                 FadeOut = panel.FadeOut
             };
-            if (panel.Image != null) element.Components.Add(panel.Image);
-            if (panel.RawImage != null) element.Components.Add(panel.RawImage);
+            if (panel.Image != null)
+            {
+                element.Components.Add(panel.Image);
+            }
+
+            if (panel.RawImage != null)
+            {
+                element.Components.Add(panel.RawImage);
+            }
+
             element.Components.Add(panel.RectTransform);
-            if (panel.CursorEnabled) element.Components.Add(new CuiNeedsCursorComponent());
+            if (panel.CursorEnabled)
+            {
+                element.Components.Add(new CuiNeedsCursorComponent());
+            }
+
             Add(element);
             return name;
         }
@@ -386,8 +413,8 @@ namespace Oxide.Game.Rust.Cui
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
-            var jObject = JObject.Load(reader);
-            var typeName = jObject["type"].ToString();
+            JObject jObject = JObject.Load(reader);
+            string typeName = jObject["type"].ToString();
             Type type;
             switch (typeName)
             {
@@ -426,7 +453,7 @@ namespace Oxide.Game.Rust.Cui
                 default:
                     return null;
             }
-            var target = Activator.CreateInstance(type);
+            object target = Activator.CreateInstance(type);
             serializer.Populate(jObject.CreateReader(), target);
             return target;
         }

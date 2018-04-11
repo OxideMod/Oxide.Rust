@@ -42,9 +42,12 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             {
                 try
                 {
-                    if (address != null) return address;
+                    if (address != null)
+                    {
+                        return address;
+                    }
 
-                    var webClient = new WebClient();
+                    WebClient webClient = new WebClient();
                     IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
                     return address;
                 }
@@ -116,7 +119,10 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="duration"></param>
         public void Ban(string id, string reason, TimeSpan duration = default(TimeSpan))
         {
-            if (IsBanned(id)) return;
+            if (IsBanned(id))
+            {
+                return;
+            }
 
             ServerUsers.Set(ulong.Parse(id), ServerUsers.UserGroup.Banned, Name, reason);
             ServerUsers.Save();
@@ -141,8 +147,8 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         {
             ConVar.Server.save(null);
 
-            var serverFolder = ConVar.Server.GetServerFolder("cfg");
-            var configString = ConsoleSystem.SaveToConfigString(true);
+            string serverFolder = ConVar.Server.GetServerFolder("cfg");
+            string configString = ConsoleSystem.SaveToConfigString(true);
             File.WriteAllText(string.Concat(serverFolder, "/serverauto.cfg"), configString);
             ServerUsers.Save();
         }
@@ -153,7 +159,10 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="id"></param>
         public void Unban(string id)
         {
-            if (!IsBanned(id)) return;
+            if (!IsBanned(id))
+            {
+                return;
+            }
 
             ServerUsers.Remove(ulong.Parse(id));
             ServerUsers.Save();

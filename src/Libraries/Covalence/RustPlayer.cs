@@ -4,6 +4,8 @@ using Oxide.Core.Libraries.Covalence;
 using System;
 using System.Globalization;
 
+using UnityEngine;
+
 namespace Oxide.Game.Rust.Libraries.Covalence
 {
     /// <summary>
@@ -21,7 +23,10 @@ namespace Oxide.Game.Rust.Libraries.Covalence
 
         internal RustPlayer(ulong id, string name)
         {
-            if (libPerms == null) libPerms = Interface.Oxide.GetLibrary<Permission>();
+            if (libPerms == null)
+            {
+                libPerms = Interface.Oxide.GetLibrary<Permission>();
+            }
 
             steamId = id;
             Name = name.Sanitize();
@@ -195,7 +200,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="z"></param>
         public void Position(out float x, out float y, out float z)
         {
-            var pos = Player.Position(player);
+            Vector3 pos = Player.Position(player);
             x = pos.x;
             y = pos.y;
             z = pos.z;
@@ -207,7 +212,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <returns></returns>
         public GenericPosition Position()
         {
-            var pos = Player.Position(player);
+            Vector3 pos = Player.Position(player);
             return new GenericPosition(pos.x, pos.y, pos.z);
         }
 

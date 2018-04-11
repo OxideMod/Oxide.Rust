@@ -16,14 +16,12 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="args"></param>
         public void Broadcast(string message, string prefix, ulong userId = 0, params object[] args)
         {
-            if (string.IsNullOrEmpty(message))
+            if (!string.IsNullOrEmpty(message))
             {
-                return;
+                message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), args) : Formatter.ToUnity(message);
+                string formatted = prefix != null ? $"{prefix}: {message}" : message;
+                ConsoleNetwork.BroadcastToAllClients("chat.add", userId, formatted, 1.0);
             }
-
-            message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), args) : Formatter.ToUnity(message);
-            var formatted = prefix != null ? $"{prefix}: {message}" : message;
-            ConsoleNetwork.BroadcastToAllClients("chat.add", userId, formatted, 1.0);
         }
 
         /// <summary>

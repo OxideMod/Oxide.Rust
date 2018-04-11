@@ -1,8 +1,11 @@
 ﻿using Network;
 using Oxide.Core;
+using Oxide.Core.Configuration;
+using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using Oxide.Core.RemoteConsole;
 using Oxide.Core.ServerConsole;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Reflection;
@@ -13,7 +16,7 @@ namespace Oxide.Game.Rust
     /// <summary>
     /// Game hooks and wrappers for the core Rust plugin
     /// </summary>
-    public partial class RustCore : CSPlugin
+    public partial class RustCore
     {
         internal bool isPlayerTakingDamage;
         internal static string ipPattern = @":{1}[0-9]{1}\d*";
@@ -34,12 +37,15 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnEnableServerConsole")]
         private object IOnEnableServerConsole(ServerConsole serverConsole)
         {
-            if (ConsoleWindow.Check(true) && !Interface.Oxide.CheckConsole(true)) return null;
+            if (!ConsoleWindow.Check(true) || Interface.Oxide.CheckConsole(true))
+            {
+                serverConsole.enabled = false;
+                UnityEngine.Object.Destroy(serverConsole);
+                typeof(SingletonComponent<ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
+                return false;
+            }
 
-            serverConsole.enabled = false;
-            UnityEngine.Object.Destroy(serverConsole);
-            typeof(SingletonComponent<ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
-            return false;
+            return null;
         }
 
         /// <summary>
@@ -58,7 +64,7 @@ namespace Oxide.Game.Rust
                 {
                     string[] args = msg.Message.Split(' ');
                     string cmd = args[0];
-                    object call = Interface.Call("OnRconCommand", sender, cmd, args.Length > 1 ? args.Skip(1).ToArray() : null);
+                    object call = Interface.Call("OnRconCommand", sender, cmd, args.Length > 1 ? args.Skip(1).ToArray() : new string[0]);
                     if (call != null)
                     {
                         return true;
@@ -83,12 +89,16 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnRunCommandLine")]
         private object IOnRunCommandLine()
         {
-            foreach (var pair in Facepunch.CommandLine.GetSwitches())
+            foreach (KeyValuePair<string, string> pair in Facepunch.CommandLine.GetSwitches())
             {
-                var value = pair.Value;
-                if (value == "") value = "1";
-                var str = pair.Key.Substring(1);
-                var options = ConsoleSystem.Option.Unrestricted;
+                string value = pair.Value;
+                if (value == "")
+                {
+                    value = "1";
+                }
+
+                string str = pair.Key.Substring(1);
+                ConsoleSystem.Option options = ConsoleSystem.Option.Unrestricted;
                 options.PrintOutput = false;
                 ConsoleSystem.Run(options, str, value);
             }
@@ -119,8 +129,15 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnBasePlayerAttacked")]
         private object IOnBasePlayerAttacked(BasePlayer player, HitInfo info)
         {
-            if (!serverInitialized || player == null || info == null || player.IsDead() || isPlayerTakingDamage || player is NPCPlayer) return null;
-            if (Interface.Call("OnEntityTakeDamage", player, info) != null) return true;
+            if (!serverInitialized || player == null || info == null || player.IsDead() || isPlayerTakingDamage || player is NPCPlayer)
+            {
+                return null;
+            }
+
+            if (Interface.Call("OnEntityTakeDamage", player, info) != null)
+            {
+                return true;
+            }
 
             isPlayerTakingDamage = true;
             try
@@ -157,14 +174,15 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnServerUsersSet")]
         private void IOnServerUsersSet(ulong steamId, ServerUsers.UserGroup group, string name, string reason)
         {
-            if (!serverInitialized) return;
-
-            var id = steamId.ToString();
-            var iplayer = Covalence.PlayerManager.FindPlayerById(id);
-            if (group == ServerUsers.UserGroup.Banned)
+            if (serverInitialized)
             {
-                Interface.Oxide.CallHook("OnPlayerBanned", name, steamId, iplayer?.Address ?? "0", reason);
-                Interface.Oxide.CallHook("OnUserBanned", name, id, iplayer?.Address ?? "0", reason);
+                string id = steamId.ToString();
+                IPlayer iplayer = Covalence.PlayerManager.FindPlayerById(id);
+                if (group == ServerUsers.UserGroup.Banned)
+                {
+                    Interface.Oxide.CallHook("OnPlayerBanned", name, steamId, iplayer?.Address ?? "0", reason);
+                    Interface.Oxide.CallHook("OnUserBanned", name, id, iplayer?.Address ?? "0", reason);
+                }
             }
         }
 
@@ -175,14 +193,15 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnServerUsersRemove")]
         private void IOnServerUsersRemove(ulong steamId)
         {
-            if (!serverInitialized) return;
-
-            var id = steamId.ToString();
-            var iplayer = Covalence.PlayerManager.FindPlayerById(id);
-            if (ServerUsers.Is(steamId, ServerUsers.UserGroup.Banned))
+            if (serverInitialized)
             {
-                Interface.Oxide.CallHook("OnPlayerUnbanned", iplayer?.Name ?? "Unnamed", steamId, iplayer?.Address ?? "0");
-                Interface.Oxide.CallHook("OnUserUnbanned", iplayer?.Name ?? "Unnamed", id, iplayer?.Address ?? "0");
+                string id = steamId.ToString();
+                IPlayer iplayer = Covalence.PlayerManager.FindPlayerById(id);
+                if (ServerUsers.Is(steamId, ServerUsers.UserGroup.Banned))
+                {
+                    Interface.Oxide.CallHook("OnPlayerUnbanned", iplayer?.Name ?? "Unnamed", steamId, iplayer?.Address ?? "0");
+                    Interface.Oxide.CallHook("OnUserUnbanned", iplayer?.Name ?? "Unnamed", id, iplayer?.Address ?? "0");
+                }
             }
         }
 
@@ -194,35 +213,42 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnUserApprove")]
         private object IOnUserApprove(Connection connection)
         {
-            var name = connection.username;
-            var id = connection.userid.ToString();
-            var authLevel = connection.authLevel;
-            var ip = Regex.Replace(connection.ipaddress, ipPattern, "");
+            string name = connection.username;
+            string id = connection.userid.ToString();
+            uint authLevel = connection.authLevel;
+            string ip = Regex.Replace(connection.ipaddress, ipPattern, "");
 
             // Update player's permissions group and name
             if (permission.IsLoaded)
             {
                 permission.UpdateNickname(id, name);
-                var defaultGroups = Interface.Oxide.Config.Options.DefaultGroups;
-                if (!permission.UserHasGroup(id, defaultGroups.Players)) permission.AddUserGroup(id, defaultGroups.Players);
-                if (authLevel == 2 && !permission.UserHasGroup(id, defaultGroups.Administrators)) permission.AddUserGroup(id, defaultGroups.Administrators);
+                OxideConfig.DefaultGroups defaultGroups = Interface.Oxide.Config.Options.DefaultGroups;
+                if (!permission.UserHasGroup(id, defaultGroups.Players))
+                {
+                    permission.AddUserGroup(id, defaultGroups.Players);
+                }
+
+                if (authLevel == 2 && !permission.UserHasGroup(id, defaultGroups.Administrators))
+                {
+                    permission.AddUserGroup(id, defaultGroups.Administrators);
+                }
             }
 
             Covalence.PlayerManager.PlayerJoin(connection.userid, name); // TODO: Handle this automatically
 
-            var loginSpecific = Interface.Call("CanClientLogin", connection);
-            var loginCovalence = Interface.Call("CanUserLogin", name, id, ip);
-            var canLogin = loginSpecific ?? loginCovalence; // TODO: Fix 'RustCore' hook conflict when both return
+            object loginSpecific = Interface.Call("CanClientLogin", connection);
+            object loginCovalence = Interface.Call("CanUserLogin", name, id, ip);
+            object canLogin = loginSpecific ?? loginCovalence; // TODO: Fix 'RustCore' hook conflict when both return
 
-            if (canLogin is string || (canLogin is bool && !(bool)canLogin))
+            if (canLogin is string || canLogin is bool && !(bool)canLogin)
             {
                 ConnectionAuth.Reject(connection, canLogin is string ? canLogin.ToString() : lang.GetMessage("ConnectionRejected", this, id));
                 return true;
             }
 
             // Call game and covalence hooks
-            var approvedSpecific = Interface.Call("OnUserApprove", connection);
-            var approvedCovalence = Interface.Call("OnUserApproved", name, id, ip);
+            object approvedSpecific = Interface.Call("OnUserApprove", connection);
+            object approvedCovalence = Interface.Call("OnUserApproved", name, id, ip);
             return approvedSpecific ?? approvedCovalence; // TODO: Fix 'RustCore' hook conflict when both return
         }
 
@@ -233,8 +259,8 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnPlayerBanned")]
         private void IOnPlayerBanned(Connection connection)
         {
-            var ip = Regex.Replace(connection.ipaddress, ipPattern, "") ?? "0";
-            var reason = connection.authStatus ?? "Unknown"; // TODO: Localization
+            string ip = Regex.Replace(connection.ipaddress, ipPattern, "") ?? "0";
+            string reason = connection.authStatus ?? "Unknown"; // TODO: Localization
 
             Interface.Oxide.CallHook("OnPlayerBanned", connection.username, connection.userid, ip, reason);
             Interface.Oxide.CallHook("OnUserBanned", connection.username, connection.userid.ToString(), ip, reason);
@@ -249,34 +275,52 @@ namespace Oxide.Game.Rust
         private object IOnPlayerChat(ConsoleSystem.Arg arg)
         {
             // Get the full chat string
-            var str = arg.GetString(0).Trim();
-            if (string.IsNullOrEmpty(str)) return true;
+            string str = arg.GetString(0).Trim();
+            if (string.IsNullOrEmpty(str))
+            {
+                return true;
+            }
 
             // Get player objects
-            var player = arg.Connection.player as BasePlayer;
-            var iplayer = player?.IPlayer;
-            if (iplayer == null) return null;
+            BasePlayer player = arg.Connection.player as BasePlayer;
+            IPlayer iplayer = player?.IPlayer;
+            if (iplayer == null)
+            {
+                return null;
+            }
 
             // Check if it is a chat command
             if (str[0] == '/')
             {
-                if (str.Length <= 1) return true;
+                if (str.Length <= 1)
+                {
+                    return true;
+                }
 
                 // Parse it
                 string cmd;
                 string[] args;
                 ParseCommand(str.TrimStart('/'), out cmd, out args);
-                if (cmd == null) return true;
+                if (cmd == null)
+                {
+                    return true;
+                }
 
                 // Is the command blocked?
-                var commandSpecific = Interface.Call("OnPlayerCommand", arg);
-                var commandCovalence = Interface.Call("OnUserCommand", iplayer, cmd, args);
-                if (commandSpecific != null || commandCovalence != null) return true;
+                object commandSpecific = Interface.Call("OnPlayerCommand", arg);
+                object commandCovalence = Interface.Call("OnUserCommand", iplayer, cmd, args);
+                if (commandSpecific != null || commandCovalence != null)
+                {
+                    return true;
+                }
 
                 // Is it a valid chat command?
                 if (!Covalence.CommandSystem.HandleChatMessage(iplayer, str) && !cmdlib.HandleChatCommand(player, cmd, args))
                 {
-                    if (!Interface.Oxide.Config.Options.Modded) return null;
+                    if (!Interface.Oxide.Config.Options.Modded)
+                    {
+                        return null;
+                    }
 
                     iplayer.Reply(string.Format(lang.GetMessage("UnknownCommand", this, iplayer.Id), cmd));
                     arg.ReplyWith(string.Empty);
@@ -287,8 +331,8 @@ namespace Oxide.Game.Rust
             }
 
             // Call game and covalence hooks
-            var chatSpecific = Interface.Call("OnPlayerChat", arg);
-            var chatCovalence = Interface.Call("OnUserChat", iplayer, str);
+            object chatSpecific = Interface.Call("OnPlayerChat", arg);
+            object chatCovalence = Interface.Call("OnUserChat", iplayer, str);
             return chatSpecific ?? chatCovalence; // TODO: Fix 'RustCore' hook conflict when both return
         }
 
@@ -300,8 +344,12 @@ namespace Oxide.Game.Rust
         [HookMethod("OnPlayerDisconnected")]
         private void OnPlayerDisconnected(BasePlayer player, string reason)
         {
-            var iplayer = player.IPlayer;
-            if (iplayer != null) Interface.Call("OnUserDisconnected", iplayer, reason);
+            IPlayer iplayer = player.IPlayer;
+            if (iplayer != null)
+            {
+                Interface.Call("OnUserDisconnected", iplayer, reason);
+            }
+
             Covalence.PlayerManager.PlayerDisconnected(player);
         }
 
@@ -317,7 +365,7 @@ namespace Oxide.Game.Rust
 
             // Let covalence know
             Covalence.PlayerManager.PlayerConnected(player);
-            var iplayer = Covalence.PlayerManager.FindPlayerById(player.UserIDString);
+            IPlayer iplayer = Covalence.PlayerManager.FindPlayerById(player.UserIDString);
             if (iplayer != null)
             {
                 player.IPlayer = iplayer;
@@ -333,8 +381,11 @@ namespace Oxide.Game.Rust
         [HookMethod("OnPlayerKicked")]
         private void OnPlayerKicked(BasePlayer player, string reason)
         {
-            var iplayer = player.IPlayer;
-            if (iplayer != null) Interface.Oxide.CallHook("OnUserKicked", player.IPlayer, reason);
+            IPlayer iplayer = player.IPlayer;
+            if (iplayer != null)
+            {
+                Interface.Oxide.CallHook("OnUserKicked", player.IPlayer, reason);
+            }
         }
 
         /// <summary>
@@ -345,7 +396,7 @@ namespace Oxide.Game.Rust
         [HookMethod("OnPlayerRespawn")]
         private object OnPlayerRespawn(BasePlayer player)
         {
-            var iplayer = player.IPlayer;
+            IPlayer iplayer = player.IPlayer;
             return iplayer != null ? Interface.Call("OnUserRespawn", iplayer) : null;
         }
 
@@ -356,8 +407,11 @@ namespace Oxide.Game.Rust
         [HookMethod("OnPlayerRespawned")]
         private void OnPlayerRespawned(BasePlayer player)
         {
-            var iplayer = player.IPlayer;
-            if (iplayer != null) Interface.Call("OnUserRespawned", iplayer);
+            IPlayer iplayer = player.IPlayer;
+            if (iplayer != null)
+            {
+                Interface.Call("OnUserRespawned", iplayer);
+            }
         }
 
         #endregion Player Hooks
@@ -386,7 +440,7 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnNpcPlayerTarget")]
         private object IOnNpcPlayerTarget(NPCPlayerApex npc, BaseEntity target)
         {
-            var callHook = Interface.Call("OnNpcPlayerTarget", npc, target);
+            object callHook = Interface.Call("OnNpcPlayerTarget", npc, target);
             if (callHook != null)
             {
                 if (npc is NPCMurderer)
@@ -416,7 +470,7 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnNpcTarget")]
         private object IOnNpcTarget(BaseNpc npc, BaseEntity target)
         {
-            var callHook = Interface.Call("OnNpcTarget", npc, target);
+            object callHook = Interface.Call("OnNpcTarget", npc, target);
             if (callHook != null)
             {
                 npc.SetFact(BaseNpc.Facts.HasEnemy, 0);
@@ -441,12 +495,16 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnLoseCondition")]
         private object IOnLoseCondition(Item item, float amount)
         {
-            var arguments = new object[] { item, amount };
+            object[] arguments = new object[] { item, amount };
             Interface.Call("OnLoseCondition", arguments);
             amount = (float)arguments[1];
-            var condition = item.condition;
+            float condition = item.condition;
             item.condition -= amount;
-            if (item.condition <= 0f && item.condition < condition) item.OnBroken();
+            if (item.condition <= 0f && item.condition < condition)
+            {
+                item.OnBroken();
+            }
+
             return true;
         }
 

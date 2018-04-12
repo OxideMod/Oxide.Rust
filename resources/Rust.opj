@@ -6483,10 +6483,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 12,
+            "InjectionIndex": 115,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l0, this.pendingBlueprint",
+            "ArgumentString": "l0, this",
             "HookTypeName": "Simple",
             "Name": "CanExperiment",
             "HookName": "CanExperiment",

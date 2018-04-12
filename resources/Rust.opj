@@ -6483,13 +6483,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 12,
+            "InjectionIndex": 107,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l0, this.pendingBlueprint",
+            "ArgumentString": "this,l0, this.pendingBlueprint",
             "HookTypeName": "Simple",
-            "Name": "CanExperiment",
-            "HookName": "CanExperiment",
+            "Name": "OnExperiment",
+            "HookName": "OnExperiment",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Workbench",
             "Flagged": false,

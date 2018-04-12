@@ -10,7 +10,7 @@ namespace Oxide.Game.Rust
     /// <summary>
     /// Game commands for the core Rust plugin
     /// </summary>
-    public partial class RustCore : CSPlugin
+    public partial class RustCore
     {
         #region Grant Command
 
@@ -23,7 +23,10 @@ namespace Oxide.Game.Rust
         [HookMethod("GrantCommand")]
         private void GrantCommand(IPlayer player, string command, string[] args)
         {
-            if (!PermissionsLoaded(player)) return;
+            if (!PermissionsLoaded(player))
+            {
+                return;
+            }
 
             if (args.Length < 3)
             {
@@ -31,9 +34,9 @@ namespace Oxide.Game.Rust
                 return;
             }
 
-            var mode = args[0];
-            var name = args[1].Sanitize();
-            var perm = args[2];
+            string mode = args[0];
+            string name = args[1].Sanitize();
+            string perm = args[2];
 
             if (!permission.PermissionExists(perm))
             {
@@ -60,21 +63,21 @@ namespace Oxide.Game.Rust
             }
             else if (mode.Equals("user"))
             {
-                var foundPlayers = Covalence.PlayerManager.FindPlayers(name).ToArray();
+                IPlayer[] foundPlayers = Covalence.PlayerManager.FindPlayers(name).ToArray();
                 if (foundPlayers.Length > 1)
                 {
                     player.Reply(string.Format(lang.GetMessage("PlayersFound", this, player.Id), string.Join(", ", foundPlayers.Select(p => p.Name).ToArray())));
                     return;
                 }
 
-                var target = foundPlayers.Length == 1 ? foundPlayers[0] : null;
+                IPlayer target = foundPlayers.Length == 1 ? foundPlayers[0] : null;
                 if (target == null && !permission.UserIdValid(name))
                 {
                     player.Reply(string.Format(lang.GetMessage("PlayerNotFound", this, player.Id), name));
                     return;
                 }
 
-                var userId = name;
+                string userId = name;
                 if (target != null)
                 {
                     userId = target.Id;
@@ -91,7 +94,10 @@ namespace Oxide.Game.Rust
                 permission.GrantUserPermission(userId, perm, null);
                 player.Reply(string.Format(lang.GetMessage("PlayerPermissionGranted", this, player.Id), $"{name} ({userId})", perm));
             }
-            else player.Reply(lang.GetMessage("CommandUsageGrant", this, player.Id));
+            else
+            {
+                player.Reply(lang.GetMessage("CommandUsageGrant", this, player.Id));
+            }
         }
 
         #endregion Grant Command
@@ -109,7 +115,10 @@ namespace Oxide.Game.Rust
         [HookMethod("GroupCommand")]
         private void GroupCommand(IPlayer player, string command, string[] args)
         {
-            if (!PermissionsLoaded(player)) return;
+            if (!PermissionsLoaded(player))
+            {
+                return;
+            }
 
             if (args.Length < 2)
             {
@@ -119,10 +128,10 @@ namespace Oxide.Game.Rust
                 return;
             }
 
-            var mode = args[0];
-            var group = args[1];
-            var title = args.Length >= 3 ? args[2] : "";
-            var rank = args.Length == 4 ? int.Parse(args[3]) : 0;
+            string mode = args[0];
+            string group = args[1];
+            string title = args.Length >= 3 ? args[2] : "";
+            int rank = args.Length == 4 ? int.Parse(args[3]) : 0;
 
             if (mode.Equals("add"))
             {
@@ -172,7 +181,7 @@ namespace Oxide.Game.Rust
                     return;
                 }
 
-                var parent = args[2];
+                string parent = args[2];
                 if (!string.IsNullOrEmpty(parent) && !permission.GroupExists(parent))
                 {
                     player.Reply(string.Format(lang.GetMessage("GroupParentNotFound", this, player.Id), parent));
@@ -180,9 +189,13 @@ namespace Oxide.Game.Rust
                 }
 
                 if (permission.SetGroupParent(group, parent))
+                {
                     player.Reply(string.Format(lang.GetMessage("GroupParentChanged", this, player.Id), group, parent));
+                }
                 else
+                {
                     player.Reply(string.Format(lang.GetMessage("GroupParentNotChanged", this, player.Id), group));
+                }
             }
             else
             {
@@ -220,8 +233,12 @@ namespace Oxide.Game.Rust
             else
             {
                 // TODO: Check if language exists before setting, warn if not
-                var languages = lang.GetLanguages();
-                if (languages.Contains(args[0])) lang.SetLanguage(args[0], player.Id);
+                string[] languages = lang.GetLanguages();
+                if (languages.Contains(args[0]))
+                {
+                    lang.SetLanguage(args[0], player.Id);
+                }
+
                 player.Reply(string.Format(lang.GetMessage("PlayerLanguage", this, player.Id), args[0]));
             }
         }
@@ -251,9 +268,13 @@ namespace Oxide.Game.Rust
                 return;
             }
 
-            foreach (var name in args)
+            foreach (string name in args)
             {
-                if (string.IsNullOrEmpty(name)) continue;
+                if (string.IsNullOrEmpty(name))
+                {
+                    continue;
+                }
+
                 Interface.Oxide.LoadPlugin(name);
                 pluginManager.GetPlugin(name);
             }
@@ -272,31 +293,37 @@ namespace Oxide.Game.Rust
         [HookMethod("PluginsCommand")]
         private void PluginsCommand(IPlayer player, string command, string[] args)
         {
-            var loadedPlugins = pluginManager.GetPlugins().Where(pl => !pl.IsCorePlugin).ToArray();
-            var loadedPluginNames = new HashSet<string>(loadedPlugins.Select(pl => pl.Name));
-            var unloadedPluginErrors = new Dictionary<string, string>();
-            foreach (var loader in Interface.Oxide.GetPluginLoaders())
+            Plugin[] loadedPlugins = pluginManager.GetPlugins().Where(pl => !pl.IsCorePlugin).ToArray();
+            HashSet<string> loadedPluginNames = new HashSet<string>(loadedPlugins.Select(pl => pl.Name));
+            Dictionary<string, string> unloadedPluginErrors = new Dictionary<string, string>();
+            foreach (PluginLoader loader in Interface.Oxide.GetPluginLoaders())
             {
-                foreach (var name in loader.ScanDirectory(Interface.Oxide.PluginDirectory).Except(loadedPluginNames))
+                foreach (string name in loader.ScanDirectory(Interface.Oxide.PluginDirectory).Except(loadedPluginNames))
                 {
                     string msg;
-                    unloadedPluginErrors[name] = (loader.PluginErrors.TryGetValue(name, out msg)) ? msg : "Unloaded"; // TODO: Localization
+                    unloadedPluginErrors[name] = loader.PluginErrors.TryGetValue(name, out msg) ? msg : "Unloaded"; // TODO: Localization
                 }
             }
 
-            var totalPluginCount = loadedPlugins.Length + unloadedPluginErrors.Count;
+            int totalPluginCount = loadedPlugins.Length + unloadedPluginErrors.Count;
             if (totalPluginCount < 1)
             {
                 player.Reply(lang.GetMessage("NoPluginsFound", this, player.Id));
                 return;
             }
 
-            var output = $"Listing {loadedPlugins.Length + unloadedPluginErrors.Count} plugins:"; // TODO: Localization
-            var number = 1;
-            foreach (var plugin in loadedPlugins.Where(p => p.Filename != null))
+            string output = $"Listing {loadedPlugins.Length + unloadedPluginErrors.Count} plugins:"; // TODO: Localization
+            int number = 1;
+            foreach (Plugin plugin in loadedPlugins.Where(p => p.Filename != null))
+            {
                 output += $"\n  {number++:00} \"{plugin.Title}\" ({plugin.Version}) by {plugin.Author} ({plugin.TotalHookTime:0.00}s) - {plugin.Filename.Basename()}";
-            foreach (var pluginName in unloadedPluginErrors.Keys)
+            }
+
+            foreach (string pluginName in unloadedPluginErrors.Keys)
+            {
                 output += $"\n  {number++:00} {pluginName} - {unloadedPluginErrors[pluginName]}";
+            }
+
             player.Reply(output);
         }
 
@@ -325,8 +352,13 @@ namespace Oxide.Game.Rust
                 return;
             }
 
-            foreach (var name in args)
-                if (!string.IsNullOrEmpty(name)) Interface.Oxide.ReloadPlugin(name);
+            foreach (string name in args)
+            {
+                if (!string.IsNullOrEmpty(name))
+                {
+                    Interface.Oxide.ReloadPlugin(name);
+                }
+            }
         }
 
         #endregion Reload Command
@@ -342,7 +374,10 @@ namespace Oxide.Game.Rust
         [HookMethod("RevokeCommand")]
         private void RevokeCommand(IPlayer player, string command, string[] args)
         {
-            if (!PermissionsLoaded(player)) return;
+            if (!PermissionsLoaded(player))
+            {
+                return;
+            }
 
             if (args.Length < 3)
             {
@@ -350,9 +385,9 @@ namespace Oxide.Game.Rust
                 return;
             }
 
-            var mode = args[0];
-            var name = args[1].Sanitize();
-            var perm = args[2];
+            string mode = args[0];
+            string name = args[1].Sanitize();
+            string perm = args[2];
 
             if (mode.Equals("group"))
             {
@@ -374,21 +409,21 @@ namespace Oxide.Game.Rust
             }
             else if (mode.Equals("user"))
             {
-                var foundPlayers = Covalence.PlayerManager.FindPlayers(name).ToArray();
+                IPlayer[] foundPlayers = Covalence.PlayerManager.FindPlayers(name).ToArray();
                 if (foundPlayers.Length > 1)
                 {
                     player.Reply(string.Format(lang.GetMessage("PlayersFound", this, player.Id), string.Join(", ", foundPlayers.Select(p => p.Name).ToArray())));
                     return;
                 }
 
-                var target = foundPlayers.Length == 1 ? foundPlayers[0] : null;
+                IPlayer target = foundPlayers.Length == 1 ? foundPlayers[0] : null;
                 if (target == null && !permission.UserIdValid(name))
                 {
                     player.Reply(string.Format(lang.GetMessage("PlayerNotFound", this, player.Id), name));
                     return;
                 }
 
-                var userId = name;
+                string userId = name;
                 if (target != null)
                 {
                     userId = target.Id;
@@ -406,7 +441,10 @@ namespace Oxide.Game.Rust
                 permission.RevokeUserPermission(userId, perm);
                 player.Reply(string.Format(lang.GetMessage("PlayerPermissionRevoked", this, player.Id), $"{name} ({userId})", perm));
             }
-            else player.Reply(lang.GetMessage("CommandUsageRevoke", this, player.Id));
+            else
+            {
+                player.Reply(lang.GetMessage("CommandUsageRevoke", this, player.Id));
+            }
         }
 
         #endregion Revoke Command
@@ -424,7 +462,10 @@ namespace Oxide.Game.Rust
         [HookMethod("ShowCommand")]
         private void ShowCommand(IPlayer player, string command, string[] args)
         {
-            if (!PermissionsLoaded(player)) return;
+            if (!PermissionsLoaded(player))
+            {
+                return;
+            }
 
             if (args.Length < 1)
             {
@@ -433,8 +474,8 @@ namespace Oxide.Game.Rust
                 return;
             }
 
-            var mode = args[0];
-            var name = args.Length == 2 ? args[1].Sanitize() : string.Empty;
+            string mode = args[0];
+            string name = args.Length == 2 ? args[1].Sanitize() : string.Empty;
 
             if (mode.Equals("perms"))
             {
@@ -449,9 +490,9 @@ namespace Oxide.Game.Rust
                     return;
                 }
 
-                var users = permission.GetPermissionUsers(name);
-                var groups = permission.GetPermissionGroups(name);
-                var result = $"{string.Format(lang.GetMessage("PermissionPlayers", this, player.Id), name)}:\n";
+                string[] users = permission.GetPermissionUsers(name);
+                string[] groups = permission.GetPermissionGroups(name);
+                string result = $"{string.Format(lang.GetMessage("PermissionPlayers", this, player.Id), name)}:\n";
                 result += users.Length > 0 ? string.Join(", ", users) : lang.GetMessage("NoPermissionPlayers", this, player.Id);
                 result += $"\n\n{string.Format(lang.GetMessage("PermissionGroups", this, player.Id), name)}:\n";
                 result += groups.Length > 0 ? string.Join(", ", groups) : lang.GetMessage("NoPermissionGroups", this, player.Id);
@@ -466,21 +507,21 @@ namespace Oxide.Game.Rust
                     return;
                 }
 
-                var foundPlayers = Covalence.PlayerManager.FindPlayers(name).ToArray();
+                IPlayer[] foundPlayers = Covalence.PlayerManager.FindPlayers(name).ToArray();
                 if (foundPlayers.Length > 1)
                 {
                     player.Reply(string.Format(lang.GetMessage("PlayersFound", this, player.Id), string.Join(", ", foundPlayers.Select(p => p.Name).ToArray())));
                     return;
                 }
 
-                var target = foundPlayers.Length == 1 ? foundPlayers[0] : null;
+                IPlayer target = foundPlayers.Length == 1 ? foundPlayers[0] : null;
                 if (target == null && !permission.UserIdValid(name))
                 {
                     player.Reply(string.Format(lang.GetMessage("PlayerNotFound", this, player.Id), name));
                     return;
                 }
 
-                var userId = name;
+                string userId = name;
                 if (target != null)
                 {
                     userId = target.Id;
@@ -489,9 +530,9 @@ namespace Oxide.Game.Rust
                     name += $" ({userId})";
                 }
 
-                var perms = permission.GetUserPermissions(userId);
-                var groups = permission.GetUserGroups(userId);
-                var result = $"{string.Format(lang.GetMessage("PlayerPermissions", this, player.Id), name)}:\n";
+                string[] perms = permission.GetUserPermissions(userId);
+                string[] groups = permission.GetUserGroups(userId);
+                string result = $"{string.Format(lang.GetMessage("PlayerPermissions", this, player.Id), name)}:\n";
                 result += perms.Length > 0 ? string.Join(", ", perms) : lang.GetMessage("NoPlayerPermissions", this, player.Id);
                 result += $"\n\n{string.Format(lang.GetMessage("PlayerGroups", this, player.Id), name)}:\n";
                 result += groups.Length > 0 ? string.Join(", ", groups) : lang.GetMessage("NoPlayerGroups", this, player.Id);
@@ -512,13 +553,13 @@ namespace Oxide.Game.Rust
                     return;
                 }
 
-                var users = permission.GetUsersInGroup(name);
-                var perms = permission.GetGroupPermissions(name);
-                var result = $"{string.Format(lang.GetMessage("GroupPlayers", this, player.Id), name)}:\n";
+                string[] users = permission.GetUsersInGroup(name);
+                string[] perms = permission.GetGroupPermissions(name);
+                string result = $"{string.Format(lang.GetMessage("GroupPlayers", this, player.Id), name)}:\n";
                 result += users.Length > 0 ? string.Join(", ", users) : lang.GetMessage("NoPlayersInGroup", this, player.Id);
                 result += $"\n\n{string.Format(lang.GetMessage("GroupPermissions", this, player.Id), name)}:\n";
                 result += perms.Length > 0 ? string.Join(", ", perms) : lang.GetMessage("NoGroupPermissions", this, player.Id);
-                var parent = permission.GetGroupParent(name);
+                string parent = permission.GetGroupParent(name);
                 while (permission.GroupExists(parent))
                 {
                     result += $"\n{string.Format(lang.GetMessage("ParentGroupPermissions", this, player.Id), parent)}:\n";
@@ -563,8 +604,13 @@ namespace Oxide.Game.Rust
                 return;
             }
 
-            foreach (var name in args)
-                if (!string.IsNullOrEmpty(name)) Interface.Oxide.UnloadPlugin(name);
+            foreach (string name in args)
+            {
+                if (!string.IsNullOrEmpty(name))
+                {
+                    Interface.Oxide.UnloadPlugin(name);
+                }
+            }
         }
 
         #endregion Unload Command
@@ -580,7 +626,10 @@ namespace Oxide.Game.Rust
         [HookMethod("UserGroupCommand")]
         private void UserGroupCommand(IPlayer player, string command, string[] args)
         {
-            if (!PermissionsLoaded(player)) return;
+            if (!PermissionsLoaded(player))
+            {
+                return;
+            }
 
             if (args.Length < 3)
             {
@@ -588,25 +637,25 @@ namespace Oxide.Game.Rust
                 return;
             }
 
-            var mode = args[0];
-            var name = args[1].Sanitize();
-            var group = args[2];
+            string mode = args[0];
+            string name = args[1].Sanitize();
+            string group = args[2];
 
-            var foundPlayers = Covalence.PlayerManager.FindPlayers(name).ToArray();
+            IPlayer[] foundPlayers = Covalence.PlayerManager.FindPlayers(name).ToArray();
             if (foundPlayers.Length > 1)
             {
                 player.Reply(string.Format(lang.GetMessage("PlayersFound", this, player.Id), string.Join(", ", foundPlayers.Select(p => p.Name).ToArray())));
                 return;
             }
 
-            var target = foundPlayers.Length == 1 ? foundPlayers[0] : null;
+            IPlayer target = foundPlayers.Length == 1 ? foundPlayers[0] : null;
             if (target == null && !permission.UserIdValid(name))
             {
                 player.Reply(string.Format(lang.GetMessage("PlayerNotFound", this, player.Id), name));
                 return;
             }
 
-            var userId = name;
+            string userId = name;
             if (target != null)
             {
                 userId = target.Id;
@@ -631,7 +680,10 @@ namespace Oxide.Game.Rust
                 permission.RemoveUserGroup(userId, group);
                 player.Reply(string.Format(lang.GetMessage("PlayerRemovedFromGroup", this, player.Id), name, group));
             }
-            else player.Reply(lang.GetMessage("CommandUsageUserGroup", this, player.Id));
+            else
+            {
+                player.Reply(lang.GetMessage("CommandUsageUserGroup", this, player.Id));
+            }
         }
 
         #endregion User Group Command
@@ -657,7 +709,7 @@ namespace Oxide.Game.Rust
             }
             else
             {
-                var format = Covalence.FormatText(lang.GetMessage("Version", this, player.Id));
+                string format = Covalence.FormatText(lang.GetMessage("Version", this, player.Id));
                 player.Reply(string.Format(format, RustExtension.AssemblyVersion, Covalence.GameName, Server.Version, Server.Protocol));
             }
         }

@@ -107,12 +107,18 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="reason"></param>
         public void Ban(ulong id, string reason = "")
         {
-            if (IsBanned(id)) return;
+            if (IsBanned(id))
+            {
+                return;
+            }
 
-            var player = FindById(id);
+            BasePlayer player = FindById(id);
             ServerUsers.Set(id, ServerUsers.UserGroup.Banned, player?.displayName ?? "Unknown", reason);
             ServerUsers.Save();
-            if (player != null && IsConnected(player)) Kick(player, reason);
+            if (player != null && IsConnected(player))
+            {
+                Kick(player, reason);
+            }
         }
 
         /// <summary>
@@ -181,7 +187,10 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="destination"></param>
         public void Teleport(BasePlayer player, Vector3 destination)
         {
-            if (player.IsSpectating()) return;
+            if (player.IsSpectating())
+            {
+                return;
+            }
 
             // TODO: Check destination for potential obstructions to avoid
             player.MovePosition(destination);
@@ -209,7 +218,10 @@ namespace Oxide.Game.Rust.Libraries
         /// </summary>
         public void Unban(ulong id)
         {
-            if (!IsBanned(id)) return;
+            if (!IsBanned(id))
+            {
+                return;
+            }
 
             ServerUsers.Remove(id);
             ServerUsers.Save();
@@ -247,10 +259,14 @@ namespace Oxide.Game.Rust.Libraries
         /// <returns></returns>
         public BasePlayer Find(string nameOrIdOrIp)
         {
-            foreach (var player in Players)
+            foreach (BasePlayer player in Players)
             {
                 if (!nameOrIdOrIp.Equals(player.displayName, StringComparison.OrdinalIgnoreCase) &&
-                    !nameOrIdOrIp.Equals(player.UserIDString) && !nameOrIdOrIp.Equals(player.net.connection.ipaddress)) continue;
+                    !nameOrIdOrIp.Equals(player.UserIDString) && !nameOrIdOrIp.Equals(player.net.connection.ipaddress))
+                {
+                    continue;
+                }
+
                 return player;
             }
             return null;
@@ -263,9 +279,13 @@ namespace Oxide.Game.Rust.Libraries
         /// <returns></returns>
         public BasePlayer FindById(string id)
         {
-            foreach (var player in Players)
+            foreach (BasePlayer player in Players)
             {
-                if (!id.Equals(player.UserIDString)) continue;
+                if (!id.Equals(player.UserIDString))
+                {
+                    continue;
+                }
+
                 return player;
             }
             return null;
@@ -278,9 +298,13 @@ namespace Oxide.Game.Rust.Libraries
         /// <returns></returns>
         public BasePlayer FindById(ulong id)
         {
-            foreach (var player in Players)
+            foreach (BasePlayer player in Players)
             {
-                if (!id.Equals(player.userID)) continue;
+                if (!id.Equals(player.userID))
+                {
+                    continue;
+                }
+
                 return player;
             }
             return null;
@@ -315,7 +339,7 @@ namespace Oxide.Game.Rust.Libraries
             }
 
             message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), args) : Formatter.ToUnity(message);
-            var formatted = prefix != null ? $"{prefix} {message}" : message;
+            string formatted = prefix != null ? $"{prefix} {message}" : message;
             player.SendConsoleCommand("chat.add", userId, formatted, 1.0);
         }
 
@@ -366,22 +390,31 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="itemId"></param>
         public void DropItem(BasePlayer player, int itemId)
         {
-            var position = player.transform.position;
-            var inventory = Inventory(player);
-            for (var s = 0; s < inventory.containerMain.capacity; s++)
+            Vector3 position = player.transform.position;
+            PlayerInventory inventory = Inventory(player);
+            for (int s = 0; s < inventory.containerMain.capacity; s++)
             {
-                var i = inventory.containerMain.GetSlot(s);
-                if (i.info.itemid == itemId) i.Drop((position + new Vector3(0f, 1f, 0f)) + (position / 2f), (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                global::Item i = inventory.containerMain.GetSlot(s);
+                if (i.info.itemid == itemId)
+                {
+                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                }
             }
-            for (var s = 0; s < inventory.containerBelt.capacity; s++)
+            for (int s = 0; s < inventory.containerBelt.capacity; s++)
             {
-                var i = inventory.containerBelt.GetSlot(s);
-                if (i.info.itemid == itemId) i.Drop((position + new Vector3(0f, 1f, 0f)) + (position / 2f), (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                global::Item i = inventory.containerBelt.GetSlot(s);
+                if (i.info.itemid == itemId)
+                {
+                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                }
             }
-            for (var s = 0; s < inventory.containerWear.capacity; s++)
+            for (int s = 0; s < inventory.containerWear.capacity; s++)
             {
-                var i = inventory.containerWear.GetSlot(s);
-                if (i.info.itemid == itemId) i.Drop((position + new Vector3(0f, 1f, 0f)) + (position / 2f), (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                global::Item i = inventory.containerWear.GetSlot(s);
+                if (i.info.itemid == itemId)
+                {
+                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                }
             }
         }
 
@@ -392,22 +425,31 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="item"></param>
         public void DropItem(BasePlayer player, global::Item item)
         {
-            var position = player.transform.position;
-            var inventory = Inventory(player);
-            for (var s = 0; s < inventory.containerMain.capacity; s++)
+            Vector3 position = player.transform.position;
+            PlayerInventory inventory = Inventory(player);
+            for (int s = 0; s < inventory.containerMain.capacity; s++)
             {
-                var i = inventory.containerMain.GetSlot(s);
-                if (i == item) i.Drop((position + new Vector3(0f, 1f, 0f)) + (position / 2f), (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                global::Item i = inventory.containerMain.GetSlot(s);
+                if (i == item)
+                {
+                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                }
             }
-            for (var s = 0; s < inventory.containerBelt.capacity; s++)
+            for (int s = 0; s < inventory.containerBelt.capacity; s++)
             {
-                var i = inventory.containerBelt.GetSlot(s);
-                if (i == item) i.Drop((position + new Vector3(0f, 1f, 0f)) + (position / 2f), (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                global::Item i = inventory.containerBelt.GetSlot(s);
+                if (i == item)
+                {
+                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                }
             }
-            for (var s = 0; s < inventory.containerWear.capacity; s++)
+            for (int s = 0; s < inventory.containerWear.capacity; s++)
             {
-                var i = inventory.containerWear.GetSlot(s);
-                if (i == item) i.Drop((position + new Vector3(0f, 1f, 0f)) + (position / 2f), (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                global::Item i = inventory.containerWear.GetSlot(s);
+                if (i == item)
+                {
+                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                }
             }
         }
 
@@ -450,7 +492,7 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="player"></param>
         public void ResetInventory(BasePlayer player)
         {
-            var inventory = Inventory(player);
+            PlayerInventory inventory = Inventory(player);
             if (inventory != null)
             {
                 inventory.DoDestroy();

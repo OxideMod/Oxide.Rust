@@ -104,32 +104,45 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             command = command.ToLowerInvariant().Trim();
 
             // Setup console command name
-            var split = command.Split('.');
-            var parent = split.Length >= 2 ? split[0].Trim() : "global";
-            var name = split.Length >= 2 ? string.Join(".", split.Skip(1).ToArray()) : split[0].Trim();
-            var fullName = $"{parent}.{name}";
+            string[] split = command.Split('.');
+            string parent = split.Length >= 2 ? split[0].Trim() : "global";
+            string name = split.Length >= 2 ? string.Join(".", split.Skip(1).ToArray()) : split[0].Trim();
+            string fullName = $"{parent}.{name}";
 
-            if (parent == "global") command = name;
+            if (parent == "global")
+            {
+                command = name;
+            }
 
             // Setup a new Covalence command
-            var newCommand = new RegisteredCommand(plugin, command, callback);
+            RegisteredCommand newCommand = new RegisteredCommand(plugin, command, callback);
 
             // Check if the command can be overridden
-            if (!CanOverrideCommand(command)) throw new CommandAlreadyExistsException(command);
+            if (!CanOverrideCommand(command))
+            {
+                throw new CommandAlreadyExistsException(command);
+            }
 
             // Check if command already exists in another Covalence plugin
             RegisteredCommand cmd;
             if (registeredCommands.TryGetValue(command, out cmd))
             {
-                if (cmd.OriginalCallback != null) newCommand.OriginalCallback = cmd.OriginalCallback;
+                if (cmd.OriginalCallback != null)
+                {
+                    newCommand.OriginalCallback = cmd.OriginalCallback;
+                }
 
-                var previousPluginName = cmd.Source?.Name ?? "an unknown plugin";
-                var newPluginName = plugin?.Name ?? "An unknown plugin";
-                var message = $"{newPluginName} has replaced the '{command}' command previously registered by {previousPluginName}";
+                string previousPluginName = cmd.Source?.Name ?? "an unknown plugin";
+                string newPluginName = plugin?.Name ?? "An unknown plugin";
+                string message = $"{newPluginName} has replaced the '{command}' command previously registered by {previousPluginName}";
                 Interface.Oxide.LogWarning(message);
 
                 ConsoleSystem.Index.Server.Dict.Remove(fullName);
-                if (parent == "global") ConsoleSystem.Index.Server.GlobalDict.Remove(name);
+                if (parent == "global")
+                {
+                    ConsoleSystem.Index.Server.GlobalDict.Remove(name);
+                }
+
                 ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
             }
 
@@ -137,9 +150,9 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             Command.ChatCommand chatCommand;
             if (cmdlib.chatCommands.TryGetValue(command, out chatCommand))
             {
-                var previousPluginName = chatCommand.Plugin?.Name ?? "an unknown plugin";
-                var newPluginName = plugin?.Name ?? "An unknown plugin";
-                var message = $"{newPluginName} has replaced the '{command}' chat command previously registered by {previousPluginName}";
+                string previousPluginName = chatCommand.Plugin?.Name ?? "an unknown plugin";
+                string newPluginName = plugin?.Name ?? "An unknown plugin";
+                string message = $"{newPluginName} has replaced the '{command}' chat command previously registered by {previousPluginName}";
                 Interface.Oxide.LogWarning(message);
 
                 cmdlib.chatCommands.Remove(command);
@@ -149,15 +162,22 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             Command.ConsoleCommand consoleCommand;
             if (cmdlib.consoleCommands.TryGetValue(fullName, out consoleCommand))
             {
-                if (consoleCommand.OriginalCallback != null) newCommand.OriginalCallback = consoleCommand.OriginalCallback;
+                if (consoleCommand.OriginalCallback != null)
+                {
+                    newCommand.OriginalCallback = consoleCommand.OriginalCallback;
+                }
 
-                var previousPluginName = consoleCommand.Callback.Plugin?.Name ?? "an unknown plugin";
-                var newPluginName = plugin?.Name ?? "An unknown plugin";
-                var message = $"{newPluginName} has replaced the '{fullName}' console command previously registered by {previousPluginName}";
+                string previousPluginName = consoleCommand.Callback.Plugin?.Name ?? "an unknown plugin";
+                string newPluginName = plugin?.Name ?? "An unknown plugin";
+                string message = $"{newPluginName} has replaced the '{fullName}' console command previously registered by {previousPluginName}";
                 Interface.Oxide.LogWarning(message);
 
                 ConsoleSystem.Index.Server.Dict.Remove(consoleCommand.RustCommand.FullName);
-                if (parent == "global") ConsoleSystem.Index.Server.GlobalDict.Remove(consoleCommand.RustCommand.Name);
+                if (parent == "global")
+                {
+                    ConsoleSystem.Index.Server.GlobalDict.Remove(consoleCommand.RustCommand.Name);
+                }
+
                 ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
                 cmdlib.consoleCommands.Remove(consoleCommand.RustCommand.FullName);
             }
@@ -168,7 +188,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             {
                 if (rustCommand.Variable)
                 {
-                    var newPluginName = plugin?.Name ?? "An unknown plugin";
+                    string newPluginName = plugin?.Name ?? "An unknown plugin";
                     Interface.Oxide.LogError($"{newPluginName} tried to register the {fullName} console variable as a command!");
                     return;
                 }
@@ -188,12 +208,18 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 Variable = false,
                 Call = arg =>
                 {
-                    if (arg == null) return;
+                    if (arg == null)
+                    {
+                        return;
+                    }
 
                     if (arg.Connection != null && arg.Player())
                     {
-                        var iplayer = rustCovalence.PlayerManager.FindPlayerById(arg.Connection.userid.ToString()) as RustPlayer;
-                        if (iplayer == null) return;
+                        RustPlayer iplayer = rustCovalence.PlayerManager.FindPlayerById(arg.Connection.userid.ToString()) as RustPlayer;
+                        if (iplayer == null)
+                        {
+                            return;
+                        }
 
                         iplayer.LastCommand = CommandType.Console;
                         callback(iplayer, command, ExtractArgs(arg));
@@ -205,7 +231,11 @@ namespace Oxide.Game.Rust.Libraries.Covalence
 
             // Register the command as a console command
             ConsoleSystem.Index.Server.Dict[fullName] = newCommand.RustCommand;
-            if (parent == "global") ConsoleSystem.Index.Server.GlobalDict[name] = newCommand.RustCommand;
+            if (parent == "global")
+            {
+                ConsoleSystem.Index.Server.GlobalDict[name] = newCommand.RustCommand;
+            }
+
             ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
 
             // Register the command as a chat command
@@ -224,16 +254,22 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         public void UnregisterCommand(string command, Plugin plugin)
         {
             RegisteredCommand cmd;
-            if (!registeredCommands.TryGetValue(command, out cmd)) return;
+            if (!registeredCommands.TryGetValue(command, out cmd))
+            {
+                return;
+            }
 
             // Check if the command belongs to the plugin
-            if (plugin != cmd.Source) return;
+            if (plugin != cmd.Source)
+            {
+                return;
+            }
 
             // Setup console command name
-            var split = command.Split('.');
-            var parent = split.Length >= 2 ? split[0].Trim() : "global";
-            var name = split.Length >= 2 ? string.Join(".", split.Skip(1).ToArray()) : split[0].Trim();
-            var fullName = $"{parent}.{name}";
+            string[] split = command.Split('.');
+            string parent = split.Length >= 2 ? split[0].Trim() : "global";
+            string name = split.Length >= 2 ? string.Join(".", split.Skip(1).ToArray()) : split[0].Trim();
+            string fullName = $"{parent}.{name}";
 
             // Remove the chat command
             registeredCommands.Remove(command);
@@ -242,12 +278,18 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             if (cmd.OriginalCallback != null)
             {
                 ConsoleSystem.Index.Server.Dict[fullName].Call = cmd.OriginalCallback;
-                if (fullName.StartsWith("global.")) ConsoleSystem.Index.Server.GlobalDict[name].Call = cmd.OriginalCallback;
+                if (fullName.StartsWith("global."))
+                {
+                    ConsoleSystem.Index.Server.GlobalDict[name].Call = cmd.OriginalCallback;
+                }
             }
             else
             {
                 ConsoleSystem.Index.Server.Dict.Remove(cmd.RustCommand.FullName);
-                if (fullName.StartsWith("global.")) ConsoleSystem.Index.Server.GlobalDict.Remove(name);
+                if (fullName.StartsWith("global."))
+                {
+                    ConsoleSystem.Index.Server.GlobalDict.Remove(name);
+                }
             }
         }
 
@@ -274,22 +316,37 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <returns></returns>
         private bool CanOverrideCommand(string command)
         {
-            var split = command.Split('.');
-            var parent = split.Length >= 2 ? split[0].Trim() : "global";
-            var name = split.Length >= 2 ? string.Join(".", split.Skip(1).ToArray()) : split[0].Trim();
-            var fullName = $"{parent}.{name}";
+            string[] split = command.Split('.');
+            string parent = split.Length >= 2 ? split[0].Trim() : "global";
+            string name = split.Length >= 2 ? string.Join(".", split.Skip(1).ToArray()) : split[0].Trim();
+            string fullName = $"{parent}.{name}";
 
             RegisteredCommand cmd;
             if (registeredCommands.TryGetValue(command, out cmd))
-                if (cmd.Source.IsCorePlugin) return false;
+            {
+                if (cmd.Source.IsCorePlugin)
+                {
+                    return false;
+                }
+            }
 
             Command.ChatCommand chatCommand;
             if (cmdlib.chatCommands.TryGetValue(command, out chatCommand))
-                if (chatCommand.Plugin.IsCorePlugin) return false;
+            {
+                if (chatCommand.Plugin.IsCorePlugin)
+                {
+                    return false;
+                }
+            }
 
             Command.ConsoleCommand consoleCommand;
             if (cmdlib.consoleCommands.TryGetValue(fullName, out consoleCommand))
-                if (consoleCommand.Callback.Plugin.IsCorePlugin) return false;
+            {
+                if (consoleCommand.Callback.Plugin.IsCorePlugin)
+                {
+                    return false;
+                }
+            }
 
             return !RustCore.RestrictedCommands.Contains(command) && !RustCore.RestrictedCommands.Contains(fullName);
         }
@@ -305,11 +362,18 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <returns></returns>
         private static string[] ExtractArgs(ConsoleSystem.Arg arg)
         {
-            if (arg == null) return new string[0];
+            if (arg == null)
+            {
+                return new string[0];
+            }
 
-            var argsList = new List<string>();
-            var i = 0;
-            while (arg.HasArgs(++i)) argsList.Add(arg.GetString(i - 1));
+            List<string> argsList = new List<string>();
+            int i = 0;
+            while (arg.HasArgs(++i))
+            {
+                argsList.Add(arg.GetString(i - 1));
+            }
+
             return argsList.ToArray();
         }
 

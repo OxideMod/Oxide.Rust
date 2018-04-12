@@ -58,10 +58,13 @@ namespace Oxide.Game.Rust
         /// <returns></returns>
         private bool PermissionsLoaded(IPlayer player)
         {
-            if (permission.IsLoaded) return true;
+            if (!permission.IsLoaded)
+            {
+                player.Reply(string.Format(lang.GetMessage("PermissionsNotLoaded", this, player.Id), permission.LastException.Message));
+                return false;
+            }
 
-            player.Reply(string.Format(lang.GetMessage("PermissionsNotLoaded", this, player.Id), permission.LastException.Message));
-            return false;
+            return true;
         }
 
         #endregion Initialization
@@ -96,20 +99,32 @@ namespace Oxide.Game.Rust
             AddCovalenceCommand(new[] { "oxide.version", "o.version" }, "VersionCommand");
 
             // Register messages for localization
-            foreach (var language in Localization.languages) lang.RegisterMessages(language.Value, this, language.Key);
+            foreach (KeyValuePair<string, Dictionary<string, string>> language in Localization.languages)
+            {
+                lang.RegisterMessages(language.Value, this, language.Key);
+            }
 
             // Setup default permission groups
             if (permission.IsLoaded)
             {
-                var rank = 0;
-                foreach (var defaultGroup in Interface.Oxide.Config.Options.DefaultGroups)
-                    if (!permission.GroupExists(defaultGroup)) permission.CreateGroup(defaultGroup, defaultGroup, rank++);
+                int rank = 0;
+                foreach (string defaultGroup in Interface.Oxide.Config.Options.DefaultGroups)
+                {
+                    if (!permission.GroupExists(defaultGroup))
+                    {
+                        permission.CreateGroup(defaultGroup, defaultGroup, rank++);
+                    }
+                }
 
                 permission.RegisterValidate(s =>
                 {
                     ulong temp;
-                    if (!ulong.TryParse(s, out temp)) return false;
-                    var digits = temp == 0 ? 1 : (int)Math.Floor(Math.Log10(temp) + 1);
+                    if (!ulong.TryParse(s, out temp))
+                    {
+                        return false;
+                    }
+
+                    int digits = temp == 0 ? 1 : (int)Math.Floor(Math.Log10(temp) + 1);
                     return digits >= 17;
                 });
 
@@ -125,7 +140,10 @@ namespace Oxide.Game.Rust
         private void OnPluginLoaded(Plugin plugin)
         {
             // Call OnServerInitialized for hotloaded plugins
-            if (serverInitialized) plugin.CallHook("OnServerInitialized");
+            if (serverInitialized)
+            {
+                plugin.CallHook("OnServerInitialized");
+            }
         }
 
         /// <summary>
@@ -134,23 +152,26 @@ namespace Oxide.Game.Rust
         [HookMethod("OnServerInitialized")]
         private void OnServerInitialized()
         {
-            if (serverInitialized) return;
-
-            if (Interface.Oxide.CheckConsole() && ServerConsole.Instance != null)
+            if (!serverInitialized)
             {
-                ServerConsole.Instance.enabled = false;
-                UnityEngine.Object.Destroy(ServerConsole.Instance);
-                typeof(SingletonComponent<ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
+                if (Interface.Oxide.CheckConsole() && ServerConsole.Instance != null)
+                {
+                    ServerConsole.Instance.enabled = false;
+                    UnityEngine.Object.Destroy(ServerConsole.Instance);
+                    typeof(SingletonComponent<ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
+                }
+
+                Analytics.Collect();
+                RustExtension.ServerConsole();
+
+                if (!Interface.Oxide.Config.Options.Modded)
+                {
+                    Interface.Oxide.LogWarning("The server is currently listed under Community. Please be aware that Facepunch only allows admin tools" +
+                        "(that do not affect gameplay) under the Community section");
+                }
+
+                serverInitialized = true;
             }
-
-            Analytics.Collect();
-            RustExtension.ServerConsole();
-
-            if (!Interface.Oxide.Config.Options.Modded)
-                Interface.Oxide.LogWarning("The server is currently listed under Community. Please be aware that Facepunch only allows admin tools" +
-                                           "(that do not affect gameplay) under the Community section");
-
-            serverInitialized = true;
         }
 
         /// <summary>
@@ -171,38 +192,53 @@ namespace Oxide.Game.Rust
         /// <param name="args"></param>
         private void ParseCommand(string argstr, out string command, out string[] args)
         {
-            var arglist = new List<string>();
-            var sb = new StringBuilder();
-            var inlongarg = false;
+            List<string> arglist = new List<string>();
+            StringBuilder sb = new StringBuilder();
+            bool inlongarg = false;
 
-            foreach (var c in argstr)
+            foreach (char c in argstr)
             {
                 if (c == '"')
                 {
                     if (inlongarg)
                     {
-                        var arg = sb.ToString().Trim();
-                        if (!string.IsNullOrEmpty(arg)) arglist.Add(arg);
+                        string arg = sb.ToString().Trim();
+                        if (!string.IsNullOrEmpty(arg))
+                        {
+                            arglist.Add(arg);
+                        }
+
                         sb.Clear();
                         inlongarg = false;
                     }
                     else
+                    {
                         inlongarg = true;
+                    }
                 }
                 else if (char.IsWhiteSpace(c) && !inlongarg)
                 {
-                    var arg = sb.ToString().Trim();
-                    if (!string.IsNullOrEmpty(arg)) arglist.Add(arg);
+                    string arg = sb.ToString().Trim();
+                    if (!string.IsNullOrEmpty(arg))
+                    {
+                        arglist.Add(arg);
+                    }
+
                     sb.Clear();
                 }
                 else
+                {
                     sb.Append(c);
+                }
             }
 
             if (sb.Length > 0)
             {
-                var arg = sb.ToString().Trim();
-                if (!string.IsNullOrEmpty(arg)) arglist.Add(arg);
+                string arg = sb.ToString().Trim();
+                if (!string.IsNullOrEmpty(arg))
+                {
+                    arglist.Add(arg);
+                }
             }
 
             if (arglist.Count == 0)
@@ -229,29 +265,64 @@ namespace Oxide.Game.Rust
         public static BasePlayer FindPlayer(string nameOrIdOrIp)
         {
             BasePlayer player = null;
-            foreach (var activePlayer in BasePlayer.activePlayerList)
+            foreach (BasePlayer activePlayer in BasePlayer.activePlayerList)
             {
-                if (string.IsNullOrEmpty(activePlayer.UserIDString)) continue;
+                if (string.IsNullOrEmpty(activePlayer.UserIDString))
+                {
+                    continue;
+                }
+
                 if (activePlayer.UserIDString.Equals(nameOrIdOrIp))
+                {
                     return activePlayer;
-                if (string.IsNullOrEmpty(activePlayer.displayName)) continue;
+                }
+
+                if (string.IsNullOrEmpty(activePlayer.displayName))
+                {
+                    continue;
+                }
+
                 if (activePlayer.displayName.Equals(nameOrIdOrIp, StringComparison.OrdinalIgnoreCase))
+                {
                     return activePlayer;
+                }
+
                 if (activePlayer.displayName.Contains(nameOrIdOrIp, CompareOptions.OrdinalIgnoreCase))
+                {
                     player = activePlayer;
+                }
+
                 if (activePlayer.net?.connection != null && activePlayer.net.connection.ipaddress.Equals(nameOrIdOrIp))
+                {
                     return activePlayer;
+                }
             }
-            foreach (var sleepingPlayer in BasePlayer.sleepingPlayerList)
+            foreach (BasePlayer sleepingPlayer in BasePlayer.sleepingPlayerList)
             {
-                if (string.IsNullOrEmpty(sleepingPlayer.UserIDString)) continue;
+                if (string.IsNullOrEmpty(sleepingPlayer.UserIDString))
+                {
+                    continue;
+                }
+
                 if (sleepingPlayer.UserIDString.Equals(nameOrIdOrIp))
+                {
                     return sleepingPlayer;
-                if (string.IsNullOrEmpty(sleepingPlayer.displayName)) continue;
+                }
+
+                if (string.IsNullOrEmpty(sleepingPlayer.displayName))
+                {
+                    continue;
+                }
+
                 if (sleepingPlayer.displayName.Equals(nameOrIdOrIp, StringComparison.OrdinalIgnoreCase))
+                {
                     return sleepingPlayer;
+                }
+
                 if (sleepingPlayer.displayName.Contains(nameOrIdOrIp, CompareOptions.OrdinalIgnoreCase))
+                {
                     player = sleepingPlayer;
+                }
             }
             return player;
         }
@@ -264,21 +335,39 @@ namespace Oxide.Game.Rust
         public static BasePlayer FindPlayerByName(string name)
         {
             BasePlayer player = null;
-            foreach (var activePlayer in BasePlayer.activePlayerList)
+            foreach (BasePlayer activePlayer in BasePlayer.activePlayerList)
             {
-                if (string.IsNullOrEmpty(activePlayer.displayName)) continue;
+                if (string.IsNullOrEmpty(activePlayer.displayName))
+                {
+                    continue;
+                }
+
                 if (activePlayer.displayName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
                     return activePlayer;
+                }
+
                 if (activePlayer.displayName.Contains(name, CompareOptions.OrdinalIgnoreCase))
+                {
                     player = activePlayer;
+                }
             }
-            foreach (var sleepingPlayer in BasePlayer.sleepingPlayerList)
+            foreach (BasePlayer sleepingPlayer in BasePlayer.sleepingPlayerList)
             {
-                if (string.IsNullOrEmpty(sleepingPlayer.displayName)) continue;
+                if (string.IsNullOrEmpty(sleepingPlayer.displayName))
+                {
+                    continue;
+                }
+
                 if (sleepingPlayer.displayName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
                     return sleepingPlayer;
+                }
+
                 if (sleepingPlayer.displayName.Contains(name, CompareOptions.OrdinalIgnoreCase))
+                {
                     player = sleepingPlayer;
+                }
             }
             return player;
         }
@@ -290,15 +379,19 @@ namespace Oxide.Game.Rust
         /// <returns></returns>
         public static BasePlayer FindPlayerById(ulong id)
         {
-            foreach (var activePlayer in BasePlayer.activePlayerList)
+            foreach (BasePlayer activePlayer in BasePlayer.activePlayerList)
             {
                 if (activePlayer.userID == id)
+                {
                     return activePlayer;
+                }
             }
-            foreach (var sleepingPlayer in BasePlayer.sleepingPlayerList)
+            foreach (BasePlayer sleepingPlayer in BasePlayer.sleepingPlayerList)
             {
                 if (sleepingPlayer.userID == id)
+                {
                     return sleepingPlayer;
+                }
             }
             return null;
         }
@@ -310,17 +403,29 @@ namespace Oxide.Game.Rust
         /// <returns></returns>
         public static BasePlayer FindPlayerByIdString(string id)
         {
-            foreach (var activePlayer in BasePlayer.activePlayerList)
+            foreach (BasePlayer activePlayer in BasePlayer.activePlayerList)
             {
-                if (string.IsNullOrEmpty(activePlayer.UserIDString)) continue;
+                if (string.IsNullOrEmpty(activePlayer.UserIDString))
+                {
+                    continue;
+                }
+
                 if (activePlayer.UserIDString.Equals(id))
+                {
                     return activePlayer;
+                }
             }
-            foreach (var sleepingPlayer in BasePlayer.sleepingPlayerList)
+            foreach (BasePlayer sleepingPlayer in BasePlayer.sleepingPlayerList)
             {
-                if (string.IsNullOrEmpty(sleepingPlayer.UserIDString)) continue;
+                if (string.IsNullOrEmpty(sleepingPlayer.UserIDString))
+                {
+                    continue;
+                }
+
                 if (sleepingPlayer.UserIDString.Equals(id))
+                {
                     return sleepingPlayer;
+                }
             }
             return null;
         }

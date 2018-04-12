@@ -134,41 +134,50 @@ namespace Oxide.Game.Rust
         {
             CSharpPluginLoader.PluginReferences.UnionWith(DefaultReferences);
 
-            if (Interface.Oxide.EnableConsole()) Output.OnMessage += HandleLog;
+            if (Interface.Oxide.EnableConsole())
+            {
+                Output.OnMessage += HandleLog;
+            }
         }
 
         internal static void ServerConsole()
         {
-            if (Interface.Oxide.ServerConsole == null) return;
+            if (Interface.Oxide.ServerConsole == null)
+            {
+                return;
+            }
 
             Interface.Oxide.ServerConsole.Title = () => $"{BasePlayer.activePlayerList.Count} | {ConVar.Server.hostname}";
 
             Interface.Oxide.ServerConsole.Status1Left = () =>
             {
-                var hostname = ConVar.Server.hostname.Length > 30 ? ConVar.Server.hostname.Truncate(30) : ConVar.Server.hostname;
+                string hostname = ConVar.Server.hostname.Length > 30 ? ConVar.Server.hostname.Truncate(30) : ConVar.Server.hostname;
                 return $"{hostname} [{(Interface.Oxide.Config.Options.Modded ? "Modded" : "Community")}]";
             };
             Interface.Oxide.ServerConsole.Status1Right = () => $"{Performance.current.frameRate}fps, {((ulong)Time.realtimeSinceStartup).FormatSeconds()}";
 
             Interface.Oxide.ServerConsole.Status2Left = () =>
             {
-                var players = $"{BasePlayer.activePlayerList.Count}/{ConVar.Server.maxplayers} players";
-                var sleepers = BasePlayer.sleepingPlayerList.Count;
-                var entities = BaseNetworkable.serverEntities.Count;
+                string players = $"{BasePlayer.activePlayerList.Count}/{ConVar.Server.maxplayers} players";
+                int sleepers = BasePlayer.sleepingPlayerList.Count;
+                int entities = BaseNetworkable.serverEntities.Count;
                 return $"{players}, {sleepers + (sleepers.Equals(1) ? " sleeper" : " sleepers")}, {entities + (entities.Equals(1) ? " entity" : " entities")}";
             };
             Interface.Oxide.ServerConsole.Status2Right = () =>
             {
-                if (Net.sv == null || !Net.sv.IsConnected()) return "not connected";
+                if (Net.sv == null || !Net.sv.IsConnected())
+                {
+                    return "not connected";
+                }
 
-                var bytesReceived = Net.sv.GetStat(null, NetworkPeer.StatTypeLong.BytesReceived_LastSecond);
-                var bytesSent = Net.sv.GetStat(null, NetworkPeer.StatTypeLong.BytesSent_LastSecond);
+                ulong bytesReceived = Net.sv.GetStat(null, NetworkPeer.StatTypeLong.BytesReceived_LastSecond);
+                ulong bytesSent = Net.sv.GetStat(null, NetworkPeer.StatTypeLong.BytesSent_LastSecond);
                 return $"{Utility.FormatBytes(bytesReceived) ?? "0"}/s in, {Utility.FormatBytes(bytesSent) ?? "0"}/s out";
             };
 
             Interface.Oxide.ServerConsole.Status3Left = () =>
             {
-                var gameTime = (TOD_Sky.Instance?.Cycle?.DateTime != null ? TOD_Sky.Instance.Cycle.DateTime : DateTime.Now).ToString("h:mm tt");
+                string gameTime = (TOD_Sky.Instance?.Cycle?.DateTime != null ? TOD_Sky.Instance.Cycle.DateTime : DateTime.Now).ToString("h:mm tt");
                 return $"{gameTime.ToLower()}, {ConVar.Server.level} [{ConVar.Server.worldsize}, {ConVar.Server.seed}]";
             };
             Interface.Oxide.ServerConsole.Status3Right = () => $"Oxide.Rust {AssemblyVersion}";
@@ -177,24 +186,35 @@ namespace Oxide.Game.Rust
             Interface.Oxide.ServerConsole.Input += ServerConsoleOnInput;
             Interface.Oxide.ServerConsole.Completion = input =>
             {
-                if (string.IsNullOrEmpty(input)) return null;
+                if (!string.IsNullOrEmpty(input))
+                {
+                    if (!input.Contains("."))
+                    {
+                        input = string.Concat("global.", input);
+                    }
 
-                if (!input.Contains(".")) input = string.Concat("global.", input);
-                return ConsoleSystem.Index.All.Where(c => c.FullName.StartsWith(input.ToLower())).ToList().ConvertAll(c => c.FullName).ToArray();
+                    return ConsoleSystem.Index.All.Where(c => c.FullName.StartsWith(input.ToLower())).ToList().ConvertAll(c => c.FullName).ToArray();
+                }
+
+                return null;
             };
         }
 
         private static void ServerConsoleOnInput(string input)
         {
             input = input.Trim();
-            if (!string.IsNullOrEmpty(input)) ConsoleSystem.Run(ConsoleSystem.Option.Server, input);
+            if (!string.IsNullOrEmpty(input))
+            {
+                ConsoleSystem.Run(ConsoleSystem.Option.Server, input);
+            }
         }
 
         private static void HandleLog(string message, string stackTrace, LogType logType)
         {
-            if (string.IsNullOrEmpty(message) || Filter.Any(message.Contains)) return;
-
-            Interface.Oxide.RootLogger.HandleMessage(message, stackTrace, logType.ToLogType());
+            if (!string.IsNullOrEmpty(message) && !Filter.Any(message.Contains))
+            {
+                Interface.Oxide.RootLogger.HandleMessage(message, stackTrace, logType.ToLogType());
+            }
         }
     }
 }

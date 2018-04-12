@@ -27,7 +27,7 @@ namespace Oxide.Game.Rust.Libraries
         /// Gets private bindingflag for accessing private methods, fields, and properties
         /// </summary>
         [LibraryFunction("PrivateBindingFlag")]
-        public BindingFlags PrivateBindingFlag() => (BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Static | BindingFlags.Instance);
+        public BindingFlags PrivateBindingFlag() => BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Static | BindingFlags.Instance;
 
         /// <summary>
         /// Converts a string into a quote safe string

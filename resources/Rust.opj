@@ -6727,6 +6727,32 @@
             "BaseHookName": "FixUsingHelicopter [patch]",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 9,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player, l0",
+            "HookTypeName": "Simple",
+            "Name": "CanRenameBed",
+            "HookName": "CanRenameBed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SleepingBag",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Rename",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "8Zo7B3y+CjoF+mJMKE+1rV8rdk5jmxD4DmeKf0vZUBk=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

@@ -1,4 +1,5 @@
-﻿using Oxide.Core.Libraries;
+﻿using Oxide.Core;
+using Oxide.Core.Libraries;
 using Oxide.Core.Libraries.Covalence;
 
 namespace Oxide.Game.Rust.Libraries
@@ -36,7 +37,14 @@ namespace Oxide.Game.Rust.Libraries
         /// </summary>
         /// <param name="command"></param>
         /// <param name="args"></param>
-        public void Command(string command, params object[] args) => ConsoleSystem.Run(ConsoleSystem.Option.Server, command, args);
+        public void Command(string command, params object[] args)
+        {
+            string commandReply = ConsoleSystem.Run(ConsoleSystem.Option.Server, command, args);
+            if (!string.IsNullOrEmpty(commandReply))
+            {
+                Interface.Oxide.LogInfo(commandReply);
+            }
+        }
 
         #endregion Chat and Commands
     }

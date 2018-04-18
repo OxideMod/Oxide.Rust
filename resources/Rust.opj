@@ -6659,30 +6659,9 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 3,
-            "RemoveCount": 4,
-            "Instructions": [
-              {
-                "OpCode": "brtrue",
-                "OpType": "Instruction",
-                "Operand": 7
-              },
-              {
-                "OpCode": "ldarg_1",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "Assembly-CSharp|BasePlayer|get_IsAdmin"
-              },
-              {
-                "OpCode": "brtrue",
-                "OpType": "Instruction",
-                "Operand": 8
-              }
-            ],
+            "InjectionIndex": 0,
+            "RemoveCount": 8,
+            "Instructions": [],
             "HookTypeName": "Modify",
             "Name": "FixUsingHelicopter [patch]",
             "HookName": "FixUsingHelicopter [patch]",
@@ -6705,7 +6684,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 8,
+            "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, this",

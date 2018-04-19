@@ -6483,10 +6483,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 12,
+            "InjectionIndex": 115,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l0, this.pendingBlueprint",
+            "ArgumentString": "l0, this",
             "HookTypeName": "Simple",
             "Name": "CanExperiment",
             "HookName": "CanExperiment",
@@ -6659,30 +6659,9 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 3,
-            "RemoveCount": 4,
-            "Instructions": [
-              {
-                "OpCode": "brtrue",
-                "OpType": "Instruction",
-                "Operand": 7
-              },
-              {
-                "OpCode": "ldarg_1",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "Assembly-CSharp|BasePlayer|get_IsAdmin"
-              },
-              {
-                "OpCode": "brtrue",
-                "OpType": "Instruction",
-                "Operand": 8
-              }
-            ],
+            "InjectionIndex": 0,
+            "RemoveCount": 8,
+            "Instructions": [],
             "HookTypeName": "Modify",
             "Name": "FixUsingHelicopter [patch]",
             "HookName": "FixUsingHelicopter [patch]",
@@ -6705,7 +6684,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 8,
+            "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, this",
@@ -6726,6 +6705,32 @@
             "MSILHash": "qqqIlwaIs4wunGVYCOTh8PZ3TX4iUE5xe4ANR79Q184=",
             "BaseHookName": "FixUsingHelicopter [patch]",
             "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 9,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player, l0",
+            "HookTypeName": "Simple",
+            "Name": "CanRenameBed",
+            "HookName": "CanRenameBed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SleepingBag",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Rename",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "8Zo7B3y+CjoF+mJMKE+1rV8rdk5jmxD4DmeKf0vZUBk=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
           }
         }
       ],
@@ -7601,6 +7606,2012 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::spectateFilter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spectateFilter",
+            "FullTypeName": "System.String BasePlayer::spectateFilter",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "FileSystem_AssetBundles::files",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "FileSystem_AssetBundles",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "files",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.AssetBundle> FileSystem_AssetBundles::files",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Vis::colBuffer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Vis",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "colBuffer",
+            "FullTypeName": "UnityEngine.Collider[] Vis::colBuffer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseMountable::_mounted",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "_mounted",
+            "FullTypeName": "BasePlayer BaseMountable::_mounted",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseOven::cookingTemperature",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseOven",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "cookingTemperature",
+            "FullTypeName": "System.Single BaseOven::cookingTemperature()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::isDead",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "isDead",
+            "FullTypeName": "System.Boolean PatrolHelicopterAI::isDead",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::Roads",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Roads",
+            "FullTypeName": "System.Collections.Generic.List`1<PathList> TerrainPath::Roads",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::LakeObjs",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "LakeObjs",
+            "FullTypeName": "System.Collections.Generic.List`1<LakeInfo> TerrainPath::LakeObjs",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::Monuments",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Monuments",
+            "FullTypeName": "System.Collections.Generic.List`1<MonumentInfo> TerrainPath::Monuments",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::Powerlines",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Powerlines",
+            "FullTypeName": "System.Collections.Generic.List`1<PathList> TerrainPath::Powerlines",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::Rivers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Rivers",
+            "FullTypeName": "System.Collections.Generic.List`1<PathList> TerrainPath::Rivers",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::RiverObjs",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "RiverObjs",
+            "FullTypeName": "System.Collections.Generic.List`1<RiverInfo> TerrainPath::RiverObjs",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerLoot::PositionChecks",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerLoot",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "PositionChecks",
+            "FullTypeName": "System.Boolean PlayerLoot::PositionChecks",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SupplyDrop::RemoveParachute",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SupplyDrop",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RemoveParachute",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "yzer7cCWfMiUsG1hZYhAZS8lQrTPwUfFtulz2ned05Y="
+        },
+        {
+          "Name": "CargoPlane::endPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoPlane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "endPos",
+            "FullTypeName": "UnityEngine.Vector3 CargoPlane::endPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoPlane::startPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoPlane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "startPos",
+            "FullTypeName": "UnityEngine.Vector3 CargoPlane::startPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoPlane::dropPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoPlane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "dropPosition",
+            "FullTypeName": "UnityEngine.Vector3 CargoPlane::dropPosition",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoPlane::secondsTaken",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoPlane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "secondsTaken",
+            "FullTypeName": "System.Single CargoPlane::secondsTaken",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoPlane::secondsToTake",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoPlane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "secondsToTake",
+            "FullTypeName": "System.Single CargoPlane::secondsToTake",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoPlane::dropped",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoPlane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "dropped",
+            "FullTypeName": "System.Boolean CargoPlane::dropped",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::lastDamageTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastDamageTime",
+            "FullTypeName": "System.Single PatrolHelicopterAI::lastDamageTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::lastNapalmTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastNapalmTime",
+            "FullTypeName": "System.Single PatrolHelicopterAI::lastNapalmTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::lastRocketTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastRocketTime",
+            "FullTypeName": "System.Single PatrolHelicopterAI::lastRocketTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::lastStrafeTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastStrafeTime",
+            "FullTypeName": "System.Single PatrolHelicopterAI::lastStrafeTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::numRocketsLeft",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "numRocketsLeft",
+            "FullTypeName": "System.Int32 PatrolHelicopterAI::numRocketsLeft",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::strafe_target_position",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "strafe_target_position",
+            "FullTypeName": "UnityEngine.Vector3 PatrolHelicopterAI::strafe_target_position",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::leftTubeFiredLast",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "leftTubeFiredLast",
+            "FullTypeName": "System.Boolean PatrolHelicopterAI::leftTubeFiredLast",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::timeBetweenRockets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeBetweenRockets",
+            "FullTypeName": "System.Single PatrolHelicopterAI::timeBetweenRockets",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SearchLight::secondsRemaining",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SearchLight",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "secondsRemaining",
+            "FullTypeName": "System.Single SearchLight::secondsRemaining",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SearchLight::mountedPlayer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SearchLight",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "mountedPlayer",
+            "FullTypeName": "BasePlayer SearchLight::mountedPlayer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SearchLight::aimDir",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SearchLight",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "aimDir",
+            "FullTypeName": "UnityEngine.Vector3 SearchLight::aimDir",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::spawnTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spawnTime",
+            "FullTypeName": "System.Single PatrolHelicopterAI::spawnTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::maxRockets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxRockets",
+            "FullTypeName": "System.Int32 PatrolHelicopterAI::maxRockets",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::strafe_approach_range",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "strafe_approach_range",
+            "FullTypeName": "System.Single PatrolHelicopterAI::strafe_approach_range",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::strafe_firing_range",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "strafe_firing_range",
+            "FullTypeName": "System.Single PatrolHelicopterAI::strafe_firing_range",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MiningQuarry::_linkedDeposit",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiningQuarry",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_linkedDeposit",
+            "FullTypeName": "ResourceDepositManager/ResourceDeposit MiningQuarry::_linkedDeposit",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MiningQuarry::SetOn",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiningQuarry",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetOn",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "bw77l3lTb30NmcKFUGLmak+YeidIgRw5/Hl5uDbEUxU="
+        },
+        {
+          "Name": "MeshColliderBatch::meshLookup",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MeshColliderBatch",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "meshLookup",
+            "FullTypeName": "MeshColliderLookup MeshColliderBatch::meshLookup",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DecayEntity::decay",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DecayEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "decay",
+            "FullTypeName": "Decay DecayEntity::decay",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SleepingBag::sleepingBags",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SleepingBag",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "sleepingBags",
+            "FullTypeName": "System.Collections.Generic.List`1<SleepingBag> SleepingBag::sleepingBags",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SleepingBag::unlockTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SleepingBag",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "unlockTime",
+            "FullTypeName": "System.Single SleepingBag::unlockTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::lastReceivedTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastReceivedTick",
+            "FullTypeName": "PlayerTick BasePlayer::lastReceivedTick",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCombatEntity::lastDealtDamageTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCombatEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "lastDealtDamageTime",
+            "FullTypeName": "System.Single BaseCombatEntity::lastDealtDamageTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::lastTargetSeenTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastTargetSeenTime",
+            "FullTypeName": "System.Single AutoTurret::lastTargetSeenTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::bulletDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "bulletDamage",
+            "FullTypeName": "System.Single AutoTurret::bulletDamage",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Item::_condition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Item",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_condition",
+            "FullTypeName": "System.Single Item::_condition",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Item::_maxCondition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Item",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_maxCondition",
+            "FullTypeName": "System.Single Item::_maxCondition",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GameManifest::guidToPath",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GameManifest",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "guidToPath",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,System.String> GameManifest::guidToPath",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GameManifest::guidToObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GameManifest",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "guidToObject",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.Object> GameManifest::guidToObject",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GameManifest::loadedManifest",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GameManifest",
+          "Type": 0,
+          "TargetExposure": [
+            3,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "loadedManifest",
+            "FullTypeName": "GameManifest GameManifest::loadedManifest",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNetworkable::isSpawned",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "isSpawned",
+            "FullTypeName": "System.Boolean BaseNetworkable::isSpawned",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNetworkable::_limitedNetworking",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_limitedNetworking",
+            "FullTypeName": "System.Boolean BaseNetworkable::_limitedNetworking",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNetworkable::creationFrame",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "creationFrame",
+            "FullTypeName": "System.Int32 BaseNetworkable::creationFrame",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCombatEntity::propDirection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCombatEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "propDirection",
+            "FullTypeName": "DirectionProperties[] BaseCombatEntity::propDirection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ServerProjectile::_currentVelocity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ServerProjectile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_currentVelocity",
+            "FullTypeName": "UnityEngine.Vector3 ServerProjectile::_currentVelocity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ConnectionQueue::nextMessageTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ConnectionQueue",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextMessageTime",
+            "FullTypeName": "System.Single ConnectionQueue::nextMessageTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ConnectionQueue::queue",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ConnectionQueue",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "queue",
+            "FullTypeName": "System.Collections.Generic.List`1<Network.Connection> ConnectionQueue::queue",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ConnectionQueue::joining",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ConnectionQueue",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "joining",
+            "FullTypeName": "System.Collections.Generic.List`1<Network.Connection> ConnectionQueue::joining",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Locker::equippingActive",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "equippingActive",
+            "FullTypeName": "System.Boolean Locker::equippingActive",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::viewAngles",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "viewAngles",
+            "FullTypeName": "UnityEngine.Vector3 BasePlayer::viewAngles",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNetworkable/EntityRealm::entityList",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable/EntityRealm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "entityList",
+            "FullTypeName": "ListDictionary`2<System.UInt32,BaseNetworkable> BaseNetworkable/EntityRealm::entityList",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingBlock::currentSkin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentSkin",
+            "FullTypeName": "ConstructionSkin BuildingBlock::currentSkin",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingBlock::lastGrade",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastGrade",
+            "FullTypeName": "BuildingGrade/Enum BuildingBlock::lastGrade",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingBlock::modelState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "modelState",
+            "FullTypeName": "System.Int32 BuildingBlock::modelState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DecayEntity::upkeepTimer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DecayEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "upkeepTimer",
+            "FullTypeName": "System.Single DecayEntity::upkeepTimer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DecayEntity::decayTimer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DecayEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "decayTimer",
+            "FullTypeName": "System.Single DecayEntity::decayTimer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DecayEntity::decayPoints",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DecayEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "decayPoints",
+            "FullTypeName": "DecayPoint[] DecayEntity::decayPoints",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DecayEntity::decayVariance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DecayEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "decayVariance",
+            "FullTypeName": "System.Single DecayEntity::decayVariance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "UserPersistance::deaths",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "UserPersistance",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "deaths",
+            "FullTypeName": "Facepunch.Sqlite.Database UserPersistance::deaths",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "WaterPurifier::dirtyWaterProcssed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WaterPurifier",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "dirtyWaterProcssed",
+            "FullTypeName": "System.Single WaterPurifier::dirtyWaterProcssed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "WaterPurifier::pendingFreshWater",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WaterPurifier",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "pendingFreshWater",
+            "FullTypeName": "System.Single WaterPurifier::pendingFreshWater",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "WaterPurifier::waterStorage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WaterPurifier",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "waterStorage",
+            "FullTypeName": "LiquidContainer WaterPurifier::waterStorage",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnPointInstance::parentSpawnGroup",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnPointInstance",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "parentSpawnGroup",
+            "FullTypeName": "SpawnGroup SpawnPointInstance::parentSpawnGroup",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnPointInstance::parentSpawnPoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnPointInstance",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "parentSpawnPoint",
+            "FullTypeName": "BaseSpawnPoint SpawnPointInstance::parentSpawnPoint",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnGroup::spawnPoints",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnGroup",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "spawnPoints",
+            "FullTypeName": "BaseSpawnPoint[] SpawnGroup::spawnPoints",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnHandler::SpawnGroups",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnHandler",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "SpawnGroups",
+            "FullTypeName": "System.Collections.Generic.List`1<SpawnGroup> SpawnHandler::SpawnGroups",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnPopulation::Prefabs",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnPopulation",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Prefabs",
+            "FullTypeName": "Prefab`1<Spawnable>[] SpawnPopulation::Prefabs",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnPopulation::_targetDensity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnPopulation",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_targetDensity",
+            "FullTypeName": "System.Single SpawnPopulation::_targetDensity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnDistribution::Density",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnDistribution",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Density",
+            "FullTypeName": "System.Single SpawnDistribution::Density",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnHandler::AllSpawnPopulations",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnHandler",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "AllSpawnPopulations",
+            "FullTypeName": "SpawnPopulation[] SpawnHandler::AllSpawnPopulations",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnHandler::SpawnDistributions",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnHandler",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "SpawnDistributions",
+            "FullTypeName": "SpawnDistribution[] SpawnHandler::SpawnDistributions",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "StringPool::toNumber",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "StringPool",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "toNumber",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,System.UInt32> StringPool::toNumber",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "StringPool::toString",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "StringPool",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "toString",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.UInt32,System.String> StringPool::toString",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HackableLockedCrate::hackSeconds",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HackableLockedCrate",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hackSeconds",
+            "FullTypeName": "System.Single HackableLockedCrate::hackSeconds",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HackableLockedCrate::hasLanded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HackableLockedCrate",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hasLanded",
+            "FullTypeName": "System.Boolean HackableLockedCrate::hasLanded",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HackableLockedCrate::wasDropped",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HackableLockedCrate",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "wasDropped",
+            "FullTypeName": "System.Boolean HackableLockedCrate::wasDropped",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CH47HelicopterAIController::_aimDirection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47HelicopterAIController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_aimDirection",
+            "FullTypeName": "UnityEngine.Vector3 CH47HelicopterAIController::_aimDirection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CH47HelicopterAIController::_moveTarget",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47HelicopterAIController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_moveTarget",
+            "FullTypeName": "UnityEngine.Vector3 CH47HelicopterAIController::_moveTarget",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CH47HelicopterAIController::aimDirOverride",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47HelicopterAIController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "aimDirOverride",
+            "FullTypeName": "System.Boolean CH47HelicopterAIController::aimDirOverride",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CH47HelicopterAIController::altOverride",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47HelicopterAIController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "altOverride",
+            "FullTypeName": "System.Single CH47HelicopterAIController::altOverride",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CH47HelicopterAIController::currentDesiredAltitude",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47HelicopterAIController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentDesiredAltitude",
+            "FullTypeName": "System.Single CH47HelicopterAIController::currentDesiredAltitude",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CH47HelicopterAIController::hoverHeight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47HelicopterAIController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hoverHeight",
+            "FullTypeName": "System.Single CH47HelicopterAIController::hoverHeight",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CH47HelicopterAIController::lastAltitudeCheckFrame",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47HelicopterAIController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastAltitudeCheckFrame",
+            "FullTypeName": "System.Int32 CH47HelicopterAIController::lastAltitudeCheckFrame",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CH47HelicopterAIController::numCrates",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47HelicopterAIController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "numCrates",
+            "FullTypeName": "System.Int32 CH47HelicopterAIController::numCrates",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SupplyDrop::parachute",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SupplyDrop",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "parachute",
+            "FullTypeName": "BaseEntity SupplyDrop::parachute",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingBlock::CanAffordUpgrade",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanAffordUpgrade",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BuildingGrade/Enum",
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "HYXIKudhAPhtZqC7dv0Clm7rARFVDRxDUw2LMUvFnvE="
+        },
+        {
+          "Name": "BuildingBlock::CanChangeToGrade",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanChangeToGrade",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BuildingGrade/Enum",
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "bZQsPzeF1dacSx9cyR6tXVNjy5lpvJ/9VRR2AbvORZg="
+        },
+        {
+          "Name": "BuildingBlock::CanDemolish",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanDemolish",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "FgoZ0VlYoiTQa2qsx77r0acYssX7a5eukQI/T+6Ba0w="
+        },
+        {
+          "Name": "BuildingBlock::CanRotate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanRotate",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "8DCmD+NXbbXvB+E+aZpAUg5jUdMP1BPYnlWz3JsFScs="
+        },
+        {
+          "Name": "BuildingBlock::ChangeSkin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ChangeSkin",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "GameObjectRef"
+            ]
+          },
+          "MSILHash": "8mvJ7k8GYKvneYcX/OoUHjtUaaJFhMZDrTvMrQqcwfI="
+        },
+        {
+          "Name": "BuildingPrivlidge::CalculateBuildingTaxRate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingPrivlidge",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CalculateBuildingTaxRate",
+            "FullTypeName": "System.Single",
+            "Parameters": []
+          },
+          "MSILHash": "+/3ezsXXKwHv+jwcKn/Bn8/KdG6ysdi9SUupkN2v5f4="
+        },
+        {
+          "Name": "BasePlayer::LifeStoryEnd",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "LifeStoryEnd",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "RLmAKrZbr80EySU6i1pu5wQqpfyDowrLRFTO5bBlXZU="
+        },
+        {
+          "Name": "ItemCrafter::FinishCrafting",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ItemCrafter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FinishCrafting",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "ItemCraftTask"
+            ]
+          },
+          "MSILHash": "PiBhvhsCtx/f1xPrn80kY6LChJhPo97cPlatwCRrvGk="
+        },
+        {
+          "Name": "PlayerLoot::MarkDirty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerLoot",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MarkDirty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "52mO0CzpWJyKJrYReFbg3gwzipy7UjK4cFquld+zqGw="
         }
       ],
       "Fields": [

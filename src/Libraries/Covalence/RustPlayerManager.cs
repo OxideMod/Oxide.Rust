@@ -1,4 +1,5 @@
 ﻿extern alias References;
+
 using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
 using References::ProtoBuf;
@@ -55,8 +56,6 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 playerData.Add(id, record);
                 allPlayers.Add(id, new RustPlayer(userId, name));
             }
-
-            ProtoStorage.Save(playerData, "oxide.covalence");
         }
 
         internal void PlayerConnected(BasePlayer player)
@@ -66,6 +65,8 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         }
 
         internal void PlayerDisconnected(BasePlayer player) => connectedPlayers.Remove(player.UserIDString);
+
+        internal void SavePlayerData() => ProtoStorage.Save(playerData, "oxide.covalence");
 
         #region Player Finding
 

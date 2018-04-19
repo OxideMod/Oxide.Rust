@@ -53,18 +53,20 @@ namespace Oxide.Game.Rust
         /// </summary>
         /// <returns></returns>
         /// <param name="sender"></param>
-        /// <param name="message"></param>
+        /// <param name="command"></param>
         [HookMethod("IOnRconCommand")]
-        private object IOnRconCommand(IPEndPoint sender, string message)
+        private object IOnRconCommand(IPEndPoint sender, string command)
         {
-            if (sender != null && !string.IsNullOrEmpty(message))
+            if (sender != null && !string.IsNullOrEmpty(command))
             {
-                RemoteMessage msg = RemoteMessage.GetMessage(message);
-                if (msg != null)
+                RemoteMessage message = RemoteMessage.GetMessage(command);
+                if (message != null)
                 {
-                    string[] args = msg.Message.Split(' ');
-                    string cmd = args[0];
-                    object callHook = Interface.CallHook("OnRconCommand", sender, cmd, args.Length > 1 ? args.Skip(1).ToArray() : new string[0]);
+                    string[] fullCommand = CommandLine.Split(message.Message);
+                    string cmd = fullCommand[0].ToLower();
+                    string args = string.Join(" ", fullCommand.Skip(1).ToArray());
+
+                    object callHook = Interface.CallHook("OnRconCommand", sender, cmd, args);
                     if (callHook != null)
                     {
                         return true;

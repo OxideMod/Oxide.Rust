@@ -54,6 +54,11 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             public ConsoleSystem.Command RustCommand;
 
             /// <summary>
+            /// The orrignal console command when overridden
+            /// </summary>
+            public ConsoleSystem.Command OriginalRustCommand;
+
+            /// <summary>
             /// The original callback
             /// </summary>
             public Action<ConsoleSystem.Arg> OriginalCallback;
@@ -193,6 +198,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                     return;
                 }
                 newCommand.OriginalCallback = rustCommand.Call;
+                newCommand.OriginalRustCommand = rustCommand;
             }
 
             // Create a new Rust console command
@@ -281,6 +287,15 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 if (fullName.StartsWith("global."))
                 {
                     ConsoleSystem.Index.Server.GlobalDict[name].Call = cmd.OriginalCallback;
+                }
+                //This part handles Rust commands, above handles overwritten across plugins
+                if (cmd.OriginalRustCommand != null)
+                {
+                    ConsoleSystem.Index.Server.Dict[fullName] = cmd.OriginalRustCommand;
+                    if (fullName.StartsWith("global."))
+                    {
+                        ConsoleSystem.Index.Server.GlobalDict[name] = cmd.OriginalRustCommand;
+                    }
                 }
             }
             else

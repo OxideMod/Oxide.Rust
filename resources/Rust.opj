@@ -733,7 +733,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 921,
+            "InjectionIndex": 922,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -751,7 +751,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "3zXEWNqoLf85YWOp/0/WhKSUiOM1Ti5fgurs1Y/0cRY=",
+            "MSILHash": "M+F5zFutmW+m19yhloS1+pkmyK4N3BRRawwSCQE+ydc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8755,25 +8755,6 @@
             ],
             "Name": "viewAngles",
             "FullTypeName": "UnityEngine.Vector3 BasePlayer::viewAngles",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "BaseNetworkable/EntityRealm::entityList",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseNetworkable/EntityRealm",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "entityList",
-            "FullTypeName": "ListDictionary`2<System.UInt32,BaseNetworkable> BaseNetworkable/EntityRealm::entityList",
             "Parameters": []
           },
           "MSILHash": ""

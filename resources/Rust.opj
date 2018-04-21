@@ -6732,6 +6732,37 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+		{
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 54,
+            "RemoveCount": 2,
+            "Instructions": [
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|Item|MaxStackable"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanMoveItem [patch]",
+            "HookName": "CanMoveItem [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerInventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MoveItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "MJNmVx+n9u+PYpOnmYtHPbqNqUW4GaYaNpBbVkTBm2Y=",
+            "BaseHookName": "CanMoveItem",
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

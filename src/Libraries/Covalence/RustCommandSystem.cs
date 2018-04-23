@@ -300,7 +300,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             }
             else
             {
-                ConsoleSystem.Index.Server.Dict.Remove(cmd.RustCommand.FullName);
+                ConsoleSystem.Index.Server.Dict.Remove(fullName);
                 if (fullName.StartsWith("global."))
                 {
                     ConsoleSystem.Index.Server.GlobalDict.Remove(name);

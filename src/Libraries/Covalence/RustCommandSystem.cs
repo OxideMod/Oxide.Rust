@@ -300,12 +300,15 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             }
             else
             {
-                ConsoleSystem.Index.Server.Dict.Remove(cmd.RustCommand.FullName);
+                ConsoleSystem.Index.Server.Dict.Remove(fullName);
                 if (fullName.StartsWith("global."))
                 {
                     ConsoleSystem.Index.Server.GlobalDict.Remove(name);
                 }
             }
+
+            //The "find" command uses this, so rebuild it when a command is unregistered (as well as registered)
+            ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
         }
 
         #endregion Command Unregistration

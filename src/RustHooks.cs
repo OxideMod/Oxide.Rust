@@ -64,7 +64,7 @@ namespace Oxide.Game.Rust
                 {
                     string[] fullCommand = CommandLine.Split(message.Message);
                     string cmd = fullCommand[0].ToLower();
-                    string args = string.Join(" ", fullCommand.Skip(1).ToArray());
+                    string[] args = fullCommand.Skip(1).ToArray();
 
                     object callHook = Interface.CallHook("OnRconCommand", sender, cmd, args);
                     if (callHook != null)

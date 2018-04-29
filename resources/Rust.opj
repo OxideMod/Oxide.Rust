@@ -4325,7 +4325,7 @@
               {
                 "OpCode": "brtrue",
                 "OpType": "Instruction",
-                "Operand": 32
+                "Operand": 23
               },
               {
                 "OpCode": "ldarg_0",
@@ -6733,7 +6733,7 @@
             "HookCategory": "Player"
           }
         },
-		{
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 54,

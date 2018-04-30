@@ -3,6 +3,7 @@
 using References::Newtonsoft.Json;
 using References::Newtonsoft.Json.Converters;
 using References::Newtonsoft.Json.Linq;
+using Oxide.Core;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

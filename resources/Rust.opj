@@ -6763,6 +6763,33 @@
             "BaseHookName": "CanMoveItem",
             "HookCategory": "_Patches"
           }
+        },
+		{
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "PostRunPlayerMetabolism",
+            "HookName": "PostRunPlayerMetabolism",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerUpdate",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "7qxkkiusmhGfWflWcAdQs9s2lM66+sJ4drQlc4US3zs=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

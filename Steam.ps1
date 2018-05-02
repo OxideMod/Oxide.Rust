@@ -78,8 +78,8 @@ function Find-Dependencies {
 
 function Get-Downloader {
     # Check if DepotDownloader is already downloaded
-    $depot_exe = "$tools_dir\DepotDownloader.exe"
-    if (!(Test-Path "$depot_exe") -or ((Get-ChildItem "$depot_exe").CreationTime -gt (Get-Date).AddDays(-7))) {
+    $depot_dll = "$tools_dir\DepotDownloader.dll"
+    if (!(Test-Path "$depot_dll") -or (Get-ChildItem "$depot_dll").CreationTime -lt (Get-Date).AddDays(-7)) {
         # Get latest release info for DepotDownloader
         Write-Host "Determining latest release of DepotDownloader"
         try {
@@ -109,7 +109,7 @@ function Get-Downloader {
         Write-Host "Extracting DepotDownloader release files"
         Expand-Archive "$tools_dir\$release_zip" -DestinationPath "$tools_dir" -Force
 
-        if (!(Test-Path "$tools_dir\DepotDownloader.exe")) {
+        if (!(Test-Path "$tools_dir\DepotDownloader.dll")) {
             Get-Downloader # TODO: Add infinite loop prevention
             return
         }
@@ -117,7 +117,7 @@ function Get-Downloader {
         # Cleanup downloaded .zip file
         Remove-Item "$tools_dir\depotdownloader-*.zip"
     } else {
-        Write-Host "Latest version of DepotDownloader already downloaded"
+        Write-Host "Recent version of DepotDownloader already downloaded"
     }
 
     Get-Dependencies
@@ -153,7 +153,15 @@ function Get-Dependencies {
 
         # Attempt to run DepotDownloader to get game DLLs
         try {
-            Start-Process "$tools_dir\DepotDownloader.exe" -ArgumentList "$login -app $appid -branch $branch $depot -dir $patch_dir -filelist $tools_dir\.references" -NoNewWindow -Wait
+            $depot_process = Start-Process dotnet -ArgumentList "$tools_dir\DepotDownloader.dll $login -app $appid -branch $branch $depot -dir $patch_dir -filelist $tools_dir\.references" -NoNewWindow -PassThru
+            try
+            {
+                $depot_process | Wait-Process -Timeout 30 -ErrorAction Stop
+            }
+            catch
+            {
+                $depot_process | Stop-Process -Force
+            }
         } catch {
             Write-Host "Could not start or complete DepotDownloader process"
             Write-Host $_.Exception.Message
@@ -206,7 +214,7 @@ function Get-Deobfuscators {
 
         # Check if de4dot is already downloaded
         $de4dot_exe = "$de4dot_dir\de4dot.exe"
-        if (!(Test-Path "$de4dot_exe") -or ((Get-ChildItem "$de4dot_exe").CreationTime -gt (Get-Date).AddDays(-7))) {
+        if (!(Test-Path "$de4dot_exe") -or (Get-ChildItem "$de4dot_exe").CreationTime -lt (Get-Date).AddDays(-7)) {
             # Download and extract de4dot
             Write-Host "Downloading latest version of de4dot" # TODO: Get and show version
             try {
@@ -230,7 +238,7 @@ function Get-Deobfuscators {
             # Cleanup downloaded .zip file
             Remove-Item "$de4dot_dir\de4dot.zip"
         } else {
-            Write-Host "Latest version of de4dot already downloaded"
+            Write-Host "Recent version of de4dot already downloaded"
         }
 
         Start-Deobfuscator
@@ -276,7 +284,7 @@ function Get-Patcher {
             exit 1
         }
     } else {
-        Write-Host "Latest build of OxidePatcher already downloaded"
+        Write-Host "Recent build of OxidePatcher already downloaded"
     }
 
     Start-Patcher

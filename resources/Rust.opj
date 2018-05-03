@@ -3527,16 +3527,16 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 26,
+            "InjectionIndex": 12,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0, l1",
+            "ArgumentString": "this, l1",
             "HookTypeName": "Simple",
             "Name": "OnDeleteVendingOffer",
             "HookName": "OnDeleteVendingOffer",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "VendingMachine",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RPC_DeleteSellOrder",

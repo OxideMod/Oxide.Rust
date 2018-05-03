@@ -3527,32 +3527,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 109,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0, l7",
-            "HookTypeName": "Simple",
-            "Name": "OnAddVendingOffer",
-            "HookName": "OnAddVendingOffer",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "VendingMachine",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "RPC_AddSellOrder",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "M7W3HhrniKW5H8P3Tan/lURFoMt90AgJGuKtOn05qHM=",
-            "BaseHookName": null,
-            "HookCategory": "Vending"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 16,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
@@ -6762,6 +6736,36 @@
             "MSILHash": "MJNmVx+n9u+PYpOnmYtHPbqNqUW4GaYaNpBbVkTBm2Y=",
             "BaseHookName": "CanMoveItem",
             "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 63,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnAddVendingOffer",
+            "HookName": "OnAddVendingOffer",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AddSellOrder",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Int32",
+                "System.Int32",
+                "System.Int32",
+                "System.Int32",
+                "System.Byte"
+              ]
+            },
+            "MSILHash": "3apTD/UOgqKMGyaMnwTNTs5oAeBx+XQ8Ubsxedc6stI=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
           }
         },
         {

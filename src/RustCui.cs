@@ -3,6 +3,7 @@
 using References::Newtonsoft.Json;
 using References::Newtonsoft.Json.Converters;
 using References::Newtonsoft.Json.Linq;
+using Oxide.Core;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,7 +30,7 @@ namespace Oxide.Game.Rust.Cui
 
         public static bool AddUi(BasePlayer player, string json)
         {
-            if (player?.net != null)
+            if (player?.net != null && Interface.CallHook("CanPlayerUI", player, json) == null)
             {
                 CommunityEntity.ServerInstance.ClientRPCEx(new Network.SendInfo { connection = player.net.connection }, null, "AddUI", json);
                 return true;
@@ -42,6 +43,7 @@ namespace Oxide.Game.Rust.Cui
         {
             if (player?.net != null)
             {
+                Interface.CallHook("OnPlayerDestroyUI", player, elem);
                 CommunityEntity.ServerInstance.ClientRPCEx(new Network.SendInfo { connection = player.net.connection }, null, "DestroyUI", elem);
                 return true;
             }

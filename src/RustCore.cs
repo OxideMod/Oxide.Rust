@@ -174,6 +174,7 @@ namespace Oxide.Game.Rust
                 serverInitialized = true;
             }
         }
+
         /// <summary>
         /// Called when the server is saved
         /// </summary>

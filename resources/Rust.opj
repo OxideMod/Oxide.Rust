@@ -9709,6 +9709,25 @@
             "Parameters": []
           },
           "MSILHash": "52mO0CzpWJyKJrYReFbg3gwzipy7UjK4cFquld+zqGw="
+        },
+        {
+          "Name": "NPCPlayerApex::utilityAiComponent",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "utilityAiComponent",
+            "FullTypeName": "Apex.AI.Components.UtilityAIComponent NPCPlayerApex::utilityAiComponent",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

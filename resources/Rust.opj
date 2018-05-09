@@ -4991,7 +4991,7 @@
                 "BaseEntity"
               ]
             },
-            "MSILHash": "RiYyYXQ7q8OvGqojqM/aCp545bRZ3rqL6itR8iliUjI=",
+            "MSILHash": "WVA0tBS/gJuSjpZValWQgKt7wYWiT3ojeHW2JJz/6Ks=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
@@ -5039,7 +5039,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "75TP6JJcuXHkyhYF2s4bYct8U5I4og97j4UP3oMI9ZU=",
+            "MSILHash": "aN8ZbdFuH/yeE6hLJLRNVJA8Fo6F3wchweUFsLGfjbo=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
@@ -6764,7 +6764,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 121,
+            "InjectionIndex": 131,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l5, l2",
@@ -6780,7 +6780,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Cl48qcbGc98wwS3KXmijU51SGiEE6ipl60A5qohAwc0=",
+            "MSILHash": "tuzSz1+DynmlBz4+gy1/u+D/BgdI3YD9ChuIIcCPt9s=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -6885,6 +6885,7 @@
             },
             "MSILHash": "kVtdk85OrESo2IGIEWbvPFSmD5NVFDaAc/ZY7iFb4Ig=",
             "BaseHookName": "IOnPlayerCommand [internal]",
+            "HookCategory": "Player"
             "HookCategory": null
           }
         }

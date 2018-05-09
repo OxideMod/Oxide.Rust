@@ -1484,32 +1484,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 100,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 2,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "IOnPlayerChat [internal]",
-            "HookName": "IOnPlayerChat",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ConVar.Chat",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "say",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "ConsoleSystem/Arg"
-              ]
-            },
-            "MSILHash": "kVtdk85OrESo2IGIEWbvPFSmD5NVFDaAc/ZY7iFb4Ig=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 71,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
@@ -5017,7 +4991,7 @@
                 "BaseEntity"
               ]
             },
-            "MSILHash": "RiYyYXQ7q8OvGqojqM/aCp545bRZ3rqL6itR8iliUjI=",
+            "MSILHash": "WVA0tBS/gJuSjpZValWQgKt7wYWiT3ojeHW2JJz/6Ks=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
@@ -5065,7 +5039,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "75TP6JJcuXHkyhYF2s4bYct8U5I4og97j4UP3oMI9ZU=",
+            "MSILHash": "aN8ZbdFuH/yeE6hLJLRNVJA8Fo6F3wchweUFsLGfjbo=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
@@ -6790,7 +6764,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 121,
+            "InjectionIndex": 131,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l5, l2",
@@ -6806,7 +6780,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Cl48qcbGc98wwS3KXmijU51SGiEE6ipl60A5qohAwc0=",
+            "MSILHash": "tuzSz1+DynmlBz4+gy1/u+D/BgdI3YD9ChuIIcCPt9s=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -6859,6 +6833,58 @@
             },
             "MSILHash": "7qxkkiusmhGfWflWcAdQs9s2lM66+sJ4drQlc4US3zs=",
             "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 108,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 2,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "IOnPlayerCommand [internal]",
+            "HookName": "IOnPlayerCommand",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Chat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "say",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "kVtdk85OrESo2IGIEWbvPFSmD5NVFDaAc/ZY7iFb4Ig=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 155,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 2,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "IOnPlayerChat [internal]",
+            "HookName": "IOnPlayerChat",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Chat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "say",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "kVtdk85OrESo2IGIEWbvPFSmD5NVFDaAc/ZY7iFb4Ig=",
+            "BaseHookName": "IOnPlayerCommand [internal]",
             "HookCategory": "Player"
           }
         }
@@ -9683,6 +9709,25 @@
             "Parameters": []
           },
           "MSILHash": "52mO0CzpWJyKJrYReFbg3gwzipy7UjK4cFquld+zqGw="
+        },
+        {
+          "Name": "NPCPlayerApex::utilityAiComponent",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "utilityAiComponent",
+            "FullTypeName": "Apex.AI.Components.UtilityAIComponent NPCPlayerApex::utilityAiComponent",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

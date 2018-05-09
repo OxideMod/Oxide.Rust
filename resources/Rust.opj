@@ -6887,6 +6887,30 @@
             "BaseHookName": "IOnPlayerCommand [internal]",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 33,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNpcPlayerResume",
+            "HookName": "OnNpcPlayerResume",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Resume",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "elAUgSKpcHpszhp8gW8HSLwolJ/zBOYxV35sNKzp1AI=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

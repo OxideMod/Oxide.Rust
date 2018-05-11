@@ -6921,7 +6921,7 @@
             "ArgumentString": null,
             "HookTypeName": "Simple",
             "Name": "MarkHostileFor",
-            "HookName": "OnMarkHostile",
+            "HookName": "OnEntityMarkHostile",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseCombatEntity",
             "Flagged": false,
@@ -6935,7 +6935,7 @@
             },
             "MSILHash": "Cppi9b28AWHm20DoV0S2t6ySozZXLI+Up0cHRDFTb6w=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Entity"
           }
         },
         {
@@ -6959,7 +6959,7 @@
             },
             "MSILHash": "EImSHh5yFKp/mT2Z/21nTlt6oXfAs11iFxiDdD2h5WA=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Entity"
           }
         }
       ],

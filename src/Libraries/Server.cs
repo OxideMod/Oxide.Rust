@@ -39,11 +39,7 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="args"></param>
         public void Command(string command, params object[] args)
         {
-            string commandReply = ConsoleSystem.Run(ConsoleSystem.Option.Server, command, args);
-            if (!string.IsNullOrEmpty(commandReply))
-            {
-                Interface.Oxide.LogInfo(commandReply);
-            }
+            ConsoleSystem.Run(ConsoleSystem.Option.Server, command, args);
         }
 
         #endregion Chat and Commands

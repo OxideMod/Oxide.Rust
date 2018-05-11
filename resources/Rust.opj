@@ -6911,6 +6911,56 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "MarkHostileFor",
+            "HookName": "OnEntityMarkHostile",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseCombatEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MarkHostileFor",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Single"
+              ]
+            },
+            "MSILHash": "Cppi9b28AWHm20DoV0S2t6ySozZXLI+Up0cHRDFTb6w=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "IsHostile",
+            "HookName": "CanEntityBeHostile",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseCombatEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsHostile",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "EImSHh5yFKp/mT2Z/21nTlt6oXfAs11iFxiDdD2h5WA=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

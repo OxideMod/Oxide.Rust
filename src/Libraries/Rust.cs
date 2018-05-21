@@ -47,7 +47,10 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="message"></param>
         /// <param name="userId"></param>
         [LibraryFunction("BroadcastChat")]
-        public void BroadcastChat(string name, string message = null, string userId = "0") => Server.Broadcast(message, name, Convert.ToUInt64(userId));
+        public void BroadcastChat(string name, string message = null, string userId = "0")
+        {
+            Server.Broadcast(message, name, Convert.ToUInt64(userId));
+        }
 
         /// <summary>
         /// Sends a chat message to the player
@@ -57,7 +60,10 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="message"></param>
         /// <param name="userId"></param>
         [LibraryFunction("SendChatMessage")]
-        public void SendChatMessage(BasePlayer player, string name, string message = null, string userId = "0") => Player.Message(player, message, name, Convert.ToUInt64(userId));
+        public void SendChatMessage(BasePlayer player, string name, string message = null, string userId = "0")
+        {
+            Player.Message(player, message, name, Convert.ToUInt64(userId));
+        }
 
         #endregion Chat
 
@@ -70,7 +76,10 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="command"></param>
         /// <param name="args"></param>
         [LibraryFunction("RunClientCommand")]
-        public void RunClientCommand(BasePlayer player, string command, params object[] args) => Player.Command(player, command, args);
+        public void RunClientCommand(BasePlayer player, string command, params object[] args)
+        {
+            Player.Command(player, command, args);
+        }
 
         /// <summary>
         /// Runs a server command
@@ -78,7 +87,10 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="command"></param>
         /// <param name="args"></param>
         [LibraryFunction("RunServerCommand")]
-        public void RunServerCommand(string command, params object[] args) => Server.Command(command, args);
+        public void RunServerCommand(string command, params object[] args)
+        {
+            Server.Command(command, args);
+        }
 
         #endregion Commands
 
@@ -88,7 +100,10 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="connection"></param>
         /// <returns></returns>
         [LibraryFunction("UserIDFromConnection")]
-        public string UserIDFromConnection(Connection connection) => connection.userid.ToString();
+        public string UserIDFromConnection(Connection connection)
+        {
+            return connection.userid.ToString();
+        }
 
         /// <summary>
         /// Returns the Steam ID for the specified building privilege as an array
@@ -96,7 +111,10 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="priv"></param>
         /// <returns></returns>
         [LibraryFunction("UserIDsFromBuildingPrivilege")]
-        public Array UserIDsFromBuildingPrivlidge(BuildingPrivlidge priv) => priv.authorizedPlayers.Select(eid => eid.userid.ToString()).ToArray();
+        public Array UserIDsFromBuildingPrivlidge(BuildingPrivlidge priv)
+        {
+            return priv.authorizedPlayers.Select(eid => eid.userid.ToString()).ToArray();
+        }
 
         /// <summary>
         /// Returns the Steam ID for the specified player as a string
@@ -154,6 +172,9 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="y"></param>
         /// <param name="z"></param>
         [LibraryFunction("ForcePlayerPosition")]
-        public void ForcePlayerPosition(BasePlayer player, float x, float y, float z) => Player.Teleport(player, x, y, z);
+        public void ForcePlayerPosition(BasePlayer player, float x, float y, float z)
+        {
+            Player.Teleport(player, x, y, z);
+        }
     }
 }

@@ -16,7 +16,6 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         #region Initialiation
 
         internal readonly Server Server = new Server();
-        private SaveInfo SaveFile = SaveInfo.Create(SaveRestore.SaveFileName);
 
         #endregion Initialiation
 
@@ -27,8 +26,8 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// </summary>
         public string Name
         {
-            get { return ConVar.Server.hostname; }
-            set { ConVar.Server.hostname = value; }
+            get => ConVar.Server.hostname;
+            set => ConVar.Server.hostname = value;
         }
 
         private static IPAddress address;
@@ -42,13 +41,13 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             {
                 try
                 {
-                    if (address != null)
+                    if (address == null)
                     {
+                        WebClient webClient = new WebClient();
+                        IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
                         return address;
                     }
 
-                    WebClient webClient = new WebClient();
-                    IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
                     return address;
                 }
                 catch (Exception ex)
@@ -89,8 +88,8 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// </summary>
         public int MaxPlayers
         {
-            get { return ConVar.Server.maxplayers; }
-            set { ConVar.Server.maxplayers = value; }
+            get => ConVar.Server.maxplayers;
+            set => ConVar.Server.maxplayers = value;
         }
 
         /// <summary>
@@ -98,14 +97,14 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// </summary>
         public DateTime Time
         {
-            get { return TOD_Sky.Instance.Cycle.DateTime; }
-            set { TOD_Sky.Instance.Cycle.DateTime = value; }
+            get => TOD_Sky.Instance.Cycle.DateTime;
+            set => TOD_Sky.Instance.Cycle.DateTime = value;
         }
 
         /// <summary>
         /// Gets information on the currently loaded save file
         /// </summary>
-        public SaveInfo SaveInfo => SaveFile;
+        public SaveInfo SaveInfo { get; } = SaveInfo.Create(SaveRestore.SaveFileName);
 
         #endregion Information
 
@@ -119,13 +118,11 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="duration"></param>
         public void Ban(string id, string reason, TimeSpan duration = default(TimeSpan))
         {
-            if (IsBanned(id))
+            if (!IsBanned(id))
             {
-                return;
+                ServerUsers.Set(ulong.Parse(id), ServerUsers.UserGroup.Banned, Name, reason);
+                ServerUsers.Save();
             }
-
-            ServerUsers.Set(ulong.Parse(id), ServerUsers.UserGroup.Banned, Name, reason);
-            ServerUsers.Save();
         }
 
         /// <summary>
@@ -146,10 +143,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         public void Save()
         {
             ConVar.Server.save(null);
-
-            string serverFolder = ConVar.Server.GetServerFolder("cfg");
-            string configString = ConsoleSystem.SaveToConfigString(true);
-            File.WriteAllText(string.Concat(serverFolder, "/serverauto.cfg"), configString);
+            File.WriteAllText(string.Concat(ConVar.Server.GetServerFolder("cfg"), "/serverauto.cfg"), ConsoleSystem.SaveToConfigString(true));
             ServerUsers.Save();
         }
 
@@ -159,13 +153,11 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="id"></param>
         public void Unban(string id)
         {
-            if (!IsBanned(id))
+            if (IsBanned(id))
             {
-                return;
+                ServerUsers.Remove(ulong.Parse(id));
+                ServerUsers.Save();
             }
-
-            ServerUsers.Remove(ulong.Parse(id));
-            ServerUsers.Save();
         }
 
         #endregion Administration
@@ -178,7 +170,10 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="message"></param>
         /// <param name="prefix"></param>
         /// <param name="args"></param>
-        public void Broadcast(string message, string prefix, params object[] args) => Server.Broadcast(message, prefix, 0, args);
+        public void Broadcast(string message, string prefix, params object[] args)
+        {
+            Server.Broadcast(message, prefix, 0, args);
+        }
 
         /// <summary>
         /// Broadcasts the specified chat message to all players
@@ -191,7 +186,10 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// </summary>
         /// <param name="command"></param>
         /// <param name="args"></param>
-        public void Command(string command, params object[] args) => Server.Command(command, args);
+        public void Command(string command, params object[] args)
+        {
+            Server.Command(command, args);
+        }
 
         #endregion Chat and Commands
     }

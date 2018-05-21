@@ -217,14 +217,16 @@ namespace Oxide.Game.Rust
         {
             string name = connection.username;
             string id = connection.userid.ToString();
-            uint authLevel = connection.authLevel;
             string ip = Regex.Replace(connection.ipaddress, ipPattern, "");
+            uint authLevel = connection.authLevel;
 
             // Update player's permissions group and name
             if (permission.IsLoaded)
             {
                 permission.UpdateNickname(id, name);
+
                 OxideConfig.DefaultGroups defaultGroups = Interface.Oxide.Config.Options.DefaultGroups;
+
                 if (!permission.UserHasGroup(id, defaultGroups.Players))
                 {
                     permission.AddUserGroup(id, defaultGroups.Players);
@@ -341,13 +343,11 @@ namespace Oxide.Game.Rust
             // Is it a valid chat command?
             if (!Covalence.CommandSystem.HandleChatMessage(iplayer, str) && !cmdlib.HandleChatCommand(player, cmd, args))
             {
-                if (!Interface.Oxide.Config.Options.Modded)
+                if (Interface.Oxide.Config.Options.Modded)
                 {
-                    return;
+                    iplayer.Reply(string.Format(lang.GetMessage("UnknownCommand", this, iplayer.Id), cmd));
+                    arg.ReplyWith(string.Empty);
                 }
-
-                iplayer.Reply(string.Format(lang.GetMessage("UnknownCommand", this, iplayer.Id), cmd));
-                arg.ReplyWith(string.Empty);
             }
         }
 

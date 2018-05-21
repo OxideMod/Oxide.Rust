@@ -218,7 +218,10 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="message"></param>
         /// <param name="prefix"></param>
         /// <param name="args"></param>
-        public void Reply(string message, string prefix, params object[] args) => Message(message, prefix, args);
+        public void Reply(string message, string prefix, params object[] args)
+        {
+            Message(message, prefix, args);
+        }
 
         /// <summary>
         /// Replies to the player with the specified message
@@ -231,7 +234,10 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// </summary>
         /// <param name="command"></param>
         /// <param name="args"></param>
-        public void Command(string command, params object[] args) => ConsoleSystem.Run(ConsoleSystem.Option.Server, command, args);
+        public void Command(string command, params object[] args)
+        {
+            ConsoleSystem.Run(ConsoleSystem.Option.Server, command, args);
+        }
 
         #endregion Chat and Commands
 

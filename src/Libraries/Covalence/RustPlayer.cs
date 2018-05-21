@@ -3,7 +3,6 @@ using Oxide.Core.Libraries;
 using Oxide.Core.Libraries.Covalence;
 using System;
 using System.Globalization;
-
 using UnityEngine;
 
 namespace Oxide.Game.Rust.Libraries.Covalence
@@ -18,6 +17,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         internal readonly Player Player = new Player();
 
         private static Permission libPerms;
+
         private readonly BasePlayer player;
         private readonly ulong steamId;
 
@@ -133,8 +133,8 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// </summary>
         public float Health
         {
-            get { return player.health; }
-            set { player.health = value; }
+            get => player.health;
+            set => player.health = value;
         }
 
         /// <summary>
@@ -159,8 +159,8 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// </summary>
         public float MaxHealth
         {
-            get { return player.MaxHealth(); }
-            set { player._maxHealth = value; }
+            get => player.MaxHealth();
+            set => player._maxHealth = value;
         }
 
         /// <summary>
@@ -226,7 +226,10 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="message"></param>
         /// <param name="prefix"></param>
         /// <param name="args"></param>
-        public void Message(string message, string prefix, params object[] args) => Player.Message(player, message, prefix, 0, args);
+        public void Message(string message, string prefix, params object[] args)
+        {
+            Player.Message(player, message, prefix, 0, args);
+        }
 
         /// <summary>
         /// Sends the specified message to the player

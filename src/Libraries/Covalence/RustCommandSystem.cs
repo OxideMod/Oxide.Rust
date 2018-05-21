@@ -222,14 +222,12 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                     if (arg.Connection != null && arg.Player())
                     {
                         RustPlayer iplayer = rustCovalence.PlayerManager.FindPlayerById(arg.Connection.userid.ToString()) as RustPlayer;
-                        if (iplayer == null)
+                        if (iplayer != null)
                         {
+                            iplayer.LastCommand = CommandType.Console;
+                            callback(iplayer, command, ExtractArgs(arg));
                             return;
                         }
-
-                        iplayer.LastCommand = CommandType.Console;
-                        callback(iplayer, command, ExtractArgs(arg));
-                        return;
                     }
                     callback(consolePlayer, command, ExtractArgs(arg));
                 }

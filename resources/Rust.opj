@@ -6911,6 +6911,56 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNpcDestinationSet",
+            "HookName": "OnNpcDestinationSet",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetDestination",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "iWJovDYMx/u2kfobGDYbtrSCDW7HTzFbGurYyKrNVF8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNpcStopMoving",
+            "HookName": "OnNpcStopMoving",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopMoving",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "BOyzeAstDuXe+ImA+wdLfTjQNSbGmZMYsOsEquWEXyI=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

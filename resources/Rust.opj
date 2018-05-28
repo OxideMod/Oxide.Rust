@@ -7011,6 +7011,50 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 104,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Rust.Global|Rust.Global|get_SteamServer"
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "description_0"
+              },
+              {
+                "OpCode": "ldsfld",
+                "OpType": "Field",
+                "Operand": "mscorlib|System.String|Empty"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Facepunch.Steamworks|Facepunch.Steamworks.Server|SetKey"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "FixDescriptionUpdating [patch]",
+            "HookName": "FixDescriptionUpdating [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "UpdateServerInformation",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "C90M2RGmvIviI6cpgbZ7OpGrYoSZOsEMFAvgVA3pNI0=",
+            "BaseHookName": "AddGameTags [patch]",
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

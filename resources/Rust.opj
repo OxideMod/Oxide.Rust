@@ -3012,8 +3012,8 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 4,
-            "ReturnBehavior": 1,
+            "InjectionIndex": 40,
+            "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
@@ -6886,6 +6886,174 @@
             "MSILHash": "kVtdk85OrESo2IGIEWbvPFSmD5NVFDaAc/ZY7iFb4Ig=",
             "BaseHookName": "IOnPlayerCommand [internal]",
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 33,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNpcPlayerResume",
+            "HookName": "OnNpcPlayerResume",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Resume",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "elAUgSKpcHpszhp8gW8HSLwolJ/zBOYxV35sNKzp1AI=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNpcDestinationSet",
+            "HookName": "OnNpcDestinationSet",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetDestination",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "iWJovDYMx/u2kfobGDYbtrSCDW7HTzFbGurYyKrNVF8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNpcStopMoving",
+            "HookName": "OnNpcStopMoving",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopMoving",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "BOyzeAstDuXe+ImA+wdLfTjQNSbGmZMYsOsEquWEXyI=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityMarkHostile",
+            "HookName": "OnEntityMarkHostile",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseCombatEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MarkHostileFor",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Single"
+              ]
+            },
+            "MSILHash": "Cppi9b28AWHm20DoV0S2t6ySozZXLI+Up0cHRDFTb6w=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "CanEntityBeHostile",
+            "HookName": "CanEntityBeHostile",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseCombatEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsHostile",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "EImSHh5yFKp/mT2Z/21nTlt6oXfAs11iFxiDdD2h5WA=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 104,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Rust.Global|Rust.Global|get_SteamServer"
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "description_0"
+              },
+              {
+                "OpCode": "ldsfld",
+                "OpType": "Field",
+                "Operand": "mscorlib|System.String|Empty"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Facepunch.Steamworks|Facepunch.Steamworks.Server|SetKey"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "FixDescriptionUpdating [patch]",
+            "HookName": "FixDescriptionUpdating [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "UpdateServerInformation",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "C90M2RGmvIviI6cpgbZ7OpGrYoSZOsEMFAvgVA3pNI0=",
+            "BaseHookName": "AddGameTags [patch]",
+            "HookCategory": null
           }
         }
       ],

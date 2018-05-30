@@ -121,7 +121,10 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="plugin"></param>
         /// <param name="callback"></param>
         [LibraryFunction("AddChatCommand")]
-        public void AddChatCommand(string name, Plugin plugin, string callback) => AddChatCommand(name, plugin, (player, command, args) => plugin.CallHook(callback, player, command, args));
+        public void AddChatCommand(string name, Plugin plugin, string callback)
+        {
+            AddChatCommand(name, plugin, (player, command, args) => plugin.CallHook(callback, player, command, args));
+        }
 
         /// <summary>
         /// Adds a chat command
@@ -178,7 +181,10 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="plugin"></param>
         /// <param name="callback"></param>
         [LibraryFunction("AddConsoleCommand")]
-        public void AddConsoleCommand(string command, Plugin plugin, string callback) => AddConsoleCommand(command, plugin, arg => plugin.CallHook(callback, arg) != null);
+        public void AddConsoleCommand(string command, Plugin plugin, string callback)
+        {
+            AddConsoleCommand(command, plugin, arg => plugin.CallHook(callback, arg) != null);
+        }
 
         /// <summary>
         /// Adds a console command with a delegate callback

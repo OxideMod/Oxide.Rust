@@ -721,9 +721,10 @@ namespace Oxide.Game.Rust
         [HookMethod("SaveCommand")]
         private void SaveCommand(IPlayer player, string command, string[] args)
         {
-            if (PermissionsLoaded(player))
+            if (PermissionsLoaded(player) && player.IsAdmin)
             {
                 Interface.Oxide.OnSave();
+                Covalence.PlayerManager.SavePlayerData();
                 player.Reply(lang.GetMessage("DataSaved", this, player.Id));
             }
         }

@@ -136,12 +136,10 @@ namespace Oxide.Plugins
         /// <param name="args"></param>
         protected void PrintToConsole(string format, params object[] args)
         {
-            if (BasePlayer.activePlayerList.Count < 1)
+            if (BasePlayer.activePlayerList.Count >= 1)
             {
-                return;
+                ConsoleNetwork.BroadcastToAllClients("echo " + (args.Length > 0 ? string.Format(format, args) : format));
             }
-
-            ConsoleNetwork.BroadcastToAllClients("echo " + (args.Length > 0 ? string.Format(format, args) : format));
         }
 
         /// <summary>
@@ -179,8 +177,8 @@ namespace Oxide.Plugins
         /// <param name="args"></param>
         protected void SendReply(ConsoleSystem.Arg arg, string format, params object[] args)
         {
-            string message = args.Length > 0 ? string.Format(format, args) : format;
             BasePlayer player = arg.Connection?.player as BasePlayer;
+            string message = args.Length > 0 ? string.Format(format, args) : format;
 
             if (player?.net != null)
             {
@@ -207,8 +205,8 @@ namespace Oxide.Plugins
         /// <param name="args"></param>
         protected void SendWarning(ConsoleSystem.Arg arg, string format, params object[] args)
         {
-            string message = args.Length > 0 ? string.Format(format, args) : format;
             BasePlayer player = arg.Connection?.player as BasePlayer;
+            string message = args.Length > 0 ? string.Format(format, args) : format;
 
             if (player?.net != null)
             {
@@ -227,8 +225,8 @@ namespace Oxide.Plugins
         /// <param name="args"></param>
         protected void SendError(ConsoleSystem.Arg arg, string format, params object[] args)
         {
-            string message = args.Length > 0 ? string.Format(format, args) : format;
             BasePlayer player = arg.Connection?.player as BasePlayer;
+            string message = args.Length > 0 ? string.Format(format, args) : format;
 
             if (player?.net != null)
             {
@@ -247,6 +245,7 @@ namespace Oxide.Plugins
         protected void ForcePlayerPosition(BasePlayer player, Vector3 destination)
         {
             player.MovePosition(destination);
+
             if (!player.IsSpectating() || Vector3.Distance(player.transform.position, destination) > 25.0)
             {
                 player.ClientRPCPlayer(null, player, "ForcePositionTo", destination);

@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
-using Image = UnityEngine.UI.Image;
+using UnityEngine.UI;
 
 namespace Oxide.Game.Rust.Cui
 {
@@ -30,7 +30,7 @@ namespace Oxide.Game.Rust.Cui
 
         public static bool AddUi(BasePlayer player, string json)
         {
-            if (player?.net != null && Interface.CallHook("CanPlayerUI", player, json) == null)
+            if (player?.net != null && Interface.CallHook("CanUseUI", player, json) == null)
             {
                 CommunityEntity.ServerInstance.ClientRPCEx(new Network.SendInfo { connection = player.net.connection }, null, "AddUI", json);
                 return true;
@@ -43,7 +43,7 @@ namespace Oxide.Game.Rust.Cui
         {
             if (player?.net != null)
             {
-                Interface.CallHook("OnPlayerDestroyUI", player, elem);
+                Interface.CallHook("OnDestroyUI", player, elem);
                 CommunityEntity.ServerInstance.ClientRPCEx(new Network.SendInfo { connection = player.net.connection }, null, "DestroyUI", elem);
                 return true;
             }

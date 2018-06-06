@@ -112,6 +112,7 @@
       <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\Mono.Data.Tds.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\System.Data.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\System.Drawing.dll" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\System.Numerics.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\System.Transactions.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\any\*.*; $(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\any\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*" />

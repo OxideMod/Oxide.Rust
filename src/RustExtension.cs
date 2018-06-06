@@ -53,7 +53,8 @@ namespace Oxide.Game.Rust
         /// </summary>
         internal static readonly HashSet<string> DefaultReferences = new HashSet<string>
         {
-            "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "Rust.Data", "Rust.Global", "Rust.Workshop"
+            "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "Rust.Data", "Rust.Global", "Rust.Workshop",
+            "UnityEngine.CoreModule", "UnityEngine.PhysicsModule", "UnityEngine.UnityWebRequestWWWModule"
         };
 
         /// <summary>
@@ -93,6 +94,7 @@ namespace Oxide.Game.Rust
             "Warning, null renderer for ScaleRenderer!",
             "[AmplifyColor]",
             "[AmplifyOcclusion]",
+            "[CoverageQueries] Disabled due to unsupported",
             "[CustomProbe]",
             "[Manifest] URI IS",
             "[SpawnHandler] populationCounts"

@@ -109,7 +109,10 @@
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Console.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Rcon.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\Mono.Data.Tds.dll" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\System.Data.dll" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\System.Drawing.dll" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\System.Transactions.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\any\*.*; $(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\any\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*" />
       <ContentX64Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x64\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\x64\*.*" />

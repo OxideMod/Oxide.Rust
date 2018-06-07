@@ -54,7 +54,7 @@ namespace Oxide.Game.Rust
         internal static readonly HashSet<string> DefaultReferences = new HashSet<string>
         {
             "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "Rust.Data", "Rust.Global", "Rust.Workshop",
-            "UnityEngine.CoreModule", "UnityEngine.PhysicsModule", "UnityEngine.UnityWebRequestWWWModule"
+            "UnityEngine.AIModule", "UnityEngine.CoreModule", "UnityEngine.ImageConversionModule", "UnityEngine.PhysicsModule", "UnityEngine.UnityWebRequestWWWModule"
         };
 
         /// <summary>
@@ -63,7 +63,8 @@ namespace Oxide.Game.Rust
         public override string[] WhitelistAssemblies => new[]
         {
             "Assembly-CSharp", "Assembly-CSharp-firstpass", "DestMath", "Facepunch.Network", "Facepunch.System", "Facepunch.UnityEngine",
-            "mscorlib", "Oxide.Core", "Oxide.Rust", /* < Needed for non-C# plugins for some reason */ "RustBuild", "Rust.Data", "Rust.Global", "System", "System.Core", "UnityEngine"
+            "mscorlib", "Oxide.Core", "Oxide.Rust", /* < Needed for non-C# plugins for some reason */ "RustBuild", "Rust.Data", "Rust.Global", "System", "System.Core",
+            "UnityEngine"
         };
 
         /// <summary>

@@ -1166,7 +1166,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "tADxJtD4lbJXJa3jvgouSLErpw7/f0Wj1+16k3n5EO4=",
+            "MSILHash": "0ABQK0Mzwt+qPnT4JzOirwYmoUjhJOMzGaqZMSLLbs8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -7409,25 +7409,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "VendingMachine::transactionActive",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "VendingMachine",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "transactionActive",
-            "FullTypeName": "System.Boolean VendingMachine::transactionActive",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "DroppedItemContainer::inventory",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "DroppedItemContainer",
@@ -9893,6 +9874,25 @@
             ],
             "Name": "utilityAiComponent",
             "FullTypeName": "Apex.AI.Components.UtilityAIComponent NPCPlayerApex::utilityAiComponent",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VendingMachine::transactionActive",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VendingMachine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "transactionActive",
+            "FullTypeName": "System.Boolean VendingMachine::transactionActive",
             "Parameters": []
           },
           "MSILHash": ""

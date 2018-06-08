@@ -53,7 +53,9 @@ namespace Oxide.Game.Rust
         /// </summary>
         internal static readonly HashSet<string> DefaultReferences = new HashSet<string>
         {
-            "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "Rust.Data", "Rust.Global", "Rust.Workshop"
+            "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "Rust.Data", "Rust.Global", "Rust.Workshop",
+            "UnityEngine.AIModule", "UnityEngine.CoreModule", "UnityEngine.ImageConversionModule", "UnityEngine.PhysicsModule", "UnityEngine.TerrainModule",
+            "UnityEngine.TerrainPhysicsModule", "UnityEngine.UI", "UnityEngine.UIModule", "UnityEngine.UIElementsModule", "UnityEngine.UnityWebRequestWWWModule"
         };
 
         /// <summary>
@@ -62,7 +64,8 @@ namespace Oxide.Game.Rust
         public override string[] WhitelistAssemblies => new[]
         {
             "Assembly-CSharp", "Assembly-CSharp-firstpass", "DestMath", "Facepunch.Network", "Facepunch.System", "Facepunch.UnityEngine",
-            "mscorlib", "Oxide.Core", "Oxide.Rust", /* < Needed for non-C# plugins for some reason */ "RustBuild", "Rust.Data", "Rust.Global", "System", "System.Core", "UnityEngine"
+            "mscorlib", "Oxide.Core", "Oxide.Rust", /* < Needed for non-C# plugins for some reason */ "RustBuild", "Rust.Data", "Rust.Global", "System", "System.Core",
+            "UnityEngine"
         };
 
         /// <summary>
@@ -93,6 +96,7 @@ namespace Oxide.Game.Rust
             "Warning, null renderer for ScaleRenderer!",
             "[AmplifyColor]",
             "[AmplifyOcclusion]",
+            "[CoverageQueries] Disabled due to unsupported",
             "[CustomProbe]",
             "[Manifest] URI IS",
             "[SpawnHandler] populationCounts"

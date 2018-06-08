@@ -53,9 +53,10 @@ namespace Oxide.Game.Rust
         /// </summary>
         internal static readonly HashSet<string> DefaultReferences = new HashSet<string>
         {
-            "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "Rust.Data", "Rust.Global", "Rust.Workshop",
-            "UnityEngine.AIModule", "UnityEngine.CoreModule", "UnityEngine.ImageConversionModule", "UnityEngine.PhysicsModule", "UnityEngine.TerrainModule",
-            "UnityEngine.TerrainPhysicsModule", "UnityEngine.UI", "UnityEngine.UIModule", "UnityEngine.UIElementsModule", "UnityEngine.UnityWebRequestWWWModule"
+            "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "Rust.Data", "Rust.Global",
+            "Rust.Workshop", "UnityEngine.AIModule", "UnityEngine.AssetBundleModule", "UnityEngine.CoreModule", "UnityEngine.ImageConversionModule",
+            "UnityEngine.PhysicsModule", "UnityEngine.TerrainModule", "UnityEngine.TerrainPhysicsModule", "UnityEngine.UI", "UnityEngine.UIModule",
+            "UnityEngine.UIElementsModule", "UnityEngine.UnityWebRequestWWWModule"
         };
 
         /// <summary>
@@ -63,8 +64,8 @@ namespace Oxide.Game.Rust
         /// </summary>
         public override string[] WhitelistAssemblies => new[]
         {
-            "Assembly-CSharp", "Assembly-CSharp-firstpass", "DestMath", "Facepunch.Network", "Facepunch.System", "Facepunch.UnityEngine",
-            "mscorlib", "Oxide.Core", "Oxide.Rust", /* < Needed for non-C# plugins for some reason */ "RustBuild", "Rust.Data", "Rust.Global", "System", "System.Core",
+            "Assembly-CSharp", "Assembly-CSharp-firstpass", "DestMath", "Facepunch.Network", "Facepunch.System", "Facepunch.UnityEngine", "mscorlib",
+            "Oxide.Core", "Oxide.Rust", /* < Needed for non-C# plugins for some reason */ "RustBuild", "Rust.Data", "Rust.Global", "System", "System.Core",
             "UnityEngine"
         };
 

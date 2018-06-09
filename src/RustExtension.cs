@@ -55,7 +55,7 @@ namespace Oxide.Game.Rust
         {
             "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "Rust.Data", "Rust.Global",
             "Rust.Workshop", "UnityEngine.AIModule", "UnityEngine.AssetBundleModule", "UnityEngine.CoreModule", "UnityEngine.ImageConversionModule",
-            "UnityEngine.PhysicsModule", "UnityEngine.TerrainModule", "UnityEngine.TerrainPhysicsModule", "UnityEngine.UI", "UnityEngine.UIModule",
+            "UnityEngine.PhysicsModule", "UnityEngine.TerrainModule", "UnityEngine.TerrainPhysicsModule", "UnityEngine.VehiclesModule", "UnityEngine.UI", "UnityEngine.UIModule",
             "UnityEngine.UIElementsModule", "UnityEngine.UnityWebRequestWWWModule"
         };
 

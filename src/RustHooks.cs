@@ -457,7 +457,7 @@ namespace Oxide.Game.Rust
         private object IOnNpcPlayerSenseGunshot(NPCPlayerApex npc, UnityEngine.Vector3 position)
         {
             NPCPlayerApex.GunshotSensationQueryResultsCount = BaseEntity.Query.Server.GetPlayersInSphere(position, npc.Stats.CloseRange, NPCPlayerApex.GunshotSensationQueryResults,
-                player => !(player == null) && Interface.CallHook("OnNpcPlayerTarget", npc, player) != null && player.isServer && !player.IsSleeping() && !player.IsDead() && player.Family != npc.Family);
+                player => !(player == null) && Interface.CallHook("OnNpcPlayerTarget", npc, player) == null && player.isServer && !player.IsSleeping() && !player.IsDead() && player.Family != npc.Family);
 
             return true;
         }
@@ -471,7 +471,7 @@ namespace Oxide.Game.Rust
         private object IOnNpcPlayerSenseVision(NPCPlayerApex npc)
         {
             NPCPlayerApex.PlayerQueryResultCount = BaseEntity.Query.Server.GetPlayersInSphere(npc.ServerPosition, npc.Stats.VisionRange, NPCPlayerApex.PlayerQueryResults,
-                player => !(player == null) && Interface.CallHook("OnNpcPlayerTarget", npc, player) != null && player.isServer && !player.IsSleeping() && !player.IsDead());
+                player => !(player == null) && Interface.CallHook("OnNpcPlayerTarget", npc, player) == null && player.isServer && !player.IsSleeping() && !player.IsDead());
 
             return true;
         }

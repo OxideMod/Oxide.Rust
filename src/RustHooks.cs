@@ -448,30 +448,62 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
-        /// Called when an NPC player tries to target an entity when sensing a gunshot
-        /// </summary>
-        /// <param name="npc"></param>
-        /// <param name="position"></param>
-        /// <returns></returns>
-        [HookMethod("IOnNpcPlayerSenseGunshot")]
-        private object IOnNpcPlayerSenseGunshot(NPCPlayerApex npc, UnityEngine.Vector3 position)
-        {
-            NPCPlayerApex.GunshotSensationQueryResultsCount = BaseEntity.Query.Server.GetPlayersInSphere(position, npc.Stats.CloseRange, NPCPlayerApex.GunshotSensationQueryResults,
-                player => !(player == null) && Interface.CallHook("OnNpcPlayerTarget", npc, player) == null && player.isServer && !player.IsSleeping() && !player.IsDead() && player.Family != npc.Family);
-
-            return true;
-        }
-
-        /// <summary>
-        /// Called when an NPC player tries to target an entity when sensing visually
+        /// Called when an NPC player tries to target an entity based on senses
         /// </summary>
         /// <param name="npc"></param>
         /// <returns></returns>
-        [HookMethod("IOnNpcPlayerSenseVision")]
-        private object IOnNpcPlayerSenseVision(NPCPlayerApex npc)
+        [HookMethod("IOnNpcPlayerSense")]
+        private object IOnNpcPlayerSense(NPCPlayerApex npc)
         {
-            NPCPlayerApex.PlayerQueryResultCount = BaseEntity.Query.Server.GetPlayersInSphere(npc.ServerPosition, npc.Stats.VisionRange, NPCPlayerApex.PlayerQueryResults,
-                player => !(player == null) && Interface.CallHook("OnNpcPlayerTarget", npc, player) == null && player.isServer && !player.IsSleeping() && !player.IsDead());
+            BasePlayer[] targetList = { };
+            float distance = 0f;
+
+            if (NPCPlayerApex.GunshotSensationQueryResults.Length > 0)
+            {
+                targetList = NPCPlayerApex.GunshotSensationQueryResults;
+                distance = npc.Stats.CloseRange;
+            }
+            else if (NPCPlayerApex.PlayerQueryResults.Length > 0)
+            {
+                targetList = NPCPlayerApex.PlayerQueryResults;
+                distance = npc.Stats.VisionRange;
+            }
+
+            BaseEntity.Query.Server.GetPlayersInSphere(npc.ServerPosition, distance, targetList,
+                player =>
+                {
+                    object callHook = Interface.CallHook("OnNpcPlayerTarget", npc, player);
+                    if (callHook != null)
+                    {
+                        foreach (Memory.SeenInfo seenInfo in npc.AiContext.Memory.All)
+                        {
+                            if (seenInfo.Entity == player)
+                            {
+                                npc.AiContext.Memory.All.Remove(seenInfo);
+                                break;
+                            }
+                        }
+
+                        foreach (Memory.ExtendedInfo extendedInfo in npc.AiContext.Memory.AllExtended)
+                        {
+                            if (extendedInfo.Entity == player)
+                            {
+                                npc.AiContext.Memory.AllExtended.Remove(extendedInfo);
+                                break;
+                            }
+                        }
+
+                        npc.SetFact(NPCPlayerApex.Facts.HasEnemy, 0);
+                        npc.SetFact(NPCPlayerApex.Facts.EnemyRange, 5);
+                        npc.SetFact(NPCPlayerApex.Facts.AfraidRange, 1);
+                        npc.SetFact(NPCPlayerApex.Facts.HasLineOfSight, 0);
+                        npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightCrouched, 0);
+                        npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightStanding, 0);
+                        npc.AiContext.AIAgent.AttackTarget = null;
+                    }
+
+                    return player != null && callHook == null && player.isServer && !player.IsSleeping() && !player.IsDead();
+                });
 
             return true;
         }
@@ -485,40 +517,9 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnNpcPlayerTarget")]
         private object IOnNpcPlayerTarget(NPCPlayerApex npc, BaseEntity target)
         {
-            object callHook = Interface.CallHook("OnNpcPlayerTarget", npc, target);
-            if (callHook != null)
+            if (Interface.CallHook("OnNpcPlayerTarget", npc, target) != null)
             {
-                if (npc is NPCMurderer)
-                {
-                    return 0f;
-                }
-
-                foreach (Memory.SeenInfo seenInfo in npc.AiContext.Memory.All)
-                {
-                    if (seenInfo.Entity == target)
-                    {
-                        npc.AiContext.Memory.All.Remove(seenInfo);
-                        break;
-                    }
-                }
-
-                foreach (Memory.ExtendedInfo extendedInfo in npc.AiContext.Memory.AllExtended)
-                {
-                    if (extendedInfo.Entity == target)
-                    {
-                        npc.AiContext.Memory.AllExtended.Remove(extendedInfo);
-                        break;
-                    }
-                }
-
-                npc.SetFact(NPCPlayerApex.Facts.HasEnemy, 0);
-                npc.SetFact(NPCPlayerApex.Facts.EnemyRange, 5);
-                npc.SetFact(NPCPlayerApex.Facts.AfraidRange, 1);
-                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSight, 0);
-                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightCrouched, 0);
-                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightStanding, 0);
-                npc.AiContext.AIAgent.AttackTarget = null;
-                return true;
+                return 0f;
             }
 
             return null;

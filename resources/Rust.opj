@@ -6139,30 +6139,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 483,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, this.AiContext.AIAgent.AttackTarget",
-            "HookTypeName": "Simple",
-            "Name": "IOnNpcPlayerTarget [scientist, internal]",
-            "HookName": "IOnNpcPlayerTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCPlayerApex",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "AggroBestScorePlayerOrClosestAnimal",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "48hV7eAFh8itw44NGBMCeEfV3UXbHCZSVOjQMZyQfxY=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
@@ -7057,6 +7033,30 @@
           }
         },
         {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "IOnNpcPlayerSenseVision [internal]",
+            "HookName": "IOnNpcPlayerSenseVision",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "_FindPlayersInVisionRange",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "uGZunrfM+C8td404H2VcYmnDIbR+4jJ6sXvcKZit6aU=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 0,
@@ -7140,6 +7140,32 @@
             "MSILHash": "OF124cRy8f/f/ZIagOZgw0UOP2S5vfQNDXOxJw5YfEE=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "IOnNpcPlayerSenseGunshot [internal]",
+            "HookName": "IOnNpcPlayerSenseGunshot",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "_FindPlayersAtGunshotSensationOrigin",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "cerzyqb5zU8HAFoCfb0yxV+FPSh9exF9CBh6WaY3/zg=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
           }
         }
       ],
@@ -9979,6 +10005,86 @@
             ],
             "Name": "transactionActive",
             "FullTypeName": "System.Boolean VendingMachine::transactionActive",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayerApex::GunshotSensationQueryResults",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GunshotSensationQueryResults",
+            "FullTypeName": "BasePlayer[] NPCPlayerApex::GunshotSensationQueryResults",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayerApex::GunshotSensationQueryResultsCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GunshotSensationQueryResultsCount",
+            "FullTypeName": "System.Int32 NPCPlayerApex::GunshotSensationQueryResultsCount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayerApex::PlayerQueryResultCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PlayerQueryResultCount",
+            "FullTypeName": "System.Int32 NPCPlayerApex::PlayerQueryResultCount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayerApex::PlayerQueryResults",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PlayerQueryResults",
+            "FullTypeName": "BasePlayer[] NPCPlayerApex::PlayerQueryResults",
             "Parameters": []
           },
           "MSILHash": ""

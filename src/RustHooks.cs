@@ -5,6 +5,7 @@ using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using Oxide.Core.RemoteConsole;
 using Oxide.Core.ServerConsole;
+using Rust.Ai;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -447,6 +448,35 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
+        /// Called when an NPC player tries to target an entity when sensing a gunshot
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <param name="position"></param>
+        /// <returns></returns>
+        [HookMethod("IOnNpcPlayerSenseGunshot")]
+        private object IOnNpcPlayerSenseGunshot(NPCPlayerApex npc, UnityEngine.Vector3 position)
+        {
+            NPCPlayerApex.GunshotSensationQueryResultsCount = BaseEntity.Query.Server.GetPlayersInSphere(position, npc.Stats.CloseRange, NPCPlayerApex.GunshotSensationQueryResults,
+                player => !(player == null) && Interface.CallHook("OnNpcPlayerTarget", npc, player) != null && player.isServer && !player.IsSleeping() && !player.IsDead() && player.Family != npc.Family);
+
+            return true;
+        }
+
+        /// <summary>
+        /// Called when an NPC player tries to target an entity when sensing visually
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <returns></returns>
+        [HookMethod("IOnNpcPlayerSenseVision")]
+        private object IOnNpcPlayerSenseVision(NPCPlayerApex npc)
+        {
+            NPCPlayerApex.PlayerQueryResultCount = BaseEntity.Query.Server.GetPlayersInSphere(npc.ServerPosition, npc.Stats.VisionRange, NPCPlayerApex.PlayerQueryResults,
+                player => !(player == null) && Interface.CallHook("OnNpcPlayerTarget", npc, player) != null && player.isServer && !player.IsSleeping() && !player.IsDead());
+
+            return true;
+        }
+
+        /// <summary>
         /// Called when an NPC player tries to target an entity
         /// </summary>
         /// <param name="npc"></param>
@@ -461,6 +491,24 @@ namespace Oxide.Game.Rust
                 if (npc is NPCMurderer)
                 {
                     return 0f;
+                }
+
+                foreach (Memory.SeenInfo seenInfo in npc.AiContext.Memory.All)
+                {
+                    if (seenInfo.Entity == target)
+                    {
+                        npc.AiContext.Memory.All.Remove(seenInfo);
+                        break;
+                    }
+                }
+
+                foreach (Memory.ExtendedInfo extendedInfo in npc.AiContext.Memory.AllExtended)
+                {
+                    if (extendedInfo.Entity == target)
+                    {
+                        npc.AiContext.Memory.AllExtended.Remove(extendedInfo);
+                        break;
+                    }
                 }
 
                 npc.SetFact(NPCPlayerApex.Facts.HasEnemy, 0);

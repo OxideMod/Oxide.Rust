@@ -493,13 +493,18 @@ namespace Oxide.Game.Rust
                             }
                         }
 
+                        npc.AiContext.AIAgent.AttackTarget = null;
+                        npc.AiContext.EnemyNpc = null;
+                        npc.AiContext.EnemyPlayer = null;
+                        npc.CurrentBehaviour = BaseNpc.Behaviour.Idle;
+
+                        npc.SetFact(NPCPlayerApex.Facts.IsAggro, 0);
                         npc.SetFact(NPCPlayerApex.Facts.HasEnemy, 0);
                         npc.SetFact(NPCPlayerApex.Facts.EnemyRange, 5);
                         npc.SetFact(NPCPlayerApex.Facts.AfraidRange, 1);
                         npc.SetFact(NPCPlayerApex.Facts.HasLineOfSight, 0);
                         npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightCrouched, 0);
                         npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightStanding, 0);
-                        npc.AiContext.AIAgent.AttackTarget = null;
                     }
 
                     return player != null && callHook == null && player.isServer && !player.IsSleeping() && !player.IsDead();

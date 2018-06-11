@@ -7055,6 +7055,92 @@
             "BaseHookName": "AddGameTags [patch]",
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Component|get_transform"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Transform|get_position"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|Rust.Ai.Sensation|Position"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Vector3|Distance"
+              },
+              {
+                "OpCode": "ldc_r4",
+                "OpType": "Single",
+                "Operand": "5"
+              },
+              {
+                "OpCode": "bge_un",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "isinst",
+                "OpType": "Type",
+                "Operand": "Assembly-CSharp|NPCMurderer"
+              },
+              {
+                "OpCode": "brfalse",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "FixMurdererRpcError [patch]",
+            "HookName": "FixMurdererRpcError [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "OnSenseGunshot",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Rust.Ai.Sensation"
+              ]
+            },
+            "MSILHash": "OF124cRy8f/f/ZIagOZgw0UOP2S5vfQNDXOxJw5YfEE=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

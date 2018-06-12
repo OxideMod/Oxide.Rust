@@ -347,7 +347,6 @@ namespace Oxide.Game.Rust
                 if (Interface.Oxide.Config.Options.Modded)
                 {
                     iplayer.Reply(string.Format(lang.GetMessage("UnknownCommand", this, iplayer.Id), cmd));
-                    arg.ReplyWith(string.Empty);
                 }
             }
         }

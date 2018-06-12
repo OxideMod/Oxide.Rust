@@ -5,6 +5,7 @@ using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using Oxide.Core.RemoteConsole;
 using Oxide.Core.ServerConsole;
+using Rust.Ai;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -447,6 +448,72 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
+        /// Called when an NPC player tries to target an entity based on senses
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <returns></returns>
+        [HookMethod("IOnNpcPlayerSense")]
+        private object IOnNpcPlayerSense(NPCPlayerApex npc)
+        {
+            BasePlayer[] targetList = { };
+            float distance = 0f;
+
+            if (NPCPlayerApex.GunshotSensationQueryResults.Length > 0)
+            {
+                targetList = NPCPlayerApex.GunshotSensationQueryResults;
+                distance = npc.Stats.CloseRange;
+            }
+            else if (NPCPlayerApex.PlayerQueryResults.Length > 0)
+            {
+                targetList = NPCPlayerApex.PlayerQueryResults;
+                distance = npc.Stats.VisionRange;
+            }
+
+            BaseEntity.Query.Server.GetPlayersInSphere(npc.ServerPosition, distance, targetList,
+                player =>
+                {
+                    object callHook = Interface.CallHook("OnNpcPlayerTarget", npc, player);
+                    if (callHook != null)
+                    {
+                        foreach (Memory.SeenInfo seenInfo in npc.AiContext.Memory.All)
+                        {
+                            if (seenInfo.Entity == player)
+                            {
+                                npc.AiContext.Memory.All.Remove(seenInfo);
+                                break;
+                            }
+                        }
+
+                        foreach (Memory.ExtendedInfo extendedInfo in npc.AiContext.Memory.AllExtended)
+                        {
+                            if (extendedInfo.Entity == player)
+                            {
+                                npc.AiContext.Memory.AllExtended.Remove(extendedInfo);
+                                break;
+                            }
+                        }
+
+                        npc.AiContext.AIAgent.AttackTarget = null;
+                        npc.AiContext.EnemyNpc = null;
+                        npc.AiContext.EnemyPlayer = null;
+                        npc.CurrentBehaviour = BaseNpc.Behaviour.Idle;
+
+                        npc.SetFact(NPCPlayerApex.Facts.IsAggro, 0);
+                        npc.SetFact(NPCPlayerApex.Facts.HasEnemy, 0);
+                        npc.SetFact(NPCPlayerApex.Facts.EnemyRange, 5);
+                        npc.SetFact(NPCPlayerApex.Facts.AfraidRange, 1);
+                        npc.SetFact(NPCPlayerApex.Facts.HasLineOfSight, 0);
+                        npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightCrouched, 0);
+                        npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightStanding, 0);
+                    }
+
+                    return player != null && callHook == null && player.isServer && !player.IsSleeping() && !player.IsDead();
+                });
+
+            return true;
+        }
+
+        /// <summary>
         /// Called when an NPC player tries to target an entity
         /// </summary>
         /// <param name="npc"></param>
@@ -455,22 +522,9 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnNpcPlayerTarget")]
         private object IOnNpcPlayerTarget(NPCPlayerApex npc, BaseEntity target)
         {
-            object callHook = Interface.CallHook("OnNpcPlayerTarget", npc, target);
-            if (callHook != null)
+            if (Interface.CallHook("OnNpcPlayerTarget", npc, target) != null)
             {
-                if (npc is NPCMurderer)
-                {
-                    return 0f;
-                }
-
-                npc.SetFact(NPCPlayerApex.Facts.HasEnemy, 0);
-                npc.SetFact(NPCPlayerApex.Facts.EnemyRange, 5);
-                npc.SetFact(NPCPlayerApex.Facts.AfraidRange, 1);
-                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSight, 0);
-                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightCrouched, 0);
-                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightStanding, 0);
-                npc.AiContext.AIAgent.AttackTarget = null;
-                return true;
+                return 0f;
             }
 
             return null;

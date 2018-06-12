@@ -1281,7 +1281,7 @@
             "InjectionIndex": 13,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l1, l0",
+            "ArgumentString": "l0, l1",
             "HookTypeName": "Simple",
             "Name": "CanResearchItem",
             "HookName": "CanResearchItem",
@@ -3715,7 +3715,7 @@
             "InjectionIndex": 21,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player, l0",
+            "ArgumentString": "a0.player, this, l0",
             "HookTypeName": "Simple",
             "Name": "CanAssignBed",
             "HookName": "CanAssignBed",
@@ -3819,7 +3819,7 @@
             "InjectionIndex": 38,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player, l0, l1",
+            "ArgumentString": "a0.player, this, l0, l1",
             "HookTypeName": "Simple",
             "Name": "CanChangeCode",
             "HookName": "CanChangeCode",
@@ -4182,7 +4182,7 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player",
+            "ArgumentString": "a0.player, this",
             "HookTypeName": "Simple",
             "Name": "CanHideStash",
             "HookName": "CanHideStash",
@@ -5224,7 +5224,7 @@
             "InjectionIndex": 6,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0",
+            "ArgumentString": "a0, this",
             "HookTypeName": "Simple",
             "Name": "CanDismountEntity",
             "HookName": "CanDismountEntity",
@@ -5277,8 +5277,8 @@
           "Hook": {
             "InjectionIndex": 6,
             "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
             "HookTypeName": "Simple",
             "Name": "CanMountEntity",
             "HookName": "CanMountEntity",
@@ -6139,30 +6139,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 483,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, this.AiContext.AIAgent.AttackTarget",
-            "HookTypeName": "Simple",
-            "Name": "IOnNpcPlayerTarget [scientist, internal]",
-            "HookName": "IOnNpcPlayerTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCPlayerApex",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "AggroBestScorePlayerOrClosestAnimal",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "48hV7eAFh8itw44NGBMCeEfV3UXbHCZSVOjQMZyQfxY=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
@@ -6604,7 +6580,7 @@
             "InjectionIndex": 9,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player, l0",
+            "ArgumentString": "a0.player, this, l0",
             "HookTypeName": "Simple",
             "Name": "CanRenameBed",
             "HookName": "CanRenameBed",
@@ -7054,6 +7030,142 @@
             "MSILHash": "DvuQzWM8UBXZpQyp8dVRnBOXXiA5MuZzR1l5ka1qOHA=",
             "BaseHookName": "AddGameTags [patch]",
             "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "IOnNpcPlayerSense [vision, internal]",
+            "HookName": "IOnNpcPlayerSense",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "_FindPlayersInVisionRange",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "uGZunrfM+C8td404H2VcYmnDIbR+4jJ6sXvcKZit6aU=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Component|get_transform"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Transform|get_position"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|Rust.Ai.Sensation|Position"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Vector3|Distance"
+              },
+              {
+                "OpCode": "ldc_r4",
+                "OpType": "Single",
+                "Operand": "5"
+              },
+              {
+                "OpCode": "bge_un",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "isinst",
+                "OpType": "Type",
+                "Operand": "Assembly-CSharp|NPCMurderer"
+              },
+              {
+                "OpCode": "brfalse",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "FixMurdererRpcError [patch]",
+            "HookName": "FixMurdererRpcError [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "OnSenseGunshot",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Rust.Ai.Sensation"
+              ]
+            },
+            "MSILHash": "OF124cRy8f/f/ZIagOZgw0UOP2S5vfQNDXOxJw5YfEE=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "IOnNpcPlayerSense [gunshot, internal]",
+            "HookName": "IOnNpcPlayerSense",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "_FindPlayersAtGunshotSensationOrigin",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "cerzyqb5zU8HAFoCfb0yxV+FPSh9exF9CBh6WaY3/zg=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
           }
         }
       ],
@@ -9893,6 +10005,86 @@
             ],
             "Name": "transactionActive",
             "FullTypeName": "System.Boolean VendingMachine::transactionActive",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayerApex::GunshotSensationQueryResults",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GunshotSensationQueryResults",
+            "FullTypeName": "BasePlayer[] NPCPlayerApex::GunshotSensationQueryResults",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayerApex::GunshotSensationQueryResultsCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GunshotSensationQueryResultsCount",
+            "FullTypeName": "System.Int32 NPCPlayerApex::GunshotSensationQueryResultsCount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayerApex::PlayerQueryResultCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PlayerQueryResultCount",
+            "FullTypeName": "System.Int32 NPCPlayerApex::PlayerQueryResultCount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayerApex::PlayerQueryResults",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PlayerQueryResults",
+            "FullTypeName": "BasePlayer[] NPCPlayerApex::PlayerQueryResults",
             "Parameters": []
           },
           "MSILHash": ""

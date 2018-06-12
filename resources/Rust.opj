@@ -300,7 +300,7 @@
             },
             "MSILHash": "OWp3Wp0NWPIEMQxL13Raz7H7NOK/DzMLnwJOw3goysc=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {
@@ -326,7 +326,7 @@
             },
             "MSILHash": "OWp3Wp0NWPIEMQxL13Raz7H7NOK/DzMLnwJOw3goysc=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {
@@ -352,7 +352,7 @@
             },
             "MSILHash": "XE0VwJOcn6/HamU4UPUExwe/AG/9K8MgaQjaDMcd7I0=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {
@@ -378,7 +378,7 @@
             },
             "MSILHash": "XE0VwJOcn6/HamU4UPUExwe/AG/9K8MgaQjaDMcd7I0=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {
@@ -911,7 +911,7 @@
             },
             "MSILHash": "y9DS5QpKSVE3AtRcgvXdCZeA1x+Mi2WwcB34qJeS/yk=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {
@@ -2101,7 +2101,7 @@
             },
             "MSILHash": "Vke6xoFRi9mXtBdq8Z0AM/G70EViXdj5tzQlnvlqotk=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {
@@ -3371,7 +3371,7 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0",
+            "ArgumentString": "a0, this",
             "HookTypeName": "Simple",
             "Name": "CanUseVending",
             "HookName": "CanUseVending",
@@ -3389,7 +3389,7 @@
             },
             "MSILHash": "/j+3xEqvbAGEKTzuWC5d+UX5iWWT1ZEpvHCyHKCFaAM=",
             "BaseHookName": null,
-            "HookCategory": "Vending"
+            "HookCategory": "Player"
           }
         },
         {
@@ -3398,7 +3398,7 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0",
+            "ArgumentString": "a0, this",
             "HookTypeName": "Simple",
             "Name": "CanAdministerVending",
             "HookName": "CanAdministerVending",
@@ -3415,7 +3415,7 @@
             },
             "MSILHash": "F7haNsHev2x8NkA8DrTNC2Y4JBbtMgpLjP6x1MroBac=",
             "BaseHookName": null,
-            "HookCategory": "Vending"
+            "HookCategory": "Player"
           }
         },
         {
@@ -3608,7 +3608,7 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0",
+            "ArgumentString": "a0, this",
             "HookTypeName": "Simple",
             "Name": "CanPickupEntity",
             "HookName": "CanPickupEntity",
@@ -3625,7 +3625,7 @@
             },
             "MSILHash": "zVFQy3wqqB87YlZHKOdxa2I4yVml/t2VDx7vUgGOgfA=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Player"
           }
         },
         {
@@ -3767,7 +3767,7 @@
             "InjectionIndex": 9,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player",
+            "ArgumentString": "a0.player, this",
             "HookTypeName": "Simple",
             "Name": "CanUnlock [CodeLock]",
             "HookName": "CanUnlock",
@@ -3784,7 +3784,7 @@
             },
             "MSILHash": "90GzpNH5lhs4mGPkK30H9WCPCw1Bs6v7n8twKSD6DU0=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {
@@ -3793,7 +3793,7 @@
             "InjectionIndex": 15,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player",
+            "ArgumentString": "a0.player, this",
             "HookTypeName": "Simple",
             "Name": "CanLock [CodeLock]",
             "HookName": "CanLock",
@@ -3810,7 +3810,7 @@
             },
             "MSILHash": "tjHkOa+G5xk57Hde/v9/V/29mOihi+8NJfBbtl7mz3o=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {
@@ -3845,7 +3845,7 @@
             "InjectionIndex": 9,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player",
+            "ArgumentString": "a0.player, this",
             "HookTypeName": "Simple",
             "Name": "CanLock [KeyLock]",
             "HookName": "CanLock",
@@ -3862,7 +3862,7 @@
             },
             "MSILHash": "RDcdYFzCn66Y36q3qgm88xfD8as5qqw473XoFH5LuFY=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {
@@ -3871,7 +3871,7 @@
             "InjectionIndex": 9,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player",
+            "ArgumentString": "a0.player, this",
             "HookTypeName": "Simple",
             "Name": "CanUnlock [KeyLock]",
             "HookName": "CanUnlock",
@@ -3888,7 +3888,7 @@
             },
             "MSILHash": "1AX4cgkfIj9aWMUKlkkcfsBqU7EH7JDn2zdjarYFJ7c=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {
@@ -4023,7 +4023,7 @@
             "InjectionIndex": 29,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player",
+            "ArgumentString": "a0.player, this",
             "HookTypeName": "Simple",
             "Name": "CanSetBedPublic",
             "HookName": "CanSetBedPublic",
@@ -4040,7 +4040,7 @@
             },
             "MSILHash": "vthfl2BhzCN4f7heoiyWcowb5PbbUZ5vrceW8OPNOBc=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {
@@ -4156,7 +4156,7 @@
             "InjectionIndex": 4,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player",
+            "ArgumentString": "a0.player, this",
             "HookTypeName": "Simple",
             "Name": "CanSeeStash",
             "HookName": "CanSeeStash",
@@ -4173,7 +4173,7 @@
             },
             "MSILHash": "eEiw/eS8hgHee6ZeXyfwCbMDStJI0aeQvxd/BRVxP4I=",
             "BaseHookName": null,
-            "HookCategory": "Structure"
+            "HookCategory": "Player"
           }
         },
         {

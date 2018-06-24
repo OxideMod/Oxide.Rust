@@ -1,4 +1,4 @@
-﻿using Facepunch;
+using Facepunch;
 using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
 using System;
@@ -43,6 +43,12 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 {
                     if (address == null)
                     {
+                        if (Utility.ValidateIPv4(ConVar.Server.ip))
+                        {
+                            IPAddress.TryParse(ConVar.Server.ip, out address);
+                            return address;
+                        }
+
                         WebClient webClient = new WebClient();
                         IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
                         return address;

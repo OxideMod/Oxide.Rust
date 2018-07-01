@@ -1,6 +1,7 @@
-﻿using Facepunch;
+using Facepunch;
 using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
+using Rust;
 using System;
 using System.Globalization;
 using System.IO;
@@ -43,9 +44,22 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 {
                     if (address == null)
                     {
-                        WebClient webClient = new WebClient();
-                        IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
-                        return address;
+                        try
+                        {
+                            if (Global.SteamServer.PublicIp != null)
+                            {
+                                address = Global.SteamServer.PublicIp;
+                            }
+                            else if (Utility.ValidateIPv4(ConVar.Server.ip) && !Utility.IsLocalIP(ConVar.Server.ip))
+                            {
+                                IPAddress.TryParse(ConVar.Server.ip, out address);
+                            }
+                        }
+                        catch
+                        {
+                            WebClient webClient = new WebClient();
+                            IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
+                        }
                     }
 
                     return address;

@@ -43,15 +43,22 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 {
                     if (address == null)
                     {
-                        if (Utility.ValidateIPv4(ConVar.Server.ip))
+                        try
                         {
-                            IPAddress.TryParse(ConVar.Server.ip, out address);
-                            return address;
+                            if (Global.SteamServer.PublicIp != null)
+                            {
+                                address = Global.SteamServer.PublicIp;
+                            }
+                            else if (Utility.ValidateIPv4(ConVar.Server.ip) && !Utility.IsLocalIP(ConVar.Server.ip))
+                            {
+                                IPAddress.TryParse(ConVar.Server.ip, out address);
+                            }
                         }
-
-                        WebClient webClient = new WebClient();
-                        IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
-                        return address;
+                        catch
+                        {
+                            WebClient webClient = new WebClient();
+                            IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
+                        }
                     }
 
                     return address;

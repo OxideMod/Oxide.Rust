@@ -1,6 +1,7 @@
 using Facepunch;
 using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
+using Rust;
 using System;
 using System.Globalization;
 using System.IO;

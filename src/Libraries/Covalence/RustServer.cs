@@ -127,7 +127,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <summary>
         /// Gets information on the currently loaded save file
         /// </summary>
-        public SaveInfo SaveInfo { get; } = SaveInfo.Create(SaveRestore.SaveFileName);
+        public SaveInfo SaveInfo { get; } = SaveInfo.Create(World.SaveFileName);
 
         #endregion Information
 

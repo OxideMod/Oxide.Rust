@@ -447,12 +447,13 @@ namespace Oxide.Game.Rust
             return entity is BasePlayer ? null : Interface.CallHook("OnEntityTakeDamage", entity, info);
         }
 
-        private int GetPlayersSensed(NPCPlayerApex npc, Vector3 position, float distance, BasePlayer[] targetList)
+        private int GetPlayersSensed(NPCPlayerApex npc, Vector3 position, float distance, BaseEntity[] targetList)
         {
-            return BaseEntity.Query.Server.GetPlayersInSphere(position, distance, targetList,
-                player =>
+            return BaseEntity.Query.Server.GetInSphere(position, distance, targetList,
+                entity =>
                 {
-                    object callHook = player != npc ? Interface.CallHook("OnNpcPlayerTarget", npc, player) : null;
+                    BasePlayer player = entity as BasePlayer;
+                    object callHook = player != null && player != npc ? Interface.CallHook("OnNpcPlayerTarget", npc, player) : null;
                     if (callHook != null)
                     {
                         foreach (Memory.SeenInfo seenInfo in npc.AiContext.Memory.All)
@@ -478,16 +479,15 @@ namespace Oxide.Game.Rust
                 });
         }
 
-        /// <summary>
-        /// Called when an NPC player tries to target an entity based on gunshot
+        /// <summary>H
+        /// Called when an NPC player tries to target an entity based on closeness
         /// </summary>
         /// <param name="npc"></param>
-        /// <param name="distance"></param>
         /// <returns></returns>
-        [HookMethod("IOnNpcPlayerSenseGunshot")]
-        private object IOnNpcPlayerSenseGunshot(NPCPlayerApex npc, Vector3 distance)
+        [HookMethod("IOnNpcPlayerSenseClose")]
+        private object IOnNpcPlayerSenseClose(NPCPlayerApex npc)
         {
-            NPCPlayerApex.GunshotSensationQueryResultsCount = GetPlayersSensed(npc, distance, npc.Stats.CloseRange, NPCPlayerApex.GunshotSensationQueryResults);
+            NPCPlayerApex.EntityQueryResultCount = GetPlayersSensed(npc, npc.ServerPosition, npc.Stats.CloseRange, NPCPlayerApex.EntityQueryResults);
             return true;
         }
 

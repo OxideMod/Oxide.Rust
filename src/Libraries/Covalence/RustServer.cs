@@ -47,18 +47,18 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                         if (Utility.ValidateIPv4(ConVar.Server.ip) && !Utility.IsLocalIP(ConVar.Server.ip))
                         {
                             IPAddress.TryParse(ConVar.Server.ip, out address);
-                            Interface.Oxide.LogWarning($"IP address from command-line: {address}");
+                            Interface.Oxide.LogDebug($"IP address from command-line: {address}");
                         }
                         else if (Global.SteamServer != null && Global.SteamServer.IsValid && Global.SteamServer.PublicIp != null)
                         {
                             address = Global.SteamServer.PublicIp;
-                            Interface.Oxide.LogWarning($"IP address from Steam query: {address}");
+                            Interface.Oxide.LogDebug($"IP address from Steam query: {address}");
                         }
                         else
                         {
                             WebClient webClient = new WebClient();
                             IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
-                            Interface.Oxide.LogWarning($"IP address from external API: {address}");
+                            Interface.Oxide.LogDebug($"IP address from external API: {address}");
                         }
                     }
 

@@ -778,7 +778,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "RFS8+a1omGv8WwgXWn4izWSOaVRW5dJW5GA9Wqmstrw=",
+            "MSILHash": "TgGQ1f81sYhkQKcZv5F65fYZzByPtcA4MsNyW2MesYk=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -995,7 +995,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 32,
+            "InjectionIndex": 42,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
@@ -1011,7 +1011,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "xQ2O5achHSLQOR/dZMLPelQGEXRTrSXGq4QqRG1BsIQ=",
+            "MSILHash": "ZN8luWd1BFFKarSSMvPRBHA1LYPTcSJsoJrIChS24Ok=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1192,7 +1192,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "z8qHF06Rm29AMS5qO34ENp13E5zjgfJc0DjfZLf6OHE=",
+            "MSILHash": "/gKS0EK5Ej41nxgyhJ9Ans+IDBIycJzzXE9F9CqTp04=",
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
@@ -1218,7 +1218,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "uSSgqVN6hXD1N9rfNSOGNu7sj4HCqdylYXf4sGcFXZA=",
+            "MSILHash": "LUjrADBG68nGW6KZtEUXMWeXMe5ZAXI1NlKkCiimc6g=",
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
@@ -1450,7 +1450,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "PCf8aTb9ZHlCD0/+w26MUrvNEXQUfKyfYreAW9kLx2w=",
+            "MSILHash": "KO+j6TctwVdWv2j1T9TyJ4UKpYjPA/A80G1SJ8iopeo=",
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
@@ -2299,7 +2299,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "DvuQzWM8UBXZpQyp8dVRnBOXXiA5MuZzR1l5ka1qOHA=",
+            "MSILHash": "1TLvgbKOw6FfYYdnvIRrQeanAPR4aMZIyBKMGH6qDXY=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2703,7 +2703,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "JUuF1Ntcde0MgWlbA0xtw9cP2eZYGkG9Qj2n9DiAP9g=",
+            "MSILHash": "KjgZdWWeWhgH0VHttQiK6asZRIuUh7hyq+KJuiU3x7o=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2730,7 +2730,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "LEdpEKxZDfBlt2z8K9v9f4FSkVi6jdT2fh0eaP6cwjA=",
+            "MSILHash": "g0EeecQ3r2YD7so5HJdst2ue1nS34MBi4b9QToUbHbY=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2807,7 +2807,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "LEdpEKxZDfBlt2z8K9v9f4FSkVi6jdT2fh0eaP6cwjA=",
+            "MSILHash": "g0EeecQ3r2YD7so5HJdst2ue1nS34MBi4b9QToUbHbY=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -3012,7 +3012,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 40,
+            "InjectionIndex": 45,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
@@ -3028,7 +3028,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Uv61ThHFE4U2kJ9VSjGW08hF58XwaAWyYk8VIiVr/Bk=",
+            "MSILHash": "Fc12KVNqgom8Zy+h73IYL4ZMbhCamPmtWx54qwvc1Mk=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -7027,7 +7027,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "DvuQzWM8UBXZpQyp8dVRnBOXXiA5MuZzR1l5ka1qOHA=",
+            "MSILHash": "1TLvgbKOw6FfYYdnvIRrQeanAPR4aMZIyBKMGH6qDXY=",
             "BaseHookName": "AddGameTags [patch]",
             "HookCategory": "_Patches"
           }
@@ -7051,7 +7051,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "uGZunrfM+C8td404H2VcYmnDIbR+4jJ6sXvcKZit6aU=",
+            "MSILHash": "z+tjNXESC+FmHaJSX7baIONYZD0B7m8LdbYfTqyMvB4=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -7059,25 +7059,23 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 3,
+            "InjectionIndex": 0,
             "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
+            "ArgumentBehavior": 1,
             "ArgumentString": "",
             "HookTypeName": "Simple",
-            "Name": "IOnNpcPlayerSenseGunshot [internal]",
-            "HookName": "IOnNpcPlayerSenseGunshot",
+            "Name": "IOnNpcPlayerSenseClose [internal]",
+            "HookName": "IOnNpcPlayerSenseClose",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "NPCPlayerApex",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
-              "Name": "_FindPlayersAtGunshotSensationOrigin",
+              "Name": "_FindEntitiesInCloseRange",
               "ReturnType": "System.Void",
-              "Parameters": [
-                "UnityEngine.Vector3"
-              ]
+              "Parameters": []
             },
-            "MSILHash": "cerzyqb5zU8HAFoCfb0yxV+FPSh9exF9CBh6WaY3/zg=",
+            "MSILHash": "Qmdv0hsV+LAjPhkXqD9DHpU2xC/oRctvQc1JqFHgjUE=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -7120,10 +7118,11 @@
               "Name": "OnSensation",
               "ReturnType": "System.Void",
               "Parameters": [
-                "Rust.Ai.Sensation"
+                "Rust.Ai.Sensation",
+                "BasePlayer"
               ]
             },
-            "MSILHash": "1zUAHa15lS4i98NIWSdC/Vpq+QGPkCyfUHhwYtwjbd8=",
+            "MSILHash": "eEfiszyU6DkGWoi9Pgk/3Qc88JKKkVjm6sIXYhKTfbY=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -7960,25 +7959,6 @@
             ],
             "Name": "spectateFilter",
             "FullTypeName": "System.String BasePlayer::spectateFilter",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "FileSystem_AssetBundles::files",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "FileSystem_AssetBundles",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "files",
-            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.AssetBundle> FileSystem_AssetBundles::files",
             "Parameters": []
           },
           "MSILHash": ""
@@ -9970,46 +9950,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "NPCPlayerApex::GunshotSensationQueryResults",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "NPCPlayerApex",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GunshotSensationQueryResults",
-            "FullTypeName": "BasePlayer[] NPCPlayerApex::GunshotSensationQueryResults",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "NPCPlayerApex::GunshotSensationQueryResultsCount",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "NPCPlayerApex",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GunshotSensationQueryResultsCount",
-            "FullTypeName": "System.Int32 NPCPlayerApex::GunshotSensationQueryResultsCount",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "NPCPlayerApex::PlayerQueryResultCount",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "NPCPlayerApex",
@@ -10045,6 +9985,46 @@
             ],
             "Name": "PlayerQueryResults",
             "FullTypeName": "BasePlayer[] NPCPlayerApex::PlayerQueryResults",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayerApex::EntityQueryResultCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EntityQueryResultCount",
+            "FullTypeName": "System.Int32 NPCPlayerApex::EntityQueryResultCount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayerApex::EntityQueryResults",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayerApex",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EntityQueryResults",
+            "FullTypeName": "BaseEntity[] NPCPlayerApex::EntityQueryResults",
             "Parameters": []
           },
           "MSILHash": ""

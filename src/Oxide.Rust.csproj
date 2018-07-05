@@ -109,7 +109,6 @@
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Console.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Rcon.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\*.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\net46\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\any\MySql.*.dll; $(SolutionDir)\packages\oxide.mysql\**\lib\any\System.*.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*" />

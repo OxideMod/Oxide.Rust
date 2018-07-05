@@ -51,7 +51,7 @@ namespace Oxide.Game.Rust
         /// <summary>
         /// Default game-specific references for use in plugins
         /// </summary>
-        internal static readonly HashSet<string> DefaultReferences = new HashSet<string>
+        internal new static readonly HashSet<string> DefaultReferences = new HashSet<string>
         {
             "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "Rust.Data", "Rust.Global",
             "Rust.Workshop", "System.Drawing", "UnityEngine.AIModule", "UnityEngine.AssetBundleModule", "UnityEngine.CoreModule", "UnityEngine.GridModule",

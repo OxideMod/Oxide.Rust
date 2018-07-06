@@ -10214,6 +10214,73 @@
       ],
       "Modifiers": [],
       "Fields": []
+    },
+    {
+      "AssemblyName": "NewAssembly.dll",
+      "Hooks": [],
+      "Modifiers": [
+        {
+          "Name": "AssetBundleBackend::files",
+          "AssemblyName": "NewAssembly.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "files",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.AssetBundle> AssetBundleBackend::files",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AssetBundleBackend::bundles",
+          "AssemblyName": "NewAssembly.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "bundles",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.AssetBundle> AssetBundleBackend::bundles",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "FileSystemBackend::cache",
+          "AssemblyName": "NewAssembly.dll",
+          "TypeName": "FileSystemBackend",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "cache",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.Object> FileSystemBackend::cache",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        }
+      ],
+      "Fields": []
     }
   ]
 }

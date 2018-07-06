@@ -58,6 +58,9 @@
     <Reference Include="mscorlib">
       <HintPath>Dependencies\Patched\$(ManagedDir)\mscorlib.dll</HintPath>
     </Reference>
+    <Reference Include="NewAssembly">
+      <HintPath>Dependencies\Patched\$(ManagedDir)\NewAssembly.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>Dependencies\Patched\$(ManagedDir)\System.dll</HintPath>
     </Reference>
@@ -108,6 +111,7 @@
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Console.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Rcon.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\NewAssembly.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\net46\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\any\MySql.*.dll; $(SolutionDir)\packages\oxide.mysql\**\lib\any\System.*.dll" />

@@ -32,6 +32,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         }
 
         private static IPAddress address;
+        private static IPAddress localAddress;
 
         /// <summary>
         /// Gets the public-facing IP address of the server, if known
@@ -66,8 +67,27 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 }
                 catch (Exception ex)
                 {
-                    RemoteLogger.Exception("Couldn't get server IP address", ex);
-                    return new IPAddress(0);
+                    RemoteLogger.Exception("Couldn't get server's public IP address", ex);
+                    return IPAddress.Any;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets the local IP address of the server, if known
+        /// </summary>
+        public IPAddress LocalAddress
+        {
+            get
+            {
+                try
+                {
+                    return localAddress ?? (localAddress = Utility.GetLocalIP());
+                }
+                catch (Exception ex)
+                {
+                    RemoteLogger.Exception("Couldn't get server's local IP address", ex);
+                    return IPAddress.Any;
                 }
             }
         }

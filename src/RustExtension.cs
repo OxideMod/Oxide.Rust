@@ -6,7 +6,6 @@ using Oxide.Core.Extensions;
 using Oxide.Core.Unity;
 using Oxide.Plugins;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
@@ -51,7 +50,7 @@ namespace Oxide.Game.Rust
         /// <summary>
         /// Default game-specific references for use in plugins
         /// </summary>
-        internal new static readonly HashSet<string> DefaultReferences = new HashSet<string>
+        public override string[] DefaultReferences => new[]
         {
             "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "NewAssembly", "Rust.Data",
             "Rust.Global", "Rust.Workshop", "Rust.World", "System.Drawing", "UnityEngine.AIModule", "UnityEngine.AssetBundleModule", "UnityEngine.CoreModule",

@@ -1,4 +1,4 @@
-﻿using Network;
+using Network;
 using Oxide.Core;
 using Oxide.Core.Configuration;
 using Oxide.Core.Libraries.Covalence;
@@ -117,7 +117,12 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnServerCommand")]
         private object IOnServerCommand(ConsoleSystem.Arg arg)
         {
-            return arg?.cmd.FullName != "chat.say" ? Interface.CallHook("OnServerCommand", arg) : null;
+            if (arg == null || arg.Connection != null && arg.Player() == null)
+            {
+                return true; // Prevent console commands from client during connection
+            }
+                        
+            return arg.cmd.FullName != "chat.say" ? Interface.CallHook("OnServerCommand", arg) : null;
         }
 
         #endregion Server Hooks

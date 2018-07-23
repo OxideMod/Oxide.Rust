@@ -62,7 +62,7 @@ namespace Oxide.Game.Rust
             if (sender != null && !string.IsNullOrEmpty(command))
             {
                 RemoteMessage message = RemoteMessage.GetMessage(command);
-                if (message != null)
+                if (message != null && !string.IsNullOrEmpty(message.Message))
                 {
                     string[] fullCommand = CommandLine.Split(message.Message);
                     string cmd = fullCommand[0].ToLower();

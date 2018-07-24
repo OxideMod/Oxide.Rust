@@ -62,16 +62,18 @@ namespace Oxide.Game.Rust
             if (sender != null && !string.IsNullOrEmpty(command))
             {
                 RemoteMessage message = RemoteMessage.GetMessage(command);
-                if (message != null && !string.IsNullOrEmpty(message.Message))
+                if (!string.IsNullOrEmpty(message?.Message))
                 {
                     string[] fullCommand = CommandLine.Split(message.Message);
-                    string cmd = fullCommand[0].ToLower();
-                    string[] args = fullCommand.Skip(1).ToArray();
-
-                    object callHook = Interface.CallHook("OnRconCommand", sender, cmd, args);
-                    if (callHook != null)
+                    if (fullCommand.Length >= 1)
                     {
-                        return true;
+                        string cmd = fullCommand[0].ToLower();
+                        string[] args = fullCommand.Skip(1).ToArray();
+
+                        if (Interface.CallHook("OnRconCommand", sender, cmd, args) != null)
+                        {
+                            return true;
+                        }
                     }
                 }
             }

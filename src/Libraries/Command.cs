@@ -284,24 +284,6 @@ namespace Oxide.Game.Rust.Libraries
         }
 
         /// <summary>
-        /// Handles the specified chat command
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="name"></param>
-        /// <param name="args"></param>
-        internal bool HandleChatCommand(BasePlayer sender, string name, string[] args)
-        {
-            ChatCommand cmd;
-            if (!chatCommands.TryGetValue(name.ToLowerInvariant(), out cmd))
-            {
-                return false;
-            }
-
-            cmd.HandleCommand(sender, name, args);
-            return true;
-        }
-
-        /// <summary>
         /// Removes a previously registered chat command
         /// </summary>
         /// <param name="command"></param>
@@ -382,6 +364,24 @@ namespace Oxide.Game.Rust.Libraries
 
                 ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
             }
+        }
+
+        /// <summary>
+        /// Handles the specified chat command
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="name"></param>
+        /// <param name="args"></param>
+        internal bool HandleChatCommand(BasePlayer sender, string name, string[] args)
+        {
+            ChatCommand cmd;
+            if (!chatCommands.TryGetValue(name.ToLowerInvariant(), out cmd))
+            {
+                return false;
+            }
+
+            cmd.HandleCommand(sender, name, args);
+            return true;
         }
 
         /// <summary>

@@ -778,7 +778,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "RyJq0+xR6Earn/QMOs9XajIO1EyRh2r+VVw0xeUWYA0=",
+            "MSILHash": "UegCUSu07mDY4j/YzXWdO+fHYDOsX4oBMoyXoqtYkE0=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2299,7 +2299,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "OriEsOEa4uycCCeLgzrmlxemwBhI6qrz3OA/sYglgC0=",
+            "MSILHash": "gDvvLIRgVjIaK5O09gNrS1VNvy3L5uj4bs+Ad6k5tYY=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2703,7 +2703,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "R+LrGquM+u0Qz7a7cmLqsA0xTVtZ+G7JgkR/doPPQ3g=",
+            "MSILHash": "WYmFW9rV0zxLxt91xWUY9uyFzONeG9g6P8hCEBt1UkM=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -4127,7 +4127,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 24,
+            "InjectionIndex": 32,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l4, this, l1, l2, l3",
@@ -4145,7 +4145,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "MJNmVx+n9u+PYpOnmYtHPbqNqUW4GaYaNpBbVkTBm2Y=",
+            "MSILHash": "fHyZ9GwoBa7yJSZWQ9rmZefx8CKTzL8AJhiU5SKqbmc=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -6603,7 +6603,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 54,
+            "InjectionIndex": 66,
             "RemoveCount": 2,
             "Instructions": [
               {
@@ -6613,8 +6613,8 @@
               }
             ],
             "HookTypeName": "Modify",
-            "Name": "CanMoveItem [patch]",
-            "HookName": "CanMoveItem [patch]",
+            "Name": "ItemMaxStackableMove [patch]",
+            "HookName": "ItemMaxStackableMove [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlayerInventory",
             "Flagged": false,
@@ -6626,7 +6626,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "MJNmVx+n9u+PYpOnmYtHPbqNqUW4GaYaNpBbVkTBm2Y=",
+            "MSILHash": "fHyZ9GwoBa7yJSZWQ9rmZefx8CKTzL8AJhiU5SKqbmc=",
             "BaseHookName": "CanMoveItem",
             "HookCategory": "_Patches"
           }
@@ -7027,7 +7027,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "OriEsOEa4uycCCeLgzrmlxemwBhI6qrz3OA/sYglgC0=",
+            "MSILHash": "gDvvLIRgVjIaK5O09gNrS1VNvy3L5uj4bs+Ad6k5tYY=",
             "BaseHookName": "AddGameTags [patch]",
             "HookCategory": "_Patches"
           }

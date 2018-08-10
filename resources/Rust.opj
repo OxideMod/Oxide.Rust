@@ -162,7 +162,7 @@
             "TypeName": "ServerMgr",
             "Flagged": false,
             "Signature": {
-              "Exposure": 0,
+              "Exposure": 2,
               "Name": "OnDisconnected",
               "ReturnType": "System.Void",
               "Parameters": [
@@ -627,7 +627,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 69,
+            "InjectionIndex": 54,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 0,
             "ArgumentString": null,
@@ -643,7 +643,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "J1uHgC4pBmRx0rT81TkAGAENJqkGHABNh1loXn82Taw=",
+            "MSILHash": "2ocy+CaUH0fe2w66KxNfck/gTQa4ZJd5fkX6WzVX0II=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }

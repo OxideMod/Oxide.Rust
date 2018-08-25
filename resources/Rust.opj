@@ -7126,6 +7126,45 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseCombatEntity|_maxHealth"
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "NPCMurderer_MaxHealthFix [patch]",
+            "HookName": "NPCMurderer_MaxHealthFix [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCMurderer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MaxHealth",
+              "ReturnType": "System.Single",
+              "Parameters": []
+            },
+            "MSILHash": "Y05ykFor8PFxxgseU/rKQ3smkwN7RilPPD0iZufi4SE=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

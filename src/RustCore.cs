@@ -144,6 +144,9 @@ namespace Oxide.Game.Rust
             if (serverInitialized)
             {
                 plugin.CallHook("OnServerInitialized");
+                
+                // Let plugins know this was called after server startup complete
+                plugin.CallHook("OnServerInitialized", false);
             }
         }
 
@@ -172,6 +175,9 @@ namespace Oxide.Game.Rust
                 }
 
                 serverInitialized = true;
+                
+                // For use for plugins that only want to be called strictly for server startup complete
+                Interface.CallHook("OnServerInitialized", true);
             }
         }
 

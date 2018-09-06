@@ -7159,6 +7159,70 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 3,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "brtrue",
+                "OpType": "Instruction",
+                "Operand": 4
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnNpcPlayerTarget"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 13
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnNpcPlayerTarget",
+            "HookName": "OnNpcPlayerTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayerApex",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateTargetMemory",
+              "ReturnType": "Rust.Ai.Memory/SeenInfo",
+              "Parameters": [
+                "BaseEntity",
+                "System.Single",
+                "UnityEngine.Vector3",
+                "Rust.Ai.Memory/ExtendedInfo&"
+              ]
+            },
+            "MSILHash": "U5BZO7oAz4aF61GtR5nf2VOtQPFIWRzpUtXhTwKA5Pg=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

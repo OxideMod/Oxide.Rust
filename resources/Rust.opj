@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "E:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -56,7 +56,7 @@
         {
           "Type": "InitOxide",
           "Hook": {
-            "InjectionIndex": 32,
+            "InjectionIndex": 31,
             "HookTypeName": "Initialize Oxide",
             "Name": "InitOxide [internal]",
             "HookName": "InitOxide",
@@ -69,7 +69,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "bjhnMKx8AZDMfi7IN9OJQUexkQnrzLGQ3ogUGFhVkcA=",
+            "MSILHash": "SwDxugcFDpxW/yt/ERH9KYxOlDaVKyYdrdW4ICOo17U=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -619,7 +619,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "hHFzQoQ29SlShl06KIKBMDmS1e8PXv6HPX39cShOyhk=",
+            "MSILHash": "vdri7SC0AA8ZfPNHT6J35SxhhEEteLWIX/VlUT7Rxj4=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -752,7 +752,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "lor/F/HPvlX+77wr9HTTW6bfIAS3k3OM3bjNzYudZ6E=",
+            "MSILHash": "OHyQniiNaUGyjEk0+hheRv+qQ+MlH+2kqN3zuZ9nXQg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -778,7 +778,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "UegCUSu07mDY4j/YzXWdO+fHYDOsX4oBMoyXoqtYkE0=",
+            "MSILHash": "uaV6aPf0rTrVniBLCRiiKpcvhn3J9eZcCx/+aEdm7a4=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1166,7 +1166,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "NHVDWyqqoNezCfkZtpViqFm/UVP3+gnjZ+TZwvt1VlM=",
+            "MSILHash": "0ABQK0Mzwt+qPnT4JzOirwYmoUjhJOMzGaqZMSLLbs8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1192,7 +1192,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "/gKS0EK5Ej41nxgyhJ9Ans+IDBIycJzzXE9F9CqTp04=",
+            "MSILHash": "eXtob+ZQn9v/4E0XwekW8FGHrw6eye0nbm2sUGUzC8c=",
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
@@ -1218,7 +1218,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "LUjrADBG68nGW6KZtEUXMWeXMe5ZAXI1NlKkCiimc6g=",
+            "MSILHash": "RMv+qWtyoyXy9bJeIQyJnsF+3VDSVbMR/wuY+xfa1Vw=",
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
@@ -1450,7 +1450,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "MhyixGtqVKKjz1BId6b6+yEmAWBOIG5FfNWrRF5uQ3s=",
+            "MSILHash": "lbK+qZSTrW+6T7YtgVpUwIPRg2M+S78YWBLtvy9f3Hs=",
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
@@ -2299,7 +2299,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "gDvvLIRgVjIaK5O09gNrS1VNvy3L5uj4bs+Ad6k5tYY=",
+            "MSILHash": "T7HgpCVrMBXKEqpAq2DxWItzvwliptacNBaOnBsTf4Y=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2703,7 +2703,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "WYmFW9rV0zxLxt91xWUY9uyFzONeG9g6P8hCEBt1UkM=",
+            "MSILHash": "nsq2cAVHB+dJuBmgZqPT3V1qDQ7tYTzbCUhA1fn/D0Y=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2730,7 +2730,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "o7NO0fcSrarVApYi4xO6wNcV7djWFM5rqhzHpqOVVR0=",
+            "MSILHash": "j9SH4J503OBaLNQhHsXpIBzphox5sh3fQGvRvGkvEeg=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2807,7 +2807,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "o7NO0fcSrarVApYi4xO6wNcV7djWFM5rqhzHpqOVVR0=",
+            "MSILHash": "j9SH4J503OBaLNQhHsXpIBzphox5sh3fQGvRvGkvEeg=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -3960,7 +3960,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "hSbNxlSAmd+ugOvMtl0XNAIm74aGyjuqqbn2xPrEP4I=",
+            "MSILHash": "oAjaFljOWUudkg5EO0mzH/uIneOg5UMLRoQDLQi9UOg=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -4145,7 +4145,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "fHyZ9GwoBa7yJSZWQ9rmZefx8CKTzL8AJhiU5SKqbmc=",
+            "MSILHash": "tq6PUjfJ2rD7JMlButR/NzWZEkvKLgl8bXvmt1FHOwQ=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -4272,7 +4272,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "hSbNxlSAmd+ugOvMtl0XNAIm74aGyjuqqbn2xPrEP4I=",
+            "MSILHash": "oAjaFljOWUudkg5EO0mzH/uIneOg5UMLRoQDLQi9UOg=",
             "BaseHookName": "OnRecycleItem",
             "HookCategory": "_Patches"
           }
@@ -6527,11 +6527,11 @@
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 0,
-            "RemoveCount": 8,
+            "RemoveCount": 7,
             "Instructions": [],
             "HookTypeName": "Modify",
-            "Name": "FixUsingHelicopter [patch]",
-            "HookName": "FixUsingHelicopter [patch]",
+            "Name": "AllowMountingHelicopter [patch]",
+            "HookName": "AllowMountingHelicopter [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "CH47HelicopterAIController",
             "Flagged": false,
@@ -6543,7 +6543,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "qqqIlwaIs4wunGVYCOTh8PZ3TX4iUE5xe4ANR79Q184=",
+            "MSILHash": "+RAYdrgSy1RTSvdEvDQkf4MDYUCbn1v4OICm494hCfY=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -6569,8 +6569,8 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "qqqIlwaIs4wunGVYCOTh8PZ3TX4iUE5xe4ANR79Q184=",
-            "BaseHookName": "FixUsingHelicopter [patch]",
+            "MSILHash": "+RAYdrgSy1RTSvdEvDQkf4MDYUCbn1v4OICm494hCfY=",
+            "BaseHookName": "AllowMountingHelicopter [patch]",
             "HookCategory": "Vehicle"
           }
         },
@@ -6626,7 +6626,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "fHyZ9GwoBa7yJSZWQ9rmZefx8CKTzL8AJhiU5SKqbmc=",
+            "MSILHash": "tq6PUjfJ2rD7JMlButR/NzWZEkvKLgl8bXvmt1FHOwQ=",
             "BaseHookName": "CanMoveItem",
             "HookCategory": "_Patches"
           }
@@ -7027,7 +7027,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "gDvvLIRgVjIaK5O09gNrS1VNvy3L5uj4bs+Ad6k5tYY=",
+            "MSILHash": "T7HgpCVrMBXKEqpAq2DxWItzvwliptacNBaOnBsTf4Y=",
             "BaseHookName": "AddGameTags [patch]",
             "HookCategory": "_Patches"
           }
@@ -7118,11 +7118,10 @@
               "Name": "OnSensation",
               "ReturnType": "System.Void",
               "Parameters": [
-                "Rust.Ai.Sensation",
-                "BasePlayer"
+                "Rust.Ai.Sensation"
               ]
             },
-            "MSILHash": "eEfiszyU6DkGWoi9Pgk/3Qc88JKKkVjm6sIXYhKTfbY=",
+            "MSILHash": "dvLuPRzbF50TrO051EYiTwK1Ckiu9YPacsIKIYuBxwQ=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }

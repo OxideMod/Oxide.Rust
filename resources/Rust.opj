@@ -7141,11 +7141,6 @@
                 "OpCode": "ldfld",
                 "OpType": "Field",
                 "Operand": "Assembly-CSharp|BaseCombatEntity|_maxHealth"
-              },
-              {
-                "OpCode": "ret",
-                "OpType": "None",
-                "Operand": null
               }
             ],
             "HookTypeName": "Modify",

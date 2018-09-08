@@ -10106,6 +10106,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "PrefabAttribute/Library::prefabs",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PrefabAttribute/Library",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "prefabs",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.UInt32,PrefabAttribute/AttributeCollection> PrefabAttribute/Library::prefabs",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

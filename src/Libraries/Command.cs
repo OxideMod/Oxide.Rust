@@ -284,6 +284,89 @@ namespace Oxide.Game.Rust.Libraries
         }
 
         /// <summary>
+        /// Removes a previously registered chat command
+        /// </summary>
+        /// <param name="command"></param>
+        /// <param name="plugin"></param>
+        [LibraryFunction("RemoveChatCommand")]
+        public void RemoveChatCommand(string command, Plugin plugin)
+        {
+            var matchedCommand = chatCommands.Values.Where(x => x.Plugin == plugin).FirstOrDefault(x => x.Name == command);
+            if (matchedCommand == null)
+            {
+                return;
+            }
+
+            RemoveChatCommand(matchedCommand);
+        }
+
+        /// <summary>
+        /// Removes a previously registered console command
+        /// </summary>
+        /// <param name="command"></param>
+        /// <param name="plugin"></param>
+        [LibraryFunction("RemoveConsoleCommand")]
+        public void RemoveConsoleCommand(string command, Plugin plugin)
+        {
+            var matchedCommand = consoleCommands.Values.Where(x => x.Callback.Plugin == plugin).FirstOrDefault(x => x.Name == command);
+            if (matchedCommand == null)
+            {
+                return;
+            }
+
+            RemoveConsoleCommand(matchedCommand);
+        }
+
+        /// <summary>
+        /// Removes a chat command
+        /// </summary>
+        /// <param name="command"></param>
+        private void RemoveChatCommand(ChatCommand cmd)
+        {
+            if (!chatCommands.ContainsKey(cmd.Name))
+            {
+                return;
+            }
+
+            chatCommands.Remove(cmd.Name);
+        }
+
+        /// <summary>
+        /// Removes a console command
+        /// </summary>
+        /// <param name="command"></param>
+        private void RemoveConsoleCommand(ConsoleCommand cmd)
+        {
+            if (!consoleCommands.ContainsKey(cmd.Name))
+            {
+                return;
+            }
+
+            // This command is no longer registered by any plugins
+            consoleCommands.Remove(cmd.Name);
+
+            // If this was originally a vanilla rust command then restore it, otherwise remove it
+            if (cmd.OriginalCallback != null)
+            {
+                ConsoleSystem.Index.Server.Dict[cmd.RustCommand.FullName].Call = cmd.OriginalCallback;
+                if (cmd.RustCommand.FullName.StartsWith("global."))
+                {
+                    ConsoleSystem.Index.Server.GlobalDict[cmd.RustCommand.Name].Call = cmd.OriginalCallback;
+                }
+            }
+            else
+            {
+                ConsoleSystem.Index.Server.Dict.Remove(cmd.RustCommand.FullName);
+                if (cmd.Name.StartsWith("global."))
+                {
+                    ConsoleSystem.Index.Server.GlobalDict.Remove(cmd.RustCommand.Name);
+                }
+
+                ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
+            }
+        }
+
+        /// <summary>
         /// Handles the specified chat command
         /// </summary>
         /// <param name="sender"></param>
@@ -312,34 +395,13 @@ namespace Oxide.Game.Rust.Libraries
             ConsoleCommand[] commands = consoleCommands.Values.Where(c => c.Callback.Plugin == sender).ToArray();
             foreach (ConsoleCommand cmd in commands)
             {
-                // This command is no longer registered by any plugins
-                consoleCommands.Remove(cmd.Name);
-
-                // If this was originally a vanilla rust command then restore it, otherwise remove it
-                if (cmd.OriginalCallback != null)
-                {
-                    ConsoleSystem.Index.Server.Dict[cmd.RustCommand.FullName].Call = cmd.OriginalCallback;
-                    if (cmd.RustCommand.FullName.StartsWith("global."))
-                    {
-                        ConsoleSystem.Index.Server.GlobalDict[cmd.RustCommand.Name].Call = cmd.OriginalCallback;
-                    }
-                }
-                else
-                {
-                    ConsoleSystem.Index.Server.Dict.Remove(cmd.RustCommand.FullName);
-                    if (cmd.Name.StartsWith("global."))
-                    {
-                        ConsoleSystem.Index.Server.GlobalDict.Remove(cmd.RustCommand.Name);
-                    }
-
-                    ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
-                }
+                RemoveConsoleCommand(cmd);
             }
 
             // Remove all chat commands which were registered by the plugin
             foreach (ChatCommand cmd in chatCommands.Values.Where(c => c.Plugin == sender).ToArray())
             {
-                chatCommands.Remove(cmd.Name);
+                RemoveChatCommand(cmd);
             }
 
             // Unhook the event

@@ -1,25 +1,18 @@
 using Facepunch;
-using Oxide.Core;
-using Oxide.Core.Libraries.Covalence;
 using Rust;
 using System;
 using System.Globalization;
 using System.IO;
 using System.Net;
+using uMod.Libraries.Covalence;
 
-namespace Oxide.Game.Rust.Libraries.Covalence
+namespace uMod.Rust
 {
     /// <summary>
     /// Represents the server hosting the game instance
     /// </summary>
     public class RustServer : IServer
     {
-        #region Initialiation
-
-        internal readonly Server Server = new Server();
-
-        #endregion Initialiation
-
         #region Information
 
         /// <summary>
@@ -48,18 +41,18 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                         if (Utility.ValidateIPv4(ConVar.Server.ip) && !Utility.IsLocalIP(ConVar.Server.ip))
                         {
                             IPAddress.TryParse(ConVar.Server.ip, out address);
-                            Interface.Oxide.LogInfo($"IP address from command-line: {address}");
+                            Interface.uMod.LogInfo($"IP address from command-line: {address}");
                         }
                         else if (Global.SteamServer != null && Global.SteamServer.IsValid && Global.SteamServer.PublicIp != null)
                         {
                             address = Global.SteamServer.PublicIp;
-                            Interface.Oxide.LogInfo($"IP address from Steam query: {address}");
+                            Interface.uMod.LogInfo($"IP address from Steam query: {address}");
                         }
                         else
                         {
                             WebClient webClient = new WebClient();
                             IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
-                            Interface.Oxide.LogInfo($"IP address from external API: {address}");
+                            Interface.uMod.LogInfo($"IP address from external API: {address}");
                         }
                     }
 
@@ -206,7 +199,12 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="args"></param>
         public void Broadcast(string message, string prefix, params object[] args)
         {
-            Server.Broadcast(message, prefix, 0, args);
+            if (!string.IsNullOrEmpty(message))
+            {
+                message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), args) : Formatter.ToUnity(message);
+                string formatted = prefix != null ? $"{prefix}: {message}" : message;
+                ConsoleNetwork.BroadcastToAllClients("chat.add", 0, formatted, 1.0); // TODO: Allow specifying an ID somehow?
+            }
         }
 
         /// <summary>
@@ -222,7 +220,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="args"></param>
         public void Command(string command, params object[] args)
         {
-            Server.Command(command, args);
+            ConsoleSystem.Run(ConsoleSystem.Option.Server, command, args);
         }
 
         #endregion Chat and Commands

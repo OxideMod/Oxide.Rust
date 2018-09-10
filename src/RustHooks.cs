@@ -1,19 +1,18 @@
 using Network;
-using Oxide.Core;
-using Oxide.Core.Configuration;
-using Oxide.Core.Libraries.Covalence;
-using Oxide.Core.Plugins;
-using Oxide.Core.RemoteConsole;
-using Oxide.Core.ServerConsole;
 using Rust.Ai;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using uMod.Configuration;
+using uMod.Libraries.Covalence;
+using uMod.Plugins;
+using uMod.RemoteConsole;
+using uMod.ServerConsole;
 using UnityEngine;
 
-namespace Oxide.Game.Rust
+namespace uMod.Rust
 {
     /// <summary>
     /// Game hooks and wrappers for the core Rust plugin
@@ -30,20 +29,20 @@ namespace Oxide.Game.Rust
         /// </summary>
         /// <returns></returns>
         [HookMethod("IOnDisableServerConsole")]
-        private object IOnDisableServerConsole() => ConsoleWindow.Check(true) && !Interface.Oxide.CheckConsole(true) ? (object)null : false;
+        private object IOnDisableServerConsole() => ConsoleWindow.Check(true) && !Interface.uMod.CheckConsole(true) ? (object)null : false;
 
         /// <summary>
         /// Called when ServerConsole is enabled
         /// </summary>
         /// <returns></returns>
         [HookMethod("IOnEnableServerConsole")]
-        private object IOnEnableServerConsole(ServerConsole serverConsole)
+        private object IOnEnableServerConsole(global::ServerConsole serverConsole)
         {
-            if (!ConsoleWindow.Check(true) || Interface.Oxide.CheckConsole(true))
+            if (!ConsoleWindow.Check(true) || Interface.uMod.CheckConsole(true))
             {
                 serverConsole.enabled = false;
                 UnityEngine.Object.Destroy(serverConsole);
-                typeof(SingletonComponent<ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
+                typeof(SingletonComponent<global::ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
                 return false;
             }
 
@@ -86,7 +85,7 @@ namespace Oxide.Game.Rust
         /// </summary>
         /// <returns></returns>
         [HookMethod("IOnRconInitialize")]
-        private object IOnRconInitialize() => Interface.Oxide.Config.Rcon.Enabled ? (object)true : null;
+        private object IOnRconInitialize() => Interface.uMod.Config.Rcon.Enabled ? (object)true : null;
 
         /// <summary>
         /// Called when the command-line is ran
@@ -234,7 +233,7 @@ namespace Oxide.Game.Rust
             {
                 permission.UpdateNickname(id, name);
 
-                OxideConfig.DefaultGroups defaultGroups = Interface.Oxide.Config.Options.DefaultGroups;
+                uModConfig.DefaultGroups defaultGroups = Interface.uMod.Config.Options.DefaultGroups;
 
                 if (!permission.UserHasGroup(id, defaultGroups.Players))
                 {
@@ -352,7 +351,7 @@ namespace Oxide.Game.Rust
             // Is it a valid chat command?
             if (!Covalence.CommandSystem.HandleChatMessage(iplayer, str) && !cmdlib.HandleChatCommand(player, cmd, args))
             {
-                if (Interface.Oxide.Config.Options.Modded)
+                if (Interface.uMod.Config.Options.Modded)
                 {
                     iplayer.Reply(string.Format(lang.GetMessage("UnknownCommand", this, iplayer.Id), cmd));
                 }

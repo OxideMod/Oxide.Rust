@@ -13,7 +13,7 @@ Clear-Host
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 # Format game name and set depot ID if provided
-$game_name = $project -Replace "Oxide."
+$game_name = $project -Replace "uMod."
 if ($depot) { $depot = "-depot $depot" }
 
 # Set directory variables and create directories
@@ -25,7 +25,7 @@ $patch_dir = "$deps_dir\Patched"
 $managed_dir = "$patch_dir\$managed"
 New-Item "$tools_dir", "$managed_dir" -ItemType Directory -Force | Out-Null
 
-# Set name for Oxide patcher file (.opj)
+# Set name for uMod patcher file (.opj)
 if ("$branch" -ne "public" -and (Test-Path "$root_dir\resources\$game_name-$branch.opj")) {
     $opj_name = "$root_dir\resources\$game_name-$branch.opj"
 } else {
@@ -62,7 +62,7 @@ function Find-Dependencies {
         try {
             # TODO: Exclude dependencies included in repository
             $hint_path = "Dependencies\\Patched\\\$\(ManagedDir\)\\"
-            ($xml.selectNodes("//Reference") | Select-Object HintPath -ExpandProperty HintPath | Select-String -Pattern "Oxide" -NotMatch) -Replace $hint_path | Out-File "$tools_dir\.references"
+            ($xml.selectNodes("//Reference") | Select-Object HintPath -ExpandProperty HintPath | Select-String -Pattern "uMod" -NotMatch) -Replace $hint_path | Out-File "$tools_dir\.references"
         } catch {
             Write-Host "Could not get references or none found in $project.csproj"
             Write-Host $_.Exception.Message
@@ -147,7 +147,7 @@ function Get-Dependencies {
         }
 
         # Cleanup existing game files, else they aren't always the latest
-        #Remove-Item $managed_dir -Include *.dll, *.exe -Exclude "Oxide.Core.dll" -Verbose –Force
+        #Remove-Item $managed_dir -Include *.dll, *.exe -Exclude "uMod.dll" -Verbose –Force
 
         # TODO: Check for and compare Steam buildid before downloading again
 
@@ -165,26 +165,26 @@ function Get-Dependencies {
         # TODO: Confirm all dependencies were downloaded (no 0kb files), else stop/retry and error with details
     }
 
-    # TODO: Check Oxide.Core.dll version and update if needed
-    # Grab latest Oxide.Core.dll build
-    Write-Host "Copying latest build of Oxide.Core.dll for $game_name"
+    # TODO: Check uMod.dll version and update if needed
+    # Grab latest uMod.dll build
+    Write-Host "Copying latest build of uMod.dll for $game_name"
     #$core_version = Get-ChildItem -Directory $core_path | Where-Object { $_.PSIsContainer } | Sort-Object CreationTime -desc | Select-Object -f 1
-    if (!(Test-Path "$tools_dir\Oxide.Core.dll")) {
+    if (!(Test-Path "$tools_dir\uMod.dll")) {
         try {
-            Copy-Item "$root_dir\packages\oxide.core\*\lib\$dotnet\Oxide.Core.dll" "$tools_dir" -Force
+            Copy-Item "$root_dir\packages\umod\*\lib\$dotnet\uMod.dll" "$tools_dir" -Force
         } catch {
-            Write-Host "Could not copy Oxide.Core.dll to $tools_dir"
+            Write-Host "Could not copy uMod.dll to $tools_dir"
             Write-Host $_.Exception.Message
             if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
     }
-    Write-Host "Copying latest build of Oxide.Core.dll for OxidePatcher"
-    if (!(Test-Path "$managed_dir\Oxide.Core.dll")) {
+    Write-Host "Copying latest build of uMod.dll for uMod Patcher"
+    if (!(Test-Path "$managed_dir\uMod.dll")) {
         try {
-            Copy-Item "$root_dir\packages\oxide.core\*\lib\$dotnet\Oxide.Core.dll" "$managed_dir" -Force
+            Copy-Item "$root_dir\packages\umod\*\lib\$dotnet\uMod.dll" "$managed_dir" -Force
         } catch {
-            Write-Host "Could not copy Oxide.Core.dll to $managed_dir"
+            Write-Host "Could not copy uMod.dll to $managed_dir"
             Write-Host $_.Exception.Message
             if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
@@ -260,42 +260,42 @@ function Start-Deobfuscator {
 }
 
 function Get-Patcher {
-    # TODO: MD5 comparision of local OxidePatcher.exe and remote header
-    # Check if OxidePatcher is already downloaded
-    $patcher_exe = "$tools_dir\OxidePatcher.exe"
+    # TODO: MD5 comparison of local uModPatcher.exe and remote header
+    # Check if uMod Patcher is already downloaded
+    $patcher_exe = "$tools_dir\uModPatcher.exe"
     if (!(Test-Path "$patcher_exe") -or (Get-ChildItem "$patcher_exe").CreationTime -lt (Get-Date).AddDays(-7)) {
-        # Download latest Oxide Patcher build
-        Write-Host "Downloading latest build of OxidePatcher"
-        $patcher_url = "https://github.com/OxideMod/OxidePatcher/releases/download/latest/OxidePatcher.exe"
+        # Download latest uMod Patcher build
+        Write-Host "Downloading latest build of uMod Patcher"
+        $patcher_url = "https://github.com/theumod/umod.patcher/releases/download/latest/uModPatcher.exe"
         try {
             Invoke-WebRequest $patcher_url -Out "$patcher_exe"
         } catch {
-            Write-Host "Could not download OxidePatcher.exe from GitHub"
+            Write-Host "Could not download uModPatcher.exe from GitHub"
             Write-Host $_.Exception.Message
             if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
     } else {
-        Write-Host "Recent build of OxidePatcher already downloaded"
+        Write-Host "Recent build of uMod Patcher already downloaded"
     }
 
     Start-Patcher
 }
 
 function Start-Patcher {
-    # Check if we need to get the Oxide patcher
-    if (!(Test-Path "$tools_dir\OxidePatcher.exe")) {
+    # Check if we need to get the uMod Patcher
+    if (!(Test-Path "$tools_dir\uModPatcher.exe")) {
         Get-Patcher # TODO: Add infinite loop prevention
         return
     }
 
     # TODO: Make sure dependencies exist before trying to patch
 
-    # Attempt to patch game using the Oxide patcher
+    # Attempt to patch game using the uMod Patcher
     try {
-        Start-Process "$tools_dir\OxidePatcher.exe" -WorkingDirectory "$managed_dir" -ArgumentList "-c -p `"$managed_dir`" $opj_name" -NoNewWindow -Wait
+        Start-Process "$tools_dir\uModPatcher.exe" -WorkingDirectory "$managed_dir" -ArgumentList "-c -p `"$managed_dir`" $opj_name" -NoNewWindow -Wait
     } catch {
-        Write-Host "Could not start or complete OxidePatcher process"
+        Write-Host "Could not start or complete uMod Patcher process"
         Write-Host $_.Exception.Message
         if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
         exit 1

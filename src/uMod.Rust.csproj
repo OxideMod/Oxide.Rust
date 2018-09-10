@@ -2,32 +2,35 @@
 <Project>
   <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
   <PropertyGroup>
-    <Version>2.0.0</Version>
-    <AssemblyName>Oxide.Rust</AssemblyName>
-    <Authors>Oxide and Contributors</Authors>
-    <Description>Rust extension for the Oxide modding framework</Description>
-    <RepositoryUrl>https://github.com/OxideMod/Oxide.Rust</RepositoryUrl>
-    <PackageLicenseUrl>https://github.com/OxideMod/Oxide.Rust/blob/develop/LICENSE.md</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/OxideMod/Oxide.Rust</PackageProjectUrl>
-    <PackageIconUrl>https://avatars1.githubusercontent.com/u/10712027?s=64</PackageIconUrl>
+    <Version>3.0.0</Version>
+    <AssemblyName>uMod.Rust</AssemblyName>
+    <Authors>The uMod Project Team and Contributors</Authors>
+    <Description>Rust extension for the uMod modding framework</Description>
+    <RepositoryUrl>https://github.com/theumod/umod.rust</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/theumod/umod.rust/blob/develop/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/theumod/umod.rust</PackageProjectUrl>
+    <PackageIconUrl>https://avatars0.githubusercontent.com/u/14957982?s=64</PackageIconUrl>
     <Copyright>Copyright (c) 2014-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
     <PackageTags>gaming modding plugins unity unity3d</PackageTags>
-    <TargetFramework>net46</TargetFramework>
+    <ThisAssemblyNamespace>$(AssemblyName)</ThisAssemblyNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <TargetFramework>net46</TargetFramework>
     <ManagedDir>RustDedicated_Data\Managed</ManagedDir>
     <SteamAppId>258550</SteamAppId>
     <SteamBranch>public</SteamBranch>
     <SteamLogin>anonymous</SteamLogin>
-    <ThisAssemblyNamespace>Oxide.Game.Rust</ThisAssemblyNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="GitInfo" Version="2.0.*" />
-    <PackageReference Include="Oxide.References" Version="2.0.*" />
-    <PackageReference Include="Oxide.Core" Version="2.0.*" />
-    <PackageReference Include="Oxide.CSharp" Version="2.0.*" />
-    <PackageReference Include="Oxide.MySql" Version="2.0.*" />
-    <PackageReference Include="Oxide.SQLite" Version="2.0.*" />
-    <PackageReference Include="Oxide.Unity" Version="2.0.*" />
+    <PackageReference Include="GitInfo" Version="2.0.*">
+      <PrivateAssets>contentfiles;analyzers;build</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Oxide.References" Version="2.0.*">
+      <PrivateAssets>contentfiles;analyzers;build</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="uMod" Version="3.0.3877-develop" />
+    <!--<PackageReference Include="uMod.MySql" Version="2.0.*" />
+    <PackageReference Include="uMod.SQLite" Version="2.0.*" />-->
+    <PackageReference Include="uMod.Unity" Version="3.0.3764-develop" />
     <Reference Include="Assembly-CSharp">
       <HintPath>Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll</HintPath>
     </Reference>
@@ -107,18 +110,17 @@
   </Target>
   <Target Name="AfterBuild">
     <ItemGroup>
-      <CoreFiles Include="$(TargetDir)\Oxide.*.dll" />
+      <CoreFiles Include="$(TargetDir)\uMod*.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Console.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Rcon.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\NewAssembly.dll" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\net46\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\any\MySql.*.dll; $(SolutionDir)\packages\oxide.mysql\**\lib\any\System.*.dll" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\any\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*" />
-      <ContentX64Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x64\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\x64\*.*" />
-      <ContentX86Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x86\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\x86\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\umod.mysql\**\lib\any\MySql.*.dll; $(SolutionDir)\packages\umod.mysql\**\lib\any\System.*.dll" />
+      <ContentFiles Include="$(SolutionDir)\packages\umod.mysql\**\lib\$(TargetFramework)\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\umod.sqlite\**\lib\any\*.*; $(SolutionDir)\packages\umod.sqlite\**\lib\$(TargetFramework)\*.*" />
+      <ContentX64Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x64\*.*; $(SolutionDir)\packages\umod.sqlite\**\lib\any\x64\*.*" />
+      <ContentX86Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x86\*.*; $(SolutionDir)\packages\umod.sqlite\**\lib\any\x86\*.*" />
     </ItemGroup>
     <Copy SourceFiles="@(CoreFiles)" DestinationFiles="@(CoreFiles->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
     <Copy SourceFiles="@(PatchedFiles)" DestinationFiles="@(PatchedFiles->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />

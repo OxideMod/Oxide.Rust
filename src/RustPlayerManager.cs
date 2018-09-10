@@ -1,13 +1,12 @@
 ﻿extern alias References;
 
-using Oxide.Core;
-using Oxide.Core.Libraries.Covalence;
 using References::ProtoBuf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using uMod.Libraries.Covalence;
 
-namespace Oxide.Game.Rust.Libraries.Covalence
+namespace uMod.Rust
 {
     /// <summary>
     /// Represents a generic player manager

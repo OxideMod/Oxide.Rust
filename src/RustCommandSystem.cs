@@ -1,12 +1,12 @@
-using Oxide.Core;
-using Oxide.Core.Libraries.Covalence;
-using Oxide.Core.Plugins;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using uMod.Libraries.Covalence;
+using uMod.Plugins;
+using uMod.Rust.Libraries;
 using UnityEngine;
 
-namespace Oxide.Game.Rust.Libraries.Covalence
+namespace uMod.Rust
 {
     /// <summary>
     /// Represents a binding to a generic command system
@@ -16,10 +16,10 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         #region Initialization
 
         // The covalence provider
-        private readonly RustCovalenceProvider rustCovalence = RustCovalenceProvider.Instance;
+        private readonly RustProvider rustCovalence = RustProvider.Instance;
 
         // The command library
-        private readonly Command cmdlib = Interface.Oxide.GetLibrary<Command>();
+        private readonly Command cmdlib = Interface.uMod.GetLibrary<Command>();
 
         // The console player
         private readonly RustConsolePlayer consolePlayer;
@@ -140,7 +140,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 string previousPluginName = cmd.Source?.Name ?? "an unknown plugin";
                 string newPluginName = plugin?.Name ?? "An unknown plugin";
                 string message = $"{newPluginName} has replaced the '{command}' command previously registered by {previousPluginName}";
-                Interface.Oxide.LogWarning(message);
+                Interface.uMod.LogWarning(message);
 
                 ConsoleSystem.Index.Server.Dict.Remove(fullName);
                 if (parent == "global")
@@ -158,7 +158,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 string previousPluginName = chatCommand.Plugin?.Name ?? "an unknown plugin";
                 string newPluginName = plugin?.Name ?? "An unknown plugin";
                 string message = $"{newPluginName} has replaced the '{command}' chat command previously registered by {previousPluginName}";
-                Interface.Oxide.LogWarning(message);
+                Interface.uMod.LogWarning(message);
 
                 cmdlib.chatCommands.Remove(command);
             }
@@ -175,7 +175,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 string previousPluginName = consoleCommand.Callback.Plugin?.Name ?? "an unknown plugin";
                 string newPluginName = plugin?.Name ?? "An unknown plugin";
                 string message = $"{newPluginName} has replaced the '{fullName}' console command previously registered by {previousPluginName}";
-                Interface.Oxide.LogWarning(message);
+                Interface.uMod.LogWarning(message);
 
                 ConsoleSystem.Index.Server.Dict.Remove(consoleCommand.RustCommand.FullName);
                 if (parent == "global")
@@ -194,7 +194,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 if (rustCommand.Variable)
                 {
                     string newPluginName = plugin?.Name ?? "An unknown plugin";
-                    Interface.Oxide.LogError($"{newPluginName} tried to register the {fullName} console variable as a command!");
+                    Interface.uMod.LogError($"{newPluginName} tried to register the {fullName} console variable as a command!");
                     return;
                 }
                 newCommand.OriginalCallback = rustCommand.Call;

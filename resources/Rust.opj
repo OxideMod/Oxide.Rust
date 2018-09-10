@@ -54,12 +54,12 @@
           }
         },
         {
-          "Type": "InitOxide",
+          "Type": "InitMod",
           "Hook": {
             "InjectionIndex": 31,
-            "HookTypeName": "Initialize Oxide",
-            "Name": "InitOxide [internal]",
-            "HookName": "InitOxide",
+            "HookTypeName": "Initialize uMod",
+            "Name": "InitMod [internal]",
+            "HookName": "InitMod",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Bootstrap",
             "Flagged": false,
@@ -2244,22 +2244,22 @@
               {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|get_Oxide"
+                "Operand": "uMod|uMod.Interface|get_uMod"
               },
               {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.OxideMod|get_Config"
+                "Operand": "uMod|uMod.uMod|get_Config"
               },
               {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Configuration.OxideConfig|get_Options"
+                "Operand": "uMod|uMod.Configuration.uModConfig|get_Options"
               },
               {
                 "OpCode": "ldfld",
                 "OpType": "Field",
-                "Operand": "Oxide.Core|Oxide.Core.Configuration.OxideConfig/OxideOptions|Modded"
+                "Operand": "uMod|uMod.Configuration.uModConfig/uModOptions|Modded"
               },
               {
                 "OpCode": "brfalse",
@@ -2274,7 +2274,7 @@
               {
                 "OpCode": "ldstr",
                 "OpType": "String",
-                "Operand": ",modded,oxide"
+                "Operand": ",modded,umod"
               },
               {
                 "OpCode": "call",
@@ -7189,7 +7189,7 @@
               {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+                "Operand": "uMod|uMod.Interface|CallHook(System.String,System.Object,System.Object)"
               },
               {
                 "OpCode": "ldnull",
@@ -10192,7 +10192,7 @@
           "Name": "IPlayer",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BasePlayer",
-          "FieldType": "Oxide.Core|Oxide.Core.Libraries.Covalence.IPlayer",
+          "FieldType": "uMod|uMod.Libraries.Covalence.IPlayer",
           "Flagged": false
         }
       ]

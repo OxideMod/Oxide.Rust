@@ -1,11 +1,10 @@
 ﻿using Facepunch;
-using Oxide.Core;
-using Oxide.Core.Libraries.Covalence;
-using Oxide.Core.Plugins;
 using System.Collections.Generic;
 using System.Linq;
+using uMod.Libraries.Covalence;
+using uMod.Plugins;
 
-namespace Oxide.Game.Rust
+namespace uMod.Rust
 {
     /// <summary>
     /// Game commands for the core Rust plugin
@@ -264,7 +263,7 @@ namespace Oxide.Game.Rust
 
             if (args[0].Equals("*") || args[0].Equals("all"))
             {
-                Interface.Oxide.LoadAllPlugins();
+                Interface.uMod.LoadAllPlugins();
                 return;
             }
 
@@ -275,7 +274,7 @@ namespace Oxide.Game.Rust
                     continue;
                 }
 
-                Interface.Oxide.LoadPlugin(name);
+                Interface.uMod.LoadPlugin(name);
                 pluginManager.GetPlugin(name);
             }
         }
@@ -296,9 +295,9 @@ namespace Oxide.Game.Rust
             Plugin[] loadedPlugins = pluginManager.GetPlugins().Where(pl => !pl.IsCorePlugin).ToArray();
             HashSet<string> loadedPluginNames = new HashSet<string>(loadedPlugins.Select(pl => pl.Name));
             Dictionary<string, string> unloadedPluginErrors = new Dictionary<string, string>();
-            foreach (PluginLoader loader in Interface.Oxide.GetPluginLoaders())
+            foreach (PluginLoader loader in Interface.uMod.GetPluginLoaders())
             {
-                foreach (string name in loader.ScanDirectory(Interface.Oxide.PluginDirectory).Except(loadedPluginNames))
+                foreach (string name in loader.ScanDirectory(Interface.uMod.PluginDirectory).Except(loadedPluginNames))
                 {
                     string msg;
                     unloadedPluginErrors[name] = loader.PluginErrors.TryGetValue(name, out msg) ? msg : "Unloaded"; // TODO: Localization
@@ -348,7 +347,7 @@ namespace Oxide.Game.Rust
 
             if (args[0].Equals("*") || args[0].Equals("all"))
             {
-                Interface.Oxide.ReloadAllPlugins();
+                Interface.uMod.ReloadAllPlugins();
                 return;
             }
 
@@ -356,7 +355,7 @@ namespace Oxide.Game.Rust
             {
                 if (!string.IsNullOrEmpty(name))
                 {
-                    Interface.Oxide.ReloadPlugin(name);
+                    Interface.uMod.ReloadPlugin(name);
                 }
             }
         }
@@ -600,7 +599,7 @@ namespace Oxide.Game.Rust
 
             if (args[0].Equals("*") || args[0].Equals("all"))
             {
-                Interface.Oxide.UnloadAllPlugins();
+                Interface.uMod.UnloadAllPlugins();
                 return;
             }
 
@@ -608,7 +607,7 @@ namespace Oxide.Game.Rust
             {
                 if (!string.IsNullOrEmpty(name))
                 {
-                    Interface.Oxide.UnloadPlugin(name);
+                    Interface.uMod.UnloadPlugin(name);
                 }
             }
         }
@@ -705,7 +704,7 @@ namespace Oxide.Game.Rust
             {
                 player.Reply($"Protocol: {Server.Protocol}\nBuild Date: {BuildInfo.Current.BuildDate}\n" +
                 $"Unity Version: {UnityEngine.Application.unityVersion}\nChangeset: {BuildInfo.Current.Scm.ChangeId}\n" +
-                $"Branch: {BuildInfo.Current.Scm.Branch}\nOxide.Rust Version: {RustExtension.AssemblyVersion}");
+                $"Branch: {BuildInfo.Current.Scm.Branch}\nuMod.Rust Version: {RustExtension.AssemblyVersion}");
             }
             else
             {
@@ -723,7 +722,7 @@ namespace Oxide.Game.Rust
         {
             if (PermissionsLoaded(player) && player.IsAdmin)
             {
-                Interface.Oxide.OnSave();
+                Interface.uMod.OnSave();
                 Covalence.PlayerManager.SavePlayerData();
                 player.Reply(lang.GetMessage("DataSaved", this, player.Id));
             }

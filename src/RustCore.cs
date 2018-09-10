@@ -1,18 +1,13 @@
-﻿using Oxide.Core;
-using Oxide.Core.Libraries;
-using Oxide.Core.Libraries.Covalence;
-using Oxide.Core.Plugins;
-using Oxide.Game.Rust.Libraries;
-using Oxide.Game.Rust.Libraries.Covalence;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
 using System.Reflection;
 using System.Text;
-using UnityEngine;
+using uMod.Libraries;
+using uMod.Libraries.Covalence;
+using uMod.Plugins;
+using uMod.Rust.Libraries;
 
-namespace Oxide.Game.Rust
+namespace uMod.Rust
 {
     /// <summary>
     /// The core Rust plugin
@@ -33,14 +28,13 @@ namespace Oxide.Game.Rust
         }
 
         // Libraries
-        internal readonly Command cmdlib = Interface.Oxide.GetLibrary<Command>();
-        internal readonly Lang lang = Interface.Oxide.GetLibrary<Lang>();
-        internal readonly Permission permission = Interface.Oxide.GetLibrary<Permission>();
-        internal readonly Player Player = Interface.Oxide.GetLibrary<Player>();
+        internal readonly Command cmdlib = Interface.uMod.GetLibrary<Command>();
+        internal readonly Lang lang = Interface.uMod.GetLibrary<Lang>();
+        internal readonly Permission permission = Interface.uMod.GetLibrary<Permission>();
 
         // Instances
-        internal static readonly RustCovalenceProvider Covalence = RustCovalenceProvider.Instance;
-        internal readonly PluginManager pluginManager = Interface.Oxide.RootPluginManager;
+        internal static readonly RustProvider Covalence = RustProvider.Instance;
+        internal readonly PluginManager pluginManager = Interface.uMod.RootPluginManager;
         internal readonly IServer Server = Covalence.CreateServer();
 
         // Commands that a plugin can't override
@@ -82,22 +76,22 @@ namespace Oxide.Game.Rust
             RemoteLogger.SetTag("game version", Server.Version);
 
             // Add core plugin commands
-            AddCovalenceCommand(new[] { "oxide.plugins", "o.plugins", "plugins" }, "PluginsCommand", "oxide.plugins");
-            AddCovalenceCommand(new[] { "oxide.load", "o.load", "plugin.load" }, "LoadCommand", "oxide.load");
-            AddCovalenceCommand(new[] { "oxide.reload", "o.reload", "plugin.reload" }, "ReloadCommand", "oxide.reload");
-            AddCovalenceCommand(new[] { "oxide.unload", "o.unload", "plugin.unload" }, "UnloadCommand", "oxide.unload");
+            AddCovalenceCommand(new[] { "umod.plugins", "u.plugins", "oxide.plugins", "o.plugins", "plugins" }, "PluginsCommand", "oxide.plugins");
+            AddCovalenceCommand(new[] { "umod.load", "u.load", "oxide.load", "o.load", "plugin.load" }, "LoadCommand", "oxide.load");
+            AddCovalenceCommand(new[] { "umod.reload", "u.reload", "oxide.reload", "o.reload", "plugin.reload" }, "ReloadCommand", "oxide.reload");
+            AddCovalenceCommand(new[] { "umod.unload", "u.unload", "oxide.unload", "o.unload", "plugin.unload" }, "UnloadCommand", "oxide.unload");
 
             // Add core permission commands
-            AddCovalenceCommand(new[] { "oxide.grant", "o.grant", "perm.grant" }, "GrantCommand", "oxide.grant");
-            AddCovalenceCommand(new[] { "oxide.group", "o.group", "perm.group" }, "GroupCommand", "oxide.group");
-            AddCovalenceCommand(new[] { "oxide.revoke", "o.revoke", "perm.revoke" }, "RevokeCommand", "oxide.revoke");
-            AddCovalenceCommand(new[] { "oxide.show", "o.show", "perm.show" }, "ShowCommand", "oxide.show");
-            AddCovalenceCommand(new[] { "oxide.usergroup", "o.usergroup", "perm.usergroup" }, "UserGroupCommand", "oxide.usergroup");
+            AddCovalenceCommand(new[] { "umod.grant", "u.grant", "oxide.grant", "o.grant", "perm.grant" }, "GrantCommand", "oxide.grant");
+            AddCovalenceCommand(new[] { "umod.group", "u.group", "oxide.group", "o.group", "perm.group" }, "GroupCommand", "oxide.group");
+            AddCovalenceCommand(new[] { "umod.revoke", "u.revoke", "oxide.revoke", "o.revoke", "perm.revoke" }, "RevokeCommand", "oxide.revoke");
+            AddCovalenceCommand(new[] { "umod.show", "u.show", "oxide.show", "o.show", "perm.show" }, "ShowCommand", "oxide.show");
+            AddCovalenceCommand(new[] { "umod.usergroup", "u.usergroup", "oxide.usergroup", "o.usergroup", "perm.usergroup" }, "UserGroupCommand", "oxide.usergroup");
 
             // Add core misc commands
-            AddCovalenceCommand(new[] { "oxide.lang", "o.lang", "lang" }, "LangCommand");
-            AddCovalenceCommand(new[] { "oxide.save", "o.save" }, "SaveCommand");
-            AddCovalenceCommand(new[] { "oxide.version", "o.version" }, "VersionCommand");
+            AddCovalenceCommand(new[] { "umod.lang", "u.lang", "oxide.lang", "o.lang", "lang" }, "LangCommand");
+            AddCovalenceCommand(new[] { "umod.save", "u.save", "oxide.save", "o.save" }, "SaveCommand");
+            AddCovalenceCommand(new[] { "umod.version", "u.version", "oxide.version", "o.version" }, "VersionCommand");
 
             // Register messages for localization
             foreach (KeyValuePair<string, Dictionary<string, string>> language in Localization.languages)
@@ -109,7 +103,7 @@ namespace Oxide.Game.Rust
             if (permission.IsLoaded)
             {
                 int rank = 0;
-                foreach (string defaultGroup in Interface.Oxide.Config.Options.DefaultGroups)
+                foreach (string defaultGroup in Interface.uMod.Config.Options.DefaultGroups)
                 {
                     if (!permission.GroupExists(defaultGroup))
                     {
@@ -120,13 +114,13 @@ namespace Oxide.Game.Rust
                 permission.RegisterValidate(s =>
                 {
                     ulong temp;
-                    if (!ulong.TryParse(s, out temp))
+                    if (ulong.TryParse(s, out temp))
                     {
-                        return false;
+                        int digits = temp == 0 ? 1 : (int)Math.Floor(Math.Log10(temp) + 1);
+                        return digits >= 17;
                     }
 
-                    int digits = temp == 0 ? 1 : (int)Math.Floor(Math.Log10(temp) + 1);
-                    return digits >= 17;
+                    return false;
                 });
 
                 permission.CleanUp();
@@ -155,19 +149,19 @@ namespace Oxide.Game.Rust
         {
             if (!serverInitialized)
             {
-                if (Interface.Oxide.CheckConsole() && ServerConsole.Instance != null)
+                if (Interface.uMod.CheckConsole() && global::ServerConsole.Instance != null)
                 {
-                    ServerConsole.Instance.enabled = false;
-                    UnityEngine.Object.Destroy(ServerConsole.Instance);
-                    typeof(SingletonComponent<ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
+                    global::ServerConsole.Instance.enabled = false;
+                    UnityEngine.Object.Destroy(global::ServerConsole.Instance);
+                    typeof(SingletonComponent<global::ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
                 }
 
                 Analytics.Collect();
                 RustExtension.ServerConsole();
 
-                if (!Interface.Oxide.Config.Options.Modded)
+                if (!Interface.uMod.Config.Options.Modded)
                 {
-                    Interface.Oxide.LogWarning("The server is currently listed under Community. Please be aware that Facepunch only allows admin tools" +
+                    Interface.uMod.LogWarning("The server is currently listed under Community. Please be aware that Facepunch only allows admin tools" +
                         "(that do not affect gameplay) under the Community section");
                 }
 
@@ -184,7 +178,7 @@ namespace Oxide.Game.Rust
         [HookMethod("OnServerSave")]
         private void OnServerSave()
         {
-            Interface.Oxide.OnSave();
+            Interface.uMod.OnSave();
             Covalence.PlayerManager.SavePlayerData();
         }
 
@@ -194,7 +188,7 @@ namespace Oxide.Game.Rust
         [HookMethod("OnServerShutdown")]
         private void OnServerShutdown()
         {
-            Interface.Oxide.OnShutdown();
+            Interface.uMod.OnShutdown();
             Covalence.PlayerManager.SavePlayerData();
         }
 
@@ -272,182 +266,5 @@ namespace Oxide.Game.Rust
         }
 
         #endregion Command Handling
-
-        #region Helpers
-
-        /// <summary>
-        /// Returns the BasePlayer for the specified name, ID, or IP address string
-        /// </summary>
-        /// <param name="nameOrIdOrIp"></param>
-        /// <returns></returns>
-        public static BasePlayer FindPlayer(string nameOrIdOrIp)
-        {
-            BasePlayer player = null;
-            foreach (BasePlayer activePlayer in BasePlayer.activePlayerList)
-            {
-                if (string.IsNullOrEmpty(activePlayer.UserIDString))
-                {
-                    continue;
-                }
-
-                if (activePlayer.UserIDString.Equals(nameOrIdOrIp))
-                {
-                    return activePlayer;
-                }
-
-                if (string.IsNullOrEmpty(activePlayer.displayName))
-                {
-                    continue;
-                }
-
-                if (activePlayer.displayName.Equals(nameOrIdOrIp, StringComparison.OrdinalIgnoreCase))
-                {
-                    return activePlayer;
-                }
-
-                if (activePlayer.displayName.Contains(nameOrIdOrIp, CompareOptions.OrdinalIgnoreCase))
-                {
-                    player = activePlayer;
-                }
-
-                if (activePlayer.net?.connection != null && activePlayer.net.connection.ipaddress.Equals(nameOrIdOrIp))
-                {
-                    return activePlayer;
-                }
-            }
-            foreach (BasePlayer sleepingPlayer in BasePlayer.sleepingPlayerList)
-            {
-                if (string.IsNullOrEmpty(sleepingPlayer.UserIDString))
-                {
-                    continue;
-                }
-
-                if (sleepingPlayer.UserIDString.Equals(nameOrIdOrIp))
-                {
-                    return sleepingPlayer;
-                }
-
-                if (string.IsNullOrEmpty(sleepingPlayer.displayName))
-                {
-                    continue;
-                }
-
-                if (sleepingPlayer.displayName.Equals(nameOrIdOrIp, StringComparison.OrdinalIgnoreCase))
-                {
-                    return sleepingPlayer;
-                }
-
-                if (sleepingPlayer.displayName.Contains(nameOrIdOrIp, CompareOptions.OrdinalIgnoreCase))
-                {
-                    player = sleepingPlayer;
-                }
-            }
-            return player;
-        }
-
-        /// <summary>
-        /// Returns the BasePlayer for the specified name string
-        /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
-        public static BasePlayer FindPlayerByName(string name)
-        {
-            BasePlayer player = null;
-            foreach (BasePlayer activePlayer in BasePlayer.activePlayerList)
-            {
-                if (string.IsNullOrEmpty(activePlayer.displayName))
-                {
-                    continue;
-                }
-
-                if (activePlayer.displayName.Equals(name, StringComparison.OrdinalIgnoreCase))
-                {
-                    return activePlayer;
-                }
-
-                if (activePlayer.displayName.Contains(name, CompareOptions.OrdinalIgnoreCase))
-                {
-                    player = activePlayer;
-                }
-            }
-            foreach (BasePlayer sleepingPlayer in BasePlayer.sleepingPlayerList)
-            {
-                if (string.IsNullOrEmpty(sleepingPlayer.displayName))
-                {
-                    continue;
-                }
-
-                if (sleepingPlayer.displayName.Equals(name, StringComparison.OrdinalIgnoreCase))
-                {
-                    return sleepingPlayer;
-                }
-
-                if (sleepingPlayer.displayName.Contains(name, CompareOptions.OrdinalIgnoreCase))
-                {
-                    player = sleepingPlayer;
-                }
-            }
-            return player;
-        }
-
-        /// <summary>
-        /// Returns the BasePlayer for the specified ID ulong
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        public static BasePlayer FindPlayerById(ulong id)
-        {
-            foreach (BasePlayer activePlayer in BasePlayer.activePlayerList)
-            {
-                if (activePlayer.userID == id)
-                {
-                    return activePlayer;
-                }
-            }
-            foreach (BasePlayer sleepingPlayer in BasePlayer.sleepingPlayerList)
-            {
-                if (sleepingPlayer.userID == id)
-                {
-                    return sleepingPlayer;
-                }
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Returns the BasePlayer for the specified ID string
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        public static BasePlayer FindPlayerByIdString(string id)
-        {
-            foreach (BasePlayer activePlayer in BasePlayer.activePlayerList)
-            {
-                if (string.IsNullOrEmpty(activePlayer.UserIDString))
-                {
-                    continue;
-                }
-
-                if (activePlayer.UserIDString.Equals(id))
-                {
-                    return activePlayer;
-                }
-            }
-            foreach (BasePlayer sleepingPlayer in BasePlayer.sleepingPlayerList)
-            {
-                if (string.IsNullOrEmpty(sleepingPlayer.UserIDString))
-                {
-                    continue;
-                }
-
-                if (sleepingPlayer.UserIDString.Equals(id))
-                {
-                    return sleepingPlayer;
-                }
-            }
-            return null;
-        }
-
-        #endregion Helpers
     }
 }

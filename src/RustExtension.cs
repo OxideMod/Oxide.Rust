@@ -1,16 +1,15 @@
 ﻿using Facepunch;
 using Facepunch.Extend;
 using Network;
-using Oxide.Core;
-using Oxide.Core.Extensions;
-using Oxide.Core.Unity;
-using Oxide.Plugins;
 using System;
 using System.Linq;
 using System.Reflection;
+using uMod.Extensions;
+using uMod.Plugins;
+using uMod.Unity;
 using UnityEngine;
 
-namespace Oxide.Game.Rust
+namespace uMod.Rust
 {
     /// <summary>
     /// The extension class that represents this extension
@@ -66,7 +65,7 @@ namespace Oxide.Game.Rust
         public override string[] WhitelistAssemblies => new[]
         {
             "Assembly-CSharp", "Assembly-CSharp-firstpass", "DestMath", "Facepunch.Network", "Facepunch.System", "Facepunch.UnityEngine", "mscorlib",
-            "Oxide.Core", "Oxide.Rust", /* < Needed for non-C# plugins for some reason */ "RustBuild", "Rust.Data", "Rust.Global", "System", "System.Core",
+            "uMod", "uMod.Rust", /* < Needed for non-C# plugins for some reason */ "RustBuild", "Rust.Data", "Rust.Global", "System", "System.Core",
             "UnityEngine"
         };
 
@@ -75,7 +74,7 @@ namespace Oxide.Game.Rust
         /// </summary>
         public override string[] WhitelistNamespaces => new[]
         {
-            "ConVar", "Dest", "Facepunch", "Network", "Oxide.Game.Rust.Cui", "ProtoBuf", "PVT", "Rust", "Steamworks", "System.Collections",
+            "ConVar", "Dest", "Facepunch", "Network", "uMod.Rust.Cui", "ProtoBuf", "PVT", "Rust", "Steamworks", "System.Collections",
             "System.Security.Cryptography", "System.Text", "UnityEngine"
         };
 
@@ -86,6 +85,7 @@ namespace Oxide.Game.Rust
         {
             "alphamapResolution is clamped to the range of",
             "AngryAnt Behave version",
+            "Calling CollectSourcesAsync took",
             "Floating point textures aren't supported on this device",
             "HDR RenderTexture format is not supported on this platform.",
             "Image Effects are not supported on this platform.",
@@ -117,11 +117,7 @@ namespace Oxide.Game.Rust
         /// </summary>
         public override void Load()
         {
-            Manager.RegisterLibrary("Rust", new Libraries.Rust());
             Manager.RegisterLibrary("Command", new Libraries.Command());
-            Manager.RegisterLibrary("Item", new Libraries.Item());
-            Manager.RegisterLibrary("Player", new Libraries.Player());
-            Manager.RegisterLibrary("Server", new Libraries.Server());
             Manager.RegisterPluginLoader(new RustPluginLoader());
         }
 
@@ -140,7 +136,7 @@ namespace Oxide.Game.Rust
         {
             CSharpPluginLoader.PluginReferences.UnionWith(DefaultReferences);
 
-            if (Interface.Oxide.EnableConsole())
+            if (Interface.uMod.EnableConsole())
             {
                 Output.OnMessage += HandleLog;
             }
@@ -148,28 +144,28 @@ namespace Oxide.Game.Rust
 
         internal static void ServerConsole()
         {
-            if (Interface.Oxide.ServerConsole == null)
+            if (Interface.uMod.ServerConsole == null)
             {
                 return;
             }
 
-            Interface.Oxide.ServerConsole.Title = () => $"{BasePlayer.activePlayerList.Count} | {ConVar.Server.hostname}";
+            Interface.uMod.ServerConsole.Title = () => $"{BasePlayer.activePlayerList.Count} | {ConVar.Server.hostname}";
 
-            Interface.Oxide.ServerConsole.Status1Left = () =>
+            Interface.uMod.ServerConsole.Status1Left = () =>
             {
                 string hostname = ConVar.Server.hostname.Length > 30 ? ConVar.Server.hostname.Truncate(30) : ConVar.Server.hostname;
-                return $"{hostname} [{(Interface.Oxide.Config.Options.Modded ? "Modded" : "Community")}]";
+                return $"{hostname} [{(Interface.uMod.Config.Options.Modded ? "Modded" : "Community")}]";
             };
-            Interface.Oxide.ServerConsole.Status1Right = () => $"{Performance.current.frameRate}fps, {((ulong)Time.realtimeSinceStartup).FormatSeconds()}";
+            Interface.uMod.ServerConsole.Status1Right = () => $"{Performance.current.frameRate}fps, {((ulong)Time.realtimeSinceStartup).FormatSeconds()}";
 
-            Interface.Oxide.ServerConsole.Status2Left = () =>
+            Interface.uMod.ServerConsole.Status2Left = () =>
             {
                 string players = $"{BasePlayer.activePlayerList.Count}/{ConVar.Server.maxplayers} players";
                 int sleepers = BasePlayer.sleepingPlayerList.Count;
                 int entities = BaseNetworkable.serverEntities.Count;
                 return $"{players}, {sleepers + (sleepers.Equals(1) ? " sleeper" : " sleepers")}, {entities + (entities.Equals(1) ? " entity" : " entities")}";
             };
-            Interface.Oxide.ServerConsole.Status2Right = () =>
+            Interface.uMod.ServerConsole.Status2Right = () =>
             {
                 if (Net.sv == null || !Net.sv.IsConnected())
                 {
@@ -181,16 +177,16 @@ namespace Oxide.Game.Rust
                 return $"{Utility.FormatBytes(bytesReceived) ?? "0"}/s in, {Utility.FormatBytes(bytesSent) ?? "0"}/s out";
             };
 
-            Interface.Oxide.ServerConsole.Status3Left = () =>
+            Interface.uMod.ServerConsole.Status3Left = () =>
             {
                 string gameTime = (TOD_Sky.Instance?.Cycle?.DateTime != null ? TOD_Sky.Instance.Cycle.DateTime : DateTime.Now).ToString("h:mm tt");
                 return $"{gameTime.ToLower()}, {ConVar.Server.level} [{ConVar.Server.worldsize}, {ConVar.Server.seed}]";
             };
-            Interface.Oxide.ServerConsole.Status3Right = () => $"Oxide.Rust {AssemblyVersion}";
-            Interface.Oxide.ServerConsole.Status3RightColor = ConsoleColor.Yellow;
+            Interface.uMod.ServerConsole.Status3Right = () => $"uMod.Rust {AssemblyVersion}";
+            Interface.uMod.ServerConsole.Status3RightColor = ConsoleColor.Yellow;
 
-            Interface.Oxide.ServerConsole.Input += ServerConsoleOnInput;
-            Interface.Oxide.ServerConsole.Completion = input =>
+            Interface.uMod.ServerConsole.Input += ServerConsoleOnInput;
+            Interface.uMod.ServerConsole.Completion = input =>
             {
                 if (!string.IsNullOrEmpty(input))
                 {
@@ -219,7 +215,7 @@ namespace Oxide.Game.Rust
         {
             if (!string.IsNullOrEmpty(message) && !Filter.Any(message.Contains))
             {
-                Interface.Oxide.RootLogger.HandleMessage(message, stackTrace, logType.ToLogType());
+                Interface.uMod.RootLogger.HandleMessage(message, stackTrace, (Logging.LogType)logType.ToLogType());
             }
         }
     }

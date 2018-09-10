@@ -1,11 +1,11 @@
-﻿using Oxide.Core.Libraries.Covalence;
+﻿using uMod.Libraries.Covalence;
 
-namespace Oxide.Game.Rust.Libraries.Covalence
+namespace uMod.Rust
 {
     /// <summary>
     /// Provides Covalence functionality for the game "Rust"
     /// </summary>
-    public class RustCovalenceProvider : ICovalenceProvider
+    public class RustProvider : ICovalenceProvider
     {
         /// <summary>
         /// Gets the name of the game for which this provider provides
@@ -25,9 +25,9 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <summary>
         /// Gets the singleton instance of this provider
         /// </summary>
-        internal static RustCovalenceProvider Instance { get; private set; }
+        internal static RustProvider Instance { get; private set; }
 
-        public RustCovalenceProvider()
+        public RustProvider()
         {
             Instance = this;
         }
@@ -66,7 +66,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         public ICommandSystem CreateCommandSystemProvider() => CommandSystem = new RustCommandSystem();
 
         /// <summary>
-        /// Formats the text with markup as specified in Oxide.Core.Libraries.Covalence.Formatter
+        /// Formats the text with markup as specified in uMod.Libraries.Covalence.Formatter
         /// into the game-specific markup language
         /// </summary>
         /// <param name="text">text to format</param>

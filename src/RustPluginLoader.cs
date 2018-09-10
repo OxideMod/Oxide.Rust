@@ -1,7 +1,7 @@
-﻿using Oxide.Core.Plugins;
-using System;
+﻿using System;
+using uMod.Plugins;
 
-namespace Oxide.Game.Rust
+namespace uMod.Rust
 {
     /// <summary>
     /// Responsible for loading Rust core plugins

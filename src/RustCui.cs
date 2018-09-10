@@ -1,6 +1,5 @@
 ﻿extern alias References;
 
-using Oxide.Core;
 using References::Newtonsoft.Json;
 using References::Newtonsoft.Json.Converters;
 using References::Newtonsoft.Json.Linq;
@@ -10,7 +9,7 @@ using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Oxide.Game.Rust.Cui
+namespace uMod.Rust.Cui
 {
     public static class CuiHelper
     {

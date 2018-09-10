@@ -1,13 +1,10 @@
-﻿using Oxide.Core;
-using Oxide.Core.Libraries;
-using Oxide.Core.Plugins;
-using Oxide.Game.Rust.Libraries.Covalence;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Event = Oxide.Core.Event;
+using uMod.Libraries;
+using uMod.Plugins;
 
-namespace Oxide.Game.Rust.Libraries
+namespace uMod.Rust.Libraries
 {
     /// <summary>
     /// A library containing functions for adding console and chat commands
@@ -41,7 +38,7 @@ namespace Oxide.Game.Rust.Libraries
             public PluginCallback Callback;
             public readonly ConsoleSystem.Command RustCommand;
             public Action<ConsoleSystem.Arg> OriginalCallback;
-            internal readonly Permission permission = Interface.Oxide.GetLibrary<Permission>();
+            internal readonly Permission permission = Interface.uMod.GetLibrary<Permission>();
 
             public ConsoleCommand(string name)
             {
@@ -138,7 +135,7 @@ namespace Oxide.Game.Rust.Libraries
             if (!CanOverrideCommand(command, "chat"))
             {
                 string pluginName = plugin?.Name ?? "An unknown plugin";
-                Interface.Oxide.LogError("{0} tried to register command '{1}', this command already exists and cannot be overridden!", pluginName, commandName);
+                Interface.uMod.LogError("{0} tried to register command '{1}', this command already exists and cannot be overridden!", pluginName, commandName);
                 return;
             }
 
@@ -148,7 +145,7 @@ namespace Oxide.Game.Rust.Libraries
                 string previousPluginName = cmd.Plugin?.Name ?? "an unknown plugin";
                 string newPluginName = plugin?.Name ?? "An unknown plugin";
                 string message = $"{newPluginName} has replaced the '{commandName}' chat command previously registered by {previousPluginName}";
-                Interface.Oxide.LogWarning(message);
+                Interface.uMod.LogWarning(message);
             }
 
             RustCommandSystem.RegisteredCommand covalenceCommand;
@@ -157,7 +154,7 @@ namespace Oxide.Game.Rust.Libraries
                 string previousPluginName = covalenceCommand.Source?.Name ?? "an unknown plugin";
                 string newPluginName = plugin?.Name ?? "An unknown plugin";
                 string message = $"{newPluginName} has replaced the '{commandName}' command previously registered by {previousPluginName}";
-                Interface.Oxide.LogWarning(message);
+                Interface.uMod.LogWarning(message);
                 RustCore.Covalence.CommandSystem.UnregisterCommand(commandName, covalenceCommand.Source);
             }
 
@@ -212,7 +209,7 @@ namespace Oxide.Game.Rust.Libraries
             if (!CanOverrideCommand(parent == "global" ? name : fullName, "console"))
             {
                 string pluginName = plugin?.Name ?? "An unknown plugin";
-                Interface.Oxide.LogError("{0} tried to register command '{1}', this command already exists and cannot be overridden!", pluginName, fullName);
+                Interface.uMod.LogError("{0} tried to register command '{1}', this command already exists and cannot be overridden!", pluginName, fullName);
                 return;
             }
 
@@ -228,7 +225,7 @@ namespace Oxide.Game.Rust.Libraries
                 string previousPluginName = consoleCommand.Callback.Plugin?.Name ?? "an unknown plugin";
                 string newPluginName = plugin?.Name ?? "An unknown plugin";
                 string message = $"{newPluginName} has replaced the '{command}' console command previously registered by {previousPluginName}";
-                Interface.Oxide.LogWarning(message);
+                Interface.uMod.LogWarning(message);
 
                 ConsoleSystem.Index.Server.Dict.Remove(consoleCommand.RustCommand.FullName);
                 if (parent == "global")
@@ -250,7 +247,7 @@ namespace Oxide.Game.Rust.Libraries
                 string previousPluginName = covalenceCommand.Source?.Name ?? "an unknown plugin";
                 string newPluginName = plugin?.Name ?? "An unknown plugin";
                 string message = $"{newPluginName} has replaced the '{fullName}' command previously registered by {previousPluginName}";
-                Interface.Oxide.LogWarning(message);
+                Interface.uMod.LogWarning(message);
 
                 RustCore.Covalence.CommandSystem.UnregisterCommand(parent == "global" ? name : fullName, covalenceCommand.Source);
             }
@@ -265,7 +262,7 @@ namespace Oxide.Game.Rust.Libraries
                 if (rustCommand.Variable)
                 {
                     string newPluginName = plugin?.Name ?? "An unknown plugin";
-                    Interface.Oxide.LogError($"{newPluginName} tried to register the {name} console variable as a command!");
+                    Interface.uMod.LogError($"{newPluginName} tried to register the {name} console variable as a command!");
                     return;
                 }
                 cmd.OriginalCallback = rustCommand.Call;

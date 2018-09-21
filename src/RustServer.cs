@@ -5,6 +5,7 @@ using System.Globalization;
 using System.IO;
 using System.Net;
 using uMod.Libraries.Covalence;
+using uMod.Logging;
 
 namespace uMod.Rust
 {

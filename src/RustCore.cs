@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
@@ -161,7 +161,7 @@ namespace uMod.Rust
                 if (!Interface.uMod.Config.Options.Modded)
                 {
                     Interface.uMod.LogWarning("The server is currently listed under Community. Please be aware that Facepunch only allows admin tools" +
-                        "(that do not affect gameplay) under the Community section");
+                        "(that do not affect gameplay or make the server appear modded) under the Community section");
                 }
 
                 serverInitialized = true;

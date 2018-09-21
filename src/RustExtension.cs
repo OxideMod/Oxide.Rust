@@ -1,4 +1,4 @@
-using Facepunch;
+﻿using Facepunch;
 using Facepunch.Extend;
 using Network;
 using System;
@@ -65,8 +65,7 @@ namespace uMod.Rust
         public override string[] WhitelistAssemblies => new[]
         {
             "Assembly-CSharp", "Assembly-CSharp-firstpass", "DestMath", "Facepunch.Network", "Facepunch.System", "Facepunch.UnityEngine", "mscorlib",
-            "uMod", "uMod.Rust", /* < Needed for non-C# plugins for some reason */ "RustBuild", "Rust.Data", "Rust.Global", "System", "System.Core",
-            "UnityEngine"
+            "uMod", "RustBuild", "Rust.Data", "Rust.Global", "System", "System.Core", "UnityEngine"
         };
 
         /// <summary>
@@ -74,8 +73,8 @@ namespace uMod.Rust
         /// </summary>
         public override string[] WhitelistNamespaces => new[]
         {
-            "ConVar", "Dest", "Facepunch", "Network", "uMod.Rust.Cui", "ProtoBuf", "PVT", "Rust", "Steamworks", "System.Collections",
-            "System.Security.Cryptography", "System.Text", "UnityEngine"
+            "ConVar", "Dest", "Facepunch", "Network", "ProtoBuf", "PVT", "Rust", "Steamworks", "System.Collections", "System.Security.Cryptography",
+            "System.Text", "UnityEngine"
         };
 
         /// <summary>
@@ -214,7 +213,7 @@ namespace uMod.Rust
         {
             if (!string.IsNullOrEmpty(message) && !Filter.Any(message.Contains))
             {
-                Interface.uMod.RootLogger.HandleMessage(message, stackTrace, (Logging.LogType)logType.ToLogType());
+                Interface.uMod.RootLogger.HandleMessage(message, stackTrace, logType.ToLogType());
             }
         }
     }

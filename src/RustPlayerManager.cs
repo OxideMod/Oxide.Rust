@@ -73,13 +73,13 @@ namespace uMod.Rust
         /// Gets all players
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<IPlayer> All => allPlayers.Values.Cast<IPlayer>();
+        public IEnumerable<IPlayer> All => allPlayers.Values;
 
         /// <summary>
         /// Gets all connected players
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<IPlayer> Connected => connectedPlayers.Values.Cast<IPlayer>();
+        public IEnumerable<IPlayer> Connected => connectedPlayers.Values;
 
         /// <summary>
         /// Gets all sleeping players

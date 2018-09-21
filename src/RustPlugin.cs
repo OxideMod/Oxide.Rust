@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Reflection;
-using uMod.Rust.Libraries;
 
 namespace uMod.Plugins
 {
     public abstract class RustPlugin : CSharpPlugin
     {
-        protected Command cmd = Interface.uMod.GetLibrary<Command>();
-
         public override void HandleAddedToManager(PluginManager manager)
         {
             foreach (FieldInfo field in GetType().GetFields(BindingFlags.NonPublic | BindingFlags.Instance))
@@ -42,31 +39,6 @@ namespace uMod.Plugins
                         continue;
                     }
                     onlinePlayerFields.Add(pluginField);
-                }
-            }
-
-            foreach (MethodInfo method in GetType().GetMethods(BindingFlags.NonPublic | BindingFlags.Instance))
-            {
-                object[] attributes = method.GetCustomAttributes(typeof(ConsoleCommandAttribute), true);
-                if (attributes.Length > 0)
-                {
-                    ConsoleCommandAttribute attribute = attributes[0] as ConsoleCommandAttribute;
-                    if (attribute != null)
-                    {
-                        cmd.AddConsoleCommand(attribute.Command, this, method.Name);
-                    }
-
-                    continue;
-                }
-
-                attributes = method.GetCustomAttributes(typeof(ChatCommandAttribute), true);
-                if (attributes.Length > 0)
-                {
-                    ChatCommandAttribute attribute = attributes[0] as ChatCommandAttribute;
-                    if (attribute != null)
-                    {
-                        cmd.AddChatCommand(attribute.Command, this, method.Name);
-                    }
                 }
             }
 

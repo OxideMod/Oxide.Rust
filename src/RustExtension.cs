@@ -1,4 +1,4 @@
-﻿using Facepunch;
+using Facepunch;
 using Facepunch.Extend;
 using Network;
 using System;
@@ -117,7 +117,6 @@ namespace uMod.Rust
         /// </summary>
         public override void Load()
         {
-            Manager.RegisterLibrary("Command", new Libraries.Command());
             Manager.RegisterPluginLoader(new RustPluginLoader());
         }
 

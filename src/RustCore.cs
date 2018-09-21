@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 using uMod.Libraries;
 using uMod.Libraries.Covalence;
+using uMod.Logging;
 using uMod.Plugins;
-using uMod.Rust.Libraries;
 
 namespace uMod.Rust
 {
@@ -28,7 +28,6 @@ namespace uMod.Rust
         }
 
         // Libraries
-        internal readonly Command cmdlib = Interface.uMod.GetLibrary<Command>();
         internal readonly Lang lang = Interface.uMod.GetLibrary<Lang>();
         internal readonly Permission permission = Interface.uMod.GetLibrary<Permission>();
 

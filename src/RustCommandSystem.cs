@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using uMod.Libraries;
 using uMod.Libraries.Covalence;
 using uMod.Plugins;
-using uMod.Rust.Libraries;
 using UnityEngine;
 
 namespace uMod.Rust
@@ -18,9 +18,6 @@ namespace uMod.Rust
         // The covalence provider
         private readonly RustProvider rustCovalence = RustProvider.Instance;
 
-        // The command library
-        private readonly Command cmdlib = Interface.uMod.GetLibrary<Command>();
-
         // The console player
         private readonly RustConsolePlayer consolePlayer;
 
@@ -29,6 +26,92 @@ namespace uMod.Rust
 
         // All registered commands
         internal IDictionary<string, RegisteredCommand> registeredCommands;
+
+        // All registerd console commands
+        internal Dictionary<string, ConsoleCommand> consoleCommands;
+
+        // All registered chat commands
+        internal Dictionary<string, ChatCommand> chatCommands;
+
+        internal struct PluginCallback
+        {
+            public readonly Plugin Plugin;
+            public readonly string Name;
+            public Func<ConsoleSystem.Arg, bool> Call;
+
+            public PluginCallback(Plugin plugin, string name)
+            {
+                Plugin = plugin;
+                Name = name;
+                Call = null;
+            }
+
+            public PluginCallback(Plugin plugin, Func<ConsoleSystem.Arg, bool> callback)
+            {
+                Plugin = plugin;
+                Call = callback;
+                Name = null;
+            }
+        }
+
+        internal class ConsoleCommand
+        {
+            public readonly string Name;
+            public PluginCallback Callback;
+            public readonly ConsoleSystem.Command RustCommand;
+            public Action<ConsoleSystem.Arg> OriginalCallback;
+            internal readonly Permission permission = Interface.uMod.GetLibrary<Permission>();
+
+            public ConsoleCommand(string name)
+            {
+                Name = name;
+                string[] splitName = Name.Split('.');
+                RustCommand = new ConsoleSystem.Command
+                {
+                    Name = splitName[1],
+                    Parent = splitName[0],
+                    FullName = name,
+                    ServerUser = true,
+                    ServerAdmin = true,
+                    Client = true,
+                    ClientInfo = false,
+                    Variable = false,
+                    Call = HandleCommand
+                };
+            }
+
+            public void AddCallback(Plugin plugin, string name) => Callback = new PluginCallback(plugin, name);
+
+            public void AddCallback(Plugin plugin, Func<ConsoleSystem.Arg, bool> callback) => Callback = new PluginCallback(plugin, callback);
+
+            public void HandleCommand(ConsoleSystem.Arg arg)
+            {
+                Callback.Plugin?.TrackStart();
+                Callback.Call(arg);
+                Callback.Plugin?.TrackEnd();
+            }
+        }
+
+        internal class ChatCommand
+        {
+            public readonly string Name;
+            public readonly Plugin Plugin;
+            private readonly Action<BasePlayer, string, string[]> _callback;
+
+            public ChatCommand(string name, Plugin plugin, Action<BasePlayer, string, string[]> callback)
+            {
+                Name = name;
+                Plugin = plugin;
+                _callback = callback;
+            }
+
+            public void HandleCommand(BasePlayer sender, string name, string[] args)
+            {
+                Plugin?.TrackStart();
+                _callback?.Invoke(sender, name, args);
+                Plugin?.TrackEnd();
+            }
+        }
 
         // Registered commands
         internal class RegisteredCommand
@@ -152,20 +235,19 @@ namespace uMod.Rust
             }
 
             // Check if command already exists in a Rust plugin as a chat command
-            Command.ChatCommand chatCommand;
-            if (cmdlib.chatCommands.TryGetValue(command, out chatCommand))
+            ChatCommand chatCommand;
+            if (chatCommands.TryGetValue(command, out chatCommand))
             {
                 string previousPluginName = chatCommand.Plugin?.Name ?? "an unknown plugin";
                 string newPluginName = plugin?.Name ?? "An unknown plugin";
                 string message = $"{newPluginName} has replaced the '{command}' chat command previously registered by {previousPluginName}";
                 Interface.uMod.LogWarning(message);
-
-                cmdlib.chatCommands.Remove(command);
+                chatCommands.Remove(command);
             }
 
             // Check if command already exists in a Rust plugin as a console command
-            Command.ConsoleCommand consoleCommand;
-            if (cmdlib.consoleCommands.TryGetValue(fullName, out consoleCommand))
+            ConsoleCommand consoleCommand;
+            if (consoleCommands.TryGetValue(fullName, out consoleCommand))
             {
                 if (consoleCommand.OriginalCallback != null)
                 {
@@ -182,9 +264,8 @@ namespace uMod.Rust
                 {
                     ConsoleSystem.Index.Server.GlobalDict.Remove(consoleCommand.RustCommand.Name);
                 }
-
                 ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
-                cmdlib.consoleCommands.Remove(consoleCommand.RustCommand.FullName);
+                consoleCommands.Remove(consoleCommand.RustCommand.FullName);
             }
 
             // Check if command is a vanilla Rust command
@@ -197,6 +278,7 @@ namespace uMod.Rust
                     Interface.uMod.LogError($"{newPluginName} tried to register the {fullName} console variable as a command!");
                     return;
                 }
+
                 newCommand.OriginalCallback = rustCommand.Call;
                 newCommand.OriginalRustCommand = rustCommand;
             }
@@ -243,7 +325,6 @@ namespace uMod.Rust
             {
                 ConsoleSystem.Index.Server.GlobalDict[name] = newCommand.RustCommand;
             }
-
             ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
 
             // Register the command as a chat command
@@ -350,8 +431,8 @@ namespace uMod.Rust
                 }
             }
 
-            Command.ChatCommand chatCommand;
-            if (cmdlib.chatCommands.TryGetValue(command, out chatCommand))
+            ChatCommand chatCommand;
+            if (chatCommands.TryGetValue(command, out chatCommand))
             {
                 if (chatCommand.Plugin.IsCorePlugin)
                 {
@@ -359,8 +440,8 @@ namespace uMod.Rust
                 }
             }
 
-            Command.ConsoleCommand consoleCommand;
-            if (cmdlib.consoleCommands.TryGetValue(fullName, out consoleCommand))
+            ConsoleCommand consoleCommand;
+            if (consoleCommands.TryGetValue(fullName, out consoleCommand))
             {
                 if (consoleCommand.Callback.Plugin.IsCorePlugin)
                 {

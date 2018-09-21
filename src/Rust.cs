@@ -12,14 +12,14 @@ namespace uMod.Rust
     /// <summary>
     /// The core Rust plugin
     /// </summary>
-    public partial class RustCore : CSPlugin
+    public partial class Rust : CSPlugin
     {
         #region Initialization
 
         /// <summary>
-        /// Initializes a new instance of the RustCore class
+        /// Initializes a new instance of the Rust class
         /// </summary>
-        public RustCore()
+        public Rust()
         {
             // Set plugin info attributes
             Title = "Rust";
@@ -75,17 +75,17 @@ namespace uMod.Rust
             RemoteLogger.SetTag("game version", Server.Version);
 
             // Add core plugin commands
-            AddCovalenceCommand(new[] { "umod.plugins", "u.plugins", "oxide.plugins", "o.plugins", "plugins" }, "PluginsCommand", "oxide.plugins");
-            AddCovalenceCommand(new[] { "umod.load", "u.load", "oxide.load", "o.load", "plugin.load" }, "LoadCommand", "oxide.load");
-            AddCovalenceCommand(new[] { "umod.reload", "u.reload", "oxide.reload", "o.reload", "plugin.reload" }, "ReloadCommand", "oxide.reload");
-            AddCovalenceCommand(new[] { "umod.unload", "u.unload", "oxide.unload", "o.unload", "plugin.unload" }, "UnloadCommand", "oxide.unload");
+            AddCovalenceCommand(new[] { "umod.plugins", "u.plugins", "oxide.plugins", "o.plugins", "plugins" }, "PluginsCommand", "umod.plugins");
+            AddCovalenceCommand(new[] { "umod.load", "u.load", "oxide.load", "o.load", "plugin.load" }, "LoadCommand", "umod.load");
+            AddCovalenceCommand(new[] { "umod.reload", "u.reload", "oxide.reload", "o.reload", "plugin.reload" }, "ReloadCommand", "umod.reload");
+            AddCovalenceCommand(new[] { "umod.unload", "u.unload", "oxide.unload", "o.unload", "plugin.unload" }, "UnloadCommand", "umod.unload");
 
             // Add core permission commands
-            AddCovalenceCommand(new[] { "umod.grant", "u.grant", "oxide.grant", "o.grant", "perm.grant" }, "GrantCommand", "oxide.grant");
-            AddCovalenceCommand(new[] { "umod.group", "u.group", "oxide.group", "o.group", "perm.group" }, "GroupCommand", "oxide.group");
-            AddCovalenceCommand(new[] { "umod.revoke", "u.revoke", "oxide.revoke", "o.revoke", "perm.revoke" }, "RevokeCommand", "oxide.revoke");
-            AddCovalenceCommand(new[] { "umod.show", "u.show", "oxide.show", "o.show", "perm.show" }, "ShowCommand", "oxide.show");
-            AddCovalenceCommand(new[] { "umod.usergroup", "u.usergroup", "oxide.usergroup", "o.usergroup", "perm.usergroup" }, "UserGroupCommand", "oxide.usergroup");
+            AddCovalenceCommand(new[] { "umod.grant", "u.grant", "oxide.grant", "o.grant", "perm.grant" }, "GrantCommand", "umod.grant");
+            AddCovalenceCommand(new[] { "umod.group", "u.group", "oxide.group", "o.group", "perm.group" }, "GroupCommand", "umod.group");
+            AddCovalenceCommand(new[] { "umod.revoke", "u.revoke", "oxide.revoke", "o.revoke", "perm.revoke" }, "RevokeCommand", "umod.revoke");
+            AddCovalenceCommand(new[] { "umod.show", "u.show", "oxide.show", "o.show", "perm.show" }, "ShowCommand", "umod.show");
+            AddCovalenceCommand(new[] { "umod.usergroup", "u.usergroup", "oxide.usergroup", "o.usergroup", "perm.usergroup" }, "UserGroupCommand", "umod.usergroup");
 
             // Add core misc commands
             AddCovalenceCommand(new[] { "umod.lang", "u.lang", "oxide.lang", "o.lang", "lang" }, "LangCommand");
@@ -98,7 +98,7 @@ namespace uMod.Rust
                 lang.RegisterMessages(language.Value, this, language.Key);
             }
 
-            // Setup default permission groups
+            // Set up default permission groups
             if (permission.IsLoaded)
             {
                 int rank = 0;

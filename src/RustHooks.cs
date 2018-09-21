@@ -17,12 +17,12 @@ namespace uMod.Rust
     /// <summary>
     /// Game hooks and wrappers for the core Rust plugin
     /// </summary>
-    public partial class RustCore
+    public partial class Rust
     {
         internal bool isPlayerTakingDamage;
         internal static string ipPattern = @":{1}[0-9]{1}\d*";
 
-        #region Server Hooks
+        #region Server Console
 
         /// <summary>
         /// Called when ServerConsole is disabled
@@ -49,6 +49,38 @@ namespace uMod.Rust
             return null;
         }
 
+        #endregion Server Console
+
+        #region Modifications
+
+        // Disable native RCON if custom RCON is enabled
+        [HookMethod("IOnRconInitialize")]
+        private object IOnRconInitialize() => Interface.uMod.Config.Rcon.Enabled ? (object)true : null;
+
+        // Set default values for command-line arguments and hide output
+        [HookMethod("IOnRunCommandLine")]
+        private object IOnRunCommandLine()
+        {
+            foreach (KeyValuePair<string, string> pair in Facepunch.CommandLine.GetSwitches())
+            {
+                string value = pair.Value;
+                if (value == "")
+                {
+                    value = "1";
+                }
+
+                string str = pair.Key.Substring(1);
+                ConsoleSystem.Option options = ConsoleSystem.Option.Unrestricted;
+                options.PrintOutput = false;
+                ConsoleSystem.Run(options, str, value);
+            }
+            return true;
+        }
+
+        #endregion Modifications
+
+        #region Server Hooks
+
         /// <summary>
         /// Called when a remote console command is received
         /// </summary>
@@ -69,6 +101,7 @@ namespace uMod.Rust
                         string cmd = fullCommand[0].ToLower();
                         string[] args = fullCommand.Skip(1).ToArray();
 
+                        // Call universal hook
                         if (Interface.CallHook("OnRconCommand", sender, cmd, args) != null)
                         {
                             return true;
@@ -78,36 +111,6 @@ namespace uMod.Rust
             }
 
             return null;
-        }
-
-        /// <summary>
-        /// Called when the remote console is initialized
-        /// </summary>
-        /// <returns></returns>
-        [HookMethod("IOnRconInitialize")]
-        private object IOnRconInitialize() => Interface.uMod.Config.Rcon.Enabled ? (object)true : null;
-
-        /// <summary>
-        /// Called when the command-line is ran
-        /// </summary>
-        /// <returns></returns>
-        [HookMethod("IOnRunCommandLine")]
-        private object IOnRunCommandLine()
-        {
-            foreach (KeyValuePair<string, string> pair in Facepunch.CommandLine.GetSwitches())
-            {
-                string value = pair.Value;
-                if (value == "")
-                {
-                    value = "1";
-                }
-
-                string str = pair.Key.Substring(1);
-                ConsoleSystem.Option options = ConsoleSystem.Option.Unrestricted;
-                options.PrintOutput = false;
-                ConsoleSystem.Run(options, str, value);
-            }
-            return false;
         }
 
         /// <summary>

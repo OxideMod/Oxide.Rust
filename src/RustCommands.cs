@@ -9,7 +9,7 @@ namespace uMod.Rust
     /// <summary>
     /// Game commands for the core Rust plugin
     /// </summary>
-    public partial class RustCore
+    public partial class Rust
     {
         #region Grant Command
 

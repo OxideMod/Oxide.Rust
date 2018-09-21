@@ -449,7 +449,7 @@ namespace uMod.Rust
                 }
             }
 
-            return !RustCore.RestrictedCommands.Contains(command) && !RustCore.RestrictedCommands.Contains(fullName);
+            return !Rust.RestrictedCommands.Contains(command) && !Rust.RestrictedCommands.Contains(fullName);
         }
 
         #endregion Command Overriding

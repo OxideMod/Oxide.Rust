@@ -8,6 +8,6 @@ namespace uMod.Rust
     /// </summary>
     public class RustPluginLoader : PluginLoader
     {
-        public override Type[] CorePlugins => new[] { typeof(RustCore) };
+        public override Type[] CorePlugins => new[] { typeof(Rust) };
     }
 }

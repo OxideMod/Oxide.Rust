@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Linq;
 using uMod.Libraries.Covalence;
 
 namespace uMod.Rust
@@ -200,7 +201,8 @@ namespace uMod.Rust
         /// <param name="args"></param>
         public void Message(string message, string prefix, params object[] args)
         {
-            message = args.Length > 0 ? string.Format(Formatter.ToPlaintext(message), args) : Formatter.ToPlaintext(message);
+            ulong avatarId = args.Length > 0 && args[0].IsSteamId() ? (ulong)args[0] : 0ul;
+            message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), avatarId != 0ul ? args.Skip(1) : args) : Formatter.ToUnity(message);
             string formatted = prefix != null ? $"{prefix} {message}" : message;
             Interface.uMod.LogInfo(formatted);
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Linq;
 using System.Text.RegularExpressions;
 using uMod.Libraries;
 using uMod.Libraries.Covalence;
@@ -267,11 +268,12 @@ namespace uMod.Rust
         /// <param name="args"></param>
         public void Message(string message, string prefix, params object[] args)
         {
+            ulong avatarId = args.Length > 0 && args[0].IsSteamId() ? (ulong)args[0] : 0ul;
             if (!string.IsNullOrEmpty(message))
             {
-                message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), args) : Formatter.ToUnity(message);
+                message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), avatarId != 0ul ? args.Skip(1) : args) : Formatter.ToUnity(message);
                 string formatted = prefix != null ? $"{prefix} {message}" : message;
-                player.SendConsoleCommand("chat.add", 0, formatted, 1.0); // TODO: Allow specifying an ID somehow?
+                player.SendConsoleCommand("chat.add", avatarId, formatted, 1.0);
             }
         }
 

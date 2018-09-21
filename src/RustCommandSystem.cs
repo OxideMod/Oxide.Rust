@@ -27,12 +27,6 @@ namespace uMod.Rust
         // All registered commands
         internal IDictionary<string, RegisteredCommand> registeredCommands;
 
-        // All registerd console commands
-        internal Dictionary<string, ConsoleCommand> consoleCommands;
-
-        // All registered chat commands
-        internal Dictionary<string, ChatCommand> chatCommands;
-
         internal struct PluginCallback
         {
             public readonly Plugin Plugin;
@@ -211,7 +205,7 @@ namespace uMod.Rust
                 throw new CommandAlreadyExistsException(command);
             }
 
-            // Check if command already exists in another Covalence plugin
+            // Check if command already exists in another plugin
             RegisteredCommand cmd;
             if (registeredCommands.TryGetValue(command, out cmd))
             {
@@ -232,40 +226,6 @@ namespace uMod.Rust
                 }
 
                 ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
-            }
-
-            // Check if command already exists in a Rust plugin as a chat command
-            ChatCommand chatCommand;
-            if (chatCommands.TryGetValue(command, out chatCommand))
-            {
-                string previousPluginName = chatCommand.Plugin?.Name ?? "an unknown plugin";
-                string newPluginName = plugin?.Name ?? "An unknown plugin";
-                string message = $"{newPluginName} has replaced the '{command}' chat command previously registered by {previousPluginName}";
-                Interface.uMod.LogWarning(message);
-                chatCommands.Remove(command);
-            }
-
-            // Check if command already exists in a Rust plugin as a console command
-            ConsoleCommand consoleCommand;
-            if (consoleCommands.TryGetValue(fullName, out consoleCommand))
-            {
-                if (consoleCommand.OriginalCallback != null)
-                {
-                    newCommand.OriginalCallback = consoleCommand.OriginalCallback;
-                }
-
-                string previousPluginName = consoleCommand.Callback.Plugin?.Name ?? "an unknown plugin";
-                string newPluginName = plugin?.Name ?? "An unknown plugin";
-                string message = $"{newPluginName} has replaced the '{fullName}' console command previously registered by {previousPluginName}";
-                Interface.uMod.LogWarning(message);
-
-                ConsoleSystem.Index.Server.Dict.Remove(consoleCommand.RustCommand.FullName);
-                if (parent == "global")
-                {
-                    ConsoleSystem.Index.Server.GlobalDict.Remove(consoleCommand.RustCommand.Name);
-                }
-                ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
-                consoleCommands.Remove(consoleCommand.RustCommand.FullName);
             }
 
             // Check if command is a vanilla Rust command
@@ -426,24 +386,6 @@ namespace uMod.Rust
             if (registeredCommands.TryGetValue(command, out cmd))
             {
                 if (cmd.Source.IsCorePlugin)
-                {
-                    return false;
-                }
-            }
-
-            ChatCommand chatCommand;
-            if (chatCommands.TryGetValue(command, out chatCommand))
-            {
-                if (chatCommand.Plugin.IsCorePlugin)
-                {
-                    return false;
-                }
-            }
-
-            ConsoleCommand consoleCommand;
-            if (consoleCommands.TryGetValue(fullName, out consoleCommand))
-            {
-                if (consoleCommand.Callback.Plugin.IsCorePlugin)
                 {
                     return false;
                 }

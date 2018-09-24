@@ -1,4 +1,4 @@
-using uMod.Libraries.Covalence;
+﻿using uMod.Libraries.Covalence;
 
 namespace uMod.Rust
 {
@@ -40,7 +40,7 @@ namespace uMod.Rust
         /// <summary>
         /// Gets the command system provider
         /// </summary>
-        public RustCommandSystem CommandSystem { get; private set; }
+        public RustCommands CommandSystem { get; private set; }
 
         /// <summary>
         /// Creates the game-specific server object
@@ -63,7 +63,7 @@ namespace uMod.Rust
         /// Creates the game-specific command system provider object
         /// </summary>
         /// <returns></returns>
-        public ICommandSystem CreateCommandSystemProvider() => CommandSystem = new RustCommandSystem();
+        public ICommandSystem CreateCommandSystemProvider() => CommandSystem = new RustCommands();
 
         /// <summary>
         /// Formats the text with universal markup into game-specific markup

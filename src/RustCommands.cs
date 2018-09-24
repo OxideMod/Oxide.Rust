@@ -11,7 +11,7 @@ namespace uMod.Rust
     /// <summary>
     /// Represents a binding to a generic command system
     /// </summary>
-    public class RustCommandSystem : ICommandSystem
+    public class RustCommands : ICommandSystem
     {
         #region Initialization
 
@@ -157,7 +157,7 @@ namespace uMod.Rust
         /// <summary>
         /// Initializes the command system
         /// </summary>
-        public RustCommandSystem()
+        public RustCommands()
         {
             registeredCommands = new Dictionary<string, RegisteredCommand>();
             commandHandler = new CommandHandler(CommandCallback, registeredCommands.ContainsKey);

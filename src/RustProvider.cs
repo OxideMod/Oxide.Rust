@@ -1,4 +1,4 @@
-﻿using uMod.Libraries.Covalence;
+using uMod.Libraries.Covalence;
 
 namespace uMod.Rust
 {
@@ -66,8 +66,7 @@ namespace uMod.Rust
         public ICommandSystem CreateCommandSystemProvider() => CommandSystem = new RustCommandSystem();
 
         /// <summary>
-        /// Formats the text with markup as specified in uMod.Libraries.Covalence.Formatter
-        /// into the game-specific markup language
+        /// Formats the text with universal markup into game-specific markup
         /// </summary>
         /// <param name="text">text to format</param>
         /// <returns>formatted text</returns>

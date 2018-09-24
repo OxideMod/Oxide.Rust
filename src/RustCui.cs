@@ -211,22 +211,22 @@ namespace uMod.Rust.Cui
     {
         public string Type => "UnityEngine.UI.Text";
 
-        //The string value this text will display.
+        // The string value this text will display.
         [DefaultValue("Text")]
         [JsonProperty("text")]
         public string Text { get; set; } = "Text";
 
-        //The size that the Font should render at.
+        // The size that the Font should render at.
         [DefaultValue(14)]
         [JsonProperty("fontSize")]
         public int FontSize { get; set; } = 14;
 
-        //The Font used by the text.
+        // The Font used by the text.
         [DefaultValue("RobotoCondensed-Bold.ttf")]
         [JsonProperty("font")]
         public string Font { get; set; } = "RobotoCondensed-Bold.ttf";
 
-        //The positioning of the text reliative to its RectTransform.
+        // The positioning of the text reliative to its RectTransform.
         [DefaultValue(TextAnchor.UpperLeft)]
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("align")]
@@ -297,19 +297,19 @@ namespace uMod.Rust.Cui
         [JsonProperty("close")]
         public string Close { get; set; }
 
-        //The sprite that is used to render this image.
+        // The sprite that is used to render this image.
         [DefaultValue("Assets/Content/UI/UI.Background.Tile.psd")]
         [JsonProperty("sprite")]
         public string Sprite { get; set; } = "Assets/Content/UI/UI.Background.Tile.psd";
 
-        //The Material set by the player.
+        // The Material set by the player.
         [DefaultValue("Assets/Icons/IconMaterial.mat")]
         [JsonProperty("material")]
         public string Material { get; set; } = "Assets/Icons/IconMaterial.mat";
 
         public string Color { get; set; } = "1.0 1.0 1.0 1.0";
 
-        //How the Image is draw.
+        // How the Image is draw.
         [DefaultValue(Image.Type.Simple)]
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("imagetype")]
@@ -323,15 +323,15 @@ namespace uMod.Rust.Cui
     {
         public string Type => "UnityEngine.UI.Outline";
 
-        //Color for the effect.
+        // Color for the effect.
         public string Color { get; set; } = "1.0 1.0 1.0 1.0";
 
-        //How far is the shadow from the graphic.
+        // How far is the shadow from the graphic.
         [DefaultValue("1.0 -1.0")]
         [JsonProperty("distance")]
         public string Distance { get; set; } = "1.0 -1.0";
 
-        //Should the shadow inherit the alpha from the graphic?
+        // Should the shadow inherit the alpha from the graphic?
         [DefaultValue(false)]
         [JsonProperty("useGraphicAlpha")]
         public bool UseGraphicAlpha { get; set; }
@@ -341,22 +341,22 @@ namespace uMod.Rust.Cui
     {
         public string Type => "UnityEngine.UI.InputField";
 
-        //The string value this text will display.
+        // The string value this text will display.
         [DefaultValue("Text")]
         [JsonProperty("text")]
         public string Text { get; set; } = "Text";
 
-        //The size that the Font should render at.
+        // The size that the Font should render at.
         [DefaultValue(14)]
         [JsonProperty("fontSize")]
         public int FontSize { get; set; } = 14;
 
-        //The Font used by the text.
+        // The Font used by the text.
         [DefaultValue("RobotoCondensed-Bold.ttf")]
         [JsonProperty("font")]
         public string Font { get; set; } = "RobotoCondensed-Bold.ttf";
 
-        //The positioning of the text reliative to its RectTransform.
+        // The positioning of the text reliative to its RectTransform.
         [DefaultValue(TextAnchor.UpperLeft)]
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("align")]
@@ -385,22 +385,22 @@ namespace uMod.Rust.Cui
     {
         public string Type => "RectTransform";
 
-        //The normalized position in the parent RectTransform that the lower left corner is anchored to.
+        // The normalized position in the parent RectTransform that the lower left corner is anchored to.
         [DefaultValue("0.0 0.0")]
         [JsonProperty("anchormin")]
         public string AnchorMin { get; set; } = "0.0 0.0";
 
-        //The normalized position in the parent RectTransform that the upper right corner is anchored to.
+        // The normalized position in the parent RectTransform that the upper right corner is anchored to.
         [DefaultValue("1.0 1.0")]
         [JsonProperty("anchormax")]
         public string AnchorMax { get; set; } = "1.0 1.0";
 
-        //The offset of the lower left corner of the rectangle relative to the lower left anchor.
+        // The offset of the lower left corner of the rectangle relative to the lower left anchor.
         [DefaultValue("0.0 0.0")]
         [JsonProperty("offsetmin")]
         public string OffsetMin { get; set; } = "0.0 0.0";
 
-        //The offset of the upper right corner of the rectangle relative to the upper right anchor.
+        // The offset of the upper right corner of the rectangle relative to the upper right anchor.
         [DefaultValue("0.0 0.0")]
         [JsonProperty("offsetmax")]
         public string OffsetMax { get; set; } = "0.0 0.0";

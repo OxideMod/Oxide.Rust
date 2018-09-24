@@ -172,7 +172,7 @@ namespace uMod.Rust
         public void Save()
         {
             ConVar.Server.save(null);
-            File.WriteAllText(string.Concat(ConVar.Server.GetServerFolder("cfg"), "/serverauto.cfg"), ConsoleSystem.SaveToConfigString(true));
+            File.WriteAllText(Path.Combine(ConVar.Server.GetServerFolder("cfg"), "serverauto.cfg"), ConsoleSystem.SaveToConfigString(true));
             ServerUsers.Save();
         }
 

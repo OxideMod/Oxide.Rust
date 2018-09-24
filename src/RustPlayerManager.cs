@@ -23,11 +23,12 @@ namespace uMod.Rust
         private IDictionary<string, PlayerRecord> playerData;
         private IDictionary<string, RustPlayer> allPlayers;
         private IDictionary<string, RustPlayer> connectedPlayers;
+        private const string dataFileName = "umod";
 
         internal void Initialize()
         {
-            Utility.DatafileToProto<Dictionary<string, PlayerRecord>>("oxide.covalence");
-            playerData = ProtoStorage.Load<Dictionary<string, PlayerRecord>>("oxide.covalence") ?? new Dictionary<string, PlayerRecord>();
+            // TODO: Migrate/move from oxide.covalence.data to umod.data if SQLite is not used, else migrate to umod.db with SQLite
+            playerData = ProtoStorage.Load<Dictionary<string, PlayerRecord>>(dataFileName) ?? new Dictionary<string, PlayerRecord>();
             allPlayers = new Dictionary<string, RustPlayer>();
             connectedPlayers = new Dictionary<string, RustPlayer>();
 
@@ -65,7 +66,7 @@ namespace uMod.Rust
 
         internal void PlayerDisconnected(BasePlayer player) => connectedPlayers.Remove(player.UserIDString);
 
-        internal void SavePlayerData() => ProtoStorage.Save(playerData, "oxide.covalence");
+        internal void SavePlayerData() => ProtoStorage.Save(playerData, dataFileName);
 
         #region Player Finding
 

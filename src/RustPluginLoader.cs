@@ -4,7 +4,7 @@ using uMod.Plugins;
 namespace uMod.Rust
 {
     /// <summary>
-    /// Responsible for loading Rust core plugins
+    /// Responsible for loading the core Rust plugin
     /// </summary>
     public class RustPluginLoader : PluginLoader
     {

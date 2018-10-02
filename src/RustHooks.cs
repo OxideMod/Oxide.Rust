@@ -235,42 +235,41 @@ namespace uMod.Rust
         [HookMethod("IOnUserApprove")]
         private object IOnUserApprove(Connection connection)
         {
-            string name = connection.username;
-            string id = connection.userid.ToString();
-            string ip = Regex.Replace(connection.ipaddress, ipPattern, "");
-            uint authLevel = connection.authLevel;
+            string username = connection.username;
+            string userId = connection.userid.ToString();
+            string ipAddress = Regex.Replace(connection.ipaddress, ipPattern, "");
 
             // Update player's permissions group and name
             if (permission.IsLoaded)
             {
                 // Update player's stored username
-                permission.UpdateNickname(id, name);
+                permission.UpdateNickname(userId, username);
 
                 // Set default groups, if necessary
                 uModConfig.DefaultGroups defaultGroups = Interface.uMod.Config.Options.DefaultGroups;
-                if (!permission.UserHasGroup(id, defaultGroups.Players))
+                if (!permission.UserHasGroup(userId, defaultGroups.Players))
                 {
-                    permission.AddUserGroup(id, defaultGroups.Players);
+                    permission.AddUserGroup(userId, defaultGroups.Players);
                 }
-                if (authLevel == 2 && !permission.UserHasGroup(id, defaultGroups.Administrators))
+                if (connection.authLevel == 2 && !permission.UserHasGroup(userId, defaultGroups.Administrators))
                 {
-                    permission.AddUserGroup(id, defaultGroups.Administrators);
+                    permission.AddUserGroup(userId, defaultGroups.Administrators);
                 }
             }
 
             // Let covalence know
-            Covalence.PlayerManager.PlayerJoin(connection.userid, name); // TODO: Handle this automatically
+            Covalence.PlayerManager.PlayerJoin(connection.userid, username); // TODO: Handle this automatically
 
             // Call universal hook
-            object canLogin = Interface.CallHook("CanPlayerLogin", name, id, ip);
+            object canLogin = Interface.CallHook("CanPlayerLogin", username, userId, ipAddress);
             if (canLogin is string || canLogin is bool && !(bool)canLogin)
             {
-                ConnectionAuth.Reject(connection, canLogin is string ? canLogin.ToString() : lang.GetMessage("ConnectionRejected", this, id));
+                ConnectionAuth.Reject(connection, canLogin is string ? canLogin.ToString() : lang.GetMessage("ConnectionRejected", this, userId));
                 return true;
             }
 
             // Let plugins know
-            Interface.CallHook("OnPlayerApproved", name, id, ip);
+            Interface.CallHook("OnPlayerApproved", username, userId, ipAddress);
             return null;
         }
 
@@ -305,18 +304,19 @@ namespace uMod.Rust
             string message = arg.GetString(0).Trim();
             if (string.IsNullOrEmpty(message))
             {
+                // Ignore if message is empty
                 return true;
             }
 
-            // Get player objects
+            // Get player object
             IPlayer player = (arg.Connection.player as BasePlayer)?.IPlayer;
-            if (player == null)
+            if (player != null)
             {
-                return null;
+                // Call universal hook
+                return Interface.CallHook("OnPlayerChat", player, message) != null;
             }
 
-            // Call universal hook
-            return Interface.CallHook("OnPlayerChat", player, message) != null;
+            return null;
         }
 
         /// <summary>
@@ -393,11 +393,15 @@ namespace uMod.Rust
         [HookMethod("OnPlayerInit")]
         private void OnPlayerInit(BasePlayer basePlayer)
         {
-            // Set default language for player
-            lang.SetLanguage(basePlayer.net.connection.info.GetString("global.language", "en"), basePlayer.UserIDString);
+            // Set default language for player if not set
+            if (string.IsNullOrEmpty(lang.GetLanguage(basePlayer.UserIDString)))
+            {
+                lang.SetLanguage(basePlayer.net.connection.info.GetString("global.language", "en"), basePlayer.UserIDString);
+            }
 
             // Let covalence know
             Covalence.PlayerManager.PlayerConnected(basePlayer);
+
             IPlayer player = Covalence.PlayerManager.FindPlayerById(basePlayer.UserIDString);
             if (player != null)
             {

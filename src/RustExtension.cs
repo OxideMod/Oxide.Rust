@@ -2,12 +2,14 @@
 using Facepunch.Extend;
 using Network;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using uMod.Extensions;
 using uMod.Plugins;
 using uMod.Unity;
 using UnityEngine;
+using LogType = UnityEngine.LogType;
 
 namespace uMod.Rust
 {
@@ -16,6 +18,7 @@ namespace uMod.Rust
     /// </summary>
     public class RustExtension : Extension
     {
+        // Get assembly info
         internal static Assembly Assembly = Assembly.GetExecutingAssembly();
         internal static AssemblyName AssemblyName = Assembly.GetName();
         internal static VersionNumber AssemblyVersion = new VersionNumber(AssemblyName.Version.Major, AssemblyName.Version.Minor, AssemblyName.Version.Build);
@@ -45,6 +48,12 @@ namespace uMod.Rust
         /// Gets the branch of this extension
         /// </summary>
         public override string Branch => "public"; // TODO: Handle this programmatically
+
+        // Commands that a plugin can't override
+        internal static IEnumerable<string> RestrictedCommands => new[]
+        {
+            "ownerid", "moderatorid", "removeowner", "removemoderator"
+        };
 
         /// <summary>
         /// Default game-specific references for use in plugins

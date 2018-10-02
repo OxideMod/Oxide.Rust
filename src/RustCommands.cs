@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using uMod.Libraries;
 using uMod.Libraries.Covalence;
 using uMod.Plugins;
 using UnityEngine;
@@ -54,7 +53,6 @@ namespace uMod.Rust
             public PluginCallback Callback;
             public readonly ConsoleSystem.Command RustCommand;
             public Action<ConsoleSystem.Arg> OriginalCallback;
-            internal readonly Permission permission = Interface.uMod.GetLibrary<Permission>();
 
             public ConsoleCommand(string name)
             {
@@ -214,10 +212,9 @@ namespace uMod.Rust
                     newCommand.OriginalCallback = cmd.OriginalCallback;
                 }
 
-                string previousPluginName = cmd.Source?.Name ?? "an unknown plugin";
                 string newPluginName = plugin?.Name ?? "An unknown plugin";
-                string message = $"{newPluginName} has replaced the '{command}' command previously registered by {previousPluginName}";
-                Interface.uMod.LogWarning(message);
+                string previousPluginName = cmd.Source?.Name ?? "an unknown plugin";
+                Interface.uMod.LogWarning($"{newPluginName} has replaced the '{command}' command previously registered by {previousPluginName}");
 
                 ConsoleSystem.Index.Server.Dict.Remove(fullName);
                 if (parent == "global")
@@ -256,25 +253,23 @@ namespace uMod.Rust
                 Variable = false,
                 Call = arg =>
                 {
-                    if (arg == null)
+                    if (arg != null)
                     {
-                        return;
-                    }
-
-                    BasePlayer player = arg.Player();
-                    if (arg.Connection != null && player != null)
-                    {
-                        RustPlayer iplayer = player.IPlayer as RustPlayer;
-                        if (iplayer != null)
+                        BasePlayer basePlayer = arg.Player();
+                        if (arg.Connection != null && basePlayer != null)
                         {
-                            iplayer.LastCommand = CommandType.Console;
-                            callback(iplayer, command, ExtractArgs(arg));
+                            IPlayer player = basePlayer.IPlayer;
+                            if (player != null)
+                            {
+                                player.LastCommand = CommandType.Console;
+                                callback(player, command, ExtractArgs(arg));
+                            }
                         }
-                    }
-                    else if (arg.Connection == null)
-                    {
-                        consolePlayer.LastCommand = CommandType.Console;
-                        callback(consolePlayer, command, ExtractArgs(arg));
+                        else if (arg.Connection == null)
+                        {
+                            consolePlayer.LastCommand = CommandType.Console;
+                            callback(consolePlayer, command, ExtractArgs(arg));
+                        }
                     }
                 }
             };
@@ -377,11 +372,6 @@ namespace uMod.Rust
         /// <returns></returns>
         private bool CanOverrideCommand(string command)
         {
-            string[] split = command.Split('.');
-            string parent = split.Length >= 2 ? split[0].Trim() : "global";
-            string name = split.Length >= 2 ? string.Join(".", split.Skip(1).ToArray()) : split[0].Trim();
-            string fullName = $"{parent}.{name}";
-
             RegisteredCommand cmd;
             if (registeredCommands.TryGetValue(command, out cmd))
             {
@@ -391,7 +381,10 @@ namespace uMod.Rust
                 }
             }
 
-            return !Rust.RestrictedCommands.Contains(command) && !Rust.RestrictedCommands.Contains(fullName);
+            string[] split = command.Split('.');
+            string parent = split.Length >= 2 ? split[0].Trim() : "global";
+            string name = split.Length >= 2 ? string.Join(".", split.Skip(1).ToArray()) : split[0].Trim();
+            return !RustExtension.RestrictedCommands.Contains(command) && !RustExtension.RestrictedCommands.Contains($"{parent}.{name}");
         }
 
         #endregion Command Overriding
@@ -403,7 +396,7 @@ namespace uMod.Rust
         /// </summary>
         /// <param name="arg"></param>
         /// <returns></returns>
-        private static string[] ExtractArgs(ConsoleSystem.Arg arg)
+        internal static string[] ExtractArgs(ConsoleSystem.Arg arg)
         {
             if (arg == null)
             {

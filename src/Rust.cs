@@ -36,12 +36,6 @@ namespace uMod.Rust
         internal readonly PluginManager pluginManager = Interface.uMod.RootPluginManager;
         internal readonly IServer Server = Covalence.CreateServer();
 
-        // Commands that a plugin can't override
-        internal static IEnumerable<string> RestrictedCommands => new[]
-        {
-            "ownerid", "moderatorid", "removeowner", "removemoderator"
-        };
-
         internal bool serverInitialized;
 
         /// <summary>
@@ -75,22 +69,22 @@ namespace uMod.Rust
             RemoteLogger.SetTag("game version", Server.Version);
 
             // Add core plugin commands
-            AddCovalenceCommand(new[] { "umod.plugins", "u.plugins", "oxide.plugins", "o.plugins", "plugins" }, "PluginsCommand", "umod.plugins");
-            AddCovalenceCommand(new[] { "umod.load", "u.load", "oxide.load", "o.load", "plugin.load" }, "LoadCommand", "umod.load");
-            AddCovalenceCommand(new[] { "umod.reload", "u.reload", "oxide.reload", "o.reload", "plugin.reload" }, "ReloadCommand", "umod.reload");
-            AddCovalenceCommand(new[] { "umod.unload", "u.unload", "oxide.unload", "o.unload", "plugin.unload" }, "UnloadCommand", "umod.unload");
+            AddCovalenceCommand(new[] { "umod.plugins", "u.plugins", "oxide.plugins", "o.plugins", "plugins" }, nameof(Commands.PluginsCommand), "umod.plugins");
+            AddCovalenceCommand(new[] { "umod.load", "u.load", "oxide.load", "o.load", "plugin.load" }, nameof(Commands.LoadCommand), "umod.load");
+            AddCovalenceCommand(new[] { "umod.reload", "u.reload", "oxide.reload", "o.reload", "plugin.reload" }, nameof(Commands.ReloadCommand), "umod.reload");
+            AddCovalenceCommand(new[] { "umod.unload", "u.unload", "oxide.unload", "o.unload", "plugin.unload" }, nameof(Commands.UnloadCommand), "umod.unload");
 
             // Add core permission commands
-            AddCovalenceCommand(new[] { "umod.grant", "u.grant", "oxide.grant", "o.grant", "perm.grant" }, "GrantCommand", "umod.grant");
-            AddCovalenceCommand(new[] { "umod.group", "u.group", "oxide.group", "o.group", "perm.group" }, "GroupCommand", "umod.group");
-            AddCovalenceCommand(new[] { "umod.revoke", "u.revoke", "oxide.revoke", "o.revoke", "perm.revoke" }, "RevokeCommand", "umod.revoke");
-            AddCovalenceCommand(new[] { "umod.show", "u.show", "oxide.show", "o.show", "perm.show" }, "ShowCommand", "umod.show");
-            AddCovalenceCommand(new[] { "umod.usergroup", "u.usergroup", "oxide.usergroup", "o.usergroup", "perm.usergroup" }, "UserGroupCommand", "umod.usergroup");
+            AddCovalenceCommand(new[] { "umod.grant", "u.grant", "oxide.grant", "o.grant", "perm.grant" }, nameof(Commands.GrantCommand), "umod.grant");
+            AddCovalenceCommand(new[] { "umod.group", "u.group", "oxide.group", "o.group", "perm.group" }, nameof(Commands.GroupCommand), "umod.group");
+            AddCovalenceCommand(new[] { "umod.revoke", "u.revoke", "oxide.revoke", "o.revoke", "perm.revoke" }, nameof(Commands.RevokeCommand), "umod.revoke");
+            AddCovalenceCommand(new[] { "umod.show", "u.show", "oxide.show", "o.show", "perm.show" }, nameof(Commands.ShowCommand), "umod.show");
+            AddCovalenceCommand(new[] { "umod.usergroup", "u.usergroup", "oxide.usergroup", "o.usergroup", "perm.usergroup" }, nameof(Commands.UserGroupCommand), "umod.usergroup");
 
             // Add core misc commands
-            AddCovalenceCommand(new[] { "umod.lang", "u.lang", "oxide.lang", "o.lang", "lang" }, "LangCommand");
-            AddCovalenceCommand(new[] { "umod.save", "u.save", "oxide.save", "o.save" }, "SaveCommand");
-            AddCovalenceCommand(new[] { "umod.version", "u.version", "oxide.version", "o.version" }, "VersionCommand");
+            AddCovalenceCommand(new[] { "umod.lang", "u.lang", "oxide.lang", "o.lang", "lang" }, nameof(Commands.LangCommand));
+            AddCovalenceCommand(new[] { "umod.save", "u.save", "oxide.save", "o.save" }, nameof(Commands.SaveCommand));
+            AddCovalenceCommand(new[] { "umod.version", "u.version", "oxide.version", "o.version" }, nameof(Commands.VersionCommand));
 
             // Register messages for localization
             foreach (KeyValuePair<string, Dictionary<string, string>> language in Localization.languages)

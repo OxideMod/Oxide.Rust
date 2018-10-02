@@ -503,7 +503,7 @@ namespace uMod.Rust
         /// Returns a human readable string representation of this IPlayer
         /// </summary>
         /// <returns></returns>
-        public override string ToString() => $"Covalence.RustPlayer[{Id}, {Name}]";
+        public override string ToString() => $"RustPlayer[{Id}, {Name}]";
 
         #endregion Operator Overloads
     }

@@ -140,18 +140,18 @@ namespace Oxide.Game.Rust
         [HookMethod("OnPluginLoaded")]
         private void OnPluginLoaded(Plugin plugin)
         {
-            // Call OnServerInitialized for hotloaded plugins
             if (serverInitialized)
             {
-                plugin.CallHook("OnServerInitialized");
+                // Call OnServerInitialized for hotloaded plugins
+                plugin.CallHook("OnServerInitialized", false);
             }
         }
 
         /// <summary>
         /// Called when the server is first initialized
         /// </summary>
-        [HookMethod("OnServerInitialized")]
-        private void OnServerInitialized()
+        [HookMethod("IOnServerInitialized")]
+        private void IOnServerInitialized()
         {
             if (!serverInitialized)
             {
@@ -172,6 +172,9 @@ namespace Oxide.Game.Rust
                 }
 
                 serverInitialized = true;
+
+                // Let plugins know server startup is complete
+                Interface.CallHook("OnServerInitialized", serverInitialized);
             }
         }
 

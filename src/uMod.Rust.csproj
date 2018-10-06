@@ -6,11 +6,11 @@
     <AssemblyName>uMod.Rust</AssemblyName>
     <Authors>The uMod Project Team and Contributors</Authors>
     <Description>Rust extension for the uMod modding framework</Description>
-    <RepositoryUrl>https://github.com/theumod/umod.rust</RepositoryUrl>
-    <PackageLicenseUrl>https://github.com/theumod/umod.rust/blob/develop/LICENSE.md</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/theumod/umod.rust</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/theumod/uMod.Rust</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/theumod/uMod.Rust/blob/develop/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/theumod/uMod.Rust</PackageProjectUrl>
     <PackageIconUrl>https://avatars0.githubusercontent.com/u/14957982?s=64</PackageIconUrl>
-    <Copyright>Copyright (c) 2014-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
+    <Copyright>Copyright (c) 2013-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
     <PackageTags>gaming modding plugins unity unity3d</PackageTags>
     <ThisAssemblyNamespace>$(AssemblyName)</ThisAssemblyNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -28,8 +28,8 @@
       <PrivateAssets>contentfiles;analyzers;build</PrivateAssets>
     </PackageReference>
     <PackageReference Include="uMod" Version="3.0.3885-develop" />
-    <!--<PackageReference Include="uMod.MySql" Version="2.0.*" />
-    <PackageReference Include="uMod.SQLite" Version="2.0.*" />-->
+    <!--<PackageReference Include="uMod.MySql" Version="3.0.*" />
+    <PackageReference Include="uMod.SQLite" Version="3.0.*" />-->
     <PackageReference Include="uMod.Unity" Version="3.0.3764-develop" />
     <Reference Include="Assembly-CSharp">
       <HintPath>Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll</HintPath>

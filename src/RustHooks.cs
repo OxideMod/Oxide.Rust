@@ -123,11 +123,16 @@ namespace uMod.Rust
         {
             if (arg == null || arg.Connection != null && arg.Player() == null)
             {
-                return true; // Ingore console commands from client during connection
+                return true; // Ignore console commands from client during connection
+            }
+
+            if (arg.cmd.FullName == "chat.say")
+            {
+                return null; // Skip chat commands, those are handled elsewhere
             }
 
             // Call universal hook
-            return arg.cmd.FullName != "chat.say" ? Interface.CallHook("OnServerCommand", arg.cmd.FullName) : null;
+            return arg.Player() == null ? Interface.CallHook("OnServerCommand", arg.cmd.FullName, arg.Args) : Interface.CallHook("OnPlayerCommand", arg.Player(), arg.cmd.FullName, arg.Args);
         }
 
         #endregion Server Hooks

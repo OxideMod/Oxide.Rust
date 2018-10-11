@@ -2545,7 +2545,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 86,
+            "InjectionIndex": 91,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
@@ -2564,7 +2564,7 @@
                 "UnityEngine.Quaternion"
               ]
             },
-            "MSILHash": "Ufan1N5FdYZFwqwAPGYpJbXvMjGzez+q/BBqTw08p2A=",
+            "MSILHash": "p4vQAyylsV4vKu3OBhSQbRE3Kn+n3Ct6eX5z0ii/cf8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5213,7 +5213,7 @@
                 "EasyAntiCheat.Server.Hydra.ClientStatusUpdate`1<EasyAntiCheat.Server.Hydra.Client>"
               ]
             },
-            "MSILHash": "H31bkI4SlonBSBafm37tsLmyJsvOc+igpTw64Tt/42w=",
+            "MSILHash": "6ac1/QoVgggPB5YWtrNky/CevmWfn/pURLFNox95P6I=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5221,7 +5221,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 6,
+            "InjectionIndex": 12,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, this",
@@ -5240,7 +5240,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "w0z3E0ld3n8ubpGsmbkJK4PsI83UcZAmDrH6/SxqJEo=",
+            "MSILHash": "OgNwQc6JKNDxdKqEXLXH7uFd9kbDQXp3NUYcq+ipf8E=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5248,7 +5248,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 166,
+            "InjectionIndex": 168,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -5267,7 +5267,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "w0z3E0ld3n8ubpGsmbkJK4PsI83UcZAmDrH6/SxqJEo=",
+            "MSILHash": "OgNwQc6JKNDxdKqEXLXH7uFd9kbDQXp3NUYcq+ipf8E=",
             "BaseHookName": "CanDismountEntity",
             "HookCategory": "Player"
           }
@@ -6144,8 +6144,8 @@
             "ArgumentBehavior": 3,
             "ArgumentString": "",
             "HookTypeName": "Simple",
-            "Name": "OnNpcTarget [animals]",
-            "HookName": "OnNpcTarget",
+            "Name": "IOnNpcTarget [animals, internal]",
+            "HookName": "IOnNpcTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseNpc",
             "Flagged": false,

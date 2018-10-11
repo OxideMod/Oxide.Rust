@@ -567,7 +567,7 @@ namespace uMod.Rust
                 npc.SetFact(BaseNpc.Facts.HasEnemy, 0);
                 npc.SetFact(BaseNpc.Facts.EnemyRange, 3);
                 npc.SetFact(BaseNpc.Facts.AfraidRange, 1);
-                return true;
+                return 0f;
             }
 
             return null;

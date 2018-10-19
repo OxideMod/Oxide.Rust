@@ -564,6 +564,8 @@ namespace uMod.Rust
         {
             if (npc != null && Interface.CallHook("OnNpcPlayerTarget", npc.Body, target) != null)
             {
+                npc.AiDomain.NpcContext.BaseMemory.Forget(0f);
+                npc.AiDomain.NpcContext.BaseMemory.PrimaryKnownEnemyPlayer.PlayerInfo.Player = null;
                 return true;
             }
 

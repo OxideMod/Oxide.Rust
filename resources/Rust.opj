@@ -7357,7 +7357,7 @@
             "HookName": "OnNpcPlayerTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Rust.Ai.HTN.BaseNpcMemory",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "RememberEnemyPlayer",
@@ -7387,7 +7387,7 @@
             "HookName": "IOnHtnNpcPlayerTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Rust.Ai.HTN.Sensors.PlayersInRangeSensor",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "Tick",

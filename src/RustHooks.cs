@@ -141,6 +141,19 @@ namespace uMod.Rust
         #region Player Hooks
 
         /// <summary>
+        /// Called when a player attempts to pickup a DoorCloser entity
+        /// </summary>
+        /// <param name="player"></param>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        [HookMethod("ICanPickupEntity")]
+        private object ICanPickupEntity(BasePlayer player, DoorCloser entity)
+        {
+            object callHook = Interface.CallHook("CanPickupEntity", player, entity);
+            return callHook is bool result && result ? (object)true : null;
+        }
+
+        /// <summary>
         /// Called when a BasePlayer is attacked
         /// This is used to call OnEntityTakeDamage for a BasePlayer when attacked
         /// </summary>

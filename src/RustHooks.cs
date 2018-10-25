@@ -1,5 +1,6 @@
 using Network;
 using Rust.Ai;
+using Rust.Ai.HTN;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -511,8 +512,8 @@ namespace uMod.Rust
                 });
         }
 
-        /// <summary>H
-        /// Called when an NPC player tries to target an entity based on closeness
+        /// <summary>
+        /// Called when an Apex NPC player tries to target an entity based on closeness
         /// </summary>
         /// <param name="npc"></param>
         /// <returns></returns>
@@ -524,7 +525,7 @@ namespace uMod.Rust
         }
 
         /// <summary>
-        /// Called when an NPC player tries to target an entity based on vision
+        /// Called when an Apex NPC player tries to target an entity based on vision
         /// </summary>
         /// <param name="npc"></param>
         /// <returns></returns>
@@ -536,7 +537,7 @@ namespace uMod.Rust
         }
 
         /// <summary>
-        /// Called when an NPC player tries to target an entity
+        /// Called when a Murderer NPC player tries to target an entity
         /// </summary>
         /// <param name="npc"></param>
         /// <param name="target"></param>
@@ -547,6 +548,23 @@ namespace uMod.Rust
             if (Interface.CallHook("OnNpcPlayerTarget", npc, target) != null)
             {
                 return 0f;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Called when an HTN NPC player tries to target an entity
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        [HookMethod("IOnHtnNpcPlayerTarget")]
+        private object IOnHtnNpcPlayerTarget(IHTNAgent npc, BasePlayer target)
+        {
+            if (npc != null && Interface.CallHook("OnNpcPlayerTarget", npc.Body, target) != null)
+            {
+                return true;
             }
 
             return null;

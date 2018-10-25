@@ -164,8 +164,7 @@ namespace uMod.Rust
 
         private bool CommandCallback(IPlayer caller, string cmd, string[] args)
         {
-            RegisteredCommand command;
-            return registeredCommands.TryGetValue(cmd, out command) && command.Callback(caller, cmd, args);
+            return registeredCommands.TryGetValue(cmd, out RegisteredCommand command) && command.Callback(caller, cmd, args);
         }
 
         #endregion Initialization
@@ -204,8 +203,7 @@ namespace uMod.Rust
             }
 
             // Check if command already exists in another plugin
-            RegisteredCommand cmd;
-            if (registeredCommands.TryGetValue(command, out cmd))
+            if (registeredCommands.TryGetValue(command, out RegisteredCommand cmd))
             {
                 if (cmd.OriginalCallback != null)
                 {
@@ -226,8 +224,7 @@ namespace uMod.Rust
             }
 
             // Check if command is a vanilla Rust command
-            ConsoleSystem.Command rustCommand;
-            if (ConsoleSystem.Index.Server.Dict.TryGetValue(fullName, out rustCommand))
+            if (ConsoleSystem.Index.Server.Dict.TryGetValue(fullName, out ConsoleSystem.Command rustCommand))
             {
                 if (rustCommand.Variable)
                 {
@@ -297,8 +294,7 @@ namespace uMod.Rust
         /// <param name="plugin"></param>
         public void UnregisterCommand(string command, Plugin plugin)
         {
-            RegisteredCommand cmd;
-            if (!registeredCommands.TryGetValue(command, out cmd))
+            if (!registeredCommands.TryGetValue(command, out RegisteredCommand cmd))
             {
                 return;
             }
@@ -372,8 +368,7 @@ namespace uMod.Rust
         /// <returns></returns>
         private bool CanOverrideCommand(string command)
         {
-            RegisteredCommand cmd;
-            if (registeredCommands.TryGetValue(command, out cmd))
+            if (registeredCommands.TryGetValue(command, out RegisteredCommand cmd))
             {
                 if (cmd.Source.IsCorePlugin)
                 {

@@ -42,8 +42,7 @@ namespace uMod.Rust
         {
             string id = userId.ToString();
 
-            PlayerRecord record;
-            if (playerData.TryGetValue(id, out record))
+            if (playerData.TryGetValue(id, out PlayerRecord record))
             {
                 record.Name = name;
                 playerData[id] = record;
@@ -95,8 +94,7 @@ namespace uMod.Rust
         /// <returns></returns>
         public IPlayer FindPlayerById(string id)
         {
-            RustPlayer player;
-            return allPlayers.TryGetValue(id, out player) ? player : null;
+            return allPlayers.TryGetValue(id, out RustPlayer player) ? player : null;
         }
 
         /// <summary>

@@ -390,15 +390,15 @@ namespace uMod.Rust
         [HookMethod("OnPlayerDisconnected")]
         private void OnPlayerDisconnected(BasePlayer basePlayer, string reason)
         {
+            // Let covalence know
+            Covalence.PlayerManager.PlayerDisconnected(basePlayer);
+
             IPlayer player = basePlayer.IPlayer;
             if (player != null)
             {
                 // Call universal hook
                 Interface.CallHook("OnPlayerDisconnected", player, reason);
             }
-
-            // Let covalence know
-            Covalence.PlayerManager.PlayerDisconnected(basePlayer);
         }
 
         /// <summary>

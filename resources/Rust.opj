@@ -10380,6 +10380,46 @@
             "Parameters": []
           },
           "MSILHash": "14ieiyfOKJ6gNLZX+Uka2B43zL/sB5Wcgzaqnpd8RTo="
+        },
+        {
+          "Name": "ConVar.Chat::History",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ConVar.Chat",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "History",
+            "FullTypeName": "System.Collections.Generic.List`1<ConVar.Chat/ChatEntry> ConVar.Chat::History",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ConVar.Chat::textRange",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ConVar.Chat",
+          "Type": 0,
+          "TargetExposure": [
+            0,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "textRange",
+            "FullTypeName": "System.Single ConVar.Chat::textRange",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -210,7 +210,7 @@ function Get-Deobfuscators {
             # Download and extract de4dot
             Write-Host "Downloading latest version of de4dot" # TODO: Get and show version
             try {
-                Invoke-WebRequest "https://ci.appveyor.com/api/projects/0xd4d/de4dot/artifacts/de4dot.zip" -Out "$de4dot_dir\de4dot.zip"
+                Invoke-WebRequest "https://ci.appveyor.com/api/projects/0xd4d/de4dot/artifacts/Release%2Fde4dot-net35.zip" -Out "$de4dot_dir\de4dot.zip"
             } catch {
                 Write-Host "Could not download de4dot from AppVeyor"
                 Write-Host $_.Exception.Message

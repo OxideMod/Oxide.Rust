@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using uMod.Libraries;
-using uMod.Libraries.Covalence;
+using uMod.Libraries.Universal;
 using UnityEngine;
 
 namespace uMod.Rust

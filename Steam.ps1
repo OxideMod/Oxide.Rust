@@ -165,30 +165,25 @@ function Get-Dependencies {
         # TODO: Confirm all dependencies were downloaded (no 0kb files), else stop/retry and error with details
     }
 
-    # TODO: Check uMod.dll version and update if needed
     # Grab latest uMod.dll build
     Write-Host "Copying latest build of uMod.dll for $game_name"
     #$core_version = Get-ChildItem -Directory $core_path | Where-Object { $_.PSIsContainer } | Sort-Object CreationTime -desc | Select-Object -f 1
-    if (!(Test-Path "$tools_dir\uMod.dll")) {
-        try {
-            Copy-Item "$root_dir\packages\umod\*\lib\$dotnet\uMod.dll" "$tools_dir" -Force
-        } catch {
-            Write-Host "Could not copy uMod.dll to $tools_dir"
-            Write-Host $_.Exception.Message
-            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
-            exit 1
-        }
+    try {
+        Copy-Item "$root_dir\packages\umod\*\lib\$dotnet\uMod.dll" "$tools_dir" -Force
+    } catch {
+        Write-Host "Could not copy uMod.dll to $tools_dir"
+        Write-Host $_.Exception.Message
+        if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+        exit 1
     }
     Write-Host "Copying latest build of uMod.dll for uMod Patcher"
-    if (!(Test-Path "$managed_dir\uMod.dll")) {
-        try {
-            Copy-Item "$root_dir\packages\umod\*\lib\$dotnet\uMod.dll" "$managed_dir" -Force
-        } catch {
-            Write-Host "Could not copy uMod.dll to $managed_dir"
-            Write-Host $_.Exception.Message
-            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
-            exit 1
-        }
+    try {
+        Copy-Item "$root_dir\packages\umod\*\lib\$dotnet\uMod.dll" "$managed_dir" -Force
+    } catch {
+        Write-Host "Could not copy uMod.dll to $managed_dir"
+        Write-Host $_.Exception.Message
+        if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+        exit 1
     }
 
     if ($deobf) {

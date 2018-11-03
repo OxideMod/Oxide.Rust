@@ -7,7 +7,7 @@ using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using uMod.Configuration;
-using uMod.Libraries.Covalence;
+using uMod.Libraries.Universal;
 using uMod.Plugins;
 using uMod.RemoteConsole;
 using uMod.ServerConsole;
@@ -210,7 +210,7 @@ namespace uMod.Rust
             if (serverInitialized)
             {
                 string id = steamId.ToString();
-                IPlayer player = Covalence.PlayerManager.FindPlayerById(id);
+                IPlayer player = Universal.PlayerManager.FindPlayerById(id);
                 if (group == ServerUsers.UserGroup.Banned)
                 {
                     // Call universal hooks
@@ -233,7 +233,7 @@ namespace uMod.Rust
             if (serverInitialized)
             {
                 string id = steamId.ToString();
-                IPlayer player = Covalence.PlayerManager.FindPlayerById(id);
+                IPlayer player = Universal.PlayerManager.FindPlayerById(id);
                 if (ServerUsers.Is(steamId, ServerUsers.UserGroup.Banned))
                 {
                     // Call universal hooks
@@ -258,7 +258,6 @@ namespace uMod.Rust
             string userId = connection.userid.ToString();
             string ipAddress = Regex.Replace(connection.ipaddress, ipPattern, "");
 
-            // Update player's permissions group and name
             if (permission.IsLoaded)
             {
                 // Update player's stored username
@@ -276,19 +275,21 @@ namespace uMod.Rust
                 }
             }
 
-            // Let covalence know
-            Covalence.PlayerManager.PlayerJoin(connection.userid, username); // TODO: Handle this automatically
+            // Let universal know
+            Universal.PlayerManager.PlayerJoin(connection.userid, username); // TODO: Handle this automatically
 
             // Call universal hook
             object canLogin = Interface.CallHook("CanPlayerLogin", username, userId, ipAddress);
             if (canLogin is string || canLogin is bool && !(bool)canLogin)
             {
+                // Reject player with message
                 ConnectionAuth.Reject(connection, canLogin is string ? canLogin.ToString() : lang.GetMessage("ConnectionRejected", this, userId));
                 return true;
             }
 
             // Let plugins know
             Interface.CallHook("OnPlayerApproved", username, userId, ipAddress);
+
             return null;
         }
 
@@ -353,6 +354,7 @@ namespace uMod.Rust
             {
                 return;
             }
+
             ParseCommand(command.TrimStart('/'), out string cmd, out string[] args);
             if (cmd == null)
             {
@@ -373,7 +375,7 @@ namespace uMod.Rust
             }
 
             // Is it a valid chat command?
-            if (!Covalence.CommandSystem.HandleChatMessage(player, command))
+            if (!Universal.CommandSystem.HandleChatMessage(player, command))
             {
                 if (Interface.uMod.Config.Options.Modded)
                 {
@@ -390,8 +392,8 @@ namespace uMod.Rust
         [HookMethod("OnPlayerDisconnected")]
         private void OnPlayerDisconnected(BasePlayer basePlayer, string reason)
         {
-            // Let covalence know
-            Covalence.PlayerManager.PlayerDisconnected(basePlayer);
+            // Let universal know
+            Universal.PlayerManager.PlayerDisconnected(basePlayer);
 
             IPlayer player = basePlayer.IPlayer;
             if (player != null)
@@ -414,10 +416,10 @@ namespace uMod.Rust
                 lang.SetLanguage(basePlayer.net.connection.info.GetString("global.language", "en"), basePlayer.UserIDString);
             }
 
-            // Let covalence know
-            Covalence.PlayerManager.PlayerConnected(basePlayer);
+            // Let universal know
+            Universal.PlayerManager.PlayerConnected(basePlayer);
 
-            IPlayer player = Covalence.PlayerManager.FindPlayerById(basePlayer.UserIDString);
+            IPlayer player = Universal.PlayerManager.FindPlayerById(basePlayer.UserIDString);
             if (player != null)
             {
                 // Set IPlayer object on BasePlayer

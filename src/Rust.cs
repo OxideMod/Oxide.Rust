@@ -1,9 +1,8 @@
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 using uMod.Libraries;
-using uMod.Libraries.Covalence;
+using uMod.Libraries.Universal;
 using uMod.Logging;
 using uMod.Plugins;
 
@@ -27,32 +26,16 @@ namespace uMod.Rust
             Version = RustExtension.AssemblyVersion;
         }
 
+        // Instances
+        internal static readonly RustProvider Universal = RustProvider.Instance;
+        internal readonly PluginManager pluginManager = Interface.uMod.RootPluginManager;
+        internal readonly IServer Server = Universal.CreateServer();
+
         // Libraries
         internal readonly Lang lang = Interface.uMod.GetLibrary<Lang>();
         internal readonly Permission permission = Interface.uMod.GetLibrary<Permission>();
 
-        // Instances
-        internal static readonly RustProvider Covalence = RustProvider.Instance;
-        internal readonly PluginManager pluginManager = Interface.uMod.RootPluginManager;
-        internal readonly IServer Server = Covalence.CreateServer();
-
         internal bool serverInitialized;
-
-        /// <summary>
-        /// Checks if the permission system has loaded, shows an error if it failed to load
-        /// </summary>
-        /// <param name="player"></param>
-        /// <returns></returns>
-        private bool PermissionsLoaded(IPlayer player)
-        {
-            if (!permission.IsLoaded)
-            {
-                player.Reply(string.Format(lang.GetMessage("PermissionsNotLoaded", this, player.Id), permission.LastException.Message));
-                return false;
-            }
-
-            return true;
-        }
 
         #endregion Initialization
 
@@ -67,32 +50,6 @@ namespace uMod.Rust
             // Configure remote error logging
             RemoteLogger.SetTag("game", Title.ToLower());
             RemoteLogger.SetTag("game version", Server.Version);
-
-            // Set up default permission groups
-            if (permission.IsLoaded)
-            {
-                int rank = 0;
-                foreach (string defaultGroup in Interface.uMod.Config.Options.DefaultGroups)
-                {
-                    if (!permission.GroupExists(defaultGroup))
-                    {
-                        permission.CreateGroup(defaultGroup, defaultGroup, rank++);
-                    }
-                }
-
-                permission.RegisterValidate(s =>
-                {
-                    if (ulong.TryParse(s, out ulong temp))
-                    {
-                        int digits = temp == 0 ? 1 : (int)Math.Floor(Math.Log10(temp) + 1);
-                        return digits >= 17;
-                    }
-
-                    return false;
-                });
-
-                permission.CleanUp();
-            }
         }
 
         /// <summary>
@@ -125,6 +82,8 @@ namespace uMod.Rust
                 }
 
                 Analytics.Collect();
+
+                // Show the server console, if enabled
                 RustExtension.ServerConsole();
 
                 if (!Interface.uMod.Config.Options.Modded)
@@ -147,7 +106,9 @@ namespace uMod.Rust
         private void OnServerSave()
         {
             Interface.uMod.OnSave();
-            Covalence.PlayerManager.SavePlayerData();
+
+            // Save groups, users, and other data
+            Universal.PlayerManager.SavePlayerData();
         }
 
         /// <summary>
@@ -157,7 +118,9 @@ namespace uMod.Rust
         private void OnServerShutdown()
         {
             Interface.uMod.OnShutdown();
-            Covalence.PlayerManager.SavePlayerData();
+
+            // Save groups, users, and other data
+            Universal.PlayerManager.SavePlayerData();
         }
 
         #endregion Core Hooks

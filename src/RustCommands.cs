@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using uMod.Libraries.Covalence;
+using uMod.Libraries;
+using uMod.Libraries.Universal;
 using uMod.Plugins;
 using UnityEngine;
 
@@ -14,8 +15,8 @@ namespace uMod.Rust
     {
         #region Initialization
 
-        // The covalence provider
-        private readonly RustProvider rustCovalence = RustProvider.Instance;
+        // The universal provider
+        private readonly RustProvider rustUniversal = RustProvider.Instance;
 
         // The console player
         private readonly RustConsolePlayer consolePlayer;
@@ -193,7 +194,7 @@ namespace uMod.Rust
                 command = name;
             }
 
-            // Setup a new Covalence command
+            // Setup a new Universal command
             RegisteredCommand newCommand = new RegisteredCommand(plugin, command, callback);
 
             // Check if the command can be overridden

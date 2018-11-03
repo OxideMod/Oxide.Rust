@@ -1,11 +1,11 @@
-﻿using uMod.Libraries.Covalence;
+﻿using uMod.Libraries.Universal;
 
 namespace uMod.Rust
 {
     /// <summary>
-    /// Provides Covalence functionality for the game "Rust"
+    /// Provides Universal functionality for the game "Rust"
     /// </summary>
-    public class RustProvider : ICovalenceProvider
+    public class RustProvider : IUniversalProvider
     {
         /// <summary>
         /// Gets the name of the game for which this provider provides

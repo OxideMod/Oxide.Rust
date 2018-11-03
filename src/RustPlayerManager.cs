@@ -4,7 +4,7 @@ using References::ProtoBuf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using uMod.Libraries.Covalence;
+using uMod.Libraries.Universal;
 
 namespace uMod.Rust
 {

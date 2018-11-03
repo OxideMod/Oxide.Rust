@@ -9,7 +9,6 @@ using uMod.Extensions;
 using uMod.Plugins;
 using uMod.Unity;
 using UnityEngine;
-using LogType = UnityEngine.LogType;
 
 namespace uMod.Rust
 {

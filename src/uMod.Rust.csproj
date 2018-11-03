@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
   <PropertyGroup>
@@ -9,7 +9,7 @@
     <RepositoryUrl>https://github.com/theumod/uMod.Rust</RepositoryUrl>
     <PackageLicenseUrl>https://github.com/theumod/uMod.Rust/blob/develop/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/theumod/uMod.Rust</PackageProjectUrl>
-    <PackageIconUrl>https://avatars0.githubusercontent.com/u/14957982?s=64</PackageIconUrl>
+    <PackageIconUrl>https://assets.umod.org/images/umod-64.png</PackageIconUrl>
     <Copyright>Copyright (c) 2013-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
     <PackageTags>gaming modding plugins unity unity3d</PackageTags>
     <ThisAssemblyNamespace>$(AssemblyName)</ThisAssemblyNamespace>
@@ -27,7 +27,7 @@
     <PackageReference Include="Oxide.References" Version="2.0.*">
       <PrivateAssets>contentfiles;analyzers;build</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="uMod" Version="3.0.3885-develop" />
+    <PackageReference Include="uMod" Version="3.0.3895-develop" />
     <!--<PackageReference Include="uMod.MySql" Version="3.0.*" />
     <PackageReference Include="uMod.SQLite" Version="3.0.*" />-->
     <PackageReference Include="uMod.Unity" Version="3.0.3764-develop" />

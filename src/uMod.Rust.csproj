@@ -7,7 +7,7 @@
     <Authors>The uMod Project Team and Contributors</Authors>
     <Description>Rust extension for the uMod modding framework</Description>
     <RepositoryUrl>https://github.com/theumod/uMod.Rust</RepositoryUrl>
-    <PackageLicenseUrl>https://github.com/theumod/uMod.Rust/blob/develop/LICENSE</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/theumod/uMod.Rust</PackageProjectUrl>
     <PackageIconUrl>https://assets.umod.org/images/umod-64.png</PackageIconUrl>
     <Copyright>Copyright (c) 2013-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
@@ -27,10 +27,10 @@
     <PackageReference Include="Oxide.References" Version="2.0.*">
       <PrivateAssets>contentfiles;analyzers;build</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="uMod" Version="3.0.3895-develop" />
+    <PackageReference Include="uMod" Version="3.0.3903-develop" />
     <!--<PackageReference Include="uMod.MySql" Version="3.0.*" />
     <PackageReference Include="uMod.SQLite" Version="3.0.*" />-->
-    <PackageReference Include="uMod.Unity" Version="3.0.3764-develop" />
+    <PackageReference Include="uMod.Unity" Version="3.0.3765-develop" />
     <Reference Include="Assembly-CSharp">
       <HintPath>Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll</HintPath>
     </Reference>
@@ -110,7 +110,7 @@
   </Target>
   <Target Name="AfterBuild">
     <ItemGroup>
-      <CoreFiles Include="$(TargetDir)\uMod*.dll" />
+      <CoreFiles Include="$(TargetDir)\uMod*.dll; $(TargetDir)\Oxide.*.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Console.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Rcon.dll" />

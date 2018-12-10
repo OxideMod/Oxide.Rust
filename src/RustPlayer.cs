@@ -200,7 +200,7 @@ namespace uMod.Rust
         /// <param name="z"></param>
         public void Teleport(float x, float y, float z)
         {
-            if (!player.IsSpectating())
+            if (!player.IsSpectating()) // TODO: Check if not mounted?
             {
                 // TODO: Check destination for potential obstructions to avoid
 

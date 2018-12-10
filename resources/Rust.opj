@@ -9182,25 +9182,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "BaseNetworkable::isSpawned",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseNetworkable",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "isSpawned",
-            "FullTypeName": "System.Boolean BaseNetworkable::isSpawned",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BaseNetworkable::_limitedNetworking",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseNetworkable",

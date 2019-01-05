@@ -102,21 +102,21 @@ namespace uMod.Rust
                     typeof(SingletonComponent<global::ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
                 }
 
-                Analytics.Collect();
-
                 // Show the server console, if enabled
                 RustExtension.ServerConsole();
 
                 if (!Interface.uMod.Config.Options.Modded)
                 {
                     Interface.uMod.LogWarning("The server is currently listed under Community. Please be aware that Facepunch only allows admin tools" +
-                        "(that do not affect gameplay or make the server appear modded) under the Community section");
+                                              "(that do not affect gameplay or make the server appear modded) under the Community section");
                 }
 
-                serverInitialized = true;
-
                 // Let plugins know server startup is complete
+                serverInitialized = true;
                 Interface.CallHook("OnServerInitialized", serverInitialized);
+
+                Interface.Oxide.LogInfo($"uMod version {uMod.Version} running on {Universal.GameName} server version {Server.Version}");
+                Analytics.Collect();
             }
         }
 

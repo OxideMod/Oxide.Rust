@@ -151,6 +151,8 @@ namespace uMod.Rust
             {
                 ServerUsers.Set(ulong.Parse(id), ServerUsers.UserGroup.Banned, Name, reason);
                 ServerUsers.Save();
+
+                // TODO: Implement universal ban storage
             }
         }
 
@@ -186,6 +188,8 @@ namespace uMod.Rust
             {
                 ServerUsers.Remove(ulong.Parse(id));
                 ServerUsers.Save();
+
+                // TODO: Implement universal ban storage
             }
         }
 
@@ -201,9 +205,9 @@ namespace uMod.Rust
         /// <param name="args"></param>
         public void Broadcast(string message, string prefix, params object[] args)
         {
-            ulong avatarId = args.Length > 0 && args[0].IsSteamId() ? (ulong)args[0] : 0ul;
             if (!string.IsNullOrEmpty(message))
             {
+                ulong avatarId = args.Length > 0 && args[0].IsSteamId() ? (ulong)args[0] : 0ul;
                 message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), avatarId != 0ul ? args.Skip(1) : args) : Formatter.ToUnity(message);
                 string formatted = prefix != null ? $"{prefix}: {message}" : message;
                 ConsoleNetwork.BroadcastToAllClients("chat.add", avatarId, formatted, 1.0);

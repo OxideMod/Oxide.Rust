@@ -132,8 +132,13 @@ namespace uMod.Rust
                 return null; // Skip chat commands, those are handled elsewhere
             }
 
-            // Call universal hook
-            return arg.Player() == null ? Interface.CallHook("OnServerCommand", arg.cmd.FullName, arg.Args) : Interface.CallHook("OnPlayerCommand", arg.Player(), arg.cmd.FullName, arg.Args);
+            IPlayer player = arg.Player()?.IPlayer;
+            if (player != null)
+            {
+                return Interface.CallHook("OnPlayerCommand", player, arg.cmd.FullName, arg.Args);
+            }
+
+            return Interface.CallHook("OnServerCommand", arg.cmd.FullName, arg.Args);
         }
 
         #endregion Server Hooks

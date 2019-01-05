@@ -5,12 +5,12 @@
     <Version>3.0.0</Version>
     <AssemblyName>uMod.Rust</AssemblyName>
     <Authors>The uMod Project Team and Contributors</Authors>
-    <Description>Rust extension for the uMod modding framework</Description>
-    <RepositoryUrl>https://github.com/theumod/uMod.Rust</RepositoryUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/theumod/uMod.Rust</PackageProjectUrl>
-    <PackageIconUrl>https://assets.umod.org/images/umod-64.png</PackageIconUrl>
     <Copyright>Copyright (c) 2013-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
+    <Description>Rust game extension for the uMod modding framework</Description>
+    <PackageIconUrl>https://assets.umod.org/images/umod-64.png</PackageIconUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://umod.org</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/theumod/uMod.Rust</RepositoryUrl>
     <PackageTags>gaming modding plugins unity unity3d</PackageTags>
     <ThisAssemblyNamespace>$(AssemblyName)</ThisAssemblyNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>

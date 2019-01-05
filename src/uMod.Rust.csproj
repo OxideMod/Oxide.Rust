@@ -91,7 +91,7 @@
     <Reference Include="websocket-sharp">
       <HintPath>Dependencies\Patched\$(ManagedDir)\websocket-sharp.dll</HintPath>
     </Reference>
-    <None Remove="Bundle\**; Files\**; Patched\**; **\Original\**; *.config; *.opj" />
+    <None Remove="Bundle\**; Dependencies\**; Files\**; Patched\**; **\Original\**; *.config; *.opj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Target Name="Clean">

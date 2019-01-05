@@ -140,8 +140,8 @@ namespace uMod.Rust
         /// </summary>
         public override void OnModLoad()
         {
-            CSharpPluginLoader.PluginReferences.UnionWith(DefaultReferences);
             Output.OnMessage += HandleLog;
+            CSharpPluginLoader.PluginReferences.UnionWith(DefaultReferences);
         }
 
         internal static void ServerConsole()

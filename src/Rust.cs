@@ -1,4 +1,5 @@
-﻿using Facepunch;
+using Facepunch;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -71,6 +72,39 @@ namespace uMod.Rust
             AddUniversalCommand(new[] { "umod.lang", "u.lang", "oxide.lang", "o.lang", "lang" }, nameof(LangCommand));
             AddUniversalCommand(new[] { "umod.save", "u.save", "oxide.save", "o.save" }, nameof(SaveCommand));
             AddUniversalCommand(new[] { "umod.version", "u.version", "oxide.version", "o.version" }, nameof(VersionCommand));
+
+            // Register messages for localization
+            foreach (KeyValuePair<string, Dictionary<string, string>> language in Localization.languages)
+            {
+                lang.RegisterMessages(language.Value, this, language.Key);
+            }
+
+            // Setup default permission groups
+            if (permission.IsLoaded)
+            {
+                int rank = 0;
+                foreach (string defaultGroup in Interface.Oxide.Config.Options.DefaultGroups)
+                {
+                    if (!permission.GroupExists(defaultGroup))
+                    {
+                        permission.CreateGroup(defaultGroup, defaultGroup, rank++);
+                    }
+                }
+
+                permission.RegisterValidate(s =>
+                {
+                    ulong temp;
+                    if (!ulong.TryParse(s, out temp))
+                    {
+                        return false;
+                    }
+
+                    int digits = temp == 0 ? 1 : (int)Math.Floor(Math.Log10(temp) + 1);
+                    return digits >= 17;
+                });
+
+                permission.CleanUp();
+            }
         }
 
         /// <summary>

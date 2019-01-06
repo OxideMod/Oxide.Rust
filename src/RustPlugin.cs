@@ -1,4 +1,4 @@
-﻿using Oxide.Core;
+using Oxide.Core;
 using Oxide.Core.Plugins;
 using Oxide.Game.Rust.Libraries;
 using System;
@@ -170,6 +170,35 @@ namespace Oxide.Plugins
         }
 
         /// <summary>
+        /// Print a message to the players chat log with custom icon
+        /// </summary>
+        /// <param name="player"></param>
+        /// <param name="format"></param>
+        /// <param name="id"></param>
+        /// <param name="args"></param>
+        protected void PrintToChat(BasePlayer player, string format, ulong id, params object[] args)
+        {
+            if (player?.net != null)
+            {
+                player.SendConsoleCommand("chat.add", id, args.Length > 0 ? string.Format(format, args) : format, 1f);
+            }
+        }
+
+        /// <summary>
+        /// Print a message to every players chat log with custom icon
+        /// </summary>
+        /// <param name="format"></param>
+        /// <param name="id"></param>
+        /// <param name="args"></param>
+        protected void PrintToChat(string format, ulong id, params object[] args)
+        {
+            if (BasePlayer.activePlayerList.Count >= 1)
+            {
+                ConsoleNetwork.BroadcastToAllClients("chat.add", id, args.Length > 0 ? string.Format(format, args) : format, 1f);
+            }
+        }
+
+        /// <summary>
         /// Send a reply message in response to a console command
         /// </summary>
         /// <param name="arg"></param>
@@ -196,6 +225,15 @@ namespace Oxide.Plugins
         /// <param name="format"></param>
         /// <param name="args"></param>
         protected void SendReply(BasePlayer player, string format, params object[] args) => PrintToChat(player, format, args);
+
+        /// <summary>
+        /// Send a reply message in response to a chat command with custom icon
+        /// </summary>
+        /// <param name="player"></param>
+        /// <param name="format"></param>
+        /// <param name="id"></param>
+        /// <param name="args"></param>
+        protected void SendReply(BasePlayer player, string format, ulong id, params object[] args) => PrintToChat(player, format, id, args);
 
         /// <summary>
         /// Send a warning message in response to a console command

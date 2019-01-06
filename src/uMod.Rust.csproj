@@ -27,69 +27,69 @@
     <PackageReference Include="Oxide.References" Version="2.0.*">
       <PrivateAssets>contentfiles;analyzers;build</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="uMod" Version="3.0.3906-develop" />
+    <PackageReference Include="uMod" Version="3.0.3923-develop" />
     <!--<PackageReference Include="uMod.MySql" Version="3.0.*" />
     <PackageReference Include="uMod.SQLite" Version="3.0.*" />-->
     <PackageReference Include="uMod.Unity" Version="3.0.3765-develop" />
     <Reference Include="Assembly-CSharp">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Console">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Console.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Console.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Network">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Network.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Network.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Rcon">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Rcon.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Rcon.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Steamworks">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Steamworks.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Steamworks.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.System">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.System.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.System.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Unity">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Unity.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.UnityEngine">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.UnityEngine.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\mscorlib.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="NewAssembly">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\NewAssembly.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\NewAssembly.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\System.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\System.dll</HintPath>
     </Reference>
     <Reference Include="Rust.Data">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Rust.Data.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Rust.Data.dll</HintPath>
     </Reference>
     <Reference Include="Rust.Global">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Rust.Global.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Rust.Global.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.UI.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\websocket-sharp.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\websocket-sharp.dll</HintPath>
     </Reference>
     <None Remove="Bundle\**; Dependencies\**; Files\**; Patched\**; **\Original\**; *.config; *.opj" />
   </ItemGroup>
@@ -112,10 +112,10 @@
     <ItemGroup>
       <CoreFiles Include="$(TargetDir)\uMod*.dll; $(TargetDir)\Oxide.*.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Base\*.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Console.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Rcon.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\NewAssembly.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Assembly-CSharp.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Console.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Rcon.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\NewAssembly.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\$(TargetFramework)\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\umod.mysql\**\lib\any\MySql.*.dll; $(SolutionDir)\packages\umod.mysql\**\lib\any\System.*.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\umod.mysql\**\lib\$(TargetFramework)\*.*" />

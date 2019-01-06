@@ -140,11 +140,12 @@ namespace uMod.Rust
         /// </summary>
         public override void OnModLoad()
         {
+            Interface.uMod.EnableConsole();
             Output.OnMessage += HandleLog;
             CSharpPluginLoader.PluginReferences.UnionWith(DefaultReferences);
         }
 
-        internal static void ServerConsole()
+        internal static void ConsoleStatusBar()
         {
             if (Interface.uMod.ServerConsole != null)
             {

@@ -83,7 +83,7 @@ namespace uMod.Rust
             if (permission.IsLoaded)
             {
                 int rank = 0;
-                foreach (string defaultGroup in Interface.Oxide.Config.Options.DefaultGroups)
+                foreach (string defaultGroup in Interface.uMod.Config.Options.DefaultGroups)
                 {
                     if (!permission.GroupExists(defaultGroup))
                     {
@@ -129,28 +129,26 @@ namespace uMod.Rust
         {
             if (!serverInitialized)
             {
+                // Let plugins know server startup is complete
+                serverInitialized = true;
+                Interface.CallHook("OnServerInitialized", serverInitialized);
+
+                Interface.uMod.LogInfo($"uMod version {uMod.Version} running on {Universal.GameName} server version {Server.Version}");
+                Analytics.Collect();
+
                 if (Interface.uMod.CheckConsole() && global::ServerConsole.Instance != null)
                 {
                     global::ServerConsole.Instance.enabled = false;
                     UnityEngine.Object.Destroy(global::ServerConsole.Instance);
                     typeof(SingletonComponent<global::ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
                 }
-
-                // Show the server console, if enabled
-                RustExtension.ServerConsole();
+                RustExtension.ConsoleStatusBar();
 
                 if (!Interface.uMod.Config.Options.Modded)
                 {
                     Interface.uMod.LogWarning("The server is currently listed under Community. Please be aware that Facepunch only allows admin tools" +
-                                              "(that do not affect gameplay or make the server appear modded) under the Community section");
+                      "(that do not affect gameplay or make the server appear modded) under the Community section");
                 }
-
-                // Let plugins know server startup is complete
-                serverInitialized = true;
-                Interface.CallHook("OnServerInitialized", serverInitialized);
-
-                Interface.Oxide.LogInfo($"uMod version {uMod.Version} running on {Universal.GameName} server version {Server.Version}");
-                Analytics.Collect();
             }
         }
 
@@ -160,6 +158,7 @@ namespace uMod.Rust
         [HookMethod("OnServerSave")]
         private void OnServerSave()
         {
+            // Trigger save process
             Interface.uMod.OnSave();
 
             // Save groups, users, and other data
@@ -172,6 +171,7 @@ namespace uMod.Rust
         [HookMethod("OnServerShutdown")]
         private void OnServerShutdown()
         {
+            // Trigger shutdown process
             Interface.uMod.OnShutdown();
 
             // Save groups, users, and other data

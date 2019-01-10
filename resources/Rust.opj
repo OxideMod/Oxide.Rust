@@ -10402,6 +10402,105 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "SpawnDistribution::UpdateCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnDistribution",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateCount",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Spawnable",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "URzN41mfvJzOo9wXFo0VKYsZtWuf4nucxQHIYUOnnX8="
+        },
+        {
+          "Name": "SpawnHandler::population2distribution",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnHandler",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "population2distribution",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<SpawnPopulation,SpawnDistribution> SpawnHandler::population2distribution",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::lastWoundedTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastWoundedTime",
+            "FullTypeName": "System.Single BasePlayer::lastWoundedTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingPrivlidge::upkeepBrackets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingPrivlidge",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "upkeepBrackets",
+            "FullTypeName": "BuildingPrivlidge/UpkeepBracket[] BuildingPrivlidge::upkeepBrackets",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HelicopterDebris::tooHotUntil",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HelicopterDebris",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "tooHotUntil",
+            "FullTypeName": "System.Single HelicopterDebris::tooHotUntil",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [
@@ -10649,6 +10748,32 @@
             ],
             "Name": "cache",
             "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.Object> FileSystemBackend::cache",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        }
+      ],
+      "Fields": []
+    },
+    {
+      "AssemblyName": "Facepunch.UnityEngine.dll",
+      "Hooks": [],
+      "Modifiers": [
+        {
+          "Name": "InvokeHandler::curList",
+          "AssemblyName": "Facepunch.UnityEngine.dll",
+          "TypeName": "InvokeHandler",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "curList",
+            "FullTypeName": "ListDictionary`2<InvokeAction,System.Single> InvokeHandler::curList",
             "Parameters": []
           },
           "MSILHash": ""

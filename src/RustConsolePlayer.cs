@@ -52,9 +52,14 @@ namespace uMod.Rust
         public int Ping => 0;
 
         /// <summary>
-        /// Returns if the player is admin
+        /// Returns if the player is a server admin
         /// </summary>
         public bool IsAdmin => true;
+
+        /// <summary>
+        /// Returns if the player is a server moderator
+        /// </summary>
+        public bool IsModerator => true;
 
         /// <summary>
         /// Gets if the player is banned

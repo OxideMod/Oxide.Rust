@@ -82,9 +82,14 @@ namespace uMod.Rust
         public int Ping => Network.Net.sv.GetAveragePing(player.net.connection);
 
         /// <summary>
-        /// Returns if the player is admin
+        /// Returns if the player is a server admin
         /// </summary>
         public bool IsAdmin => ServerUsers.Is(steamId, ServerUsers.UserGroup.Owner);
+
+        /// <summary>
+        /// Returns if the player is a server moderator
+        /// </summary>
+        public bool IsModerator => ServerUsers.Is(steamId, ServerUsers.UserGroup.Moderator);
 
         /// <summary>
         /// Gets if the player is banned

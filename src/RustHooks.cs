@@ -278,6 +278,10 @@ namespace uMod.Rust
                 {
                     permission.AddUserGroup(userId, defaultGroups.Administrators);
                 }
+                else if (connection.authLevel == 1 && !permission.UserHasGroup(userId, defaultGroups.Moderators))
+                {
+                    permission.AddUserGroup(userId, defaultGroups.Moderators);
+                }
             }
 
             // Let universal know

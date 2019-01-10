@@ -187,12 +187,10 @@ namespace uMod.Rust
         public void Rename(string name)
         {
             name = string.IsNullOrEmpty(name.Trim()) ? player.displayName : name;
-
             player.net.connection.username = name;
             player.displayName = name;
             player._name = name;
             player.SendNetworkUpdateImmediate();
-
             player.IPlayer.Name = name;
             libPerms.UpdateNickname(player.UserIDString, name);
         }
@@ -208,7 +206,6 @@ namespace uMod.Rust
             if (!player.IsSpectating()) // TODO: Check if not mounted?
             {
                 // TODO: Check destination for potential obstructions to avoid
-
                 Vector3 destination = new Vector3(x, y, z);
                 player.MovePosition(destination);
                 player.ClientRPCPlayer(null, player, "ForcePositionTo", destination);

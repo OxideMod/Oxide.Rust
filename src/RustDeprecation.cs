@@ -130,3 +130,11 @@ namespace uMod.Rust
         }
     }
 }
+
+namespace uMod.Plugins
+{
+    [Obsolete("Use UniversalPlugin instead")]
+    public class RustPlugin : UniversalPlugin
+    {
+    }
+}

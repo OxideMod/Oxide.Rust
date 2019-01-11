@@ -124,6 +124,8 @@ namespace uMod.Rust
         /// </summary>
         public override void Load()
         {
+            //Manager.RegisterLibrary("Rust", new Libraries.Rust()); // TODO: Deprecate?
+            //Manager.RegisterLibrary("Command", new Libraries.Command()); // TODO: Deprecate?
             Manager.RegisterPluginLoader(new RustPluginLoader());
         }
 

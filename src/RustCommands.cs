@@ -16,7 +16,7 @@ namespace uMod.Rust
         #region Initialization
 
         // The universal provider
-        private readonly RustProvider rustUniversal = RustProvider.Instance;
+        private readonly RustProvider provider = RustProvider.Instance;
 
         // The console player
         private readonly RustConsolePlayer consolePlayer;
@@ -26,27 +26,6 @@ namespace uMod.Rust
 
         // All registered commands
         internal IDictionary<string, RegisteredCommand> registeredCommands;
-
-        internal struct PluginCallback
-        {
-            public readonly Plugin Plugin;
-            public readonly string Name;
-            public Func<ConsoleSystem.Arg, bool> Call;
-
-            public PluginCallback(Plugin plugin, string name)
-            {
-                Plugin = plugin;
-                Name = name;
-                Call = null;
-            }
-
-            public PluginCallback(Plugin plugin, Func<ConsoleSystem.Arg, bool> callback)
-            {
-                Plugin = plugin;
-                Call = callback;
-                Name = null;
-            }
-        }
 
         // Registered commands
         internal class RegisteredCommand
@@ -67,19 +46,19 @@ namespace uMod.Rust
             public readonly CommandCallback Callback;
 
             /// <summary>
+            /// The original callback
+            /// </summary>
+            public Action<ConsoleSystem.Arg> OriginalCallback;
+
+            /// <summary>
             /// The Rust console command
             /// </summary>
             public ConsoleSystem.Command RustCommand;
 
             /// <summary>
-            /// The orrignal console command when overridden
+            /// The original console command when overridden
             /// </summary>
             public ConsoleSystem.Command OriginalRustCommand;
-
-            /// <summary>
-            /// The original callback
-            /// </summary>
-            public Action<ConsoleSystem.Arg> OriginalCallback;
 
             /// <summary>
             /// Initializes a new instance of the RegisteredCommand class
@@ -125,18 +104,17 @@ namespace uMod.Rust
             // Convert command to lowercase and remove whitespace
             command = command.ToLowerInvariant().Trim();
 
-            // Setup console command name
+            // Split console command parts
             string[] split = command.Split('.');
             string parent = split.Length >= 2 ? split[0].Trim() : "global";
             string name = split.Length >= 2 ? string.Join(".", split.Skip(1).ToArray()) : split[0].Trim();
             string fullName = $"{parent}.{name}";
-
             if (parent == "global")
             {
                 command = name;
             }
 
-            // Setup a new Universal command
+            // Set up a new universal command
             RegisteredCommand newCommand = new RegisteredCommand(plugin, command, callback);
 
             // Check if the command can be overridden
@@ -153,9 +131,9 @@ namespace uMod.Rust
                     newCommand.OriginalCallback = cmd.OriginalCallback;
                 }
 
-                string newPluginName = plugin?.Name ?? "An unknown plugin";
-                string previousPluginName = cmd.Source?.Name ?? "an unknown plugin";
-                Interface.uMod.LogWarning($"{newPluginName} has replaced the '{command}' command previously registered by {previousPluginName}");
+                string newPluginName = plugin?.Name ?? "An unknown plugin"; // TODO: Localization
+                string previousPluginName = cmd.Source?.Name ?? "an unknown plugin"; // TODO: Localization
+                Interface.uMod.LogWarning($"{newPluginName} has replaced the '{command}' command previously registered by {previousPluginName}"); // TODO: Localization
 
                 ConsoleSystem.Index.Server.Dict.Remove(fullName);
                 if (parent == "global")
@@ -166,13 +144,13 @@ namespace uMod.Rust
                 ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
             }
 
-            // Check if command is a vanilla Rust command
+            // Check if command already exists as a native command
             if (ConsoleSystem.Index.Server.Dict.TryGetValue(fullName, out ConsoleSystem.Command rustCommand))
             {
                 if (rustCommand.Variable)
                 {
-                    string newPluginName = plugin?.Name ?? "An unknown plugin";
-                    Interface.uMod.LogError($"{newPluginName} tried to register the {fullName} console variable as a command!");
+                    string newPluginName = plugin?.Name ?? "An unknown plugin"; // TODO: Localization
+                    Interface.uMod.LogError($"{newPluginName} tried to register the {fullName} console variable as a command!"); // TODO: Localization
                     return;
                 }
 
@@ -214,7 +192,7 @@ namespace uMod.Rust
                 }
             };
 
-            // Register the command as a console command
+            // Register command as a console command
             ConsoleSystem.Index.Server.Dict[fullName] = newCommand.RustCommand;
             if (parent == "global")
             {
@@ -222,7 +200,7 @@ namespace uMod.Rust
             }
             ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
 
-            // Register the command as a chat command
+            // Register command
             registeredCommands[command] = newCommand;
         }
 
@@ -249,7 +227,7 @@ namespace uMod.Rust
                 // Remove the chat command
                 registeredCommands.Remove(command);
 
-                // If this was originally a vanilla Rust command then restore it, otherwise remove it
+                // If this was originally a native Rust command then restore it, otherwise remove it
                 if (cmd.OriginalCallback != null)
                 {
                     ConsoleSystem.Index.Server.Dict[fullName].Call = cmd.OriginalCallback;
@@ -313,7 +291,7 @@ namespace uMod.Rust
                 return !RustExtension.RestrictedCommands.Contains(command) && !RustExtension.RestrictedCommands.Contains($"{parent}.{name}");
             }
 
-            return false;
+            return true;
         }
 
         #endregion Command Overriding

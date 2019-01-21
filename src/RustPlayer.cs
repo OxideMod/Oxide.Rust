@@ -126,7 +126,6 @@ namespace uMod.Rust
             {
                 ServerUsers.Set(steamId, ServerUsers.UserGroup.Banned, player?.displayName ?? "Unknown", reason);
                 ServerUsers.Save();
-
                 if (player != null && IsConnected)
                 {
                     Kick(reason);

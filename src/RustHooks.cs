@@ -1,6 +1,7 @@
 using Network;
 using Rust.Ai;
 using Rust.Ai.HTN;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -224,6 +225,7 @@ namespace uMod.Rust
                         Interface.CallHook("OnPlayerBanned", player, reason);
                     }
                     Interface.CallHook("OnPlayerBanned", name, id, player?.Address ?? "0", reason);
+                    Interface.CallDeprecatedHook("OnUserBanned", "OnPlayerBanned", new DateTime(2018, 07, 01), name, id, player?.Address ?? "0", reason);
                 }
             }
         }
@@ -247,6 +249,7 @@ namespace uMod.Rust
                         Interface.CallHook("OnPlayerUnbanned", player);
                     }
                     Interface.CallHook("OnPlayerUnbanned", player?.Name ?? "Unnamed", id, player?.Address ?? "0");
+                    Interface.CallDeprecatedHook("OnUserUnbanned", "OnPlayerUnbanned", new DateTime(2018, 07, 01), player?.Name ?? "Unnamed", id, player?.Address ?? "0");
                 }
             }
         }
@@ -288,7 +291,9 @@ namespace uMod.Rust
             Universal.PlayerManager.PlayerJoin(connection.userid, username); // TODO: Handle this automatically
 
             // Call universal hook
-            object canLogin = Interface.CallHook("CanPlayerLogin", username, userId, ipAddress);
+            object loginUniversal = Interface.CallHook("CanPlayerLogin", username, userId, ipAddress);
+            object loginDeprecated = Interface.CallDeprecatedHook("CanUserLogin", "CanPlayerLogin", new DateTime(2018, 07, 01), username, userId, ipAddress);
+            object canLogin = loginUniversal ?? loginDeprecated;
             if (canLogin is string || canLogin is bool && !(bool)canLogin)
             {
                 // Reject player with message
@@ -298,6 +303,8 @@ namespace uMod.Rust
 
             // Let plugins know
             Interface.CallHook("OnPlayerApproved", username, userId, ipAddress);
+            Interface.CallDeprecatedHook("OnUserApprove", "OnPlayerApprove", new DateTime(2018, 07, 01), username, userId, ipAddress);
+            Interface.CallDeprecatedHook("OnUserApproved", "OnPlayerApproved", new DateTime(2018, 07, 01), username, userId, ipAddress);
 
             return null;
         }
@@ -317,6 +324,7 @@ namespace uMod.Rust
             if (player != null)
             {
                 Interface.CallHook("OnPlayerBanned", player, reason);
+                Interface.CallDeprecatedHook("OnUserBanned", "OnPlayerBanned", new DateTime(2018, 07, 01), player, reason);
             }
             Interface.CallHook("OnPlayerBanned", connection.username, connection.userid.ToString(), ip, reason);
         }
@@ -342,7 +350,9 @@ namespace uMod.Rust
             if (player != null)
             {
                 // Call universal hook
-                return Interface.CallHook("OnPlayerChat", player, message) != null;
+                object chatUniversal = Interface.CallHook("OnPlayerChat", player, message);
+                object chatDeprecated = Interface.CallDeprecatedHook("OnUserChat", "OnPlayerChat", new DateTime(2018, 07, 01), player, message);
+                return chatUniversal ?? chatDeprecated;
             }
 
             return null;
@@ -378,7 +388,9 @@ namespace uMod.Rust
             }
 
             // Is the command blocked?
-            if (Interface.CallHook("OnPlayerCommand", player, cmd, args) != null)
+            object commandUniversal = Interface.CallHook("OnPlayerChat", player, cmd, args);
+            object commandDeprecated = Interface.CallDeprecatedHook("OnUserChat", "OnPlayerChat", new DateTime(2018, 07, 01), player, cmd, args);
+            if (commandUniversal != null || commandDeprecated != null)
             {
                 return;
             }
@@ -409,6 +421,7 @@ namespace uMod.Rust
             {
                 // Call universal hook
                 Interface.CallHook("OnPlayerDisconnected", player, reason);
+                Interface.CallDeprecatedHook("OnUserDisconnected", "OnPlayerDisconnected", new DateTime(2018, 07, 01), player, reason);
             }
         }
 
@@ -436,6 +449,7 @@ namespace uMod.Rust
 
                 // Call universal hook
                 Interface.CallHook("OnPlayerConnected", player);
+                Interface.CallDeprecatedHook("OnUserConnected", "OnPlayerConnected", new DateTime(2018, 07, 01), player);
             }
         }
 
@@ -452,6 +466,7 @@ namespace uMod.Rust
             {
                 // Call universal hook
                 Interface.CallHook("OnPlayerKicked", player, reason);
+                Interface.CallDeprecatedHook("OnUserKicked", "OnPlayerKicked", new DateTime(2018, 07, 01), player);
             }
         }
 
@@ -465,7 +480,9 @@ namespace uMod.Rust
         {
             // Call universal hook
             IPlayer player = basePlayer.IPlayer;
-            return player != null ? Interface.CallHook("OnPlayerRespawn", player) : null;
+            object respawnUniversal = Interface.CallHook("OnPlayerRespawn", player);
+            object respawnDeprecated = Interface.CallDeprecatedHook("OnUserRespawn", "OnPlayerRespawn", new DateTime(2018, 07, 01), player);
+            return respawnUniversal ?? respawnDeprecated;
         }
 
         /// <summary>
@@ -480,6 +497,7 @@ namespace uMod.Rust
             {
                 // Call universal hook
                 Interface.CallHook("OnPlayerRespawned", player);
+                Interface.CallDeprecatedHook("OnUserRespawned", "OnPlayerRespawned", new DateTime(2018, 07, 01), player);
             }
         }
 

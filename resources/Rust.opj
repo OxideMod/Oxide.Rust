@@ -3478,7 +3478,7 @@
             "HookName": "OnRefreshVendingStock",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "VendingMachine",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RefreshSellOrderStockLevel",
@@ -3599,16 +3599,16 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 3,
+            "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0",
+            "ArgumentString": "this, msg.player",
             "HookTypeName": "Simple",
             "Name": "OnRotateVendingMachine",
             "HookName": "OnRotateVendingMachine",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "VendingMachine",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RPC_RotateVM",
@@ -4344,7 +4344,7 @@
             "HookName": "CanCombineDroppedItem [patch 1]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "DroppedItem",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "OnDroppedOn",
@@ -5344,7 +5344,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 85,
+            "InjectionIndex": 87,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -5353,7 +5353,7 @@
             "HookName": "OnRefreshVendingStock",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "VendingMachine",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RefreshSellOrderStockLevel",
@@ -6618,7 +6618,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 66,
+            "InjectionIndex": 65,
             "RemoveCount": 2,
             "Instructions": [
               {

@@ -4,13 +4,11 @@ using Oxide.Core.Configuration;
 using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using Oxide.Core.RemoteConsole;
-using Oxide.Core.ServerConsole;
 using Rust.Ai;
 using Rust.Ai.HTN;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
@@ -25,31 +23,6 @@ namespace Oxide.Game.Rust
         internal static string ipPattern = @":{1}[0-9]{1}\d*";
 
         #region Server Hooks
-
-        /// <summary>
-        /// Called when ServerConsole is disabled
-        /// </summary>
-        /// <returns></returns>
-        [HookMethod("IOnDisableServerConsole")]
-        private object IOnDisableServerConsole() => ConsoleWindow.Check(true) && !Interface.Oxide.CheckConsole(true) ? (object)null : false;
-
-        /// <summary>
-        /// Called when ServerConsole is enabled
-        /// </summary>
-        /// <returns></returns>
-        [HookMethod("IOnEnableServerConsole")]
-        private object IOnEnableServerConsole(ServerConsole serverConsole)
-        {
-            if (!ConsoleWindow.Check(true) || Interface.Oxide.CheckConsole(true))
-            {
-                serverConsole.enabled = false;
-                UnityEngine.Object.Destroy(serverConsole);
-                typeof(SingletonComponent<ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
-                return false;
-            }
-
-            return null;
-        }
 
         /// <summary>
         /// Called when a remote console command is received

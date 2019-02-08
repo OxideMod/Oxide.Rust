@@ -1662,7 +1662,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 48,
+            "InjectionIndex": 57,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l3, a0.player",
@@ -1671,7 +1671,7 @@
             "HookName": "OnCropGather",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlantEntity",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RPC_PickFruit",
@@ -3212,16 +3212,16 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 89,
+            "InjectionIndex": 87,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l5, a0.player",
+            "ArgumentString": "this, l4, a0.player",
             "HookTypeName": "Simple",
             "Name": "OnCropGather [!condition]",
             "HookName": "OnCropGather",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlantEntity",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RPC_PickFruit",

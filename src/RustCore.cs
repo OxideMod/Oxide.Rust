@@ -155,15 +155,7 @@ namespace Oxide.Game.Rust
         {
             if (!serverInitialized)
             {
-                if (Interface.Oxide.CheckConsole() && ServerConsole.Instance != null)
-                {
-                    ServerConsole.Instance.enabled = false;
-                    UnityEngine.Object.Destroy(ServerConsole.Instance);
-                    typeof(SingletonComponent<ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
-                }
-
                 Analytics.Collect();
-                RustExtension.ServerConsole();
 
                 if (!Interface.Oxide.Config.Options.Modded)
                 {

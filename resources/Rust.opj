@@ -6,54 +6,6 @@
       "AssemblyName": "Assembly-CSharp.dll",
       "Hooks": [
         {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "IOnEnableServerConsole [internal]",
-            "HookName": "IOnEnableServerConsole",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerConsole",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OnEnable",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "FiSe0dzBG4Gojuwy6thYkYL70dXLZcns6fH3a7zyjb4=",
-            "BaseHookName": null,
-            "HookCategory": "Server"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 0,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "IOnDisableServerConsole [internal]",
-            "HookName": "IOnDisableServerConsole",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerConsole",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "OnDisable",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "qH0Fx4ZpZ52rsWOYB9nD/cxYExr6N+/oLjCJei6InME=",
-            "BaseHookName": null,
-            "HookCategory": "Server"
-          }
-        },
-        {
           "Type": "InitOxide",
           "Hook": {
             "InjectionIndex": 31,
@@ -7035,7 +6987,7 @@
             "HookName": "FixDescriptionUpdating [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ServerMgr",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 0,
               "Name": "UpdateServerInformation",

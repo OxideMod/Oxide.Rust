@@ -7385,6 +7385,31 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 126,
+            "RemoveCount": 24,
+            "Instructions": [],
+            "HookTypeName": "Modify",
+            "Name": "FixChatOnLinux [patch]",
+            "HookName": "FixChatOnLinux [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Chat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "say",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "eYFQZ4ZKL4A5hZLcaMhpg5sKhIneJTCzjX+uR4k17tI=",
+            "BaseHookName": "IOnPlayerChat [internal]",
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

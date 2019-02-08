@@ -4225,7 +4225,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 29,
+            "InjectionIndex": 8,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -4380,7 +4380,7 @@
             "HookName": "CanCombineDroppedItem [patch 2]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "DroppedItem",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "OnCollision",

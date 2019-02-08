@@ -1697,7 +1697,7 @@
             "HookName": "OnItemRepair",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "RepairBench",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "RepairItem",
@@ -3271,7 +3271,7 @@
             "HookName": "CanBeTargeted",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FlameTurret",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "CheckTrigger",
@@ -5687,7 +5687,7 @@
             "HookName": "CanBeTargeted [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FlameTurret",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "CheckTrigger",
@@ -6714,7 +6714,7 @@
             "HookName": "OnFlameThrowerBurn",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FlameThrower",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "FlameTick",
@@ -6764,7 +6764,7 @@
             "HookName": "OnFireBallDamage",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FireBall",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "DoRadialDamage",
@@ -6788,7 +6788,7 @@
             "HookName": "OnFireBallSpread",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FireBall",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "TryToSpread",

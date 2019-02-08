@@ -157,7 +157,7 @@ namespace Oxide.Game.Rust
 
             Interface.Oxide.ServerConsole.Status1Left = () =>
             {
-                string hostname = ConVar.Server.hostname.Length > 30 ? ConVar.Server.hostname.Truncate(30) : ConVar.Server.hostname;
+                string hostname = ConVar.Server.hostname.Length > 30 ? Oxide.Core.ExtensionMethods.Truncate(ConVar.Server.hostname, 30) : ConVar.Server.hostname;
                 return $"{hostname} [{(Interface.Oxide.Config.Options.Modded ? "Modded" : "Community")}]";
             };
             Interface.Oxide.ServerConsole.Status1Right = () => $"{Performance.current.frameRate}fps, {((ulong)Time.realtimeSinceStartup).FormatSeconds()}";

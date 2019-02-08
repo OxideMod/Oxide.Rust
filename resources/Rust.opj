@@ -6618,8 +6618,8 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 66,
-            "RemoveCount": 2,
+            "InjectionIndex": 65,
+            "RemoveCount": 3,
             "Instructions": [
               {
                 "OpCode": "call",
@@ -6632,7 +6632,7 @@
             "HookName": "ItemMaxStackableMove [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlayerInventory",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 0,
               "Name": "MoveItem",
@@ -6679,7 +6679,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 43,
+            "InjectionIndex": 45,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",

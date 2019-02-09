@@ -4647,7 +4647,7 @@
             "HookName": "CanBeTargeted",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "GunTrap",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "CheckTrigger",
@@ -5683,7 +5683,7 @@
             "HookName": "CanBeTargeted [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "GunTrap",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "CheckTrigger",
@@ -6956,50 +6956,6 @@
           }
         },
         {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 108,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Rust.Global|Rust.Global|get_SteamServer"
-              },
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "description_0"
-              },
-              {
-                "OpCode": "ldsfld",
-                "OpType": "Field",
-                "Operand": "mscorlib|System.String|Empty"
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "Facepunch.Steamworks|Facepunch.Steamworks.Server|SetKey"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "FixDescriptionUpdating [patch]",
-            "HookName": "FixDescriptionUpdating [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerMgr",
-            "Flagged": true,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "UpdateServerInformation",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "Gfec1DmTRYAqRwWLkKhoPoeIoVoNt7/+qxlTbMkAGcM=",
-            "BaseHookName": "AddGameTags [patch]",
-            "HookCategory": "_Patches"
-          }
-        },
-        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 8,
@@ -7393,8 +7349,8 @@
             "RemoveCount": 24,
             "Instructions": [],
             "HookTypeName": "Modify",
-            "Name": "FixChatOnLinux [patch]",
-            "HookName": "FixChatOnLinux [patch]",
+            "Name": "FixVanillaChatOnLinux [patch]",
+            "HookName": "FixVanillaChatOnLinux [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ConVar.Chat",
             "Flagged": false,

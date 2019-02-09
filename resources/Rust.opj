@@ -5832,13 +5832,13 @@
             "InjectionIndex": 108,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l5",
+            "ArgumentString": "this, l1",
             "HookTypeName": "Simple",
             "Name": "OnEntityBuilt",
             "HookName": "OnEntityBuilt",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Planner",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "DoBuild",
@@ -7384,6 +7384,31 @@
             "MSILHash": "hFFi4tEef/LRIwY7iX2DmEhdq9BiM/Dran5rkhjNskk=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 126,
+            "RemoveCount": 24,
+            "Instructions": [],
+            "HookTypeName": "Modify",
+            "Name": "FixChatOnLinux [patch]",
+            "HookName": "FixChatOnLinux [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Chat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "say",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "eYFQZ4ZKL4A5hZLcaMhpg5sKhIneJTCzjX+uR4k17tI=",
+            "BaseHookName": "IOnPlayerChat [internal]",
+            "HookCategory": "_Patches"
           }
         }
       ],

@@ -1649,7 +1649,7 @@
             "HookName": "OnItemRepair",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "RepairBench",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RepairItem",
@@ -6141,7 +6141,7 @@
             "HookName": "IOnNpcTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseNpc",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 0,
               "Name": "AggroClosestEnemy",
@@ -6584,7 +6584,7 @@
             "HookName": "ItemMaxStackableMove [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlayerInventory",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 0,
               "Name": "MoveItem",
@@ -6640,7 +6640,7 @@
             "HookName": "OnLootPlayer",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RPC_LootPlayer",
@@ -6666,7 +6666,7 @@
             "HookName": "OnFlameThrowerBurn",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FlameThrower",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "FlameTick",
@@ -6690,7 +6690,7 @@
             "HookName": "OnFlameExplosion",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FlameExplosive",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "Explode",
@@ -6716,7 +6716,7 @@
             "HookName": "OnFireBallDamage",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FireBall",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "DoRadialDamage",
@@ -6740,7 +6740,7 @@
             "HookName": "OnFireBallSpread",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FireBall",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "TryToSpread",
@@ -6843,7 +6843,7 @@
             "HookName": "OnNpcPlayerResume",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "NPCPlayerApex",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "Resume",

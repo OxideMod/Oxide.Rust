@@ -3086,7 +3086,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 9,
+            "InjectionIndex": 4,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -6132,7 +6132,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 344,
+            "InjectionIndex": 345,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, this.AiContext.AIAgent.AttackTarget",
@@ -7130,7 +7130,7 @@
             "HookName": "OnNpcPlayerTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "NPCPlayerApex",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "UpdateTargetMemory",

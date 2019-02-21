@@ -4237,7 +4237,7 @@
             "HookName": "OnRecycleItem [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Recycler",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "RecycleThink",
@@ -6640,7 +6640,7 @@
             "HookName": "OnLootPlayer",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "RPC_LootPlayer",

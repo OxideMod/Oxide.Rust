@@ -1486,7 +1486,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 111,
+            "InjectionIndex": 112,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l11",
@@ -6690,7 +6690,7 @@
             "HookName": "OnFlameExplosion",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FlameExplosive",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "Explode",

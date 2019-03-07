@@ -136,14 +136,6 @@ namespace uMod.Rust
                 Interface.uMod.LogInfo($"uMod version {uMod.Version} running on {Universal.GameName} server version {Server.Version}");
                 Analytics.Collect();
 
-                if (Interface.uMod.CheckConsole() && global::ServerConsole.Instance != null)
-                {
-                    global::ServerConsole.Instance.enabled = false;
-                    UnityEngine.Object.Destroy(global::ServerConsole.Instance);
-                    typeof(SingletonComponent<global::ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
-                }
-                RustExtension.ConsoleStatusBar();
-
                 if (!Interface.uMod.Config.Options.Modded)
                 {
                     Interface.uMod.LogWarning("The server is currently listed under Community. Please be aware that Facepunch only allows admin tools" +

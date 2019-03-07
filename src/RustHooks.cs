@@ -5,13 +5,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Reflection;
 using System.Text.RegularExpressions;
 using uMod.Configuration;
 using uMod.Libraries.Universal;
 using uMod.Plugins;
 using uMod.RemoteConsole;
-using uMod.ServerConsole;
 using UnityEngine;
 
 namespace uMod.Rust
@@ -23,35 +21,6 @@ namespace uMod.Rust
     {
         internal bool isPlayerTakingDamage;
         internal static string ipPattern = @":{1}[0-9]{1}\d*";
-
-        #region Server Console
-
-        /// <summary>
-        /// Called when ServerConsole is disabled
-        /// </summary>
-        /// <returns></returns>
-        [HookMethod("IOnDisableServerConsole")]
-        private object IOnDisableServerConsole() => ConsoleWindow.Check(true) && !Interface.uMod.CheckConsole(true) ? (object)null : false;
-
-        /// <summary>
-        /// Called when ServerConsole is enabled
-        /// </summary>
-        /// <returns></returns>
-        [HookMethod("IOnEnableServerConsole")]
-        private object IOnEnableServerConsole(global::ServerConsole serverConsole)
-        {
-            if (!ConsoleWindow.Check(true) || Interface.uMod.CheckConsole(true))
-            {
-                serverConsole.enabled = false;
-                UnityEngine.Object.Destroy(serverConsole);
-                typeof(SingletonComponent<global::ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
-                return false;
-            }
-
-            return null;
-        }
-
-        #endregion Server Console
 
         #region Modifications
 

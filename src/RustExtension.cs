@@ -1,7 +1,4 @@
-﻿using Facepunch;
-using Facepunch.Extend;
-using Network;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -142,75 +139,8 @@ namespace uMod.Rust
         /// </summary>
         public override void OnModLoad()
         {
-            Interface.uMod.EnableConsole();
-            Output.OnMessage += HandleLog;
+            //Output.OnMessage += HandleLog;
             CSharpPluginLoader.PluginReferences.UnionWith(DefaultReferences);
-        }
-
-        internal static void ConsoleStatusBar()
-        {
-            if (Interface.uMod.ServerConsole != null)
-            {
-                Interface.uMod.ServerConsole.Title = () => $"{BasePlayer.activePlayerList.Count} | {ConVar.Server.hostname}";
-
-                Interface.uMod.ServerConsole.Status1Left = () =>
-                {
-                    string hostname = ConVar.Server.hostname.Length > 30 ? ConVar.Server.hostname.Truncate(30) : ConVar.Server.hostname;
-                    return $"{hostname} [{(Interface.uMod.Config.Options.Modded ? "Modded" : "Community")}]";
-                };
-                Interface.uMod.ServerConsole.Status1Right = () => $"{Performance.current.frameRate}fps, {((ulong)Time.realtimeSinceStartup).FormatSeconds()}";
-
-                Interface.uMod.ServerConsole.Status2Left = () =>
-                {
-                    string players = $"{BasePlayer.activePlayerList.Count}/{ConVar.Server.maxplayers} players";
-                    int sleepers = BasePlayer.sleepingPlayerList.Count;
-                    int entities = BaseNetworkable.serverEntities.Count;
-                    return $"{players}, {sleepers + (sleepers.Equals(1) ? " sleeper" : " sleepers")}, {entities + (entities.Equals(1) ? " entity" : " entities")}";
-                };
-                Interface.uMod.ServerConsole.Status2Right = () =>
-                {
-                    if (Net.sv != null && Net.sv.IsConnected())
-                    {
-                        ulong bytesReceived = Net.sv.GetStat(null, NetworkPeer.StatTypeLong.BytesReceived_LastSecond);
-                        ulong bytesSent = Net.sv.GetStat(null, NetworkPeer.StatTypeLong.BytesSent_LastSecond);
-                        return $"{Utility.FormatBytes(bytesReceived) ?? "0"}/s in, {Utility.FormatBytes(bytesSent) ?? "0"}/s out";
-                    }
-
-                    return "not connected";
-                };
-
-                Interface.uMod.ServerConsole.Status3Left = () =>
-                {
-                    string gameTime = (TOD_Sky.Instance?.Cycle?.DateTime != null ? TOD_Sky.Instance.Cycle.DateTime : DateTime.Now).ToString("h:mm tt");
-                    return $"{gameTime.ToLower()}, {ConVar.Server.level} [{ConVar.Server.worldsize}, {ConVar.Server.seed}]";
-                };
-                Interface.uMod.ServerConsole.Status3Right = () => $"uMod.Rust {AssemblyVersion}";
-                Interface.uMod.ServerConsole.Status3RightColor = ConsoleColor.Yellow;
-
-                Interface.uMod.ServerConsole.Input += ServerConsoleOnInput;
-                Interface.uMod.ServerConsole.Completion = input =>
-                {
-                    if (!string.IsNullOrEmpty(input))
-                    {
-                        if (!input.Contains("."))
-                        {
-                            input = string.Concat("global.", input);
-                        }
-                        return ConsoleSystem.Index.All.Where(c => c.FullName.StartsWith(input.ToLower())).ToList().ConvertAll(c => c.FullName).ToArray();
-                    }
-
-                    return null;
-                };
-            }
-        }
-
-        private static void ServerConsoleOnInput(string input)
-        {
-            input = input.Trim();
-            if (!string.IsNullOrEmpty(input))
-            {
-                ConsoleSystem.Run(ConsoleSystem.Option.Server, input);
-            }
         }
 
         private static void HandleLog(string message, string stackTrace, LogType logType)

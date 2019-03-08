@@ -1486,7 +1486,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 111,
+            "InjectionIndex": 112,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l11",
@@ -3086,7 +3086,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 9,
+            "InjectionIndex": 4,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -3291,7 +3291,7 @@
             "InjectionIndex": 111,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "a0.player, l3",
+            "ArgumentString": "a0.player, l2",
             "HookTypeName": "Simple",
             "Name": "OnExplosiveDropped",
             "HookName": "OnExplosiveDropped",
@@ -4237,7 +4237,7 @@
             "HookName": "OnRecycleItem [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Recycler",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "RecycleThink",
@@ -6132,7 +6132,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 344,
+            "InjectionIndex": 345,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, this.AiContext.AIAgent.AttackTarget",
@@ -6843,7 +6843,7 @@
             "HookName": "OnNpcPlayerResume",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "NPCPlayerApex",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "Resume",

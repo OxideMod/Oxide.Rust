@@ -7343,6 +7343,266 @@
           }
         },
         {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 13,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0",
+            "HookTypeName": "Simple",
+            "Name": "OnTeamCreate",
+            "HookName": "OnTeamCreate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "trycreateteam",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "NB7aDVxtM6Pcx0xoSjNUxhgjfYs84oTSJYQcqFpoyf0=",
+            "BaseHookName": null,
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 57,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, l4",
+            "HookTypeName": "Simple",
+            "Name": "OnTeamInvite",
+            "HookName": "OnTeamInvite",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "sendinvite",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "GXrf9FdZIEjVTK85fSM3b/SpI5s7axqNqryes8EnzbA=",
+            "BaseHookName": null,
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 27,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnTeamRejectInvite",
+            "HookName": "OnTeamRejectInvite",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "rejectinvite",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "uIbLOC3SlGAlCrFcu0ubw4OEUJ/Tx4wvVvZEAlJsptw=",
+            "BaseHookName": null,
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 42,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l2, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnTeamPromote",
+            "HookName": "OnTeamPromote",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "promote",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "GXlJ4gJv8JbJLBVt0IP+sPnjJ4WbWRZMD/Z0p6umDJQ=",
+            "BaseHookName": null,
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 19,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnTeamLeave",
+            "HookName": "OnTeamLeave",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "leaveteam",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "z8DXgEwPWd7fXMR7CQdonUOAEAhqmvjuNnNxWiBEPlg=",
+            "BaseHookName": null,
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 33,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnTeamKick",
+            "HookName": "OnTeamKick",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "kickmember",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "wHDqeNNNzhem0KkCJMHGycJKBH2oTtAKNNvxIa8iLio=",
+            "BaseHookName": null,
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 27,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l2, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnTeamAcceptInvite",
+            "HookName": "OnTeamAcceptInvite",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "acceptinvite",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "1NEji1Ol00WtkEN+F/QToC8s5sjn4IckQAMHEGTA714=",
+            "BaseHookName": null,
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 2,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnTeamDisband",
+            "HookName": "OnTeamDisband",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DisbandTeam",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "RelationshipManager/PlayerTeam"
+              ]
+            },
+            "MSILHash": "WZHEB/VqQkOQYyVXGSDX4woN796b/5HTs4xAQqmmUXc=",
+            "BaseHookName": null,
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 28,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnTeamCreated",
+            "HookName": "OnTeamCreated",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": true,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "trycreateteam",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "NB7aDVxtM6Pcx0xoSjNUxhgjfYs84oTSJYQcqFpoyf0=",
+            "BaseHookName": "OnTeamCreate",
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 2,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnTeamDisbanded",
+            "HookName": "OnTeamDisbanded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DisbandTeam",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "RelationshipManager/PlayerTeam"
+              ]
+            },
+            "MSILHash": "WZHEB/VqQkOQYyVXGSDX4woN796b/5HTs4xAQqmmUXc=",
+            "BaseHookName": "OnTeamDisband",
+            "HookCategory": "Team"
+          }
+        },
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 0,

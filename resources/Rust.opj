@@ -7641,6 +7641,31 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 210,
+            "RemoveCount": 9,
+            "Instructions": [],
+            "HookTypeName": "Modify",
+            "Name": "AllowNpcAttackingNpc [patch]",
+            "HookName": "AllowNpcAttackingNpc [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseProjectile",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerUse",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Single"
+              ]
+            },
+            "MSILHash": "N+8KQI012/z3UtI6P6EAkadxLBonXARkWwOF5gQXzu8=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

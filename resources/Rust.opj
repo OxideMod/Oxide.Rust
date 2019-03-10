@@ -7359,7 +7359,7 @@
                 "Operand": "mscorlib|System.OperatingSystem|get_Platform"
               },
               {
-                "OpCode": "ldc_i4_2",
+                "OpCode": "ldc_i4_4",
                 "OpType": "None",
                 "Operand": null
               },
@@ -7369,7 +7369,7 @@
                 "Operand": null
               },
               {
-                "OpCode": "brfalse",
+                "OpCode": "brtrue",
                 "OpType": "Instruction",
                 "Operand": 29
               }
@@ -7408,7 +7408,7 @@
                 "Operand": "mscorlib|System.OperatingSystem|get_Platform"
               },
               {
-                "OpCode": "ldc_i4_2",
+                "OpCode": "ldc_i4_4",
                 "OpType": "None",
                 "Operand": null
               },
@@ -7418,7 +7418,7 @@
                 "Operand": null
               },
               {
-                "OpCode": "brfalse",
+                "OpCode": "brtrue",
                 "OpType": "Instruction",
                 "Operand": 69
               }
@@ -7461,7 +7461,7 @@
                 "Operand": "mscorlib|System.OperatingSystem|get_Platform"
               },
               {
-                "OpCode": "ldc_i4_2",
+                "OpCode": "ldc_i4_4",
                 "OpType": "None",
                 "Operand": null
               },
@@ -7471,7 +7471,7 @@
                 "Operand": null
               },
               {
-                "OpCode": "brfalse",
+                "OpCode": "brtrue",
                 "OpType": "Instruction",
                 "Operand": 13
               }
@@ -7510,7 +7510,7 @@
                 "Operand": "mscorlib|System.OperatingSystem|get_Platform"
               },
               {
-                "OpCode": "ldc_i4_2",
+                "OpCode": "ldc_i4_4",
                 "OpType": "None",
                 "Operand": null
               },
@@ -7520,7 +7520,7 @@
                 "Operand": null
               },
               {
-                "OpCode": "brfalse",
+                "OpCode": "brtrue",
                 "OpType": "Instruction",
                 "Operand": 49
               }
@@ -7561,7 +7561,7 @@
                 "Operand": "mscorlib|System.OperatingSystem|get_Platform"
               },
               {
-                "OpCode": "ldc_i4_2",
+                "OpCode": "ldc_i4_4",
                 "OpType": "None",
                 "Operand": null
               },
@@ -7571,7 +7571,7 @@
                 "Operand": null
               },
               {
-                "OpCode": "brfalse",
+                "OpCode": "brtrue",
                 "OpType": "Instruction",
                 "Operand": 8
               }
@@ -7610,7 +7610,7 @@
                 "Operand": "mscorlib|System.OperatingSystem|get_Platform"
               },
               {
-                "OpCode": "ldc_i4_2",
+                "OpCode": "ldc_i4_4",
                 "OpType": "None",
                 "Operand": null
               },
@@ -7620,7 +7620,7 @@
                 "Operand": null
               },
               {
-                "OpCode": "brfalse",
+                "OpCode": "brtrue",
                 "OpType": "Instruction",
                 "Operand": 5
               }

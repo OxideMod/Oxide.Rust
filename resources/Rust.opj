@@ -7926,6 +7926,30 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 33,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "CanSamSiteShoot",
+            "HookName": "CanSamSiteShoot",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SamSite",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "WeaponTick",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "bzM39Bcyr6DL0yQ52qZNjOnheaA0LXWIY0TEr36nNFU=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

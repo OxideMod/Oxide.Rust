@@ -7647,6 +7647,32 @@
           }
         },
         {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 21,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l2",
+            "HookTypeName": "Simple",
+            "Name": "CanItemDeployed",
+            "HookName": "CanItemDeployed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Deployer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "DoDeploy",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "SkVCRyntL+yn+a3fXLiH4lCfsU68Yu4SHZeAdMbDimk=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 0,

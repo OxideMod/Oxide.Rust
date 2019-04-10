@@ -7553,6 +7553,32 @@
           }
         },
         {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 37,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "CanWantsPush",
+            "HookName": "CanWantsPush",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MotorRowboat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_WantsPush",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "T2E58SMg0QDjlD12ilDCFL9p1zT8qmN+HJmwol5fj34=",
+            "BaseHookName": null,
+            "HookCategory": "MotorRowboat"
+          }
+        },
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 0,

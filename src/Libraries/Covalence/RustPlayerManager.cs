@@ -15,7 +15,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
     public class RustPlayerManager : IPlayerManager
     {
         [ProtoContract(ImplicitFields = ImplicitFields.AllFields)]
-        private struct PlayerRecord
+        public struct PlayerRecord
         {
             public string Name;
             public ulong Id;
@@ -75,6 +75,14 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// </summary>
         /// <returns></returns>
         public IEnumerable<IPlayer> All => allPlayers.Values.Cast<IPlayer>();
+
+
+        /// <summary>
+        /// Gets all player records
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<PlayerRecord> AllRecords => playerData.Values.Cast<PlayerRecord>();
+
 
         /// <summary>
         /// Gets all connected players

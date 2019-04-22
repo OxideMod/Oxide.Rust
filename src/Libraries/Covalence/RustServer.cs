@@ -1,6 +1,7 @@
-﻿using Facepunch;
+using Facepunch;
 using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
+using Rust;
 using System;
 using System.Globalization;
 using System.IO;
@@ -31,6 +32,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         }
 
         private static IPAddress address;
+        private static IPAddress localAddress;
 
         /// <summary>
         /// Gets the public-facing IP address of the server, if known
@@ -43,17 +45,49 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 {
                     if (address == null)
                     {
-                        WebClient webClient = new WebClient();
-                        IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
-                        return address;
+                        if (Utility.ValidateIPv4(ConVar.Server.ip) && !Utility.IsLocalIP(ConVar.Server.ip))
+                        {
+                            IPAddress.TryParse(ConVar.Server.ip, out address);
+                            Interface.Oxide.LogInfo($"IP address from command-line: {address}");
+                        }
+                        else if (Global.SteamServer != null && Global.SteamServer.IsValid && Global.SteamServer.PublicIp != null)
+                        {
+                            address = Global.SteamServer.PublicIp;
+                            Interface.Oxide.LogInfo($"IP address from Steam query: {address}");
+                        }
+                        else
+                        {
+                            WebClient webClient = new WebClient();
+                            IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
+                            Interface.Oxide.LogInfo($"IP address from external API: {address}");
+                        }
                     }
 
                     return address;
                 }
                 catch (Exception ex)
                 {
-                    RemoteLogger.Exception("Couldn't get server IP address", ex);
-                    return new IPAddress(0);
+                    RemoteLogger.Exception("Couldn't get server's public IP address", ex);
+                    return IPAddress.Any;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets the local IP address of the server, if known
+        /// </summary>
+        public IPAddress LocalAddress
+        {
+            get
+            {
+                try
+                {
+                    return localAddress ?? (localAddress = Utility.GetLocalIP());
+                }
+                catch (Exception ex)
+                {
+                    RemoteLogger.Exception("Couldn't get server's local IP address", ex);
+                    return IPAddress.Any;
                 }
             }
         }
@@ -104,7 +138,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <summary>
         /// Gets information on the currently loaded save file
         /// </summary>
-        public SaveInfo SaveInfo { get; } = SaveInfo.Create(SaveRestore.SaveFileName);
+        public SaveInfo SaveInfo { get; } = SaveInfo.Create(World.SaveFileName);
 
         #endregion Information
 

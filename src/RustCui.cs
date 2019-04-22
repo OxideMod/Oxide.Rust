@@ -402,9 +402,9 @@ namespace Oxide.Game.Rust.Cui
         public string OffsetMin { get; set; } = "0.0 0.0";
 
         //The offset of the upper right corner of the rectangle relative to the upper right anchor.
-        [DefaultValue("1.0 1.0")]
+        [DefaultValue("0.0 0.0")]
         [JsonProperty("offsetmax")]
-        public string OffsetMax { get; set; } = "1.0 1.0";
+        public string OffsetMax { get; set; } = "0.0 0.0";
     }
 
     public class ComponentConverter : JsonConverter

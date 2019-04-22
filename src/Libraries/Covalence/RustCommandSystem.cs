@@ -1,4 +1,4 @@
-﻿using Oxide.Core;
+using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using System;
@@ -219,17 +219,21 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                         return;
                     }
 
-                    if (arg.Connection != null && arg.Player())
+                    BasePlayer player = arg.Player();
+                    if (arg.Connection != null && player != null)
                     {
-                        RustPlayer iplayer = rustCovalence.PlayerManager.FindPlayerById(arg.Connection.userid.ToString()) as RustPlayer;
+                        RustPlayer iplayer = player.IPlayer as RustPlayer;
                         if (iplayer != null)
                         {
                             iplayer.LastCommand = CommandType.Console;
                             callback(iplayer, command, ExtractArgs(arg));
-                            return;
                         }
                     }
-                    callback(consolePlayer, command, ExtractArgs(arg));
+                    else if (arg.Connection == null)
+                    {
+                        consolePlayer.LastCommand = CommandType.Console;
+                        callback(consolePlayer, command, ExtractArgs(arg));
+                    }
                 }
             };
 

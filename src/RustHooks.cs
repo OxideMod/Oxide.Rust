@@ -1,15 +1,16 @@
-﻿using Network;
+using Network;
 using Oxide.Core;
 using Oxide.Core.Configuration;
 using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using Oxide.Core.RemoteConsole;
-using Oxide.Core.ServerConsole;
+using Rust.Ai;
+using Rust.Ai.HTN;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Reflection;
 using System.Text.RegularExpressions;
+using UnityEngine;
 
 namespace Oxide.Game.Rust
 {
@@ -24,31 +25,6 @@ namespace Oxide.Game.Rust
         #region Server Hooks
 
         /// <summary>
-        /// Called when ServerConsole is disabled
-        /// </summary>
-        /// <returns></returns>
-        [HookMethod("IOnDisableServerConsole")]
-        private object IOnDisableServerConsole() => ConsoleWindow.Check(true) && !Interface.Oxide.CheckConsole(true) ? (object)null : false;
-
-        /// <summary>
-        /// Called when ServerConsole is enabled
-        /// </summary>
-        /// <returns></returns>
-        [HookMethod("IOnEnableServerConsole")]
-        private object IOnEnableServerConsole(ServerConsole serverConsole)
-        {
-            if (!ConsoleWindow.Check(true) || Interface.Oxide.CheckConsole(true))
-            {
-                serverConsole.enabled = false;
-                UnityEngine.Object.Destroy(serverConsole);
-                typeof(SingletonComponent<ServerConsole>).GetField("instance", BindingFlags.NonPublic | BindingFlags.Static)?.SetValue(null, null);
-                return false;
-            }
-
-            return null;
-        }
-
-        /// <summary>
         /// Called when a remote console command is received
         /// </summary>
         /// <returns></returns>
@@ -60,16 +36,18 @@ namespace Oxide.Game.Rust
             if (sender != null && !string.IsNullOrEmpty(command))
             {
                 RemoteMessage message = RemoteMessage.GetMessage(command);
-                if (message != null)
+                if (!string.IsNullOrEmpty(message?.Message))
                 {
                     string[] fullCommand = CommandLine.Split(message.Message);
-                    string cmd = fullCommand[0].ToLower();
-                    string[] args = fullCommand.Skip(1).ToArray();
-
-                    object callHook = Interface.CallHook("OnRconCommand", sender, cmd, args);
-                    if (callHook != null)
+                    if (fullCommand.Length >= 1)
                     {
-                        return true;
+                        string cmd = fullCommand[0].ToLower();
+                        string[] args = fullCommand.Skip(1).ToArray();
+
+                        if (Interface.CallHook("OnRconCommand", sender, cmd, args) != null)
+                        {
+                            return true;
+                        }
                     }
                 }
             }
@@ -115,12 +93,30 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnServerCommand")]
         private object IOnServerCommand(ConsoleSystem.Arg arg)
         {
-            return arg?.cmd.FullName != "chat.say" ? Interface.CallHook("OnServerCommand", arg) : null;
+            if (arg == null || arg.Connection != null && arg.Player() == null)
+            {
+                return true; // Ingore console commands from client during connection
+            }
+
+            return arg.cmd.FullName != "chat.say" ? Interface.CallHook("OnServerCommand", arg) : null;
         }
 
         #endregion Server Hooks
 
         #region Player Hooks
+
+        /// <summary>
+        /// Called when a player attempts to pickup a DoorCloser entity
+        /// </summary>
+        /// <param name="player"></param>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        [HookMethod("ICanPickupEntity")]
+        private object ICanPickupEntity(BasePlayer player, DoorCloser entity)
+        {
+            object callHook = Interface.CallHook("CanPickupEntity", player, entity);
+            return callHook is bool result && result ? (object)true : null;
+        }
 
         /// <summary>
         /// Called when a BasePlayer is attacked
@@ -346,7 +342,6 @@ namespace Oxide.Game.Rust
                 if (Interface.Oxide.Config.Options.Modded)
                 {
                     iplayer.Reply(string.Format(lang.GetMessage("UnknownCommand", this, iplayer.Id), cmd));
-                    arg.ReplyWith(string.Empty);
                 }
             }
         }
@@ -446,8 +441,64 @@ namespace Oxide.Game.Rust
             return entity is BasePlayer ? null : Interface.CallHook("OnEntityTakeDamage", entity, info);
         }
 
+        private int GetPlayersSensed(NPCPlayerApex npc, Vector3 position, float distance, BaseEntity[] targetList)
+        {
+            return BaseEntity.Query.Server.GetInSphere(position, distance, targetList,
+                entity =>
+                {
+                    BasePlayer player = entity as BasePlayer;
+                    object callHook = player != null && npc != null && player != npc ? Interface.CallHook("OnNpcPlayerTarget", npc, player) : null;
+                    if (callHook != null)
+                    {
+                        foreach (Memory.SeenInfo seenInfo in npc.AiContext.Memory.All)
+                        {
+                            if (seenInfo.Entity == player)
+                            {
+                                npc.AiContext.Memory.All.Remove(seenInfo);
+                                break;
+                            }
+                        }
+
+                        foreach (Memory.ExtendedInfo extendedInfo in npc.AiContext.Memory.AllExtended)
+                        {
+                            if (extendedInfo.Entity == player)
+                            {
+                                npc.AiContext.Memory.AllExtended.Remove(extendedInfo);
+                                break;
+                            }
+                        }
+                    }
+
+                    return player != null && callHook == null && player.isServer && !player.IsSleeping() && !player.IsDead() && player.Family != npc.Family;
+                });
+        }
+
         /// <summary>
-        /// Called when an NPC player tries to target an entity
+        /// Called when an Apex NPC player tries to target an entity based on closeness
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <returns></returns>
+        [HookMethod("IOnNpcPlayerSenseClose")]
+        private object IOnNpcPlayerSenseClose(NPCPlayerApex npc)
+        {
+            NPCPlayerApex.EntityQueryResultCount = GetPlayersSensed(npc, npc.ServerPosition, npc.Stats.CloseRange, NPCPlayerApex.EntityQueryResults);
+            return true;
+        }
+
+        /// <summary>
+        /// Called when an Apex NPC player tries to target an entity based on vision
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <returns></returns>
+        [HookMethod("IOnNpcPlayerSenseVision")]
+        private object IOnNpcPlayerSenseVision(NPCPlayerApex npc)
+        {
+            NPCPlayerApex.PlayerQueryResultCount = GetPlayersSensed(npc, npc.ServerPosition, npc.Stats.VisionRange, NPCPlayerApex.PlayerQueryResults);
+            return true;
+        }
+
+        /// <summary>
+        /// Called when a Murderer NPC player tries to target an entity
         /// </summary>
         /// <param name="npc"></param>
         /// <param name="target"></param>
@@ -455,21 +506,27 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnNpcPlayerTarget")]
         private object IOnNpcPlayerTarget(NPCPlayerApex npc, BaseEntity target)
         {
-            object callHook = Interface.CallHook("OnNpcPlayerTarget", npc, target);
-            if (callHook != null)
+            if (Interface.CallHook("OnNpcPlayerTarget", npc, target) != null)
             {
-                if (npc is NPCMurderer)
-                {
-                    return 0f;
-                }
+                return 0f;
+            }
 
-                npc.SetFact(NPCPlayerApex.Facts.HasEnemy, 0);
-                npc.SetFact(NPCPlayerApex.Facts.EnemyRange, 5);
-                npc.SetFact(NPCPlayerApex.Facts.AfraidRange, 1);
-                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSight, 0);
-                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightCrouched, 0);
-                npc.SetFact(NPCPlayerApex.Facts.HasLineOfSightStanding, 0);
-                npc.AiContext.AIAgent.AttackTarget = null;
+            return null;
+        }
+
+        /// <summary>
+        /// Called when an HTN NPC player tries to target an entity
+        /// </summary>
+        /// <param name="npc"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        [HookMethod("IOnHtnNpcPlayerTarget")]
+        private object IOnHtnNpcPlayerTarget(IHTNAgent npc, BasePlayer target)
+        {
+            if (npc != null && Interface.CallHook("OnNpcPlayerTarget", npc.Body, target) != null)
+            {
+                npc.AiDomain.NpcContext.BaseMemory.Forget(0f);
+                npc.AiDomain.NpcContext.BaseMemory.PrimaryKnownEnemyPlayer.PlayerInfo.Player = null;
                 return true;
             }
 
@@ -491,7 +548,7 @@ namespace Oxide.Game.Rust
                 npc.SetFact(BaseNpc.Facts.HasEnemy, 0);
                 npc.SetFact(BaseNpc.Facts.EnemyRange, 3);
                 npc.SetFact(BaseNpc.Facts.AfraidRange, 1);
-                return true;
+                return 0f;
             }
 
             return null;

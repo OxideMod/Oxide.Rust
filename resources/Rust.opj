@@ -7930,6 +7930,64 @@
           }
         }
       ],
+      {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnWorldPrefabSpawned",
+            "HookName": "OnWorldPrefabSpawned",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "World",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Spawn",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "System.UInt32",
+                "UnityEngine.Vector3",
+                "UnityEngine.Quaternion",
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "3WG5GI59jmn7KSSui18gYW4m84aEKPye1EwvATFDcXI=",
+            "BaseHookName": null,
+            "HookCategory": "World"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnGenerateOceanPatrolPath",
+            "HookName": "OnGenerateOceanPatrolPath",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseBoat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GenerateOceanPatrolPath",
+              "ReturnType": "System.Collections.Generic.List`1<UnityEngine.Vector3>",
+              "Parameters": [
+                "System.Single",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "6w4stUt6n3+3vU3xhEStULnO+GY923iX1oa0EpdPssA=",
+            "BaseHookName": null,
+            "HookCategory": "World"
+          }
+        }
+      ],
       "Modifiers": [
         {
           "Name": "BasePlayer::previousLifeStory",

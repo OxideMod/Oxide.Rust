@@ -3156,7 +3156,7 @@
             },
             "MSILHash": "bcyJmGroXTIUU3OPYSNHGVkJ5PbaEAS/WksDoe8zpxU=",
             "BaseHookName": null,
-            "HookCategory": "Server"
+            "HookCategory": "World"
           }
         },
         {
@@ -7927,6 +7927,139 @@
             "MSILHash": "XAbBUjv9aYi01AmWlvIJ98FqWYe3fbF070HqXQjRTuM=",
             "BaseHookName": "OnPlayerLand",
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 37,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanPushBoat",
+            "HookName": "CanPushBoat",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MotorRowboat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_WantsPush",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "T2E58SMg0QDjlD12ilDCFL9p1zT8qmN+HJmwol5fj34=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 21,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, l0",
+            "HookTypeName": "Simple",
+            "Name": "CanDeployItem",
+            "HookName": "CanDeployItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Deployer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "DoDeploy",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "SkVCRyntL+yn+a3fXLiH4lCfsU68Yu4SHZeAdMbDimk=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 61,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l8",
+            "HookTypeName": "Simple",
+            "Name": "OnBigWheelLoss",
+            "HookName": "OnBigWheelLoss",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BigWheelGame",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Payout",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "AN3Y9M83Owfjbcds1Yv6YHo6X4fl37GMjApk3gQdImE=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnWorldPrefabSpawned",
+            "HookName": "OnWorldPrefabSpawned",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "World",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Spawn",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "System.UInt32",
+                "UnityEngine.Vector3",
+                "UnityEngine.Quaternion",
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "3WG5GI59jmn7KSSui18gYW4m84aEKPye1EwvATFDcXI=",
+            "BaseHookName": null,
+            "HookCategory": "World"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnBoatPathGenerate",
+            "HookName": "OnBoatPathGenerate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseBoat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GenerateOceanPatrolPath",
+              "ReturnType": "System.Collections.Generic.List`1<UnityEngine.Vector3>",
+              "Parameters": [
+                "System.Single",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "6w4stUt6n3+3vU3xhEStULnO+GY923iX1oa0EpdPssA=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
           }
         }
       ],

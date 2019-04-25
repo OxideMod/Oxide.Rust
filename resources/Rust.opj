@@ -8008,6 +8008,30 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 40,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "CanSamSiteShoot",
+            "HookName": "CanSamSiteShoot",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SamSite",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "WeaponTick",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "UEuh5wug5rmyYj5RnAx3FOuIZ7Q+blYz2n3hEugtAIA=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 12,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,

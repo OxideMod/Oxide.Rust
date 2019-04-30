@@ -11103,6 +11103,63 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "SamSite::lockOnTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lockOnTime",
+            "FullTypeName": "System.Single SamSite::lockOnTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SamSite::lastTargetVisibleTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastTargetVisibleTime",
+            "FullTypeName": "System.Single SamSite::lastTargetVisibleTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SamSite::nextBurstTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextBurstTime",
+            "FullTypeName": "System.Single SamSite::nextBurstTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

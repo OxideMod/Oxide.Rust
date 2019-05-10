@@ -11179,6 +11179,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer/FiredProjectile",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer/FiredProjectile",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FiredProjectile",
+            "FullTypeName": "BasePlayer/FiredProjectile",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

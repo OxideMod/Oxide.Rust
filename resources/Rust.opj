@@ -499,7 +499,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 100,
+            "InjectionIndex": 107,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1",
@@ -519,7 +519,7 @@
                 "System.UInt32"
               ]
             },
-            "MSILHash": "KeqqPZW4dzkLctq+AFFZCVqS/hsFEauwW+ejYVqGcto=",
+            "MSILHash": "krG4H8P7CU1G/WvGybUrMNuHhQImrV/27n542OE5BlI=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -659,7 +659,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 882,
+            "InjectionIndex": 999,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -677,7 +677,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "qGXKLwLB/gUWsggFttswywXh/WrzbdRZhFyxL+nIJHk=",
+            "MSILHash": "rbxzM+UXoeDGJKxHcUzQyvAe9Hetj7ASsC7TeBIvNEE=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }

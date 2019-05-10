@@ -11160,6 +11160,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::firedProjectiles",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "firedProjectiles",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.Int32,BasePlayer/FiredProjectile> BasePlayer::firedProjectiles",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

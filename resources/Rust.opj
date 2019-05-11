@@ -1929,6 +1929,54 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 94,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l4 => l2",
+            "HookTypeName": "Simple",
+            "Name": "OnFlameTurretFire",
+            "HookName": "OnFlameTurretFire",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FlameTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CheckTrigger",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "QCrsm4a9Cwo8zNG0bzJPfaPf8iKnSEGz/4nV+vAPJ00=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 70,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l4 => l2",
+            "HookTypeName": "Simple",
+            "Name": "OnShotgunTrapFire",
+            "HookName": "OnShotgunTrapFire",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GunTrap",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CheckTrigger",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "lCKuiaTWOrkBy5zEgGRWJuIjIGBbRx8BySQex9btYUo=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,

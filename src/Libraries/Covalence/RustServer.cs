@@ -1,11 +1,12 @@
 using Facepunch;
 using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
-using Rust;
+using Steamworks;
 using System;
 using System.Globalization;
 using System.IO;
 using System.Net;
+using Utility = Oxide.Core.Utility;
 
 namespace Oxide.Game.Rust.Libraries.Covalence
 {
@@ -50,9 +51,9 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                             IPAddress.TryParse(ConVar.Server.ip, out address);
                             Interface.Oxide.LogInfo($"IP address from command-line: {address}");
                         }
-                        else if (Global.SteamServer != null && Global.SteamServer.IsValid && Global.SteamServer.PublicIp != null)
+                        else if (SteamServer.IsValid && SteamServer.PublicIp != null)
                         {
-                            address = Global.SteamServer.PublicIp;
+                            address = SteamServer.PublicIp;
                             Interface.Oxide.LogInfo($"IP address from Steam query: {address}");
                         }
                         else

@@ -12,7 +12,7 @@
     <PackageIconUrl>https://avatars1.githubusercontent.com/u/10712027?s=64</PackageIconUrl>
     <Copyright>Copyright (c) 2014-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
     <PackageTags>gaming modding plugins unity unity3d</PackageTags>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFramework>netstandard20</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <ManagedDir>RustDedicated_Data\Managed</ManagedDir>
     <SteamAppId>258550</SteamAppId>
@@ -29,64 +29,64 @@
     <PackageReference Include="Oxide.SQLite" Version="2.0.*" />
     <PackageReference Include="Oxide.Unity" Version="2.0.*" />
     <Reference Include="Assembly-CSharp">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Console">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Console.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Console.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Network">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Network.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Network.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Rcon">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Rcon.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Rcon.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Steamworks">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Steamworks.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Steamworks.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.System">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.System.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.System.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Unity">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.Unity.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.UnityEngine">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Facepunch.UnityEngine.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\mscorlib.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="NewAssembly">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\NewAssembly.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\NewAssembly.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\System.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\System.dll</HintPath>
     </Reference>
     <Reference Include="Rust.Data">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Rust.Data.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Rust.Data.dll</HintPath>
     </Reference>
     <Reference Include="Rust.Global">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\Rust.Global.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Rust.Global.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\UnityEngine.UI.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>Dependencies\Patched\$(ManagedDir)\websocket-sharp.dll</HintPath>
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\websocket-sharp.dll</HintPath>
     </Reference>
     <None Remove="Bundle\**; Files\**; Patched\**; **\Original\**; *.config; *.opj" />
   </ItemGroup>
@@ -108,12 +108,14 @@
   <Target Name="AfterBuild">
     <ItemGroup>
       <CoreFiles Include="$(TargetDir)\Oxide.*.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Assembly-CSharp.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Console.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\Facepunch.Rcon.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(ManagedDir)\NewAssembly.dll" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\net46\*.*" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Assembly-CSharp.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Console.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Rcon.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\NewAssembly.dll" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.core\**\lib\$(TargetFramework)\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*; $(SolutionDir)\packages\oxide.csharp\**\lib\$(TargetFramework)\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\net46\*.*; $(SolutionDir)\packages\oxide.references\**\lib\$(TargetFramework)\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.unity\**\lib\$(TargetFramework)\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\any\MySql.*.dll; $(SolutionDir)\packages\oxide.mysql\**\lib\any\System.*.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\any\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*" />
@@ -133,6 +135,9 @@
     <ReadLinesFromFile File="$(SolutionDir)\.deploy">
       <Output PropertyName="DeployPath" TaskParameter="Lines" />
     </ReadLinesFromFile>
+    <PropertyGroup>
+      <DeployPath Condition="'$(SteamBranch).Lower()' != 'public'">$(DeployPath)-$(SteamBranch)</DeployPath>
+    </PropertyGroup>
     <ItemGroup>
       <DeployFiles Include="$(ProjectDir)\bin\Bundle\$(PackageId)\**\*.*" />
     </ItemGroup>

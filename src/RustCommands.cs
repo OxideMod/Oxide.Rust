@@ -703,9 +703,7 @@ namespace Oxide.Game.Rust
         {
             if (player.IsServer)
             {
-                player.Reply($"Protocol: {Server.Protocol}\nBuild Date: {BuildInfo.Current.BuildDate}\n" +
-                $"Unity Version: {UnityEngine.Application.unityVersion}\nChangeset: {BuildInfo.Current.Scm.ChangeId}\n" +
-                $"Branch: {BuildInfo.Current.Scm.Branch}\nOxide.Rust Version: {RustExtension.AssemblyVersion}");
+                player.Reply("Oxide.Rust Version: " + RustExtension.AssemblyVersion);
             }
             else
             {

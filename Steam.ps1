@@ -167,26 +167,22 @@ function Get-Dependencies {
 
     # Grab latest Oxide.Core.dll build
     Write-Host "Copying latest build of Oxide.Core.dll for $game_name"
-    if (!(Test-Path "$tools_dir\Oxide.Core.dll")) {
-        try {
-            Copy-Item "$root_dir\packages\oxide.core\*\lib\net46\Oxide.Core.dll" "$tools_dir" -Force
-        } catch {
-            Write-Host "Could not copy Oxide.Core.dll to $tools_dir"
-            Write-Host $_.Exception.Message
-            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
-            exit 1
-        }
+    try {
+        Copy-Item "$root_dir\packages\oxide.core\*\lib\net46\Oxide.Core.dll" "$tools_dir" -Force
+    } catch {
+        Write-Host "Could not copy Oxide.Core.dll to $tools_dir"
+        Write-Host $_.Exception.Message
+        if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+        exit 1
     }
     Write-Host "Copying latest build of Oxide.Core.dll for patcher"
-    if (!(Test-Path "$managed_dir\Oxide.Core.dll")) {
-        try {
-            Copy-Item "$root_dir\packages\oxide.core\*\lib\net46\Oxide.Core.dll" "$managed_dir" -Force
-        } catch {
-            Write-Host "Could not copy Oxide.Core.dll to $managed_dir"
-            Write-Host $_.Exception.Message
-            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
-            exit 1
-        }
+    try {
+        Copy-Item "$root_dir\packages\oxide.core\*\lib\net46\Oxide.Core.dll" "$managed_dir" -Force
+    } catch {
+        Write-Host "Could not copy Oxide.Core.dll to $managed_dir"
+        Write-Host $_.Exception.Message
+        if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+        exit 1
     }
 
     if ($deobf) {

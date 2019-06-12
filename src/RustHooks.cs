@@ -270,16 +270,13 @@ namespace Oxide.Game.Rust
         /// Called when the player sends a chat message
         /// </summary>
         /// <param name="arg"></param>
+        /// <param name="message"></param>
         /// <returns></returns>
         [HookMethod("IOnPlayerChat")]
-        private object IOnPlayerChat(ConsoleSystem.Arg arg)
+        private object IOnPlayerChat(ConsoleSystem.Arg arg, string message)
         {
-            // Get the full chat string
-            string str = arg.GetString(0).Trim();
-            if (string.IsNullOrEmpty(str))
-            {
-                return true;
-            }
+            // Store escaped message
+            arg.Args[0] = message.EscapeRichText();
 
             // Get player objects
             BasePlayer player = arg.Connection.player as BasePlayer;
@@ -291,7 +288,7 @@ namespace Oxide.Game.Rust
 
             // Call game and covalence hooks
             object chatSpecific = Interface.CallHook("OnPlayerChat", arg);
-            object chatCovalence = Interface.CallHook("OnUserChat", iplayer, str);
+            object chatCovalence = Interface.CallHook("OnUserChat", iplayer, message);
             return chatSpecific ?? chatCovalence; // TODO: Fix 'RustCore' hook conflict when both return
         }
 

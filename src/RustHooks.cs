@@ -344,6 +344,15 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
+        /// Called when the player is authenticating
+        /// </summary>
+        /// <param name="connection"></param>
+        private void OnClientAuth(Connection connection)
+        {
+            connection.username = Regex.Replace(connection.username, @"<[^>]*>", string.Empty);
+        }
+
+        /// <summary>
         /// Called when the player has disconnected
         /// </summary>
         /// <param name="player"></param>

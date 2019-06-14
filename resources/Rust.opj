@@ -730,7 +730,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "cnZ7XEWiQHhPqDQEGcu18wQGz1fu9/mbQHjphlv9jOo=",
+            "MSILHash": "QJP81OICUoNhIEfNam9qyvwOEiyHcnD09UaBZqB8Jno=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2193,7 +2193,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "CmrFxTqdHZQt2AyRHVfM0u/IZzyLPkLSE4IvjCDJLDc=",
+            "MSILHash": "frqztbYXiRf4FtqN4PRVmHJcKVRtVdeOyb4hrGdW8c8=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2597,7 +2597,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "ZQX1IN+6BkKW+zaoxyQHkyHyHmXmEGAU5w9znbw8ElY=",
+            "MSILHash": "t3O0JEbSLIilmiVzKx82IhrOsk52VynKTaXXm/QQkJE=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -6456,7 +6456,7 @@
             "HookName": "ItemMaxStackableMove [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlayerInventory",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 0,
               "Name": "MoveItem",
@@ -6861,7 +6861,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "CmrFxTqdHZQt2AyRHVfM0u/IZzyLPkLSE4IvjCDJLDc=",
+            "MSILHash": "frqztbYXiRf4FtqN4PRVmHJcKVRtVdeOyb4hrGdW8c8=",
             "BaseHookName": "AddGameTags [patch]",
             "HookCategory": "_Patches"
           }

@@ -4736,6 +4736,112 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanAdministerVending [npc]",
+            "HookName": "CanAdministerVending",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCVendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanPlayerAdmin",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "RQzLETIQY8oCXnENh9Yiq2D0HFlL85DvhJ8pbAWKDf4=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "CanGiveSoldItem",
+            "HookName": "CanGiveSoldItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GiveSoldItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "TtlTKoGKq571dPkJLzgXBDwdF9JM2Xu1tvgypvvTLhE=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "CanGiveSoldItem [npc]",
+            "HookName": "CanGiveSoldItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCVendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GiveSoldItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "XEi8FPWQsf5CtKWrdJQteuLMu77nyCURbLGfTY4RQYo=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 13,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this, l1",
+            "HookTypeName": "Simple",
+            "Name": "CanRenameShop",
+            "HookName": "CanRenameShop",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_UpdateShopName",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "VBHE3/FMHu4TK5gqzrDcNyZBMCMRQV9Lkyc9Rh9KVlg=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 5,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

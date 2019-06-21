@@ -730,7 +730,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "QJP81OICUoNhIEfNam9qyvwOEiyHcnD09UaBZqB8Jno=",
+            "MSILHash": "Vz5h5os+zufJ9/YdyVAz7Z0dlHjN2KJwL4bbR5yqPUg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2193,7 +2193,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "frqztbYXiRf4FtqN4PRVmHJcKVRtVdeOyb4hrGdW8c8=",
+            "MSILHash": "/Rv9J1ndWSaT+sIcOoBfc+/aWZtLq7UmJ+Ec+0On9DE=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2597,7 +2597,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "t3O0JEbSLIilmiVzKx82IhrOsk52VynKTaXXm/QQkJE=",
+            "MSILHash": "yZPTgn3bMzWK7yiHsOGJIo4JWiymk47tCPbFVfMWfhQ=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5081,7 +5081,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "3LbrFPbQpDWijtp15j2tPe8cfDxDWgVp25anwAzKZSY=",
+            "MSILHash": "I+HBrzWELmLghIrPCNBNPk8tG7C63F7js9x1siMGM2Q=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5089,7 +5089,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 173,
+            "InjectionIndex": 200,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -5108,7 +5108,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "3LbrFPbQpDWijtp15j2tPe8cfDxDWgVp25anwAzKZSY=",
+            "MSILHash": "I+HBrzWELmLghIrPCNBNPk8tG7C63F7js9x1siMGM2Q=",
             "BaseHookName": "CanDismountEntity",
             "HookCategory": "Player"
           }
@@ -6861,7 +6861,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "frqztbYXiRf4FtqN4PRVmHJcKVRtVdeOyb4hrGdW8c8=",
+            "MSILHash": "/Rv9J1ndWSaT+sIcOoBfc+/aWZtLq7UmJ+Ec+0On9DE=",
             "BaseHookName": "AddGameTags [patch]",
             "HookCategory": "_Patches"
           }

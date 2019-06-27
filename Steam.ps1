@@ -80,24 +80,10 @@ function Get-Downloader {
     # Check if DepotDownloader is already downloaded
     $depot_dll = "$tools_dir\DepotDownloader.dll"
     if (!(Test-Path "$depot_dll") -or (Get-ChildItem "$depot_dll").CreationTime -lt (Get-Date).AddDays(-7)) {
-        # Get latest release info for DepotDownloader
-        Write-Host "Determining latest release of DepotDownloader"
-        try {
-            $json = (Invoke-WebRequest "https://api.github.com/repos/SteamRE/DepotDownloader/releases" -UseBasicParsing | ConvertFrom-Json)[0]
-            # TODO: Implement auth/token handling for GitHub API
-            $version = $json.tag_name -Replace '\w+(\d+(?:\.\d+)+)', '$1'
-            $release_zip = $json.assets[0].name
-        } catch {
-            Write-Host "Could not get DepotDownloader information from GitHub"
-            Write-Host $_.Exception.Message
-            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
-            exit 1
-        }
-
         # Download and extract DepotDownloader
         Write-Host "Downloading version $version of DepotDownloader"
         try {
-            Invoke-WebRequest $json.assets[0].browser_download_url -Out "$tools_dir\$release_zip"
+            Invoke-WebRequest "https://assets.umod.org/packages/DepotDownloader.zip" -OutFile "$tools_dir\DepotDownloader.zip" -UseBasicParsing
         } catch {
             Write-Host "Could not download DepotDownloader from GitHub"
             Write-Host $_.Exception.Message
@@ -107,7 +93,7 @@ function Get-Downloader {
 
         # TODO: Compare size and hash of .zip vs. what GitHub has via API
         Write-Host "Extracting DepotDownloader release files"
-        Expand-Archive "$tools_dir\$release_zip" -DestinationPath "$tools_dir" -Force
+        Expand-Archive "$tools_dir\DepotDownloader.zip" -DestinationPath "$tools_dir" -Force
 
         if (!(Test-Path "$tools_dir\DepotDownloader.dll")) {
             Get-Downloader # TODO: Add infinite loop prevention

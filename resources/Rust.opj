@@ -8150,6 +8150,32 @@
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
+        },
+		{
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 13,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanAffordToPlace",
+            "HookName": "CanAffordToPlace",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Planner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanAffordToPlace",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "Construction"
+              ]
+            },
+            "MSILHash": "A7lbGyzkLpA9fJW7zvkENQyBVL7/530kkjvH+8TAABM=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

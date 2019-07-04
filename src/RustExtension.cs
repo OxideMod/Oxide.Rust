@@ -136,7 +136,7 @@ namespace Oxide.Game.Rust
         public override void OnModLoad()
         {
             CSharpPluginLoader.PluginReferences.UnionWith(DefaultReferences);
-            Facepunch.Output.OnMessage += HandleLog;
+            //Facepunch.Output.OnMessage += HandleLog;
         }
 
         private static void HandleLog(string message, string stackTrace, LogType logType)

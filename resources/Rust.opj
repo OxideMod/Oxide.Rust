@@ -8150,6 +8150,58 @@
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 13,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanAffordToPlace",
+            "HookName": "CanAffordToPlace",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Planner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanAffordToPlace",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "Construction"
+              ]
+            },
+            "MSILHash": "A7lbGyzkLpA9fJW7zvkENQyBVL7/530kkjvH+8TAABM=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanSpectateTarget",
+            "HookName": "CanSpectateTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateSpectateTarget",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String"
+              ]
+            },
+            "MSILHash": "EsoEo6qYot7HwAU5adzgDzXCO6DdkX6t4+YeoyB0t0k=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

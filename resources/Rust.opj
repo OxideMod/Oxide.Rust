@@ -224,7 +224,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "gM66bgfxImKYVUfktg44gQLUXcFCDqf8x5yW47ESZ60=",
+            "MSILHash": "W9UzvdEfQj21k7Rtzz8xkR1fZPfCljjJge3P+oF9Y+c=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -3802,7 +3802,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "wSd4Lwg85uzdoHKZCno+/AZoNhsAk3zCVFaNVUd2tSk=",
+            "MSILHash": "f+iZAa4ct1fXdv4jhcvpFjV8QKSppALckGylw+gauLI=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -4114,7 +4114,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "wSd4Lwg85uzdoHKZCno+/AZoNhsAk3zCVFaNVUd2tSk=",
+            "MSILHash": "f+iZAa4ct1fXdv4jhcvpFjV8QKSppALckGylw+gauLI=",
             "BaseHookName": "OnRecycleItem",
             "HookCategory": "__Broken__"
           }
@@ -4517,7 +4517,7 @@
             "HookName": "CanBeTargeted",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "GunTrap",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "CheckTrigger",
@@ -4526,7 +4526,7 @@
             },
             "MSILHash": "lCKuiaTWOrkBy5zEgGRWJuIjIGBbRx8BySQex9btYUo=",
             "BaseHookName": null,
-            "HookCategory": "Player"
+            "HookCategory": "__Broken__"
           }
         },
         {
@@ -5555,7 +5555,7 @@
             "HookName": "CanBeTargeted [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "GunTrap",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "CheckTrigger",
@@ -5564,7 +5564,7 @@
             },
             "MSILHash": "lCKuiaTWOrkBy5zEgGRWJuIjIGBbRx8BySQex9btYUo=",
             "BaseHookName": "CanBeTargeted [guntrap]",
-            "HookCategory": "_Patches"
+            "HookCategory": "__Broken__"
           }
         },
         {
@@ -6885,7 +6885,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "BjTFrcUR1R8DMFNaHCOfrg1pNOfBHm0D1ZvztLzbsvg=",
+            "MSILHash": "7riEmDGRqTdEFbwWxc9S4sSpj8TBkI3Npb7R3pqpff4=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -6909,7 +6909,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "DRqHdouBdncbpHd57+mafjaO5LZcR1ITTkEPyaVh2gs=",
+            "MSILHash": "tNiYnIpZhn13z03mgG9HsQlEuncI21HvTuCxBvgVbhg=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }

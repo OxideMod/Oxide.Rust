@@ -8232,6 +8232,30 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 110,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnSamSiteTarget",
+            "HookName": "OnSamSiteTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SamSite",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TargetScan",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "xYGSp+PrJ9Bu/gFbtTxe3ugNFWGwuUugv7a6hESblns=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 4,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

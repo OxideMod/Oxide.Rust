@@ -8202,6 +8202,58 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnSwitchToggle",
+            "HookName": "OnSwitchToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ElectricSwitch",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SVSwitch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "2NDTuvIhVIQgloOB0tKzpwwYq8nk42qCmGOjJfmwXJE=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, this",
+            "HookTypeName": "Simple",
+            "Name": "CanTakeCutting",
+            "HookName": "CanTakeCutting",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlantEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_TakeClone",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "zfmu6JBCFYkD19w5ZIkscqDfEWNkRRZ6Xlr0htCUEzk=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

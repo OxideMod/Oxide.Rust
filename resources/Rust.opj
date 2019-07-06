@@ -8232,6 +8232,58 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnShopAcceptClick",
+            "HookName": "OnShopAcceptClick",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ShopFront",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AcceptClicked",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "sAq5yKq9eSdZifHB33twMj7R2OkLfMv9jGrmgjrd88s=",
+            "BaseHookName": null,
+            "HookCategory": "Shop"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 6,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnShopCancelClick",
+            "HookName": "OnShopCancelClick",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ShopFront",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CancelClicked",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "xuJcULQvGi8hG6Rbe7iMY89O76kJ3IMeCAsxOaJ0T1s=",
+            "BaseHookName": null,
+            "HookCategory": "Shop"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 110,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

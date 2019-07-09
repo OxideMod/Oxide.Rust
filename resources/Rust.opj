@@ -8470,6 +8470,32 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 13,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnVendingShopRename",
+            "HookName": "OnVendingShopRename",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_UpdateShopName",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "VBHE3/FMHu4TK5gqzrDcNyZBMCMRQV9Lkyc9Rh9KVlg=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

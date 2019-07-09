@@ -8387,6 +8387,89 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a1, a2 => a2",
+            "HookTypeName": "Simple",
+            "Name": "OnSendCommand",
+            "HookName": "OnSendCommand",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConsoleNetwork",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SendClientCommand",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Connection",
+                "System.String",
+                "System.Object[]"
+              ]
+            },
+            "MSILHash": "0U7MylcEaBCBMPGX6GQFiY6YtbKkWg7HXtp4iV+l6ZI=",
+            "BaseHookName": null,
+            "HookCategory": "Server"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a1, a2 => a2",
+            "HookTypeName": "Simple",
+            "Name": "OnSendCommand [list]",
+            "HookName": "OnSendCommand",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConsoleNetwork",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SendClientCommand",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Collections.Generic.List`1<Network.Connection>",
+                "System.String",
+                "System.Object[]"
+              ]
+            },
+            "MSILHash": "eBltbb0FB24QNGa0hAflyVS69rmBHCKKlUo6zF3Rtm4=",
+            "BaseHookName": null,
+            "HookCategory": "Server"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a1 => a1",
+            "HookTypeName": "Simple",
+            "Name": "OnBroadcastCommand",
+            "HookName": "OnBroadcastCommand",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConsoleNetwork",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "BroadcastToAllClients",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "System.Object[]"
+              ]
+            },
+            "MSILHash": "BNuJEmAGUl3PIhOuQYGYT4JjZGeQWWwBwqa8S0MzT6E=",
+            "BaseHookName": null,
+            "HookCategory": "Server"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

@@ -8310,6 +8310,33 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnGiveSoldItem",
+            "HookName": "OnGiveSoldItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GiveSoldItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "TtlTKoGKq571dPkJLzgXBDwdF9JM2Xu1tvgypvvTLhE=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 110,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -8355,6 +8382,33 @@
             "MSILHash": "zfmu6JBCFYkD19w5ZIkscqDfEWNkRRZ6Xlr0htCUEzk=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnGiveSoldItem [npc]",
+            "HookName": "OnGiveSoldItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCVendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GiveSoldItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "XEi8FPWQsf5CtKWrdJQteuLMu77nyCURbLGfTY4RQYo=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
           }
         }
       ],

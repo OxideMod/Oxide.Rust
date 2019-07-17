@@ -8519,6 +8519,84 @@
             "BaseHookName": null,
             "HookCategory": "Vending"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this, a1",
+            "HookTypeName": "Simple",
+            "Name": "CanPayForPlacement",
+            "HookName": "CanPayForPlacement",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Planner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PayForPlacement",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "Construction"
+              ]
+            },
+            "MSILHash": "yU/Dipa/NMgtcX+OfKsDs9S7nIzbFGTheIhTziQszAE=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a1, this, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanPayForUpgrade",
+            "HookName": "CanPayForUpgrade",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BuildingBlock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "PayForUpgrade",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConstructionGrade",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "dqKgHDoZr0ZbcmdWsawnIUVEaceEXRkInkPoNbipSnY=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnStabilityCheck",
+            "HookName": "OnStabilityCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "StabilityEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StabilityCheck",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "tvSqnwFh25+DfT3777aMXTNPUkd1vXDeE+Tf5/WIVxc=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [

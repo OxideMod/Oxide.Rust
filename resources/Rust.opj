@@ -8519,6 +8519,111 @@
             "BaseHookName": null,
             "HookCategory": "Vending"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnTakeCurrencyItem",
+            "HookName": "OnTakeCurrencyItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TakeCurrencyItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item"
+              ]
+            },
+            "MSILHash": "lF+L9otYgt5T+bgbf8Kji4cIrDrdDqvQw/WugNmPyLI=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnTakeCurrencyItem [NPC]",
+            "HookName": "OnTakeCurrencyItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCVendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TakeCurrencyItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item"
+              ]
+            },
+            "MSILHash": "6oWpAWR8Rm5cvS4UxEz+yRgMFUh6Yek3IqusI5QYIK0=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.net.connection, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerSetInfo [BasePlayer]",
+            "HookName": "OnPlayerSetInfo",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetInfo",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "System.String"
+              ]
+            },
+            "MSILHash": "uHiRNEOuG2AQpvttQAovl8X2ZWbzeGTGAnIK7nZi3Kk=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.connection, l2.name, l2.value",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerSetInfo [ServerMgr]",
+            "HookName": "OnPlayerSetInfo",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ClientReady",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Message"
+              ]
+            },
+            "MSILHash": "raLoCVQLVrsqPK6XTbr7mxgj4XIzsYC1c8ywEgPIrT8=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [
@@ -11610,6 +11715,44 @@
             ],
             "Name": "FiredProjectile",
             "FullTypeName": "BasePlayer/FiredProjectile",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingManager::buildingDictionary",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingManager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "buildingDictionary",
+            "FullTypeName": "ListDictionary`2<System.UInt32,BuildingManager/Building> BuildingManager::buildingDictionary",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingManager::decayEntities",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingManager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "decayEntities",
+            "FullTypeName": "ListHashSet`1<DecayEntity> BuildingManager::decayEntities",
             "Parameters": []
           },
           "MSILHash": ""

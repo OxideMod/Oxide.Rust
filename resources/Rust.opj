@@ -11613,6 +11613,123 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ContainerIOEntity::inventory",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ContainerIOEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "inventory",
+            "FullTypeName": "ItemContainer ContainerIOEntity::inventory",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseOven::ConsumeFuel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseOven",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ConsumeFuel",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Item",
+              "ItemModBurnable"
+            ]
+          },
+          "MSILHash": "fsHHI5FocXNoa2xYZdN05b9D2/rWTs4QHqipxkKvSvs="
+        },
+        {
+          "Name": "BaseOven::FindBurnable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseOven",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FindBurnable",
+            "FullTypeName": "Item",
+            "Parameters": []
+          },
+          "MSILHash": "RR699UAi/HSVci6e6j1Gouvq8kpj/XL933/gpmk7xKo="
+        },
+        {
+          "Name": "BaseHelicopter::myAI",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "myAI",
+            "FullTypeName": "PatrolHelicopterAI BaseHelicopter::myAI",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingManager::buildingDictionary",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingManager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "buildingDictionary",
+            "FullTypeName": "ListDictionary`2<System.UInt32,BuildingManager/Building> BuildingManager::buildingDictionary",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingManager::decayEntities",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingManager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "decayEntities",
+            "FullTypeName": "ListHashSet`1<DecayEntity> BuildingManager::decayEntities",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

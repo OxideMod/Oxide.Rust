@@ -421,7 +421,7 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 11,
-            "ReturnBehavior": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
@@ -447,7 +447,7 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 4,
-            "ReturnBehavior": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
@@ -1437,7 +1437,7 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 68,
-            "ReturnBehavior": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l3",
             "HookTypeName": "Simple",

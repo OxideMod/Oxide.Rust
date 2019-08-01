@@ -8519,6 +8519,58 @@
             "BaseHookName": null,
             "HookCategory": "Vending"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 6,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityTakeDamage [resource]",
+            "HookName": "OnEntityTakeDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ResourceEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnAttacked",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "A5ocURcI0KGIVBAmi4Bfg2yBCHXBcsinqrr226wOwRk=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityDeath [resource]",
+            "HookName": "OnEntityDeath",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ResourceEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnKilled",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "Pc7tI9RR8OM86hKjq1jbbWlAWBrDS5QwI3Z7B7PRlZA=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

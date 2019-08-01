@@ -8573,6 +8573,32 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnSupplyDropLanded",
+            "HookName": "OnSupplyDropLanded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SupplyDrop",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "OnCollisionEnter",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Collision"
+              ]
+            },
+            "MSILHash": "qLdYHS95T/TsBqGnTeZWfISZugZYtzCSJ0OA274IVs0=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,

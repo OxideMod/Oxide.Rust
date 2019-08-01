@@ -8523,6 +8523,30 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 79,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l8",
+            "HookTypeName": "Simple",
+            "Name": "OnExcavatorGather",
+            "HookName": "OnExcavatorGather",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ExcavatorArm",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ProduceResources",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "VFEh12a/WZnKH7xYTY8VRPPdchHRY/4o4F1A/3zfS0E=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 6,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,

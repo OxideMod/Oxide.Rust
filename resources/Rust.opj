@@ -8599,6 +8599,58 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 25,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityEnter [parent]",
+            "HookName": "OnEntityEnter",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TriggerParent",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "OnEntityEnter",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity"
+              ]
+            },
+            "MSILHash": "73yMn+QLYezKF2KG/ZEiqFGDqmLYw49rwk6qpAWzkF4=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 19,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityLeave [parent]",
+            "HookName": "OnEntityLeave",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TriggerParent",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "OnEntityLeave",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity"
+              ]
+            },
+            "MSILHash": "czALodngBaAnDlib9TPgh/P6Q9H2UV3Hs66flfTYMOA=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,

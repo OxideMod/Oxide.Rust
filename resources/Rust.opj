@@ -730,7 +730,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "QDviEhjR6O01QZ7XJqLD1E+wscC6np/hITnUzkGdxB0=",
+            "MSILHash": "TpQkpMVCVSUFRjoQnklH5HryrMfo0aKF/EHwFDXZ8v8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2193,7 +2193,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "HRdmIgU/KXNphz7stUpLP3HDSw+qDcJNovfa8WPEBfM=",
+            "MSILHash": "wk/rK+S7pnTaPORnRv9sn2XSyjKb7jFmGEkef8lxyz0=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -2597,7 +2597,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "JzsZkskAEmn4oHMW1PqWJtbT1awHla7QcCdbD/r1k70=",
+            "MSILHash": "4lFivnOxpSxP/h3rCT9Y0E+9xXeb8ETV5yw2oPuGqBw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2624,7 +2624,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "rmD7h2I109Eh8eVzMIvdk8imlrYmflULXnKiN4nBf28=",
+            "MSILHash": "5pDd8Lkf7mFSR9U8xh1uHBz7EK8gKCLAmV+FSgi5zzk=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2675,7 +2675,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "rmD7h2I109Eh8eVzMIvdk8imlrYmflULXnKiN4nBf28=",
+            "MSILHash": "5pDd8Lkf7mFSR9U8xh1uHBz7EK8gKCLAmV+FSgi5zzk=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -4368,7 +4368,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "8zZ7c+A4rhEWQMnI03fzPZ+beQK7PaFQv4Yk+xcaVPY=",
+            "MSILHash": "X1nU34tQs7qHgNGvplkBZ8zMS8JOnOAU2l3Pcbih4L8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5081,7 +5081,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "I+HBrzWELmLghIrPCNBNPk8tG7C63F7js9x1siMGM2Q=",
+            "MSILHash": "ut+UL87//pfvSlUrfRppf4vTWD5+18x/mr2Ty9SzBvI=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5108,7 +5108,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "I+HBrzWELmLghIrPCNBNPk8tG7C63F7js9x1siMGM2Q=",
+            "MSILHash": "ut+UL87//pfvSlUrfRppf4vTWD5+18x/mr2Ty9SzBvI=",
             "BaseHookName": "CanDismountEntity",
             "HookCategory": "Entity"
           }
@@ -6861,7 +6861,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "HRdmIgU/KXNphz7stUpLP3HDSw+qDcJNovfa8WPEBfM=",
+            "MSILHash": "wk/rK+S7pnTaPORnRv9sn2XSyjKb7jFmGEkef8lxyz0=",
             "BaseHookName": "AddGameTags [patch]",
             "HookCategory": "_Patches"
           }
@@ -7993,7 +7993,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 12,
+            "InjectionIndex": 21,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, a0",
@@ -8009,13 +8009,13 @@
               "ReturnType": "System.Void",
               "Parameters": [
                 "System.String",
-                "System.UInt32",
+                "Prefab",
                 "UnityEngine.Vector3",
                 "UnityEngine.Quaternion",
                 "UnityEngine.Vector3"
               ]
             },
-            "MSILHash": "3WG5GI59jmn7KSSui18gYW4m84aEKPye1EwvATFDcXI=",
+            "MSILHash": "WZTefq6XoYUbFKT1B1Fps60xaWuUBDQt64hFtBYQncA=",
             "BaseHookName": null,
             "HookCategory": "World"
           }
@@ -8198,7 +8198,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "xER8qOOWTYvCPnXc/JwSUXYL12yK7DchGTSQc0x8BZU=",
+            "MSILHash": "EsoEo6qYot7HwAU5adzgDzXCO6DdkX6t4+YeoyB0t0k=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }

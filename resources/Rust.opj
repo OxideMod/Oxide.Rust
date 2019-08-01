@@ -8519,163 +8519,6 @@
             "BaseHookName": null,
             "HookCategory": "Vending"
           }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 22,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 3,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "OnEntityEnter [tirggerparent]",
-            "HookName": "OnEntityEnter",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "TriggerParent",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 3,
-              "Name": "OnEntityEnter",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity"
-              ]
-            },
-            "MSILHash": "5IBWr+v3XBXDHyRzNl74W71qn7q01FhGtxVvsYmw2BE=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 24,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 3,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "OnEntityLeave [triggerparent]",
-            "HookName": "OnEntityLeave",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "TriggerParent",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 3,
-              "Name": "OnEntityLeave",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity"
-              ]
-            },
-            "MSILHash": "Q8eZixvfWkY54E7XZnjGKUx4x/WvAiwUOOgwtExjImw=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 4,
-            "ReturnBehavior": 3,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this",
-            "HookTypeName": "Simple",
-            "Name": "OnSupplyDropLanded",
-            "HookName": "OnSupplyDropLanded",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "SupplyDrop",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "OnCollisionEnter",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "UnityEngine.Collision"
-              ]
-            },
-            "MSILHash": "qLdYHS95T/TsBqGnTeZWfISZugZYtzCSJ0OA274IVs0=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 28,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnResourceEntityTakeDamage",
-            "HookName": "OnResourceEntityTakeDamage",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ResourceEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OnAttacked",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "HitInfo"
-              ]
-            },
-            "MSILHash": "A5ocURcI0KGIVBAmi4Bfg2yBCHXBcsinqrr226wOwRk=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 85,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnHelicopterStrafeEnter",
-            "HookName": "OnHelicopterStrafeEnter",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "PatrolHelicopterAI",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "State_Strafe_Enter",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "UnityEngine.Vector3",
-                "System.Boolean"
-              ]
-            },
-            "MSILHash": "ModxWZOdlemCT0jSrw0vAm17HhrtE4m8faclrrkUA+Q=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnResourceEntityKilled",
-            "HookName": "OnResourceEntityKilled",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ResourceEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OnKilled",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "HitInfo"
-              ]
-            },
-            "MSILHash": "Pc7tI9RR8OM86hKjq1jbbWlAWBrDS5QwI3Z7B7PRlZA=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
         }
       ],
       "Modifiers": [
@@ -11772,23 +11615,23 @@
           "MSILHash": ""
         },
         {
-          "Name": "BaseOven::FindBurnable",
+          "Name": "ContainerIOEntity::inventory",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseOven",
-          "Type": 1,
+          "TypeName": "ContainerIOEntity",
+          "Type": 0,
           "TargetExposure": [
             2
           ],
           "Flagged": false,
           "Signature": {
             "Exposure": [
-              0
+              1
             ],
-            "Name": "FindBurnable",
-            "FullTypeName": "Item",
+            "Name": "inventory",
+            "FullTypeName": "ItemContainer ContainerIOEntity::inventory",
             "Parameters": []
           },
-          "MSILHash": "RR699UAi/HSVci6e6j1Gouvq8kpj/XL933/gpmk7xKo="
+          "MSILHash": ""
         },
         {
           "Name": "BaseOven::ConsumeFuel",
@@ -11813,23 +11656,23 @@
           "MSILHash": "fsHHI5FocXNoa2xYZdN05b9D2/rWTs4QHqipxkKvSvs="
         },
         {
-          "Name": "ContainerIOEntity::inventory",
+          "Name": "BaseOven::FindBurnable",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ContainerIOEntity",
-          "Type": 0,
+          "TypeName": "BaseOven",
+          "Type": 1,
           "TargetExposure": [
             2
           ],
           "Flagged": false,
           "Signature": {
             "Exposure": [
-              1
+              0
             ],
-            "Name": "inventory",
-            "FullTypeName": "ItemContainer ContainerIOEntity::inventory",
+            "Name": "FindBurnable",
+            "FullTypeName": "Item",
             "Parameters": []
           },
-          "MSILHash": ""
+          "MSILHash": "RR699UAi/HSVci6e6j1Gouvq8kpj/XL933/gpmk7xKo="
         },
         {
           "Name": "BaseHelicopter::myAI",
@@ -11846,6 +11689,44 @@
             ],
             "Name": "myAI",
             "FullTypeName": "PatrolHelicopterAI BaseHelicopter::myAI",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingManager::buildingDictionary",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingManager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "buildingDictionary",
+            "FullTypeName": "ListDictionary`2<System.UInt32,BuildingManager/Building> BuildingManager::buildingDictionary",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingManager::decayEntities",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingManager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "decayEntities",
+            "FullTypeName": "ListHashSet`1<DecayEntity> BuildingManager::decayEntities",
             "Parameters": []
           },
           "MSILHash": ""

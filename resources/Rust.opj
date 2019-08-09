@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\DedicatedServers\\rust-ds\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -8672,6 +8672,76 @@
             "MSILHash": "Pc7tI9RR8OM86hKjq1jbbWlAWBrDS5QwI3Z7B7PRlZA=",
             "BaseHookName": null,
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 18,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "CanBecomeDud"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String, System.Object)"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 21
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanBecomeDud",
+            "HookName": "CanBecomeDud",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DudTimedExplosive",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Explode",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "krmasT+a8cB9bDh9fPncPlKORLvBOLFqKfb2LymQyBk=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0 => a0",
+            "HookTypeName": "Simple",
+            "Name": "SetFuse",
+            "HookName": "OnSetFuse",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TimedExplosive",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetFuse",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Single"
+              ]
+            },
+            "MSILHash": "cAXif9U1M9QtY/a4NRE6180g1iNgp8XZ66BO7EvNCLM=",
+            "BaseHookName": null,
+            "HookCategory": null
           }
         }
       ],

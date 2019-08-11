@@ -1489,13 +1489,13 @@
             "InjectionIndex": 112,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l11",
+            "ArgumentString": "this, r112",
             "HookTypeName": "Simple",
             "Name": "OnSurveyGather",
             "HookName": "OnSurveyGather",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "SurveyCharge",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "Explode",
@@ -1504,7 +1504,7 @@
             },
             "MSILHash": "3XDakQ+XhDNBXjgqvxEb+I52SObPSPa+1dixfpQ3y0k=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -1597,7 +1597,7 @@
             "HookName": "OnItemRepair",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "RepairBench",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RepairItem",
@@ -1608,7 +1608,7 @@
             },
             "MSILHash": "DahR9iHXV/BZN7dY+tt5T4UjEhZSYaIj6KpFcsKMNNg=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -3093,7 +3093,7 @@
             "HookName": "CanBeTargeted",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FlameTurret",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "CheckTrigger",
@@ -3102,7 +3102,7 @@
             },
             "MSILHash": "QCrsm4a9Cwo8zNG0bzJPfaPf8iKnSEGz/4nV+vAPJ00=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -3300,7 +3300,7 @@
             "HookName": "OnRefreshVendingStock",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "VendingMachine",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RefreshSellOrderStockLevel",
@@ -3311,7 +3311,7 @@
             },
             "MSILHash": "wJjvWeKLT/NWi+9XnLA7XJi9m434JmZ71SgQKky4LKg=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -4073,9 +4073,14 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 21,
-            "RemoveCount": 0,
+            "InjectionIndex": 19,
+            "RemoveCount": 2,
             "Instructions": [
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 1028
+              },
               {
                 "OpCode": "ldarg_0",
                 "OpType": "None",
@@ -4087,7 +4092,7 @@
                 "Operand": "Assembly-CSharp|Recycler|HasRecyclable"
               },
               {
-                "OpCode": "brtrue",
+                "OpCode": "brtrue_s",
                 "OpType": "Instruction",
                 "Operand": 22
               },
@@ -4107,7 +4112,7 @@
             "HookName": "OnRecycleItem [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Recycler",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RecycleThink",
@@ -4116,7 +4121,7 @@
             },
             "MSILHash": "f+iZAa4ct1fXdv4jhcvpFjV8QKSppALckGylw+gauLI=",
             "BaseHookName": "OnRecycleItem",
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -4517,7 +4522,7 @@
             "HookName": "CanBeTargeted",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "GunTrap",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "CheckTrigger",
@@ -4526,7 +4531,7 @@
             },
             "MSILHash": "lCKuiaTWOrkBy5zEgGRWJuIjIGBbRx8BySQex9btYUo=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -5177,7 +5182,7 @@
             "HookName": "OnRefreshVendingStock",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "VendingMachine",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RefreshSellOrderStockLevel",
@@ -5188,7 +5193,7 @@
             },
             "MSILHash": "wJjvWeKLT/NWi+9XnLA7XJi9m434JmZ71SgQKky4LKg=",
             "BaseHookName": "OnRefreshVendingStock [blueprint]",
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -5494,16 +5499,6 @@
                 "OpCode": "call",
                 "OpType": "Method",
                 "Operand": "Facepunch.System|Facepunch.Pool|FreeList[UnityEngine.PhysicsModule|UnityEngine.RaycastHit]"
-              },
-              {
-                "OpCode": "ldloca_s",
-                "OpType": "Variable",
-                "Operand": 1
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Facepunch.System|Facepunch.Pool|FreeList[Assembly-CSharp|BasePlayer]"
               }
             ],
             "HookTypeName": "Modify",
@@ -5511,7 +5506,7 @@
             "HookName": "CanBeTargeted [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FlameTurret",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "CheckTrigger",
@@ -5520,7 +5515,7 @@
             },
             "MSILHash": "QCrsm4a9Cwo8zNG0bzJPfaPf8iKnSEGz/4nV+vAPJ00=",
             "BaseHookName": "CanBeTargeted [flameturret]",
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -5538,16 +5533,6 @@
                 "OpCode": "call",
                 "OpType": "Method",
                 "Operand": "Facepunch.System|Facepunch.Pool|FreeList[UnityEngine.PhysicsModule|UnityEngine.RaycastHit]"
-              },
-              {
-                "OpCode": "ldloca_s",
-                "OpType": "Variable",
-                "Operand": 1
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Facepunch.System|Facepunch.Pool|FreeList[Assembly-CSharp|BasePlayer]"
               }
             ],
             "HookTypeName": "Modify",
@@ -5555,7 +5540,7 @@
             "HookName": "CanBeTargeted [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "GunTrap",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "CheckTrigger",
@@ -5564,7 +5549,7 @@
             },
             "MSILHash": "lCKuiaTWOrkBy5zEgGRWJuIjIGBbRx8BySQex9btYUo=",
             "BaseHookName": "CanBeTargeted [guntrap]",
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -6013,7 +5998,7 @@
             "HookName": "IOnNpcTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseNpc",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 0,
               "Name": "AggroClosestEnemy",
@@ -6022,7 +6007,7 @@
             },
             "MSILHash": "Y4TCpueeO8M72L7n6CQlAhdcK2OXdZRdTJH27jC3e98=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -6512,7 +6497,7 @@
             "HookName": "OnLootPlayer",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RPC_LootPlayer",
@@ -6523,7 +6508,7 @@
             },
             "MSILHash": "PuQPoN4go462lXs+1P6tk4GvthDirt0vwV+UfGqXvFw=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -6532,13 +6517,13 @@
             "InjectionIndex": 133,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l8",
+            "ArgumentString": "this, l9",
             "HookTypeName": "Simple",
             "Name": "OnFlameThrowerBurn",
             "HookName": "OnFlameThrowerBurn",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FlameThrower",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "FlameTick",
@@ -6547,7 +6532,7 @@
             },
             "MSILHash": "fxQJavxOM8Va4MQCdBmEKC+fnUZb7xBualsmqZe6nh4=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -6558,11 +6543,11 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1",
             "HookTypeName": "Simple",
-            "Name": "OnFlameExplosion [broken]",
+            "Name": "OnFlameExplosion",
             "HookName": "OnFlameExplosion",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FlameExplosive",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "Explode",
@@ -6573,7 +6558,7 @@
             },
             "MSILHash": "8rr2VSawA+BBAqENFQ72qgYUQCfevQxQ3KtL2lQJCA8=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -6588,7 +6573,7 @@
             "HookName": "OnFireBallDamage",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FireBall",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "DoRadialDamage",
@@ -6597,7 +6582,7 @@
             },
             "MSILHash": "kbfuDpDzAXyYQYSlO3scgP1MVAb2h3jpu5lo4Y6bxCw=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -6612,7 +6597,7 @@
             "HookName": "OnFireBallSpread",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "FireBall",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "TryToSpread",
@@ -6621,7 +6606,7 @@
             },
             "MSILHash": "WAdUho0ZGAAf8N4EQggkN98zjxMm5A4D1XGbTMh8ubc=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -7033,7 +7018,7 @@
               {
                 "OpCode": "beq_s",
                 "OpType": "Instruction",
-                "Operand": 13
+                "Operand": 10
               }
             ],
             "HookTypeName": "Modify",
@@ -7041,7 +7026,7 @@
             "HookName": "OnNpcPlayerTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "NPCPlayerApex",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "UpdateTargetMemory",
@@ -7055,7 +7040,7 @@
             },
             "MSILHash": "/nEuvnw+JQmAu0tQUMVatcE+LV/V32o2o2HJf3ec34Q=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -7181,7 +7166,7 @@
             "HookName": "OnNpcPlayerTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Rust.Ai.HTN.BaseNpcMemory",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RememberEnemyPlayer",
@@ -7196,22 +7181,22 @@
             },
             "MSILHash": "66fWKhBmLgHOrluqq5bQWpxJ3AcyX52NU+Ljdfl0c+o=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 136,
+            "InjectionIndex": 138,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "a0, l0",
+            "ArgumentString": "a0, l10.Player",
             "HookTypeName": "Simple",
             "Name": "IOnHtnNpcPlayerTarget [internal]",
             "HookName": "IOnHtnNpcPlayerTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Rust.Ai.HTN.Sensors.PlayersInRangeSensor",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "Tick",
@@ -7224,7 +7209,7 @@
             },
             "MSILHash": "M5QSAh4W32SQcwq/dndv+Npto1ZYMIZyBV2cpzq/7P4=",
             "BaseHookName": null,
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -7464,16 +7449,16 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 28,
+            "InjectionIndex": 27,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l0, l1",
+            "ArgumentString": "l0, r21",
             "HookTypeName": "Simple",
             "Name": "OnTeamCreated",
             "HookName": "OnTeamCreated",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "RelationshipManager",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "trycreateteam",
@@ -7484,7 +7469,7 @@
             },
             "MSILHash": "NB7aDVxtM6Pcx0xoSjNUxhgjfYs84oTSJYQcqFpoyf0=",
             "BaseHookName": "OnTeamCreate",
-            "HookCategory": "__Broken__"
+            "HookCategory": "__Testing__"
           }
         },
         {
@@ -8556,7 +8541,7 @@
             "HookName": "OnEntityTakeDamage",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ResourceEntity",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "OnAttacked",

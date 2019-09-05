@@ -12,11 +12,11 @@
     <PackageIconUrl>https://avatars1.githubusercontent.com/u/10712027?s=64</PackageIconUrl>
     <Copyright>Copyright (c) 2014-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
     <PackageTags>gaming modding plugins unity unity3d</PackageTags>
-    <TargetFramework>netstandard20</TargetFramework>
+    <TargetFramework>net46</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <ManagedDir>RustDedicated_Data\Managed</ManagedDir>
     <SteamAppId>258550</SteamAppId>
-    <SteamBranch>public</SteamBranch>
+    <SteamBranch>staging</SteamBranch>
     <SteamLogin>anonymous</SteamLogin>
     <ThisAssemblyNamespace>Oxide.Game.Rust</ThisAssemblyNamespace>
   </PropertyGroup>
@@ -43,8 +43,11 @@
     <Reference Include="Facepunch.Rcon">
       <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Rcon.dll</HintPath>
     </Reference>
-    <Reference Include="Facepunch.Steamworks">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Steamworks.dll</HintPath>
+    <Reference Condition="'$(OS)' == 'Unix'" Include="Facepunch.Steamworks.Posix64">
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Steamworks.Posix64.dll</HintPath>
+    </Reference>
+    <Reference Condition="'$(OS)' == 'Windows_NT'" Include="Facepunch.Steamworks.Win64">
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Steamworks.Win64.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.System">
       <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.System.dll</HintPath>

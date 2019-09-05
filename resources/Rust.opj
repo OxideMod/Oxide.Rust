@@ -8638,6 +8638,216 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnHelicopterStrafeEnter",
+            "HookName": "OnHelicopterStrafeEnter",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatrolHelicopterAI",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "State_Strafe_Enter",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "ModxWZOdlemCT0jSrw0vAm17HhrtE4m8faclrrkUA+Q=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.connection, l2.name, l2.value",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerSetInfo [server]",
+            "HookName": "OnPlayerSetInfo",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ClientReady",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Message"
+              ]
+            },
+            "MSILHash": "lRJMLngCEGqeiGfdZxzL/vAodT1ZCRuiEvwp39Q7xXE=",
+            "BaseHookName": "OnPlayerConnected",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.net.connection, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerSetInfo",
+            "HookName": "OnPlayerSetInfo",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetInfo",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "System.String"
+              ]
+            },
+            "MSILHash": "uHiRNEOuG2AQpvttQAovl8X2ZWbzeGTGAnIK7nZi3Kk=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnTakeCurrencyItem",
+            "HookName": "OnTakeCurrencyItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TakeCurrencyItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item"
+              ]
+            },
+            "MSILHash": "lF+L9otYgt5T+bgbf8Kji4cIrDrdDqvQw/WugNmPyLI=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnTakeCurrencyItem [npc]",
+            "HookName": "OnTakeCurrencyItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCVendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TakeCurrencyItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item"
+              ]
+            },
+            "MSILHash": "6oWpAWR8Rm5cvS4UxEz+yRgMFUh6Yek3IqusI5QYIK0=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityStabilityCheck",
+            "HookName": "OnEntityStabilityCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "StabilityEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StabilityCheck",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "tvSqnwFh25+DfT3777aMXTNPUkd1vXDeE+Tf5/WIVxc=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a1, this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnPayForUpgrade",
+            "HookName": "OnPayForUpgrade",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BuildingBlock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "PayForUpgrade",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConstructionGrade",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "dqKgHDoZr0ZbcmdWsawnIUVEaceEXRkInkPoNbipSnY=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnPayForPlacement",
+            "HookName": "OnPayForPlacement",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Planner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PayForPlacement",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "Construction"
+              ]
+            },
+            "MSILHash": "yU/Dipa/NMgtcX+OfKsDs9S7nIzbFGTheIhTziQszAE=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "ArgumentString": null,

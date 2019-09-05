@@ -114,6 +114,7 @@
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Assembly-CSharp.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Console.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Rcon.dll" />
+      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Steamworks.Win64.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\NewAssembly.dll" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.core\**\lib\$(TargetFramework)\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*; $(SolutionDir)\packages\oxide.csharp\**\lib\$(TargetFramework)\*.*" />

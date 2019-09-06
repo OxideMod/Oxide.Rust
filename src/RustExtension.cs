@@ -120,6 +120,11 @@ namespace Oxide.Game.Rust
             Manager.RegisterLibrary("Player", new Libraries.Player());
             Manager.RegisterLibrary("Server", new Libraries.Server());
             Manager.RegisterPluginLoader(new RustPluginLoader());
+
+            if (Environment.OSVersion.Platform == PlatformID.Unix)
+            {
+                Cleanup.Add("Facepunch.Steamworks.Win64.dll"); // TODO: Remove after a few updates
+            }
         }
 
         /// <summary>

@@ -4073,14 +4073,9 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 19,
-            "RemoveCount": 2,
+            "InjectionIndex": 21,
+            "RemoveCount": 0,
             "Instructions": [
-              {
-                "OpCode": "brtrue_s",
-                "OpType": "Instruction",
-                "Operand": 1028
-              },
               {
                 "OpCode": "ldarg_0",
                 "OpType": "None",
@@ -4094,7 +4089,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 22
+                "Operand": 307
               },
               {
                 "OpCode": "ldarg_0",

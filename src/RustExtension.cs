@@ -49,8 +49,8 @@ namespace Oxide.Game.Rust
         /// </summary>
         public override string[] DefaultReferences => new[]
         {
-            "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks", "Facepunch.System", "Facepunch.UnityEngine", "NewAssembly", "Rust.Data",
-            "Rust.Global", "Rust.Workshop", "Rust.World", "System.Drawing", "UnityEngine.AIModule", "UnityEngine.AssetBundleModule", "UnityEngine.CoreModule",
+            "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks.Posix64", "Facepunch.Steamworks.Win64", "Facepunch.System", "Facepunch.UnityEngine", "NewAssembly",
+            "Rust.Data", "Rust.Global", "Rust.Workshop", "Rust.World", "System.Drawing", "UnityEngine.AIModule", "UnityEngine.AssetBundleModule", "UnityEngine.CoreModule",
             "UnityEngine.GridModule", "UnityEngine.ImageConversionModule", "UnityEngine.Networking", "UnityEngine.PhysicsModule", "UnityEngine.TerrainModule",
             "UnityEngine.TerrainPhysicsModule", "UnityEngine.UI", "UnityEngine.UIModule", "UnityEngine.UIElementsModule", "UnityEngine.UnityWebRequestAudioModule",
             "UnityEngine.UnityWebRequestModule", "UnityEngine.UnityWebRequestTextureModule", "UnityEngine.UnityWebRequestWWWModule", "UnityEngine.VehiclesModule",

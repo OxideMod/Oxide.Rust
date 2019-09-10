@@ -7263,6 +7263,56 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanUpdateTeam",
+            "HookName": "CanUpdateTeam",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateTeam",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.UInt64"
+              ]
+            },
+            "MSILHash": "bXxCUH048OSEOq54WZf3iZrWf4BliVwXyi2LTlYw9p0=",
+            "BaseHookName": null,
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 105,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnTeamUpdate",
+            "HookName": "OnTeamUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TeamUpdate",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "tIkGrECi1Yc4ZtE5WbLw+ZYSX+IHgzxIbS9pXw4l/GI=",
+            "BaseHookName": null,
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 57,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

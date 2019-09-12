@@ -12271,6 +12271,215 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::nextAmmoCheckTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextAmmoCheckTime",
+            "FullTypeName": "System.Single AutoTurret::nextAmmoCheckTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::nextForcedAimTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextForcedAimTime",
+            "FullTypeName": "System.Single AutoTurret::nextForcedAimTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::nextIdleAimTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextIdleAimTime",
+            "FullTypeName": "System.Single AutoTurret::nextIdleAimTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::nextShotTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextShotTime",
+            "FullTypeName": "System.Single AutoTurret::nextShotTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::nextVisCheck",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextVisCheck",
+            "FullTypeName": "System.Single AutoTurret::nextVisCheck",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::numConsecutiveMisses",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "numConsecutiveMisses",
+            "FullTypeName": "System.Int32 AutoTurret::numConsecutiveMisses",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::lastSentAimDir",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastSentAimDir",
+            "FullTypeName": "UnityEngine.Vector3 AutoTurret::lastSentAimDir",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::ammoItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ammoItem",
+            "FullTypeName": "Item AutoTurret::ammoItem",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::targetVisible",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "targetVisible",
+            "FullTypeName": "System.Boolean AutoTurret::targetVisible",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::totalAmmo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "totalAmmo",
+            "FullTypeName": "System.Int32 AutoTurret::totalAmmo",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::totalAmmoDirty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "totalAmmoDirty",
+            "FullTypeName": "System.Boolean AutoTurret::totalAmmoDirty",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

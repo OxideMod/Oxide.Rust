@@ -12532,6 +12532,120 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ExcavatorArm::currentTurnThrottle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ExcavatorArm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentTurnThrottle",
+            "FullTypeName": "System.Single ExcavatorArm::currentTurnThrottle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ExcavatorArm::lastMoveYaw",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ExcavatorArm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastMoveYaw",
+            "FullTypeName": "System.Single ExcavatorArm::lastMoveYaw",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ExcavatorArm::movedAmount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ExcavatorArm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "movedAmount",
+            "FullTypeName": "System.Single ExcavatorArm::movedAmount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ExcavatorArm::pendingResources",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ExcavatorArm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "pendingResources",
+            "FullTypeName": "ItemAmount[] ExcavatorArm::pendingResources",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ExcavatorArm::resourceMiningIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ExcavatorArm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "resourceMiningIndex",
+            "FullTypeName": "System.Int32 ExcavatorArm::resourceMiningIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DieselEngine::cachedFuelTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DieselEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cachedFuelTime",
+            "FullTypeName": "System.Single DieselEngine::cachedFuelTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

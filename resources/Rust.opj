@@ -9121,7 +9121,7 @@
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "UpdateFromInput",
+            "Name": "OnUpdateFromInput",
             "HookName": "OnUpdateFromInput",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "IOEntity",
@@ -9137,7 +9137,31 @@
             },
             "MSILHash": "aMbPC2zySkZPXcBRGZ1q+hvlYf6MmNWiJ8C3hlp9FD8=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnUpdateOutputs",
+            "HookName": "OnUpdateOutputs",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "IOEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateOutputs",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "ISvXbKusNuw76JmWtHb4hSVGfxgpoUyUjDgVyg9rVtE=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
           }
         }
       ],

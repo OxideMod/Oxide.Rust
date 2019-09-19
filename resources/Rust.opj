@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "C:\\Users\\Andrew\\Desktop\\uMod.Rust\\src\\Dependencies\\Patched\\public\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -9111,6 +9111,33 @@
             "MSILHash": "ZTVJ9d4Mu3iMDwZKuj6/HSQCIuXNzlU1z07MsMtrT24=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "UpdateFromInput",
+            "HookName": "OnUpdateFromInput",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "IOEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateFromInput",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Int32",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "aMbPC2zySkZPXcBRGZ1q+hvlYf6MmNWiJ8C3hlp9FD8=",
+            "BaseHookName": null,
+            "HookCategory": null
           }
         }
       ],

@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "C:\\Users\\2CHEVSKII\\source\\repos\\serv2\\rust-ds\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -9111,6 +9111,33 @@
             "MSILHash": "ZTVJ9d4Mu3iMDwZKuj6/HSQCIuXNzlU1z07MsMtrT24=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "UnloadAmmo",
+            "HookName": "OnUnloadAmmo",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseProjectile",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UnloadAmmo",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "oMUS5SJKrpsq+6R5YiXUu3moL0wK121Uv/UFdXnj1S8=",
+            "BaseHookName": null,
+            "HookCategory": null
           }
         }
       ],

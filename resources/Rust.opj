@@ -12794,6 +12794,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseEntity::triggers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "triggers",
+            "FullTypeName": "System.Collections.Generic.List`1<TriggerBase> BaseEntity::triggers",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnGroup::spawnClock",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnGroup",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spawnClock",
+            "FullTypeName": "LocalClock SpawnGroup::spawnClock",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

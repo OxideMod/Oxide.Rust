@@ -9112,6 +9112,154 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 22,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnExcavatorMiningToggled [start]",
+            "HookName": "OnExcavatorMiningToggled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ExcavatorArm",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "BeginMining",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "DxDeZBtozFuxyIIwjg9SHcRf3/jKCyliOdFxYHW0cDs=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnExcavatorMiningToggled [stop]",
+            "HookName": "OnExcavatorMiningToggled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ExcavatorArm",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopMining",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "Tz9yRo3uYd06x1P0O1e7Ebgu3ZBNp6CV/XHnBko8E8Q=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnExcavatorResourceSet",
+            "HookName": "OnExcavatorResourceSet",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ExcavatorArm",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_SetResourceTarget",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "aGGSJu1Txea8Cn2c+ouPuEhfOBFSqsihINRfWkuSl0A=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnDieselEngineToggled [off]",
+            "HookName": "OnDieselEngineToggled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DieselEngine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EngineOff",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "NuyFrvshyYzE2fIq8HK11SSqJCnaUmp+A7ntYAT14Gw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnDieselEngineToggled [on]",
+            "HookName": "OnDieselEngineToggled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DieselEngine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EngineOn",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "Hh5FDtS4Hl+CDjLQn5+A4qscok1eA0RHJIgvsu/2NME=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, this",
+            "HookTypeName": "Simple",
+            "Name": "OnDieselEngineToggle",
+            "HookName": "OnDieselEngineToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DieselEngine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EngineSwitch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "6+l241Z8KJBCNXGlMk5BzFI3UlrlLJmtIFBSaCw3UVo=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

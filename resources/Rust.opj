@@ -9260,6 +9260,59 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "Server_AddMarker",
+            "HookName": "OnAddMarker",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_AddMarker",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Whbi5LNJzvBiM66JD0ONv11qUqa7WKumJqxNEZ3O7lk=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 37,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "RemovePointOfInterestFromList",
+            "HookName": "OnRemoveMarker",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RemovePointOfInterestFromList",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.Int32",
+                "System.Collections.Generic.List`1<ProtoBuf.MapNote>&"
+              ]
+            },
+            "MSILHash": "gUuXnir1rEkLW3yCHjRmm6e4XV2YvrsDfOyHSxSqQTc=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

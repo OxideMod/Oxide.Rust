@@ -160,7 +160,7 @@ namespace Oxide.Game.Rust
                 if (!Interface.Oxide.Config.Options.Modded)
                 {
                     Interface.Oxide.LogWarning("The server is currently listed under Community. Please be aware that Facepunch only allows admin tools" +
-                        "(that do not affect gameplay) under the Community section");
+                        " (that do not affect gameplay) under the Community section");
                 }
 
                 serverInitialized = true;

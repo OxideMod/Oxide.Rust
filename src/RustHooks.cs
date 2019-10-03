@@ -376,7 +376,7 @@ namespace Oxide.Game.Rust
         [HookMethod("OnPlayerInit")]
         private void OnPlayerInit(BasePlayer player)
         {
-            // Set language for player
+            // Initial set language for player
             lang.SetLanguage(player.net.connection.info.GetString("global.language", "en"), player.UserIDString);
 
             // Let covalence know
@@ -386,6 +386,22 @@ namespace Oxide.Game.Rust
             {
                 player.IPlayer = iplayer;
                 Interface.CallHook("OnUserConnected", iplayer);
+            }
+        }
+
+        /// <summary>
+        /// Called when setting/changing info values for a player
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <param name="key"></param>
+        /// <param name="val"></param>
+        [HookMethod("OnPlayerSetInfo")]
+        private void OnPlayerSetInfo(Connection connection, string key, string val)
+        {
+            // Change language for player
+            if (key == "global.language")
+            {
+                lang.SetLanguage(val, connection.userid.ToString());
             }
         }
 

@@ -5404,13 +5404,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 58,
-            "ReturnBehavior": 0,
+            "InjectionIndex": 17,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0, l1",
+            "ArgumentString": "this, l0, a0",
             "HookTypeName": "Simple",
-            "Name": "OnPlayerActiveItemChanged",
-            "HookName": "OnPlayerActiveItemChanged",
+            "Name": "OnActiveItemChange",
+            "HookName": "OnActiveItemChange",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
             "Flagged": false,
@@ -8895,58 +8895,6 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0",
-            "HookTypeName": "Simple",
-            "Name": "OnActiveItemChange",
-            "HookName": "OnActiveItemChange",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 3,
-              "Name": "UpdateActiveItem",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.UInt32"
-              ]
-            },
-            "MSILHash": "jc/s/C+L+BAzdNjmcKYiQhC8jUmoZXHwxe4pEJ5cOHo=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 66,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnActiveItemChanged",
-            "HookName": "OnActiveItemChanged",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 3,
-              "Name": "UpdateActiveItem",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.UInt32"
-              ]
-            },
-            "MSILHash": "jc/s/C+L+BAzdNjmcKYiQhC8jUmoZXHwxe4pEJ5cOHo=",
-            "BaseHookName": "OnActiveItemChange",
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
             "ArgumentString": "this.currentTeam, a0, this",
             "HookTypeName": "Simple",
             "Name": "OnTeamUpdate",
@@ -9259,6 +9207,32 @@
             "MSILHash": "6+l241Z8KJBCNXGlMk5BzFI3UlrlLJmtIFBSaCw3UVo=",
             "BaseHookName": null,
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 67,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnActiveItemChanged",
+            "HookName": "OnActiveItemChanged",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "UpdateActiveItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.UInt32"
+              ]
+            },
+            "MSILHash": "jc/s/C+L+BAzdNjmcKYiQhC8jUmoZXHwxe4pEJ5cOHo=",
+            "BaseHookName": "OnActiveItemChange",
+            "HookCategory": "Player"
           }
         }
       ],

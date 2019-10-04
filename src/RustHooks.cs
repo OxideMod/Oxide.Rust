@@ -390,6 +390,22 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
+        /// Called when setting/changing info values for a player
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <param name="key"></param>
+        /// <param name="val"></param>
+        [HookMethod("OnPlayerSetInfo")]
+        private void OnPlayerSetInfo(Connection connection, string key, string val)
+        {
+            // Change language for player
+            if (key == "global.language")
+            {
+                lang.SetLanguage(val, connection.userid.ToString());
+            }
+        }
+
+        /// <summary>
         /// Called when the player has been kicked
         /// </summary>
         /// <param name="player"></param>

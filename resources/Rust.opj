@@ -9234,6 +9234,240 @@
             "BaseHookName": "OnActiveItemChange",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnAmmoUnload",
+            "HookName": "OnAmmoUnload",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseProjectile",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UnloadAmmo",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "oMUS5SJKrpsq+6R5YiXUu3moL0wK121Uv/UFdXnj1S8=",
+            "BaseHookName": null,
+            "HookCategory": "Weapon"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnOutputUpdate",
+            "HookName": "OnOutputUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "IOEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateOutputs",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "ISvXbKusNuw76JmWtHb4hSVGfxgpoUyUjDgVyg9rVtE=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnInputUpdate",
+            "HookName": "OnInputUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "IOEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateFromInput",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Int32",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "aMbPC2zySkZPXcBRGZ1q+hvlYf6MmNWiJ8C3hlp9FD8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 54,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnCardSwipe",
+            "HookName": "OnCardSwipe",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CardReader",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerCardSwiped",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "MQr5Pu4AUe5YTmJSramofQeNuf3yu00vozozf0ppb2I=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnButtonPress",
+            "HookName": "OnButtonPress",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PressButton",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Press",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Gw+u289ks4NbZ7iaIK0xXPRja0OffHtyuF5p5HbEznI=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "Server_AddMarker",
+            "HookName": "OnServer_AddMarker",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_AddMarker",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Whbi5LNJzvBiM66JD0ONv11qUqa7WKumJqxNEZ3O7lk=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "Server_RemovePointOfInterest",
+            "HookName": "OnServer_RemovePointOfInterest",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_RemovePointOfInterest",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "sX+IHlsoiAzuLM6Mjy1Z+7qIwtKhH2vnkl2Coakp+w8=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "Server_ClearMapMarkers",
+            "HookName": "OnServer_ClearMapMarkers",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_ClearMapMarkers",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "/KGakw8SFp5FGy32LoSRCoUpT8VHskahqcwMVjpeWng=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "Server_LogDeathMarker",
+            "HookName": "OnServer_LogDeathMarker",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_LogDeathMarker",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "Tq73QPatgVcXSIv7/dPN2zurQgGQsJ9pa+Xs687A2Es=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

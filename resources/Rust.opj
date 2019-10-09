@@ -9537,6 +9537,30 @@
             "BaseHookName": "OnMapMarkersClear",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "EngineStartup",
+            "HookName": "OnEngineStartup",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MiniCopter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EngineStartup",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "8pAleyRavdKKmX08YZ8lXfAd+OKZTQJwDFGeYol1aCU=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [
@@ -13106,6 +13130,123 @@
             ],
             "Name": "spawnClock",
             "FullTypeName": "LocalClock SpawnGroup::spawnClock",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::SendMarkersToClient",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SendMarkersToClient",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "Vsns10rYn9B3PZDDjCEGPBYIOSUlJkLCIEqSoWmm+G4="
+        },
+        {
+          "Name": "BasePlayer::RemovePointOfInterestFromList",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RemovePointOfInterestFromList",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Int32",
+              "System.Collections.Generic.List`1<ProtoBuf.MapNote>&"
+            ]
+          },
+          "MSILHash": "gUuXnir1rEkLW3yCHjRmm6e4XV2YvrsDfOyHSxSqQTc="
+        },
+        {
+          "Name": "Candle::burnRate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Candle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "burnRate",
+            "FullTypeName": "System.Single Candle::burnRate",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Candle::lifeTimeSeconds",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Candle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lifeTimeSeconds",
+            "FullTypeName": "System.Single Candle::lifeTimeSeconds",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SamSite::currentTubeIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentTubeIndex",
+            "FullTypeName": "System.Int32 SamSite::currentTubeIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SamSite::ammoItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ammoItem",
+            "FullTypeName": "Item SamSite::ammoItem",
             "Parameters": []
           },
           "MSILHash": ""

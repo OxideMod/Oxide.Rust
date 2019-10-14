@@ -13250,6 +13250,46 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "CH47LandingZone::landingZones",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47LandingZone",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "landingZones",
+            "FullTypeName": "System.Collections.Generic.List`1<CH47LandingZone> CH47LandingZone::landingZones",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CH47DropZone::dropZones",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47DropZone",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "dropZones",
+            "FullTypeName": "System.Collections.Generic.List`1<CH47DropZone> CH47DropZone::dropZones",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

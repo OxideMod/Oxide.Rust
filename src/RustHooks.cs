@@ -28,12 +28,12 @@ namespace Oxide.Game.Rust
         /// Called when a remote console command is received
         /// </summary>
         /// <returns></returns>
-        /// <param name="sender"></param>
+        /// <param name="ipAddress"></param>
         /// <param name="command"></param>
         [HookMethod("IOnRconCommand")]
-        private object IOnRconCommand(IPEndPoint sender, string command)
+        private object IOnRconCommand(IPAddress ipAddress, string command)
         {
-            if (sender != null && !string.IsNullOrEmpty(command))
+            if (ipAddress != null && !string.IsNullOrEmpty(command))
             {
                 RemoteMessage message = RemoteMessage.GetMessage(command);
                 if (!string.IsNullOrEmpty(message?.Message))
@@ -44,7 +44,7 @@ namespace Oxide.Game.Rust
                         string cmd = fullCommand[0].ToLower();
                         string[] args = fullCommand.Skip(1).ToArray();
 
-                        if (Interface.CallHook("OnRconCommand", sender, cmd, args) != null)
+                        if (Interface.CallHook("OnRconCommand", ipAddress, cmd, args) != null)
                         {
                             return true;
                         }

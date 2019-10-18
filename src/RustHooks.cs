@@ -612,9 +612,10 @@ namespace Oxide.Game.Rust
             Interface.Oxide.CallDeprecatedHook("OnActiveItemChange", "OnActiveItemChange", new System.DateTime(2020, 1, 1), player, newItemId);
         }
 
-        [HookMethod("OnActiveItemChanged")]
+        [HookMethod("IOnActiveItemChanged")]
         private void OnActiveItemChanged(BasePlayer player, Item oldItem, Item newItem)
         {
+            Interface.Oxide.CallHook("OnActiveItemChanged", player, oldItem, newItem);
             Interface.Oxide.CallDeprecatedHook("OnActiveItemChanged", "OnActiveItemChanged", new System.DateTime(2020, 1, 1), player, player.svActiveItemID, newItem);
             Interface.Oxide.CallDeprecatedHook("OnPlayerActiveItemChanged", "OnActiveItemChanged", new System.DateTime(2020, 1, 1), player, oldItem, newItem);
         }

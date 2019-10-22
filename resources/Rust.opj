@@ -5409,8 +5409,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, a0",
             "HookTypeName": "Simple",
-            "Name": "OnActiveItemChange",
-            "HookName": "OnActiveItemChange",
+            "Name": "IOnActiveItemChange [internal]",
+            "HookName": "IOnActiveItemChange",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
             "Flagged": false,
@@ -9231,7 +9231,7 @@
               ]
             },
             "MSILHash": "jc/s/C+L+BAzdNjmcKYiQhC8jUmoZXHwxe4pEJ5cOHo=",
-            "BaseHookName": "OnActiveItemChange",
+            "BaseHookName": "IOnActiveItemChange [internal]",
             "HookCategory": "Player"
           }
         },

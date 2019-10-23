@@ -3,7 +3,6 @@ using Oxide.Core;
 using Oxide.Core.Configuration;
 using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
-using Oxide.Core.RemoteConsole;
 using Rust.Ai;
 using Rust.Ai.HTN;
 using System.Collections.Generic;
@@ -35,19 +34,15 @@ namespace Oxide.Game.Rust
         {
             if (ipAddress != null && !string.IsNullOrEmpty(command))
             {
-                RemoteMessage message = RemoteMessage.GetMessage(command);
-                if (!string.IsNullOrEmpty(message?.Message))
+                string[] fullCommand = CommandLine.Split(command);
+                if (fullCommand.Length >= 1)
                 {
-                    string[] fullCommand = CommandLine.Split(message.Message);
-                    if (fullCommand.Length >= 1)
-                    {
-                        string cmd = fullCommand[0].ToLower();
-                        string[] args = fullCommand.Skip(1).ToArray();
+                    string cmd = fullCommand[0].ToLower();
+                    string[] args = fullCommand.Skip(1).ToArray();
 
-                        if (Interface.CallHook("OnRconCommand", ipAddress, cmd, args) != null)
-                        {
-                            return true;
-                        }
+                    if (Interface.CallHook("OnRconCommand", ipAddress, cmd, args) != null)
+                    {
+                        return true;
                     }
                 }
             }
@@ -95,10 +90,34 @@ namespace Oxide.Game.Rust
         {
             if (arg == null || arg.Connection != null && arg.Player() == null)
             {
-                return true; // Ingore console commands from client during connection
+                return true; // Ignore console commands from client during connection
             }
 
             return arg.cmd.FullName != "chat.say" ? Interface.CallHook("OnServerCommand", arg) : null;
+        }
+
+        /// <summary>
+        /// Called when the server is updating Steam information
+        /// </summary>
+        [HookMethod("IOnUpdateServerInformation")]
+        private void IOnUpdateServerInformation()
+        {
+            // Add Steam tags for Oxide
+            SteamServer.GameTags += ",oxide";
+            if (Interface.Oxide.Config.Options.Modded)
+            {
+                SteamServer.GameTags += ",modded";
+            }
+        }
+
+        /// <summary>
+        /// Called when the server description is updating
+        /// </summary>
+        [HookMethod("IOnUpdateServerDescription")]
+        private void IOnUpdateServerDescription()
+        {
+            // Fix for server description not always updating
+            SteamServer.SetKey("description_0", string.Empty);
         }
 
         #endregion Server Hooks

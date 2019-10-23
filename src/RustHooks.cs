@@ -610,7 +610,7 @@ namespace Oxide.Game.Rust
         private void IOnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)
         {
             Interface.Oxide.CallHook("OnActiveItemChange", player, oldItem, newItemId);
-            Interface.Oxide.CallDeprecatedHook("OnActiveItemChange", $"OnActiveItemChange({player.GetType()}, {oldItem.GetType()}, {newItemId.GetType()})",
+            Interface.Oxide.CallDeprecatedHook("OnActiveItemChange", $"OnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)",
                 new System.DateTime(2020, 1, 1), player, newItemId);
         }
 
@@ -618,9 +618,9 @@ namespace Oxide.Game.Rust
         private void IOnActiveItemChanged(BasePlayer player, Item oldItem, Item newItem)
         {
             Interface.Oxide.CallHook("OnActiveItemChanged", player, oldItem, newItem);
-            Interface.Oxide.CallDeprecatedHook("OnActiveItemChanged", $"OnActiveItemChanged({player.GetType()}, {oldItem.GetType()}, {newItem.GetType()})",
+            Interface.Oxide.CallDeprecatedHook("OnActiveItemChanged", $"OnActiveItemChanged(BasePlayer player, Item oldItem, Item newItem)",
                 new System.DateTime(2020, 1, 1), player, player.svActiveItemID, newItem);
-            Interface.Oxide.CallDeprecatedHook("OnPlayerActiveItemChanged", $"OnActiveItemChanged({player.GetType()}, {oldItem.GetType()}, {newItem.GetType()})",
+            Interface.Oxide.CallDeprecatedHook("OnPlayerActiveItemChanged", $"OnActiveItemChanged(BasePlayer player, Item oldItem, Item newItem)",
                 new System.DateTime(2020, 1, 1), player, oldItem, newItem);
         }
 

@@ -5,6 +5,7 @@ using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using Rust.Ai;
 using Rust.Ai.HTN;
+using Steamworks;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;

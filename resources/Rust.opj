@@ -2110,95 +2110,6 @@
           }
         },
         {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 85,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Facepunch.Steamworks.Win64|Steamworks.SteamServer|get_GameTags"
-              },
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": ",oxide"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.String|Concat(System.String, System.String)"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Facepunch.Steamworks.Win64|Steamworks.SteamServer|set_GameTags"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|get_Oxide"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.OxideMod|get_Config"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Configuration.OxideConfig|get_Options"
-              },
-              {
-                "OpCode": "ldfld",
-                "OpType": "Field",
-                "Operand": "Oxide.Core|Oxide.Core.Configuration.OxideConfig/OxideOptions|Modded"
-              },
-              {
-                "OpCode": "brfalse",
-                "OpType": "Instruction",
-                "Operand": 85
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Facepunch.Steamworks.Win64|Steamworks.SteamServer|get_GameTags"
-              },
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": ",modded"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.String|Concat(System.String, System.String)"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Facepunch.Steamworks.Win64|Steamworks.SteamServer|set_GameTags"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "AddGameTags [patch]",
-            "HookName": "AddGameTags [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerMgr",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "UpdateServerInformation",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "kXcoeUDe36QS7i8mTItX1EEsb1Os3jY5weKoIRlKFvE=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
-          }
-        },
-        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 16,
@@ -6809,45 +6720,6 @@
           }
         },
         {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 109,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "description_0"
-              },
-              {
-                "OpCode": "ldsfld",
-                "OpType": "Field",
-                "Operand": "mscorlib|System.String|Empty"
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "Facepunch.Steamworks.Win64|Steamworks.SteamServer|SetKey"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "FixDescriptionUpdating [patch]",
-            "HookName": "FixDescriptionUpdating [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerMgr",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "UpdateServerInformation",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "kXcoeUDe36QS7i8mTItX1EEsb1Os3jY5weKoIRlKFvE=",
-            "BaseHookName": "AddGameTags [patch]",
-            "HookCategory": "_Patches"
-          }
-        },
-        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 8,
@@ -7492,306 +7364,6 @@
             "MSILHash": "WZHEB/VqQkOQYyVXGSDX4woN796b/5HTs4xAQqmmUXc=",
             "BaseHookName": "OnTeamDisband",
             "HookCategory": "Team"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 0,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.Environment|get_OSVersion"
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.OperatingSystem|get_Platform"
-              },
-              {
-                "OpCode": "ldc_i4_4",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ceq",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "brtrue",
-                "OpType": "Instruction",
-                "Operand": 29
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "ConsoleEnableWinOnly [patch]",
-            "HookName": "ConsoleEnableWinOnly [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerConsole",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OnEnable",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "FiSe0dzBG4Gojuwy6thYkYL70dXLZcns6fH3a7zyjb4=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 0,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.Environment|get_OSVersion"
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.OperatingSystem|get_Platform"
-              },
-              {
-                "OpCode": "ldc_i4_4",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ceq",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "brtrue",
-                "OpType": "Instruction",
-                "Operand": 68
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "ConsoleHandleLogWinOnly [patch]",
-            "HookName": "ConsoleHandleLogWinOnly [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerConsole",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "HandleLog",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.String",
-                "System.String",
-                "UnityEngine.LogType"
-              ]
-            },
-            "MSILHash": "kgtD5ffonym/f+Zj8bJzE5DdXLcFDUVuEFzVLJFOY1g=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 4,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.Environment|get_OSVersion"
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.OperatingSystem|get_Platform"
-              },
-              {
-                "OpCode": "ldc_i4_4",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ceq",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "brtrue",
-                "OpType": "Instruction",
-                "Operand": 13
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "ConsoleDisableWinOnly [patch]",
-            "HookName": "ConsoleDisableWinOnly [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerConsole",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "OnDisable",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "qH0Fx4ZpZ52rsWOYB9nD/cxYExr6N+/oLjCJei6InME=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 0,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.Environment|get_OSVersion"
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.OperatingSystem|get_Platform"
-              },
-              {
-                "OpCode": "ldc_i4_4",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ceq",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "brtrue",
-                "OpType": "Instruction",
-                "Operand": 49
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "ConsolePrintWinOnly [patch]",
-            "HookName": "ConsolePrintWinOnly [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerConsole",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "PrintColoured",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.Object[]"
-              ]
-            },
-            "MSILHash": "UI86dHyItG7auqsoY9Zk936ttdcLX2uvBUQ95+KCkEw=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 0,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.Environment|get_OSVersion"
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.OperatingSystem|get_Platform"
-              },
-              {
-                "OpCode": "ldc_i4_4",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ceq",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "brtrue",
-                "OpType": "Instruction",
-                "Operand": 8
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "ConsoleInitWinOnly [patch]",
-            "HookName": "ConsoleInitWinOnly [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerConsole",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": ".ctor",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "hMvSQJ3+3AqlZGiCx6FXHBprcWPcosm5l7BPHVidsBw=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 0,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.Environment|get_OSVersion"
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "mscorlib|System.OperatingSystem|get_Platform"
-              },
-              {
-                "OpCode": "ldc_i4_4",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ceq",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "brtrue",
-                "OpType": "Instruction",
-                "Operand": 5
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "ConsoleUpdateWinOnly [patch]",
-            "HookName": "ConsoleUpdateWinOnly [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerConsole",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "Update",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "dbFxdC1i2DngvwowXIPatWsbfbfnyS1CMmTbwcK1Jh8=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
           }
         },
         {
@@ -9588,6 +9160,54 @@
             "MSILHash": "QkopSUWDsyqCYMyP3PHhXXkONxyv0YFupqI0LnfCsuU=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 85,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "IOnUpdateServerInformation [internal]",
+            "HookName": "IOnUpdateServerInformation",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "UpdateServerInformation",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "kXcoeUDe36QS7i8mTItX1EEsb1Os3jY5weKoIRlKFvE=",
+            "BaseHookName": null,
+            "HookCategory": "Server"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 99,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "IOnUpdateServerDescription [internal]",
+            "HookName": "IOnUpdateServerDescription",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "UpdateServerInformation",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "kXcoeUDe36QS7i8mTItX1EEsb1Os3jY5weKoIRlKFvE=",
+            "BaseHookName": "IOnUpdateServerInformation [internal]",
+            "HookCategory": "Server"
           }
         }
       ],

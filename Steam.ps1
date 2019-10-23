@@ -5,6 +5,7 @@ param (
     [string]$appid = "0",
     [string]$branch = "public",
     [string]$depot = "",
+    [string]$platform = "windows",
     [string]$access = "anonymous",
     [string]$deobf = ""
 )
@@ -139,7 +140,7 @@ function Get-Dependencies {
 
         # Attempt to run DepotDownloader to get game DLLs
         try {
-            Start-Process dotnet -ArgumentList "$tools_dir\DepotDownloader.dll $login -app $appid -branch $branch $depot -dir $patch_dir -filelist $tools_dir\.references" -NoNewWindow -Wait
+            Start-Process dotnet -ArgumentList "$tools_dir\DepotDownloader.dll $login -app $appid -branch $branch $depot -os $platform -dir $patch_dir -filelist $tools_dir\.references" -NoNewWindow -Wait
         } catch {
             Write-Host "Could not start or complete DepotDownloader process"
             Write-Host $_.Exception.Message

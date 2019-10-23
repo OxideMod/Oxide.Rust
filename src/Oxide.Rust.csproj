@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
   <PropertyGroup>
@@ -18,7 +18,7 @@
     <SteamAppId>258550</SteamAppId>
     <SteamBranch>public</SteamBranch>
     <SteamLogin>anonymous</SteamLogin>
-    <ThisAssemblyNamespace>Oxide.Game.Rust</ThisAssemblyNamespace>
+    <SteamPlatform>windows;linux</SteamPlatform>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="GitInfo" Version="2.0.*" />
@@ -43,10 +43,10 @@
     <Reference Include="Facepunch.Rcon">
       <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Rcon.dll</HintPath>
     </Reference>
-    <Reference Condition="'$(OS)' == 'Unix'" Include="Facepunch.Steamworks.Posix64">
+    <Reference Condition="'$(SteamPlatform)' == 'linux'" Include="Facepunch.Steamworks.Posix64">
       <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Steamworks.Posix64.dll</HintPath>
     </Reference>
-    <Reference Condition="'$(OS)' == 'Windows_NT'" Include="Facepunch.Steamworks.Win64">
+    <Reference Condition="'$(SteamPlatform)' != 'linux'" Include="Facepunch.Steamworks.Win64">
       <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Steamworks.Win64.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.System">
@@ -98,8 +98,7 @@
     <RemoveDir Directories="$(ProjectDir)\bin\Bundle\$(PackageId)" Condition="Exists('$(ProjectDir)\bin\Bundle\$(PackageId)')" />
   </Target>
   <Target Name="BeforeBuild">
-    <!-- Currently only works on Windows due to Windows-only tools used -->
-    <Exec Command="powershell -ExecutionPolicy Bypass &quot;$(SolutionDir)\Steam.ps1&quot; -project $(AssemblyName) -dotnet $(TargetFramework) -appid $(SteamAppId) -branch '$(SteamBranch)' -managed '$(ManagedDir)'" />
+    <Exec Command="powershell -ExecutionPolicy Bypass &quot;$(SolutionDir)\Steam.ps1&quot; -project $(AssemblyName) -managed '$(ManagedDir)' -dotnet $(TargetFramework) -appid $(SteamAppId) -branch $(SteamBranch) -platform $(SteamPlatform.Split(';')[0])" />
   </Target>
   <Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
     <ItemGroup>
@@ -140,10 +139,17 @@
     </ReadLinesFromFile>
     <PropertyGroup>
       <DeployPath Condition="'$(SteamBranch).Lower()' != 'public'">$(DeployPath)-$(SteamBranch)</DeployPath>
+      <!--<DeployPath Condition="!$(SteamBranch.Contains(','))">$(DeployPath)-$(SteamBranch)</DeployPath>-->
     </PropertyGroup>
     <ItemGroup>
       <DeployFiles Include="$(ProjectDir)\bin\Bundle\$(PackageId)\**\*.*" />
     </ItemGroup>
     <Copy Condition="'$(DeployPath)' != ''" SourceFiles="@(DeployFiles)" DestinationFiles="@(DeployFiles->'$(DeployPath)\%(RecursiveDir)%(Filename)%(Extension)')" />
+  </Target>
+  <Target Name="BuildPlatform" AfterTargets="Pack" Condition="$(SteamPlatform.Contains(';'))">
+    <PropertyGroup>
+      <SteamPlatform>$(SteamPlatform.Split(';')[1])</SteamPlatform>
+    </PropertyGroup>
+    <MSBuild Projects="$(MSBuildProjectFullPath)" Targets="Clean;Build" Properties="PackageId=$(AssemblyName)-$(SteamPlatform);SteamPlatform=$(SteamPlatform)" />
   </Target>
 </Project>

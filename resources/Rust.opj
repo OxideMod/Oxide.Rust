@@ -12938,6 +12938,82 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::lastWoundedTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastWoundedTime",
+            "FullTypeName": "System.Single BasePlayer::lastWoundedTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::mounted",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "mounted",
+            "FullTypeName": "EntityRef BasePlayer::mounted",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::nextSuicideTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "nextSuicideTime",
+            "FullTypeName": "System.Single BasePlayer::nextSuicideTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::sleepStartTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "sleepStartTime",
+            "FullTypeName": "System.Single BasePlayer::sleepStartTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

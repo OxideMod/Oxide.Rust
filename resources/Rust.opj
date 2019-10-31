@@ -9261,6 +9261,58 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 113,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player,l5,l1,l7,l3",
+            "HookTypeName": "Simple",
+            "Name": "OnIOMakeConnection",
+            "HookName": "OnIOMakeConnection",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WireTool",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MakeConnection",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "z+XTq2tzLb9NWYIkUmW8HVe6RHtp0luvRmpnuYcVXyQ=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 69,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player,l4,l1,l2",
+            "HookTypeName": "Simple",
+            "Name": "OnIORequestClear",
+            "HookName": "OnIORequestClear",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WireTool",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RequestClear",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "bMwObCs39+bEmT97XZJRp4G9fw2Cln+O24Hbmn6ggwM=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

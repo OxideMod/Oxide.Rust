@@ -627,11 +627,12 @@ namespace Oxide.Game.Rust
         #region Deprecated Hooks
 
         [HookMethod("IOnActiveItemChange")]
-        private void IOnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)
+        private object IOnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)
         {
-            Interface.Oxide.CallHook("OnActiveItemChange", player, oldItem, newItemId);
-            Interface.Oxide.CallDeprecatedHook("OnActiveItemChange", $"OnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)",
+            object newHook = Interface.Oxide.CallHook("OnActiveItemChange", player, oldItem, newItemId);
+            object oldHook = Interface.Oxide.CallDeprecatedHook("OnActiveItemChange", $"OnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)",
                 new System.DateTime(2020, 1, 1), player, newItemId);
+            return newHook ?? oldHook;
         }
 
         [HookMethod("IOnActiveItemChanged")]

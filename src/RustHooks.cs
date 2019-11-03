@@ -135,7 +135,7 @@ namespace Oxide.Game.Rust
         private object ICanPickupEntity(BasePlayer player, DoorCloser entity)
         {
             object callHook = Interface.CallHook("CanPickupEntity", player, entity);
-            return callHook is bool result && result ? (object)true : null;
+            return callHook is bool result && !result ? (object)true : null;
         }
 
         /// <summary>

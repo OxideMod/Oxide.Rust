@@ -295,6 +295,12 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnPlayerChat")]
         private object IOnPlayerChat(ConsoleSystem.Arg arg, string message)
         {
+            // Ignore empty and "default" text
+            if (string.IsNullOrEmpty(message) || message.Equals("text"))
+            {
+                return null;
+            }
+
             // Updated arg message
             arg.Args[1] = message.EscapeRichText();
 

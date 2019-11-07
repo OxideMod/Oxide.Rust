@@ -340,7 +340,7 @@ namespace Oxide.Game.Rust.Libraries
 
             message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), args) : Formatter.ToUnity(message);
             string formatted = prefix != null ? $"{prefix} {message}" : message;
-            player.SendConsoleCommand("chat.add", userId, formatted, 1.0);
+            player.SendConsoleCommand("chat.add", 2, userId, formatted);
         }
 
         /// <summary>

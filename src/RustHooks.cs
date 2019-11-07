@@ -295,8 +295,8 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnPlayerChat")]
         private object IOnPlayerChat(ConsoleSystem.Arg arg, string message)
         {
-            // Store escaped message
-            arg.Args[0] = message.EscapeRichText();
+            // Updated arg message
+            arg.Args[1] = message.EscapeRichText();
 
             // Get player objects
             BasePlayer player = arg.Connection.player as BasePlayer;
@@ -320,7 +320,7 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnPlayerCommand")]
         private void IOnPlayerCommand(ConsoleSystem.Arg arg)
         {
-            string str = arg.GetString(0).Trim();
+            string str = arg.GetString(1).Replace("\n", "").Replace("\r", "").Trim();
 
             // Check if it is a chat command
             if (string.IsNullOrEmpty(str) || str[0] != '/' || str.Length <= 1)

@@ -301,8 +301,15 @@ namespace Oxide.Game.Rust
                 return null;
             }
 
-            // Updated arg message
-            arg.Args[1] = message.EscapeRichText();
+            // Update arg with escaped message
+            if (arg.Args.Length > 1 && int.TryParse(arg.Args[0], out int channel))
+            {
+                arg.Args[1] = message.EscapeRichText();
+            }
+            else
+            {
+                arg.Args[0] = message.EscapeRichText();
+            }
 
             // Get player objects
             BasePlayer player = arg.Connection.player as BasePlayer;

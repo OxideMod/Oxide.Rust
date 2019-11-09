@@ -304,11 +304,11 @@ namespace Oxide.Game.Rust
             // Update arg with escaped message
             if (arg.Args.Length > 1 && int.TryParse(arg.Args[0], out int channel))
             {
-                arg.Args[1] = message.EscapeRichText();
+                arg.Args[1] = message;
             }
             else
             {
-                arg.Args[0] = message.EscapeRichText();
+                arg.Args[0] = message;
             }
 
             // Get player objects

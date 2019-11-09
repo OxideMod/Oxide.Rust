@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-staging\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -6552,58 +6552,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 124,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 2,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "IOnPlayerCommand [internal]",
-            "HookName": "IOnPlayerCommand",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ConVar.Chat",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "say",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "ConsoleSystem/Arg"
-              ]
-            },
-            "MSILHash": "L6rLlghZqZ6WpKIeBXH6aqQa4os3bQeir+azhWNjfbI=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 134,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, l2",
-            "HookTypeName": "Simple",
-            "Name": "IOnPlayerChat [internal]",
-            "HookName": "IOnPlayerChat",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ConVar.Chat",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "say",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "ConsoleSystem/Arg"
-              ]
-            },
-            "MSILHash": "L6rLlghZqZ6WpKIeBXH6aqQa4os3bQeir+azhWNjfbI=",
-            "BaseHookName": "IOnPlayerCommand [internal]",
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 33,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 1,
@@ -7552,7 +7500,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 21,
+            "InjectionIndex": 26,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, a0",
@@ -7574,7 +7522,7 @@
                 "UnityEngine.Vector3"
               ]
             },
-            "MSILHash": "WZTefq6XoYUbFKT1B1Fps60xaWuUBDQt64hFtBYQncA=",
+            "MSILHash": "Wv9mPvPKe8izEVN+h7Dlgr4tGyg7AhNSexRRtGrnnOA=",
             "BaseHookName": null,
             "HookCategory": "World"
           }
@@ -9265,6 +9213,60 @@
             },
             "MSILHash": "kl0ycZYmSt2adK6JXfc9Kr/8zyIyYDqDchhypuXVh1Q=",
             "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 119,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a1",
+            "HookTypeName": "Simple",
+            "Name": "IOnPlayerCommand [internal]",
+            "HookName": "IOnPlayerCommand",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Chat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "_say",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConVar.Chat/ChatChannel",
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "S5qKkgkJQdlOUThjYZ/0vq1n+Yfva0S2GcdiG7A/4VA=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 129,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a1, l1",
+            "HookTypeName": "Simple",
+            "Name": "IOnPlayerChat [internal]",
+            "HookName": "IOnPlayerChat",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Chat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "_say",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConVar.Chat/ChatChannel",
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "S5qKkgkJQdlOUThjYZ/0vq1n+Yfva0S2GcdiG7A/4VA=",
+            "BaseHookName": "IOnPlayerCommand [internal]",
             "HookCategory": "Player"
           }
         }

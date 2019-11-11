@@ -1,3 +1,4 @@
+using ConVar;
 using Network;
 using Oxide.Core;
 using Oxide.Core.Configuration;
@@ -291,25 +292,19 @@ namespace Oxide.Game.Rust
         /// </summary>
         /// <param name="arg"></param>
         /// <param name="message"></param>
+        /// <param name="channel"></param>
         /// <returns></returns>
         [HookMethod("IOnPlayerChat")]
-        private object IOnPlayerChat(ConsoleSystem.Arg arg, string message)
+        private object IOnPlayerChat(ConsoleSystem.Arg arg, string message, Chat.ChatChannel channel)
         {
             // Ignore empty and "default" text
             if (string.IsNullOrEmpty(message) || message.Equals("text"))
             {
-                return null;
+                return true;
             }
 
             // Update arg with escaped message
-            if (arg.Args.Length > 1 && int.TryParse(arg.Args[0], out int channel))
-            {
-                arg.Args[1] = message.EscapeRichText();
-            }
-            else
-            {
-                arg.Args[0] = message.EscapeRichText();
-            }
+            arg.Args[0] = message;
 
             // Get player objects
             BasePlayer player = arg.Connection.player as BasePlayer;
@@ -320,7 +315,7 @@ namespace Oxide.Game.Rust
             }
 
             // Call game and covalence hooks
-            object chatSpecific = Interface.CallHook("OnPlayerChat", arg);
+            object chatSpecific = Interface.CallHook("OnPlayerChat", arg, channel);
             object chatCovalence = Interface.CallHook("OnUserChat", iplayer, message);
             return chatSpecific ?? chatCovalence; // TODO: Fix 'RustCore' hook conflict when both return
         }
@@ -333,7 +328,7 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnPlayerCommand")]
         private void IOnPlayerCommand(ConsoleSystem.Arg arg)
         {
-            string str = arg.GetString(1).Replace("\n", "").Replace("\r", "").Trim();
+            string str = arg.GetString(0).Replace("\n", "").Replace("\r", "").Trim();
 
             // Check if it is a chat command
             if (string.IsNullOrEmpty(str) || str[0] != '/' || str.Length <= 1)

@@ -13055,6 +13055,66 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+		{
+          "Name": "CompanionServer.Handlers.Map::_height",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompanionServer.Handlers.Map",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_height",
+            "FullTypeName": "System.Int32 CompanionServer.Handlers.Map::_height",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompanionServer.Handlers.Map::_imageData",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompanionServer.Handlers.Map",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_imageData",
+            "FullTypeName": "System.Byte[] CompanionServer.Handlers.Map::_imageData",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompanionServer.Handlers.Map::_width",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompanionServer.Handlers.Map",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_width",
+            "FullTypeName": "System.Int32 CompanionServer.Handlers.Map::_width",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

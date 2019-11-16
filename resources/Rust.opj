@@ -13055,6 +13055,180 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseRidableAnimal::currentVelocity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseRidableAnimal",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentVelocity",
+            "FullTypeName": "UnityEngine.Vector3 BaseRidableAnimal::currentVelocity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlantEntity::genetics",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlantEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "genetics",
+            "FullTypeName": "System.Int32 PlantEntity::genetics",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlantEntity::harvests",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlantEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "harvests",
+            "FullTypeName": "System.Int32 PlantEntity::harvests",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlantEntity::seasons",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlantEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "seasons",
+            "FullTypeName": "System.Int32 PlantEntity::seasons",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlantEntity::BecomeState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlantEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "BecomeState",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "PlantProperties/State",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "JfV3/nqPzkpLvQEur4pxQYxbmX90WNdv6YNGGTJBHfg="
+        },
+        {
+          "Name": "PlantEntity::PlacedInPlanter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlantEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PlacedInPlanter",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "j+FEHwupt8Y0NMNsejl6Vsmqm0JdEX1qdqKQOmyX88I="
+        },
+        {
+          "Name": "ResourceEntity::health",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ResourceEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "health",
+            "FullTypeName": "System.Single ResourceEntity::health",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "StagedResourceEntity::UpdateNetworkStage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "StagedResourceEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "UpdateNetworkStage",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "kLPcT8mwmS6WDqeNSYH42kun/+CEeyr6KJVyY4e0fH4="
+        },
+        {
+          "Name": "OreResourceEntity::UpdateNetworkStage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "OreResourceEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "UpdateNetworkStage",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "/Z+yYc7u5cLibWN7pd58nmYQvI3hLU7m2GdeXYGlS/M="
         }
       ],
       "Fields": [

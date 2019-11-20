@@ -127,6 +127,27 @@ namespace Oxide.Game.Rust
         #region Player Hooks
 
         /// <summary>
+        /// Called when a player attempts to create new connection between IOEntities
+        /// </summary>
+        /// <param name="player"></param>
+        /// <param name="input"></param>
+        /// <param name="inputSlot"></param>
+        /// <param name="output"></param>
+        /// <param name="outputSlot"></param>
+        /// <returns></returns>
+        [HookMethod("IOnWireToolConnection")]
+        private object IOnWireToolConnection(BasePlayer player, IOEntity input, int inputSlot, IOEntity output, int outputSlot)
+        {
+            object callHook = Interface.CallHook("OnWireToolConnection", player, input, inputSlot, output, outputSlot);
+
+            if (callHook == null)
+                return null;
+
+            output.outputs[outputSlot].linePoints = null;
+            return true;
+        }
+		
+        /// <summary>
         /// Called when a player attempts to pickup a DoorCloser entity
         /// </summary>
         /// <param name="player"></param>

@@ -152,7 +152,7 @@ namespace Oxide.Plugins
         {
             if (player?.net != null)
             {
-                player.SendConsoleCommand("chat.add", 0, args.Length > 0 ? string.Format(format, args) : format, 1f);
+                player.SendConsoleCommand("chat.add", 2, 0, args.Length > 0 ? string.Format(format, args) : format);
             }
         }
 
@@ -165,7 +165,7 @@ namespace Oxide.Plugins
         {
             if (BasePlayer.activePlayerList.Count >= 1)
             {
-                ConsoleNetwork.BroadcastToAllClients("chat.add", 0, args.Length > 0 ? string.Format(format, args) : format, 1f);
+                ConsoleNetwork.BroadcastToAllClients("chat.add", 2, 0, args.Length > 0 ? string.Format(format, args) : format);
             }
         }
 

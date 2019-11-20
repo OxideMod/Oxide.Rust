@@ -20,7 +20,7 @@ namespace Oxide.Game.Rust.Libraries
             {
                 message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), args) : Formatter.ToUnity(message);
                 string formatted = prefix != null ? $"{prefix}: {message}" : message;
-                ConsoleNetwork.BroadcastToAllClients("chat.add", userId, formatted, 1.0);
+                ConsoleNetwork.BroadcastToAllClients("chat.add", 2, userId, formatted);
             }
         }
 

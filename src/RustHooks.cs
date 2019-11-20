@@ -1,3 +1,4 @@
+using ConVar;
 using Network;
 using Oxide.Core;
 using Oxide.Core.Configuration;
@@ -135,7 +136,7 @@ namespace Oxide.Game.Rust
         private object ICanPickupEntity(BasePlayer player, DoorCloser entity)
         {
             object callHook = Interface.CallHook("CanPickupEntity", player, entity);
-            return callHook is bool result && result ? (object)true : null;
+            return callHook is bool result && !result ? (object)true : null;
         }
 
         /// <summary>
@@ -291,12 +292,19 @@ namespace Oxide.Game.Rust
         /// </summary>
         /// <param name="arg"></param>
         /// <param name="message"></param>
+        /// <param name="channel"></param>
         /// <returns></returns>
         [HookMethod("IOnPlayerChat")]
-        private object IOnPlayerChat(ConsoleSystem.Arg arg, string message)
+        private object IOnPlayerChat(ConsoleSystem.Arg arg, string message, Chat.ChatChannel channel)
         {
-            // Store escaped message
-            arg.Args[0] = message.EscapeRichText();
+            // Ignore empty and "default" text
+            if (string.IsNullOrEmpty(message) || message.Equals("text"))
+            {
+                return true;
+            }
+
+            // Update arg with escaped message
+            arg.Args[0] = message;
 
             // Get player objects
             BasePlayer player = arg.Connection.player as BasePlayer;
@@ -307,7 +315,7 @@ namespace Oxide.Game.Rust
             }
 
             // Call game and covalence hooks
-            object chatSpecific = Interface.CallHook("OnPlayerChat", arg);
+            object chatSpecific = Interface.CallHook("OnPlayerChat", arg, channel);
             object chatCovalence = Interface.CallHook("OnUserChat", iplayer, message);
             return chatSpecific ?? chatCovalence; // TODO: Fix 'RustCore' hook conflict when both return
         }
@@ -320,7 +328,7 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnPlayerCommand")]
         private void IOnPlayerCommand(ConsoleSystem.Arg arg)
         {
-            string str = arg.GetString(0).Trim();
+            string str = arg.GetString(0).Replace("\n", "").Replace("\r", "").Trim();
 
             // Check if it is a chat command
             if (string.IsNullOrEmpty(str) || str[0] != '/' || str.Length <= 1)
@@ -627,11 +635,12 @@ namespace Oxide.Game.Rust
         #region Deprecated Hooks
 
         [HookMethod("IOnActiveItemChange")]
-        private void IOnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)
+        private object IOnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)
         {
-            Interface.Oxide.CallHook("OnActiveItemChange", player, oldItem, newItemId);
-            Interface.Oxide.CallDeprecatedHook("OnActiveItemChange", $"OnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)",
+            object newHook = Interface.Oxide.CallHook("OnActiveItemChange", player, oldItem, newItemId);
+            object oldHook = Interface.Oxide.CallDeprecatedHook("OnActiveItemChange", $"OnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)",
                 new System.DateTime(2020, 1, 1), player, newItemId);
+            return newHook ?? oldHook;
         }
 
         [HookMethod("IOnActiveItemChanged")]

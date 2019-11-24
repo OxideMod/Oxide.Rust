@@ -9273,6 +9273,84 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 113,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, l5, l1, l7, l3",
+            "HookTypeName": "Simple",
+            "Name": "OnWireConnect",
+            "HookName": "OnWireConnect",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WireTool",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MakeConnection",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "MHYOMoPnn6seTOXp406ujicTRC/FYHgU9wHsHCse8CI=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 87,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, l4, l1, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnWireClear",
+            "HookName": "OnWireClear",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WireTool",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RequestClear",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "oEuGTBAJb99fze0OYiQD+bD+XtYm6eeKuADPxUnUJKQ=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 2,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "CanUseWires",
+            "HookName": "CanUseWires",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WireTool",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanPlayerUseWires",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "nCEurUzfgf9NcPAyFOVhBmVE0zOW84ZfXe7UX/xWcPU=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 43,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
@@ -9294,6 +9372,62 @@
             "MSILHash": "iwh6KDAFZq2FxBSPwbsYLe5mAKJew5zKMuGhEZsb08g=",
             "BaseHookName": "OnQuarryToggled [on]",
             "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 125,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 7
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|IOEntity|outputs"
+              },
+              {
+                "OpCode": "ldloc_3",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldelem_ref",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "stfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|IOEntity/IOSlot|linePoints"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnWireConnection [patch]",
+            "HookName": "OnWireConnection",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WireTool",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MakeConnection",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "MHYOMoPnn6seTOXp406ujicTRC/FYHgU9wHsHCse8CI=",
+            "BaseHookName": "OnWireConnect",
+            "HookCategory": "_Patches"
           }
         }
       ],

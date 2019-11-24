@@ -651,6 +651,13 @@ namespace Oxide.Game.Rust
                 new System.DateTime(2020, 1, 1), player, oldItem, newItem);
         }
 
+        [HookMethod("OnQuarryToggled")]
+        private void OnQuarryToggled(MiningQuarry quarry)
+        {
+            Interface.Oxide.CallDeprecatedHook("OnQuarryEnabled", $"OnQuarryToggled(MiningQuarry quarry)",
+                new System.DateTime(2020, 1, 1), quarry);
+        }
+
         #endregion Deprecated Hooks
     }
 }

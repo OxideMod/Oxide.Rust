@@ -1567,8 +1567,8 @@
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnQuarryEnabled",
-            "HookName": "OnQuarryEnabled",
+            "Name": "OnQuarryToggled [on]",
+            "HookName": "OnQuarryToggled",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MiningQuarry",
             "Flagged": false,
@@ -9268,6 +9268,32 @@
             "MSILHash": "S5qKkgkJQdlOUThjYZ/0vq1n+Yfva0S2GcdiG7A/4VA=",
             "BaseHookName": "IOnPlayerCommand [internal]",
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 43,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnQuarryToggled [off]",
+            "HookName": "OnQuarryToggled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MiningQuarry",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SetOn",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "iwh6KDAFZq2FxBSPwbsYLe5mAKJew5zKMuGhEZsb08g=",
+            "BaseHookName": "OnQuarryToggled [on]",
+            "HookCategory": "Resource"
           }
         }
       ],

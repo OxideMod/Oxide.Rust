@@ -9429,6 +9429,58 @@
             "BaseHookName": "OnWireConnect",
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnHorseLead",
+            "HookName": "OnHorseLead",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseRidableAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetLeading",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity"
+              ]
+            },
+            "MSILHash": "3jGD5ZuyRheCGpAPAqaEHmw0gacwLFyeqL1WsZJ0dnU=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnHorseHitch",
+            "HookName": "OnHorseHitch",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetHitch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitchTrough"
+              ]
+            },
+            "MSILHash": "aLI4D4X3SkepF2b90px7w0JPTIY/t+zKMOMOHbdW8ro=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "E:\\Documents\\Coding\\Projects\\Hooks\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -9268,6 +9268,33 @@
             "MSILHash": "S5qKkgkJQdlOUThjYZ/0vq1n+Yfva0S2GcdiG7A/4VA=",
             "BaseHookName": "IOnPlayerCommand [internal]",
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 49,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerRespawnSleepingBag",
+            "HookName": "OnPlayerRespawnSleepingBag",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SleepingBag",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SpawnPlayer",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.UInt32"
+              ]
+            },
+            "MSILHash": "fgxjWMOxhQE5sEHhOBF/hc2A5oR+cZwAuyMRj7MszFo=",
+            "BaseHookName": null,
+            "HookCategory": null
           }
         }
       ],

@@ -9436,32 +9436,6 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "OnHorseLead",
-            "HookName": "OnHorseLead",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseRidableAnimal",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "SetLeading",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity"
-              ]
-            },
-            "MSILHash": "3jGD5ZuyRheCGpAPAqaEHmw0gacwLFyeqL1WsZJ0dnU=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
             "Name": "OnHorseHitch",
@@ -9478,6 +9452,32 @@
               ]
             },
             "MSILHash": "aLI4D4X3SkepF2b90px7w0JPTIY/t+zKMOMOHbdW8ro=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 21,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnHorseLead",
+            "HookName": "OnHorseLead",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseRidableAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_Lead",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "PLXqLkc9+wE0tyn+VKcBgDnDAZ3hiRjHXvPk6uHVHSc=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }

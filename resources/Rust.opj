@@ -1562,32 +1562,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 33,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnQuarryToggled [on]",
-            "HookName": "OnQuarryToggled",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "MiningQuarry",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "SetOn",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.Boolean"
-              ]
-            },
-            "MSILHash": "iwh6KDAFZq2FxBSPwbsYLe5mAKJew5zKMuGhEZsb08g=",
-            "BaseHookName": null,
-            "HookCategory": "Resource"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 53,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -9349,32 +9323,6 @@
           }
         },
         {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 43,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnQuarryToggled [off]",
-            "HookName": "OnQuarryToggled",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "MiningQuarry",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "SetOn",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.Boolean"
-              ]
-            },
-            "MSILHash": "iwh6KDAFZq2FxBSPwbsYLe5mAKJew5zKMuGhEZsb08g=",
-            "BaseHookName": "OnQuarryToggled [on]",
-            "HookCategory": "Resource"
-          }
-        },
-        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 125,
@@ -9480,6 +9428,158 @@
             "MSILHash": "PLXqLkc9+wE0tyn+VKcBgDnDAZ3hiRjHXvPk6uHVHSc=",
             "BaseHookName": null,
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 6,
+            "RemoveCount": 4,
+            "Instructions": [
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 10
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldc_i4_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|MiningQuarry|EngineSwitch(System.Boolean)"
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnQuarryToggled"
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|player"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "pop",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnQuarryToggled [on]",
+            "HookName": "OnQuarryToggled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "EngineSwitch",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartEngine",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "KxRjbSPtmTdHFVH1+LE7Vqyz9ETyK4LAB0iM3DlQnOc=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 6,
+            "RemoveCount": 4,
+            "Instructions": [
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 10
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|MiningQuarry|EngineSwitch(System.Boolean)"
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnQuarryToggled"
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|player"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "pop",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnQuarryToggled [off]",
+            "HookName": "OnQuarryToggled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "EngineSwitch",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopEngine",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "dWtXQ7VICNiVEqctThyiYsZo+maZJ1tIEkoP+51eTM8=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
           }
         }
       ],

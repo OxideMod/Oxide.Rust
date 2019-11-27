@@ -4523,7 +4523,7 @@
           "Hook": {
             "InjectionIndex": 2,
             "ReturnBehavior": 3,
-            "ArgumentBehavior": 1,
+            "ArgumentBehavior": 4,
             "ArgumentString": "this => l0",
             "HookTypeName": "Simple",
             "Name": "OnPlayerRespawn",
@@ -9428,6 +9428,33 @@
             "MSILHash": "PLXqLkc9+wE0tyn+VKcBgDnDAZ3hiRjHXvPk6uHVHSc=",
             "BaseHookName": null,
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 26,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0 => l2",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerRespawn [SleepingBag]",
+            "HookName": "OnPlayerRespawn",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SleepingBag",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SpawnPlayer",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.UInt32"
+              ]
+            },
+            "MSILHash": "fgxjWMOxhQE5sEHhOBF/hc2A5oR+cZwAuyMRj7MszFo=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
           }
         },
         {

@@ -114,13 +114,13 @@
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Console.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Rcon.dll" />
       <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\NewAssembly.dll" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.core\**\lib\$(TargetFramework)\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*; $(SolutionDir)\packages\oxide.csharp\**\lib\$(TargetFramework)\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\net46\*.*; $(SolutionDir)\packages\oxide.references\**\lib\$(TargetFramework)\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.unity\**\lib\$(TargetFramework)\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.core\**\lib\net46\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*; $(SolutionDir)\packages\oxide.csharp\**\lib\net46\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\net46\*.*; $(SolutionDir)\packages\oxide.references\**\lib\net46\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.unity\**\lib\net46\*.*" />
       <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\any\MySql.*.dll; $(SolutionDir)\packages\oxide.mysql\**\lib\any\System.*.dll" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\$(TargetFramework)\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\any\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\$(TargetFramework)\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\net46\*.*" />
+      <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\any\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\net46\*.*" />
       <ContentX64Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x64\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\x64\*.*" />
       <ContentX86Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x86\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\x86\*.*" />
     </ItemGroup>

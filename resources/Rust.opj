@@ -13729,6 +13729,28 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ConsoleSystem/Arg::.ctor",
+          "AssemblyName": "Facepunch.Console.dll",
+          "TypeName": "ConsoleSystem/Arg",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": ".ctor",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "ConsoleSystem/Option",
+              "System.String"
+            ]
+          },
+          "MSILHash": "sORvDPzNwZ9phrGI471uWz4DpjeRucAQ9PRP/+4m6rQ="
         }
       ],
       "Fields": []

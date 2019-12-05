@@ -259,7 +259,7 @@ namespace Oxide.Game.Rust
 
             object loginSpecific = Interface.CallHook("CanClientLogin", connection);
             object loginCovalence = Interface.CallHook("CanUserLogin", name, id, ip);
-            object canLogin = loginSpecific ?? loginCovalence; // TODO: Fix 'RustCore' hook conflict when both return
+            object canLogin = loginSpecific ?? loginCovalence; // TODO: Fix hook conflict when multiple return
 
             if (canLogin is string || canLogin is bool && !(bool)canLogin)
             {
@@ -270,7 +270,7 @@ namespace Oxide.Game.Rust
             // Call game and covalence hooks
             object approvedSpecific = Interface.CallHook("OnUserApprove", connection);
             object approvedCovalence = Interface.CallHook("OnUserApproved", name, id, ip);
-            return approvedSpecific ?? approvedCovalence; // TODO: Fix 'RustCore' hook conflict when both return
+            return approvedSpecific ?? approvedCovalence; // TODO: Fix hook conflict when multiple return
         }
 
         /// <summary>
@@ -313,7 +313,9 @@ namespace Oxide.Game.Rust
             // Call game and covalence hooks
             object chatSpecific = Interface.CallHook("OnPlayerChat", basePlayer, message, channel);
             object chatCovalence = Interface.CallHook("OnUserChat", player, message);
-            return chatSpecific ?? chatCovalence; // TODO: Fix 'RustCore' hook conflict when both return
+            object chatDeprecated = Interface.Oxide.CallDeprecatedHook("OnPlayerChat", $"OnPlayerChat(BasePlayer player, string message, Chat.ChatChannel channel)",
+                new System.DateTime(2020, 1, 1), new ConsoleSystem.Arg(ConsoleSystem.Option.Server.FromConnection(basePlayer.Connection), ConsoleSystem.BuildCommand("chat.say", message)), channel);
+            return chatSpecific ?? chatCovalence ?? chatDeprecated; // TODO: Fix hook conflict when multiple return
         }
 
         /// <summary>
@@ -352,7 +354,9 @@ namespace Oxide.Game.Rust
             // Is the command blocked?
             object commandSpecific = Interface.CallHook("OnPlayerCommand", basePlayer, cmd, args);
             object commandCovalence = Interface.CallHook("OnUserCommand", player, cmd, args);
-            if (commandSpecific != null || commandCovalence != null)
+            object commandDeprecated = Interface.Oxide.CallDeprecatedHook("OnPlayerCommand", $"OnPlayerCommand(BasePlayer player, string command, string[] args)",
+                new System.DateTime(2020, 1, 1), new ConsoleSystem.Arg(ConsoleSystem.Option.Server.FromConnection(basePlayer.Connection), ConsoleSystem.BuildCommand("chat.say", cmd, args)));
+            if (commandSpecific != null || commandCovalence != null || commandDeprecated != null)
             {
                 return;
             }

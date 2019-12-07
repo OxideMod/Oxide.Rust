@@ -6,7 +6,6 @@ using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using Rust.Ai;
 using Rust.Ai.HTN;
-using Steamworks;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -313,9 +312,9 @@ namespace Oxide.Game.Rust
             // Call game and covalence hooks
             object chatSpecific = Interface.CallHook("OnPlayerChat", basePlayer, message, channel);
             object chatCovalence = Interface.CallHook("OnUserChat", player, message);
-            object chatDeprecated = Interface.Oxide.CallDeprecatedHook("OnPlayerChat", $"OnPlayerChat(BasePlayer player, string message, Chat.ChatChannel channel)",
-                new System.DateTime(2020, 1, 1), new ConsoleSystem.Arg(ConsoleSystem.Option.Server.FromConnection(basePlayer.Connection), ConsoleSystem.BuildCommand("chat.say", message)), channel);
-            return chatSpecific ?? chatCovalence ?? chatDeprecated; // TODO: Fix hook conflict when multiple return
+            //object chatDeprecated = Interface.Oxide.CallDeprecatedHook("OnPlayerChat", $"OnPlayerChat(BasePlayer player, string message, Chat.ChatChannel channel)",
+            //    new System.DateTime(2020, 1, 1), new ConsoleSystem.Arg(ConsoleSystem.Option.Server.FromConnection(basePlayer.Connection), ConsoleSystem.BuildCommand("chat.say", message)), channel);
+            return chatSpecific ?? chatCovalence /*?? chatDeprecated*/; // TODO: Fix hook conflict when multiple return
         }
 
         /// <summary>
@@ -354,9 +353,9 @@ namespace Oxide.Game.Rust
             // Is the command blocked?
             object commandSpecific = Interface.CallHook("OnPlayerCommand", basePlayer, cmd, args);
             object commandCovalence = Interface.CallHook("OnUserCommand", player, cmd, args);
-            object commandDeprecated = Interface.Oxide.CallDeprecatedHook("OnPlayerCommand", $"OnPlayerCommand(BasePlayer player, string command, string[] args)",
-                new System.DateTime(2020, 1, 1), new ConsoleSystem.Arg(ConsoleSystem.Option.Server.FromConnection(basePlayer.Connection), ConsoleSystem.BuildCommand("chat.say", cmd, args)));
-            if (commandSpecific != null || commandCovalence != null || commandDeprecated != null)
+            //object commandDeprecated = Interface.Oxide.CallDeprecatedHook("OnPlayerCommand", $"OnPlayerCommand(BasePlayer player, string command, string[] args)",
+            //    new System.DateTime(2020, 1, 1), new ConsoleSystem.Arg(ConsoleSystem.Option.Server.FromConnection(basePlayer.Connection), ConsoleSystem.BuildCommand("chat.say", cmd, args)));
+            if (commandSpecific != null || commandCovalence != null /*|| commandDeprecated != null*/)
             {
                 return;
             }

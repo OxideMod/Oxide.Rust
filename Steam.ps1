@@ -134,7 +134,7 @@ function Get-Dependencies {
         }
 
         # Cleanup existing game files, else they aren't always the latest
-        Remove-Item $patch_dir -Recurse -Force
+        #Remove-Item $patch_dir -Recurse -Force
 
         # TODO: Check for and compare Steam buildid before downloading again
 

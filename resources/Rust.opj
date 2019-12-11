@@ -9676,6 +9676,32 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnGetBuildingPrivilege",
+            "HookName": "OnGetBuildingPrivilege",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GetBuildingPrivilege",
+              "ReturnType": "BuildingPrivlidge",
+              "Parameters": [
+                "OBB"
+              ]
+            },
+            "MSILHash": "OgWrwuzDOH3Bn0fQLMz1U5UqJHlDzzkm/dW81HjGm/s=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

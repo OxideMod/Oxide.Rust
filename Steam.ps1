@@ -84,7 +84,7 @@ function Get-Downloader {
         # Download and extract DepotDownloader
         Write-Host "Downloading version $version of DepotDownloader"
         try {
-            Invoke-WebRequest "https://assets.umod.org/packages/DepotDownloader.zip" -OutFile "$tools_dir\DepotDownloader.zip" -UseBasicParsing
+            Invoke-WebRequest "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_2.3.1/depotdownloader-2.3.1-hotfix1.zip" -OutFile "$tools_dir\DepotDownloader.zip" -UseBasicParsing
         } catch {
             Write-Host "Could not download DepotDownloader from GitHub"
             Write-Host $_.Exception.Message

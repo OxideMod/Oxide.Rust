@@ -2409,9 +2409,9 @@
             "InjectionIndex": 16,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l1",
+            "ArgumentString": "l1.Address",
             "HookTypeName": "Simple",
-            "Name": "OnRconConnection",
+            "Name": "OnRconConnection [web]",
             "HookName": "OnRconConnection",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Facepunch.RCon/RConListener",
@@ -2457,7 +2457,7 @@
               "Parameters": []
             },
             "MSILHash": "vA8E2P9CGuEzsU2phJqz972OpKsnHsdVFyeexFubjTk=",
-            "BaseHookName": "OnRconConnection",
+            "BaseHookName": "OnRconConnection [web]",
             "HookCategory": "_Patches"
           }
         },
@@ -9046,7 +9046,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.Ip, a0.Message",
             "HookTypeName": "Simple",
-            "Name": "IOnRconCommand [internal]",
+            "Name": "IOnRconCommand [exp, internal]",
             "HookName": "IOnRconCommand",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Facepunch.RCon",
@@ -13904,7 +13904,91 @@
     },
     {
       "AssemblyName": "Facepunch.Rcon.dll",
-      "Hooks": [],
+      "Hooks": [
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.ConnectionInfo.ClientIpAddress",
+            "HookTypeName": "Simple",
+            "Name": "OnRconConnection [exp]",
+            "HookName": "OnRconConnection",
+            "AssemblyName": "Facepunch.Rcon.dll",
+            "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass10_0",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "<Start>b__0",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Fleck.IWebSocketConnection"
+              ]
+            },
+            "MSILHash": "i++MPf2ru1exUxviGOF97GXZ69JJrVsLgUEgD6ayOKY=",
+            "BaseHookName": null,
+            "HookCategory": "Server"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 14,
+            "RemoveCount": 2,
+            "Instructions": [
+              {
+                "OpCode": "bne_un_s",
+                "OpType": "Instruction",
+                "Operand": 24
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnRconConnection [web, patch]",
+            "HookName": "OnRconConnection [web, patch]",
+            "AssemblyName": "Facepunch.Rcon.dll",
+            "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass10_0",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "<Start>b__0",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Fleck.IWebSocketConnection"
+              ]
+            },
+            "MSILHash": "i++MPf2ru1exUxviGOF97GXZ69JJrVsLgUEgD6ayOKY=",
+            "BaseHookName": "OnRconConnection [exp]",
+            "HookCategory": "Server"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.Socket.ConnectionInfo.ClientIpAddress, a0",
+            "HookTypeName": "Simple",
+            "Name": "IOnRconCommand [web, internal]",
+            "HookName": "IOnRconCommand",
+            "AssemblyName": "Facepunch.Rcon.dll",
+            "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass10_1",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "<Start>b__3",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String"
+              ]
+            },
+            "MSILHash": "s9gw0Oms6zLskiS6Eip/kz88r2JutyMMZbFPqgb30XQ=",
+            "BaseHookName": null,
+            "HookCategory": "Server"
+          }
+        }
+      ],
       "Modifiers": [],
       "Fields": []
     },

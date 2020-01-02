@@ -9728,6 +9728,174 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 25,
+            "RemoveCount": 0,
+            "Instructions": [],
+            "HookTypeName": "Modify",
+            "Name": "OnSendModelState",
+            "HookName": "OnSendModelState",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SendModelState",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "Z7r7G4wMiv6MOO/ulBEBYoFONSyylxuQhJjBWb2emOI=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 9,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 8
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnSignalBroadcast"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 9
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnSignalBroadcast",
+            "HookName": "OnSignalBroadcast",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SignalBroadcast",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/Signal",
+                "Network.Connection"
+              ]
+            },
+            "MSILHash": "I9xD78y07q+ys+tq+0dePXYG+5KtnpmAW6fFOo6Fgps=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 9,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 8
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnSignalBroadcast"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 9
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnSignalBroadcast",
+            "HookName": "OnSignalBroadcast",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SignalBroadcast",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/Signal",
+                "System.String",
+                "Network.Connection"
+              ]
+            },
+            "MSILHash": "8wjUp+HitBXmFrgNsJq/4WThb31NtqKNXUAMS+2tsok=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [
@@ -13723,6 +13891,25 @@
             ],
             "Name": "terminals",
             "FullTypeName": "System.Collections.Generic.List`1<BigWheelBettingTerminal> BigWheelGame::terminals",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::nextModelStateUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextModelStateUpdate",
+            "FullTypeName": "System.Single BasePlayer::nextModelStateUpdate",
             "Parameters": []
           },
           "MSILHash": ""

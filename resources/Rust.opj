@@ -9732,9 +9732,55 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 25,
+            "InjectionIndex": 40,
             "RemoveCount": 0,
-            "Instructions": [],
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 1032
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnSendModelState"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 40
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
             "HookTypeName": "Modify",
             "Name": "OnSendModelState",
             "HookName": "OnSendModelState",

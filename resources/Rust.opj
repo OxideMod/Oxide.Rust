@@ -2411,7 +2411,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "l1.Address",
             "HookTypeName": "Simple",
-            "Name": "OnRconConnection [web]",
+            "Name": "OnRconConnection [exp]",
             "HookName": "OnRconConnection",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Facepunch.RCon/RConListener",
@@ -2430,7 +2430,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 21,
+            "InjectionIndex": 22,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -2445,8 +2445,8 @@
               }
             ],
             "HookTypeName": "Modify",
-            "Name": "CloseRconSocket [patch]",
-            "HookName": "CloseRconSocket [patch]",
+            "Name": "OnRconConnection [exp, patch]",
+            "HookName": "OnRconConnection [exp, patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Facepunch.RCon/RConListener",
             "Flagged": false,
@@ -2457,7 +2457,7 @@
               "Parameters": []
             },
             "MSILHash": "vA8E2P9CGuEzsU2phJqz972OpKsnHsdVFyeexFubjTk=",
-            "BaseHookName": "OnRconConnection [web]",
+            "BaseHookName": "OnRconConnection [exp]",
             "HookCategory": "_Patches"
           }
         },
@@ -13913,7 +13913,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.ConnectionInfo.ClientIpAddress",
             "HookTypeName": "Simple",
-            "Name": "OnRconConnection [exp]",
+            "Name": "OnRconConnection [web]",
             "HookName": "OnRconConnection",
             "AssemblyName": "Facepunch.Rcon.dll",
             "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass10_0",
@@ -13958,8 +13958,8 @@
               ]
             },
             "MSILHash": "i++MPf2ru1exUxviGOF97GXZ69JJrVsLgUEgD6ayOKY=",
-            "BaseHookName": "OnRconConnection [exp]",
-            "HookCategory": "Server"
+            "BaseHookName": "OnRconConnection [web]",
+            "HookCategory": "_Patches"
           }
         },
         {

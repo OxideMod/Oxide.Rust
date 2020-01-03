@@ -9942,6 +9942,30 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnHelicopterRetire",
+            "HookName": "OnHelicopterRetire",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatrolHelicopterAI",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Retire",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "527YYRqPEFnEmPDzs0BNHzkjX3jT3lFluQEiL6SgQUE=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [
@@ -13956,6 +13980,25 @@
             ],
             "Name": "nextModelStateUpdate",
             "FullTypeName": "System.Single BasePlayer::nextModelStateUpdate",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HelicopterDebris::tooHotUntil",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HelicopterDebris",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "tooHotUntil",
+            "FullTypeName": "System.Single HelicopterDebris::tooHotUntil",
             "Parameters": []
           },
           "MSILHash": ""

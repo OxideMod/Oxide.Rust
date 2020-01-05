@@ -14002,6 +14002,30 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.Output::LogHandler",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.Output",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "LogHandler",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.String",
+              "System.String",
+              "UnityEngine.LogType"
+            ]
+          },
+          "MSILHash": "SM+c+dj3ZyQuUxrerw0/UEAh9gGtIz3QxF8J8PeHEAI="
         }
       ],
       "Fields": [

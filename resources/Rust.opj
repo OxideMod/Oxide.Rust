@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "C:\\Users\\2CHEVSKII\\Desktop\\GameServers\\rust-ds\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -9965,6 +9965,32 @@
             "MSILHash": "527YYRqPEFnEmPDzs0BNHzkjX3jT3lFluQEiL6SgQUE=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 97,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.cachedProtectedMinutes",
+            "HookTypeName": "Simple",
+            "Name": "OnCupboardProtectionCalculated",
+            "HookName": "OnCupboardProtectionCalculated",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BuildingPrivlidge",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GetProtectedMinutes",
+              "ReturnType": "System.Single",
+              "Parameters": [
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "U3MKxEvHbWE9GifqYlQx9TNtLT6fYtrBQRtu5dE0OBQ=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
           }
         }
       ],

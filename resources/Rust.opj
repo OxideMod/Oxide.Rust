@@ -9992,6 +9992,54 @@
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCargoShipEgress",
+            "HookName": "OnCargoShipEgress",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CargoShip",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartEgress",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "d5pfeWNXzk03ex8i9rR0y2BLBsL5XH7sF3pfuhLhmVw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCargoShipSpawnCrate",
+            "HookName": "OnCargoShipSpawnCrate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CargoShip",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RespawnLoot",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "slUNfD/vy35Zyle3B/cS0wsamJdLBU1iFJrAUZFl9qw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

@@ -10040,6 +10040,54 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 19,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNpcRadioChatter",
+            "HookName": "OnNpcRadioChatter",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ScientistNPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayRadioChatter",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "vcb3l0Tjgt/veyHGAjgzS4NgJ3kgQhWau3YAq6TtCws=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 6,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNpcAlerted",
+            "HookName": "OnNpcAlerted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ScientistNPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Alert",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "N/Ms98+CjvSz6EeD1WbL3PUdWNKaXmiZ41bqMAgS480=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

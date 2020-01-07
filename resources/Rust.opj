@@ -9966,6 +9966,32 @@
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 97,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.cachedProtectedMinutes",
+            "HookTypeName": "Simple",
+            "Name": "OnCupboardProtectionCalculated",
+            "HookName": "OnCupboardProtectionCalculated",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BuildingPrivlidge",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GetProtectedMinutes",
+              "ReturnType": "System.Single",
+              "Parameters": [
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "U3MKxEvHbWE9GifqYlQx9TNtLT6fYtrBQRtu5dE0OBQ=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [

@@ -14026,6 +14026,158 @@
             ]
           },
           "MSILHash": "SM+c+dj3ZyQuUxrerw0/UEAh9gGtIz3QxF8J8PeHEAI="
+        },
+        {
+          "Name": "ScientistNPC::lastAlertedTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ScientistNPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "lastAlertedTime",
+            "FullTypeName": "System.Single ScientistNPC::lastAlertedTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayer::lastGunShotTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "lastGunShotTime",
+            "FullTypeName": "System.Single NPCPlayer::lastGunShotTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayer::lastPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastPos",
+            "FullTypeName": "UnityEngine.Vector3 NPCPlayer::lastPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayer::nextTriggerTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "nextTriggerTime",
+            "FullTypeName": "System.Single NPCPlayer::nextTriggerTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayer::spawnPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spawnPos",
+            "FullTypeName": "UnityEngine.Vector3 NPCPlayer::spawnPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCPlayer::triggerEndTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCPlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "triggerEndTime",
+            "FullTypeName": "System.Single NPCPlayer::triggerEndTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HumanNPC::_targets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HumanNPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_targets",
+            "FullTypeName": "System.Collections.Generic.List`1<BaseCombatEntity> HumanNPC::_targets",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HumanNPC::nextZoneSearchTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HumanNPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextZoneSearchTime",
+            "FullTypeName": "System.Single HumanNPC::nextZoneSearchTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

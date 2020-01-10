@@ -14300,6 +14300,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "RelationshipManager::lastTeamIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RelationshipManager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastTeamIndex",
+            "FullTypeName": "System.UInt64 RelationshipManager::lastTeamIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RelationshipManager/PlayerTeam::onlineMemberConnections",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RelationshipManager/PlayerTeam",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "onlineMemberConnections",
+            "FullTypeName": "System.Collections.Generic.List`1<Network.Connection> RelationshipManager/PlayerTeam::onlineMemberConnections",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

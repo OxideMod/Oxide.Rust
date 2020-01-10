@@ -10114,6 +10114,54 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnNpcEquipWeapon [NPCPlayer]",
+            "HookName": "OnNpcEquipWeapon",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCPlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EquipWeapon",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "zryZTNlib/BOQDmS3nV7rUM2FEJ1iETAeXVRgQM0fkk=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnNpcEquipWeapon [ScientistNPC]",
+            "HookName": "OnNpcEquipWeapon",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ScientistNPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EquipWeapon",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "dKba34Fc0xZ2VOQ9AavaTYfR+uWpf47+hzrLivC/sqI=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

@@ -2273,7 +2273,7 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 8,
-            "ReturnBehavior": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
@@ -8316,7 +8316,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
+            "InjectionIndex": 3,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "ArgumentString": null,
@@ -10085,6 +10085,32 @@
               ]
             },
             "MSILHash": "LPKKup1TWB9UzS4QBQy1DYhjQanAVNW+cFkI/XtaND8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityKill [BradleyAPC]",
+            "HookName": "OnEntityKill",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BradleyAPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnKilled",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "PN6KcgmzwCeNe3sUvJui8jmKMSB5xmX9/Ep+fvxptUg=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }

@@ -527,32 +527,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 4,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnEntityDeath",
-            "HookName": "OnEntityDeath",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseCombatEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Die",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "HitInfo"
-              ]
-            },
-            "MSILHash": "we3VTxsHmAN5qBj5usDjj57p0go4cr4kTHQS+r+wys8=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 92,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -10087,6 +10061,32 @@
             "MSILHash": "N/Ms98+CjvSz6EeD1WbL3PUdWNKaXmiZ41bqMAgS480=",
             "BaseHookName": null,
             "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityDeath",
+            "HookName": "OnEntityDeath",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseCombatEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnKilled",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "LPKKup1TWB9UzS4QBQy1DYhjQanAVNW+cFkI/XtaND8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
           }
         }
       ],

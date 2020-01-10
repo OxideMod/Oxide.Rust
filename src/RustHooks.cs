@@ -497,7 +497,7 @@ namespace Oxide.Game.Rust
                 entity =>
                 {
                     BasePlayer player = entity as BasePlayer;
-                    object callHook = player != null && npc != null && player != npc ? Interface.CallHook("OnNpcPlayerTarget", npc, player) : null;
+                    object callHook = player != null && npc != null && player != npc ? Interface.CallHook("OnNpcTarget", npc, player) : null;
                     if (callHook != null)
                     {
                         foreach (Memory.SeenInfo seenInfo in npc.AiContext.Memory.All)
@@ -528,8 +528,8 @@ namespace Oxide.Game.Rust
         /// </summary>
         /// <param name="npc"></param>
         /// <returns></returns>
-        [HookMethod("IOnNpcPlayerSenseClose")]
-        private object IOnNpcPlayerSenseClose(NPCPlayerApex npc)
+        [HookMethod("IOnNpcSenseClose")]
+        private object IOnNpcSenseClose(NPCPlayerApex npc)
         {
             NPCPlayerApex.EntityQueryResultCount = GetPlayersSensed(npc, npc.ServerPosition, npc.Stats.CloseRange, NPCPlayerApex.EntityQueryResults);
             return true;
@@ -540,23 +540,23 @@ namespace Oxide.Game.Rust
         /// </summary>
         /// <param name="npc"></param>
         /// <returns></returns>
-        [HookMethod("IOnNpcPlayerSenseVision")]
-        private object IOnNpcPlayerSenseVision(NPCPlayerApex npc)
+        [HookMethod("IOnNpcSenseVision")]
+        private object IOnNpcSenseVision(NPCPlayerApex npc)
         {
             NPCPlayerApex.PlayerQueryResultCount = GetPlayersSensed(npc, npc.ServerPosition, npc.Stats.VisionRange, NPCPlayerApex.PlayerQueryResults);
             return true;
         }
 
         /// <summary>
-        /// Called when a Murderer NPC player tries to target an entity
+        /// Called when an Apex NPC player (i.e. murderer) tries to target an entity
         /// </summary>
         /// <param name="npc"></param>
         /// <param name="target"></param>
         /// <returns></returns>
-        [HookMethod("IOnNpcPlayerTarget")]
-        private object IOnNpcPlayerTarget(NPCPlayerApex npc, BaseEntity target)
+        [HookMethod("IOnNpcTarget")]
+        private object IOnNpcTarget(NPCPlayerApex npc, BaseEntity target)
         {
-            if (Interface.CallHook("OnNpcPlayerTarget", npc, target) != null)
+            if (Interface.CallHook("OnNpcTarget", npc, target) != null)
             {
                 return 0f;
             }
@@ -565,15 +565,15 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
-        /// Called when an HTN NPC player tries to target an entity
+        /// Called when an HTN NPC player (old scientist) tries to target an entity
         /// </summary>
         /// <param name="npc"></param>
         /// <param name="target"></param>
         /// <returns></returns>
-        [HookMethod("IOnHtnNpcPlayerTarget")]
-        private object IOnHtnNpcPlayerTarget(IHTNAgent npc, BasePlayer target)
+        [HookMethod("IOnNpcTarget")]
+        private object IOnNpcTarget(IHTNAgent npc, BasePlayer target)
         {
-            if (npc != null && Interface.CallHook("OnNpcPlayerTarget", npc.Body, target) != null)
+            if (npc != null && Interface.CallHook("OnNpcTarget", npc.Body, target) != null)
             {
                 npc.AiDomain.NpcContext.BaseMemory.Forget(0f);
                 npc.AiDomain.NpcContext.BaseMemory.PrimaryKnownEnemyPlayer.PlayerInfo.Player = null;

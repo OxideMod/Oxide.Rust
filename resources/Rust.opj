@@ -6140,8 +6140,8 @@
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnHelicopterKilled",
-            "HookName": "OnHelicopterKilled",
+            "Name": "OnEntityKill [CH47Helicopter]",
+            "HookName": "OnEntityKill",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "CH47HelicopterAIController",
             "Flagged": false,
@@ -6155,7 +6155,7 @@
             },
             "MSILHash": "IxMMO5QT/IedH/aX+mbRtsuBcKqrNFip2U/ggioXuJ8=",
             "BaseHookName": null,
-            "HookCategory": "Vehicle"
+            "HookCategory": "Entity"
           }
         },
         {

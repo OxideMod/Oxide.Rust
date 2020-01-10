@@ -10042,13 +10042,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 6,
-            "ReturnBehavior": 0,
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnNpcAlerted",
-            "HookName": "OnNpcAlerted",
+            "Name": "OnNpcAlert [ScientistNPC]",
+            "HookName": "OnNpcAlert",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ScientistNPC",
             "Flagged": false,

@@ -10162,6 +10162,58 @@
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNpcDuck [HumanNPC]",
+            "HookName": "OnNpcDuck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HumanNPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetDucked",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "jlCG0OPTZaGz836wNF0qFQj+M3rQ1czTJPIn2kKVYps=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 129,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l11",
+            "HookTypeName": "Simple",
+            "Name": "OnNpcTarget [HumanNPC]",
+            "HookName": "OnNpcTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HumanNPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateTargets",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Single"
+              ]
+            },
+            "MSILHash": "HTfQDr45/BaEIOi8+EGHCqzFVM1yVV65MWOx8YotB6U=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

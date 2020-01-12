@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "C:\\\\Users\\2CHEVSKII\\Desktop\\GameServers\\rust-ds\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -10213,6 +10213,35 @@
             "MSILHash": "HTfQDr45/BaEIOi8+EGHCqzFVM1yVV65MWOx8YotB6U=",
             "BaseHookName": null,
             "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a1, a2 , a3",
+            "HookTypeName": "Simple",
+            "Name": "OnVisibilityCheck",
+            "HookName": "OnVisibilityCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity/RPC_Server/IsVisible",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Test",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.String",
+                "BaseEntity",
+                "BasePlayer",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "SArqexkRKfCTKO5Q4GRxqnti8RkVWaKMmgUAVTjbsac=",
+            "BaseHookName": null,
+            "HookCategory": null
           }
         }
       ],

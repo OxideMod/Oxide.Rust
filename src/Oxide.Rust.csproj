@@ -58,6 +58,9 @@
     <Reference Include="Facepunch.UnityEngine">
       <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="Fleck">
+      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Fleck.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib">
       <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\mscorlib.dll</HintPath>
     </Reference>
@@ -87,9 +90,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\websocket-sharp.dll</HintPath>
     </Reference>
     <None Remove="Bundle\**; Files\**; Patched\**; **\Original\**; *.config; *.opj" />
   </ItemGroup>

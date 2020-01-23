@@ -4,7 +4,6 @@ using Oxide.Core.Libraries.Covalence;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
@@ -314,12 +313,12 @@ namespace Oxide.Game.Rust.Libraries
         /// <summary>
         /// Returns all connected players
         /// </summary>
-        public List<BasePlayer> Players => BasePlayer.activePlayerList.ToList();
+        public List<BasePlayer> Players => BasePlayer.activePlayerList;
 
         /// <summary>
         /// Returns all sleeping players
         /// </summary>
-        public List<BasePlayer> Sleepers => BasePlayer.sleepingPlayerList.ToList();
+        public List<BasePlayer> Sleepers => BasePlayer.sleepingPlayerList;
 
         #endregion Player Finding
 

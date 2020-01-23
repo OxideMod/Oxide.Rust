@@ -644,6 +644,23 @@ namespace Oxide.Game.Rust
 
         #region Deprecated Hooks
 
+        [HookMethod("IOnActiveItemChange")]
+        private object IOnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)
+        {
+            object newHook = Interface.Oxide.CallHook("OnActiveItemChange", player, oldItem, newItemId);
+            object oldHook = Interface.Oxide.CallDeprecatedHook("OnActiveItemChange", $"OnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)",
+                new System.DateTime(2020, 4, 1), player, newItemId);
+            return newHook ?? oldHook;
+        }
+
+        [HookMethod("IOnActiveItemChanged")]
+        private void IOnActiveItemChanged(BasePlayer player, Item oldItem, Item newItem)
+        {
+            Interface.Oxide.CallHook("OnActiveItemChanged", player, oldItem, newItem);
+            Interface.Oxide.CallDeprecatedHook("OnPlayerActiveItemChanged", $"OnActiveItemChanged(BasePlayer player, Item oldItem, Item newItem)",
+                new System.DateTime(2020, 4, 1), player, oldItem, newItem);
+        }
+
         [HookMethod("OnEntityKill")]
         private object OnEntityKill(CH47HelicopterAIController heli)
         {
@@ -672,21 +689,11 @@ namespace Oxide.Game.Rust
                 new System.DateTime(2020, 4, 1), npc);
         }
 
-        [HookMethod("IOnActiveItemChange")]
-        private object IOnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)
+        [HookMethod("OnPlayerDeath")]
+        private object OnPlayerDeath(BasePlayer player, HitInfo hitInfo)
         {
-            object newHook = Interface.Oxide.CallHook("OnActiveItemChange", player, oldItem, newItemId);
-            object oldHook = Interface.Oxide.CallDeprecatedHook("OnActiveItemChange", $"OnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)",
-                new System.DateTime(2020, 4, 1), player, newItemId);
-            return newHook ?? oldHook;
-        }
-
-        [HookMethod("IOnActiveItemChanged")]
-        private void IOnActiveItemChanged(BasePlayer player, Item oldItem, Item newItem)
-        {
-            Interface.Oxide.CallHook("OnActiveItemChanged", player, oldItem, newItem);
-            Interface.Oxide.CallDeprecatedHook("OnPlayerActiveItemChanged", $"OnActiveItemChanged(BasePlayer player, Item oldItem, Item newItem)",
-                new System.DateTime(2020, 4, 1), player, oldItem, newItem);
+            return Interface.Oxide.CallDeprecatedHook("OnPlayerDie", $"OnPlayerDeath(BasePlayer player, HitInfo hitInfo)",
+                new System.DateTime(2020, 4, 1), player, hitInfo);
         }
 
         [HookMethod("OnQuarryToggled")]

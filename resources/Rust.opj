@@ -10215,6 +10215,35 @@
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 2,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnVisibilityCheck",
+            "HookName": "OnVisibilityCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity/RPC_Server/IsVisible",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Test",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.String",
+                "BaseEntity",
+                "BasePlayer",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "SArqexkRKfCTKO5Q4GRxqnti8RkVWaKMmgUAVTjbsac=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

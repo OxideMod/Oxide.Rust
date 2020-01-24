@@ -7666,7 +7666,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
             "HookTypeName": "Simple",
-            "Name": "OnSwitchToggle",
+            "Name": "OnSwitchToggle [ElectricSwitch]",
             "HookName": "OnSwitchToggle",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ElectricSwitch",
@@ -10240,6 +10240,32 @@
               ]
             },
             "MSILHash": "we3VTxsHmAN5qBj5usDjj57p0go4cr4kTHQS+r+wys8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnSwitchToggle [FuelGenerator]",
+            "HookName": "OnSwitchToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FuelGenerator",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_EngineSwitch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "5yJ89X60RuKAOc/8tZppGzorB4fR86tilnLqQZN/jqo=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }

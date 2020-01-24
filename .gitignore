@@ -67,7 +67,9 @@ _TeamCity*
 
 # Other files
 **/Bundle/
-**/dependencies/
+**/Dependencies/Patched/
+**/Dependencies/linux/
+**/Dependencies/windows/
 DepotDownloader.config
 .DepotDownloader/
 .deploy

@@ -4346,7 +4346,7 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 16,
-            "ReturnBehavior": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.player, this",
             "HookTypeName": "Simple",
@@ -4358,7 +4358,7 @@
             "Signature": {
               "Exposure": 0,
               "Name": "RPC_Spin",
-              "ReturnType": "System.Void",
+              "ReturnType": "System.Boolean",
               "Parameters": [
                 "BaseEntity/RPCMessage"
               ]

@@ -7424,23 +7424,23 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 62,
+            "InjectionIndex": 48,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l8",
+            "ArgumentString": "this, l5",
             "HookTypeName": "Simple",
-            "Name": "OnBigWheelWin",
+            "Name": "OnBigWheeWin",
             "HookName": "OnBigWheelWin",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BigWheelGame",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "Payout",
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "AN3Y9M83Owfjbcds1Yv6YHo6X4fl37GMjApk3gQdImE=",
+            "MSILHash": "epy8ms72cKe1WVahTpdfRH6rY0d+WM136YF5BD/Hcb8=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }

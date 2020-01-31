@@ -10321,6 +10321,34 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 52,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a2, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerStudyBlueprint",
+            "HookName": "OnPlayerStudyBlueprint",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemModStudyBlueprint",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerCommand",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "System.String",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "INDi0jjLjGTwHlwQstbYzqbJUOoET3ZjYLN1rMBsycs=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

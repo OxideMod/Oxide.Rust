@@ -187,14 +187,20 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="destination"></param>
         public void Teleport(BasePlayer player, Vector3 destination)
         {
-            if (player.IsSpectating())
+            if (player.IsAlive() && !player.IsSpectating())
             {
-                return;
-            }
+                // TODO: Check destination for potential obstructions to avoid
 
-            // TODO: Check destination for potential obstructions to avoid
-            player.MovePosition(destination);
-            player.ClientRPCPlayer(null, player, "ForcePositionTo", destination);
+                if (!player.GetParentEntity())
+                {
+                    player.MovePosition(destination);
+                    player.ClientRPCPlayer(null, player, "ForcePositionTo", destination);
+                    return;
+                }
+
+                BaseEntity parentEntity = player.GetParentEntity();
+                player.ClientRPCPlayer(null, player, "ForcePositionToParentOffset", parentEntity.transform.InverseTransformPoint(destination), parentEntity.net.ID);
+            }
         }
 
         /// <summary>

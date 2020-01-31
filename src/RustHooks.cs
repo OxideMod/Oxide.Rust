@@ -597,6 +597,9 @@ namespace Oxide.Game.Rust
                 npc.SetFact(BaseNpc.Facts.HasEnemy, 0);
                 npc.SetFact(BaseNpc.Facts.EnemyRange, 3);
                 npc.SetFact(BaseNpc.Facts.AfraidRange, 1);
+                npc.AiContext.EnemyPlayer = null;
+                npc.AiContext.LastEnemyPlayerScore = 0f;
+                npc.playerTargetDecisionStartTime = 0f;
                 return 0f;
             }
 

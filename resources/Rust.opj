@@ -14571,6 +14571,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseNpc::playerTargetDecisionStartTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNpc",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerTargetDecisionStartTime",
+            "FullTypeName": "System.Single BaseNpc::playerTargetDecisionStartTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

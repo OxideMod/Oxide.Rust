@@ -497,8 +497,8 @@ namespace Oxide.Game.Rust
                 entity =>
                 {
                     BasePlayer target = entity as BasePlayer;
-                    object callHook = Interface.CallHook("OnNpcTarget", npc, target);
-                    if ((target != null && npc != null && target != npc ? callHook : null) != null)
+                    object callHook = target != null && npc != null && target != npc ? Interface.CallHook("OnNpcTarget", npc, target) : null;
+                    if (callHook != null)
                     {
                         foreach (Memory.SeenInfo seenInfo in npc.AiContext.Memory.All)
                         {

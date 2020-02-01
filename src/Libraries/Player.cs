@@ -1,4 +1,4 @@
-﻿using Oxide.Core;
+using Oxide.Core;
 using Oxide.Core.Libraries;
 using Oxide.Core.Libraries.Covalence;
 using System;
@@ -189,17 +189,38 @@ namespace Oxide.Game.Rust.Libraries
         {
             if (player.IsAlive() && !player.IsSpectating())
             {
-                // TODO: Check destination for potential obstructions to avoid
-
-                if (!player.GetParentEntity())
+                try
                 {
+                    // Dismount and remove parent, if applicable
+                    player.EnsureDismounted();
+                    player.SetParent(null, true, true);
+
+                    // Prevent player from getting hurt
+                    player.SetPlayerFlag(BasePlayer.PlayerFlags.ReceivingSnapshot, true);
+                    player.UpdatePlayerCollider(true);
+                    player.UpdatePlayerRigidbody(false);
+                    player.EnableServerFall(true);
+
+                    // Teleport the player to position
                     player.MovePosition(destination);
                     player.ClientRPCPlayer(null, player, "ForcePositionTo", destination);
-                    return;
-                }
 
-                BaseEntity parentEntity = player.GetParentEntity();
-                player.ClientRPCPlayer(null, player, "ForcePositionToParentOffset", parentEntity.transform.InverseTransformPoint(destination), parentEntity.net.ID);
+                    // Update network group if outside current group
+                    if (!player.net.sv.visibility.IsInside(player.net.group, destination))
+                    {
+                        player.UpdateNetworkGroup();
+                        player.SendNetworkUpdateImmediate();
+                        player.ClearEntityQueue();
+                        player.SendFullSnapshot();
+                    }
+                }
+                finally
+                {
+                    // Restore player behavior
+                    player.UpdatePlayerCollider(true);
+                    player.UpdatePlayerRigidbody(true);
+                    player.EnableServerFall(false);
+                }
             }
         }
 

@@ -10373,6 +10373,29 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 22,
+            "RemoveCount": 4,
+            "Instructions": [],
+            "HookTypeName": "Modify",
+            "Name": "RemoveEnterGameLog [patch]",
+            "HookName": "RemoveEnterGameLog [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "EnterGame",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "nVRi47MO7v6lNRovaPpf+/Qz/RkeXxRphXfnVds8VRI=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [
@@ -14968,6 +14991,32 @@
             ],
             "Name": "cache",
             "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.Object> FileSystemBackend::cache",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        }
+      ],
+      "Fields": []
+    },
+    {
+      "AssemblyName": "Facepunch.Network.dll",
+      "Hooks": [],
+      "Modifiers": [
+        {
+          "Name": "Network.Networkable::sv",
+          "AssemblyName": "Facepunch.Network.dll",
+          "TypeName": "Network.Networkable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "sv",
+            "FullTypeName": "Network.Server Network.Networkable::sv",
             "Parameters": []
           },
           "MSILHash": ""

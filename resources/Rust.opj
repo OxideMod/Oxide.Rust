@@ -14665,6 +14665,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseNetworkable/EntityRealm::entityList",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable/EntityRealm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "entityList",
+            "FullTypeName": "ListDictionary`2<System.UInt32,BaseNetworkable> BaseNetworkable/EntityRealm::entityList",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -69,17 +69,17 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <summary>
         /// Gets the player's language
         /// </summary>
-        public CultureInfo Language => Player.Language(player);
+        public CultureInfo Language => player != null ? Player.Language(player) : CultureInfo.GetCultureInfo("en");
 
         /// <summary>
         /// Gets the player's IP address
         /// </summary>
-        public string Address => Player.Address(player);
+        public string Address => player != null ? Player.Address(player) : "0.0.0.0";
 
         /// <summary>
         /// Gets the player's average network ping
         /// </summary>
-        public int Ping => Player.Ping(player);
+        public int Ping => player != null ? Player.Ping(player) : 0;
 
         /// <summary>
         /// Returns if the player is admin
@@ -94,12 +94,12 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <summary>
         /// Returns if the player is connected
         /// </summary>
-        public bool IsConnected => Player.IsConnected(player);
+        public bool IsConnected => player != null ? Player.IsConnected(player) : BasePlayer.FindByID(steamId) != null;
 
         /// <summary>
         /// Returns if the player is sleeping
         /// </summary>
-        public bool IsSleeping => Player.IsSleeping(player);
+        public bool IsSleeping => player != null ? Player.IsSleeping(player) : BasePlayer.FindSleeping(steamId) != null;
 
         /// <summary>
         /// Returns if the player is the server

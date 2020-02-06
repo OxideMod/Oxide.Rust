@@ -54,7 +54,7 @@ namespace Oxide.Game.Rust
             "UnityEngine.CoreModule", "UnityEngine.GridModule", "UnityEngine.ImageConversionModule", "UnityEngine.Networking", "UnityEngine.PhysicsModule", "UnityEngine.TerrainModule",
             "UnityEngine.TerrainPhysicsModule", "UnityEngine.UI", "UnityEngine.UIModule", "UnityEngine.UIElementsModule", "UnityEngine.UnityWebRequestAudioModule",
             "UnityEngine.UnityWebRequestModule", "UnityEngine.UnityWebRequestTextureModule", "UnityEngine.UnityWebRequestWWWModule", "UnityEngine.VehiclesModule",
-            "UnityEngine.WebModule"
+            "UnityEngine.WebModule", "netstandard"
         };
 
         /// <summary>

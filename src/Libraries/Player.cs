@@ -78,7 +78,7 @@ namespace Oxide.Game.Rust.Libraries
         /// <summary>
         /// Gets if the player is connected
         /// </summary>
-        public bool IsConnected(BasePlayer player) => BasePlayer.activePlayerList.Contains(player);
+        public bool IsConnected(BasePlayer player) => player.IsConnected;
 
         /// <summary>
         /// Returns if the player is sleeping

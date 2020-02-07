@@ -8,7 +8,6 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using UnityEngine;
 
@@ -183,9 +182,10 @@ namespace Oxide.Game.Rust
         /// <summary>
         /// Called when the server is shutting down
         /// </summary>
-        [HookMethod("OnServerShutdown")]
-        private void OnServerShutdown()
+        [HookMethod("IOnServerShutdown")]
+        private void IOnServerShutdown()
         {
+            Interface.Oxide.CallHook("OnServerShutdown");
             Interface.Oxide.OnShutdown();
             Covalence.PlayerManager.SavePlayerData();
         }

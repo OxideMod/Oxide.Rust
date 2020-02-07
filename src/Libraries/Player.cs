@@ -195,9 +195,9 @@ namespace Oxide.Game.Rust.Libraries
                     player.SetParent(null, true, true);
 
                     // Prevent player from getting hurt
-                    player.SetPlayerFlag(BasePlayer.PlayerFlags.ReceivingSnapshot, true);
-                    player.UpdatePlayerCollider(true);
-                    player.UpdatePlayerRigidbody(false);
+                    //player.SetPlayerFlag(BasePlayer.PlayerFlags.ReceivingSnapshot, true);
+                    //player.UpdatePlayerCollider(true);
+                    //player.UpdatePlayerRigidbody(false);
                     player.EnableServerFall(true);
 
                     // Teleport the player to position
@@ -205,19 +205,19 @@ namespace Oxide.Game.Rust.Libraries
                     player.ClientRPCPlayer(null, player, "ForcePositionTo", destination);
 
                     // Update network group if outside current group
-                    if (!player.net.sv.visibility.IsInside(player.net.group, destination))
+                    /*if (!player.net.sv.visibility.IsInside(player.net.group, destination))
                     {
                         player.UpdateNetworkGroup();
                         player.SendNetworkUpdateImmediate();
                         player.ClearEntityQueue();
                         player.SendFullSnapshot();
-                    }
+                    }*/
                 }
                 finally
                 {
                     // Restore player behavior
-                    player.UpdatePlayerCollider(true);
-                    player.UpdatePlayerRigidbody(true);
+                    //player.UpdatePlayerCollider(true);
+                    //player.UpdatePlayerRigidbody(true);
                     player.EnableServerFall(false);
                 }
             }

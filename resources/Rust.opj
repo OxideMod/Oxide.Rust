@@ -14755,6 +14755,26 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Scientist::AllScientists",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Scientist",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "AllScientists",
+            "FullTypeName": "System.Collections.Generic.HashSet`1<Scientist> Scientist::AllScientists",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -7270,6 +7270,38 @@
           }
         },
         {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 270,
+            "RemoveCount": 8,
+            "Instructions": [
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 397
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "AllowNpcAttackingNpc [patch]",
+            "HookName": "AllowNpcAttackingNpc [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseProjectile",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerUse",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Single",
+                "UnityEngine.Transform"
+              ]
+            },
+            "MSILHash": "Kp5KPeEklOVKYTswoJpSRwPHB9BUHuQYVzgjbPOyWfo=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
+        },
+        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 9,

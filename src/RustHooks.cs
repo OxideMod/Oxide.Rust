@@ -569,14 +569,16 @@ namespace Oxide.Game.Rust
         /// </summary>
         /// <param name="npc"></param>
         /// <param name="target"></param>
+        /// <param name="index"></param>
         /// <returns></returns>
         [HookMethod("IOnNpcTarget")]
-        private object IOnNpcTarget(IHTNAgent npc, BasePlayer target)
+        private object IOnNpcTarget(IHTNAgent npc, BasePlayer target, int index)
         {
             if (npc != null && Interface.CallHook("OnNpcTarget", npc.Body, target) != null)
             {
-                npc.AiDomain.NpcContext.BaseMemory.Forget(0f);
-                npc.AiDomain.NpcContext.BaseMemory.PrimaryKnownEnemyPlayer.PlayerInfo.Player = null;
+                npc.AiDomain.NpcContext.PlayersInRange.RemoveAt(index);
+                npc.AiDomain.NpcContext.BaseMemory.Forget(0f); // Unsure if still needed
+                npc.AiDomain.NpcContext.BaseMemory.PrimaryKnownEnemyPlayer.PlayerInfo.Player = null; // Unsure if still needed
                 return true;
             }
 

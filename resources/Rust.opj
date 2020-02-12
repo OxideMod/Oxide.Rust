@@ -82,8 +82,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "a0",
             "HookTypeName": "Simple",
-            "Name": "OnPlayerConnected",
-            "HookName": "OnPlayerConnected",
+            "Name": "IOnPlayerConnected [old]",
+            "HookName": "IOnPlayerConnected",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ServerMgr",
             "Flagged": false,
@@ -201,32 +201,6 @@
             "MSILHash": "NcvvEy+BpCwFz0kUlLv7i20h/fZml9blaj11HX8qlEk=",
             "BaseHookName": null,
             "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 141,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnPlayerInit",
-            "HookName": "OnPlayerInit",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "PlayerInit",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Network.Connection"
-              ]
-            },
-            "MSILHash": "GydnJweSbNXuZdEaLntnAEDH9lq0Wy0wgYDQxiZ9Y2s=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
           }
         },
         {
@@ -8184,7 +8158,7 @@
               ]
             },
             "MSILHash": "xCCkKT2j2SkIVZ/yNP8Y/+6/TOrp/OiP8NNfQ1FrQQw=",
-            "BaseHookName": "OnPlayerConnected",
+            "BaseHookName": "IOnPlayerConnected [old]",
             "HookCategory": "Player"
           }
         },
@@ -10403,6 +10377,30 @@
             "MSILHash": "nVRi47MO7v6lNRovaPpf+/Qz/RkeXxRphXfnVds8VRI=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 26,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerConnected",
+            "HookName": "OnPlayerConnected",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "EnterGame",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "nVRi47MO7v6lNRovaPpf+/Qz/RkeXxRphXfnVds8VRI=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
           }
         }
       ],

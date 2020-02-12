@@ -655,6 +655,13 @@ namespace Oxide.Game.Rust
                 new System.DateTime(2020, 4, 1), player, oldItem, newItem);
         }
 
+        [HookMethod("IOnPlayerConnected")]
+        private void IOnPlayerConnected(Network.Message packet)
+        {
+            Interface.Oxide.CallDeprecatedHook("OnPlayerInit", $"OnPlayerConnected(BasePlayer player)",
+                new System.DateTime(2020, 4, 1), packet);
+        }
+
         [HookMethod("OnEntityKill")]
         private object OnEntityKill(CH47HelicopterAIController heli)
         {
@@ -674,6 +681,13 @@ namespace Oxide.Game.Rust
         {
             return Interface.Oxide.CallDeprecatedHook("OnNpcPlayerResume", $"OnNpcResume(NPCPlayerApex npc)",
                 new System.DateTime(2020, 4, 1), npc);
+        }
+
+        [HookMethod("OnPlayerConnected")]
+        private void OnPlayerConnected(BasePlayer player)
+        {
+            Interface.Oxide.CallDeprecatedHook("OnPlayerInit", $"OnPlayerConnected(BasePlayer player)",
+                new System.DateTime(2020, 4, 1), player);
         }
 
         [HookMethod("OnPlayerDeath")]

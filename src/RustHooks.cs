@@ -660,9 +660,9 @@ namespace Oxide.Game.Rust
         {
             if (!player.hasPreviousLife)
             {
-                Interface.Oxide.CallHook("OnPlayerConnected", player);
                 Interface.Oxide.CallDeprecatedHook("OnPlayerInit", "OnPlayerConnected(BasePlayer player)",
                     new System.DateTime(2020, 4, 1), player);
+                Interface.Oxide.CallHook("OnPlayerConnected", player);
             }
         }
 

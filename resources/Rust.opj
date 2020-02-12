@@ -10359,8 +10359,8 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 22,
-            "RemoveCount": 4,
+            "InjectionIndex": 25,
+            "RemoveCount": 5,
             "Instructions": [],
             "HookTypeName": "Modify",
             "Name": "RemoveEnterGameLog [patch]",
@@ -10375,20 +10375,20 @@
               "Parameters": []
             },
             "MSILHash": "nVRi47MO7v6lNRovaPpf+/Qz/RkeXxRphXfnVds8VRI=",
-            "BaseHookName": null,
+            "BaseHookName": "IOnPlayerConnected",
             "HookCategory": "_Patches"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 26,
+            "InjectionIndex": 22,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnPlayerConnected",
-            "HookName": "OnPlayerConnected",
+            "Name": "IOnPlayerConnected",
+            "HookName": "IOnPlayerConnected",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
             "Flagged": false,

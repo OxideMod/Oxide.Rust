@@ -656,9 +656,20 @@ namespace Oxide.Game.Rust
         }
 
         [HookMethod("IOnPlayerConnected")]
-        private void IOnPlayerConnected(Network.Message packet)
+        private void IOnPlayerConnected(BasePlayer player)
         {
-            Interface.Oxide.CallDeprecatedHook("OnPlayerInit", $"OnPlayerConnected(BasePlayer player)",
+            if (!player.hasPreviousLife)
+            {
+                Interface.Oxide.CallHook("OnPlayerConnected", player);
+                Interface.Oxide.CallDeprecatedHook("OnPlayerInit", "OnPlayerConnected(BasePlayer player)",
+                    new System.DateTime(2020, 4, 1), player);
+            }
+        }
+
+        [HookMethod("IOnPlayerConnected")]
+        private void IOnPlayerConnected(Message packet)
+        {
+            Interface.Oxide.CallDeprecatedHook("OnPlayerInit", "OnPlayerConnected(BasePlayer player)",
                 new System.DateTime(2020, 4, 1), packet);
         }
 
@@ -681,13 +692,6 @@ namespace Oxide.Game.Rust
         {
             return Interface.Oxide.CallDeprecatedHook("OnNpcPlayerResume", $"OnNpcResume(NPCPlayerApex npc)",
                 new System.DateTime(2020, 4, 1), npc);
-        }
-
-        [HookMethod("OnPlayerConnected")]
-        private void OnPlayerConnected(BasePlayer player)
-        {
-            Interface.Oxide.CallDeprecatedHook("OnPlayerInit", $"OnPlayerConnected(BasePlayer player)",
-                new System.DateTime(2020, 4, 1), player);
         }
 
         [HookMethod("OnPlayerDeath")]

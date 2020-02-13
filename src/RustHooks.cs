@@ -401,8 +401,8 @@ namespace Oxide.Game.Rust
         /// Called when the player has connected
         /// </summary>
         /// <param name="player"></param>
-        [HookMethod("OnPlayerInit")]
-        private void OnPlayerInit(BasePlayer player)
+        [HookMethod("IOnPlayerConnected")]
+        private void IOnPlayerConnected(BasePlayer player)
         {
             // Set language for player
             lang.SetLanguage(player.net.connection.info.GetString("global.language", "en"), player.UserIDString);
@@ -415,6 +415,10 @@ namespace Oxide.Game.Rust
                 player.IPlayer = iplayer;
                 Interface.CallHook("OnUserConnected", iplayer);
             }
+
+            Interface.Oxide.CallDeprecatedHook("OnPlayerInit", "OnPlayerConnected(BasePlayer player)",
+                new System.DateTime(2020, 4, 1), player);
+            Interface.Oxide.CallHook("OnPlayerConnected", player);
         }
 
         /// <summary>
@@ -656,20 +660,9 @@ namespace Oxide.Game.Rust
         }
 
         [HookMethod("IOnPlayerConnected")]
-        private void IOnPlayerConnected(BasePlayer player)
-        {
-            if (!player.hasPreviousLife)
-            {
-                Interface.Oxide.CallDeprecatedHook("OnPlayerInit", "OnPlayerConnected(BasePlayer player)",
-                    new System.DateTime(2020, 4, 1), player);
-                Interface.Oxide.CallHook("OnPlayerConnected", player);
-            }
-        }
-
-        [HookMethod("IOnPlayerConnected")]
         private void IOnPlayerConnected(Message packet)
         {
-            Interface.Oxide.CallDeprecatedHook("OnPlayerInit", "OnPlayerConnected(BasePlayer player)",
+            Interface.Oxide.CallDeprecatedHook("OnPlayerConnected", "OnPlayerConnected(BasePlayer player)",
                 new System.DateTime(2020, 4, 1), packet);
         }
 

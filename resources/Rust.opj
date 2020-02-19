@@ -10381,6 +10381,81 @@
             "BaseHookName": "OnPlayerSetInfo [server]",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 26,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanLootEntity [ridable animal]",
+            "HookName": "CanLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseRidableAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_OpenLoot",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "nKGwt7k6gnCb9mt9q2jkj9p4IFLuoQwjHWE6l5GbPZI=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 78,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "CanSamSiteTargeted"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_3",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 80
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanSamSiteTargeted",
+            "HookName": "CanSamSiteTargeted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SamSite",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TargetScan",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "cYqIgja5hki/e/8gXnf/AVH3SX7mad8Fws3O7m7gSak=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [
@@ -14784,6 +14859,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseCorpse::resourceDispenser",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCorpse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "resourceDispenser",
+            "FullTypeName": "ResourceDispenser BaseCorpse::resourceDispenser",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ResourceEntity::resourceDispenser",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ResourceEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "resourceDispenser",
+            "FullTypeName": "ResourceDispenser ResourceEntity::resourceDispenser",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [
@@ -15119,7 +15232,35 @@
     },
     {
       "AssemblyName": "Facepunch.Network.dll",
-      "Hooks": [],
+      "Hooks": [
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a1, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnCloseConnection",
+            "HookName": "OnCloseConnection",
+            "AssemblyName": "Facepunch.Network.dll",
+            "TypeName": "Network.Server",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "OnDisconnected",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "Network.Connection"
+              ]
+            },
+            "MSILHash": "6IMUWqPpWISUbx0Jg2ksUSSJh/b6J977mqnwWwgWgzs=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        }
+      ],
       "Modifiers": [
         {
           "Name": "Network.Networkable::sv",

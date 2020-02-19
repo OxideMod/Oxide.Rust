@@ -659,8 +659,8 @@ namespace Oxide.Game.Rust
                 new System.DateTime(2020, 4, 1), player, oldItem, newItem);
         }
 
-        [HookMethod("IOnPlayerConnected")]
-        private void IOnPlayerConnected(Message packet)
+        [HookMethod("IOnPlayerConnectedOld")]
+        private void IOnPlayerConnectedOld(Message packet)
         {
             Interface.Oxide.CallDeprecatedHook("OnPlayerConnected", "OnPlayerConnected(BasePlayer player)",
                 new System.DateTime(2020, 4, 1), packet);

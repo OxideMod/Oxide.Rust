@@ -417,6 +417,8 @@ namespace Oxide.Game.Rust
             }
 
             Interface.Oxide.CallHook("OnPlayerConnected", player);
+            Interface.Oxide.CallDeprecatedHook("OnPlayerInit", "OnPlayerConnected(BasePlayer player)",
+                new System.DateTime(2020, 4, 1), player);
         }
 
         /// <summary>
@@ -655,20 +657,6 @@ namespace Oxide.Game.Rust
             Interface.Oxide.CallHook("OnActiveItemChanged", player, oldItem, newItem);
             Interface.Oxide.CallDeprecatedHook("OnPlayerActiveItemChanged", "OnActiveItemChanged(BasePlayer player, Item oldItem, Item newItem)",
                 new System.DateTime(2020, 4, 1), player, oldItem, newItem);
-        }
-
-        [HookMethod("IOnPlayerConnectedOld")]
-        private void IOnPlayerConnectedOld(Message packet)
-        {
-            Interface.Oxide.CallDeprecatedHook("OnPlayerConnected", "OnPlayerConnected(BasePlayer player)",
-                new System.DateTime(2020, 4, 1), packet);
-        }
-
-        [HookMethod("IOnPlayerInit")]
-        private void IOnPlayerInit(BasePlayer player)
-        {
-            Interface.Oxide.CallDeprecatedHook("OnPlayerInit", "OnPlayerConnected(BasePlayer player)",
-                new System.DateTime(2020, 4, 1), player);
         }
 
         [HookMethod("OnEntityKill")]

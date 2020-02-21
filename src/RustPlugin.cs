@@ -1,4 +1,4 @@
-﻿using Oxide.Core;
+using Oxide.Core;
 using Oxide.Core.Plugins;
 using Oxide.Game.Rust.Libraries;
 using System;
@@ -87,9 +87,6 @@ namespace Oxide.Plugins
 
             base.HandleAddedToManager(manager);
         }
-
-        [HookMethod("OnPlayerInit")]
-        private void base_OnPlayerInit(BasePlayer player) => AddOnlinePlayer(player);
 
         [HookMethod("OnPlayerConnected")]
         private void base_OnPlayerConnected(BasePlayer player) => AddOnlinePlayer(player);

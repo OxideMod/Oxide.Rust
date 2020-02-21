@@ -77,32 +77,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 79,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "l4",
-            "HookTypeName": "Simple",
-            "Name": "IOnPlayerConnected",
-            "HookName": "IOnPlayerConnected",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerMgr",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "ClientReady",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Network.Message"
-              ]
-            },
-            "MSILHash": "xCCkKT2j2SkIVZ/yNP8Y/+6/TOrp/OiP8NNfQ1FrQQw=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 19,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
@@ -8158,7 +8132,7 @@
               ]
             },
             "MSILHash": "xCCkKT2j2SkIVZ/yNP8Y/+6/TOrp/OiP8NNfQ1FrQQw=",
-            "BaseHookName": "IOnPlayerConnected",
+            "BaseHookName": null,
             "HookCategory": "Player"
           }
         },
@@ -10352,6 +10326,32 @@
               ]
             },
             "MSILHash": "INDi0jjLjGTwHlwQstbYzqbJUOoET3ZjYLN1rMBsycs=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 141,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "IOnPlayerConnected",
+            "HookName": "IOnPlayerConnected",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerInit",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Connection"
+              ]
+            },
+            "MSILHash": "GydnJweSbNXuZdEaLntnAEDH9lq0Wy0wgYDQxiZ9Y2s=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }

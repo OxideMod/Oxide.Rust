@@ -416,8 +416,6 @@ namespace Oxide.Game.Rust
                 Interface.CallHook("OnUserConnected", iplayer);
             }
 
-            Interface.Oxide.CallDeprecatedHook("OnPlayerInit", "OnPlayerConnected(BasePlayer player)",
-                new System.DateTime(2020, 4, 1), player);
             Interface.Oxide.CallHook("OnPlayerConnected", player);
         }
 
@@ -664,6 +662,13 @@ namespace Oxide.Game.Rust
         {
             Interface.Oxide.CallDeprecatedHook("OnPlayerConnected", "OnPlayerConnected(BasePlayer player)",
                 new System.DateTime(2020, 4, 1), packet);
+        }
+
+        [HookMethod("IOnPlayerInit")]
+        private void IOnPlayerInit(BasePlayer player)
+        {
+            Interface.Oxide.CallDeprecatedHook("OnPlayerInit", "OnPlayerConnected(BasePlayer player)",
+                new System.DateTime(2020, 4, 1), player);
         }
 
         [HookMethod("OnEntityKill")]

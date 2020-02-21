@@ -88,14 +88,14 @@ namespace Oxide.Plugins
             base.HandleAddedToManager(manager);
         }
 
-        [HookMethod("OnPlayerInit")]
+        [HookMethod("IOnPlayerInit")]
         private void base_OnPlayerInit(BasePlayer player) => AddOnlinePlayer(player);
 
         [HookMethod("IOnPlayerConnected")]
         private void base_OnPlayerConnected(BasePlayer player) => AddOnlinePlayer(player);
 
         [HookMethod("OnPlayerDisconnected")]
-        private void base_OnPlayerDisconnected(BasePlayer player, string reason)
+        private void base_OnPlayerDisconnected(BasePlayer player)
         {
             // Delay removing player until OnPlayerDisconnected has fired in plugin
             NextTick(() =>

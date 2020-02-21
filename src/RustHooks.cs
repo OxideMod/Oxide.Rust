@@ -404,6 +404,12 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnPlayerConnected")]
         private void IOnPlayerConnected(BasePlayer player)
         {
+            if (player.IsReceivingSnapshot)
+            {
+                Interface.Oxide.NextTick(() => IOnPlayerConnected(player));
+                return;
+            }
+
             // Set language for player
             lang.SetLanguage(player.net.connection.info.GetString("global.language", "en"), player.UserIDString);
 

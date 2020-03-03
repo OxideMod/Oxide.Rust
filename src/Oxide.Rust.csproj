@@ -3,8 +3,8 @@
   <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
   <PropertyGroup>
     <Version>2.0.0</Version>
-    <AssemblyName>Oxide.Rust</AssemblyName>
-    <Authors>Oxide and Contributors</Authors>
+    <GameName>Rust</GameName>
+    <Authors>Oxide Team and Contributors</Authors>
     <Copyright>(c) 2013-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
     <Description>Rust extension for the Oxide modding framework</Description>
     <RepositoryUrl>https://github.com/OxideMod/Oxide.Rust</RepositoryUrl>
@@ -16,8 +16,9 @@
     <SteamAppId>258550</SteamAppId>
     <SteamBranch>public</SteamBranch>
     <SteamLogin>anonymous</SteamLogin>
-    <SteamPlatform>windows;linux</SteamPlatform>
-    <ManagedDir>RustDedicated_Data\Managed</ManagedDir>
+    <GamePlatform>windows;linux</GamePlatform>
+    <GameExe>RustDedicated.exe;RustDedicated</GameExe>
+    <ManagedDir>RustDedicated_Data/Managed</ManagedDir>
     <NoWarn>NU1701</NoWarn>
   </PropertyGroup>
   <ItemGroup>
@@ -27,128 +28,33 @@
     <PackageReference Include="Oxide.MySql" Version="2.0.*" />
     <PackageReference Include="Oxide.SQLite" Version="2.0.*" />
     <PackageReference Include="Oxide.Unity" Version="2.0.*" />
-    <Reference Include="Assembly-CSharp">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Assembly-CSharp-firstpass.dll</HintPath>
-    </Reference>
-    <Reference Include="Facepunch.Console">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Console.dll</HintPath>
-    </Reference>
-    <Reference Include="Facepunch.Network">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Network.dll</HintPath>
-    </Reference>
-    <Reference Include="Facepunch.Rcon">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Rcon.dll</HintPath>
-    </Reference>
-    <Reference Condition="'$(SteamPlatform)' == 'linux'" Include="Facepunch.Steamworks.Posix64">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Steamworks.Posix64.dll</HintPath>
-    </Reference>
-    <Reference Condition="'$(SteamPlatform)' != 'linux'" Include="Facepunch.Steamworks.Win64">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Steamworks.Win64.dll</HintPath>
-    </Reference>
-    <Reference Include="Facepunch.System">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.System.dll</HintPath>
-    </Reference>
-    <Reference Include="Facepunch.Unity">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="Facepunch.UnityEngine">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="Fleck">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Fleck.dll</HintPath>
-    </Reference>
-    <Reference Include="mscorlib">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\mscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="NewAssembly">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\NewAssembly.dll</HintPath>
-    </Reference>
-    <Reference Include="System">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\System.dll</HintPath>
-    </Reference>
-    <Reference Include="Rust.Data">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Rust.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Rust.Global">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Rust.Global.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.PhysicsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.TextRenderingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <None Remove="Bundle\**; Files\**; Patched\**; **\Original\**; *.config; *.opj" />
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="Assembly-CSharp-firstpass" />
+    <Reference Include="Facepunch.Console" />
+    <Reference Include="Facepunch.Network" />
+    <Reference Include="Facepunch.Rcon" />
+    <Reference Include="Facepunch.System" />
+    <Reference Include="Facepunch.Unity" />
+    <Reference Include="Facepunch.UnityEngine" />
+    <Reference Include="Fleck" />
+    <Reference Include="mscorlib" />
+    <Reference Include="NewAssembly" />
+    <Reference Include="Rust.Data" />
+    <Reference Include="Rust.Global" />
+    <Reference Include="System" />
+    <Reference Include="UnityEngine" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="UnityEngine.TextRenderingModule" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Condition="'$(GamePlatform)' == 'linux'" Include="Facepunch.Steamworks.Posix" />
+    <Reference Condition="'$(GamePlatform)' != 'linux'" Include="Facepunch.Steamworks.Win64" />
+    <None Include="..\resources\icon.png" Pack="true" PackagePath="\" />
+    <None Remove="Bundle\**; dependencies\**; *.config; *.opj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PatchedFiles Include="$(TargetDir)\Assembly-CSharp.dll; $(TargetDir)\Facepunch.Console.dll; $(TargetDir)\Facepunch.Rcon.dll; $(TargetDir)\NewAssembly.dll" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
-  <Target Name="Clean">
-    <RemoveDir Directories="$(ProjectDir)\bin\Bundle\$(PackageId)" Condition="Exists('$(ProjectDir)\bin\Bundle\$(PackageId)')" />
-  </Target>
-  <Target Name="BeforeBuild">
-    <Exec Command="powershell -ExecutionPolicy Bypass &quot;$(SolutionDir)\Steam.ps1&quot; -project $(AssemblyName) -managed '$(ManagedDir)' -dotnet $(TargetFramework) -appid $(SteamAppId) -branch $(SteamBranch) -platform $(SteamPlatform.Split(';')[0])" />
-  </Target>
-  <Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
-    <ItemGroup>
-      <ReferencePath Condition="'%(FileName)' == 'Oxide.References'">
-        <Aliases>References</Aliases>
-      </ReferencePath>
-    </ItemGroup>
-  </Target>
-  <Target Name="AfterBuild">
-    <ItemGroup>
-      <CoreFiles Include="$(TargetDir)\Oxide.*.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Assembly-CSharp.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Console.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Network.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\Facepunch.Rcon.dll" />
-      <PatchedFiles Include="$(ProjectDir)\Dependencies\Patched\$(SteamBranch)\$(ManagedDir)\NewAssembly.dll" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.core\**\lib\net46\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.csharp\**\lib\any\*.*; $(SolutionDir)\packages\oxide.csharp\**\lib\net46\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.references\**\lib\any\net46\*.*; $(SolutionDir)\packages\oxide.references\**\lib\net46\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.unity\**\lib\net35\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\any\MySql.*.dll; $(SolutionDir)\packages\oxide.mysql\**\lib\any\System.*.dll" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.mysql\**\lib\net461\*.*" />
-      <ContentFiles Include="$(SolutionDir)\packages\oxide.sqlite\**\lib\any\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\net461\*.*" />
-      <ContentX64Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x64\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\x64\*.*" />
-      <ContentX86Files Include="$(SolutionDir)\packages\oxide.references\**\lib\any\x86\*.*; $(SolutionDir)\packages\oxide.sqlite\**\lib\any\x86\*.*" />
-    </ItemGroup>
-    <Copy SourceFiles="@(CoreFiles)" DestinationFiles="@(CoreFiles->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
-    <Copy SourceFiles="@(PatchedFiles)" DestinationFiles="@(PatchedFiles->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
-    <Copy SourceFiles="@(ContentFiles)" DestinationFiles="@(ContentFiles->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\%(Filename)%(Extension)')" />
-    <Copy SourceFiles="@(ContentX64Files)" DestinationFiles="@(ContentX64Files->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\x64\%(Filename)%(Extension)')" />
-    <Copy SourceFiles="@(ContentX86Files)" DestinationFiles="@(ContentX86Files->'$(ProjectDir)\bin\Bundle\$(PackageId)\$(ManagedDir)\x86\%(Filename)%(Extension)')" />
-    <!--<Exec Command="pdb2mdb %(PatchedFiles.Identity)" Condition="'$(Configuration)' == 'Debug' And '$(OS)' == 'Windows_NT'" IgnoreExitCode="true" />-->
-  </Target>
-  <Target Name="LocalDeploy" AfterTargets="AfterBuild" Condition="Exists('$(SolutionDir)\.deploy') And $(SteamPlatform.Contains('windows'))">
-    <Exec Command="start /b /wait taskkill /f /im RustDedicated.exe /fi &quot;memusage gt 2&quot;" Condition="'$(OS)' == 'Windows_NT'" />
-    <Exec Command="start /b /wait taskkill /f /im Compiler.exe /fi &quot;memusage gt 2&quot;" Condition="'$(OS)' == 'Windows_NT'" />
-    <ReadLinesFromFile File="$(SolutionDir)\.deploy">
-      <Output PropertyName="DeployPath" TaskParameter="Lines" />
-    </ReadLinesFromFile>
-    <PropertyGroup>
-      <DeployPath Condition="!$(SteamBranch.Contains('public'))">$(DeployPath)-$(SteamBranch)</DeployPath>
-    </PropertyGroup>
-    <ItemGroup>
-      <DeployFiles Include="$(ProjectDir)\bin\Bundle\$(PackageId)\**\*.*" />
-    </ItemGroup>
-    <Copy Condition="'$(DeployPath)' != ''" SourceFiles="@(DeployFiles)" DestinationFiles="@(DeployFiles->'$(DeployPath)\%(RecursiveDir)%(Filename)%(Extension)')" />
-  </Target>
-  <Target Name="BuildPlatform" AfterTargets="Pack" Condition="$(SteamPlatform.Contains(';'))">
-    <PropertyGroup>
-      <SteamPlatform>$(SteamPlatform.Split(';')[1])</SteamPlatform>
-    </PropertyGroup>
-    <MSBuild Projects="$(MSBuildProjectFullPath)" Targets="Clean;Build" Properties="PackageId=$(AssemblyName)-$(SteamPlatform);SteamPlatform=$(SteamPlatform)" />
-  </Target>
+  <Import Project="..\Game.targets" />
 </Project>

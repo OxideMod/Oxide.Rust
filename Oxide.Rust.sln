@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 15.0
-Project("{1EB8EC34-275C-42FE-A428-745876ABC6CC}") = "Oxide.Rust", "src\Oxide.Rust.csproj", "{87568E26-BF3C-4A14-A3C4-8B74616D6FA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oxide.Rust", "src\Oxide.Rust.csproj", "{87568E26-BF3C-4A14-A3C4-8B74616D6FA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,5 +14,11 @@ Global
 		{87568E26-BF3C-4A14-A3C4-8B74616D6FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87568E26-BF3C-4A14-A3C4-8B74616D6FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87568E26-BF3C-4A14-A3C4-8B74616D6FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5286459-4B43-49ED-814D-008A5F9DC7A9}
 	EndGlobalSection
 EndGlobal

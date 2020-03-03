@@ -1,40 +1,58 @@
 param (
-    [Parameter(Mandatory=$true)][string]$project,
+    [Parameter(Mandatory=$true)][string]$game_name,
     [Parameter(Mandatory=$true)][string]$dotnet,
-    [Parameter(Mandatory=$true)][string]$managed,
-    [string]$appid = "0",
-    [string]$branch = "public",
-    [string]$depot = "",
+    [Parameter(Mandatory=$true)][string]$target_dir,
+    [Parameter(Mandatory=$true)][string]$managed_dir,
     [string]$platform = "windows",
-    [string]$access = "anonymous",
-    [string]$deobf = ""
+    [string]$deobfuscator = "",
+    [string]$steam_appid = "0",
+    [string]$steam_branch = "public",
+    [string]$steam_depot = "",
+    [string]$steam_access = "anonymous"
 )
 
 Clear-Host
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-# Format game name and set depot ID if provided
-$game_name = $project -Replace "Oxide."
-if ($depot) { $depot = "-depot $depot" }
-
-# Set directory variables and create directories
-$root_dir = $PSScriptRoot
-$tools_dir = "$root_dir\tools"
-$project_dir = "$root_dir\src"
-$deps_dir = "$project_dir\Dependencies"
-$patch_dir = "$deps_dir\Patched\$branch"
-$managed_dir = "$patch_dir\$managed"
-New-Item "$tools_dir", "$managed_dir" -ItemType Directory -Force | Out-Null
-
-# Set name for patcher file (.opj)
-if ("$branch" -ne "public" -and (Test-Path "$root_dir\resources\$game_name-$branch.opj")) {
-    $opj_name = "$root_dir\resources\$game_name-$branch.opj"
-} else {
-    $opj_name = "$root_dir\resources\$game_name.opj"
+# Check PowerShell version
+$ps_version = $PSVersionTable.PSVersion.Major
+if ($ps_version -le 5)
+{
+    Write-Host "Error: PowerShell version 6 or higher required to continue, $ps_version currently installed"
+    if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+    exit 1
 }
 
+# Format project name and set depot ID if provided
+$project = "Oxide." + $game_name
+if ($steam_depot) { $steam_depot = "-depot $steam_depot" }
+
+# Set directory/file variables and create directories
+$root_dir = $PSScriptRoot
+$tools_dir = Join-Path $root_dir "tools"
+$project_dir = Join-Path $root_dir "src"
+$resources_dir = Join-Path $root_dir "resources"
+$deps_dir = Join-Path $project_dir "Dependencies"
+$platform_dir = Join-Path $deps_dir $platform
+$managed_dir = Join-Path $platform_dir $managed_dir # TODO: Make sure passed path is Linux-compatible
+$patcher_exe = Join-Path $tools_dir "OxidePatcher.exe"
+$references_file = Join-Path $tools_dir ".references"
+New-Item "$tools_dir", "$managed_dir" -ItemType Directory -Force | Out-Null
+
+# Set URLs of dependencies and tools to download
+$steam_depotdl_url = "https://assets.umod.org/packages/DepotDownloader.zip"
+$de4dot_url = "https://ci.appveyor.com/api/projects/0xd4d/de4dot/artifacts/de4dot/de4dot-netcoreapp2.1.zip"
+$patcher_url = "https://github.com/OxideMod/Oxide.Patcher/releases/download/latest/OxidePatcher.exe"
+
+# Set file path for patcher file (.opj)
+$patcher_file = Join-Path $resources_dir "$game_name.opj"
+
+# Set project file and get contents
+$csproj = Get-Item "$project.csproj"
+$xml = [xml](Get-Content $csproj)
+
 # Remove patched file(s) and replace with _Original file(s)
-Get-ChildItem "$managed_dir\*_Original.*" -Recurse | ForEach-Object {
+Get-ChildItem (Join-Path $managed_dir "*_Original.*") -Recurse | ForEach-Object {
     Remove-Item $_.FullName.Replace("_Original", "")
     Rename-Item $_ $_.Name.Replace("_Original", "")
 }
@@ -44,29 +62,28 @@ Get-ChildItem "$managed_dir\*_Original.*" -Recurse | ForEach-Object {
 function Find-Dependencies {
     # Check if project file exists for game
     if (!(Test-Path "$project.csproj")) {
-        Write-Host "Could not find a .csproj file for $game_name"
-        exit 1
+        Write-Host "Error: Could not find a .csproj file for $game_name"
         if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+        exit 1
     }
 
     # Copy any local dependencies
-    if (Test-Path "$deps_dir\Original\*.dll") {
-        Copy-Item "$deps_dir\Original\*.dll" "$managed_dir" -Force
+    $deps_pattern = Join-Path $deps_dir "Original" "*.dll"
+    if (Test-Path $deps_pattern) {
+        Copy-Item $deps_pattern $managed_dir -Force
     }
 
     # Check if Steam is used for game dependencies
-    if ($access.ToLower() -ne "nosteam") {
-        # Get project information from .csproj file
-        $csproj = Get-Item "$project.csproj"
-        $xml = [xml](Get-Content $csproj)
-        Write-Host "Getting references for $branch branch of $appid"
+    if ($steam_access.ToLower() -ne "nosteam") {
+        # Get references from .csproj file
+        Write-Host "Getting references for $steam_branch branch of $steam_appid"
         try {
             # TODO: Exclude dependencies included in repository
-            $hint_path = "Dependencies\\Patched\\\$\(SteamBranch\)\\\$\(ManagedDir\)\\"
-            ($xml.selectNodes("//Reference") | Select-Object HintPath -ExpandProperty HintPath | Select-String -Pattern "Oxide" -NotMatch) -Replace $hint_path | Out-File "$tools_dir\.references"
+            ($xml.selectNodes("//Reference") | Select-Object Include -ExpandProperty Include) -Replace "\S+$", "$&.dll" | Out-File $references_file
+            Write-Host "References:" ((Get-Content $references_file) -Join ', ')
         } catch {
-            Write-Host "Could not get references or none found in $project.csproj"
-            Write-Host $_.Exception.Message
+            Write-Host "Error: Could not get references or none found in $project.csproj"
+            Write-Host $_.Exception | Format-List -Force
             if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
@@ -79,30 +96,31 @@ function Find-Dependencies {
 
 function Get-Downloader {
     # Check if DepotDownloader is already downloaded
-    $depot_dll = "$tools_dir\DepotDownloader.dll"
-    if (!(Test-Path "$depot_dll") -or (Get-ChildItem "$depot_dll").CreationTime -lt (Get-Date).AddDays(-7)) {
+    $steam_depotdl_dll = Join-Path $tools_dir "DepotDownloader.dll"
+    $steam_depotdl_zip = Join-Path $tools_dir "DepotDownloader.zip"
+    if (!(Test-Path $steam_depotdl_dll) -or (Get-Item $steam_depotdl_dll).LastWriteTime -lt (Get-Date).AddDays(-7)) {
         # Download and extract DepotDownloader
-        Write-Host "Downloading version $version of DepotDownloader"
+        Write-Host "Downloading latest version of DepotDownloader"
         try {
-            Invoke-WebRequest "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_2.3.1/depotdownloader-2.3.1-hotfix1.zip" -OutFile "$tools_dir\DepotDownloader.zip" -UseBasicParsing
+            Invoke-WebRequest $steam_depotdl_url -OutFile $steam_depotdl_zip -UseBasicParsing
         } catch {
-            Write-Host "Could not download DepotDownloader from GitHub"
-            Write-Host $_.Exception.Message
+            Write-Host "Error: Could not download DepotDownloader"
+            Write-Host $_.Exception | Format-List -Force
             if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
 
         # TODO: Compare size and hash of .zip vs. what GitHub has via API
         Write-Host "Extracting DepotDownloader release files"
-        Expand-Archive "$tools_dir\DepotDownloader.zip" -DestinationPath "$tools_dir" -Force
+        Expand-Archive $steam_depotdl_zip -DestinationPath $tools_dir -Force
 
-        if (!(Test-Path "$tools_dir\DepotDownloader.dll")) {
+        if (!(Test-Path $steam_depotdl_zip)) {
             Get-Downloader # TODO: Add infinite loop prevention
             return
         }
 
         # Cleanup downloaded .zip file
-        Remove-Item "$tools_dir\depotdownloader-*.zip"
+        Remove-Item $steam_depotdl_zip
     } else {
         Write-Host "Recent version of DepotDownloader already downloaded"
     }
@@ -111,72 +129,82 @@ function Get-Downloader {
 }
 
 function Get-Dependencies {
-    if ($access.ToLower() -ne "nosteam") {
-        # TODO: Add handling for SteamGuard code entry/use
+    if ($steam_access.ToLower() -ne "nosteam") {
+        # TODO: Add handling for SteamGuard code entry
+
         # Check if Steam login information is required or not
-        if ($access.ToLower() -ne "anonymous") {
-            if (Test-Path "$root_dir\.steamlogin") {
-                $steam_login = Get-Content "$root_dir\.steamlogin"
+        $steam_file = Join-Path $root_dir ".steamlogin"
+        if ($steam_access.ToLower() -ne "anonymous") {
+            if (Test-Path $steam_file) {
+                $steam_login = Get-Content $steam_file
                 if ($steam_login.Length -ne 2) {
-                    Write-Host "Steam username AND password not set in .steamlogin file"
-                    exit 1
+                    Write-Host "Steam username and password not set in .steamlogin file"
                     if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+                    exit 1
                 } else {
-                    $login = "-username $($steam_login[0]) -password $($steam_login[1])"
+                    $steam_access = "-username $($steam_login[0]) -password $($steam_login[1])"
                 }
             } elseif ($env:STEAM_USERNAME -and $env:STEAM_PASSWORD) {
-                $login = "-username $env:STEAM_USERNAME -password $env:STEAM_PASSWORD"
+                $steam_access = "-username $env:STEAM_USERNAME -password $env:STEAM_PASSWORD"
             } else {
-                Write-Host "No Steam credentials found, skipping build for $game_name"
-                exit 1
+                Write-Host "Error: No Steam credentials found, skipping build for $game_name"
                 if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+                exit 1
             }
         }
 
-        # Cleanup existing game files, else they aren't always the latest
-        #Remove-Item $patch_dir -Recurse -Force
+        # Cleanup existing game files, else they are not always the latest
+        #Remove-Item $managed_dir -Recurse -Force
 
         # TODO: Check for and compare Steam buildid before downloading again
 
         # Attempt to run DepotDownloader to get game DLLs
         try {
-            Start-Process dotnet -ArgumentList "$tools_dir\DepotDownloader.dll $login -app $appid -branch $branch $depot -os $platform -dir $patch_dir -filelist $tools_dir\.references" -NoNewWindow -Wait
+            Write-Host "$steam_access -app $steam_appid -branch $steam_branch $steam_depot -os $platform -dir $deps_dir"
+            Start-Process dotnet -WorkingDirectory $tools_dir -ArgumentList "$steam_depotdl_dll $steam_access -app $steam_appid -branch $steam_branch $steam_depot -os $platform -dir $platform_dir -filelist $references_file" -NoNewWindow -Wait
         } catch {
-            Write-Host "Could not start or complete DepotDownloader process"
-            Write-Host $_.Exception.Message
+            Write-Host "Error: Could not start or complete getting dependencies"
+            Write-Host $_.Exception | Format-List -Force
             if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
 
         # TODO: Store Steam buildid somewhere for comparison during next check
-        # TODO: Confirm all dependencies were downloaded (no 0kb files), else stop/retry and error with details
+
+        # TODO: Confirm all dependencies were downloaded (no 0kb files), else stop or retry and error with details
     }
 
-    # Grab latest Oxide.Core.dll build
-    Write-Host "Copying latest build of Oxide.Core.dll for $game_name"
-    if (!(Test-Path "$tools_dir\Oxide.Core.dll")) {
-        try {
-            Copy-Item "$root_dir\packages\oxide.core\*\lib\net46\Oxide.Core.dll" "$tools_dir" -Force
-        } catch {
-            Write-Host "Could not copy Oxide.Core.dll to $tools_dir"
-            Write-Host $_.Exception.Message
-            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
-            exit 1
-        }
-    }
-    Write-Host "Copying latest build of Oxide.Core.dll for patcher"
-    if (!(Test-Path "$managed_dir\Oxide.Core.dll")) {
-        try {
-            Copy-Item "$root_dir\packages\oxide.core\*\lib\net46\Oxide.Core.dll" "$managed_dir" -Force
-        } catch {
-            Write-Host "Could not copy Oxide.Core.dll to $managed_dir"
-            Write-Host $_.Exception.Message
-            if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
-            exit 1
-        }
+    # Get package references from .csproj file
+    Write-Host "Getting package references for $game_name"
+    $packages = $null
+    try {
+        $packages = $xml.selectNodes("//PackageReference") | Select-Object Include,Version
+        Write-Host "Packages:" (($packages | Select-Object -ExpandProperty Include) -Join ', ')
+    } catch {
+        Write-Host "Error: Could not get package references or none found in $project.csproj"
+        Write-Host $_.Exception | Format-List -Force
+        if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+        exit 1
     }
 
-    if ($deobf) {
+    # Copy latest package references for patching
+    Write-Host "Copying latest package references for $game_name"
+    try {
+        # Copy package references specified in .csproj file
+        ForEach ($package in $packages) {
+            Write-Host "Copying package reference $($package.Include) $($package.Version)..."
+            $lib = Join-Path $root_dir "packages" $package.Include.ToLower() $package.Version.ToLower() "lib" $dotnet "$($package.Include).dll"
+            Copy-Item $lib $managed_dir -Force
+            Copy-Item $lib $tools_dir -Force
+        }
+    } catch {
+        Write-Host "Error: Could not copy one or more dependencies to $deps_dir or $tools_dir"
+        Write-Host $_.Exception | Format-List -Force
+        if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
+        exit 1
+    }
+
+    if ($deobfuscator) {
         Get-Deobfuscators
     } else {
         Get-Patcher
@@ -185,35 +213,39 @@ function Get-Dependencies {
 
 function Get-Deobfuscators {
     # Check for which deobfuscator to get and use
-    if ($deobf.ToLower() -eq "de4dot") {
-        $de4dot_dir = "$tools_dir\.de4dot"
-        New-Item "$de4dot_dir" -ItemType Directory -Force | Out-Null
+    if ($deobfuscator.ToLower() -eq "de4dot") {
+        $de4dot_dir = Join-Path $tools_dir ".de4dot"
+        $de4dot_dll = Join-Path $de4dot_dir "de4dot.dll"
+        $de4dot_zip = Join-Path $de4dot_dir "de4dot.zip"
+        New-Item $de4dot_dir -ItemType Directory -Force | Out-Null
 
         # Check if de4dot is already downloaded
-        $de4dot_exe = "$de4dot_dir\de4dot.exe"
-        if (!(Test-Path "$de4dot_exe") -or (Get-ChildItem "$de4dot_exe").CreationTime -lt (Get-Date).AddDays(-7)) {
+        if (!(Test-Path $de4dot_dll) -or (Get-Item $de4dot_dll).LastWriteTime -lt (Get-Date).AddDays(-7)) {
             # Download and extract de4dot
             Write-Host "Downloading latest version of de4dot" # TODO: Get and show version
             try {
-                Invoke-WebRequest "https://ci.appveyor.com/api/projects/0xd4d/de4dot/artifacts/de4dot.zip" -Out "$de4dot_dir\de4dot.zip"
+                Invoke-WebRequest $de4dot_url -OutFile $de4dot_zip -UseBasicParsing
+                #Invoke-WebRequest "https://github.com/0xd4d/de4dot/suites/266206734/artifacts/128547" -Out "$de4dot_dir\de4dot.zip"
             } catch {
-                Write-Host "Could not download de4dot from AppVeyor"
-                Write-Host $_.Exception.Message
+                Write-Host "Error: Could not download de4dot"
+                Write-Host $_.Exception | Format-List -Force
                 if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
                 exit 1
             }
 
-            # TODO: Compare size and hash of .zip vs. what AppVeyor has via API
+            # TODO: Compare size and hash of .zip vs. what GitHub has via API
             Write-Host "Extracting de4dot release files"
             Expand-Archive "$de4dot_dir\de4dot.zip" -DestinationPath "$de4dot_dir" -Force
+            Move-Item "$de4dot_dir\de4dot-net35\*" $de4dot_dir
+            Remove-Item "$de4dot_dir\de4dot-net35"
 
-            if (!(Test-Path "$de4dot_exe")) {
+            if (!(Test-Path $de4dot_dll)) {
                 Get-Deobfuscators # TODO: Add infinite loop prevention
                 return
             }
 
             # Cleanup downloaded .zip file
-            Remove-Item "$de4dot_dir\de4dot.zip"
+            Remove-Item $de4dot_zip
         } else {
             Write-Host "Recent version of de4dot already downloaded"
         }
@@ -223,21 +255,22 @@ function Get-Deobfuscators {
 }
 
 function Start-Deobfuscator {
-    if ($deobf.ToLower() -eq "de4dot") {
+    if ($deobfuscator.ToLower() -eq "de4dot") {
         # Attempt to deobfuscate game file(s)
         try {
-            Start-Process "$tools_dir\.de4dot\de4dot.exe" -WorkingDirectory "$managed_dir" -ArgumentList "-r $managed_dir -ru" -NoNewWindow -Wait
+            Start-Process dotnet -WorkingDirectory $managed_dir -ArgumentList "$de4dot_dll -r $managed_dir -ru" -NoNewWindow -Wait
         } catch {
-            Write-Host "Could not start or complete de4dot deobufcation process"
-            Write-Host $_.Exception.Message
+            Write-Host "Error: Could not start or complete deobufcation process"
+            Write-Host $_.Exception | Format-List -Force
             if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
-            exit 1
+            exit 1;
         }
 
         # Remove obfuscated file(s) and replace with cleaned file(s)
-        Get-ChildItem "$managed_dir\*-cleaned.*" -Recurse | ForEach-Object {
+        Get-ChildItem (Join-Path $managed_dir "*-cleaned.*") -Recurse | ForEach-Object {
             Remove-Item $_.FullName.Replace("-cleaned", "")
             Rename-Item $_ $_.Name.Replace("-cleaned", "")
+            Write-Host "Deobfuscated and cleaned $_ file to patch"
         }
     }
 
@@ -245,18 +278,16 @@ function Start-Deobfuscator {
 }
 
 function Get-Patcher {
-    # TODO: MD5 comparison of local OxidePatcher.exe and remote header
+    # TODO: MD5 comparison of local patcher file and remote header
     # Check if patcher is already downloaded
-    $patcher_exe = "$tools_dir\OxidePatcher.exe"
-    if (!(Test-Path "$patcher_exe") -or (Get-ChildItem "$patcher_exe").CreationTime -lt (Get-Date).AddDays(-7)) {
+    if (!(Test-Path $patcher_exe) -or (Get-Item $patcher_exe).LastWriteTime -lt (Get-Date).AddDays(-7)) {
         # Download latest patcher build
-        Write-Host "Downloading latest build of OxidePatcher"
-        $patcher_url = "https://github.com/OxideMod/OxidePatcher/releases/download/latest/OxidePatcher.exe"
+        Write-Host "Downloading latest version of Oxide patcher"
         try {
-            Invoke-WebRequest $patcher_url -Out "$patcher_exe"
+            Invoke-WebRequest $patcher_url -OutFile $patcher_exe -UseBasicParsing
         } catch {
-            Write-Host "Could not download OxidePatcher.exe from GitHub"
-            Write-Host $_.Exception.Message
+            Write-Host "Error: Could not download Oxide patcher"
+            Write-Host $_.Exception | Format-List -Force
             if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
@@ -269,7 +300,7 @@ function Get-Patcher {
 
 function Start-Patcher {
     # Check if we need to get the patcher
-    if (!(Test-Path "$tools_dir\OxidePatcher.exe")) {
+    if (!(Test-Path $patcher_exe)) {
         Get-Patcher # TODO: Add infinite loop prevention
         return
     }
@@ -278,10 +309,14 @@ function Start-Patcher {
 
     # Attempt to patch game using the patcher
     try {
-        Start-Process "$tools_dir\OxidePatcher.exe" -WorkingDirectory "$managed_dir" -ArgumentList "-c -p `"$managed_dir`" $opj_name" -NoNewWindow -Wait
+        if ($IsLinux) {
+            Start-Process mono -WorkingDirectory $managed_dir -ArgumentList "$patcher_exe -c -p `"$managed_dir`" $patcher_file" -NoNewWindow -Wait
+        } elseif ($IsWindows) {
+            Start-Process $patcher_exe -WorkingDirectory $managed_dir -ArgumentList "-c -p `"$managed_dir`" $patcher_file" -NoNewWindow -Wait
+        }
     } catch {
-        Write-Host "Could not start or complete patcher process"
-        Write-Host $_.Exception.Message
+        Write-Host "Error: Could not start or complete patching process"
+        Write-Host $_.Exception | Format-List -Force
         if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
         exit 1
     }

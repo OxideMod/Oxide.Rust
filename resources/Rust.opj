@@ -9612,7 +9612,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "l2, l3",
             "HookTypeName": "Simple",
-            "Name": "OnPlayerBanned [eac]",
+            "Name": "OnPlayerBanned [EAC]",
             "HookName": "OnPlayerBanned",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "EACServer",
@@ -10325,6 +10325,64 @@
               ]
             },
             "MSILHash": "GydnJweSbNXuZdEaLntnAEDH9lq0Wy0wgYDQxiZ9Y2s=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 79,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnPlayerBanned"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_3",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "mscorlib|System.Object|ToString"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "pop",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnPlayerBanned [Publisher/VAC]",
+            "HookName": "OnPlayerBanned",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "OnValidateAuthTicketResponse",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Steamworks.SteamId",
+                "Steamworks.SteamId",
+                "Steamworks.AuthResponse"
+              ]
+            },
+            "MSILHash": "ZQ7Np/r8Hi5t6IZQtmx9onRvPNuuF47hTf0w0G9Ozyw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }

@@ -274,17 +274,14 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
-        /// Called when the player has been banned by EAC
+        /// Called when the player has been banned by Publisher/VAC
         /// </summary>
         /// <param name="connection"></param>
+        /// <param name="status"></param>
         [HookMethod("IOnPlayerBanned")]
-        private void IOnPlayerBanned(Connection connection)
+        private void IOnPlayerBanned(Connection connection, AuthResponse status)
         {
-            string ip = Regex.Replace(connection.ipaddress, ipPattern, "") ?? "0";
-            string reason = connection.authStatus ?? "Unknown"; // TODO: Localization
-
-            Interface.CallHook("OnPlayerBanned", connection.username, connection.userid, ip, reason);
-            Interface.CallHook("OnUserBanned", connection.username, connection.userid.ToString(), ip, reason);
+            Interface.CallHook("OnPlayerBanned", connection, status.ToString());
         }
 
         /// <summary>

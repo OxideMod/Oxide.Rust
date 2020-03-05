@@ -7931,6 +7931,33 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnNpcGiveSoldItem",
+            "HookName": "OnNpcGiveSoldItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCVendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GiveSoldItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "XEi8FPWQsf5CtKWrdJQteuLMu77nyCURbLGfTY4RQYo=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 79,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

@@ -14758,6 +14758,272 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse::baseHorseProtection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "baseHorseProtection",
+            "FullTypeName": "ProtectionProperties RidableHorse::baseHorseProtection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse::currentBreed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentBreed",
+            "FullTypeName": "System.Int32 RidableHorse::currentBreed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse::currentHitch",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentHitch",
+            "FullTypeName": "HitchTrough RidableHorse::currentHitch",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse::equipmentSpeedMod",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "equipmentSpeedMod",
+            "FullTypeName": "System.Single RidableHorse::equipmentSpeedMod",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse::numEquipmentSlots",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "numEquipmentSlots",
+            "FullTypeName": "System.Int32 RidableHorse::numEquipmentSlots",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse::numStorageSlots",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "numStorageSlots",
+            "FullTypeName": "System.Int32 RidableHorse::numStorageSlots",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse::kmDistance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "kmDistance",
+            "FullTypeName": "System.Single RidableHorse::kmDistance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse::riderProtection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "riderProtection",
+            "FullTypeName": "ProtectionProperties RidableHorse::riderProtection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse::tempDistanceTravelled",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "tempDistanceTravelled",
+            "FullTypeName": "System.Single RidableHorse::tempDistanceTravelled",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse::totalDistance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "totalDistance",
+            "FullTypeName": "System.Single RidableHorse::totalDistance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCorpse::resourceDispenser",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCorpse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "resourceDispenser",
+            "FullTypeName": "ResourceDispenser BaseCorpse::resourceDispenser",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ResourceEntity::resourceDispenser",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ResourceEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "resourceDispenser",
+            "FullTypeName": "ResourceDispenser ResourceEntity::resourceDispenser",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseRidableAnimal::inventory",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseRidableAnimal",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "inventory",
+            "FullTypeName": "ItemContainer BaseRidableAnimal::inventory",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CH47Helicopter::mapMarkerInstance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47Helicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "mapMarkerInstance",
+            "FullTypeName": "BaseEntity CH47Helicopter::mapMarkerInstance",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

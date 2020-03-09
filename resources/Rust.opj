@@ -7657,7 +7657,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "Jztn+EIovyb6aO8/E4B/yKR18eUTOJ3S0mmr1BKQ2Oc=",
+            "MSILHash": "GYNry1vapKK2X5wHKVmPJr96R490lW/IzUKM3Kb2lDY=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8864,7 +8864,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "9I4fjpKAIofmbcQW7/W1g6P706zPxeiobGORwPIsbBg=",
+            "MSILHash": "RWRz+XmST0o6WBAGHYbKeHSt4w64/mt4RO2OHs5Kc/8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8890,7 +8890,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "zhdlkEBaH2YlaP0wEXSwOlxTEco19qH7Jh2Olt3jmww=",
+            "MSILHash": "x/QD9z4urwvr6Ju70XsIHtFiFSJzEUDKB6l6wPyqnEo=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8898,7 +8898,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 20,
+            "InjectionIndex": 22,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
@@ -8916,7 +8916,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "9I4fjpKAIofmbcQW7/W1g6P706zPxeiobGORwPIsbBg=",
+            "MSILHash": "RWRz+XmST0o6WBAGHYbKeHSt4w64/mt4RO2OHs5Kc/8=",
             "BaseHookName": "OnMapMarkerAdd",
             "HookCategory": "Player"
           }
@@ -8993,7 +8993,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 13,
+            "InjectionIndex": 15,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, this.ServerCurrentMapNotes",
@@ -9011,7 +9011,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "zhdlkEBaH2YlaP0wEXSwOlxTEco19qH7Jh2Olt3jmww=",
+            "MSILHash": "x/QD9z4urwvr6Ju70XsIHtFiFSJzEUDKB6l6wPyqnEo=",
             "BaseHookName": "OnMapMarkersClear",
             "HookCategory": "Player"
           }
@@ -10429,7 +10429,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "Os2NblhxynetbkkqzOMz3dFyWflnJjSgGaQAhG5iSx4=",
+            "MSILHash": "FHxGkpoaj32GcLsNESkP5p0vD+yyPNwVaeSbssWq7H0=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }

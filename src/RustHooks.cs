@@ -311,7 +311,7 @@ namespace Oxide.Game.Rust
             object chatSpecific = Interface.CallHook("OnPlayerChat", basePlayer, message, channel);
             object chatCovalence = Interface.CallHook("OnUserChat", player, message);
             //object chatDeprecated = Interface.Oxide.CallDeprecatedHook("OnPlayerChat", "OnPlayerChat(BasePlayer player, string message, Chat.ChatChannel channel)",
-            //    new System.DateTime(2020, 1, 1), new ConsoleSystem.Arg(ConsoleSystem.Option.Server.FromConnection(basePlayer.Connection), ConsoleSystem.BuildCommand("chat.say", message)), channel);
+            //    new System.DateTime(2020, 6, 1), new ConsoleSystem.Arg(ConsoleSystem.Option.Server.FromConnection(basePlayer.Connection), ConsoleSystem.BuildCommand("chat.say", message)), channel);
             return chatSpecific ?? chatCovalence /*?? chatDeprecated*/; // TODO: Fix hook conflict when multiple return
         }
 
@@ -352,7 +352,7 @@ namespace Oxide.Game.Rust
             object commandSpecific = Interface.CallHook("OnPlayerCommand", basePlayer, cmd, args);
             object commandCovalence = Interface.CallHook("OnUserCommand", player, cmd, args);
             //object commandDeprecated = Interface.Oxide.CallDeprecatedHook("OnPlayerCommand", "OnPlayerCommand(BasePlayer player, string command, string[] args)",
-            //    new System.DateTime(2020, 1, 1), new ConsoleSystem.Arg(ConsoleSystem.Option.Server.FromConnection(basePlayer.Connection), ConsoleSystem.BuildCommand("chat.say", cmd, args)));
+            //    new System.DateTime(2020, 6, 1), new ConsoleSystem.Arg(ConsoleSystem.Option.Server.FromConnection(basePlayer.Connection), ConsoleSystem.BuildCommand("chat.say", cmd, args)));
             if (commandSpecific != null || commandCovalence != null /*|| commandDeprecated != null*/)
             {
                 return;
@@ -415,7 +415,7 @@ namespace Oxide.Game.Rust
 
             Interface.Oxide.CallHook("OnPlayerConnected", player);
             Interface.Oxide.CallDeprecatedHook("OnPlayerInit", "OnPlayerConnected(BasePlayer player)",
-                new System.DateTime(2020, 4, 1), player);
+                new System.DateTime(2020, 6, 1), player);
         }
 
         /// <summary>
@@ -644,7 +644,7 @@ namespace Oxide.Game.Rust
         {
             object newHook = Interface.Oxide.CallHook("OnActiveItemChange", player, oldItem, newItemId);
             object oldHook = Interface.Oxide.CallDeprecatedHook("OnActiveItemChange", "OnActiveItemChange(BasePlayer player, Item oldItem, uint newItemId)",
-                new System.DateTime(2020, 4, 1), player, newItemId);
+                new System.DateTime(2020, 6, 1), player, newItemId);
             return newHook ?? oldHook;
         }
 
@@ -653,42 +653,42 @@ namespace Oxide.Game.Rust
         {
             Interface.Oxide.CallHook("OnActiveItemChanged", player, oldItem, newItem);
             Interface.Oxide.CallDeprecatedHook("OnPlayerActiveItemChanged", "OnActiveItemChanged(BasePlayer player, Item oldItem, Item newItem)",
-                new System.DateTime(2020, 4, 1), player, oldItem, newItem);
+                new System.DateTime(2020, 6, 1), player, oldItem, newItem);
         }
 
         [HookMethod("OnEntityKill")]
         private object OnEntityKill(CH47HelicopterAIController heli)
         {
             return Interface.Oxide.CallDeprecatedHook("OnHelicopterKilled", "OnEntityKill(CH47HelicopterAIController heli)",
-                new System.DateTime(2020, 4, 1), heli);
+                new System.DateTime(2020, 6, 1), heli);
         }
 
         [HookMethod("OnNpcAttack")]
         private object OnNpcAttack(BaseNpc npc)
         {
             return Interface.Oxide.CallDeprecatedHook("CanNpcAttack", "OnNpcAttack(BaseNpc npc)",
-                new System.DateTime(2020, 4, 1), npc);
+                new System.DateTime(2020, 6, 1), npc);
         }
 
         [HookMethod("OnNpcResume")]
         private object OnNpcResume(NPCPlayerApex npc)
         {
             return Interface.Oxide.CallDeprecatedHook("OnNpcPlayerResume", "OnNpcResume(NPCPlayerApex npc)",
-                new System.DateTime(2020, 4, 1), npc);
+                new System.DateTime(2020, 6, 1), npc);
         }
 
         [HookMethod("OnPlayerDeath")]
         private object OnPlayerDeath(BasePlayer player, HitInfo hitInfo)
         {
             return Interface.Oxide.CallDeprecatedHook("OnPlayerDie", "OnPlayerDeath(BasePlayer player, HitInfo hitInfo)",
-                new System.DateTime(2020, 4, 1), player, hitInfo);
+                new System.DateTime(2020, 6, 1), player, hitInfo);
         }
 
         [HookMethod("OnQuarryToggled")]
         private void OnQuarryToggled(MiningQuarry quarry)
         {
             Interface.Oxide.CallDeprecatedHook("OnQuarryEnabled", "OnQuarryToggled(MiningQuarry quarry)",
-                new System.DateTime(2020, 4, 1), quarry);
+                new System.DateTime(2020, 6, 1), quarry);
         }
 
         #endregion Deprecated Hooks

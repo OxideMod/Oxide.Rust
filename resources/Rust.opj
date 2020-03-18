@@ -15080,6 +15080,111 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Ai.HTN.Scientist.ScientistDefinition::EquipWeapon",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Ai.HTN.Scientist.ScientistDefinition",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EquipWeapon",
+            "FullTypeName": "System.Collections.IEnumerator",
+            "Parameters": [
+              "HTNPlayer"
+            ]
+          },
+          "MSILHash": "FL6E50zsmYoCh3pnF8NVYV8U8w9BevMtbaUU9b1CuFg="
+        },
+        {
+          "Name": "Rust.Ai.HTN.ScientistJunkpile.ScientistJunkpileDefinition::EquipTool",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Ai.HTN.ScientistJunkpile.ScientistJunkpileDefinition",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EquipTool",
+            "FullTypeName": "System.Collections.IEnumerator",
+            "Parameters": [
+              "HTNPlayer"
+            ]
+          },
+          "MSILHash": "05nJW8RZhvK+J8uj7xn8CPmK9hYai6RGQvWRrCNgdqk="
+        },
+        {
+          "Name": "Rust.Ai.HTN.Murderer.MurdererDefinition::EquipWeapon",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Ai.HTN.Murderer.MurdererDefinition",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EquipWeapon",
+            "FullTypeName": "System.Collections.IEnumerator",
+            "Parameters": [
+              "HTNPlayer"
+            ]
+          },
+          "MSILHash": "VBw0vU4qlSfRwZIFZzSlcOkgs2Ia12W/onAun444VMQ="
+        },
+        {
+          "Name": "Rust.Ai.HTN.ScientistAStar.ScientistAStarDefinition::EquipWeapon",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Ai.HTN.ScientistAStar.ScientistAStarDefinition",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EquipWeapon",
+            "FullTypeName": "System.Collections.IEnumerator",
+            "Parameters": [
+              "HTNPlayer"
+            ]
+          },
+          "MSILHash": "dfmZkIYQEeJ6M91ZKDyYko1+bZewzOEao+n/Aqzi8AQ="
+        },
+        {
+          "Name": "Rust.Ai.HTN.NPCTurret.NPCTurretDefinition::EquipWeapon",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Ai.HTN.NPCTurret.NPCTurretDefinition",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EquipWeapon",
+            "FullTypeName": "System.Collections.IEnumerator",
+            "Parameters": [
+              "HTNPlayer"
+            ]
+          },
+          "MSILHash": "v6ylFvw769svmil+/WZPpIKhH+YYhATqvfuawM6WGls="
         }
       ],
       "Fields": [

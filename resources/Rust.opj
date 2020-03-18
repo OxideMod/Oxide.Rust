@@ -15546,7 +15546,35 @@
     },
     {
       "AssemblyName": "Facepunch.Network.dll",
-      "Hooks": [],
+      "Hooks": [
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a1, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnClientDisconnect",
+            "HookName": "OnClientDisconnect",
+            "AssemblyName": "Facepunch.Network.dll",
+            "TypeName": "Network.Server",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "OnDisconnected",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "Network.Connection"
+              ]
+            },
+            "MSILHash": "6IMUWqPpWISUbx0Jg2ksUSSJh/b6J977mqnwWwgWgzs=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        }
+      ],
       "Modifiers": [
         {
           "Name": "Network.Networkable::sv",

@@ -1,5 +1,4 @@
-﻿using Facepunch;
-using Oxide.Core;
+﻿using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using System.Collections.Generic;
@@ -291,7 +290,7 @@ namespace Oxide.Game.Rust
         /// <param name="command"></param>
         /// <param name="args"></param>
         [HookMethod("PluginsCommand")]
-        private void PluginsCommand(IPlayer player, string command, string[] args)
+        private void PluginsCommand(IPlayer player)
         {
             Plugin[] loadedPlugins = pluginManager.GetPlugins().Where(pl => !pl.IsCorePlugin).ToArray();
             HashSet<string> loadedPluginNames = new HashSet<string>(loadedPlugins.Select(pl => pl.Name));
@@ -300,8 +299,7 @@ namespace Oxide.Game.Rust
             {
                 foreach (string name in loader.ScanDirectory(Interface.Oxide.PluginDirectory).Except(loadedPluginNames))
                 {
-                    string msg;
-                    unloadedPluginErrors[name] = loader.PluginErrors.TryGetValue(name, out msg) ? msg : "Unloaded"; // TODO: Localization
+                    unloadedPluginErrors[name] = loader.PluginErrors.TryGetValue(name, out string msg) ? msg : "Unloaded"; // TODO: Localization
                 }
             }
 
@@ -699,7 +697,7 @@ namespace Oxide.Game.Rust
         /// <param name="command"></param>
         /// <param name="args"></param>
         [HookMethod("VersionCommand")]
-        private void VersionCommand(IPlayer player, string command, string[] args)
+        private void VersionCommand(IPlayer player)
         {
             if (player.IsServer)
             {
@@ -717,7 +715,7 @@ namespace Oxide.Game.Rust
         #region Save Command
 
         [HookMethod("SaveCommand")]
-        private void SaveCommand(IPlayer player, string command, string[] args)
+        private void SaveCommand(IPlayer player)
         {
             if (PermissionsLoaded(player) && player.IsAdmin)
             {

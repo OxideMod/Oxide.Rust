@@ -333,9 +333,7 @@ namespace Oxide.Game.Rust
             }
 
             // Parse it
-            string cmd;
-            string[] args;
-            ParseCommand(str.TrimStart('/'), out cmd, out args);
+            ParseCommand(str.TrimStart('/'), out string cmd, out string[] args);
             if (cmd == null)
             {
                 return;

@@ -142,8 +142,7 @@ namespace Oxide.Game.Rust.Libraries
                 return;
             }
 
-            ChatCommand cmd;
-            if (chatCommands.TryGetValue(commandName, out cmd))
+            if (chatCommands.TryGetValue(commandName, out ChatCommand cmd))
             {
                 string previousPluginName = cmd.Plugin?.Name ?? "an unknown plugin";
                 string newPluginName = plugin?.Name ?? "An unknown plugin";
@@ -151,8 +150,7 @@ namespace Oxide.Game.Rust.Libraries
                 Interface.Oxide.LogWarning(message);
             }
 
-            RustCommandSystem.RegisteredCommand covalenceCommand;
-            if (RustCore.Covalence.CommandSystem.registeredCommands.TryGetValue(commandName, out covalenceCommand))
+            if (RustCore.Covalence.CommandSystem.registeredCommands.TryGetValue(commandName, out RustCommandSystem.RegisteredCommand covalenceCommand))
             {
                 string previousPluginName = covalenceCommand.Source?.Name ?? "an unknown plugin";
                 string newPluginName = plugin?.Name ?? "An unknown plugin";
@@ -217,8 +215,7 @@ namespace Oxide.Game.Rust.Libraries
             }
 
             // Check if it already exists in a Rust plugin as a console command
-            ConsoleCommand consoleCommand;
-            if (consoleCommands.TryGetValue(fullName, out consoleCommand))
+            if (consoleCommands.TryGetValue(fullName, out ConsoleCommand consoleCommand))
             {
                 if (consoleCommand.OriginalCallback != null)
                 {
@@ -239,8 +236,7 @@ namespace Oxide.Game.Rust.Libraries
                 ConsoleSystem.Index.All = ConsoleSystem.Index.Server.Dict.Values.ToArray();
             }
 
-            RustCommandSystem.RegisteredCommand covalenceCommand;
-            if (RustCore.Covalence.CommandSystem.registeredCommands.TryGetValue(parent == "global" ? name : fullName, out covalenceCommand))
+            if (RustCore.Covalence.CommandSystem.registeredCommands.TryGetValue(parent == "global" ? name : fullName, out RustCommandSystem.RegisteredCommand covalenceCommand))
             {
                 if (covalenceCommand.OriginalCallback != null)
                 {
@@ -258,8 +254,7 @@ namespace Oxide.Game.Rust.Libraries
             // The command either does not already exist or is replacing a previously registered command
             cmd.AddCallback(plugin, callback);
 
-            ConsoleSystem.Command rustCommand;
-            if (ConsoleSystem.Index.Server.Dict.TryGetValue(fullName, out rustCommand))
+            if (ConsoleSystem.Index.Server.Dict.TryGetValue(fullName, out ConsoleSystem.Command rustCommand))
             {
                 // This is a vanilla Rust command which has not yet been hooked by a plugin
                 if (rustCommand.Variable)
@@ -365,8 +360,7 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="args"></param>
         internal bool HandleChatCommand(BasePlayer sender, string name, string[] args)
         {
-            ChatCommand cmd;
-            if (chatCommands.TryGetValue(name.ToLowerInvariant(), out cmd))
+            if (chatCommands.TryGetValue(name.ToLowerInvariant(), out ChatCommand cmd))
             {
                 cmd.HandleCommand(sender, name, args);
                 return true;
@@ -396,8 +390,7 @@ namespace Oxide.Game.Rust.Libraries
             }
 
             // Unhook the event
-            Event.Callback<Plugin, PluginManager> callback;
-            if (pluginRemovedFromManager.TryGetValue(sender, out callback))
+            if (pluginRemovedFromManager.TryGetValue(sender, out Event.Callback<Plugin, PluginManager> callback))
             {
                 callback.Remove();
                 pluginRemovedFromManager.Remove(sender);
@@ -417,8 +410,7 @@ namespace Oxide.Game.Rust.Libraries
             string name = split.Length >= 2 ? string.Join(".", split.Skip(1).ToArray()) : split[0].Trim();
             string fullname = $"{parent}.{name}";
 
-            RustCommandSystem.RegisteredCommand cmd;
-            if (RustCore.Covalence.CommandSystem.registeredCommands.TryGetValue(command, out cmd))
+            if (RustCore.Covalence.CommandSystem.registeredCommands.TryGetValue(command, out RustCommandSystem.RegisteredCommand cmd))
             {
                 if (cmd.Source.IsCorePlugin)
                 {
@@ -428,8 +420,7 @@ namespace Oxide.Game.Rust.Libraries
 
             if (type == "chat")
             {
-                ChatCommand chatCommand;
-                if (chatCommands.TryGetValue(command, out chatCommand))
+                if (chatCommands.TryGetValue(command, out ChatCommand chatCommand))
                 {
                     if (chatCommand.Plugin.IsCorePlugin)
                     {
@@ -439,8 +430,7 @@ namespace Oxide.Game.Rust.Libraries
             }
             else if (type == "console")
             {
-                ConsoleCommand consoleCommand;
-                if (consoleCommands.TryGetValue(parent == "global" ? name : fullname, out consoleCommand))
+                if (consoleCommands.TryGetValue(parent == "global" ? name : fullname, out ConsoleCommand consoleCommand))
                 {
                     if (consoleCommand.Callback.Plugin.IsCorePlugin)
                     {

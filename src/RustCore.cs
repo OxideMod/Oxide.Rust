@@ -118,14 +118,12 @@ namespace Oxide.Game.Rust
 
                 permission.RegisterValidate(s =>
                 {
-                    ulong temp;
-                    if (!ulong.TryParse(s, out temp))
+                    if (ulong.TryParse(s, out ulong temp))
                     {
-                        return false;
+                        int digits = temp == 0 ? 1 : (int)Math.Floor(Math.Log10(temp) + 1);
+                        return digits >= 17;
                     }
-
-                    int digits = temp == 0 ? 1 : (int)Math.Floor(Math.Log10(temp) + 1);
-                    return digits >= 17;
+                    return false;
                 });
 
                 permission.CleanUp();

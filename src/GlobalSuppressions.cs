@@ -77,3 +77,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Plugins.RustPlugin.base_OnPlayerDisconnected(BasePlayer,System.String)")]
 [assembly: SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Plugins.RustPlugin.base_OnPlayerDisconnected(BasePlayer)")]
 [assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Plugins.RustPlugin.base_OnPlayerDisconnected(BasePlayer)")]
+[assembly: SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Plugins.RustPlugin.base_OnPlayerDisconnected(BasePlayer,System.String)")]

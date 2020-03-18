@@ -10433,6 +10433,32 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l0.newID",
+            "HookTypeName": "Simple",
+            "Name": "OnBuildingSplit",
+            "HookName": "OnBuildingSplit",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerBuildingManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Split",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BuildingManager/Building"
+              ]
+            },
+            "MSILHash": "qSAFJphFRmqdbiIelFb2Z0j5MY5XHfQrhNtsaPqlHTQ=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [

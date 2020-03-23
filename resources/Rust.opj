@@ -7657,7 +7657,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "9xxB2IopyaOWt75Db5Taop0JYlDeDrOL0dAa+8KNeVQ=",
+            "MSILHash": "dxEhL/ai02iuLEITY/tLiE0fSc2Cvcz6ututZX3FJnw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8396,7 +8396,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 196,
+            "InjectionIndex": 172,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this.currentTeam, l2, this",
@@ -8412,7 +8412,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "yH55HbeAPPuVZ+07IFtvvQXSmGGGY7WCOY9Lojm7o1o=",
+            "MSILHash": "VxzaR/2tT0liN2uQ+5EZQQBmAvJESxSBBlJ2xBE0nBE=",
             "BaseHookName": null,
             "HookCategory": "Team"
           }
@@ -8864,7 +8864,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "RWRz+XmST0o6WBAGHYbKeHSt4w64/mt4RO2OHs5Kc/8=",
+            "MSILHash": "g/MKVLeOHdXr4B8KUEa8XuEO9fYxDmUxOl8ghi6hH4k=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8875,7 +8875,7 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, this.ServerCurrentMapNotes",
+            "ArgumentString": "this, this.ServerCurrentMapNote",
             "HookTypeName": "Simple",
             "Name": "OnMapMarkersClear",
             "HookName": "OnMapMarkersClear",
@@ -8890,7 +8890,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "x/QD9z4urwvr6Ju70XsIHtFiFSJzEUDKB6l6wPyqnEo=",
+            "MSILHash": "AXqZ3Hi9DrLAi69EjHmXLFXolml8QxqiTzrbAB2g6mU=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8898,7 +8898,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 22,
+            "InjectionIndex": 21,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
@@ -8916,7 +8916,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "RWRz+XmST0o6WBAGHYbKeHSt4w64/mt4RO2OHs5Kc/8=",
+            "MSILHash": "g/MKVLeOHdXr4B8KUEa8XuEO9fYxDmUxOl8ghi6hH4k=",
             "BaseHookName": "OnMapMarkerAdd",
             "HookCategory": "Player"
           }
@@ -8924,79 +8924,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 35,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnMapMarkerRemove",
-            "HookName": "OnMapMarkerRemove",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "RemovePointOfInterestFromList",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "System.Int32",
-                "System.Collections.Generic.List`1<ProtoBuf.MapNote>"
-              ]
-            },
-            "MSILHash": "qF3VDCADfzktEulatvhAgjgHk8K7eC3h6tg6GoSE5W8=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 39,
-            "RemoveCount": 7,
-            "Instructions": [
-              {
-                "OpCode": "ldnull",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "beq_s",
-                "OpType": "Instruction",
-                "Operand": 49
-              },
-              {
-                "OpCode": "ldc_i4_0",
-                "OpType": "None",
-                "Operand": null
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnMapMarkerRemove [object]",
-            "HookName": "OnMapMarkerRemove [object]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "RemovePointOfInterestFromList",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "System.Int32",
-                "System.Collections.Generic.List`1<ProtoBuf.MapNote>"
-              ]
-            },
-            "MSILHash": "qF3VDCADfzktEulatvhAgjgHk8K7eC3h6tg6GoSE5W8=",
-            "BaseHookName": "OnMapMarkerRemove",
-            "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 15,
+            "InjectionIndex": 32,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, this.ServerCurrentMapNotes",
+            "ArgumentString": "this, this.ServerCurrentMapNote",
             "HookTypeName": "Simple",
             "Name": "OnMapMarkersCleared",
             "HookName": "OnMapMarkersCleared",
@@ -9011,7 +8942,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "x/QD9z4urwvr6Ju70XsIHtFiFSJzEUDKB6l6wPyqnEo=",
+            "MSILHash": "AXqZ3Hi9DrLAi69EjHmXLFXolml8QxqiTzrbAB2g6mU=",
             "BaseHookName": "OnMapMarkersClear",
             "HookCategory": "Player"
           }
@@ -9063,7 +8994,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "ymsHz969P9QcsaqUfyBtRE7E7Dy3aa9pX7V1FW/opQg=",
+            "MSILHash": "CSpidBxElFEz4+0pg6tmgS8A7n6+UlUDqmlitZNK+5Y=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -10458,6 +10389,32 @@
             "MSILHash": "qSAFJphFRmqdbiIelFb2Z0j5MY5XHfQrhNtsaPqlHTQ=",
             "BaseHookName": null,
             "HookCategory": "Structure"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.ServerCurrentMapNote",
+            "HookTypeName": "Simple",
+            "Name": "OnMapMarkerRemove",
+            "HookName": "OnMapMarkerRemove",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_RemovePointOfInterest",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "a08kWYNA33O2PYGI97mbdZ7KDK+mitA9RZVTd9lefgY=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
           }
         }
       ],

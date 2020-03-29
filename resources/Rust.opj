@@ -15168,6 +15168,1030 @@
             ]
           },
           "MSILHash": "v6ylFvw769svmil+/WZPpIKhH+YYhATqvfuawM6WGls="
+        },
+        {
+          "Name": "TriggerBase::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "dJZ1yJD9nxyMGmfhck29i3ubBcfRAWEgRvasFo/9TfE="
+        },
+        {
+          "Name": "TriggerBase::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "xVlH/ZHJfOrKauMippeSIYhSSPtr7lkbC61LryS8UAQ="
+        },
+        {
+          "Name": "TriggerBase::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "DXGYUOaN9sda+dl+OO0hPrEr9VjmbPOsKuMx6wNrzXk="
+        },
+        {
+          "Name": "TriggerBase::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "DniKWF6OJl3yPLsP62J/G27rzTuobqV//dx/kjqsUdc="
+        },
+        {
+          "Name": "TriggerBase::OnObjectAdded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjectAdded",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "pnr+ulkm04QPeHWREPzZk0PvPGetVccNIyZXXvu2Lkc="
+        },
+        {
+          "Name": "TriggerBase::OnObjectRemoved",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjectRemoved",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "rWQnw2TAovgrHdrLwnrO7BCPpZy53mxJOLDZeIFW+Vs="
+        },
+        {
+          "Name": "TriggerBase::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk="
+        },
+        {
+          "Name": "TriggerComfort::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerComfort",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerComfort::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerComfort",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "Ha/G5PpnIvbeiGjoai70y6dOyGdWcHJjR4ol3F2Kq60="
+        },
+        {
+          "Name": "TriggerComfort::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerComfort",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "OqpU6qb9r4hSsJkplO/D7vdXwWnZr+qEsbWZfM9v9TA="
+        },
+        {
+          "Name": "TriggerEnsnare::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerEnsnare",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "XzXWR1DrQw7G+cujDyZGc23PTo9MLKl0j3SpKiszkXk="
+        },
+        {
+          "Name": "TriggerForce::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerForce",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerForce::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerForce",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "tcy2JjlmZbwrC4clPl2slJHlTQ0Phc+0x7Ke6lXN0sY="
+        },
+        {
+          "Name": "TriggerForce::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerForce",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "zWFJ981WWmXR3WXicrxoYlb7eUbu04BVjimhjUY7LgE="
+        },
+        {
+          "Name": "TriggerHurt::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurt",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerHurt::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurt",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "uQnvdzaldGJKqGKUFfHzDn/eZU9Xj4bVRvKFfRNVMtQ="
+        },
+        {
+          "Name": "TriggerHurt::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurt",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "ueddrsVafb3NZydElnHkeYdDCFK5ZAiV4cJxCmWa2gs="
+        },
+        {
+          "Name": "TriggerHurtEx::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtEx",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "06D3sK4lEWVLEWpiMJZOodOfPJ9o7t/3UClLYSKvfTg="
+        },
+        {
+          "Name": "TriggerHurtEx::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtEx",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "p/bB66ToMOyfJ+DV/CORqNg4Z12ctMBAi2wnhDSBjCE="
+        },
+        {
+          "Name": "TriggerHurtEx::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtEx",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "Avgy2NoulxEYarSey/C4gussN07EtDfC2dl/PfQZkYw="
+        },
+        {
+          "Name": "TriggerHurtEx::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtEx",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "dUz90tgkCfAou8zGMQ4LTCZ5TObZ/n94pVztZwpj/4I="
+        },
+        {
+          "Name": "TriggerHurtEx::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtEx",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "FwWN9BJhSoqNkwDrXenjYI/PVWFs52fFcEXsh6LmcMg="
+        },
+        {
+          "Name": "TriggerHurtNotChild::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtNotChild",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "7DzPjbmozdlDYa9mPzlQmKmtyyhk6ZKrOfXcO8pvxck="
+        },
+        {
+          "Name": "TriggerHurtNotChild::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtNotChild",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "fI1dJjS/H5iaI2AVW2DQTu5rwhIWQ1TzPu9Au/30UXE="
+        },
+        {
+          "Name": "TriggerHurtNotChild::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtNotChild",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "yjlvIqIXf4gjS0ChDeW8vAFHmpZXVUvUPNsCRTtfo6A="
+        },
+        {
+          "Name": "TriggerLadder::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerLadder",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "DXFPCihoOPTaywmfCJXpqreJFCH6bW7rMW5kmJZpSbA="
+        },
+        {
+          "Name": "TriggerParent::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerParent",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerParent::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerParent",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "0VHoxc+fHTGPGlucToJHsrY+ne5OZLVFmIcnoHfuD3I="
+        },
+        {
+          "Name": "TriggerParent::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerParent",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "Ip0M/qnc24HSTkam7+pUy5dYxPgAXi20j+8ix+0R4WM="
+        },
+        {
+          "Name": "TriggerParentExclusion::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerParentExclusion",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerRadiation::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerRadiation",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "AIfnJLyUbZQf22zUJQP87JyEH/8omefdmE7wBrQ0D9M="
+        },
+        {
+          "Name": "TriggerTemperature::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerTemperature",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerVehiclePush::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerVehiclePush",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerWorkbench::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerWorkbench",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerAchievement::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerAchievement",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "anTmbGk8mewsZ+j64og4XvUpLpkrSuN30GJ5d/ck3K8="
+        },
+        {
+          "Name": "TriggerAchievement::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerAchievement",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "PdAFRFbtN3oDdt8xLo7dWANeeZdCqpX+qJESHDAjtnw="
+        },
+        {
+          "Name": "TargetTrigger::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TargetTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "jHkZktB4LQKaDJ4eI/DqR0gefe9Wy8tcjJpOUCTUWUw="
+        },
+        {
+          "Name": "PlayerDetectionTrigger::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerDetectionTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "PlayerDetectionTrigger::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerDetectionTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "C4F9CUXyBLGjQ8Ai2VqNY/KYpN0Qz6zjqx4KHFz8c8U="
+        },
+        {
+          "Name": "PlayerDetectionTrigger::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerDetectionTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "hFRn7wiGz+ApUN8TZAvlL7DzH1EzwqQh6A1ZLcOk9d8="
+        },
+        {
+          "Name": "BaseTrapTrigger::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrapTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "BaseTrapTrigger::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrapTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "A+psSme2TO3cOE5WA1M34PIbum4cVDDS2c+R/juHW3M="
+        },
+        {
+          "Name": "BaseTrapTrigger::OnObjectAdded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrapTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjectAdded",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "WJ5sRCziAPnQ7n4UOb8pP6jxCRVPkT1ft0FqzefL8wI="
+        },
+        {
+          "Name": "ArcadeNetworkTrigger::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ArcadeNetworkTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "AITraversalArea::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AITraversalArea",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "DHuT+Ng3xLmtW3qXrAxvpxbSp4UYI9kfKfRuyFKTr9E="
+        },
+        {
+          "Name": "AITraversalArea::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AITraversalArea",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "VkuJIcK+Lmq7xM6VUckZHyLTEeTkCKelZ80YsJBbVIs="
+        },
+        {
+          "Name": "AITraversalArea::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AITraversalArea",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "TaSGxLvF/ybAYVcjV6Wfi/iwVtaaSuMyCFFEdXPkO5k="
+        },
+        {
+          "Name": "DirectionalDamageTrigger::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DirectionalDamageTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "06D3sK4lEWVLEWpiMJZOodOfPJ9o7t/3UClLYSKvfTg="
+        },
+        {
+          "Name": "DirectionalDamageTrigger::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DirectionalDamageTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "vUmQWm0p5R7e+wCOQH8Q2k+Ivax9veKRwDFz7/2GbPo="
+        },
+        {
+          "Name": "DirectionalDamageTrigger::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DirectionalDamageTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "36vENTQy/RN+sZ8Hmjp6wjPpWwYExkxvYBvBA2NRxLM="
         }
       ],
       "Fields": [

@@ -1358,10 +1358,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 11,
+            "InjectionIndex": 68,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, this._linkedDeposit._resources",
+            "ArgumentString": "this, l3",
             "HookTypeName": "Simple",
             "Name": "OnQuarryGather",
             "HookName": "OnQuarryGather",

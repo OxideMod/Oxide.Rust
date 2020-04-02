@@ -10066,13 +10066,14 @@
               "Name": "Test",
               "ReturnType": "System.Boolean",
               "Parameters": [
+                "System.UInt32",
                 "System.String",
                 "BaseEntity",
                 "BasePlayer",
                 "System.Single"
               ]
             },
-            "MSILHash": "ZxqoG8cIHQdpqnJ7Jao8igs0uCTwZ3G/Uv2l3vWP188=",
+            "MSILHash": "T1pa+k8VqlMF14rSDkWt4pL3oAcFSWWZNXbfohz5PJ0=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }

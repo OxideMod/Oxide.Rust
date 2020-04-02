@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-release\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -652,7 +652,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "AJzw1yDGmDSohdKVwbwbTUG+zdqjgaxZI42edVwOO9Q=",
+            "MSILHash": "V/uYqbNagfkqd18pMXYAEzTvAXteIgKhZyTMxqPkI0s=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -869,7 +869,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 45,
+            "InjectionIndex": 57,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
@@ -885,7 +885,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "kt0xPllQ+r0f2g5W3njHU/E/5g80FiW9iMI5+ModL+g=",
+            "MSILHash": "tX3uU8gJkfiNC2wbVX3aWHwKp5L0E5NtgC4angm7hyw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1333,9 +1333,9 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 4,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0 => a0",
             "HookTypeName": "Simple",
             "Name": "OnItemUse",
             "HookName": "OnItemUse",
@@ -1358,10 +1358,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 68,
+            "InjectionIndex": 11,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l3",
+            "ArgumentString": "this, this._linkedDeposit._resources",
             "HookTypeName": "Simple",
             "Name": "OnQuarryGather",
             "HookName": "OnQuarryGather",
@@ -1588,7 +1588,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 77,
+            "InjectionIndex": 95,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 0,
             "ArgumentString": null,
@@ -1606,7 +1606,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "EM7aSN9nSR1FPvO6Mju9oNw+zJnzFjgFLdsJvT1Ochk=",
+            "MSILHash": "D8z/gkDOh+GIDS+TMt/ZNB/xQto8WHYtMx5js0Y4uEI=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -2026,7 +2026,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "AIUxYlRvEERWL/DFdJ1TYLVCaxNdVZX2J3NIInh3Xpw=",
+            "MSILHash": "+SaGxq4nOrQLELwuTYHEL9qkWf5OWEqixa3auPnN4Q8=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -2404,7 +2404,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "PNCcFmuCNXKhSG0eIyVWkot+xkz5tr7hc+hfli6QulA=",
+            "MSILHash": "rdFe2c3NWvBp35sQT4YQ6158vPda8Pk/njpCGDQueLM=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2431,7 +2431,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "kdkE6vaMzE3f7JuYDBrNSQtfSgPZgzfGJDZZGT+xc/I=",
+            "MSILHash": "9PlWvPkd9LrBvhP9XP8bKEcMvIMearX6FJpDqoWaatQ=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2482,7 +2482,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "kdkE6vaMzE3f7JuYDBrNSQtfSgPZgzfGJDZZGT+xc/I=",
+            "MSILHash": "9PlWvPkd9LrBvhP9XP8bKEcMvIMearX6FJpDqoWaatQ=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -2707,7 +2707,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "qCB5dg77b0yZp6sGfRqfSqIEp6OaPeUvsHLSREd8t/8=",
+            "MSILHash": "BbUJ8XuW9uMFotI7+qo71cLjKESlgFS8XyLJVkg0+Dk=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2863,7 +2863,7 @@
                 "UnityEngine.GameObject"
               ]
             },
-            "MSILHash": "9kXTW34S23lEXuRLSG2QdZqGu2nZfiNInplSjx6Dcf8=",
+            "MSILHash": "9jB44+h5cXdJbTmF91u0oGXTkJcbQlWXUlK0bkTiiJI=",
             "BaseHookName": null,
             "HookCategory": "Trap"
           }
@@ -2961,7 +2961,7 @@
                 "Item"
               ]
             },
-            "MSILHash": "kEoNyXsZ/Oy734P39m4DcrM7hzp9HDbAg9745ESVuVw=",
+            "MSILHash": "DoZHRG8m2eAsqYUz04T/TSBEWvYOqHrTSKM5YC5s31g=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -3470,7 +3470,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 42,
+            "InjectionIndex": 46,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.player, this, l0, l1",
@@ -3488,7 +3488,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "QmVYPczKaXvWCsU+3tz5PdQ6kQksgG7nQqx2GuEk1rI=",
+            "MSILHash": "hYYVuhw6EBw+dsvkCc0wQBmn1JyqFRo4BsTlFhIvzLc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -3877,7 +3877,7 @@
                 "DroppedItem"
               ]
             },
-            "MSILHash": "F9ShNO/tH1jOpIwoiIGgvAljOb7s1/13y2MMnkbpld8=",
+            "MSILHash": "UJzU6YyTVPUgSbqSvyTSPJRYBXCaftuFICOX/JMLZ20=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -3987,7 +3987,7 @@
                 "DroppedItem"
               ]
             },
-            "MSILHash": "F9ShNO/tH1jOpIwoiIGgvAljOb7s1/13y2MMnkbpld8=",
+            "MSILHash": "UJzU6YyTVPUgSbqSvyTSPJRYBXCaftuFICOX/JMLZ20=",
             "BaseHookName": "CanCombineDroppedItem",
             "HookCategory": "_Patches"
           }
@@ -7535,58 +7535,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 60,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l3, a0",
-            "HookTypeName": "Simple",
-            "Name": "OnCropGather",
-            "HookName": "OnCropGather",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "PlantEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "PickFruit",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BasePlayer"
-              ]
-            },
-            "MSILHash": "xeobsyL4/jkbvExAXlhCrRuv2oygntsNs/Z9ji7E8Yk=",
-            "BaseHookName": null,
-            "HookCategory": "Resource"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 108,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l5, a0",
-            "HookTypeName": "Simple",
-            "Name": "OnCropGather [!condition]",
-            "HookName": "OnCropGather",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "PlantEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "PickFruit",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BasePlayer"
-              ]
-            },
-            "MSILHash": "xeobsyL4/jkbvExAXlhCrRuv2oygntsNs/Z9ji7E8Yk=",
-            "BaseHookName": "OnCropGather",
-            "HookCategory": "Resource"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 86,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -7683,7 +7631,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "b8ihEL6fBO4I59lRSBADvuOdhZQ4Mh2X0UbglloThPI=",
+            "MSILHash": "WY7Pk1dKaALsdA07cLtVDLnBFGwAO7jOkUpU6l3rdXE=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -7796,31 +7744,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 110,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnSamSiteTarget",
-            "HookName": "OnSamSiteTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "SamSite",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "TargetScan",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "xYGSp+PrJ9Bu/gFbtTxe3ugNFWGwuUugv7a6hESblns=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 4,
+            "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.player, this",
@@ -7828,7 +7752,7 @@
             "Name": "CanTakeCutting",
             "HookName": "CanTakeCutting",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "PlantEntity",
+            "TypeName": "GrowableEntity",
             "Flagged": false,
             "Signature": {
               "Exposure": 2,
@@ -7838,7 +7762,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "zfmu6JBCFYkD19w5ZIkscqDfEWNkRRZ6Xlr0htCUEzk=",
+            "MSILHash": "IJ+oZTv9gh9tnRTSum2gQa6LZvYTMUBjCJ7m9z0xcAQ=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8759,7 +8683,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "ISvXbKusNuw76JmWtHb4hSVGfxgpoUyUjDgVyg9rVtE=",
+            "MSILHash": "zaR35ultuTLTwR/hZVeyeuD2WOITzteop6uBGM4mSAI=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -8786,7 +8710,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "aMbPC2zySkZPXcBRGZ1q+hvlYf6MmNWiJ8C3hlp9FD8=",
+            "MSILHash": "ot/9dViXU3sD76QGRFfBjfy+4TgW9s2IjYxBZoT20ns=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -8976,7 +8900,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 58,
+            "InjectionIndex": 59,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l4, l3, l0, l1, l2",
@@ -8994,7 +8918,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "CSpidBxElFEz4+0pg6tmgS8A7n6+UlUDqmlitZNK+5Y=",
+            "MSILHash": "5wbDpB2+Ym/Nz+xKiq3HQONU1l8tPpA42QqwmiZFYNw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -9018,7 +8942,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "2azunCYpjv39ImFZ2uS+Icx/QOg5T7FRjwKpObbjvJE=",
+            "MSILHash": "rUZDL0uAtTem9pPEXSx1F/LD8TwrhrxcwGs1LfhQmvo=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -9042,7 +8966,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "2azunCYpjv39ImFZ2uS+Icx/QOg5T7FRjwKpObbjvJE=",
+            "MSILHash": "rUZDL0uAtTem9pPEXSx1F/LD8TwrhrxcwGs1LfhQmvo=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -9162,7 +9086,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 113,
+            "InjectionIndex": 125,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.player, l5, l1, l7, l3",
@@ -9180,7 +9104,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "MHYOMoPnn6seTOXp406ujicTRC/FYHgU9wHsHCse8CI=",
+            "MSILHash": "2Kwb8eiF/c64fzS4VkRRNXTfXvcz4oiwRAKi+YlIIyg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -9188,7 +9112,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 74,
+            "InjectionIndex": 81,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.player, l4, l1, l6, l2",
@@ -9206,7 +9130,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "oEuGTBAJb99fze0OYiQD+bD+XtYm6eeKuADPxUnUJKQ=",
+            "MSILHash": "u54oh/zpG7HJfF+Y85JhXZ3ZCSJyK+g7vu70+4HqngE=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -9240,13 +9164,13 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 125,
+            "InjectionIndex": 137,
             "RemoveCount": 0,
             "Instructions": [
               {
                 "OpCode": "ldloc_s",
                 "OpType": "Variable",
-                "Operand": 7
+                "Operand": 8
               },
               {
                 "OpCode": "ldfld",
@@ -9254,9 +9178,9 @@
                 "Operand": "Assembly-CSharp|IOEntity|outputs"
               },
               {
-                "OpCode": "ldloc_3",
-                "OpType": "None",
-                "Operand": null
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 4
               },
               {
                 "OpCode": "ldelem_ref",
@@ -9275,8 +9199,8 @@
               }
             ],
             "HookTypeName": "Modify",
-            "Name": "OnWireConnection [patch]",
-            "HookName": "OnWireConnection",
+            "Name": "OnWireConnect [patch]",
+            "HookName": "OnWireConnect",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WireTool",
             "Flagged": false,
@@ -9288,7 +9212,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "MHYOMoPnn6seTOXp406ujicTRC/FYHgU9wHsHCse8CI=",
+            "MSILHash": "2Kwb8eiF/c64fzS4VkRRNXTfXvcz4oiwRAKi+YlIIyg=",
             "BaseHookName": "OnWireConnect",
             "HookCategory": "_Patches"
           }
@@ -10067,7 +9991,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "dKba34Fc0xZ2VOQ9AavaTYfR+uWpf47+hzrLivC/sqI=",
+            "MSILHash": "60Bsbg1LYpZ/lexBwtRof4blTWD/7qHuApaaD2SuMTk=",
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
@@ -10148,7 +10072,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "SArqexkRKfCTKO5Q4GRxqnti8RkVWaKMmgUAVTjbsac=",
+            "MSILHash": "ZxqoG8cIHQdpqnJ7Jao8igs0uCTwZ3G/Uv2l3vWP188=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -10334,7 +10258,7 @@
                 "Steamworks.AuthResponse"
               ]
             },
-            "MSILHash": "+shVdM0I0zVUJJdyepmVdTu1NftKOTXShr0aOR+2Tao=",
+            "MSILHash": "k0Onw9iFZ8rCBrgzTRx1777tUyJrWZOtSg5Y+vxDlT8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -10415,6 +10339,191 @@
             "MSILHash": "a08kWYNA33O2PYGI97mbdZ7KDK+mitA9RZVTd9lefgY=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 22,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnGrowableGather",
+            "HookName": "OnGrowableGather",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GrowableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "GiveFruit",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Int32",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "Lt67gky1Fp3YCygTo6JwWi/7XorhcXRUsiptxZiRRwA=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0 => l0",
+            "HookTypeName": "Simple",
+            "Name": "OnQuarryConsumeFuel",
+            "HookName": "OnQuarryConsumeFuel",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MiningQuarry",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FuelCheck",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "T+vo+Y1wtrBNxFC/SdpM2b+Au6rtolNy1T497cOlj6U=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a2, a3",
+            "HookTypeName": "Simple",
+            "Name": "OnItemActiveCheck",
+            "HookName": "OnItemActiveCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity/RPC_Server/IsActiveItem",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Test",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.UInt32",
+                "System.String",
+                "BaseEntity",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "JmO8NPncBUHJCqKo6tf/pvTGizVB0CeGyhydaZcGA10=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a2, a3",
+            "HookTypeName": "Simple",
+            "Name": "OnItemFromOwnerCheck",
+            "HookName": "OnItemFromOwnerCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity/RPC_Server/FromOwner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Test",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.UInt32",
+                "System.String",
+                "BaseEntity",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "c7FFT+8KoNRIoYuCXfKc9fbLm1zN8aaCToVB1/Ij0so=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 26,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanLootEntity [BaseRidableAnimal]",
+            "HookName": "CanLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseRidableAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_OpenLoot",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "nKGwt7k6gnCb9mt9q2jkj9p4IFLuoQwjHWE6l5GbPZI=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 78,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnSamSiteTarget"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_3",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 80
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnSamSiteTarget",
+            "HookName": "OnSamSiteTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SamSite",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TargetScan",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "xYGSp+PrJ9Bu/gFbtTxe3ugNFWGwuUugv7a6hESblns=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
           }
         }
       ],
@@ -13436,25 +13545,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "ContainerIOEntity::inventory",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ContainerIOEntity",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "inventory",
-            "FullTypeName": "ItemContainer ContainerIOEntity::inventory",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BaseOven::ConsumeFuel",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseOven",
@@ -14123,104 +14213,6 @@
             "Parameters": []
           },
           "MSILHash": ""
-        },
-        {
-          "Name": "PlantEntity::genetics",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlantEntity",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "genetics",
-            "FullTypeName": "System.Int32 PlantEntity::genetics",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "PlantEntity::harvests",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlantEntity",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "harvests",
-            "FullTypeName": "System.Int32 PlantEntity::harvests",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "PlantEntity::seasons",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlantEntity",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "seasons",
-            "FullTypeName": "System.Int32 PlantEntity::seasons",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "PlantEntity::BecomeState",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlantEntity",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "BecomeState",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "PlantProperties/State",
-              "System.Boolean"
-            ]
-          },
-          "MSILHash": "JfV3/nqPzkpLvQEur4pxQYxbmX90WNdv6YNGGTJBHfg="
-        },
-        {
-          "Name": "PlantEntity::PlacedInPlanter",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlantEntity",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "PlacedInPlanter",
-            "FullTypeName": "System.Boolean",
-            "Parameters": []
-          },
-          "MSILHash": "j+FEHwupt8Y0NMNsejl6Vsmqm0JdEX1qdqKQOmyX88I="
         },
         {
           "Name": "ResourceEntity::health",
@@ -15168,6 +15160,1858 @@
             ]
           },
           "MSILHash": "v6ylFvw769svmil+/WZPpIKhH+YYhATqvfuawM6WGls="
+        },
+        {
+          "Name": "GrowableEntity::ApplyDeathRate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyDeathRate",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "JPIDzEbcqxEWCUztOrh4BD7fv79sIob8rIfq02FWKHY="
+        },
+        {
+          "Name": "GrowableEntity::CalculateArtificialLightExposure",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CalculateArtificialLightExposure",
+            "FullTypeName": "System.Single",
+            "Parameters": []
+          },
+          "MSILHash": "2sxjOtprzN5/88KDX7ThYpv650YsuB4fWlAPfvGRRTA="
+        },
+        {
+          "Name": "GrowableEntity::CalculateTemperatureQuality",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CalculateTemperatureQuality",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "BGggG/P3cUABP+tL4K8rm0REF60MuwG1OT21n8JOeXQ="
+        },
+        {
+          "Name": "GrowableEntity::ChangeState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ChangeState",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "PlantProperties/State",
+              "System.Boolean",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "0C1+c0xi0SgtdDqbYMP3WIs4j01WlvZB/YEWL8hhpaE="
+        },
+        {
+          "Name": "GrowableEntity::ConsumeWater",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ConsumeWater",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "TbPcpr8EPsWY62i5dqZ/Bo77s5m6D0EoAwILFkQ2Pfc="
+        },
+        {
+          "Name": "GrowableEntity::GetGroundTypeValue",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetGroundTypeValue",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "sBELzr2KmqQnWde5Ob3tArGV5Gx0BPcAkj7hIpm+dtU="
+        },
+        {
+          "Name": "GrowableEntity::GetGrowthBonus",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetGrowthBonus",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "KyDCPInLhWOmzGoE0XLRz71AFaLuFHZCPMa4IXjmZrk="
+        },
+        {
+          "Name": "GrowableEntity::GiveFruit",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GiveFruit",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "WjuIqY4M7ezQEua5dv9x7MMtVw5gDsXUoeAt0rLby8g="
+        },
+        {
+          "Name": "GrowableEntity::GiveFruit",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GiveFruit",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer",
+              "System.Int32",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "Lt67gky1Fp3YCygTo6JwWi/7XorhcXRUsiptxZiRRwA="
+        },
+        {
+          "Name": "GrowableEntity::RunUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RunUpdate",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "3pl9Xt4Y29XNwWkpQqLD5+Nddk0rdCElaIyDMsuUVfo="
+        },
+        {
+          "Name": "GrowableEntity::Age",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Age",
+            "FullTypeName": "System.Single GrowableEntity::Age()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::harvests",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "harvests",
+            "FullTypeName": "System.Int32 GrowableEntity::harvests",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::planter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "planter",
+            "FullTypeName": "PlanterBox GrowableEntity::planter",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::seasons",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "seasons",
+            "FullTypeName": "System.Int32 GrowableEntity::seasons",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::stageAge",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "stageAge",
+            "FullTypeName": "System.Single GrowableEntity::stageAge",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::terrainTypeValue",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "terrainTypeValue",
+            "FullTypeName": "System.Single GrowableEntity::terrainTypeValue",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::underWater",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "underWater",
+            "FullTypeName": "System.Boolean GrowableEntity::underWater",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::yieldPool",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "yieldPool",
+            "FullTypeName": "System.Single GrowableEntity::yieldPool",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::currentStage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "currentStage",
+            "FullTypeName": "PlantProperties/Stage GrowableEntity::currentStage()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::CurrentPickAmountFloat",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              5
+            ],
+            "Name": "CurrentPickAmountFloat",
+            "FullTypeName": "System.Single GrowableEntity::CurrentPickAmountFloat()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::Fertilized",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Fertilized",
+            "FullTypeName": "System.Boolean GrowableEntity::Fertilized()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::OverallQuality",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "OverallQuality",
+            "FullTypeName": "System.Single GrowableEntity::OverallQuality()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::GroundQuality",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "GroundQuality",
+            "FullTypeName": "System.Single GrowableEntity::GroundQuality()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::growDeltaTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "growDeltaTime",
+            "FullTypeName": "System.Single GrowableEntity::growDeltaTime()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::LightQuality",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "LightQuality",
+            "FullTypeName": "System.Single GrowableEntity::LightQuality()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::State",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "State",
+            "FullTypeName": "PlantProperties/State GrowableEntity::State()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::TemperatureQuality",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "TemperatureQuality",
+            "FullTypeName": "System.Single GrowableEntity::TemperatureQuality()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::WaterConsumption",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WaterConsumption",
+            "FullTypeName": "System.Single GrowableEntity::WaterConsumption()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::WaterQuality",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WaterQuality",
+            "FullTypeName": "System.Single GrowableEntity::WaterQuality()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::Yield",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Yield",
+            "FullTypeName": "System.Single GrowableEntity::Yield()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::artificalLightQuality",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "artificalLightQuality",
+            "FullTypeName": "System.Single GrowableEntity::artificalLightQuality",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::baseYieldIncreaseMultiplier",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "baseYieldIncreaseMultiplier",
+            "FullTypeName": "System.Single GrowableEntity::baseYieldIncreaseMultiplier",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::deathRatePerQuality",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "deathRatePerQuality",
+            "FullTypeName": "System.Single GrowableEntity::deathRatePerQuality",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::fertilizerGroundModifierBonus",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fertilizerGroundModifierBonus",
+            "FullTypeName": "System.Single GrowableEntity::fertilizerGroundModifierBonus",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::growthGeneSpeedMultiplier",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "growthGeneSpeedMultiplier",
+            "FullTypeName": "System.Single GrowableEntity::growthGeneSpeedMultiplier",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::hardinessGeneModifierBonus",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hardinessGeneModifierBonus",
+            "FullTypeName": "System.Single GrowableEntity::hardinessGeneModifierBonus",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::maxNonPlanterGroundQuality",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxNonPlanterGroundQuality",
+            "FullTypeName": "System.Single GrowableEntity::maxNonPlanterGroundQuality",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::planterGroundModifierBase",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "planterGroundModifierBase",
+            "FullTypeName": "System.Single GrowableEntity::planterGroundModifierBase",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::startingHealth",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "startingHealth",
+            "FullTypeName": "System.Single GrowableEntity::startingHealth",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::waterGeneRequirementMultiplier",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "waterGeneRequirementMultiplier",
+            "FullTypeName": "System.Single GrowableEntity::waterGeneRequirementMultiplier",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::yieldGeneBonusMultiplier",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "yieldGeneBonusMultiplier",
+            "FullTypeName": "System.Single GrowableEntity::yieldGeneBonusMultiplier",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TriggerBase::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "dJZ1yJD9nxyMGmfhck29i3ubBcfRAWEgRvasFo/9TfE="
+        },
+        {
+          "Name": "TriggerBase::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "xVlH/ZHJfOrKauMippeSIYhSSPtr7lkbC61LryS8UAQ="
+        },
+        {
+          "Name": "TriggerBase::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "DXGYUOaN9sda+dl+OO0hPrEr9VjmbPOsKuMx6wNrzXk="
+        },
+        {
+          "Name": "TriggerBase::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "DniKWF6OJl3yPLsP62J/G27rzTuobqV//dx/kjqsUdc="
+        },
+        {
+          "Name": "TriggerBase::OnObjectAdded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjectAdded",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "pnr+ulkm04QPeHWREPzZk0PvPGetVccNIyZXXvu2Lkc="
+        },
+        {
+          "Name": "TriggerBase::OnObjectRemoved",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjectRemoved",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "rWQnw2TAovgrHdrLwnrO7BCPpZy53mxJOLDZeIFW+Vs="
+        },
+        {
+          "Name": "TriggerBase::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk="
+        },
+        {
+          "Name": "TriggerComfort::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerComfort",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerComfort::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerComfort",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "Ha/G5PpnIvbeiGjoai70y6dOyGdWcHJjR4ol3F2Kq60="
+        },
+        {
+          "Name": "TriggerComfort::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerComfort",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "OqpU6qb9r4hSsJkplO/D7vdXwWnZr+qEsbWZfM9v9TA="
+        },
+        {
+          "Name": "TriggerEnsnare::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerEnsnare",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "XzXWR1DrQw7G+cujDyZGc23PTo9MLKl0j3SpKiszkXk="
+        },
+        {
+          "Name": "TriggerForce::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerForce",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerForce::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerForce",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "tcy2JjlmZbwrC4clPl2slJHlTQ0Phc+0x7Ke6lXN0sY="
+        },
+        {
+          "Name": "TriggerForce::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerForce",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "zWFJ981WWmXR3WXicrxoYlb7eUbu04BVjimhjUY7LgE="
+        },
+        {
+          "Name": "TriggerHurt::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurt",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerHurt::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurt",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "uQnvdzaldGJKqGKUFfHzDn/eZU9Xj4bVRvKFfRNVMtQ="
+        },
+        {
+          "Name": "TriggerHurt::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurt",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "ueddrsVafb3NZydElnHkeYdDCFK5ZAiV4cJxCmWa2gs="
+        },
+        {
+          "Name": "TriggerHurtEx::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtEx",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "06D3sK4lEWVLEWpiMJZOodOfPJ9o7t/3UClLYSKvfTg="
+        },
+        {
+          "Name": "TriggerHurtEx::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtEx",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "p/bB66ToMOyfJ+DV/CORqNg4Z12ctMBAi2wnhDSBjCE="
+        },
+        {
+          "Name": "TriggerHurtEx::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtEx",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "Avgy2NoulxEYarSey/C4gussN07EtDfC2dl/PfQZkYw="
+        },
+        {
+          "Name": "TriggerHurtEx::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtEx",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "dUz90tgkCfAou8zGMQ4LTCZ5TObZ/n94pVztZwpj/4I="
+        },
+        {
+          "Name": "TriggerHurtEx::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtEx",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "FwWN9BJhSoqNkwDrXenjYI/PVWFs52fFcEXsh6LmcMg="
+        },
+        {
+          "Name": "TriggerHurtNotChild::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtNotChild",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "7DzPjbmozdlDYa9mPzlQmKmtyyhk6ZKrOfXcO8pvxck="
+        },
+        {
+          "Name": "TriggerHurtNotChild::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtNotChild",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "fI1dJjS/H5iaI2AVW2DQTu5rwhIWQ1TzPu9Au/30UXE="
+        },
+        {
+          "Name": "TriggerHurtNotChild::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerHurtNotChild",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "yjlvIqIXf4gjS0ChDeW8vAFHmpZXVUvUPNsCRTtfo6A="
+        },
+        {
+          "Name": "TriggerLadder::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerLadder",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "DXFPCihoOPTaywmfCJXpqreJFCH6bW7rMW5kmJZpSbA="
+        },
+        {
+          "Name": "TriggerParent::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerParent",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerParent::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerParent",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "0VHoxc+fHTGPGlucToJHsrY+ne5OZLVFmIcnoHfuD3I="
+        },
+        {
+          "Name": "TriggerParent::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerParent",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "Ip0M/qnc24HSTkam7+pUy5dYxPgAXi20j+8ix+0R4WM="
+        },
+        {
+          "Name": "TriggerParentExclusion::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerParentExclusion",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerRadiation::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerRadiation",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "AIfnJLyUbZQf22zUJQP87JyEH/8omefdmE7wBrQ0D9M="
+        },
+        {
+          "Name": "TriggerTemperature::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerTemperature",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerVehiclePush::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerVehiclePush",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerWorkbench::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerWorkbench",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "TriggerAchievement::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerAchievement",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "anTmbGk8mewsZ+j64og4XvUpLpkrSuN30GJ5d/ck3K8="
+        },
+        {
+          "Name": "TriggerAchievement::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerAchievement",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "PdAFRFbtN3oDdt8xLo7dWANeeZdCqpX+qJESHDAjtnw="
+        },
+        {
+          "Name": "TargetTrigger::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TargetTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "jHkZktB4LQKaDJ4eI/DqR0gefe9Wy8tcjJpOUCTUWUw="
+        },
+        {
+          "Name": "PlayerDetectionTrigger::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerDetectionTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "PlayerDetectionTrigger::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerDetectionTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "C4F9CUXyBLGjQ8Ai2VqNY/KYpN0Qz6zjqx4KHFz8c8U="
+        },
+        {
+          "Name": "PlayerDetectionTrigger::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerDetectionTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "hFRn7wiGz+ApUN8TZAvlL7DzH1EzwqQh6A1ZLcOk9d8="
+        },
+        {
+          "Name": "BaseTrapTrigger::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrapTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "BaseTrapTrigger::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrapTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "A+psSme2TO3cOE5WA1M34PIbum4cVDDS2c+R/juHW3M="
+        },
+        {
+          "Name": "BaseTrapTrigger::OnObjectAdded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrapTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjectAdded",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "WJ5sRCziAPnQ7n4UOb8pP6jxCRVPkT1ft0FqzefL8wI="
+        },
+        {
+          "Name": "ArcadeNetworkTrigger::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ArcadeNetworkTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "txVwqoInpJFFkihF9aaY63Vao6z0LII+X7WGIJ+ICXc="
+        },
+        {
+          "Name": "AITraversalArea::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AITraversalArea",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "DHuT+Ng3xLmtW3qXrAxvpxbSp4UYI9kfKfRuyFKTr9E="
+        },
+        {
+          "Name": "AITraversalArea::OnEntityEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AITraversalArea",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "VkuJIcK+Lmq7xM6VUckZHyLTEeTkCKelZ80YsJBbVIs="
+        },
+        {
+          "Name": "AITraversalArea::OnEntityLeave",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AITraversalArea",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEntityLeave",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "TaSGxLvF/ybAYVcjV6Wfi/iwVtaaSuMyCFFEdXPkO5k="
+        },
+        {
+          "Name": "DirectionalDamageTrigger::InterestedInObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DirectionalDamageTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "InterestedInObject",
+            "FullTypeName": "UnityEngine.GameObject",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "06D3sK4lEWVLEWpiMJZOodOfPJ9o7t/3UClLYSKvfTg="
+        },
+        {
+          "Name": "DirectionalDamageTrigger::OnEmpty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DirectionalDamageTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnEmpty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "vUmQWm0p5R7e+wCOQH8Q2k+Ivax9veKRwDFz7/2GbPo="
+        },
+        {
+          "Name": "DirectionalDamageTrigger::OnObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DirectionalDamageTrigger",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjects",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "36vENTQy/RN+sZ8Hmjp6wjPpWwYExkxvYBvBA2NRxLM="
         }
       ],
       "Fields": [

@@ -10080,6 +10080,36 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 2,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnDistanceCheck",
+            "HookName": "OnDistanceCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity/RPC_Server/MaxDistance",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Test",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.UInt32",
+                "System.String",
+                "BaseEntity",
+                "BasePlayer",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "Xks1zb4B29Be4uThTonzc2ffN/4otAcEVedcXuj1jpo=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 22,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,

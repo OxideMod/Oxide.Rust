@@ -8874,32 +8874,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0.Ip, a0.Message",
-            "HookTypeName": "Simple",
-            "Name": "IOnRconCommand [exp, internal]",
-            "HookName": "IOnRconCommand",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Facepunch.RCon",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "OnCommand",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Facepunch.RCon/Command"
-              ]
-            },
-            "MSILHash": "1w4P699UMstt0f8j42J7TJcBhfheYUycaMF2UQd5SSg=",
-            "BaseHookName": null,
-            "HookCategory": "Server"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 59,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
@@ -17256,7 +17230,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this.Socket.ConnectionInfo.ClientIpAddress, a0",
             "HookTypeName": "Simple",
-            "Name": "IOnRconCommand [web, internal]",
+            "Name": "IOnRconCommand [internal]",
             "HookName": "IOnRconCommand",
             "AssemblyName": "Facepunch.Rcon.dll",
             "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass10_1",

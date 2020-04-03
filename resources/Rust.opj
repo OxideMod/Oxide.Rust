@@ -3622,6 +3622,32 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 22,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, this, l2, l3",
+            "HookTypeName": "Simple",
+            "Name": "CanChangeSkin",
+            "HookName": "CanChangeSkin",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RepairBench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ChangeSkin",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "RKKLW0k9FjxvYiUdARWOGRsRNENUApcixpbz43bRWdE=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 14,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

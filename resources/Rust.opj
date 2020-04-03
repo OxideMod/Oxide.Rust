@@ -5466,34 +5466,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, this",
-            "HookTypeName": "Simple",
-            "Name": "CanLootEntity [StorageContainer]",
-            "HookName": "CanLootEntity",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "StorageContainer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "PlayerOpenLoot",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "BasePlayer",
-                "System.String",
-                "System.Boolean"
-              ]
-            },
-            "MSILHash": "NdsmTEyOJvbk4SQn3LeQS6FpwKYipzAfaNvwcjzBjrk=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 108,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
@@ -10470,6 +10442,71 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "CanLootEntity"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanLootEntity [StorageContainer]",
+            "HookName": "CanLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "StorageContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerOpenLoot",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.String",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "NdsmTEyOJvbk4SQn3LeQS6FpwKYipzAfaNvwcjzBjrk=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 10,

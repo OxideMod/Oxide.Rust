@@ -10025,35 +10025,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 2,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "OnVisibilityCheck",
-            "HookName": "OnVisibilityCheck",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseEntity/RPC_Server/IsVisible",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Test",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "System.String",
-                "BaseEntity",
-                "BasePlayer",
-                "System.Single"
-              ]
-            },
-            "MSILHash": "ZxqoG8cIHQdpqnJ7Jao8igs0uCTwZ3G/Uv2l3vWP188=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 22,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
@@ -10373,10 +10344,10 @@
             "InjectionIndex": 18,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "a2, a3",
+            "ArgumentString": "a2, a3, a0, a1",
             "HookTypeName": "Simple",
-            "Name": "OnItemActiveCheck",
-            "HookName": "OnItemActiveCheck",
+            "Name": "OnEntityActiveCheck",
+            "HookName": "OnEntityActiveCheck",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseEntity/RPC_Server/IsActiveItem",
             "Flagged": false,
@@ -10393,7 +10364,7 @@
             },
             "MSILHash": "JmO8NPncBUHJCqKo6tf/pvTGizVB0CeGyhydaZcGA10=",
             "BaseHookName": null,
-            "HookCategory": "Item"
+            "HookCategory": "Entity"
           }
         },
         {
@@ -10402,10 +10373,10 @@
             "InjectionIndex": 18,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "a2, a3",
+            "ArgumentString": "a2, a3, a0, a1",
             "HookTypeName": "Simple",
-            "Name": "OnItemFromOwnerCheck",
-            "HookName": "OnItemFromOwnerCheck",
+            "Name": "OnEntityFromOwnerCheck",
+            "HookName": "OnEntityFromOwnerCheck",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseEntity/RPC_Server/FromOwner",
             "Flagged": false,
@@ -10422,7 +10393,7 @@
             },
             "MSILHash": "c7FFT+8KoNRIoYuCXfKc9fbLm1zN8aaCToVB1/Ij0so=",
             "BaseHookName": null,
-            "HookCategory": "Item"
+            "HookCategory": "Entity"
           }
         },
         {
@@ -10496,6 +10467,64 @@
               "Parameters": []
             },
             "MSILHash": "xYGSp+PrJ9Bu/gFbtTxe3ugNFWGwuUugv7a6hESblns=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a2, a3, a0, a1, a4",
+            "HookTypeName": "Simple",
+            "Name": "OnEntityVisibilityCheck",
+            "HookName": "OnEntityVisibilityCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity/RPC_Server/IsVisible",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Test",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.UInt32",
+                "System.String",
+                "BaseEntity",
+                "BasePlayer",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "T1pa+k8VqlMF14rSDkWt4pL3oAcFSWWZNXbfohz5PJ0=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a2, a3, a0, a1, a4",
+            "HookTypeName": "Simple",
+            "Name": "OnEntityDistanceCheck",
+            "HookName": "OnEntityDistanceCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity/RPC_Server/MaxDistance",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Test",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.UInt32",
+                "System.String",
+                "BaseEntity",
+                "BasePlayer",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "Xks1zb4B29Be4uThTonzc2ffN/4otAcEVedcXuj1jpo=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }

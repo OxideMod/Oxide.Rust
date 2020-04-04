@@ -1358,30 +1358,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 68,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l3",
-            "HookTypeName": "Simple",
-            "Name": "OnQuarryGather",
-            "HookName": "OnQuarryGather",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "MiningQuarry",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "ProcessResources",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "hSFWlPVTsz0O486w5skwJHQ+VE101/6r20kw0mnNE7o=",
-            "BaseHookName": null,
-            "HookCategory": "Resource"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 11,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -10588,6 +10564,55 @@
               ]
             },
             "MSILHash": "mYR4HykOMFV7f1kXCpgaJOEJCN2cs6Lqhzz3klVNz64=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 68,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnQuarryGather"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_3",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 84
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnQuarryGather",
+            "HookName": "OnQuarryGather",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MiningQuarry",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ProcessResources",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "hSFWlPVTsz0O486w5skwJHQ+VE101/6r20kw0mnNE7o=",
             "BaseHookName": null,
             "HookCategory": "Resource"
           }

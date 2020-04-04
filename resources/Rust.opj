@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust-release\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -10261,13 +10261,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 22,
-            "ReturnBehavior": 1,
+            "InjectionIndex": 26,
+            "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, a0",
             "HookTypeName": "Simple",
-            "Name": "OnGrowableGather",
-            "HookName": "OnGrowableGather",
+            "Name": "OnGrowableGathered",
+            "HookName": "OnGrowableGathered",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "GrowableEntity",
             "Flagged": false,
@@ -10564,6 +10564,32 @@
             "MSILHash": "Xks1zb4B29Be4uThTonzc2ffN/4otAcEVedcXuj1jpo=",
             "BaseHookName": null,
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnGrowableGather",
+            "HookName": "OnGrowableGather",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GrowableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PickFruit",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "mYR4HykOMFV7f1kXCpgaJOEJCN2cs6Lqhzz3klVNz64=",
+            "BaseHookName": null,
+            "HookCategory": null
           }
         }
       ],

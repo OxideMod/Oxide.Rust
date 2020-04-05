@@ -7930,15 +7930,15 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 14,
+            "InjectionIndex": 8,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnEntityEnter [TriggerParent]",
+            "Name": "OnEntityEnter [TriggerComfort]",
             "HookName": "OnEntityEnter",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "TriggerParent",
+            "TypeName": "TriggerComfort",
             "Flagged": false,
             "Signature": {
               "Exposure": 3,
@@ -7948,7 +7948,7 @@
                 "BaseEntity"
               ]
             },
-            "MSILHash": "0VHoxc+fHTGPGlucToJHsrY+ne5OZLVFmIcnoHfuD3I=",
+            "MSILHash": "Ha/G5PpnIvbeiGjoai70y6dOyGdWcHJjR4ol3F2Kq60=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -7956,15 +7956,15 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 3,
+            "InjectionIndex": 7,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnEntityLeave [TriggerParent]",
+            "Name": "OnEntityLeave [TriggerComfort]",
             "HookName": "OnEntityLeave",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "TriggerParent",
+            "TypeName": "TriggerComfort",
             "Flagged": false,
             "Signature": {
               "Exposure": 3,
@@ -7974,7 +7974,7 @@
                 "BaseEntity"
               ]
             },
-            "MSILHash": "Ip0M/qnc24HSTkam7+pUy5dYxPgAXi20j+8ix+0R4WM=",
+            "MSILHash": "OqpU6qb9r4hSsJkplO/D7vdXwWnZr+qEsbWZfM9v9TA=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }

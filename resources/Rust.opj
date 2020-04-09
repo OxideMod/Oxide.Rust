@@ -10620,6 +10620,208 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 166,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [HTN.Murderer]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.HTN.Murderer.MurdererDefinition",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnCreateCorpse",
+              "ReturnType": "BaseCorpse",
+              "Parameters": [
+                "HTNPlayer"
+              ]
+            },
+            "MSILHash": "XKbxqvkvJN6cQmm2bd4XIkOxf3v9MN34F0ffXYHtVvc=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 130,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [HTN.Scientist]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.HTN.Scientist.ScientistDefinition",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnCreateCorpse",
+              "ReturnType": "BaseCorpse",
+              "Parameters": [
+                "HTNPlayer"
+              ]
+            },
+            "MSILHash": "ZV3sZvkz30yPhzxi4xfgWl4w4vsJQgORN0kU0QeQ4Pw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 137,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [HTN.NPCTurret]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.HTN.NPCTurret.NPCTurretDefinition",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnCreateCorpse",
+              "ReturnType": "BaseCorpse",
+              "Parameters": [
+                "HTNPlayer"
+              ]
+            },
+            "MSILHash": "FC66JmDjrJuHlhNfG0iuVUQAY7aKUOopsFfQE9qidbA=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 130,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [HTN.ScientistAStar]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.HTN.ScientistAStar.ScientistAStarDefinition",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnCreateCorpse",
+              "ReturnType": "BaseCorpse",
+              "Parameters": [
+                "HTNPlayer"
+              ]
+            },
+            "MSILHash": "ZXKCFeJjA7IK4IeHlXnMnnllSlUN2hB35aJakQJx7RM=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 130,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [HTN.ScientistJunkpile]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.HTN.ScientistJunkpile.ScientistJunkpileDefinition",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnCreateCorpse",
+              "ReturnType": "BaseCorpse",
+              "Parameters": [
+                "HTNPlayer"
+              ]
+            },
+            "MSILHash": "mS8SBEz1oHbdVTyOjeMzw0KFsMj74eSrrE2+ZQbKprQ=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 99,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [HumanNPC]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HumanNPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CreateCorpse",
+              "ReturnType": "BaseCorpse",
+              "Parameters": []
+            },
+            "MSILHash": "Kf7VIdbQMRz75RvD4NuyplXFqhnhpvTJ5Wv+qseAbhk=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 123,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [NPCMurderer]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCMurderer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CreateCorpse",
+              "ReturnType": "BaseCorpse",
+              "Parameters": []
+            },
+            "MSILHash": "AZ48FOW03Lrozdmy/TgQLBEevdNaTl3CHrwJHLEVXG0=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 99,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [Scientist]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Scientist",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CreateCorpse",
+              "ReturnType": "BaseCorpse",
+              "Parameters": []
+            },
+            "MSILHash": "NRJ79HMhjDs2I28hQrAJJUFaD9NexeTcVNvF1GeaoJg=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 22,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

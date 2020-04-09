@@ -17103,6 +17103,63 @@
             "Parameters": []
           },
           "MSILHash": "36vENTQy/RN+sZ8Hmjp6wjPpWwYExkxvYBvBA2NRxLM="
+        },
+        {
+          "Name": "CCTV_RC::numViewers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CCTV_RC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "numViewers",
+            "FullTypeName": "System.Int32 CCTV_RC::numViewers",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CCTV_RC::yawAmount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CCTV_RC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "yawAmount",
+            "FullTypeName": "System.Single CCTV_RC::yawAmount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CCTV_RC::pitchAmount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CCTV_RC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "pitchAmount",
+            "FullTypeName": "System.Single CCTV_RC::pitchAmount",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

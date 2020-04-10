@@ -10595,9 +10595,19 @@
                 "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
               },
               {
-                "OpCode": "brtrue_s",
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "beq_s",
                 "OpType": "Instruction",
-                "Operand": 84
+                "Operand": 68
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
               }
             ],
             "HookTypeName": "Modify",

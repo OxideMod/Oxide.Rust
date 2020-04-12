@@ -17398,6 +17398,104 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "WaterCatcher::collectInterval",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WaterCatcher",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "collectInterval",
+            "FullTypeName": "System.Single WaterCatcher::collectInterval",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "WaterCatcher::TestIsOutside",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WaterCatcher",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TestIsOutside",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "Lg1iPcS6dY6bDQWnNH0ub7zZ+R7z2eL940NlkyJY8yI="
+        },
+        {
+          "Name": "WaterCatcher::IsFull",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WaterCatcher",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsFull",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "Exrygi1qzLA5/KLm4s060HBG1fIMT08maXmzhn0iUWI="
+        },
+        {
+          "Name": "WaterCatcher::CollectWater",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WaterCatcher",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CollectWater",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "qLkZbS6GCEy+x8D9oKqbYqdK6E8vzKp8HqEh8OPtrZ0="
+        },
+        {
+          "Name": "WaterCatcher::AddResource",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WaterCatcher",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "AddResource",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "/+Xji9jaHhcuZdX24bBkGpfOFosanbttPD05SdS+Mi4="
         }
       ],
       "Fields": [

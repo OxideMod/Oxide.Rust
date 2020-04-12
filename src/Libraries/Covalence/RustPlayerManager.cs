@@ -122,13 +122,42 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <returns></returns>
         public IEnumerable<IPlayer> FindPlayers(string partialNameOrId)
         {
-            foreach (RustPlayer player in allPlayers.Values)
+            List<IPlayer> foundPlayers = new List<IPlayer>();
+
+            foreach (RustPlayer player in connectedPlayers.Values)
             {
-                if (player.Name != null && player.Name.IndexOf(partialNameOrId, StringComparison.OrdinalIgnoreCase) >= 0 || player.Id == partialNameOrId)
+                if (player.Name.Equals(partialNameOrId, StringComparison.OrdinalIgnoreCase) || player.Id == partialNameOrId)
                 {
-                    yield return player;
+                    foundPlayers = new List<IPlayer> { player };
+                    break;
+                }
+
+                if (player.Name.IndexOf(partialNameOrId, StringComparison.OrdinalIgnoreCase) > 0)
+                {
+                    foundPlayers.Add(player);
                 }
             }
+
+            if (foundPlayers.Count() > 0)
+            {
+                return foundPlayers;
+            }
+
+            foreach (RustPlayer player in allPlayers.Values)
+            {
+                if (player.Name.Equals(partialNameOrId, StringComparison.OrdinalIgnoreCase) || player.Id == partialNameOrId)
+                {
+                    foundPlayers = new List<IPlayer> { player };
+                    break;
+                }
+
+                if (player.Name.IndexOf(partialNameOrId, StringComparison.OrdinalIgnoreCase) > 0)
+                {
+                    foundPlayers.Add(player);
+                }
+            }
+
+            return foundPlayers;
         }
 
         #endregion Player Finding

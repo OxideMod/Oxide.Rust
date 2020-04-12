@@ -115,7 +115,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// </summary>
         /// <param name="reason"></param>
         /// <param name="duration"></param>
-        public void Ban(string reason, TimeSpan duration = default(TimeSpan)) => Player.Ban(steamId, reason);
+        public void Ban(string reason, TimeSpan duration = default) => Player.Ban(steamId, reason);
 
         /// <summary>
         /// Gets the amount of time remaining on the player's ban

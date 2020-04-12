@@ -12,7 +12,7 @@ namespace Oxide.Game.Rust.Libraries
     {
         #region Initialization
 
-        private static string ipPattern = @":{1}[0-9]{1}\d*";
+        private static readonly string ipPattern = @":{1}[0-9]{1}\d*";
 
         internal readonly Permission permission = Interface.Oxide.GetLibrary<Permission>();
 

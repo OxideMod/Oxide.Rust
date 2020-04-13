@@ -10858,7 +10858,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 5,
+            "InjectionIndex": 6,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a1, a2, a0",
@@ -10867,7 +10867,7 @@
             "HookName": "OnConstructionCheck",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Construction",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "UpdatePlacement",

@@ -10854,6 +10854,34 @@
             "BaseHookName": null,
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 5,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a1, a2, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnConstructionCheck",
+            "HookName": "OnConstructionCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Construction",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdatePlacement",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "UnityEngine.Transform",
+                "Construction",
+                "Construction/Target&"
+              ]
+            },
+            "MSILHash": "nsmJQjrAxjsK88KlpPyWtJomdILAmVdokMBfxZAUqMY=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [

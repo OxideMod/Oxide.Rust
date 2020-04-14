@@ -581,7 +581,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 1239,
+            "InjectionIndex": 1391,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -599,7 +599,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "4BXa0mlwx4VyFPHpWJBR44WLE14tndMhyVgJD/qKJgk=",
+            "MSILHash": "bsX93aA9sZweOFh9jrmEJ0eN5Mz3RRy3ymg8+xNp/Es=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -10853,34 +10853,6 @@
             "MSILHash": "RKKLW0k9FjxvYiUdARWOGRsRNENUApcixpbz43bRWdE=",
             "BaseHookName": null,
             "HookCategory": "Item"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 6,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a1, a2, a0",
-            "HookTypeName": "Simple",
-            "Name": "OnConstructionCheck",
-            "HookName": "OnConstructionCheck",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Construction",
-            "Flagged": true,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "UpdatePlacement",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "UnityEngine.Transform",
-                "Construction",
-                "Construction/Target&"
-              ]
-            },
-            "MSILHash": "nsmJQjrAxjsK88KlpPyWtJomdILAmVdokMBfxZAUqMY=",
-            "BaseHookName": null,
-            "HookCategory": "Structure"
           }
         }
       ],

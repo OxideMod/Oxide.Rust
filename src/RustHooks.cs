@@ -95,7 +95,7 @@ namespace Oxide.Game.Rust
                 return true; // Ignore console commands from client during connection
             }
 
-            return arg.cmd.FullName != "chat.say" ? Interface.CallHook("OnServerCommand", arg) : null;
+            return arg.cmd.FullName != "chat.say" && arg.cmd.FullName != "chat.teamsay" ? Interface.CallHook("OnServerCommand", arg) : null;
         }
 
         /// <summary>

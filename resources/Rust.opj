@@ -581,7 +581,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 1391,
+            "InjectionIndex": 1256,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -599,7 +599,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "bsX93aA9sZweOFh9jrmEJ0eN5Mz3RRy3ymg8+xNp/Es=",
+            "MSILHash": "4UeRoWE//IwLMdvZcXrsYYJsDrBElYYJeaX2j8dbpQg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -626,7 +626,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "kx/T9tmyuBSbbWs5xdD1pGvP5UJmR7sEv7FyXth98eg=",
+            "MSILHash": "ySwG7r72YuUSNe7ijuY4lxsE8B9GvtugpfDoogyqISg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -652,7 +652,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "QYgPTsoYaDKyiLHpcMIKs1Q5YSUZcKwYd/ajLuT3zKI=",
+            "MSILHash": "X6vShfbY5x1QEJHBHKt5/PxTzeNJH1XSh/OMY/sFBPI=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2380,7 +2380,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "YxCCLSUwbROC7zwo396uzEd2+oeAO5FeCW9rbmq2vVQ=",
+            "MSILHash": "QkpdCIC6AnvyUAHyw4OoQ5rYf5z2Uvz2AqcWw11WGgQ=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2407,7 +2407,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "9PlWvPkd9LrBvhP9XP8bKEcMvIMearX6FJpDqoWaatQ=",
+            "MSILHash": "fE/U49z1nUZ34C7vfQTAdt+lYf4nerq5IygZGQLSEtc=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2458,7 +2458,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "9PlWvPkd9LrBvhP9XP8bKEcMvIMearX6FJpDqoWaatQ=",
+            "MSILHash": "fE/U49z1nUZ34C7vfQTAdt+lYf4nerq5IygZGQLSEtc=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -3334,7 +3334,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "YZlUFCCjNxkO9vBCNLSRblW1PdnJ/KV54cai7s/7rJA=",
+            "MSILHash": "WDUIgybUSSexZiI3g5mz6tuMpECXuSSa8L+qL+MNM+U=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -3386,7 +3386,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "ea5Q5qHyJYLl7npbWNrKyqL6oDPmTMV7XHxpAVIfRJE=",
+            "MSILHash": "oUlzBJV1mKo9cQreIIbxhbZswEz2iumELhKyKh0VvEE=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -3464,7 +3464,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "hYYVuhw6EBw+dsvkCc0wQBmn1JyqFRo4BsTlFhIvzLc=",
+            "MSILHash": "op4LvaaGCGG8MaUbocuJTpM4VMK60TSIehUHMHwDgSk=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -6177,7 +6177,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "AzuSKag8j5NR+iTbDZbVV2pEwg6qQf9yZdpr5jrKbQE=",
+            "MSILHash": "Cbqr4VeBudtOoV1WGD1mFVFBc+4M21YIrknM5CbXINc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -7801,7 +7801,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 14,
+            "InjectionIndex": 13,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1, l0",
@@ -7819,7 +7819,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "s8vkTYRkSBhfystuNiP4LUw7bkTa9J3uVX++o7hPv+w=",
+            "MSILHash": "o3cWlsz/LSr0rByS6+j5OtOdtlCAYeiewE2luzaJGmk=",
             "BaseHookName": null,
             "HookCategory": "Vending"
           }
@@ -7904,7 +7904,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 4,
+            "InjectionIndex": 17,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": "",
@@ -7922,7 +7922,7 @@
                 "UnityEngine.Collision"
               ]
             },
-            "MSILHash": "qLdYHS95T/TsBqGnTeZWfISZugZYtzCSJ0OA274IVs0=",
+            "MSILHash": "qCfK0+6AitbE7+lw/mArLL0tZ9DFGbvAmkSc0zjyKb4=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -8480,7 +8480,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "ZUqBT/FGgQGTqIL8zMhPQxOMxzORUrxyHufYqnetdWY=",
+            "MSILHash": "DFyqDvrXQRUBfHUt6oTFJK/tNQweKmGZc1Uf4UFabFY=",
             "BaseHookName": null,
             "HookCategory": "Resource"
           }
@@ -8840,7 +8840,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "5wbDpB2+Ym/Nz+xKiq3HQONU1l8tPpA42QqwmiZFYNw=",
+            "MSILHash": "0bx7qwgHt58xkTR6KabZ/4UDUZPhikogEQiXn2Ylzgw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8864,7 +8864,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "2nRzDiC5oE5l4XEMNRVM2HlbFtRK2SKdiV2nwBfxKCs=",
+            "MSILHash": "cICOgqlJq5ED3aIAwAuSUtb2Xn9ZWHU4MEZ2EQG7ang=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8888,7 +8888,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "2nRzDiC5oE5l4XEMNRVM2HlbFtRK2SKdiV2nwBfxKCs=",
+            "MSILHash": "cICOgqlJq5ED3aIAwAuSUtb2Xn9ZWHU4MEZ2EQG7ang=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -10877,44 +10877,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "CodeLock::whitelistPlayers",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "CodeLock",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              3
-            ],
-            "Name": "whitelistPlayers",
-            "FullTypeName": "System.Collections.Generic.List`1<System.UInt64> CodeLock::whitelistPlayers",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "CodeLock::guestPlayers",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "CodeLock",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              3
-            ],
-            "Name": "guestPlayers",
-            "FullTypeName": "System.Collections.Generic.List`1<System.UInt64> CodeLock::guestPlayers",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "CodeLock::code",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "CodeLock",
@@ -12874,7 +12836,7 @@
           "Flagged": false,
           "Signature": {
             "Exposure": [
-              0
+              1
             ],
             "Name": "waterStorage",
             "FullTypeName": "LiquidContainer WaterPurifier::waterStorage",

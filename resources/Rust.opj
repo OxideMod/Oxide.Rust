@@ -10893,40 +10893,6 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 0,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "Assembly-CSharp|BaseNetworkable|UpdateNetworkGroup"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnNetworkLimitEndUpdate [patch]",
-            "HookName": "OnNetworkLimitEndUpdate [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseNetworkable",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "OnNetworkLimitEnd",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "Wt6f79GNcVLCMMLvNQKjgnm6Z+h1F+pZm8OxaKr1ZPE=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
-          }
         }
       ],
       "Modifiers": [

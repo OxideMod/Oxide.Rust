@@ -69,7 +69,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "NiMhKdGpO9tsIEE7fBzgfllNK0IkQRSTDES4Dla0Ww8=",
+            "MSILHash": "ulAzL1JI7pLiqQop+6gVaQqwZtxqfPvcwoIYeMt5jKE=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -599,7 +599,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "4UeRoWE//IwLMdvZcXrsYYJsDrBElYYJeaX2j8dbpQg=",
+            "MSILHash": "LIY0vkcwTQqZjAvVDhHc93EFiLq2NNOTuzIovWpcK6k=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -652,7 +652,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "X6vShfbY5x1QEJHBHKt5/PxTzeNJH1XSh/OMY/sFBPI=",
+            "MSILHash": "WGU2UKyFcTk8YW+mP6H+/yvZKlSQfDaeF/LxxjqY5Zo=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -730,7 +730,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "WhawlNhgXy2Ev0+B+HItGSrTNMGvLTzNEwiDE9I95/g=",
+            "MSILHash": "rw3CDBvF03WJOVVzwxtVNxUwF8j91ha1W7cHknY9U1w=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -1074,7 +1074,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 188,
+            "InjectionIndex": 192,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, l1",
@@ -1092,7 +1092,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "O8iryYASdbFR8uXJGaMNnLRWnWgvYIZ7mugm9hlFb3o=",
+            "MSILHash": "05/fqZz1AatIaI4UB+xghAguaUaq4uznGpcJalYrfH0=",
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
@@ -1715,7 +1715,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "TvYaRFG3QxwzSStP0gqrd+Hze1Qr3EcC9ZLhFE2Osyg=",
+            "MSILHash": "SVgaydJtuvJgxcSf04LAVwyGuUPadxGvG30nYGCUsfg=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -2380,7 +2380,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "QkpdCIC6AnvyUAHyw4OoQ5rYf5z2Uvz2AqcWw11WGgQ=",
+            "MSILHash": "0w3IR95oqr2w2NWBG3aM3un1sENmMbZSQLP5eqnH7Lc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2407,7 +2407,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "fE/U49z1nUZ34C7vfQTAdt+lYf4nerq5IygZGQLSEtc=",
+            "MSILHash": "lJmMjp5zT1JWzZhLsIq214cqOdHdgOcfHr1Zmtvi/GQ=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2458,7 +2458,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "fE/U49z1nUZ34C7vfQTAdt+lYf4nerq5IygZGQLSEtc=",
+            "MSILHash": "lJmMjp5zT1JWzZhLsIq214cqOdHdgOcfHr1Zmtvi/GQ=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -5197,8 +5197,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, a0",
             "HookTypeName": "Simple",
-            "Name": "IOnActiveItemChange",
-            "HookName": "IOnActiveItemChange",
+            "Name": "OnActiveItemChange",
+            "HookName": "OnActiveItemChange",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
             "Flagged": false,
@@ -5442,7 +5442,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 108,
+            "InjectionIndex": 132,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1",
@@ -5461,7 +5461,7 @@
                 "Construction"
               ]
             },
-            "MSILHash": "jEXiWCOPKhPwZZswzybsUdYNXh4vLqSNXG2sYHuRCac=",
+            "MSILHash": "swEmuTDQI9fgEeu4V2GbCjrguSXVbbUnadrJ1jLKhX4=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -6008,7 +6008,7 @@
           "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
+            "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
             "Name": "OnHelicopterAttacked",
@@ -7553,7 +7553,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "dxEhL/ai02iuLEITY/tLiE0fSc2Cvcz6ututZX3FJnw=",
+            "MSILHash": "Dskw6Uzl58Crw1lIz4WZmQ1ux67UOb9WkGFyijf5C20=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8234,7 +8234,7 @@
               "ReturnType": "BasePlayer/SpawnPoint",
               "Parameters": []
             },
-            "MSILHash": "/LHf3I9HJdoe0iMF4cTKj5hb6wJgRjK8zrW2h/zTz50=",
+            "MSILHash": "G4V0EDzLhyd33FA5XtwnBeLQ4ipyYgPkhfwuHgQZ04Y=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8284,7 +8284,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "VxzaR/2tT0liN2uQ+5EZQQBmAvJESxSBBlJ2xBE0nBE=",
+            "MSILHash": "xoS8oCUwsL+EoqIh41YKwdbYJ5Vrw+9Eu10vUfoU4Bk=",
             "BaseHookName": null,
             "HookCategory": "Team"
           }
@@ -8567,8 +8567,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, l1",
             "HookTypeName": "Simple",
-            "Name": "IOnActiveItemChanged",
-            "HookName": "IOnActiveItemChanged",
+            "Name": "OnActiveItemChanged",
+            "HookName": "OnActiveItemChanged",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
             "Flagged": false,
@@ -8581,7 +8581,7 @@
               ]
             },
             "MSILHash": "jc/s/C+L+BAzdNjmcKYiQhC8jUmoZXHwxe4pEJ5cOHo=",
-            "BaseHookName": "IOnActiveItemChange",
+            "BaseHookName": "OnActiveItemChange",
             "HookCategory": "Player"
           }
         },
@@ -8631,7 +8631,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "a5aL+6U1NrBg/PnJxId0HOlWO3PinZRVJgQc4S3mFCY=",
+            "MSILHash": "Yl1wbKw9dcKhevx8JjTYPuclxzqd0ESw+DfhglDuABY=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -8718,32 +8718,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 7,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0",
-            "HookTypeName": "Simple",
-            "Name": "OnMapMarkerAdd",
-            "HookName": "OnMapMarkerAdd",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Server_AddMarker",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "g/MKVLeOHdXr4B8KUEa8XuEO9fYxDmUxOl8ghi6hH4k=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -8764,32 +8738,6 @@
             },
             "MSILHash": "AXqZ3Hi9DrLAi69EjHmXLFXolml8QxqiTzrbAB2g6mU=",
             "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 21,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0",
-            "HookTypeName": "Simple",
-            "Name": "OnMapMarkerAdded",
-            "HookName": "OnMapMarkerAdded",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Server_AddMarker",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "g/MKVLeOHdXr4B8KUEa8XuEO9fYxDmUxOl8ghi6hH4k=",
-            "BaseHookName": "OnMapMarkerAdd",
             "HookCategory": "Player"
           }
         },
@@ -8864,7 +8812,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "cICOgqlJq5ED3aIAwAuSUtb2Xn9ZWHU4MEZ2EQG7ang=",
+            "MSILHash": "1lA9L7yK4fL9eTtT+HDPF9TI6jKXsJVjCeD0WOoaTHU=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8888,7 +8836,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "cICOgqlJq5ED3aIAwAuSUtb2Xn9ZWHU4MEZ2EQG7ang=",
+            "MSILHash": "1lA9L7yK4fL9eTtT+HDPF9TI6jKXsJVjCeD0WOoaTHU=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -10097,7 +10045,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "INDi0jjLjGTwHlwQstbYzqbJUOoET3ZjYLN1rMBsycs=",
+            "MSILHash": "pt7TjjPmiEy/8S2vxoWZM0l8TItYeoM4seZ80EP3qrs=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -10892,6 +10840,123 @@
             "MSILHash": "U2nnAEWL3vgLba69tc7FKRX2SBjq2d6QEiIGncnAh7k=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnMapMarkerAdd"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|read"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Rust.Data|ProtoBuf.MapNote|Deserialize(System.IO.Stream)"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 1032
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|read"
+              },
+              {
+                "OpCode": "ldc_i4",
+                "OpType": "Int32",
+                "Operand": "9"
+              },
+              {
+                "OpCode": "conv_i8",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "mscorlib|System.IO.Stream|set_Position"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnMapMarkerAdd",
+            "HookName": "OnMapMarkerAdd",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_AddMarker",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "ujqKazYqILCY/5ROA+Jn5dIlTiOfH15L+2+R5ZY1Azg=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 29,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.ServerCurrentMapNote",
+            "HookTypeName": "Simple",
+            "Name": "OnMapMarkerAdded",
+            "HookName": "OnMapMarkerAdded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_AddMarker",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "ujqKazYqILCY/5ROA+Jn5dIlTiOfH15L+2+R5ZY1Azg=",
+            "BaseHookName": "OnMapMarkerAdd",
+            "HookCategory": "Player"
           }
         }
       ],

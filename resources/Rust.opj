@@ -17975,6 +17975,44 @@
             ]
           },
           "MSILHash": "ZSy45ovlNawNBKDs4G0iJTqz5SB6soI/6ibT5XCI4EA="
+        },
+        {
+          "Name": "WaterPump::CreateWater",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WaterPump",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CreateWater",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "Z6r0t7GGLHAE2eeFqNAE/PuIVQnK+Lt6fz1e3c5lJuA="
+        },
+        {
+          "Name": "WaterPump::IsFull",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WaterPump",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsFull",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "Exrygi1qzLA5/KLm4s060HBG1fIMT08maXmzhn0iUWI="
         }
       ],
       "Fields": [

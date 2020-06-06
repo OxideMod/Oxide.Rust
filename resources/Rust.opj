@@ -9463,7 +9463,7 @@
             "HookName": "OnSendModelState",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 0,
               "Name": "SendModelState",
@@ -10893,7 +10893,7 @@
             "HookName": "OnMapMarkerAdd",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "Server_AddMarker",
@@ -10919,7 +10919,7 @@
             "HookName": "OnMapMarkerAdded",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "Server_AddMarker",

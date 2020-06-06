@@ -9463,7 +9463,7 @@
             "HookName": "OnSendModelState",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 0,
               "Name": "SendModelState",
@@ -10893,7 +10893,7 @@
             "HookName": "OnMapMarkerAdd",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "Server_AddMarker",
@@ -10919,7 +10919,7 @@
             "HookName": "OnMapMarkerAdded",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "Server_AddMarker",
@@ -17748,6 +17748,233 @@
             ]
           },
           "MSILHash": "2sNnuW6Wb9dCXkV18R41Gmoz3zten34amxiPVTJBGws="
+        },
+        {
+          "Name": "OreResourceEntity::bonusesSpawned",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "OreResourceEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "bonusesSpawned",
+            "FullTypeName": "System.Int32 OreResourceEntity::bonusesSpawned",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "OreResourceEntity::lastNodeDir",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "OreResourceEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastNodeDir",
+            "FullTypeName": "UnityEngine.Vector3 OreResourceEntity::lastNodeDir",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TreeEntity::xMarker",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TreeEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "xMarker",
+            "FullTypeName": "BaseEntity TreeEntity::xMarker",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DeployVolumeEntityBounds::bounds",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeployVolumeEntityBounds",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "bounds",
+            "FullTypeName": "UnityEngine.Bounds DeployVolumeEntityBounds::bounds",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DeployVolumeEntityBoundsReverse::bounds",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeployVolumeEntityBoundsReverse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "bounds",
+            "FullTypeName": "UnityEngine.Bounds DeployVolumeEntityBoundsReverse::bounds",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DeployVolumeEntityBoundsReverse::layer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeployVolumeEntityBoundsReverse",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "layer",
+            "FullTypeName": "System.Int32 DeployVolumeEntityBoundsReverse::layer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingProximity::GetProximity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingProximity",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetProximity",
+            "FullTypeName": "BuildingProximity/ProximityInfo",
+            "Parameters": [
+              "Construction",
+              "UnityEngine.Vector3",
+              "UnityEngine.Quaternion",
+              "Construction",
+              "UnityEngine.Vector3",
+              "UnityEngine.Quaternion"
+            ]
+          },
+          "MSILHash": "js90s5/h3v5L3C+qIRjAZznaDVt4dK0qZw+ByyTaGJE="
+        },
+        {
+          "Name": "ServerProjectile::impacted",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ServerProjectile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "impacted",
+            "FullTypeName": "System.Boolean ServerProjectile::impacted",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ServerProjectile::swimRandom",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ServerProjectile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "swimRandom",
+            "FullTypeName": "System.Single ServerProjectile::swimRandom",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackEntity::StartAttackCooldown",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "StartAttackCooldown",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "QpPeRWKjoMKS1VB3CiT09QZ5Haz79BVZL+b29GmNlhw="
+        },
+        {
+          "Name": "BaseProjectile::CreateProjectileEffectClientside",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseProjectile",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CreateProjectileEffectClientside",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.String",
+              "UnityEngine.Vector3",
+              "UnityEngine.Vector3",
+              "System.Int32",
+              "Network.Connection",
+              "System.Boolean",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "ZSy45ovlNawNBKDs4G0iJTqz5SB6soI/6ibT5XCI4EA="
         }
       ],
       "Fields": [

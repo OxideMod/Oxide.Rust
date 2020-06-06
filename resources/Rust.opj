@@ -17659,6 +17659,46 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "SpawnPopulation::numToSpawn",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnPopulation",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "numToSpawn",
+            "FullTypeName": "System.Int32[] SpawnPopulation::numToSpawn",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::TakeClones",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TakeClones",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "2sNnuW6Wb9dCXkV18R41Gmoz3zten34amxiPVTJBGws="
         }
       ],
       "Fields": [

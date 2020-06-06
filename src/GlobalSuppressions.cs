@@ -30,7 +30,6 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Game.Rust.RustCore.IOnBasePlayerAttacked(BasePlayer,HitInfo)~System.Object")]
 [assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Game.Rust.RustCore.IOnBasePlayerHurt(BasePlayer,HitInfo)~System.Object")]
 [assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Game.Rust.RustCore.IOnPlayerBanned(Network.Connection,Steamworks.AuthResponse)")]
-[assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Game.Rust.RustCore.IOnPlayerChat(BasePlayer,System.String,ConVar.Chat.ChatChannel)~System.Object")]
 [assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Game.Rust.RustCore.IOnPlayerCommand(BasePlayer,System.String)")]
 [assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Game.Rust.RustCore.IOnRconCommand(System.Net.IPAddress,System.String)~System.Object")]
 [assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Game.Rust.RustCore.IOnRconInitialize~System.Object")]
@@ -78,3 +77,4 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Plugins.RustPlugin.base_OnPlayerDisconnected(BasePlayer)")]
 [assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Plugins.RustPlugin.base_OnPlayerDisconnected(BasePlayer)")]
 [assembly: SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Plugins.RustPlugin.base_OnPlayerDisconnected(BasePlayer,System.String)")]
+[assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>", Scope = "member", Target = "~M:Oxide.Game.Rust.RustCore.IOnPlayerChat(System.UInt64,System.String,System.String,ConVar.Chat.ChatChannel,BasePlayer)~System.Object")]

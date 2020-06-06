@@ -287,17 +287,26 @@ namespace Oxide.Game.Rust
         /// <summary>
         /// Called when the player sends a chat message
         /// </summary>
-        /// <param name="player"></param>
+        /// <param name="playerId"></param>
+        /// <param name="playerName"></param>
         /// <param name="message"></param>
         /// <param name="channel"></param>
+        /// <param name="basePlayer"></param>
         /// <returns></returns>
         [HookMethod("IOnPlayerChat")]
-        private object IOnPlayerChat(BasePlayer basePlayer, string message, Chat.ChatChannel channel)
+        private object IOnPlayerChat(ulong playerId, string playerName, string message, Chat.ChatChannel channel, BasePlayer basePlayer)
         {
             // Ignore empty and "default" text
             if (string.IsNullOrEmpty(message) || message.Equals("text"))
             {
                 return true;
+            }
+
+            // Check if using Rust+ app
+            if (basePlayer == null || !basePlayer.IsConnected)
+            {
+                // Call offline chat hook
+                return Interface.CallHook("OnPlayerOfflineChat", playerId, playerName, message, channel);
             }
 
             // Get player objects
@@ -308,9 +317,8 @@ namespace Oxide.Game.Rust
             }
 
             // Call game and covalence hooks
-            object chatSpecific = Interface.CallHook("OnPlayerChat", basePlayer, message, channel);
-            object chatCovalence = Interface.CallHook("OnUserChat", player, message);
-            return chatSpecific ?? chatCovalence; // TODO: Fix hook conflict when multiple return
+            return Interface.CallHook("OnPlayerChat", basePlayer, message, channel)
+                ?? Interface.CallHook("OnUserChat", player, message); // TODO: Fix hook conflict when multiple return
         }
 
         /// <summary>

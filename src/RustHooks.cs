@@ -330,6 +330,12 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnPlayerCommand")]
         private void IOnPlayerCommand(BasePlayer basePlayer, string message)
         {
+            // Check if using Rust+ app
+            if (basePlayer == null || !basePlayer.IsConnected)
+            {
+                return;
+            }
+
             string str = message.Replace("\n", "").Replace("\r", "").Trim();
 
             // Check if it is a chat command

@@ -11036,6 +11036,55 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 43,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnSensorDetect"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_3",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 75
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnSensorDetect",
+            "HookName": "OnSensorDetect",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HBHFSensor",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdatePassthroughAmount",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "dLipSeyTLn5ZgWS85a6SNLFAAYoWpzfb2yszYFTN1fI=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

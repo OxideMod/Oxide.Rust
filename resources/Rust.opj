@@ -9090,32 +9090,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnHorseHitch",
-            "HookName": "OnHorseHitch",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "RidableHorse",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "SetHitch",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "HitchTrough"
-              ]
-            },
-            "MSILHash": "aLI4D4X3SkepF2b90px7w0JPTIY/t+zKMOMOHbdW8ro=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 21,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -10984,6 +10958,59 @@
             "MSILHash": "4e4rHaVfNxrbTapUITWZTuHfOtwc/QagwJlFD3fo3rY=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 2,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnHorseHitch",
+            "HookName": "OnHorseHitch",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HitchTrough",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AttemptToHitch",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "RidableHorse",
+                "HitchTrough/HitchSpot"
+              ]
+            },
+            "MSILHash": "aoW/02S+Dtizt0h9hEPQNUUqi/RafTVvLHLjvvK58y8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnHorseUnhitch",
+            "HookName": "OnHorseUnhitch",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HitchTrough",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Unhitch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "RidableHorse"
+              ]
+            },
+            "MSILHash": "aIg0+e99LOYCwjzef96rFojge5TLcFLjAb+trz4Ob9U=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
           }
         }
       ],

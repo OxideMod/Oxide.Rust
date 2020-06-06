@@ -11012,6 +11012,30 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEventTrigger",
+            "HookName": "OnEventTrigger",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TriggeredEventPrefab",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RunEvent",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "YCvPeLq5/vtQcvkBuAgYc6byWYatUZkfWIFJNKx7rLs=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

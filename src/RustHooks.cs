@@ -380,6 +380,7 @@ namespace Oxide.Game.Rust
         /// Called when the player is authenticating
         /// </summary>
         /// <param name="connection"></param>
+        [HookMethod("OnClientAuth")]
         private void OnClientAuth(Connection connection)
         {
             connection.username = Regex.Replace(connection.username, @"<[^>]*>", string.Empty);

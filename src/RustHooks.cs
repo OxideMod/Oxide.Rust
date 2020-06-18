@@ -129,13 +129,13 @@ namespace Oxide.Game.Rust
         /// <summary>
         /// Called when a player attempts to pickup a DoorCloser entity
         /// </summary>
-        /// <param name="player"></param>
+        /// <param name="basePlayer"></param>
         /// <param name="entity"></param>
         /// <returns></returns>
         [HookMethod("ICanPickupEntity")]
-        private object ICanPickupEntity(BasePlayer player, DoorCloser entity)
+        private object ICanPickupEntity(BasePlayer basePlayer, DoorCloser entity)
         {
-            object callHook = Interface.CallHook("CanPickupEntity", player, entity);
+            object callHook = Interface.CallHook("CanPickupEntity", basePlayer, entity);
             return callHook is bool result && !result ? (object)true : null;
         }
 
@@ -143,17 +143,17 @@ namespace Oxide.Game.Rust
         /// Called when a BasePlayer is attacked
         /// This is used to call OnEntityTakeDamage for a BasePlayer when attacked
         /// </summary>
-        /// <param name="player"></param>
+        /// <param name="basePlayer"></param>
         /// <param name="info"></param>
         [HookMethod("IOnBasePlayerAttacked")]
-        private object IOnBasePlayerAttacked(BasePlayer player, HitInfo info)
+        private object IOnBasePlayerAttacked(BasePlayer basePlayer, HitInfo info)
         {
-            if (!serverInitialized || player == null || info == null || player.IsDead() || isPlayerTakingDamage || player is NPCPlayer)
+            if (!serverInitialized || basePlayer == null || info == null || basePlayer.IsDead() || isPlayerTakingDamage || basePlayer is NPCPlayer)
             {
                 return null;
             }
 
-            if (Interface.CallHook("OnEntityTakeDamage", player, info) != null)
+            if (Interface.CallHook("OnEntityTakeDamage", basePlayer, info) != null)
             {
                 return true;
             }
@@ -161,7 +161,7 @@ namespace Oxide.Game.Rust
             isPlayerTakingDamage = true;
             try
             {
-                player.OnAttacked(info);
+                basePlayer.OnAttacked(info);
             }
             finally
             {
@@ -174,13 +174,13 @@ namespace Oxide.Game.Rust
         /// Called when a BasePlayer is hurt
         /// This is used to call OnEntityTakeDamage when the player was hurt without being attacked
         /// </summary>
-        /// <param name="player"></param>
+        /// <param name="basePlayer"></param>
         /// <param name="info"></param>
         /// <returns></returns>
         [HookMethod("IOnBasePlayerHurt")]
-        private object IOnBasePlayerHurt(BasePlayer player, HitInfo info)
+        private object IOnBasePlayerHurt(BasePlayer basePlayer, HitInfo info)
         {
-            return isPlayerTakingDamage ? null : Interface.CallHook("OnEntityTakeDamage", player, info);
+            return isPlayerTakingDamage ? null : Interface.CallHook("OnEntityTakeDamage", basePlayer, info);
         }
 
         /// <summary>
@@ -281,6 +281,7 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnPlayerBanned")]
         private void IOnPlayerBanned(Connection connection, AuthResponse status)
         {
+            // TODO: Get BasePlayer and pass instead of Connection
             Interface.CallHook("OnPlayerBanned", connection, status.ToString());
         }
 
@@ -387,42 +388,42 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
-        /// Called when the player has disconnected
+        /// Called when the player has connected
         /// </summary>
-        /// <param name="player"></param>
-        /// <param name="reason"></param>
-        [HookMethod("OnPlayerDisconnected")]
-        private void OnPlayerDisconnected(BasePlayer player, string reason)
+        /// <param name="basePlayer"></param>
+        [HookMethod("IOnPlayerConnected")]
+        private void IOnPlayerConnected(BasePlayer basePlayer)
         {
-            IPlayer iplayer = player.IPlayer;
-            if (iplayer != null)
+            // Set language for player
+            lang.SetLanguage(basePlayer.net.connection.info.GetString("global.language", "en"), basePlayer.UserIDString);
+
+            // Let covalence know
+            Covalence.PlayerManager.PlayerConnected(basePlayer);
+            IPlayer player = Covalence.PlayerManager.FindPlayerById(basePlayer.UserIDString);
+            if (player != null)
             {
-                Interface.CallHook("OnUserDisconnected", iplayer, reason);
+                basePlayer.IPlayer = player;
+                Interface.CallHook("OnUserConnected", player);
             }
 
-            Covalence.PlayerManager.PlayerDisconnected(player);
+            Interface.Oxide.CallHook("OnPlayerConnected", basePlayer);
         }
 
         /// <summary>
-        /// Called when the player has connected
+        /// Called when the player has disconnected
         /// </summary>
-        /// <param name="player"></param>
-        [HookMethod("IOnPlayerConnected")]
-        private void IOnPlayerConnected(BasePlayer player)
+        /// <param name="basePlayer"></param>
+        /// <param name="reason"></param>
+        [HookMethod("OnPlayerDisconnected")]
+        private void OnPlayerDisconnected(BasePlayer basePlayer, string reason)
         {
-            // Set language for player
-            lang.SetLanguage(player.net.connection.info.GetString("global.language", "en"), player.UserIDString);
-
-            // Let covalence know
-            Covalence.PlayerManager.PlayerConnected(player);
-            IPlayer iplayer = Covalence.PlayerManager.FindPlayerById(player.UserIDString);
-            if (iplayer != null)
+            IPlayer player = basePlayer.IPlayer;
+            if (player != null)
             {
-                player.IPlayer = iplayer;
-                Interface.CallHook("OnUserConnected", iplayer);
+                Interface.CallHook("OnUserDisconnected", player, reason);
             }
 
-            Interface.Oxide.CallHook("OnPlayerConnected", player);
+            Covalence.PlayerManager.PlayerDisconnected(basePlayer);
         }
 
         /// <summary>
@@ -444,41 +445,41 @@ namespace Oxide.Game.Rust
         /// <summary>
         /// Called when the player has been kicked
         /// </summary>
-        /// <param name="player"></param>
+        /// <param name="basePlayer"></param>
         /// <param name="reason"></param>
         [HookMethod("OnPlayerKicked")]
-        private void OnPlayerKicked(BasePlayer player, string reason)
+        private void OnPlayerKicked(BasePlayer basePlayer, string reason)
         {
-            IPlayer iplayer = player.IPlayer;
-            if (iplayer != null)
+            IPlayer player = basePlayer.IPlayer;
+            if (player != null)
             {
-                Interface.CallHook("OnUserKicked", player.IPlayer, reason);
+                Interface.CallHook("OnUserKicked", basePlayer.IPlayer, reason);
             }
         }
 
         /// <summary>
         /// Called when the player is respawning
         /// </summary>
-        /// <param name="player"></param>
+        /// <param name="basePlayer"></param>
         /// <returns></returns>
         [HookMethod("OnPlayerRespawn")]
-        private object OnPlayerRespawn(BasePlayer player)
+        private object OnPlayerRespawn(BasePlayer basePlayer)
         {
-            IPlayer iplayer = player.IPlayer;
-            return iplayer != null ? Interface.CallHook("OnUserRespawn", iplayer) : null;
+            IPlayer player = basePlayer.IPlayer;
+            return player != null ? Interface.CallHook("OnUserRespawn", player) : null;
         }
 
         /// <summary>
         /// Called when the player has respawned
         /// </summary>
-        /// <param name="player"></param>
+        /// <param name="basePlayer"></param>
         [HookMethod("OnPlayerRespawned")]
-        private void OnPlayerRespawned(BasePlayer player)
+        private void OnPlayerRespawned(BasePlayer basePlayer)
         {
-            IPlayer iplayer = player.IPlayer;
-            if (iplayer != null)
+            IPlayer player = basePlayer.IPlayer;
+            if (player != null)
             {
-                Interface.CallHook("OnUserRespawned", iplayer);
+                Interface.CallHook("OnUserRespawned", player);
             }
         }
 
@@ -491,12 +492,12 @@ namespace Oxide.Game.Rust
         /// This is used to call OnEntityTakeDamage for anything other than a BasePlayer
         /// </summary>
         /// <param name="entity"></param>
-        /// <param name="info"></param>
+        /// <param name="hitInfo"></param>
         /// <returns></returns>
         [HookMethod("IOnBaseCombatEntityHurt")]
-        private object IOnBaseCombatEntityHurt(BaseCombatEntity entity, HitInfo info)
+        private object IOnBaseCombatEntityHurt(BaseCombatEntity entity, HitInfo hitInfo)
         {
-            return entity is BasePlayer ? null : Interface.CallHook("OnEntityTakeDamage", entity, info);
+            return entity is BasePlayer ? null : Interface.CallHook("OnEntityTakeDamage", entity, hitInfo);
         }
 
         private int GetPlayersSensed(NPCPlayerApex npc, Vector3 position, float distance, BaseEntity[] targetList)

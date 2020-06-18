@@ -397,6 +397,9 @@ namespace Oxide.Game.Rust
             // Set language for player
             lang.SetLanguage(basePlayer.net.connection.info.GetString("global.language", "en"), basePlayer.UserIDString);
 
+            // Send CUI to player manually
+            basePlayer.SendEntitySnapshot(CommunityEntity.ServerInstance);
+
             // Let covalence know
             Covalence.PlayerManager.PlayerConnected(basePlayer);
             IPlayer player = Covalence.PlayerManager.FindPlayerById(basePlayer.UserIDString);

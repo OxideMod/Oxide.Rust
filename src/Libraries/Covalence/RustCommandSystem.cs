@@ -211,13 +211,13 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                         return;
                     }
 
-                    BasePlayer player = arg.Player();
-                    if (arg.Connection != null && player != null)
+                    BasePlayer basePlayer = arg.Player();
+                    if (arg.Connection != null && basePlayer != null)
                     {
-                        if (player.IPlayer is RustPlayer iplayer)
+                        if (basePlayer.IPlayer is RustPlayer player)
                         {
-                            iplayer.LastCommand = CommandType.Console;
-                            callback(iplayer, command, ExtractArgs(arg));
+                            player.LastCommand = CommandType.Console;
+                            callback(player, command, ExtractArgs(arg));
                         }
                     }
                     else if (arg.Connection == null)

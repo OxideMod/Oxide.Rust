@@ -407,7 +407,7 @@ namespace Oxide.Game.Rust
             object commandSpecific = Interface.CallHook("OnPlayerCommand", basePlayer, cmd, args);
             object commandCovalence = Interface.CallHook("OnUserCommand", basePlayer.IPlayer, cmd, args);
             object canBlock = commandSpecific is null ? commandCovalence : commandSpecific;
-            if (canBlock is bool commandBlocked && !commandBlocked)
+            if (canBlock != null)
             {
                 return;
             }

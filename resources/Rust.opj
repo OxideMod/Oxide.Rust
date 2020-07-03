@@ -18097,6 +18097,202 @@
             "Parameters": []
           },
           "MSILHash": "9+wB61LbuW8ofGHjsdUl3EwUyiIcKEghAd56XhxYCn4="
+        },
+        {
+          "Name": "BaseCombatEntity::unHostileTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCombatEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "unHostileTime",
+            "FullTypeName": "System.Single BaseCombatEntity::unHostileTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCombatEntity::lastNotifyFrame",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCombatEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastNotifyFrame",
+            "FullTypeName": "System.Int32 BaseCombatEntity::lastNotifyFrame",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MotorRowboat::DoPushAction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MotorRowboat",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "DoPushAction",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "g0LXHtAr+tGDXSnDYLoELgzgLFkPvUdFbbkw392R2nE="
+        },
+        {
+          "Name": "MotorRowboat::CanPushNow",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MotorRowboat",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CanPushNow",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "ZmeY/XQoLzmCLKHDHm99rJcSpSURP2Jiv117siH9ETc="
+        },
+        {
+          "Name": "MotorRowboat::dying",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MotorRowboat",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "dying",
+            "FullTypeName": "System.Boolean MotorRowboat::dying",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MotorRowboat::fuelSystem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MotorRowboat",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "fuelSystem",
+            "FullTypeName": "EntityFuelSystem MotorRowboat::fuelSystem",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MotorRowboat::lastHadDriverTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MotorRowboat",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastHadDriverTime",
+            "FullTypeName": "System.Single MotorRowboat::lastHadDriverTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MotorRowboat::lastUsedFuelTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MotorRowboat",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastUsedFuelTime",
+            "FullTypeName": "System.Single MotorRowboat::lastUsedFuelTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MotorRowboat::maxVelForStationaryDismount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MotorRowboat",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxVelForStationaryDismount",
+            "FullTypeName": "System.Single MotorRowboat::maxVelForStationaryDismount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MotorRowboat::submergeFractionMinimum",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MotorRowboat",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "submergeFractionMinimum",
+            "FullTypeName": "System.Single MotorRowboat::submergeFractionMinimum",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -18293,6 +18293,1020 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::CancelEngineStart",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CancelEngineStart",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "mRpwsxYA64KuohUkUKwYvBakXbiTuJzoaMylDCpf/nc="
+        },
+        {
+          "Name": "ModularCar::CanRunEngines",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanRunEngines",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "43mZSzvvmWGHW9H0AiC8ZOJCR0a4f8/+wsqGBqOQybo="
+        },
+        {
+          "Name": "ModularCar::CanPushNow",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CanPushNow",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "+Ix5xuFhIXmDVfOBxxGI9tDNoFiL7bnjAqAPUxpf64A="
+        },
+        {
+          "Name": "ModularCar::FinishStartingEngine",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FinishStartingEngine",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "AbyGq7OAmBd5ryaLMyt+qZbU1ivWh305i6RDXv0Xhr0="
+        },
+        {
+          "Name": "ModularCar::DoCollisionDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DoCollisionDamage",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "YdcRvlZXG9m9r27GA3sqVLbGnb1sKt9lPW7/W/ZA1DI="
+        },
+        {
+          "Name": "ModularCar::DoPushAction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "DoPushAction",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "nckcDS+23wwgI9BRDD1JTLHLpzwmRk22k98LXSQxFKE="
+        },
+        {
+          "Name": "ModularCar::GetCOMMultiplier",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "GetCOMMultiplier",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": []
+          },
+          "MSILHash": "hL7z/3x145fJhyMNpMdmf6mguToq003wMqTmHLHylMQ="
+        },
+        {
+          "Name": "ModularCar::ModuleEntityRemoved",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ModuleEntityRemoved",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseVehicleModule"
+            ]
+          },
+          "MSILHash": "uilhGQ8SCge13G9MUIsNP+c8J0AMf5N5vqoqG+Kuhjw="
+        },
+        {
+          "Name": "ModularCar::ModuleEntityAdded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ModuleEntityAdded",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseVehicleModule"
+            ]
+          },
+          "MSILHash": "Ee8CVVBzgDF79uha+5sUmqzOXDub4B2YLI80W75M1qU="
+        },
+        {
+          "Name": "ModularCar::ProcessCollision",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ProcessCollision",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.Collision"
+            ]
+          },
+          "MSILHash": "h83xuo92Zt3CSsgQVjOWikImRbFVaDRxVhpKRpW8thU="
+        },
+        {
+          "Name": "ModularCar::PropagateDamageToModules",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PropagateDamageToModules",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "HitInfo",
+              "System.Single",
+              "System.Single",
+              "BaseVehicleModule"
+            ]
+          },
+          "MSILHash": "6TVFRXN7dACW2L65K4HTMrS06btadUmXQJi5HSXci0I="
+        },
+        {
+          "Name": "ModularCar::RefreshChassisProtectionState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RefreshChassisProtectionState",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "nuCtSOMYn9VWwPYs/IhdRjejZFjPHfME6sZLWxEFEek="
+        },
+        {
+          "Name": "ModularCar::RefreshEngineState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "RefreshEngineState",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "4uVppvyjbocqkGNEm1ywwmPS4gqG7skLC6wYI+4NA5M="
+        },
+        {
+          "Name": "ModularCar::RollOffDriveForce",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RollOffDriveForce",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "MiwDZe2HsX3slbEpfW6PDiRdBPtE0Aivv6p9ivPWu6s="
+        },
+        {
+          "Name": "ModularCar::ShowCollisionFX",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ShowCollisionFX",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.Collision"
+            ]
+          },
+          "MSILHash": "zGcl3x4kDkYwsYDzSTPdK5zkIGV+IeHtr1ayphqhngo="
+        },
+        {
+          "Name": "ModularCar::SpawnPreassignedModules",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SpawnPreassignedModules",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "274yT4IJ3fuxLHwhPNn2uaxwCSO8438cQhc49fPrshU="
+        },
+        {
+          "Name": "ModularCar::StopEngines",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StopEngines",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "4jOvoqBZfHbR8Bvw1pKkqzWNTvkYV8CPc/m33GWeiO4="
+        },
+        {
+          "Name": "ModularCar::TryStartEngines",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TryStartEngines",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "/jjEIeVhy3DEZMmimimPjT6H6qOVUH/yGRM5MX9tBjs="
+        },
+        {
+          "Name": "ModularCar::UpdateNetwork",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateNetwork",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "clzL/IMbb3f0wyuJcNni/jWNkGz65J/SquFhi2+d1VM="
+        },
+        {
+          "Name": "ModularCar::VehicleFixedUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "VehicleFixedUpdate",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "SWCyaUztbc66S8saNeZTaAXr3EMDi2shVPDCR/qwHDQ="
+        },
+        {
+          "Name": "ModularCar::DecayTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DecayTick",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "u2CBZFRDpS2l2Mgay2BTOmls1zZGqlnKGh0M83sBDso="
+        },
+        {
+          "Name": "ModularCar::OnCollisionEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnCollisionEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.Collision"
+            ]
+          },
+          "MSILHash": "qGXvU40mZcaZhTZaGVnt9pAtF3Zc3+Y8tCu+K5ws1x8="
+        },
+        {
+          "Name": "ModularCar::airbourneCOMMultiplier",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "airbourneCOMMultiplier",
+            "FullTypeName": "UnityEngine.Vector3 ModularCar::airbourneCOMMultiplier",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::cachedFuelFraction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cachedFuelFraction",
+            "FullTypeName": "System.Single ModularCar::cachedFuelFraction",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::carAudio",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "carAudio",
+            "FullTypeName": "Rust.Modular.ModularCarAudio ModularCar::carAudio",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::carPhysics",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "carPhysics",
+            "FullTypeName": "Rust.Modular.ModularCarPhysics ModularCar::carPhysics",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::carSettings",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "carSettings",
+            "FullTypeName": "Rust.Modular.ModularCarSettings ModularCar::carSettings",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::collisionEffect",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "collisionEffect",
+            "FullTypeName": "GameObjectRef ModularCar::collisionEffect",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::damageShowingRenderers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "damageShowingRenderers",
+            "FullTypeName": "UnityEngine.MeshRenderer[] ModularCar::damageShowingRenderers",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::damageSinceLastTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "damageSinceLastTick",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<BaseEntity,System.Single> ModularCar::damageSinceLastTick",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::deathDamageCounter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "deathDamageCounter",
+            "FullTypeName": "System.Single ModularCar::deathDamageCounter",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::driverSeatInputs",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "driverSeatInputs",
+            "FullTypeName": "ListDictionary`2<BaseMountable,ModularCar/DriverSeatInputs> ModularCar::driverSeatInputs",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::fuelStoragePoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelStoragePoint",
+            "FullTypeName": "UnityEngine.Transform ModularCar::fuelStoragePoint",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::fuelStoragePrefab",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelStoragePrefab",
+            "FullTypeName": "GameObjectRef ModularCar::fuelStoragePrefab",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::fuelSystem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelSystem",
+            "FullTypeName": "EntityFuelSystem ModularCar::fuelSystem",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::groundedCOMMultiplier",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "groundedCOMMultiplier",
+            "FullTypeName": "UnityEngine.Vector3 ModularCar::groundedCOMMultiplier",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::hurtTriggerFront",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hurtTriggerFront",
+            "FullTypeName": "TriggerHurtNotChild ModularCar::hurtTriggerFront",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::hurtTriggerMinSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hurtTriggerMinSpeed",
+            "FullTypeName": "System.Single ModularCar::hurtTriggerMinSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::hurtTriggerRear",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hurtTriggerRear",
+            "FullTypeName": "TriggerHurtNotChild ModularCar::hurtTriggerRear",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::immortalProtection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "immortalProtection",
+            "FullTypeName": "ProtectionProperties ModularCar::immortalProtection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::lastEngineTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastEngineTime",
+            "FullTypeName": "System.Single ModularCar::lastEngineTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::lastSetEngineState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastSetEngineState",
+            "FullTypeName": "ModularCar/EngineState ModularCar::lastSetEngineState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::mainServerCollider",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "mainServerCollider",
+            "FullTypeName": "UnityEngine.Collider ModularCar::mainServerCollider",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::mortalProtection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "mortalProtection",
+            "FullTypeName": "ProtectionProperties ModularCar::mortalProtection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::nextCollisionDamageTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextCollisionDamageTime",
+            "FullTypeName": "System.Single ModularCar::nextCollisionDamageTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::nextCollisionFXTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextCollisionFXTime",
+            "FullTypeName": "System.Single ModularCar::nextCollisionFXTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::prevCOMMultiplier",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "prevCOMMultiplier",
+            "FullTypeName": "UnityEngine.Vector3 ModularCar::prevCOMMultiplier",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::prevPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "prevPosition",
+            "FullTypeName": "UnityEngine.Vector3 ModularCar::prevPosition",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::prevRotation",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "prevRotation",
+            "FullTypeName": "UnityEngine.Quaternion ModularCar::prevRotation",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::serverTerrainHandler",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "serverTerrainHandler",
+            "FullTypeName": "VehicleTerrainHandler ModularCar::serverTerrainHandler",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::spawnSettings",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spawnSettings",
+            "FullTypeName": "ModularCar/SpawnSettings ModularCar::spawnSettings",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::timeSinceDeath",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceDeath",
+            "FullTypeName": "TimeSince ModularCar::timeSinceDeath",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

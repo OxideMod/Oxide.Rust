@@ -367,7 +367,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// </summary>
         /// <param name="arg"></param>
         /// <returns></returns>
-        private static string[] ExtractArgs(ConsoleSystem.Arg arg)
+        public static string[] ExtractArgs(ConsoleSystem.Arg arg)
         {
             if (arg == null)
             {

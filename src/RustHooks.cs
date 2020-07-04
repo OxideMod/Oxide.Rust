@@ -4,6 +4,7 @@ using Oxide.Core;
 using Oxide.Core.Configuration;
 using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
+using Oxide.Game.Rust.Libraries.Covalence;
 using Rust.Ai;
 using Rust.Ai.HTN;
 using Steamworks;
@@ -599,12 +600,28 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnServerCommand")]
         private object IOnServerCommand(ConsoleSystem.Arg arg)
         {
+            // Ignore invalid connections
             if (arg == null || arg.Connection != null && arg.Player() == null)
             {
-                return true; // Ignore console commands from client during connection
+                return true;
             }
 
-            return arg.cmd.FullName != "chat.say" && arg.cmd.FullName != "chat.teamsay" ? Interface.CallHook("OnServerCommand", arg) : null;
+            // Ignore all chat messages
+            if (arg.cmd.FullName == "chat.say" || arg.cmd.FullName == "chat.teamsay")
+            {
+                return null;
+            }
+
+            // Is the command blocked?
+            object commandSpecific = Interface.CallHook("OnServerCommand", arg);
+            object commandCovalence = Interface.CallHook("OnServerCommand", arg.cmd.FullName, RustCommandSystem.ExtractArgs(arg));
+            object canBlock = commandSpecific is null ? commandCovalence : commandSpecific;
+            if (canBlock != null)
+            {
+                return true;
+            }
+
+            return null;
         }
 
         /// <summary>

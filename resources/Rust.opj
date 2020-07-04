@@ -11091,6 +11091,78 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 75,
+            "RemoveCount": 2,
+            "Instructions": [
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 80
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|ItemCraftTask|instanceData"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 77
+              },
+              {
+                "OpCode": "ldarg_s",
+                "OpType": "Parameter",
+                "Operand": 5
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|ItemCraftTask|instanceData"
+              },
+              {
+                "OpCode": "stfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|Item|instanceData"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "FixItemKeyId [patch]",
+            "HookName": "FixItemKeyId [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemCrafter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CraftItem",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "ItemBlueprint",
+                "BasePlayer",
+                "ProtoBuf.Item/InstanceData",
+                "System.Int32",
+                "System.Int32",
+                "Item",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "EJpbLurVsZbBsjN1B3H166P6tbDrSsWpgvRSGctBByw=",
+            "BaseHookName": "OnItemCraft",
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

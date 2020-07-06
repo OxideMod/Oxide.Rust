@@ -649,5 +649,16 @@ namespace Oxide.Game.Rust
         }
 
         #endregion Server Hooks
+
+        #region Deprecated Hooks
+
+        [HookMethod("OnVehiclePush")]
+        private object OnVehiclePush(BaseVehicle vehicle, BasePlayer player)
+        {
+            return Interface.Oxide.CallDeprecatedHook("CanPushBoat", "CanPushVehicle(BaseVehicle vehicle, BasePlayer player)",
+                new System.DateTime(2021, 1, 1), player, vehicle as MotorRowboat);
+        }
+
+        #endregion Deprecated Hooks
     }
 }

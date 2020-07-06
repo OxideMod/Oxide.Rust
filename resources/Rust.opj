@@ -7282,32 +7282,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 38,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, this",
-            "HookTypeName": "Simple",
-            "Name": "CanPushBoat",
-            "HookName": "CanPushBoat",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "MotorRowboat",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 1,
-              "Name": "DoPushAction",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BasePlayer"
-              ]
-            },
-            "MSILHash": "g0LXHtAr+tGDXSnDYLoELgzgLFkPvUdFbbkw392R2nE=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 21,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -11162,6 +11136,95 @@
             "MSILHash": "EJpbLurVsZbBsjN1B3H166P6tbDrSsWpgvRSGctBByw=",
             "BaseHookName": "OnItemCraft",
             "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "CanLootEntity"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanLootEntity [ContainerIOEntity]",
+            "HookName": "CanLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ContainerIOEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerOpenLoot",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.String",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "5n8eHhpVmyevpIpLHwF2kZily3vm4FmPd/fFz1XkXJQ=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 35,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnVehiclePush",
+            "HookName": "OnVehiclePush",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseVehicle",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_WantsPush",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Mw6ys9BOAPiKtbeHvKdrsIZ0oONs0SYv4E/inPle99g=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
           }
         }
       ],

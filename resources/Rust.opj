@@ -19379,6 +19379,526 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::centreOfMassTransform",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "centreOfMassTransform",
+            "FullTypeName": "UnityEngine.Transform BaseModularVehicle::centreOfMassTransform",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::disablePhysics",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "disablePhysics",
+            "FullTypeName": "System.Boolean BaseModularVehicle::disablePhysics",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::inEditableLocation",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "inEditableLocation",
+            "FullTypeName": "System.Boolean BaseModularVehicle::inEditableLocation",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::lodGroup",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lodGroup",
+            "FullTypeName": "UnityEngine.LODGroup BaseModularVehicle::lodGroup",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::moduleAddActions",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "moduleAddActions",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<BaseVehicleModule,System.Action> BaseModularVehicle::moduleAddActions",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::moduleSockets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "moduleSockets",
+            "FullTypeName": "System.Collections.Generic.List`1<Rust.Modular.ModularVehicleSocket> BaseModularVehicle::moduleSockets",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::prevEditable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "prevEditable",
+            "FullTypeName": "System.Boolean BaseModularVehicle::prevEditable",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::realLocalCOM",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "realLocalCOM",
+            "FullTypeName": "UnityEngine.Vector3 BaseModularVehicle::realLocalCOM",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::waterlogged",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "waterlogged",
+            "FullTypeName": "System.Boolean BaseModularVehicle::waterlogged",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::waterSample",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "waterSample",
+            "FullTypeName": "UnityEngine.Transform BaseModularVehicle::waterSample",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::AssociatedItemDef",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "AssociatedItemDef",
+            "FullTypeName": "ItemDefinition BaseModularVehicle::AssociatedItemDef()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::Inventory",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Inventory",
+            "FullTypeName": "Rust.Modular.ModularVehicleInventory BaseModularVehicle::Inventory()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::Velocity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Velocity",
+            "FullTypeName": "UnityEngine.Vector3 BaseModularVehicle::Velocity()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::TotalMass",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "TotalMass",
+            "FullTypeName": "System.Single BaseModularVehicle::TotalMass()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::CanPushNow",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CanPushNow",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "+z6AxtvFCAIyrDSXktClUpajJ5CnFxMNNLvYsFFSilk="
+        },
+        {
+          "Name": "BaseModularVehicle::DoServerDestroy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DoServerDestroy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "AxMlB7pRuNvRdRtkBvhD3aMYBT3tDuuj5ZP7MMc/sug="
+        },
+        {
+          "Name": "BaseModularVehicle::ModuleEntityAdded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ModuleEntityAdded",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseVehicleModule"
+            ]
+          },
+          "MSILHash": "riZISQCStw8vBcpXo50p4LKEHbokGZEN85i96cOm8G4="
+        },
+        {
+          "Name": "BaseModularVehicle::ModuleEntityRemoved",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ModuleEntityRemoved",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseVehicleModule"
+            ]
+          },
+          "MSILHash": "ZDd45XcCb6nQ88RuHZmj1lMQAOiFAXBtKOsfWqDxc6Y="
+        },
+        {
+          "Name": "BaseModularVehicle::OnChildAdded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnChildAdded",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "LK4QRXqNc8EbNP/WUt7boLkU3ICobG6M/v2iVA2duvM="
+        },
+        {
+          "Name": "BaseModularVehicle::OnChildRemoved",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnChildRemoved",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "jALc5yDQNdmBSDnIY8pl6rXN7HLz8d7hZqtxbhkKI8U="
+        },
+        {
+          "Name": "BaseModularVehicle::OnPhysicsNeighbourChanged",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnPhysicsNeighbourChanged",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "YwybJZRPvBNDfcul58V0ATNXSkmbNlcEuR5Ybd9TvSM="
+        },
+        {
+          "Name": "BaseModularVehicle::RefreshModulesExcept",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RefreshModulesExcept",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseVehicleModule"
+            ]
+          },
+          "MSILHash": "yEmKO2evvMi4+2ARcFAsaik+TZEXmkBxEqETDZOo144="
+        },
+        {
+          "Name": "BaseModularVehicle::SetCOM",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetCOM",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "eLRCwr7qfbh3J1ij6W5zad6gsZZaVvjFgTm3W2I61ZE="
+        },
+        {
+          "Name": "BaseModularVehicle::SetLightsState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetLightsState",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "NDe+M5JZqsENVwvuGnrf/ztOf2qiY42GmRWr1Q4Zt8g="
+        },
+        {
+          "Name": "BaseModularVehicle::SetMass",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetMass",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "NDJrvrX7BWDSvDNVmIi7ibjcLBtBVu6TtKggOkNGihk="
+        },
+        {
+          "Name": "BaseModularVehicle::VehicleFixedUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "VehicleFixedUpdate",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "2JhuDR76BXPGAdVAifotkffCNOT4AeaHttSymmtLrZk="
         }
       ],
       "Fields": [

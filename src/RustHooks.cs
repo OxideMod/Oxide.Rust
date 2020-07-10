@@ -655,8 +655,13 @@ namespace Oxide.Game.Rust
         [HookMethod("OnVehiclePush")]
         private object OnVehiclePush(BaseVehicle vehicle, BasePlayer player)
         {
-            return Interface.Oxide.CallDeprecatedHook("CanPushBoat", "CanPushVehicle(BaseVehicle vehicle, BasePlayer player)",
+            if (vehicle is MotorRowboat)
+            {
+                return Interface.Oxide.CallDeprecatedHook("CanPushBoat", "CanPushVehicle(BaseVehicle vehicle, BasePlayer player)",
                 new System.DateTime(2021, 1, 1), player, vehicle as MotorRowboat);
+            }
+
+            return null;
         }
 
         #endregion Deprecated Hooks

@@ -19963,6 +19963,82 @@
             "Parameters": []
           },
           "MSILHash": "2JhuDR76BXPGAdVAifotkffCNOT4AeaHttSymmtLrZk="
+        },
+        {
+          "Name": "SmartAlarm::_lastSentTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SmartAlarm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_lastSentTime",
+            "FullTypeName": "System.Single SmartAlarm::_lastSentTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SmartAlarm::_notificationBody",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SmartAlarm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_notificationBody",
+            "FullTypeName": "System.String SmartAlarm::_notificationBody",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SmartAlarm::_notificationTitle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SmartAlarm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_notificationTitle",
+            "FullTypeName": "System.String SmartAlarm::_notificationTitle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SmartAlarm::_subscriptions",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SmartAlarm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_subscriptions",
+            "FullTypeName": "CompanionServer.NotificationList SmartAlarm::_subscriptions",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

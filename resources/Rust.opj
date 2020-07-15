@@ -20039,6 +20039,102 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::carOccupant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "carOccupant",
+            "FullTypeName": "ModularCar ModularCarGarage::carOccupant()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::allEngineItems",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "allEngineItems",
+            "FullTypeName": "Rust.Modular.VehicleModuleEngineItems Rust.Modular.EngineStorage::allEngineItems",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::ReleaseOccupant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ReleaseOccupant",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "R1R+uMq+Je52fcMdyEaOhwVSIMxBYMKEQGmoespjzXA="
+        },
+        {
+          "Name": "ModularCarGarage::lockedOccupant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lockedOccupant",
+            "FullTypeName": "ModularCar ModularCarGarage::lockedOccupant",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleModuleEngine::engine",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleModuleEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engine",
+            "FullTypeName": "VehicleModuleEngine/Engine VehicleModuleEngine::engine",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

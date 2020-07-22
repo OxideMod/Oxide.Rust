@@ -20135,6 +20135,179 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "MiniCopter::cachedFuelFraction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cachedFuelFraction",
+            "FullTypeName": "System.Single MiniCopter::cachedFuelFraction",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MiniCopter::cachedPitch",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cachedPitch",
+            "FullTypeName": "System.Single MiniCopter::cachedPitch",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MiniCopter::cachedRoll",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cachedRoll",
+            "FullTypeName": "System.Single MiniCopter::cachedRoll",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MiniCopter::cachedYaw",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cachedYaw",
+            "FullTypeName": "System.Single MiniCopter::cachedYaw",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MiniCopter::fuelSystem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelSystem",
+            "FullTypeName": "EntityFuelSystem MiniCopter::fuelSystem",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MiniCopter::isPushing",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "isPushing",
+            "FullTypeName": "System.Boolean MiniCopter::isPushing",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MiniCopter::lastEngineTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastEngineTime",
+            "FullTypeName": "System.Single MiniCopter::lastEngineTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MiniCopter::ApplyForceAtWheels",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyForceAtWheels",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "kEkJiJDZ0SYS6CvpOEmQXtqglvIpFu2YFgf+cF6HlRM="
+        },
+        {
+          "Name": "MiniCopter::DoPushAction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "DoPushAction",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "oHVeWVCs7B+5iid5pdFLMlc8jP6r0e5SUFTpc0mE7pM="
         }
       ],
       "Fields": [

@@ -20308,6 +20308,314 @@
             ]
           },
           "MSILHash": "oHVeWVCs7B+5iid5pdFLMlc8jP6r0e5SUFTpc0mE7pM="
+        },
+        {
+          "Name": "BradleyAPC::ApplyDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyDamage",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseCombatEntity",
+              "UnityEngine.Vector3",
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "wckSbGp1BDdsD6eoDBLNk3ybvsg4HV4V1Ysq7JJ00x4="
+        },
+        {
+          "Name": "BradleyAPC::currentSpeedZoneLimit",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentSpeedZoneLimit",
+            "FullTypeName": "System.Single BradleyAPC::currentSpeedZoneLimit",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::desiredAimVector",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "desiredAimVector",
+            "FullTypeName": "UnityEngine.Vector3 BradleyAPC::desiredAimVector",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::desiredTopTurretAimVector",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "desiredTopTurretAimVector",
+            "FullTypeName": "UnityEngine.Vector3 BradleyAPC::desiredTopTurretAimVector",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::finalDestination",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "finalDestination",
+            "FullTypeName": "UnityEngine.Vector3 BradleyAPC::finalDestination",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::lastAngle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastAngle",
+            "FullTypeName": "System.Single BradleyAPC::lastAngle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::lastLateUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastLateUpdate",
+            "FullTypeName": "System.Single BradleyAPC::lastLateUpdate",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::lastSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastSpeed",
+            "FullTypeName": "System.Single BradleyAPC::lastSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::mainGunTarget",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "mainGunTarget",
+            "FullTypeName": "BaseCombatEntity BradleyAPC::mainGunTarget",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::nextCoaxTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextCoaxTime",
+            "FullTypeName": "System.Single BradleyAPC::nextCoaxTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::nextEngagementPathTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextEngagementPathTime",
+            "FullTypeName": "System.Single BradleyAPC::nextEngagementPathTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::nextFireTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextFireTime",
+            "FullTypeName": "System.Single BradleyAPC::nextFireTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::nextPatrolTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextPatrolTime",
+            "FullTypeName": "System.Single BradleyAPC::nextPatrolTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::nextTopTurretTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextTopTurretTime",
+            "FullTypeName": "System.Single BradleyAPC::nextTopTurretTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::numBursted",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "numBursted",
+            "FullTypeName": "System.Int32 BradleyAPC::numBursted",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BradleyAPC::numCoaxBursted",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BradleyAPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "numCoaxBursted",
+            "FullTypeName": "System.Int32 BradleyAPC::numCoaxBursted",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

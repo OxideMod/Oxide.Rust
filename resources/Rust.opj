@@ -9418,7 +9418,7 @@
             "HookName": "OnSendModelState",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 0,
               "Name": "SendModelState",
@@ -10848,7 +10848,7 @@
             "HookName": "OnMapMarkerAdd",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "Server_AddMarker",
@@ -10874,7 +10874,7 @@
             "HookName": "OnMapMarkerAdded",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "Server_AddMarker",
@@ -11299,7 +11299,7 @@
             "HookName": "CanSeeStash/OnStashExposed",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "StashContainer",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RPC_WantsUnhide",
@@ -11362,7 +11362,7 @@
             },
             "MSILHash": "1MQGejmAMZSMzpbYkP5vruAc6Jtpl+g8F5zNL8ra2Qs=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Entity"
           }
         },
         {
@@ -11388,7 +11388,7 @@
             },
             "MSILHash": "8wq1MqnJ4sfKnMxjonh8L7L4qYdEsP7k57Sqqw2N5Qs=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Entity"
           }
         },
         {
@@ -11414,7 +11414,7 @@
             },
             "MSILHash": "pDFa/9BgGsAbpZ1fp4+kmQNJDl/GTOrmVuXDknhOEyw=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Entity"
           }
         },
         {
@@ -11440,7 +11440,7 @@
             },
             "MSILHash": "f1mxtvy8ag/vSkPXNmyil4A1r3DvvDxUsRPBtDrnoPQ=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Entity"
           }
         },
         {
@@ -11466,7 +11466,7 @@
             },
             "MSILHash": "XmZ87gSCZKj5YjT3LS76a29DIWdtGmaTQVwnuUpikXQ=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Entity"
           }
         }
       ],

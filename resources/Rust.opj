@@ -9418,7 +9418,7 @@
             "HookName": "OnSendModelState",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 0,
               "Name": "SendModelState",
@@ -10848,7 +10848,7 @@
             "HookName": "OnMapMarkerAdd",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "Server_AddMarker",
@@ -10874,7 +10874,7 @@
             "HookName": "OnMapMarkerAdded",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "Server_AddMarker",
@@ -11299,7 +11299,7 @@
             "HookName": "CanSeeStash/OnStashExposed",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "StashContainer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "RPC_WantsUnhide",
@@ -11337,6 +11337,136 @@
             "MSILHash": "yg+1x4pMkW/iuB2HZHwPdA5KTyMdjgD77HqfD/rJIXc=",
             "BaseHookName": "CanHideStash",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 50,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnBeginControlBookmark",
+            "HookName": "OnBeginControlBookmark",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "BeginControllingBookmark",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "1MQGejmAMZSMzpbYkP5vruAc6Jtpl+g8F5zNL8ra2Qs=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 22,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "CanDeleteBookmark",
+            "HookName": "CanDeleteBookmark",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DeleteBookmark",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "8wq1MqnJ4sfKnMxjonh8L7L4qYdEsP7k57Sqqw2N5Qs=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 121,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "CanAddBookmark",
+            "HookName": "CanAddBookmark",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AddBookmark",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "pDFa/9BgGsAbpZ1fp4+kmQNJDl/GTOrmVuXDknhOEyw=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnSendControlBookmarks",
+            "HookName": "OnSendControlBookmarks",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SendControlBookmarks",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "f1mxtvy8ag/vSkPXNmyil4A1r3DvvDxUsRPBtDrnoPQ=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnStopControl",
+            "HookName": "OnStopControl",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopControl",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "XmZ87gSCZKj5YjT3LS76a29DIWdtGmaTQVwnuUpikXQ=",
+            "BaseHookName": null,
+            "HookCategory": null
           }
         }
       ],
@@ -20724,6 +20854,101 @@
             ],
             "Name": "numCoaxBursted",
             "FullTypeName": "System.Int32 BradleyAPC::numCoaxBursted",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle/HelicopterInputState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle/HelicopterInputState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "HelicopterInputState",
+            "FullTypeName": "BaseHelicopterVehicle/HelicopterInputState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle::currentInputState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "currentInputState",
+            "FullTypeName": "BaseHelicopterVehicle/HelicopterInputState BaseHelicopterVehicle::currentInputState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseHelicopterVehicle",
+            "FullTypeName": "BaseHelicopterVehicle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle::lastPlayerInputTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "lastPlayerInputTime",
+            "FullTypeName": "System.Single BaseHelicopterVehicle::lastPlayerInputTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle::hoverForceScale",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "hoverForceScale",
+            "FullTypeName": "System.Single BaseHelicopterVehicle::hoverForceScale",
             "Parameters": []
           },
           "MSILHash": ""

@@ -11351,9 +11351,12 @@
             "HookName": "OnMixingTableToggle",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MixingTable",
+            "Flagged": false,
             "Signature": {
+              "Exposure": 0,
               "Name": "SVSwitch",
               "ReturnType": "System.Void",
+              "Parameters": [
                 "BaseEntity/RPCMessage"
               ]
             },

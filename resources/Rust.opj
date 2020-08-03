@@ -747,7 +747,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, this",
             "HookTypeName": "Simple",
-            "Name": "CanUpdateSign",
+            "Name": "CanUpdateSign [Signage]",
             "HookName": "CanUpdateSign",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Signage",
@@ -773,7 +773,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
             "HookTypeName": "Simple",
-            "Name": "OnSignLocked",
+            "Name": "OnSignLocked [Signage]",
             "HookName": "OnSignLocked",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Signage",
@@ -799,7 +799,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
             "HookTypeName": "Simple",
-            "Name": "OnSignUpdated",
+            "Name": "OnSignUpdated [Signage]",
             "HookName": "OnSignUpdated",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Signage",
@@ -11338,6 +11338,84 @@
             "BaseHookName": null,
             "HookCategory": "Server"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanUpdateSign [PhotoFrame]",
+            "HookName": "CanUpdateSign",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhotoFrame",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanUpdateSign",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "bLiVE2ghP/zaN5LJ3Wb86gFgp2NNiCFPMfOTdU7Uljo=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 25,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnSignLocked [PhotoFrame]",
+            "HookName": "OnSignLocked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhotoFrame",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "LockSign",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "qas5SeD1CB10Y+WjtBGHab5fYZOHMx2kbzMnGDhbdoc=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 30,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnSignUpdated [PhotoFrame]",
+            "HookName": "OnSignUpdated",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhotoFrame",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateSign",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "+igla2ZmT2wzP+3vl+Y8kNzwiD1TeKIldahUJdnYo+s=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [
@@ -21095,6 +21173,25 @@
             "Parameters": []
           },
           "MSILHash": "VHnUqG+hQuP/JND0+qX+Z5MZgtxFHa/RQCty0Jvwxd4="
+        },
+        {
+          "Name": "PhotoFrame::_overlayTextureCrc",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PhotoFrame",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_overlayTextureCrc",
+            "FullTypeName": "System.UInt32 PhotoFrame::_overlayTextureCrc",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

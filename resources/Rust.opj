@@ -20727,6 +20727,393 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BasicCar::brake",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasicCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "brake",
+            "FullTypeName": "System.Single BasicCar::brake",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasicCar::lightsOn",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasicCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lightsOn",
+            "FullTypeName": "System.Boolean BasicCar::lightsOn",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasicCar::throttle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasicCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "throttle",
+            "FullTypeName": "System.Single BasicCar::throttle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasicCar::DoSteering",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasicCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DoSteering",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "aHXhUrnhqXxqEIaJ9mEszmOd7Zfgy6ExFXZtxPn6oqA="
+        },
+        {
+          "Name": "BasicCar::ApplyForceAtWheels",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasicCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyForceAtWheels",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "gw8OPxJFuHn3PEgyb8wd78p6Ih7G9DWSBm9icQH42PU="
+        },
+        {
+          "Name": "GrowableEntity::lastArtificialLightAmount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastArtificialLightAmount",
+            "FullTypeName": "System.Single GrowableEntity::lastArtificialLightAmount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::timeSinceArtificialLightUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceArtificialLightUpdate",
+            "FullTypeName": "TimeSince GrowableEntity::timeSinceArtificialLightUpdate",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GrowableEntity::CalculateArtificialLightExposure",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CalculateArtificialLightExposure",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "HMytICUa21JdekxnwRuvVj7YeuXuQClv6/vaUI0atX4="
+        },
+        {
+          "Name": "GrowableEntity::CalculateSunExposure",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CalculateSunExposure",
+            "FullTypeName": "System.Single",
+            "Parameters": []
+          },
+          "MSILHash": "xNHNKfXva+3NPfE30uZHQb9gslCBSIqXHYV0HeU3JX4="
+        },
+        {
+          "Name": "GrowableEntity::UpdateAge",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateAge",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "SzV0F5TQdWi6DM6FXiyXPbB32gGyOh+1uaYc1sNnAC4="
+        },
+        {
+          "Name": "GrowableEntity::UpdateHealthAndYield",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateHealthAndYield",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Single",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "ZhSicRDGKz3o55LV0hCUqWFqeLecnGp1tLZSX08cjfg="
+        },
+        {
+          "Name": "GrowableEntity::UpdateState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GrowableEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateState",
+            "FullTypeName": "PlantProperties/State",
+            "Parameters": []
+          },
+          "MSILHash": "SrsgSIjip4Nap8ChTdnYTCjfO28KcI/MW6Tl9fgMca4="
+        },
+        {
+          "Name": "IOEntity::cachedOutputsUsed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IOEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cachedOutputsUsed",
+            "FullTypeName": "System.Int32 IOEntity::cachedOutputsUsed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IOEntity::currentEnergy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IOEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "currentEnergy",
+            "FullTypeName": "System.Int32 IOEntity::currentEnergy",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IOEntity::ensureOutputsUpdated",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IOEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ensureOutputsUpdated",
+            "FullTypeName": "System.Boolean IOEntity::ensureOutputsUpdated",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IOEntity::lastEnergy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IOEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastEnergy",
+            "FullTypeName": "System.Int32 IOEntity::lastEnergy",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IOEntity::lastPassthroughEnergy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IOEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "lastPassthroughEnergy",
+            "FullTypeName": "System.Int32 IOEntity::lastPassthroughEnergy",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IOEntity::lastUpdateBlockedFrame",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IOEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "lastUpdateBlockedFrame",
+            "FullTypeName": "System.Int32 IOEntity::lastUpdateBlockedFrame",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IOEntity::lastUpdateTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IOEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "lastUpdateTime",
+            "FullTypeName": "System.Single IOEntity::lastUpdateTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IOEntity::ShouldUpdateOutputs",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IOEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ShouldUpdateOutputs",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "VHnUqG+hQuP/JND0+qX+Z5MZgtxFHa/RQCty0Jvwxd4="
         }
       ],
       "Fields": [

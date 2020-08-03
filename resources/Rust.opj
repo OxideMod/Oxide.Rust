@@ -11416,6 +11416,32 @@
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnMixingTableToggle",
+            "HookName": "OnMixingTableToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MixingTable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SVSwitch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "pJDg91XTrcgUiZWkuhW4BspgVlM2xQd/f+ZBUQXsHDY=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [
@@ -21189,6 +21215,186 @@
             ],
             "Name": "_overlayTextureCrc",
             "FullTypeName": "System.UInt32 PhotoFrame::_overlayTextureCrc",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MixingTable::RemainingMixTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MixingTable",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "RemainingMixTime",
+            "FullTypeName": "System.Single MixingTable::RemainingMixTime()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MixingTable::TotalMixTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MixingTable",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "TotalMixTime",
+            "FullTypeName": "System.Single MixingTable::TotalMixTime()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MixingTable::currentRecipe",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MixingTable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentRecipe",
+            "FullTypeName": "Recipe MixingTable::currentRecipe",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MixingTable::currentQuantity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MixingTable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentQuantity",
+            "FullTypeName": "System.Int32 MixingTable::currentQuantity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MixingTable::currentProductionItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MixingTable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentProductionItem",
+            "FullTypeName": "ItemDefinition MixingTable::currentProductionItem",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MixingTable::TickMix",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MixingTable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TickMix",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "F4qIFFvMgcMd9ugGXNNITjumCSDMbpFNGeolZw79bNE="
+        },
+        {
+          "Name": "MixingTable::StartMixing",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MixingTable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StartMixing",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "gJkMrnneKlfJwE939rnVHN17bVKlfdvYxxYApdQL0ZE="
+        },
+        {
+          "Name": "MixingTable::ProduceItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MixingTable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ProduceItem",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Recipe",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "2GyIualZlTuA/dd8VLf55eT+xN5kI9XaG/dRFSanepk="
+        },
+        {
+          "Name": "MixingTable::lastTickTimestamp",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MixingTable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastTickTimestamp",
+            "FullTypeName": "System.Single MixingTable::lastTickTimestamp",
             "Parameters": []
           },
           "MSILHash": ""

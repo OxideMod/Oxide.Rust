@@ -21398,6 +21398,101 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle/HelicopterInputState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle/HelicopterInputState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "HelicopterInputState",
+            "FullTypeName": "BaseHelicopterVehicle/HelicopterInputState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle::currentInputState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "currentInputState",
+            "FullTypeName": "BaseHelicopterVehicle/HelicopterInputState BaseHelicopterVehicle::currentInputState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseHelicopterVehicle",
+            "FullTypeName": "BaseHelicopterVehicle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle::lastPlayerInputTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "lastPlayerInputTime",
+            "FullTypeName": "System.Single BaseHelicopterVehicle::lastPlayerInputTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle::hoverForceScale",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "hoverForceScale",
+            "FullTypeName": "System.Single BaseHelicopterVehicle::hoverForceScale",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -13851,7 +13851,7 @@
           "TypeName": "BuildingBlock",
           "Type": 1,
           "TargetExposure": [
-            0
+            2
           ],
           "Flagged": false,
           "Signature": {
@@ -13873,7 +13873,7 @@
           "TypeName": "BuildingBlock",
           "Type": 1,
           "TargetExposure": [
-            0
+            2
           ],
           "Flagged": false,
           "Signature": {
@@ -21306,6 +21306,49 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BuildingBlock::GetGrade",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetGrade",
+            "FullTypeName": "ConstructionGrade",
+            "Parameters": [
+              "BuildingGrade/Enum"
+            ]
+          },
+          "MSILHash": "sXVPP9y9STWDpsDFSE3iE/ryMPwlDAtYX3d4Vy5hHWc="
+        },
+        {
+          "Name": "BuildingBlock::PayForUpgrade",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PayForUpgrade",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "ConstructionGrade",
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "dqKgHDoZr0ZbcmdWsawnIUVEaceEXRkInkPoNbipSnY="
         }
       ],
       "Fields": [

@@ -11446,6 +11446,136 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 50,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnBookmarkControl",
+            "HookName": "OnBookmarkControl",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "BeginControllingBookmark",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "1MQGejmAMZSMzpbYkP5vruAc6Jtpl+g8F5zNL8ra2Qs=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 22,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnBookmarkDelete",
+            "HookName": "OnBookmarkDelete",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DeleteBookmark",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "8wq1MqnJ4sfKnMxjonh8L7L4qYdEsP7k57Sqqw2N5Qs=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 121,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnBookmarkAdd",
+            "HookName": "OnBookmarkAdd",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AddBookmark",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "pDFa/9BgGsAbpZ1fp4+kmQNJDl/GTOrmVuXDknhOEyw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnBookmarksSendControl",
+            "HookName": "OnBookmarksSendControl",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SendControlBookmarks",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "f1mxtvy8ag/vSkPXNmyil4A1r3DvvDxUsRPBtDrnoPQ=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnBookmarkControlEnd",
+            "HookName": "OnBookmarkControlEnd",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopControl",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "XmZ87gSCZKj5YjT3LS76a29DIWdtGmaTQVwnuUpikXQ=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 64,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

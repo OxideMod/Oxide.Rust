@@ -11625,6 +11625,54 @@
             "BaseHookName": null,
             "HookCategory": "Server"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "OnDefaultItemsReceive",
+            "HookName": "OnDefaultItemsReceive",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerInventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GiveDefaultItems",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "K5LtoS+czjqVXr63HWJf9ub0rUVbbsbM8RGAdS4N1Q4=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 112,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "OnDefaultItemsReceived",
+            "HookName": "OnDefaultItemsReceived",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerInventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GiveDefaultItems",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "K5LtoS+czjqVXr63HWJf9ub0rUVbbsbM8RGAdS4N1Q4=",
+            "BaseHookName": "OnDefaultItemsReceive",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

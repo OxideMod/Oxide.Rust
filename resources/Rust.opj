@@ -502,31 +502,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 60,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 0,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "IOnServerInitialized",
-            "HookName": "IOnServerInitialized",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerMgr",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OpenConnection",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "TcbbdQxGiHF/Yh90A6tqb172h+tiyrXidZEyHak5fxA=",
-            "BaseHookName": null,
-            "HookCategory": "Server"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 109,
+            "InjectionIndex": 119,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0, l5",
@@ -11337,6 +11313,30 @@
             "MSILHash": "yg+1x4pMkW/iuB2HZHwPdA5KTyMdjgD77HqfD/rJIXc=",
             "BaseHookName": "CanHideStash",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 6,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "IOnServerInitialized",
+            "HookName": "IOnServerInitialized",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "OnSteamConnected",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "BQIk/wjopfKt0rsqdbbrtjx1VNaJdj3dXBd72f5Kcz0=",
+            "BaseHookName": null,
+            "HookCategory": "Server"
           }
         },
         {

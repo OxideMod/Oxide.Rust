@@ -11442,6 +11442,30 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 64,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnSolarPanelSunUpdate",
+            "HookName": "OnSolarPanelSunUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SolarPanel",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SunUpdate",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "O8L/6NWncmpGlTI17E9qJDyhCq/fFWAWnHET0epcH+I=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

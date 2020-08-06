@@ -21597,6 +21597,101 @@
             "FullTypeName": "System.Single BasePlayer::lastSubscriptionTick",
             "Parameters": []
           },
+          "MSILHash": "dqKgHDoZr0ZbcmdWsawnIUVEaceEXRkInkPoNbipSnY="
+        },
+        {
+          "Name": "HotAirBalloon::avgTerrainHeight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "avgTerrainHeight",
+            "FullTypeName": "System.Single HotAirBalloon::avgTerrainHeight",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::currentBuoyancy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentBuoyancy",
+            "FullTypeName": "System.Single HotAirBalloon::currentBuoyancy",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::fuelSystem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelSystem",
+            "FullTypeName": "EntityFuelSystem HotAirBalloon::fuelSystem",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::grounded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "grounded",
+            "FullTypeName": "System.Boolean HotAirBalloon::grounded",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::lastBlastTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastBlastTime",
+            "FullTypeName": "System.Single HotAirBalloon::lastBlastTime",
+            "Parameters": []
+          },
           "MSILHash": ""
         },
         {

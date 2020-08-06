@@ -11466,6 +11466,35 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnServerInitialize",
+            "HookName": "OnServerInitialize",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Initialize",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Boolean",
+                "System.String",
+                "System.Boolean",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "ggwEw1hDOtloTAy3Huj4P8mF2UK958xOR6YfdQDjGW8=",
+            "BaseHookName": null,
+            "HookCategory": "Server"
+          }
         }
       ],
       "Modifiers": [

@@ -11673,6 +11673,114 @@
             "BaseHookName": "OnDefaultItemsReceive",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnAddRFListener",
+            "HookName": "OnAddRFListener",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RFManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AddListener",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Int32",
+                "IRFObject"
+              ]
+            },
+            "MSILHash": "zCRbD2WU3Uwpy5uVvfkjt+tC/sf/Xa5NhIzrvzq9HxE=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnRemoveRFListener",
+            "HookName": "OnRemoveRFListener",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RFManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RemoveListener",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Int32",
+                "IRFObject"
+              ]
+            },
+            "MSILHash": "JjX6nZLtX9i0DqfG7oXEZMLnmMaOhhNzdisTBOqrIRU=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 16,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnAddRFBroadcaster",
+            "HookName": "OnAddRFBroadcaster",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RFManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AddBroadcaster",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Int32",
+                "IRFObject"
+              ]
+            },
+            "MSILHash": "gnsZ82ZFJ6ClZTlahQV2MAhFTmGmHrBB/9PWjnw7BME=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 16,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnRemoveRFBroadcaster",
+            "HookName": "OnRemoveRFBroadcaster",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RFManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RemoveBroadcaster",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Int32",
+                "IRFObject"
+              ]
+            },
+            "MSILHash": "BXFCfnu2faJ5vFVYjW2y34elKrqqTQYtBS2d/zFQXOo=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

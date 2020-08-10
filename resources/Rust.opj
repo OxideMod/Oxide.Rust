@@ -22314,6 +22314,854 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::RefreshOnOffState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RefreshOnOffState",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "ZzLzzihNAVV1Sj34PrVBgvztr/qPsjFNcV768USy2+E="
+        },
+        {
+          "Name": "ModularCarGarage::UpdateCarOccupant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateCarOccupant",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "FPpcxQhWnJ5XpmqMFS9B5aX2b9/OQMH9tsftlnWahp8="
+        },
+        {
+          "Name": "ModularCarGarage::SetOccupantState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetOccupantState",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Boolean",
+              "System.Boolean",
+              "System.Boolean",
+              "ModularCarGarage/OccupantLock",
+              "System.Int32",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "mXRiqAWFjK5xfOuoQxyF+h21ehmb7KXOsi9knCHGa5g="
+        },
+        {
+          "Name": "ModularCarGarage::StopChassisDestroy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StopChassisDestroy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "KZeDcmLJApwxNfND3HxrOY+DmqQG9Vkdo//+wgNO81M="
+        },
+        {
+          "Name": "ModularCarGarage::UpdateOccupantMode",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateOccupantMode",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "xVd4jeb2K1YJoOHrT7AoAFYweYrqOHkXQIPJw3oKZIg="
+        },
+        {
+          "Name": "ModularCarGarage::WakeNearbyRigidbodies",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "WakeNearbyRigidbodies",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "xGfas+6LnbR1Jx5M8pqiPl35P7Fn1mrYsYRgzvP86BY="
+        },
+        {
+          "Name": "ModularCarGarage::RefreshLoot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RefreshLoot",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "SWlS+o3qlfmruG06e0oZSSP4ozsIVy60EBGf8Bie3lU="
+        },
+        {
+          "Name": "ModularCarGarage::RefreshLiftState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RefreshLiftState",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "/MRvn/cu3ZjuBPvpSvZ+CXYTMNEMeQYl3AbRGbLx88c="
+        },
+        {
+          "Name": "ModularCarGarage::MoveLiftUp",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MoveLiftUp",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "Ha7s0Bwjy3IRV+JwGWjFRuwE4hAylhIZ6duXe/74EZE="
+        },
+        {
+          "Name": "ModularCarGarage::MoveLiftDown",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MoveLiftDown",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "6OkaWOH8JdxZssT+ulT2uGs1ZABHtNFUyPbwoJ3Dfd0="
+        },
+        {
+          "Name": "ModularCarGarage::MoveLift",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MoveLift",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "ModularCarGarage/VehicleLiftState",
+              "System.Single",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "SkgxMC8eQrPdEBi/gQMeMm0Q/JD4MDLyZN8Yk5Q0JvU="
+        },
+        {
+          "Name": "ModularCarGarage::GrabOccupant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GrabOccupant",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "ModularCar"
+            ]
+          },
+          "MSILHash": "9WOMbYMXbf2ZSQW7a4clfTY/2E5GAXtRVOc1xuYHrnY="
+        },
+        {
+          "Name": "ModularCarGarage::FinishDestroyingChassis",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FinishDestroyingChassis",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "wEMXrY5AUIbfwkwxz0nMrOpCIcAET8+wJNlDpwdnwfI="
+        },
+        {
+          "Name": "ModularCarGarage::EditableOccupantEntered",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EditableOccupantEntered",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "qqZbhAQ1RnzctJ7Y6zdMiAn/7BImePRYMW6kW5rN8ds="
+        },
+        {
+          "Name": "ModularCarGarage::EditableOccupantLeft",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EditableOccupantLeft",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "qqZbhAQ1RnzctJ7Y6zdMiAn/7BImePRYMW6kW5rN8ds="
+        },
+        {
+          "Name": "ModularCarGarage::animName",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "animName",
+            "FullTypeName": "System.String ModularCarGarage::animName",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::downPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "downPos",
+            "FullTypeName": "UnityEngine.Vector3 ModularCarGarage::downPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::inUseLight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "inUseLight",
+            "FullTypeName": "EmissionToggle ModularCarGarage::inUseLight",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::liftLoopSound",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "liftLoopSound",
+            "FullTypeName": "Sound ModularCarGarage::liftLoopSound",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::liftLoopSoundDef",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "liftLoopSoundDef",
+            "FullTypeName": "SoundDefinition ModularCarGarage::liftLoopSoundDef",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::liftMoveTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "liftMoveTime",
+            "FullTypeName": "System.Single ModularCarGarage::liftMoveTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::liftStartSoundDef",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "liftStartSoundDef",
+            "FullTypeName": "SoundDefinition ModularCarGarage::liftStartSoundDef",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::liftStopDownSoundDef",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "liftStopDownSoundDef",
+            "FullTypeName": "SoundDefinition ModularCarGarage::liftStopDownSoundDef",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::liftStopSoundDef",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "liftStopSoundDef",
+            "FullTypeName": "SoundDefinition ModularCarGarage::liftStopSoundDef",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::lootingPlayers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lootingPlayers",
+            "FullTypeName": "System.Collections.Generic.HashSet`1<BasePlayer> ModularCarGarage::lootingPlayers",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::magnetSnap",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "magnetSnap",
+            "FullTypeName": "MagnetSnap ModularCarGarage::magnetSnap",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::needsElectricity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "needsElectricity",
+            "FullTypeName": "System.Boolean ModularCarGarage::needsElectricity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::occupantTrigger",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "occupantTrigger",
+            "FullTypeName": "VehicleLiftOccupantTrigger ModularCarGarage::occupantTrigger",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::poweredLight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "poweredLight",
+            "FullTypeName": "EmissionToggle ModularCarGarage::poweredLight",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::recycleDropPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "recycleDropPos",
+            "FullTypeName": "UnityEngine.Transform ModularCarGarage::recycleDropPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::recycleEfficiency",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "recycleEfficiency",
+            "FullTypeName": "System.Single ModularCarGarage::recycleEfficiency",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::vehicleLift",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "vehicleLift",
+            "FullTypeName": "UnityEngine.Transform ModularCarGarage::vehicleLift",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::vehicleLiftAnim",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "vehicleLiftAnim",
+            "FullTypeName": "UnityEngine.Animation ModularCarGarage::vehicleLiftAnim",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::vehicleLiftPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "vehicleLiftPos",
+            "FullTypeName": "UnityEngine.Transform ModularCarGarage::vehicleLiftPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::vehicleLiftState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "vehicleLiftState",
+            "FullTypeName": "ModularCarGarage/VehicleLiftState ModularCarGarage::vehicleLiftState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::LiftIsUp",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "LiftIsUp",
+            "FullTypeName": "System.Boolean ModularCarGarage::LiftIsUp()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::HasOccupant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "HasOccupant",
+            "FullTypeName": "System.Boolean ModularCarGarage::HasOccupant()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::IsDestroyingChassis",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            5
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              5
+            ],
+            "Name": "IsDestroyingChassis",
+            "FullTypeName": "System.Boolean ModularCarGarage::IsDestroyingChassis()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::LiftIsDown",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "LiftIsDown",
+            "FullTypeName": "System.Boolean ModularCarGarage::LiftIsDown()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::LiftIsMoving",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "LiftIsMoving",
+            "FullTypeName": "System.Boolean ModularCarGarage::LiftIsMoving()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::OccupantLockID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "OccupantLockID",
+            "FullTypeName": "System.Int32 ModularCarGarage::OccupantLockID()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::OccupantLockState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "OccupantLockState",
+            "FullTypeName": "ModularCarGarage/OccupantLock ModularCarGarage::OccupantLockState()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::PlatformIsOccupied",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "PlatformIsOccupied",
+            "FullTypeName": "System.Boolean ModularCarGarage::PlatformIsOccupied()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

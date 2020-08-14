@@ -488,6 +488,16 @@ namespace Oxide.Game.Rust
             if (key == "global.language")
             {
                 lang.SetLanguage(val, connection.userid.ToString());
+
+                BasePlayer basePlayer = connection.player as BasePlayer;
+                if (basePlayer != null)
+                {
+                    Interface.CallHook("OnPlayerSetLanguage", basePlayer, val);
+                    if (basePlayer.IPlayer != null)
+                    {
+                        Interface.CallHook("OnUserSetLanguage", basePlayer.IPlayer, val);
+                    }
+                }
             }
         }
 

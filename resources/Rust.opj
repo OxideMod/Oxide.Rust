@@ -7623,10 +7623,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
+            "InjectionIndex": 9,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "a0.player, this",
+            "ArgumentString": "a0, this",
             "HookTypeName": "Simple",
             "Name": "CanTakeCutting",
             "HookName": "CanTakeCutting",
@@ -7635,13 +7635,13 @@
             "Flagged": false,
             "Signature": {
               "Exposure": 2,
-              "Name": "RPC_TakeClone",
+              "Name": "TakeClones",
               "ReturnType": "System.Void",
               "Parameters": [
-                "BaseEntity/RPCMessage"
+                "BasePlayer"
               ]
             },
-            "MSILHash": "IJ+oZTv9gh9tnRTSum2gQa6LZvYTMUBjCJ7m9z0xcAQ=",
+            "MSILHash": "2sNnuW6Wb9dCXkV18R41Gmoz3zten34amxiPVTJBGws=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -11671,6 +11671,32 @@
             },
             "MSILHash": "K5LtoS+czjqVXr63HWJf9ub0rUVbbsbM8RGAdS4N1Q4=",
             "BaseHookName": "OnDefaultItemsReceive",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnRemoveDying",
+            "HookName": "OnRemoveDying",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GrowableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RemoveDying",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "RrJa3Dm4KJ983oPilgrc3Dv4qZMhXGmWooByPYOthKw=",
+            "BaseHookName": null,
             "HookCategory": "Player"
           }
         }

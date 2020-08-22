@@ -22206,6 +22206,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseModularVehicle::immuneToDecay",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "immuneToDecay",
+            "FullTypeName": "System.Boolean BaseModularVehicle::immuneToDecay",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerStatistics::forPlayer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerStatistics",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "forPlayer",
+            "FullTypeName": "BasePlayer PlayerStatistics::forPlayer",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

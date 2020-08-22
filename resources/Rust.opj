@@ -22630,6 +22630,40 @@
         }
       ],
       "Fields": []
+    },
+    {
+      "AssemblyName": "Facepunch.UnityEngine.dll",
+      "Hooks": [],
+      "Modifiers": [
+        {
+          "Name": "TimeWarning::.ctor",
+          "AssemblyName": "Facepunch.UnityEngine.dll",
+          "TypeName": "TimeWarning",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": ".ctor",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "fwsj4AFPiO7fD2V9SXxj0rF+wkOLiQlTt5hE2csnmc4="
+        }
+      ],
+      "Fields": [
+        {
+          "Name": "Placeholder",
+          "AssemblyName": "Facepunch.UnityEngine.dll",
+          "TypeName": "TimeWarning",
+          "FieldType": "mscorlib|System.Object",
+          "Flagged": false
+        }
+      ]
     }
   ]
 }

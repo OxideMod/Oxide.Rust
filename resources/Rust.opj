@@ -11673,6 +11673,34 @@
             "BaseHookName": "OnDefaultItemsReceive",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a2, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnItemRefill",
+            "HookName": "OnItemRefill",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemModRepair",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerCommand",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "System.String",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "qGxN2etBY5aN9c1Q0t1fCjs46OKZcKWyWfQ0Dix3ksg=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

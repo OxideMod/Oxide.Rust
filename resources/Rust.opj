@@ -11766,6 +11766,214 @@
             "BaseHookName": "OnPlayerCorpseSpawn",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 35,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnFrequencyChange [Broadcaster]",
+            "HookName": "OnFrequencyChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RFBroadcaster",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerSetFrequency",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "+IV+c9uNP+nVBPk6nYbCrzC8PcAuJPCFK2b3PdPrCY8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 61,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnFrequencyChanged [Broadcaster]",
+            "HookName": "OnFrequencyChanged",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RFBroadcaster",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerSetFrequency",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "+IV+c9uNP+nVBPk6nYbCrzC8PcAuJPCFK2b3PdPrCY8=",
+            "BaseHookName": "OnFrequencyChange [Broadcaster]",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnFrequencyChange [Receiver]",
+            "HookName": "OnFrequencyChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RFReceiver",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerSetFrequency",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "jRZ9wbib/mw/m9PsvR17KZ6lRsBYEiuEBPZESURjwmk=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 39,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnFrequencyChanged [Receiver]",
+            "HookName": "OnFrequencyChanged",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RFReceiver",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerSetFrequency",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "jRZ9wbib/mw/m9PsvR17KZ6lRsBYEiuEBPZESURjwmk=",
+            "BaseHookName": "OnFrequencyChange [Receiver]",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 38,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnFrequencyChange [Detonator]",
+            "HookName": "OnFrequencyChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Detonator",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerSetFrequency",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "vd9E7waJRVVam6RuZsgv+DjZg5Kn+0H4AKBqTQfN4LY=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 84,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnFrequencyChanged [Detonator]",
+            "HookName": "OnFrequencyChanged",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Detonator",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerSetFrequency",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "vd9E7waJRVVam6RuZsgv+DjZg5Kn+0H4AKBqTQfN4LY=",
+            "BaseHookName": "OnFrequencyChange [Detonator]",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 24,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnFrequencyChange [PagerEntity]",
+            "HookName": "OnFrequencyChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PagerEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerSetFrequency",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "02IU18JZuKG6tc2eoQMADDNyxDtrai026OhVRqXw19w=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 47,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnFrequencyChanged [PagerEntity]",
+            "HookName": "OnFrequencyChanged",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PagerEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerSetFrequency",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "02IU18JZuKG6tc2eoQMADDNyxDtrai026OhVRqXw19w=",
+            "BaseHookName": "OnFrequencyChange [PagerEntity]",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

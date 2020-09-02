@@ -2724,32 +2724,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 12,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "l1",
-            "HookTypeName": "Simple",
-            "Name": "OnPlayerSpawn",
-            "HookName": "OnPlayerSpawn",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerMgr",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "SpawnNewPlayer",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Network.Connection"
-              ]
-            },
-            "MSILHash": "Fn0b/bN5ZpJfphJM8Spcqqdz/q8+hfwR8KJa6Q6VlKk=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 4,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -9224,42 +9198,6 @@
           }
         },
         {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 17,
-            "RemoveCount": 5,
-            "Instructions": [
-              {
-                "OpCode": "brfalse_s",
-                "OpType": "Instruction",
-                "Operand": 23
-              },
-              {
-                "OpCode": "ldnull",
-                "OpType": "None",
-                "Operand": null
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnPlayerSpawn [null return]",
-            "HookName": "OnPlayerSpawn [null return]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerMgr",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "SpawnNewPlayer",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Network.Connection"
-              ]
-            },
-            "MSILHash": "Fn0b/bN5ZpJfphJM8Spcqqdz/q8+hfwR8KJa6Q6VlKk=",
-            "BaseHookName": "OnPlayerSpawn",
-            "HookCategory": "_Patches"
-          }
-        },
-        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 110,
@@ -11671,6 +11609,82 @@
             },
             "MSILHash": "K5LtoS+czjqVXr63HWJf9ub0rUVbbsbM8RGAdS4N1Q4=",
             "BaseHookName": "OnDefaultItemsReceive",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 12,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseNetworkable|net"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Facepunch.Network|Network.Networkable|OnConnected"
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnPlayerSpawn"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 12
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnPlayerSpawn",
+            "HookName": "OnPlayerSpawn",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SpawnNewPlayer",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Connection"
+              ]
+            },
+            "MSILHash": "Fn0b/bN5ZpJfphJM8Spcqqdz/q8+hfwR8KJa6Q6VlKk=",
+            "BaseHookName": null,
             "HookCategory": "Player"
           }
         }

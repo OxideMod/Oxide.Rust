@@ -11687,6 +11687,33 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 96,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, l5",
+            "HookTypeName": "Simple",
+            "Name": "OnBonusItemDrop",
+            "HookName": "OnBonusItemDrop",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "LootContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DropBonusItems",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity",
+                "ItemContainer"
+              ]
+            },
+            "MSILHash": "ov6Wy0hAWPu+1m9ajS3/CtW1hHE8ISwx2JiY+SXNJtM=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

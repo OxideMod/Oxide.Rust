@@ -11668,7 +11668,7 @@
             "InjectionIndex": 96,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l0, l5",
+            "ArgumentString": "l5, l0",
             "HookTypeName": "Simple",
             "Name": "OnBonusItemDrop",
             "HookName": "OnBonusItemDrop",
@@ -11686,7 +11686,7 @@
             },
             "MSILHash": "ov6Wy0hAWPu+1m9ajS3/CtW1hHE8ISwx2JiY+SXNJtM=",
             "BaseHookName": null,
-            "HookCategory": "Player"
+            "HookCategory": "Item"
           }
         },
         {
@@ -12145,6 +12145,33 @@
             "MSILHash": "jY7H7/eT2TuGFH0brxAshtJfttnR9U2WBehwTbrSEY8=",
             "BaseHookName": "OnRfFrequencyChange",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 117,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l5, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnBonusItemDropped",
+            "HookName": "OnBonusItemDropped",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "LootContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DropBonusItems",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity",
+                "ItemContainer"
+              ]
+            },
+            "MSILHash": "ov6Wy0hAWPu+1m9ajS3/CtW1hHE8ISwx2JiY+SXNJtM=",
+            "BaseHookName": "OnBonusItemDrop",
+            "HookCategory": "Item"
           }
         }
       ],

@@ -177,6 +177,8 @@ namespace Oxide.Game.Rust.Libraries
 
             player.IPlayer.Name = name;
             permission.UpdateNickname(player.UserIDString, name);
+
+            Teleport(player, player.transform.position);
         }
 
         /// <summary>

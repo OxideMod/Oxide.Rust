@@ -11593,26 +11593,6 @@
             "RemoveCount": 0,
             "Instructions": [
               {
-                "OpCode": "ldloc_1",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ldfld",
-                "OpType": "Field",
-                "Operand": "Assembly-CSharp|BaseNetworkable|net"
-              },
-              {
-                "OpCode": "ldarg_1",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "Facepunch.Network|Network.Networkable|OnConnected"
-              },
-              {
                 "OpCode": "ldstr",
                 "OpType": "String",
                 "Operand": "OnPlayerSpawn"
@@ -11764,82 +11744,6 @@
             },
             "MSILHash": "LXqSRzZk2FgZ8ohQy46ghEcwpMm9yHunCGR78btpS2Q=",
             "BaseHookName": "OnPlayerCorpseSpawn",
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 12,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldloc_1",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ldfld",
-                "OpType": "Field",
-                "Operand": "Assembly-CSharp|BaseNetworkable|net"
-              },
-              {
-                "OpCode": "ldarg_1",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "Facepunch.Network|Network.Networkable|OnConnected"
-              },
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnPlayerSpawn"
-              },
-              {
-                "OpCode": "ldloc_1",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
-              },
-              {
-                "OpCode": "brfalse_s",
-                "OpType": "Instruction",
-                "Operand": 12
-              },
-              {
-                "OpCode": "ldnull",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ret",
-                "OpType": "None",
-                "Operand": null
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnPlayerSpawn",
-            "HookName": "OnPlayerSpawn",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerMgr",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "SpawnNewPlayer",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Network.Connection"
-              ]
-            },
-            "MSILHash": "Fn0b/bN5ZpJfphJM8Spcqqdz/q8+hfwR8KJa6Q6VlKk=",
-            "BaseHookName": null,
             "HookCategory": "Player"
           }
         },

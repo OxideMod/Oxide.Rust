@@ -664,6 +664,13 @@ namespace Oxide.Game.Rust
             return null;
         }
 
+        [HookMethod("OnPlayerCorpseSpawn")]
+        private object OnPlayerCorpseSpawn(BasePlayer player, BaseCorpse corpse)
+        {
+            return Interface.Oxide.CallDeprecatedHook("OnPlayerCorpse", "CanPushVehicle(BasePlayer player, BaseCorpse corpse)",
+                new System.DateTime(2021, 1, 1), player, corpse);
+        }
+
         #endregion Deprecated Hooks
     }
 }

@@ -7233,10 +7233,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 48,
-            "ReturnBehavior": 0,
+            "InjectionIndex": 31,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l6",
+            "ArgumentString": "this, l5, l2",
             "HookTypeName": "Simple",
             "Name": "OnBigWheelWin",
             "HookName": "OnBigWheelWin",

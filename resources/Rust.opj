@@ -23120,6 +23120,220 @@
             ]
           },
           "MSILHash": "ReJnmAcpp2Kk3FQrsBnnj1bdr7yn6dZ/JFPkACkHy0M="
+        },
+        {
+          "Name": "Kayak::fixedDragUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Kayak",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fixedDragUpdate",
+            "FullTypeName": "TimeCachedValue`1<System.Single> Kayak::fixedDragUpdate",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Kayak::lastUsedTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Kayak",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastUsedTime",
+            "FullTypeName": "TimeSince Kayak::lastUsedTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Kayak::playerPaddleCooldowns",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Kayak",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerPaddleCooldowns",
+            "FullTypeName": "TimeSince[] Kayak::playerPaddleCooldowns",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Kayak::BoatDecay",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Kayak",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "BoatDecay",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "Bnklfx1FbMw0Vxd0yLleHhX3a7coWhIDliVKfbPI35w="
+        },
+        {
+          "Name": "Kayak::CalculateDesiredDrag",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Kayak",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CalculateDesiredDrag",
+            "FullTypeName": "System.Single",
+            "Parameters": []
+          },
+          "MSILHash": "hs5xfjp2tsTyXsmaDs1+yx16G5dobSP4DR/OlIFHGoQ="
+        },
+        {
+          "Name": "Kayak::DoPushAction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Kayak",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "DoPushAction",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "HpThFDlk359vOKiFM8QU5vM8kTYRPLL2unLMP/KlNpo="
+        },
+        {
+          "Name": "Kayak::GetPaddlePoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Kayak",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetPaddlePoint",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "System.Int32",
+              "Kayak/PaddleDirection"
+            ]
+          },
+          "MSILHash": "Qw3VwV62naUA2PiyJDdUszGl5N2XEsMTZ358iKNHPZA="
+        },
+        {
+          "Name": "Kayak::IsInWater",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Kayak",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsInWater",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "CLpqZuXF37B5gOrNk2VGac0c3+DO1EsZsggcZA2tQi0="
+        },
+        {
+          "Name": "BaseVehicle::spawnTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spawnTime",
+            "FullTypeName": "System.Single BaseVehicle::spawnTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseVehicle::safeAreaRadius",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "safeAreaRadius",
+            "FullTypeName": "System.Single BaseVehicle::safeAreaRadius",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseVehicle::safeAreaOrigin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "safeAreaOrigin",
+            "FullTypeName": "UnityEngine.Vector3 BaseVehicle::safeAreaOrigin",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

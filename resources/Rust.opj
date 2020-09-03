@@ -7257,10 +7257,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 70,
-            "ReturnBehavior": 0,
+            "InjectionIndex": 69,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l8",
+            "ArgumentString": "this, l8, l2",
             "HookTypeName": "Simple",
             "Name": "OnBigWheelLoss",
             "HookName": "OnBigWheelLoss",

@@ -47,9 +47,9 @@ namespace Oxide.Game.Rust
         public override string[] DefaultReferences => new[]
         {
             "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks.Posix64", "Facepunch.Steamworks.Win64", "Facepunch.System", "Facepunch.UnityEngine", "NewAssembly",
-            "Rust.Data", "Rust.Global", "Rust.Localization", "Rust.Workshop", "Rust.World", "System.Drawing", "UnityEngine.AIModule", "UnityEngine.AssetBundleModule",
-            "UnityEngine.CoreModule", "UnityEngine.GridModule", "UnityEngine.ImageConversionModule", "UnityEngine.Networking", "UnityEngine.PhysicsModule", "UnityEngine.TerrainModule",
-            "UnityEngine.TerrainPhysicsModule", "UnityEngine.UI", "UnityEngine.UIModule", "UnityEngine.UIElementsModule", "UnityEngine.UnityWebRequestAudioModule",
+            "Rust.Data", "Rust.Global", "Rust.Localization", "Rust.Platform.Common", "Rust.Platform.Steam", "Rust.Workshop", "Rust.World", "System.Drawing", "UnityEngine.AIModule",
+            "UnityEngine.AssetBundleModule", "UnityEngine.CoreModule", "UnityEngine.GridModule", "UnityEngine.ImageConversionModule", "UnityEngine.Networking", "UnityEngine.PhysicsModule",
+            "UnityEngine.TerrainModule", "UnityEngine.TerrainPhysicsModule", "UnityEngine.UI", "UnityEngine.UIModule", "UnityEngine.UIElementsModule", "UnityEngine.UnityWebRequestAudioModule",
             "UnityEngine.UnityWebRequestModule", "UnityEngine.UnityWebRequestTextureModule", "UnityEngine.UnityWebRequestWWWModule", "UnityEngine.VehiclesModule",
             "UnityEngine.WebModule", "netstandard"
         };
@@ -59,9 +59,8 @@ namespace Oxide.Game.Rust
         /// </summary>
         public override string[] WhitelistAssemblies => new[]
         {
-            "Assembly-CSharp", "Assembly-CSharp-firstpass", "DestMath", "Facepunch.Network", "Facepunch.System", "Facepunch.UnityEngine", "mscorlib",
-            "Oxide.Core", "Oxide.Rust", /* < Needed for non-C# plugins for some reason */ "RustBuild", "Rust.Data", "Rust.Global", "Rust.Localization",
-            "System", "System.Core", "UnityEngine"
+            "Assembly-CSharp", "Assembly-CSharp-firstpass", "DestMath", "Facepunch.Network", "Facepunch.System", "Facepunch.UnityEngine", "mscorlib",  "Oxide.Core", "Oxide.Rust",
+            "RustBuild", "Rust.Data", "Rust.Global", "Rust.Localization","Rust.Localization", "Rust.Platform.Common", "Rust.Platform.Steam", "System", "System.Core", "UnityEngine"
         };
 
         /// <summary>

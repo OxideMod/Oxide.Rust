@@ -53,7 +53,7 @@
     <None Remove="Bundle\**; dependencies\**; *.config; *.opj" />
   </ItemGroup>
   <ItemGroup>
-    <PatchedFiles Include="$(TargetDir)\Assembly-CSharp.dll; $(TargetDir)\Facepunch.Console.dll; $(TargetDir)\Facepunch.Network.dll; $(TargetDir)\Facepunch.Rcon.dll; $(TargetDir)\NewAssembly.dll" />
+    <PatchedFiles Include="$(TargetDir)\Assembly-CSharp.dll; $(TargetDir)\Facepunch.Console.dll; $(TargetDir)\Facepunch.Network.dll; $(TargetDir)\Facepunch.Rcon.dll; $(TargetDir)\Facepunch.UnityEngine.dll; $(TargetDir)\NewAssembly.dll; $(TargetDir)\Rust.Platform.Steam.dll" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Import Project="..\Game.targets" />

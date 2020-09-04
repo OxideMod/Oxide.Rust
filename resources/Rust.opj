@@ -11563,30 +11563,6 @@
           }
         },
         {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 17,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 0,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "IOnServerInitialized",
-            "HookName": "IOnServerInitialized",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ServerMgr",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "StartSteamServer",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "vjfAfD8B9UkWU/TzqPT4MlKmNaxsle/5PPRbwp/OyS0=",
-            "BaseHookName": null,
-            "HookCategory": "Server"
-          }
-        },
-        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 12,
@@ -23754,6 +23730,37 @@
           "Flagged": false
         }
       ]
+    },
+    {
+      "AssemblyName": "Rust.Platform.Steam.dll",
+      "Hooks": [
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 2,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "IOnServerInitialized",
+            "HookName": "IOnServerInitialized",
+            "AssemblyName": "Rust.Platform.Steam.dll",
+            "TypeName": "Rust.Platform.Steam.SteamPlatform",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "OnSteamConnected",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "fagq22jMGd6Sb6ByPKuVhVIj2y/e7du0UBb9Wo2vLRM=",
+            "BaseHookName": null,
+            "HookCategory": "Server"
+          }
+        }
+      ],
+      "Modifiers": [],
+      "Fields": []
     }
   ]
 }

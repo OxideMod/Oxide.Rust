@@ -304,7 +304,7 @@ namespace Oxide.Game.Rust
                 {
                     return activePlayer;
                 }
-                
+
                 if (activePlayer.net?.connection != null && activePlayer.net.ID.Equals(nameOrIdOrIp))
                 {
                     return activePlayer;

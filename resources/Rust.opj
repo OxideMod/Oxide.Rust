@@ -23315,6 +23315,394 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "NPCTalking::conversingPlayers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCTalking",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "conversingPlayers",
+            "FullTypeName": "System.Collections.Generic.List`1<BasePlayer> NPCTalking::conversingPlayers",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCTalking::lastActionPlayer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCTalking",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastActionPlayer",
+            "FullTypeName": "BasePlayer NPCTalking::lastActionPlayer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCTalking::maxConversationDistance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCTalking",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxConversationDistance",
+            "FullTypeName": "System.Single NPCTalking::maxConversationDistance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "WorldSetup::ProceduralObjects",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WorldSetup",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "ProceduralObjects",
+            "FullTypeName": "System.Collections.Generic.List`1<ProceduralObject> WorldSetup::ProceduralObjects",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "WorldSetup::CreateObject",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WorldSetup",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CreateObject",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "8f353w33YRR7WX5aAihO0uuIBb9tMm5bFT7vDiME96k="
+        },
+        {
+          "Name": "WorldSetup::OnValidate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WorldSetup",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnValidate",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "hWBbE9QIX6J3pQBU54teKD6xdgwjkreZ5On7Ub9SB8A="
+        },
+        {
+          "Name": "TerrainPath::OceanPatrolClose",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OceanPatrolClose",
+            "FullTypeName": "System.Collections.Generic.List`1<UnityEngine.Vector3> TerrainPath::OceanPatrolClose",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::OceanPatrolFar",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OceanPatrolFar",
+            "FullTypeName": "System.Collections.Generic.List`1<UnityEngine.Vector3> TerrainPath::OceanPatrolFar",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::wires",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "wires",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.List`1<PowerlineNode>> TerrainPath::wires",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GameManifest::Invalidate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GameManifest",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Invalidate",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.String"
+            ]
+          },
+          "MSILHash": "79c99yvwEExc2MfQTb0OmCBD5pk+MM3FRED318H198Q="
+        },
+        {
+          "Name": "GameManager::Clientside",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GameManager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Clientside",
+            "FullTypeName": "System.Boolean GameManager::Clientside",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GameManager::pool",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GameManager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "pool",
+            "FullTypeName": "PrefabPoolCollection GameManager::pool",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GameManager::preProcessed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GameManager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "preProcessed",
+            "FullTypeName": "PrefabPreProcess GameManager::preProcessed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GameManager::Serverside",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GameManager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Serverside",
+            "FullTypeName": "System.Boolean GameManager::Serverside",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PrefabPreProcess::cleanupList",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PrefabPreProcess",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cleanupList",
+            "FullTypeName": "System.Collections.Generic.List`1<UnityEngine.GameObject> PrefabPreProcess::cleanupList",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PrefabPreProcess::destroyList",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PrefabPreProcess",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "destroyList",
+            "FullTypeName": "System.Collections.Generic.List`1<UnityEngine.Component> PrefabPreProcess::destroyList",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PrefabPreProcess::prefabList",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PrefabPreProcess",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "prefabList",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.GameObject> PrefabPreProcess::prefabList",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PrefabPreProcess::RunCleanupQueue",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PrefabPreProcess",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RunCleanupQueue",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "4gxVWIvM12enlnSNK/hrRxaVBT0DO4aWK8JTCWEMhcg="
+        },
+        {
+          "Name": "PrefabPreProcess::DoCleanup",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PrefabPreProcess",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DoCleanup",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "/6ZCz6aMD+Ppyq51hCSODcq+bFmV9AWZM9E5V8+uE0Q="
+        },
+        {
+          "Name": "CompanionServer.Server::TeamChat",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompanionServer.Server",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "TeamChat",
+            "FullTypeName": "CompanionServer.ChatLog CompanionServer.Server::TeamChat",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [
@@ -23644,6 +24032,86 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "AssetBundleBackend::rootBundle",
+          "AssemblyName": "NewAssembly.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rootBundle",
+            "FullTypeName": "UnityEngine.AssetBundle AssetBundleBackend::rootBundle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AssetBundleBackend::manifest",
+          "AssemblyName": "NewAssembly.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "manifest",
+            "FullTypeName": "UnityEngine.AssetBundleManifest AssetBundleBackend::manifest",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AssetBundleBackend::LoadBundle",
+          "AssemblyName": "NewAssembly.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "LoadBundle",
+            "FullTypeName": "UnityEngine.AssetBundle",
+            "Parameters": [
+              "System.String"
+            ]
+          },
+          "MSILHash": "WUbQuoaA14BZ5c3CXj6INVSx2B7Cp5h8bXXtCK1DE9o="
+        },
+        {
+          "Name": "AssetBundleBackend::LoadBundleAsync",
+          "AssemblyName": "NewAssembly.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 1,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "LoadBundleAsync",
+            "FullTypeName": "UnityEngine.AssetBundleCreateRequest",
+            "Parameters": [
+              "System.String"
+            ]
+          },
+          "MSILHash": "S8pPw7DAl13pVCSxhdk61CL92OKyVkIYZRLsca9Qm3Y="
         }
       ],
       "Fields": []

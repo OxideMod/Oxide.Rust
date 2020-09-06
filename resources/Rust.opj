@@ -12096,9 +12096,14 @@
                 "Operand": "Assembly-CSharp|HeldEntity|GetOwnerPlayer"
               },
               {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object,System.Object)"
               },
               {
                 "OpCode": "brfalse_s",
@@ -12106,7 +12111,7 @@
                 "Operand": 7
               },
               {
-                "OpCode": "ldc_i4_0",
+                "OpCode": "ldc_i4_1",
                 "OpType": "None",
                 "Operand": null
               },

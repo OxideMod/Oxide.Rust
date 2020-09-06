@@ -10332,19 +10332,29 @@
                 "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
               },
               {
-                "OpCode": "ldnull",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "beq_s",
+                "OpCode": "brfalse_s",
                 "OpType": "Instruction",
                 "Operand": 68
               },
               {
-                "OpCode": "ret",
+                "OpCode": "ldloc_3",
                 "OpType": "None",
                 "Operand": null
+              },
+              {
+                "OpCode": "ldc_r4",
+                "OpType": "Single",
+                "Operand": "0"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|Item|Remove(System.Single)"
+              },
+              {
+                "OpCode": "br_s",
+                "OpType": "Instruction",
+                "Operand": 84
               }
             ],
             "HookTypeName": "Modify",

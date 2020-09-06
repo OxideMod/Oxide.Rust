@@ -12134,6 +12134,32 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnRemoveDying",
+            "HookName": "OnRemoveDying",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GrowableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RemoveDying",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "O+te0Qr4Dk1ShGCTPeC1ed9E0kT7EJkyi5ekdSeSlJg=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
+          }
         }
       ],
       "Modifiers": [

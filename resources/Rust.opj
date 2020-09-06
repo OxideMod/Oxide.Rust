@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "G:\\steamcmd\\steamapps\\common\\rust_dedicated\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -12057,6 +12057,32 @@
             "MSILHash": "ov6Wy0hAWPu+1m9ajS3/CtW1hHE8ISwx2JiY+SXNJtM=",
             "BaseHookName": "OnBonusItemDrop",
             "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "CanHit",
+            "HookName": "OnCanHit",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Hammer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanHit",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "HitTest"
+              ]
+            },
+            "MSILHash": "8Yl7+IbfwWwUDmTtieftu69buW9qpndy5VtN93ShF8c=",
+            "BaseHookName": null,
+            "HookCategory": null
           }
         }
       ],

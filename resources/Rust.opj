@@ -12160,6 +12160,30 @@
             "BaseHookName": null,
             "HookCategory": "Resource"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "CanMoveVehicleModule",
+            "HookName": "CanMoveVehicleModule",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseVehicleModule",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanBeMovedNow",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "DZp2MNTcx0dgvK12j2+b3DgPquu7Pt2GI3g1vYLhCd8=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

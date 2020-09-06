@@ -12058,6 +12058,82 @@
             "BaseHookName": "OnBonusItemDrop",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 7,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnHammerHit"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|HitTest|HitEntity"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|HeldEntity|GetOwnerPlayer"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 7
+              },
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnHammerHit",
+            "HookName": "OnHammerHit",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Hammer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanHit",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "HitTest"
+              ]
+            },
+            "MSILHash": "8Yl7+IbfwWwUDmTtieftu69buW9qpndy5VtN93ShF8c=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

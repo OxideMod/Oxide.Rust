@@ -12453,6 +12453,32 @@
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnAnalysisComplete",
+            "HookName": "OnAnalysisComplete",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SurveyCrater",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AnalysisComplete",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

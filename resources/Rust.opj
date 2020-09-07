@@ -12179,13 +12179,33 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 3,
-            "RemoveCount": 0,
+            "InjectionIndex": 2,
+            "RemoveCount": 5,
             "Instructions": [
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 1028
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseVehicleModule|CanBeMovedNowOnVehicle"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 1034
+              },
               {
                 "OpCode": "ldstr",
                 "OpType": "String",
-                "Operand": "OnVehicleModuleMove"
+                "Operand": "OnVehicleModuleLock"
               },
               {
                 "OpCode": "ldarg_0",
@@ -12198,12 +12218,12 @@
                 "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
               },
               {
-                "OpCode": "brfalse_s",
-                "OpType": "Instruction",
-                "Operand": 3
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
               },
               {
-                "OpCode": "ldc_i4_1",
+                "OpCode": "cgt_un",
                 "OpType": "None",
                 "Operand": null
               },
@@ -12211,11 +12231,36 @@
                 "OpCode": "ret",
                 "OpType": "None",
                 "Operand": null
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnVehicleModuleUnlock"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ceq",
+                "OpType": "None",
+                "Operand": null
               }
             ],
             "HookTypeName": "Modify",
-            "Name": "OnVehicleModuleMove",
-            "HookName": "OnVehicleModuleMove",
+            "Name": "OnVehicleModuleLockUnlock",
+            "HookName": "OnVehicleModuleLockUnlock",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseVehicleModule",
             "Flagged": false,

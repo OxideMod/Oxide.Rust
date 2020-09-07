@@ -12376,9 +12376,9 @@
                 "Operand": "OnConstructionPlace"
               },
               {
-                "OpCode": "ldloc_s",
-                "OpType": "Variable",
-                "Operand": 5
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
               },
               {
                 "OpCode": "ldarg_2",
@@ -12389,6 +12389,11 @@
                 "OpCode": "ldarg_1",
                 "OpType": "None",
                 "Operand": null
+              },
+              {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "Assembly-CSharp|Construction/Target"
               },
               {
                 "OpCode": "ldloc_0",
@@ -12413,7 +12418,7 @@
               {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Assembly-CSharp|BaseEntityEx|IsValid"
+                "Operand": "Assembly-CSharp|BaseEntityEx|IsValid(Assembly-CSharp|BaseEntity)"
               },
               {
                 "OpCode": "brfalse_s",
@@ -12426,14 +12431,9 @@
                 "Operand": null
               },
               {
-                "OpCode": "ldc_i4_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
                 "OpCode": "callvirt",
                 "OpType": "Method",
-                "Operand": "Assembly-CSharp|BaseNetworkable|Kill"
+                "Operand": "Assembly-CSharp|BaseNetworkable|KillMessage"
               },
               {
                 "OpCode": "br_s",
@@ -12446,14 +12446,14 @@
                 "Operand": null
               },
               {
-                "OpCode": "ldc_i4_0",
-                "OpType": "None",
-                "Operand": null
+                "OpCode": "ldc_r4",
+                "OpType": "Single",
+                "Operand": "0"
               },
               {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Assembly-CSharp|GameManager|Destroy(UnityEngine.CoreModule|UnityEngine.GameObject,System.Single)"
+                "Operand": "Assembly-CSharp|GameManager|Destroy(UnityEngine.CoreModule|UnityEngine.Component,System.Single)"
               },
               {
                 "OpCode": "ldnull",

@@ -11319,7 +11319,7 @@
             "InjectionIndex": 50,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0, l1",
+            "ArgumentString": "this, l0, l1, l4",
             "HookTypeName": "Simple",
             "Name": "OnBookmarkControl",
             "HookName": "OnBookmarkControl",
@@ -12304,6 +12304,57 @@
             "MSILHash": "uPLOraCizRhYk2RFUo/WpqQObQ+O43Q8xyE20mHZsso=",
             "BaseHookName": null,
             "HookCategory": "Structure"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "CanControlEntity",
+            "HookName": "CanControlEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanControl",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "RQzLETIQY8oCXnENh9Yiq2D0HFlL85DvhJ8pbAWKDf4=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 9,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a1, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnBookmarkInput",
+            "HookName": "OnBookmarkInput",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerServerInput",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "InputState",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "r/DKtLojbqb7MYaeycEqh3M2K13tp6Z+VvNxeeTXyoY=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
           }
         }
       ],

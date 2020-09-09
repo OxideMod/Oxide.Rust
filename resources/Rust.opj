@@ -12530,6 +12530,78 @@
             "BaseHookName": null,
             "HookCategory": "Server"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityControl [AutoTurret]",
+            "HookName": "OnEntityControl",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanControl",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "RQzLETIQY8oCXnENh9Yiq2D0HFlL85DvhJ8pbAWKDf4=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityControl [PoweredRemoteControl]",
+            "HookName": "OnEntityControl",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PoweredRemoteControlEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanControl",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "VntiuWnNkaSSsOUOACK1DmEsoq34e6L4eaRHSKDblPE=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityControl [RemoteControlEntity]",
+            "HookName": "OnEntityControl",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RemoteControlEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanControl",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "P3Mx+v3adUs95vU27ANKY5mvZxgLUs14zJrrTfI5vlw=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

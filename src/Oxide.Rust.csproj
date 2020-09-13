@@ -41,7 +41,6 @@
     <Reference Include="NewAssembly" />
     <Reference Include="Rust.Data" />
     <Reference Include="Rust.Global" />
-    <Reference Include="Rust.Platform.Steam" />
     <Reference Include="System" />
     <Reference Include="UnityEngine" />
     <Reference Include="UnityEngine.CoreModule" />
@@ -54,7 +53,7 @@
     <None Remove="Bundle\**; dependencies\**; *.config; *.opj" />
   </ItemGroup>
   <ItemGroup>
-    <PatchedFiles Include="$(TargetDir)\Assembly-CSharp.dll; $(TargetDir)\Facepunch.Console.dll; $(TargetDir)\Facepunch.Network.dll; $(TargetDir)\Facepunch.Rcon.dll; $(TargetDir)\Facepunch.UnityEngine.dll; $(TargetDir)\NewAssembly.dll; $(TargetDir)\Rust.Platform.Steam.dll" />
+    <PatchedFiles Include="$(TargetDir)\Assembly-CSharp.dll; $(TargetDir)\Facepunch.Console.dll; $(TargetDir)\Facepunch.Network.dll; $(TargetDir)\Facepunch.Rcon.dll; $(TargetDir)\Facepunch.UnityEngine.dll; $(TargetDir)\NewAssembly.dll" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Import Project="..\Game.targets" />

@@ -24304,6 +24304,26 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ServerUsers::users",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ServerUsers",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "users",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.UInt64,ServerUsers/User> ServerUsers::users",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

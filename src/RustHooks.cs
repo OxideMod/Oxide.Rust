@@ -253,15 +253,12 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnServerUsersSet")]
         private void IOnServerUsersSet(ulong steamId, ServerUsers.UserGroup group, string playerName, string reason)
         {
-            if (serverInitialized)
+            if (serverInitialized && group == ServerUsers.UserGroup.Banned)
             {
                 string playerId = steamId.ToString();
                 IPlayer player = Covalence.PlayerManager.FindPlayerById(playerId);
-                if (group == ServerUsers.UserGroup.Banned)
-                {
-                    Interface.CallHook("OnPlayerBanned", playerName, steamId, player?.Address ?? "0", reason);
-                    Interface.CallHook("OnUserBanned", playerName, playerId, player?.Address ?? "0", reason);
-                }
+                Interface.CallHook("OnPlayerBanned", playerName, steamId, player?.Address ?? "0", reason);
+                Interface.CallHook("OnUserBanned", playerName, playerId, player?.Address ?? "0", reason);
             }
         }
 
@@ -272,15 +269,12 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnServerUsersRemove")]
         private void IOnServerUsersRemove(ulong steamId)
         {
-            if (serverInitialized)
+            if (serverInitialized && ServerUsers.users.ContainsKey(steamId) && ServerUsers.users[steamId].group == ServerUsers.UserGroup.Banned)
             {
                 string playerId = steamId.ToString();
                 IPlayer player = Covalence.PlayerManager.FindPlayerById(playerId);
-                if (ServerUsers.Is(steamId, ServerUsers.UserGroup.Banned))
-                {
-                    Interface.CallHook("OnPlayerUnbanned", player?.Name ?? "Unnamed", steamId, player?.Address ?? "0");
-                    Interface.CallHook("OnUserUnbanned", player?.Name ?? "Unnamed", playerId, player?.Address ?? "0");
-                }
+                Interface.CallHook("OnPlayerUnbanned", player?.Name ?? "Unnamed", steamId, player?.Address ?? "0");
+                Interface.CallHook("OnUserUnbanned", player?.Name ?? "Unnamed", playerId, player?.Address ?? "0");
             }
         }
 

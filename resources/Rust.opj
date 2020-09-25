@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-staging\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "ftR0bvmRo5lFlkwvA3+fwFl7RylNJPDSU6nBAlVf8Uk=",
+            "MSILHash": "ts3reFRhKoC4I43X9DaADgEtaLXlKp/OD367JSMSUdk=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -846,7 +846,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 62,
+            "InjectionIndex": 73,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
@@ -862,7 +862,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "0AmvOh91iznqQBmA9OT/asTaouPmCZSY1lCdc0mqb/U=",
+            "MSILHash": "6600HZxApw3S8K1X5v0d1QZJ6k0sFM+IUvialnQnGBw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2203,7 +2203,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 94,
+            "InjectionIndex": 92,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
@@ -2222,7 +2222,7 @@
                 "UnityEngine.Quaternion"
               ]
             },
-            "MSILHash": "tLr9l26kDiFKkGsEnQe+JqR0dZtegcAogRA3KSw67hc=",
+            "MSILHash": "ZtcUpwR15+LsWfvaY+PeLM6sg46Nzvcu3SMMGRlbTJo=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2361,7 +2361,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "EVzW3LQkGr6dHwKUAEbL5y9X4HDgwgf74tOhD/fJtMs=",
+            "MSILHash": "NdXRdrRQdWDKFp2098807DvMZjSXkdyPP2PxMzjuPKE=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2388,7 +2388,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "6/6OmWSnK1LQTj9vfUClAAEn9gqaZOv6cc8s4/f1oA4=",
+            "MSILHash": "L2lmeHxuK8HhQ9h3aGqk9fBMtKe8ofJCLVIJJ191sUo=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2439,7 +2439,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "6/6OmWSnK1LQTj9vfUClAAEn9gqaZOv6cc8s4/f1oA4=",
+            "MSILHash": "L2lmeHxuK8HhQ9h3aGqk9fBMtKe8ofJCLVIJJ191sUo=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -2640,7 +2640,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "SLCdJPJ6vIa1s2wYupiIo1mZjEwjqc83M9ObgpSiINc=",
+            "MSILHash": "6eg2kzUlvdZP11Fh5MJr7e65yJVk8+gj47CS3YxxfT8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2664,7 +2664,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "UOztdbVPHHY358mGZP8iJBedkq79jEKJwQYq0WFOocY=",
+            "MSILHash": "Wg1YFvyQv6pE1ITvjsQZtpXSe0VGvAXrLXiruPTxTgU=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -3207,7 +3207,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "f/lv9/5xgSuinEy2RWHrYzjbiVeitARwBUHrx+uN278=",
+            "MSILHash": "xvqsexJaaAp2eLQF2lRF2kvZzQn2+RfQfZKOXHyJucI=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -3545,9 +3545,9 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Qm+vnhKJfu/rB4cAYO/UZQvxw3AjiUqnuCBItWeL9dg=",
+            "MSILHash": "C72NNyglnn29ADbvIJLCBL/dS7tAsK7l2sPx5plP2y8=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Item"
           }
         },
         {
@@ -3807,7 +3807,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 307
+                "Operand": 306
               },
               {
                 "OpCode": "ldarg_0",
@@ -3832,7 +3832,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Qm+vnhKJfu/rB4cAYO/UZQvxw3AjiUqnuCBItWeL9dg=",
+            "MSILHash": "C72NNyglnn29ADbvIJLCBL/dS7tAsK7l2sPx5plP2y8=",
             "BaseHookName": "OnRecycleItem",
             "HookCategory": "Item"
           }
@@ -4042,7 +4042,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 22,
+            "InjectionIndex": 20,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
@@ -4058,7 +4058,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "xHllz9bKk9wNCezo+Iwdozmi/bc1/G42k9GcnypCc5c=",
+            "MSILHash": "KabCZTlSG9fK/V7HnZHq28GEByX5esUeo3J30aaasUQ=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5733,7 +5733,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "SLCdJPJ6vIa1s2wYupiIo1mZjEwjqc83M9ObgpSiINc=",
+            "MSILHash": "6eg2kzUlvdZP11Fh5MJr7e65yJVk8+gj47CS3YxxfT8=",
             "BaseHookName": "OnPlayerRecover",
             "HookCategory": "_Patches"
           }
@@ -7458,7 +7458,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "zX48Vp/BtV3KufIJL1LHwV2VygSyE2Do4Kv76+qg1aU=",
+            "MSILHash": "yqwrLEhXkZxg6wM7J0P4jYub1UdYlJmJ3Fp224/0xqI=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -7751,7 +7751,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "OMj9xoJHO1FDp4i+w29ZLOyINPlPUNTb9NKG/BvgfQA=",
+            "MSILHash": "XccjbOUwEKrGhJLV5Vfkh9/D9P+adqj3E6FlzgWkM+E=",
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
@@ -8615,7 +8615,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Gw+u289ks4NbZ7iaIK0xXPRja0OffHtyuF5p5HbEznI=",
+            "MSILHash": "6vEnhshu32xjsTF1J+MieG3lHF5rO99GTTIwluX6CMQ=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -8717,7 +8717,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "OuHp+A1jpZ8ERPildubroOafiPLZBOJLw/fpUTQb42c=",
+            "MSILHash": "v0XY9vqpY3KB6W76jF7DPHt4lhhVUnGaVE6GvX+6hbQ=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8741,7 +8741,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "OuHp+A1jpZ8ERPildubroOafiPLZBOJLw/fpUTQb42c=",
+            "MSILHash": "v0XY9vqpY3KB6W76jF7DPHt4lhhVUnGaVE6GvX+6hbQ=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -9385,7 +9385,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "I9xD78y07q+ys+tq+0dePXYG+5KtnpmAW6fFOo6Fgps=",
+            "MSILHash": "P2scLKM597LJDKI4NFvugowmha6ogiYGPEU09uBkrJc=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -9458,7 +9458,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "8wjUp+HitBXmFrgNsJq/4WThb31NtqKNXUAMS+2tsok=",
+            "MSILHash": "dT8d5Jt3kTxJiVqh7RZqkzesKo+rNuZTFa+xfh2sVJc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -10597,7 +10597,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "M/OdNhprLlaPRfwSHto1f0kDkZClFUa1WBrZAk/bNuM=",
+            "MSILHash": "ZzAyzxlylR1eg1L+Z58dcgpE0ILDr1FKB8TkdqORANQ=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -19709,25 +19709,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "MotorRowboat::lastUsedFuelTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MotorRowboat",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "lastUsedFuelTime",
-            "FullTypeName": "System.Single MotorRowboat::lastUsedFuelTime",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "MotorRowboat::maxVelForStationaryDismount",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "MotorRowboat",
@@ -23666,25 +23647,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "Kayak::lastUsedTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Kayak",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "lastUsedTime",
-            "FullTypeName": "TimeSince Kayak::lastUsedTime",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "Kayak::playerPaddleCooldowns",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "Kayak",
@@ -24321,6 +24283,44 @@
             ],
             "Name": "users",
             "FullTypeName": "System.Collections.Generic.Dictionary`2<System.UInt64,ServerUsers/User> ServerUsers::users",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MotorRowboat::timeSinceLastUsedFuel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MotorRowboat",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceLastUsedFuel",
+            "FullTypeName": "TimeSince MotorRowboat::timeSinceLastUsedFuel",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Kayak::timeSinceLastUsed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Kayak",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceLastUsed",
+            "FullTypeName": "TimeSince Kayak::timeSinceLastUsed",
             "Parameters": []
           },
           "MSILHash": ""

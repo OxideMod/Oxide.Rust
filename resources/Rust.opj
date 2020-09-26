@@ -12602,6 +12602,30 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnEngineStartup [MiniCopter]",
+            "HookName": "OnEngineStartup",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MiniCopter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EngineStartup",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "8pAleyRavdKKmX08YZ8lXfAd+OKZTQJwDFGeYol1aCU=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

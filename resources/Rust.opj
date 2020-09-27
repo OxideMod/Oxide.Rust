@@ -12602,6 +12602,58 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnLootEntityEnd [ContainerIOEntity]",
+            "HookName": "OnLootEntityEnd",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ContainerIOEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerStoppedLooting",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "zFUzhb16/jKJ5mdchUmrBB9VWZ7c4HXJ44m0KsXYWrI=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnLootEntityEnd [DroppedItemContainer]",
+            "HookName": "OnLootEntityEnd",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DroppedItemContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerStoppedLooting",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "4M5ZbzcLJYQ5244IZ049BhdKYRHecOJCqCWijHb+MeI=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

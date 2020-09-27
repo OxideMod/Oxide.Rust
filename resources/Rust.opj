@@ -12602,6 +12602,30 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnCanCarHaveLock",
+            "HookName": "OnCanCarHaveLock",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarLock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanHaveALock",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "9dP0JIfzRGx5637tRNiFOzhHNkhW3jQfjE7yqojwZ1k=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

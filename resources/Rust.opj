@@ -12602,6 +12602,58 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 21,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,v0,v1",
+            "HookTypeName": "Simple",
+            "Name": "OnConversationStart",
+            "HookName": "OnConversationStart",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCTalking",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_BeginTalking",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "QUI/yjiuka5+HpxnCJUVtD4SHMtf86dRJ3BpvKECMuM=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 30,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,v0,v3,v4",
+            "HookTypeName": "Simple",
+            "Name": "OnConversationResponse",
+            "HookName": "OnConversationResponse",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCTalking",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_ResponsePressed",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "/mHTS1fXcl926C8A/lINUtOxjIWf2WuGc2N2XmPvS9I=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

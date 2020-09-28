@@ -24324,6 +24324,26 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ConVar.Chat::History",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ConVar.Chat",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "History",
+            "FullTypeName": "System.Collections.Generic.List`1<ConVar.Chat/ChatEntry> ConVar.Chat::History",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

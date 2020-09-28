@@ -12602,6 +12602,58 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 37,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, v0, v2",
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleModuleSelect",
+            "HookName": "OnVehicleModuleSelect",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarGarage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_SelectedLootItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "lWVHFE9tidj4At4ZQjXH3qbpXAqhUGqiHmB8hsjEyBo=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 26,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, v0",
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleModuleDeselected",
+            "HookName": "OnVehicleModuleDeselected",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarGarage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_DeselectedLootItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "vu7lOJv/y+cUOlPA4HGFG23WH+e+IvdnzSTE8CaOR3U=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

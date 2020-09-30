@@ -22867,6 +22867,84 @@
           "MSILHash": ""
         },
         {
+          "Name": "BasePlayer::playerCollider",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerCollider",
+            "FullTypeName": "CapsuleCollider BasePlayer::playerCollider",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::EnablePlayerCollider",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EnablePlayerCollider",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::DisablePlayerCollider",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DisablePlayerCollider",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::RefreshColliderSize",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RefreshColliderSize",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": ""
+        },
+        {
           "Name": "BasePlayer::_lastSetName",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BasePlayer",

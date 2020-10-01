@@ -24436,6 +24436,151 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonument/SpawnInfo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonument/SpawnInfo",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SpawnInfo",
+            "FullTypeName": "PlaceMonument/SpawnInfo",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonuments/SpawnInfo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonuments/SpawnInfo",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SpawnInfo",
+            "FullTypeName": "PlaceMonuments/SpawnInfo",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonuments::CheckRadius",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonuments",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CheckRadius",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Collections.Generic.List`1<PlaceMonuments/SpawnInfo>",
+              "UnityEngine.Vector3",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "OiKSRGTUJQmdqAxDw2RcZF4M45lGOUuBPcdzkGLmtsQ="
+        },
+        {
+          "Name": "PlaceMonumentsRoadside/SpawnInfo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonumentsRoadside/SpawnInfo",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SpawnInfo",
+            "FullTypeName": "PlaceMonumentsRoadside/SpawnInfo",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonumentsRoadside/SpawnInfoGroup",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonumentsRoadside/SpawnInfoGroup",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SpawnInfoGroup",
+            "FullTypeName": "PlaceMonumentsRoadside/SpawnInfoGroup",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonumentsRoadside::CheckRadius",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonumentsRoadside",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CheckRadius",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Collections.Generic.List`1<PlaceMonumentsRoadside/SpawnInfo>",
+              "UnityEngine.Vector3",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "RGTIZlpFK66PgF9xXmG397TSIdT5a00IMSbaTQP684Y="
+        },
+        {
+          "Name": "PlaceMonumentsOffshore::CheckRadius",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonumentsOffshore",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CheckRadius",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Collections.Generic.List`1<PlaceMonumentsOffshore/SpawnInfo>",
+              "UnityEngine.Vector3",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "xd6ml+jOqu98F7hvozxlEAarGBEmOGiXEyOqgENGp3U="
         }
       ],
       "Fields": [

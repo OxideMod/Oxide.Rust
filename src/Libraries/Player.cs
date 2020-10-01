@@ -1,6 +1,3 @@
-using ConVar;
-using Facepunch;
-using Facepunch.Math;
 using Oxide.Core;
 using Oxide.Core.Libraries;
 using Oxide.Core.Libraries.Covalence;
@@ -372,16 +369,6 @@ namespace Oxide.Game.Rust.Libraries
             message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), args) : Formatter.ToUnity(message);
             string formatted = prefix != null ? $"{prefix} {message}" : message;
             player.SendConsoleCommand("chat.add", 2, userId, formatted);
-
-            Chat.ChatEntry chatEntry = new Chat.ChatEntry()
-            {
-                Channel = Chat.ChatChannel.Server,
-                Message = formatted,
-                UserId = player != null ? player.UserIDString : userId.ToString(),
-                Time = Epoch.Current
-            };
-            Chat.History.Add(chatEntry);
-            RCon.Broadcast(RCon.LogType.Chat, chatEntry);
         }
 
         /// <summary>

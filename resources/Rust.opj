@@ -24581,6 +24581,44 @@
             ]
           },
           "MSILHash": "xd6ml+jOqu98F7hvozxlEAarGBEmOGiXEyOqgENGp3U="
+        },
+        {
+          "Name": "MotorRowboat::timeSinceLastUsedFuel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MotorRowboat",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceLastUsedFuel",
+            "FullTypeName": "TimeSince MotorRowboat::timeSinceLastUsedFuel",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Kayak::timeSinceLastUsed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Kayak",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceLastUsed",
+            "FullTypeName": "TimeSince Kayak::timeSinceLastUsed",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

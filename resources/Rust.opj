@@ -24619,6 +24619,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::AddPlayerRigidbody",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "AddPlayerRigidbody",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "0tQeBhtE2U8RimadZAb7dxJDzRIVVKrGat959wfe4d0="
+        },
+        {
+          "Name": "BasePlayer::RemovePlayerRigidbody",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RemovePlayerRigidbody",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "bnUaVaCxEBhIS+/gTjFs7ZidY79fefX1gmWV3AHO0/8="
         }
       ],
       "Fields": [

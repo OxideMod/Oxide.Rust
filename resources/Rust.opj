@@ -12812,6 +12812,206 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnElevatorCall",
+            "HookName": "OnElevatorCall",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Elevator",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "<CallElevator>b__26_0",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Elevator"
+              ]
+            },
+            "MSILHash": "OxXaOMzjhkXzRIWOenJUwlZhnZregzarkssR0t13K5A=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 3,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnElevatorMove"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Int32"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 3
+              },
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnElevatorMove",
+            "HookName": "OnElevatorMove",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Elevator",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RequestMoveLiftTo",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.Int32",
+                "System.Single&"
+              ]
+            },
+            "MSILHash": "WlGtRxCXGMxLWa+G49FB/Knvy5wWlRYRAWKXLdOTcAg=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 12,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnElevatorRaiseLower"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|player"
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "Assembly-CSharp|Elevator/Direction"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Boolean"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 12
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnElevatorRaiseLower",
+            "HookName": "OnElevatorRaiseLower",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ElevatorLift",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_RaiseLowerFloor",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "9MCvMCrGqkv8JEpyoEKu1dQnE9vZwzjsI1sVGLx7lyQ=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnElevatorSaved",
+            "HookName": "OnElevatorSaved",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Elevator",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Save",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseNetworkable/SaveInfo"
+              ]
+            },
+            "MSILHash": "qsQ9/jyxnYIJY79QA1Ei4ZdqFNs3AyMAM8evploGvKU=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [
@@ -24815,6 +25015,248 @@
             "Parameters": []
           },
           "MSILHash": "bnUaVaCxEBhIS+/gTjFs7ZidY79fefX1gmWV3AHO0/8="
+        },
+        {
+          "Name": "Elevator::Floor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Floor",
+            "FullTypeName": "System.Int32 Elevator::Floor()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Elevator::liftEntity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "liftEntity",
+            "FullTypeName": "ElevatorLift Elevator::liftEntity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Elevator::ioEntity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ioEntity",
+            "FullTypeName": "IOEntity Elevator::ioEntity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Elevator::previousPowerAmount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "previousPowerAmount",
+            "FullTypeName": "System.Int32[] Elevator::previousPowerAmount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Elevator::ClearBusy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ClearBusy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "c5eubGOyZTGu0SHWyXf7PvPxleMOF+hvefiQW/KZKh0="
+        },
+        {
+          "Name": "Elevator::GetElevatorInDirection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetElevatorInDirection",
+            "FullTypeName": "Elevator",
+            "Parameters": [
+              "Elevator/Direction"
+            ]
+          },
+          "MSILHash": "H1gUstd0DKiO9ISGsm7MHsm+h66avvAX/zDnEcpylxQ="
+        },
+        {
+          "Name": "Elevator::GetWorldSpaceFloorPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetWorldSpaceFloorPosition",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "0ejuai9biaMewwkjCmLFTqp6gyXoN2JtEfadQb8scSU="
+        },
+        {
+          "Name": "Elevator::IsValidFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsValidFloor",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "c3I4v2tidJvk+GzTwEE42KtjXf+GDCuJcUNY8iG7cso="
+        },
+        {
+          "Name": "Elevator::LiftPositionToFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "LiftPositionToFloor",
+            "FullTypeName": "System.Int32",
+            "Parameters": []
+          },
+          "MSILHash": "wy0eiXUTVtMOHI1kwOZ33GglBHvvFb9nvEHyx3YGP98="
+        },
+        {
+          "Name": "Elevator::RequestMoveLiftTo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RequestMoveLiftTo",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Int32",
+              "System.Single&"
+            ]
+          },
+          "MSILHash": "WlGtRxCXGMxLWa+G49FB/Knvy5wWlRYRAWKXLdOTcAg="
+        },
+        {
+          "Name": "Elevator::TimeToTravelDistance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TimeToTravelDistance",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "ZZhN7QHNRQMxw2jQ9RENnlFoPp4bKK3forfxZLEfczU="
+        },
+        {
+          "Name": "Elevator::TopFloorFlag",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TopFloorFlag",
+            "FullTypeName": "BaseEntity/Flags Elevator::TopFloorFlag",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

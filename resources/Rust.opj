@@ -12812,6 +12812,35 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 1,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "ldc_i4",
+                "OpType": "Int32",
+                "Operand": "999"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "IncreaseElevatorMaxFloors [patch]",
+            "HookName": "IncreaseElevatorMaxFloors [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConstructionSocket_Elevator",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": ".ctor",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "l7nTrme17Vr2mqs9TKvbrlVjN45e1OJgKJiqaPT+xy4=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

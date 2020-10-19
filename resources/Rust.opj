@@ -12812,6 +12812,250 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|read"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Facepunch.Network|Network.NetRead|Int32"
+              },
+              {
+                "OpCode": "stloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnCounterTargetChange"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|player"
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Int32"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCounterTargetChange",
+            "HookName": "OnCounterTargetChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PowerCounter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_SetTarget",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "ZH1tlzWGFpC/9j6Cp8O5GQpKWg9Q5wdMPjQVwHXJK4s=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 20,
+            "RemoveCount": 3,
+            "Instructions": [
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCounterTargetChange [patch]",
+            "HookName": "OnCounterTargetChange [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PowerCounter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_SetTarget",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "ZH1tlzWGFpC/9j6Cp8O5GQpKWg9Q5wdMPjQVwHXJK4s=",
+            "BaseHookName": "OnCounterTargetChange",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|read"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Facepunch.Network|Network.NetRead|Bit"
+              },
+              {
+                "OpCode": "stloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnCounterModeToggle"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|player"
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Boolean"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCounterModeToggle",
+            "HookName": "OnCounterModeToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PowerCounter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ToggleDisplayMode",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "kVjU9t8StoAg0uWRlzVi78kxjzOUx+mDall6+ui4vd8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 20,
+            "RemoveCount": 3,
+            "Instructions": [
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCounterModeToggle [patch]",
+            "HookName": "OnCounterModeToggle [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PowerCounter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ToggleDisplayMode",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "kVjU9t8StoAg0uWRlzVi78kxjzOUx+mDall6+ui4vd8=",
+            "BaseHookName": "OnCounterModeToggle",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [
@@ -24815,6 +25059,44 @@
             "Parameters": []
           },
           "MSILHash": "bnUaVaCxEBhIS+/gTjFs7ZidY79fefX1gmWV3AHO0/8="
+        },
+        {
+          "Name": "PowerCounter::counterNumber",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PowerCounter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "counterNumber",
+            "FullTypeName": "System.Int32 PowerCounter::counterNumber",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PowerCounter::targetCounterNumber",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PowerCounter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "targetCounterNumber",
+            "FullTypeName": "System.Int32 PowerCounter::targetCounterNumber",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

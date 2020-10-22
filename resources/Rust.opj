@@ -13056,6 +13056,60 @@
             "BaseHookName": "OnCounterModeToggle",
             "HookCategory": "Entity"
           }
+        },		
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0,a1",
+            "HookTypeName": "Simple",
+            "Name": "OnItemCook",
+            "HookName": "OnItemCook",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemModCookable/<>c__DisplayClass7_0",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "<OnItemCreated>b__0",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "3oIDJHL3h1GJEhGG87KHlx5hmHmh4mA2QanbUZQE6NA=",
+            "BaseHookName": "OnItemCooked",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 83,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0,a1",
+            "HookTypeName": "Simple",
+            "Name": "OnItemCooked",
+            "HookName": "OnItemCooked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemModCookable/<>c__DisplayClass7_0",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "<OnItemCreated>b__0",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "3oIDJHL3h1GJEhGG87KHlx5hmHmh4mA2QanbUZQE6NA=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

@@ -13432,6 +13432,54 @@
             "BaseHookName": "OnEngineStatsRefresh",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0.socketItemDefs",
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleModulesSpawn",
+            "HookName": "OnVehicleModulesSpawn",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCar",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SpawnPreassignedModules",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "274yT4IJ3fuxLHwhPNn2uaxwCSO8438cQhc49fPrshU=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 92,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0.socketItemDefs",
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleModulesSpawned",
+            "HookName": "OnVehicleModulesSpawned",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCar",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SpawnPreassignedModules",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "274yT4IJ3fuxLHwhPNn2uaxwCSO8438cQhc49fPrshU=",
+            "BaseHookName": "OnVehicleModulesSpawn",
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

@@ -1,3 +1,4 @@
+using Facepunch.Extend;
 using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
@@ -369,19 +370,12 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <returns></returns>
         public static string[] ExtractArgs(ConsoleSystem.Arg arg)
         {
-            if (arg == null)
+            if (arg == null || !arg.HasArgs())
             {
                 return new string[0];
             }
 
-            List<string> argsList = new List<string>();
-            int i = 0;
-            while (arg.HasArgs(++i))
-            {
-                argsList.Add(arg.GetString(i - 1));
-            }
-
-            return argsList.ToArray();
+            return arg.FullString.SplitQuotesStrings();
         }
 
         #endregion Helpers

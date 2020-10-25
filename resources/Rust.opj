@@ -13592,7 +13592,7 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 1040
+                "Operand": 1041
               },
               {
                 "OpCode": "ldstr",
@@ -13605,6 +13605,11 @@
                 "Operand": null
               },
               {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
                 "OpCode": "ldloc_0",
                 "OpType": "None",
                 "Operand": null
@@ -13612,7 +13617,7 @@
               {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
               },
               {
                 "OpCode": "pop",

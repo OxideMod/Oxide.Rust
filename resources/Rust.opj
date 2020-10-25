@@ -13380,6 +13380,58 @@
             "BaseHookName": "OnEngineStart [MotorRowboat]",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnEngineStatsRefresh",
+            "HookName": "OnEngineStatsRefresh",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleModuleEngine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RefreshPerformanceStats",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Rust.Modular.EngineStorage"
+              ]
+            },
+            "MSILHash": "6v7H2r9MBeGlMlTH05XIoFVAnSssYM0N9kFDjECmMbg=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 58,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnEngineStatsRefreshed",
+            "HookName": "OnEngineStatsRefreshed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleModuleEngine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RefreshPerformanceStats",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Rust.Modular.EngineStorage"
+              ]
+            },
+            "MSILHash": "6v7H2r9MBeGlMlTH05XIoFVAnSssYM0N9kFDjECmMbg=",
+            "BaseHookName": "OnEngineStatsRefresh",
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [
@@ -25418,6 +25470,195 @@
             ],
             "Name": "targetCounterNumber",
             "FullTypeName": "System.Int32 PowerCounter::targetCounterNumber",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleModuleEngine::IsUsable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleModuleEngine",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "IsUsable",
+            "FullTypeName": "System.Boolean VehicleModuleEngine::IsUsable()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleModuleEngine::OverallPerformanceFraction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleModuleEngine",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "OverallPerformanceFraction",
+            "FullTypeName": "System.Single VehicleModuleEngine::OverallPerformanceFraction()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleModuleEngine::PerformanceFractionAcceleration",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleModuleEngine",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "PerformanceFractionAcceleration",
+            "FullTypeName": "System.Single VehicleModuleEngine::PerformanceFractionAcceleration()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleModuleEngine::PerformanceFractionFuelEconomy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleModuleEngine",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "PerformanceFractionFuelEconomy",
+            "FullTypeName": "System.Single VehicleModuleEngine::PerformanceFractionFuelEconomy()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleModuleEngine::PerformanceFractionTopSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleModuleEngine",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "PerformanceFractionTopSpeed",
+            "FullTypeName": "System.Single VehicleModuleEngine::PerformanceFractionTopSpeed()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::accelerationBoostPercent",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "accelerationBoostPercent",
+            "FullTypeName": "System.Single Rust.Modular.EngineStorage::accelerationBoostPercent()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::fuelEconomyBoostPercent",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "fuelEconomyBoostPercent",
+            "FullTypeName": "System.Single Rust.Modular.EngineStorage::fuelEconomyBoostPercent()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::isUsable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "isUsable",
+            "FullTypeName": "System.Boolean Rust.Modular.EngineStorage::isUsable()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::topSpeedBoostPercent",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "topSpeedBoostPercent",
+            "FullTypeName": "System.Single Rust.Modular.EngineStorage::topSpeedBoostPercent()",
             "Parameters": []
           },
           "MSILHash": ""

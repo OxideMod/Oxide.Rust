@@ -13480,6 +13480,169 @@
             "BaseHookName": "OnVehicleModulesSpawn",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 31,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l2, this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleModuleSelect",
+            "HookName": "OnVehicleModuleSelect",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarGarage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_SelectedLootItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "lWVHFE9tidj4At4ZQjXH3qbpXAqhUGqiHmB8hsjEyBo=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 66,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l5, this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleModuleSelected",
+            "HookName": "OnVehicleModuleSelected",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarGarage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_SelectedLootItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "lWVHFE9tidj4At4ZQjXH3qbpXAqhUGqiHmB8hsjEyBo=",
+            "BaseHookName": "OnVehicleModuleSelect",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 26,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|read"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Facepunch.Network|Network.NetRead|UInt32"
+              },
+              {
+                "OpCode": "stloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|ModularCarGarage|get_carOccupant"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseModularVehicle|GetVehicleItem(System.UInt32)"
+              },
+              {
+                "OpCode": "stloc_2",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_2",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 1040
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnVehicleModuleDeselected"
+              },
+              {
+                "OpCode": "ldloc_2",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "pop",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnVehicleModuleDeselected",
+            "HookName": "OnVehicleModuleDeselected",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarGarage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_DeselectedLootItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "vu7lOJv/y+cUOlPA4HGFG23WH+e+IvdnzSTE8CaOR3U=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

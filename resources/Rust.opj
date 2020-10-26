@@ -13156,7 +13156,7 @@
             "HookName": "OnEngineStart",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MiniCopter",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "EngineStartup",
@@ -13205,7 +13205,7 @@
             "HookName": "OnEngineStarted ",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MiniCopter",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "EngineStartup",
@@ -13229,7 +13229,7 @@
             "HookName": "OnEngineStart",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ModularCar",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 0,
               "Name": "TryStartEngines",
@@ -13255,7 +13255,7 @@
             "HookName": "OnEngineStarted",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ModularCar",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 0,
               "Name": "TryStartEngines",
@@ -13316,7 +13316,7 @@
             "HookName": "OnEngineStart",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MotorRowboat",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "EngineToggle",
@@ -13367,7 +13367,7 @@
             "HookName": "OnEngineStarted",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MotorRowboat",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "EngineToggle",

@@ -13765,6 +13765,30 @@
             "BaseHookName": "OnNpcConversationResponded",
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleLockableCheck",
+            "HookName": "OnVehicleLockableCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarLock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanHaveALock",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "9dP0JIfzRGx5637tRNiFOzhHNkhW3jQfjE7yqojwZ1k=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust-release\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -13156,7 +13156,7 @@
             "HookName": "OnEngineStart",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MiniCopter",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "EngineStartup",
@@ -13205,7 +13205,7 @@
             "HookName": "OnEngineStarted ",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MiniCopter",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "EngineStartup",

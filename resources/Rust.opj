@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "ts3reFRhKoC4I43X9DaADgEtaLXlKp/OD367JSMSUdk=",
+            "MSILHash": "hE9vmDVPug0IKyLPaQi0TLnhjgDsvp6hv8tc1buRNpE=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2361,7 +2361,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "NdXRdrRQdWDKFp2098807DvMZjSXkdyPP2PxMzjuPKE=",
+            "MSILHash": "uFUCugr/FIAtvlZF7U3wSJaroqPl81ujVi3RVWituKw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -7124,12 +7124,12 @@
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 270,
-            "RemoveCount": 8,
+            "RemoveCount": 17,
             "Instructions": [
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 402
+                "Operand": 411
               }
             ],
             "HookTypeName": "Modify",
@@ -7147,7 +7147,7 @@
                 "UnityEngine.Transform"
               ]
             },
-            "MSILHash": "5DBXQb2EwJKCW9y22FH1QlFUIGSJaXtMSKW4iaDdXuQ=",
+            "MSILHash": "CtaCqw1wDruSmDR5SkJKHo4T4Yt0w/q2oZoqtw8VG2Y=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -8717,7 +8717,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "v0XY9vqpY3KB6W76jF7DPHt4lhhVUnGaVE6GvX+6hbQ=",
+            "MSILHash": "A5OaVVm1L4ogsLU4N1uXP2nPBZUIae0dqEPeRBNmcMU=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8741,7 +8741,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "v0XY9vqpY3KB6W76jF7DPHt4lhhVUnGaVE6GvX+6hbQ=",
+            "MSILHash": "A5OaVVm1L4ogsLU4N1uXP2nPBZUIae0dqEPeRBNmcMU=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }

@@ -13112,7 +13112,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 0,
+            "InjectionIndex": 4,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -13143,7 +13143,7 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 0
+                "Operand": 4
               },
               {
                 "OpCode": "ret",
@@ -13156,7 +13156,7 @@
             "HookName": "OnEngineStart",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MiniCopter",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "EngineStartup",
@@ -13171,7 +13171,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 23,
+            "InjectionIndex": 12,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -13190,7 +13190,7 @@
                 "Operand": null
               },
               {
-                "OpCode": "call",
+                "OpCode": "callvirt",
                 "OpType": "Method",
                 "Operand": "Assembly-CSharp|BaseVehicle|GetDriver"
               },
@@ -13198,22 +13198,27 @@
                 "OpCode": "call",
                 "OpType": "Method",
                 "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "pop",
+                "OpType": "None",
+                "Operand": null
               }
             ],
             "HookTypeName": "Modify",
             "Name": "OnEngineStarted [MiniCopter]",
-            "HookName": "OnEngineStarted ",
+            "HookName": "OnEngineStarted",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MiniCopter",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
-              "Name": "EngineStartup",
+              "Name": "EngineOn",
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "8pAleyRavdKKmX08YZ8lXfAd+OKZTQJwDFGeYol1aCU=",
-            "BaseHookName": "OnEngineStart [MiniCopter]",
+            "MSILHash": "uGuGY+OLvod3jlN0v0YKegfsJQheyWGZSaO5JFcjpTU=",
+            "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
         },
@@ -13229,7 +13234,7 @@
             "HookName": "OnEngineStart",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ModularCar",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 0,
               "Name": "TryStartEngines",
@@ -13246,26 +13251,24 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 58,
+            "InjectionIndex": 21,
             "ReturnBehavior": 0,
-            "ArgumentBehavior": 3,
+            "ArgumentBehavior": 1,
             "ArgumentString": "",
             "HookTypeName": "Simple",
             "Name": "OnEngineStarted [ModularCar]",
             "HookName": "OnEngineStarted",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ModularCar",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 0,
-              "Name": "TryStartEngines",
+              "Name": "FinishStartingEngine",
               "ReturnType": "System.Void",
-              "Parameters": [
-                "BasePlayer"
-              ]
+              "Parameters": []
             },
-            "MSILHash": "/jjEIeVhy3DEZMmimimPjT6H6qOVUH/yGRM5MX9tBjs=",
-            "BaseHookName": "OnEngineStart [ModularCar]",
+            "MSILHash": "AbyGq7OAmBd5ryaLMyt+qZbU1ivWh305i6RDXv0Xhr0=",
+            "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
         },
@@ -13275,6 +13278,31 @@
             "InjectionIndex": 6,
             "RemoveCount": 0,
             "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseVehicle|GetDriver"
+              },
+              {
+                "OpCode": "stloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 6
+              },
               {
                 "OpCode": "ldstr",
                 "OpType": "String",
@@ -13286,14 +13314,9 @@
                 "Operand": null
               },
               {
-                "OpCode": "ldarg_0",
+                "OpCode": "ldloc_0",
                 "OpType": "None",
                 "Operand": null
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Assembly-CSharp|BaseVehicle|GetDriver"
               },
               {
                 "OpCode": "call",
@@ -13316,7 +13339,7 @@
             "HookName": "OnEngineStart",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MotorRowboat",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "EngineToggle",
@@ -13333,9 +13356,19 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 19,
+            "InjectionIndex": 23,
             "RemoveCount": 0,
             "Instructions": [
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 23
+              },
               {
                 "OpCode": "ldstr",
                 "OpType": "String",
@@ -13347,19 +13380,19 @@
                 "Operand": null
               },
               {
-                "OpCode": "ldarg_0",
+                "OpCode": "ldloc_0",
                 "OpType": "None",
                 "Operand": null
               },
               {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Assembly-CSharp|BaseVehicle|GetDriver"
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
               },
               {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+                "OpCode": "pop",
+                "OpType": "None",
+                "Operand": null
               }
             ],
             "HookTypeName": "Modify",
@@ -13367,7 +13400,7 @@
             "HookName": "OnEngineStarted",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "MotorRowboat",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "EngineToggle",

@@ -14022,6 +14022,84 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnHotAirBalloonToggle",
+            "HookName": "OnHotAirBalloonToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HotAirBalloon",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EngineSwitch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "x7cfCfVJLzvL/ot/WPYBQI8MpdBgpW8acLm1AmVfzu8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 27,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnHotAirBalloonToggled [on]",
+            "HookName": "OnHotAirBalloonToggled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HotAirBalloon",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EngineSwitch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "x7cfCfVJLzvL/ot/WPYBQI8MpdBgpW8acLm1AmVfzu8=",
+            "BaseHookName": "OnHotAirBalloonToggle",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 39,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnHotAirBalloonToggled [off]",
+            "HookName": "OnHotAirBalloonToggled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HotAirBalloon",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EngineSwitch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "x7cfCfVJLzvL/ot/WPYBQI8MpdBgpW8acLm1AmVfzu8=",
+            "BaseHookName": "OnHotAirBalloonToggled [on]",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

@@ -26737,6 +26737,237 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Climate::Overrides",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Overrides",
+            "FullTypeName": "LegacyWeatherState Climate::Overrides()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::WeatherClamps",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WeatherClamps",
+            "FullTypeName": "WeatherPreset Climate::WeatherClamps()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::WeatherOverrides",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WeatherOverrides",
+            "FullTypeName": "WeatherPreset Climate::WeatherOverrides()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::WeatherSeedNext",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WeatherSeedNext",
+            "FullTypeName": "System.UInt32 Climate::WeatherSeedNext()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::WeatherSeedPrevious",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WeatherSeedPrevious",
+            "FullTypeName": "System.UInt32 Climate::WeatherSeedPrevious()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::WeatherSeedTarget",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WeatherSeedTarget",
+            "FullTypeName": "System.UInt32 Climate::WeatherSeedTarget()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::WeatherState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WeatherState",
+            "FullTypeName": "WeatherPreset Climate::WeatherState()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::WeatherStateBlend",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WeatherStateBlend",
+            "FullTypeName": "System.Single Climate::WeatherStateBlend()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::WeatherStateNext",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WeatherStateNext",
+            "FullTypeName": "WeatherPreset Climate::WeatherStateNext()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::WeatherStatePrevious",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WeatherStatePrevious",
+            "FullTypeName": "WeatherPreset Climate::WeatherStatePrevious()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::WeatherStateTarget",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "WeatherStateTarget",
+            "FullTypeName": "WeatherPreset Climate::WeatherStateTarget()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

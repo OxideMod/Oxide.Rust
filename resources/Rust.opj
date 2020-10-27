@@ -26052,6 +26052,171 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Climate::CacheWeatherPresets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CacheWeatherPresets",
+            "FullTypeName": "WeatherPreset[]",
+            "Parameters": [
+              "WeatherPresetType"
+            ]
+          },
+          "MSILHash": "STiE+ad17Op/mZ5S5i5qijPzyOeE4qfrdHJpf4v1DDs="
+        },
+        {
+          "Name": "Climate::FindBlendParameters",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 1,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FindBlendParameters",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "Climate/ClimateParameters&",
+              "Climate/ClimateParameters&"
+            ]
+          },
+          "MSILHash": "b3qjE9tZmw2V/es5yUk+bxYw430d62LKRjEpZGfvojo="
+        },
+        {
+          "Name": "Climate::GetSeedFromLong",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 1,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetSeedFromLong",
+            "FullTypeName": "System.UInt32",
+            "Parameters": [
+              "System.Int64"
+            ]
+          },
+          "MSILHash": "ge1cR8PJ2HvOkxoYzoHMrr3/P80Ay81zcPHlnfPc6wY="
+        },
+        {
+          "Name": "Climate::GetWeatherPreset",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 1,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetWeatherPreset",
+            "FullTypeName": "WeatherPreset",
+            "Parameters": [
+              "System.UInt32",
+              "WeatherPresetType"
+            ]
+          },
+          "MSILHash": "o92XfM8WSvZoRVribQhDjxgtIgYESv5xwMsSjUPebS4="
+        },
+        {
+          "Name": "Climate::GetWeatherPreset",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 1,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetWeatherPreset",
+            "FullTypeName": "WeatherPreset",
+            "Parameters": [
+              "System.UInt32"
+            ]
+          },
+          "MSILHash": "cdZtsIFmH4lALaoh2Y7eYpG6WTsB/MdiY2bTLvpXHnM="
+        },
+        {
+          "Name": "Climate::OnDestroy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 1,
+          "TargetExposure": [
+            1
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnDestroy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "vf2J95aDptzMKrmkBPCIoyaJxxhQfsXmqmslNAplw94="
+        },
+        {
+          "Name": "Climate::climateLookup",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 0,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "climateLookup",
+            "FullTypeName": "Climate/ClimateParameters[] Climate::climateLookup",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::presetLookup",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "presetLookup",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<WeatherPresetType,WeatherPreset[]> Climate::presetLookup",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

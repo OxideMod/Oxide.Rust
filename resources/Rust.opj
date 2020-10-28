@@ -5868,8 +5868,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, this",
             "HookTypeName": "Simple",
-            "Name": "CanExperiment",
-            "HookName": "CanExperiment",
+            "Name": "OnPlayerExperimentStart",
+            "HookName": "OnPlayerExperimentStart",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Workbench",
             "Flagged": false,
@@ -14099,6 +14099,80 @@
             "MSILHash": "x7cfCfVJLzvL/ot/WPYBQI8MpdBgpW8acLm1AmVfzu8=",
             "BaseHookName": "OnHotAirBalloonToggled [on]",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 187,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerExperimentStarted",
+            "HookName": "OnPlayerExperimentStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Workbench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_BeginExperiment",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "lNRlExjnSdNzF02hU8Xp8NHaSRc/HsnOufCNGGN8EeQ=",
+            "BaseHookName": "OnPlayerExperimentStart",
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 13,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerExperimentEnd",
+            "HookName": "OnPlayerExperimentEnd",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Workbench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ExperimentComplete",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "vd/xYG8MckVgC82JZmRReA2NRO4MxEqzxOBKOUzd1to=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 97,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerExperimentEnded",
+            "HookName": "OnPlayerExperimentEnded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Workbench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ExperimentComplete",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "vd/xYG8MckVgC82JZmRReA2NRO4MxEqzxOBKOUzd1to=",
+            "BaseHookName": "OnPlayerExperimentEnd",
+            "HookCategory": null
           }
         }
       ],

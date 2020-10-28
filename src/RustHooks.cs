@@ -675,6 +675,13 @@ namespace Oxide.Game.Rust
                 new System.DateTime(2021, 1, 1), player, corpse);
         }
 
+        [HookMethod("OnPlayerExperimentStart")]
+        private object OnPlayerExperimentStart(BasePlayer player, Workbench workbench)
+        {
+            return Interface.Oxide.CallDeprecatedHook("CanExperiment", "OnPlayerExperimentStart(BasePlayer player, Workbench workbench)",
+                new System.DateTime(2021, 1, 1), player, workbench);
+        }
+
         #endregion Deprecated Hooks
     }
 }

@@ -14100,6 +14100,30 @@
             "BaseHookName": "OnHotAirBalloonToggled [on]",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEngineLoadoutRefresh",
+            "HookName": "OnEngineLoadoutRefresh",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Modular.EngineStorage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RefreshLoadoutData",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "sFrGfiIC2Ztpw08XsLvAAAEEP/VsnAXAfbMD7fwur9U=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [
@@ -26968,6 +26992,126 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::accelerationBoostSlots",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "accelerationBoostSlots",
+            "FullTypeName": "System.Int32 Rust.Modular.EngineStorage::accelerationBoostSlots",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::fuelEconomyBoostSlots",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelEconomyBoostSlots",
+            "FullTypeName": "System.Int32 Rust.Modular.EngineStorage::fuelEconomyBoostSlots",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::topSpeedBoostSlots",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "topSpeedBoostSlots",
+            "FullTypeName": "System.Int32 Rust.Modular.EngineStorage::topSpeedBoostSlots",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::GetContainerItemsValueFor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetContainerItemsValueFor",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Func`2<Rust.Modular.EngineStorage/EngineItemTypes,System.Boolean>"
+            ]
+          },
+          "MSILHash": "LyUiqly2utASZRrgC6p1WX/f4MfnHFcCztnz9lgb0EY="
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::GetTierValue",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetTierValue",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "IQIAFCHk9ztMPF8D+Te5MsryzG6VO2lYos/0s+pd3SE="
+        },
+        {
+          "Name": "VehicleModuleEngine::GetPerformanceFraction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleModuleEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetPerformanceFraction",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "4ZEG23bXxNlbeHTd/oXBA5mEsqw5wrJtjSCokGSvkJc="
         }
       ],
       "Fields": [

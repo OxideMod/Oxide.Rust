@@ -14124,6 +14124,30 @@
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnReactiveTargetReset",
+            "HookName": "OnReactiveTargetReset",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ReactiveTarget",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ResetTarget",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "dcYduEiYCW8njanQncIxeZ0ju8Xyo8KU8emmHMURWxQ=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [
@@ -27112,6 +27136,25 @@
             ]
           },
           "MSILHash": "4ZEG23bXxNlbeHTd/oXBA5mEsqw5wrJtjSCokGSvkJc="
+        },
+        {
+          "Name": "ReactiveTarget::knockdownHealth",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ReactiveTarget",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "knockdownHealth",
+            "FullTypeName": "System.Single ReactiveTarget::knockdownHealth",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -14100,6 +14100,30 @@
             "BaseHookName": "OnHotAirBalloonToggled [on]",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnReactiveTargetReset",
+            "HookName": "OnReactiveTargetReset",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ReactiveTarget",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ResetTarget",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "dcYduEiYCW8njanQncIxeZ0ju8Xyo8KU8emmHMURWxQ=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

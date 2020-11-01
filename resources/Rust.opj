@@ -26968,6 +26968,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ReactiveTarget::knockdownHealth",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ReactiveTarget",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "knockdownHealth",
+            "FullTypeName": "System.Single ReactiveTarget::knockdownHealth",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

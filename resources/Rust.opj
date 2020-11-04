@@ -14111,6 +14111,58 @@
             "BaseHookName": "OnHotAirBalloonToggled [on]",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnRidableAnimalClaim",
+            "HookName": "OnRidableAnimalClaim",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseRidableAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_Claim",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "7Mx+AMadbNc1xkT90uhKbYwSoEB1kh97KkqLTMKRSs0=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 39,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnRidableAnimalClaimed",
+            "HookName": "OnRidableAnimalClaimed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseRidableAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_Claim",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "7Mx+AMadbNc1xkT90uhKbYwSoEB1kh97KkqLTMKRSs0=",
+            "BaseHookName": "OnRidableAnimalClaim",
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

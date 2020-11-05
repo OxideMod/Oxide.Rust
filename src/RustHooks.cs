@@ -656,6 +656,20 @@ namespace Oxide.Game.Rust
 
         #region Deprecated Hooks
 
+        [HookMethod("OnExperimentStart")]
+        private object OnExperimentStart(Workbench workbench, BasePlayer player)
+        {
+            return Interface.Oxide.CallDeprecatedHook("CanExperiment", "OnExperimentStart(Workbench workbench, BasePlayer player)",
+                new System.DateTime(2021, 1, 1), player, workbench);
+        }
+
+        [HookMethod("OnPlayerCorpseSpawned")]
+        private object OnPlayerCorpseSpawned(BasePlayer player, BaseCorpse corpse)
+        {
+            return Interface.Oxide.CallDeprecatedHook("OnPlayerCorpse", "OnPlayerCorpseSpawned(BasePlayer player, BaseCorpse corpse)",
+                new System.DateTime(2021, 1, 1), player, corpse);
+        }
+
         [HookMethod("OnVehiclePush")]
         private object OnVehiclePush(BaseVehicle vehicle, BasePlayer player)
         {
@@ -666,13 +680,6 @@ namespace Oxide.Game.Rust
             }
 
             return null;
-        }
-
-        [HookMethod("OnPlayerCorpseSpawned")]
-        private object OnPlayerCorpseSpawned(BasePlayer player, BaseCorpse corpse)
-        {
-            return Interface.Oxide.CallDeprecatedHook("OnPlayerCorpse", "OnPlayerCorpseSpawned(BasePlayer player, BaseCorpse corpse)",
-                new System.DateTime(2021, 1, 1), player, corpse);
         }
 
         #endregion Deprecated Hooks

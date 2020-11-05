@@ -14152,7 +14152,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
+            "InjectionIndex": 27,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, this.<>4__this, a1",
@@ -14172,14 +14172,14 @@
               ]
             },
             "MSILHash": "3oIDJHL3h1GJEhGG87KHlx5hmHmh4mA2QanbUZQE6NA=",
-            "BaseHookName": "OnItemCooked",
+            "BaseHookName": null,
             "HookCategory": "Item"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 101,
+            "InjectionIndex": 111,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l2, this.<>4__this",
@@ -14199,7 +14199,7 @@
               ]
             },
             "MSILHash": "3oIDJHL3h1GJEhGG87KHlx5hmHmh4mA2QanbUZQE6NA=",
-            "BaseHookName": null,
+            "BaseHookName": "OnItemCook",
             "HookCategory": "Item"
           }
         },

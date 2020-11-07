@@ -13635,73 +13635,6 @@
           }
         },
         {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 8,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnVehicleModuleMove"
-              },
-              {
-                "OpCode": "ldloc_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ldarg_1",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
-              },
-              {
-                "OpCode": "brfalse_s",
-                "OpType": "Instruction",
-                "Operand": 8
-              },
-              {
-                "OpCode": "ldc_i4_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ret",
-                "OpType": "None",
-                "Operand": null
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnVehicleModuleMove",
-            "HookName": "OnVehicleModuleMove",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseModularVehicle",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "CanMoveFrom",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "BasePlayer",
-                "Item"
-              ]
-            },
-            "MSILHash": "NaLlgvw7uiae7VmVJOZIGc0nHFeASEP/09a0F3I5hDI=",
-            "BaseHookName": null,
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 21,
@@ -14286,6 +14219,33 @@
             "MSILHash": "vd/xYG8MckVgC82JZmRReA2NRO4MxEqzxOBKOUzd1to=",
             "BaseHookName": "OnExperimentEnd",
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleModuleMove",
+            "HookName": "OnVehicleModuleMove",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseModularVehicle",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanMoveFrom",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "Item"
+              ]
+            },
+            "MSILHash": "NaLlgvw7uiae7VmVJOZIGc0nHFeASEP/09a0F3I5hDI=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
           }
         }
       ],

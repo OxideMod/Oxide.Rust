@@ -9057,6 +9057,32 @@
           }
         },
         {
+          "Type": "Simple",
+          "Hook": {
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player, l0",
+            "InjectionIndex": 21,
+            "HookTypeName": "Simple",
+            "Name": "CanUpdatePhoneName",
+            "HookName": "CanUpdatePhoneName",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdatePhoneName",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "EPpjxhDmTMcxrZUN2ASehLW+b1X/7HRX0wD/nNqbTV4=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 6,

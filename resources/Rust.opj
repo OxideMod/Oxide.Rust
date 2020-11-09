@@ -9057,6 +9057,32 @@
           }
         },
         {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 21,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnPhoneNameUpdate",
+            "HookName": "OnPhoneNameUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdatePhoneName",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "EPpjxhDmTMcxrZUN2ASehLW+b1X/7HRX0wD/nNqbTV4=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 6,
@@ -14350,6 +14376,32 @@
             "MSILHash": "7Mx+AMadbNc1xkT90uhKbYwSoEB1kh97KkqLTMKRSs0=",
             "BaseHookName": "OnRidableAnimalClaim",
             "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 37,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.PhoneName, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnPhoneNameUpdated",
+            "HookName": "OnPhoneNameUpdated",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdatePhoneName",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "EPpjxhDmTMcxrZUN2ASehLW+b1X/7HRX0wD/nNqbTV4=",
+            "BaseHookName": "OnPhoneNameUpdate",
+            "HookCategory": "Entity"
           }
         }
       ],

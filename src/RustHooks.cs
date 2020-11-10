@@ -4,6 +4,7 @@ using Oxide.Core;
 using Oxide.Core.Configuration;
 using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
+using Oxide.Core.RemoteConsole;
 using Oxide.Game.Rust.Libraries.Covalence;
 using Rust.Ai;
 using Rust.Ai.HTN;
@@ -551,7 +552,15 @@ namespace Oxide.Game.Rust
         {
             if (ipAddress != null && !string.IsNullOrEmpty(command))
             {
-                string[] fullCommand = CommandLine.Split(command);
+                RemoteMessage message = RemoteMessage.GetMessage(command);
+
+                if (string.IsNullOrEmpty(message?.Message))
+                {
+                    return null;
+                }
+
+                string[] fullCommand = CommandLine.Split(message.Message);
+
                 if (fullCommand.Length >= 1)
                 {
                     string cmd = fullCommand[0].ToLower();

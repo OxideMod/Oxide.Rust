@@ -14403,6 +14403,102 @@
             "BaseHookName": "OnPhoneNameUpdate",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 21,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnDemoRecordingStart",
+            "HookName": "OnDemoRecordingStart",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartDemoRecording",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "0Iz0wJcw6KN4RXFQ8k89ZU0ieFJwhuWu5vSSv+McS/M=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 97,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "OnDemoRecordingStarted",
+            "HookName": "OnDemoRecordingStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartDemoRecording",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "0Iz0wJcw6KN4RXFQ8k89ZU0ieFJwhuWu5vSSv+McS/M=",
+            "BaseHookName": "OnDemoRecordingStart",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnDemoRecordingStop",
+            "HookName": "OnDemoRecordingStop",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopDemoRecording",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "QJPPGfy0HoWARdVQG+lVb+zEzoqe7C+LddYrTTjxatg=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 38,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnDemoRecordingStopped",
+            "HookName": "OnDemoRecordingStopped",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopDemoRecording",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "QJPPGfy0HoWARdVQG+lVb+zEzoqe7C+LddYrTTjxatg=",
+            "BaseHookName": "OnDemoRecordingStop",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

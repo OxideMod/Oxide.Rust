@@ -14403,6 +14403,54 @@
             "BaseHookName": "OnPhoneNameUpdate",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnOvenCook",
+            "HookName": "OnOvenCook",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseOven",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Cook",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "vUZH3pCAiuFPX5JDk0juaqj18GtFbDpB61nFdVKuGaA=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 65,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnOvenCooked",
+            "HookName": "OnOvenCooked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseOven",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Cook",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "vUZH3pCAiuFPX5JDk0juaqj18GtFbDpB61nFdVKuGaA=",
+            "BaseHookName": "OnOvenCook",
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

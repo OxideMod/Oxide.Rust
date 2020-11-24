@@ -716,7 +716,7 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 0,
-            "ReturnBehavior": 0,
+            "ReturnBehavior": 4,
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
@@ -14425,7 +14425,7 @@
             },
             "MSILHash": "vUZH3pCAiuFPX5JDk0juaqj18GtFbDpB61nFdVKuGaA=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Entity"
           }
         },
         {
@@ -14449,7 +14449,34 @@
             },
             "MSILHash": "vUZH3pCAiuFPX5JDk0juaqj18GtFbDpB61nFdVKuGaA=",
             "BaseHookName": "OnOvenCook",
-            "HookCategory": null
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 71,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnConsumedFuel",
+            "HookName": "OnConsumedFuel",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseOven",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ConsumeFuel",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "ItemModBurnable"
+              ]
+            },
+            "MSILHash": "eR8dNlfWufg8r9aWIARVOQrxH9lx80pMD453LD1i2AA=",
+            "BaseHookName": "OnConsumeFuel",
+            "HookCategory": "Item"
           }
         }
       ],

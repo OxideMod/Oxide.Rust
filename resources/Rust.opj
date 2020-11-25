@@ -14403,6 +14403,187 @@
             "BaseHookName": "OnPhoneNameUpdate",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner, this",
+            "HookTypeName": "Simple",
+            "Name": "OnGetFuelAmount",
+            "HookName": "OnGetFuelAmount",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "EntityFuelSystem",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GetFuelAmount",
+              "ReturnType": "System.Int32",
+              "Parameters": []
+            },
+            "MSILHash": "sp8yuC6cMzp6Fp6SZkhNIyMqoNPUUBa1lcXXyO5Xfms=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner",
+            "HookTypeName": "Simple",
+            "Name": "OnGetFuelItem",
+            "HookName": "OnGetFuelItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "EntityFuelSystem",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GetFuelItem",
+              "ReturnType": "Item",
+              "Parameters": []
+            },
+            "MSILHash": "tEDVXIr7sssNaFWY8IXnxOqtiiSJ+Zao18Zo66sJKKo=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner, a0",
+            "HookTypeName": "Simple",
+            "Name": "HasFuel",
+            "HookName": "HasFuel",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "EntityFuelSystem",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "HasFuel",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "d/3tSEyHXtJf3UU5zfzOH/G6Qt5DpFofZzkO3wJAyf8=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner, a0",
+            "HookTypeName": "Simple",
+            "Name": "IsInFuelInteractionRange",
+            "HookName": "IsInFuelInteractionRange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "EntityFuelSystem",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsInFuelInteractionRange",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "QGEaTqGFXnU/vXUaaYbxbNLdsJDsQnI+IYHeydV7S3Y=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnLootFuel",
+            "HookName": "OnLootFuel",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "EntityFuelSystem",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "LootFuel",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "PAn9DWSp3QRJlURRWNDEcZrQLDlDFU+4mf+gy4hYvic=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner, a0, a1, a2",
+            "HookTypeName": "Simple",
+            "Name": "OnSpawnFuelStorage",
+            "HookName": "OnSpawnFuelStorage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "EntityFuelSystem",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SpawnFuelStorage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "GameObjectRef",
+                "UnityEngine.Transform",
+                "UnityEngine.Collider"
+              ]
+            },
+            "MSILHash": "QzcOgWFB8Tbkow5r+1jgbGfBeeasS00Iaz/CaFZwax0=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnTryUseFuel",
+            "HookName": "OnTryUseFuel",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "EntityFuelSystem",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryUseFuel",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.Single",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "lXRMZRU6x7961KKvvXbcJgXVv6RX/joglZlLwyTq2aw=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [
@@ -27407,6 +27588,120 @@
             ],
             "Name": "parentSpawnPointUser",
             "FullTypeName": "ISpawnPointUser SpawnPointInstance::parentSpawnPointUser",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "EntityFuelSystem::pendingFuel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "EntityFuelSystem",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "pendingFuel",
+            "FullTypeName": "System.Single EntityFuelSystem::pendingFuel",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "EntityFuelSystem::cachedHasFuel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "EntityFuelSystem",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cachedHasFuel",
+            "FullTypeName": "System.Boolean EntityFuelSystem::cachedHasFuel",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "EntityFuelSystem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "EntityFuelSystem",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "EntityFuelSystem",
+            "FullTypeName": "EntityFuelSystem",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "EntityFuelSystem::isServer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "EntityFuelSystem",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "isServer",
+            "FullTypeName": "System.Boolean EntityFuelSystem::isServer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "EntityFuelSystem::owner",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "EntityFuelSystem",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "owner",
+            "FullTypeName": "BaseEntity EntityFuelSystem::owner",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "EntityFuelSystem::nextFuelCheckTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "EntityFuelSystem",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextFuelCheckTime",
+            "FullTypeName": "System.Single EntityFuelSystem::nextFuelCheckTime",
             "Parameters": []
           },
           "MSILHash": ""

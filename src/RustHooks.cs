@@ -709,6 +709,13 @@ namespace Oxide.Game.Rust
             return null;
         }
 
+        [HookMethod("OnFuelConsume")]
+        private void OnFuelConsume(BaseOven oven, Item fuel, ItemModBurnable burnable)
+        {
+            Interface.Oxide.CallDeprecatedHook("OnConsumeFuel", "OnFuelConsume(BaseOven oven, Item fuel, ItemModBurnable burnable)",
+                new System.DateTime(2021, 3, 1), oven, fuel, burnable);
+        }
+
         [HookMethod("OnEntitySaved")]
         private void OnEntitySaved(Elevator elevator, BaseNetworkable.SaveInfo saveInfo)
         {

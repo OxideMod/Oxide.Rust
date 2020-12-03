@@ -720,8 +720,8 @@
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnConsumeFuel",
-            "HookName": "OnConsumeFuel",
+            "Name": "OnFuelConsume",
+            "HookName": "OnFuelConsume",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseOven",
             "Flagged": false,
@@ -14662,8 +14662,8 @@
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnConsumedFuel",
-            "HookName": "OnConsumedFuel",
+            "Name": "OnFuelConsumed",
+            "HookName": "OnFuelConsumed",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseOven",
             "Flagged": false,
@@ -14677,7 +14677,7 @@
               ]
             },
             "MSILHash": "eR8dNlfWufg8r9aWIARVOQrxH9lx80pMD453LD1i2AA=",
-            "BaseHookName": "OnConsumeFuel",
+            "BaseHookName": "OnFuelConsume",
             "HookCategory": "Item"
           }
         }

@@ -27410,6 +27410,223 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseEntity::_spawnable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_spawnable",
+            "FullTypeName": "Spawnable BaseEntity::_spawnable",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnHandler::population2distribution",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnHandler",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "population2distribution",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<SpawnPopulation,SpawnDistribution> SpawnHandler::population2distribution",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnHandler::EnforceLimits",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnHandler",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EnforceLimits",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "SpawnPopulation",
+              "SpawnDistribution"
+            ]
+          },
+          "MSILHash": "4/rvizeOJfDT2/3y0pjkBCnlYvgZTrA6uSlNiIb7frY="
+        },
+        {
+          "Name": "BuildingPrivlidge::cachedProtectedMinutes",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingPrivlidge",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cachedProtectedMinutes",
+            "FullTypeName": "System.Single BuildingPrivlidge::cachedProtectedMinutes",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingPrivlidge::nextProtectedCalcTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingPrivlidge",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextProtectedCalcTime",
+            "FullTypeName": "System.Single BuildingPrivlidge::nextProtectedCalcTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingPrivlidge::ApplyUpkeepPayment",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingPrivlidge",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyUpkeepPayment",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "iMWflpPRc96BTeHsrh98Z/X2vH5byvtBTRIf+43hqww="
+        },
+        {
+          "Name": "BuildingPrivlidge::CanAffordUpkeepPayment",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingPrivlidge",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanAffordUpkeepPayment",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Collections.Generic.List`1<ItemAmount>"
+            ]
+          },
+          "MSILHash": "pz8mSTs4wcuTRcF33bG/574+VlaZoPaJC94ZNQH71Qg="
+        },
+        {
+          "Name": "BuildingPrivlidge::EnsurePrimary",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingPrivlidge",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EnsurePrimary",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "W4hzA1gU0wbM9DzOCoc+rZpsbqSjAS2KecUtquad4jQ="
+        },
+        {
+          "Name": "BuildingPrivlidge::QueueUpkeepPayment",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingPrivlidge",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "QueueUpkeepPayment",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Collections.Generic.List`1<ItemAmount>"
+            ]
+          },
+          "MSILHash": "EMAH9IQN+GfcA5Ad5W0wV1yz4nQmdZWITDPV83avKqI="
+        },
+        {
+          "Name": "BuildingPrivlidge::upkeepBuffer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingPrivlidge",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "upkeepBuffer",
+            "FullTypeName": "System.Collections.Generic.List`1<ItemAmount> BuildingPrivlidge::upkeepBuffer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingPrivlidge::upkeepBrackets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingPrivlidge",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "upkeepBrackets",
+            "FullTypeName": "BuildingPrivlidge/UpkeepBracket[] BuildingPrivlidge::upkeepBrackets",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

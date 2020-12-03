@@ -157,6 +157,24 @@ namespace Oxide.Game.Rust
             return null;
         }
 
+        /// <summary>
+        /// Called after a BaseNetworkable has been saved into a ProtoBuf object that is about to
+        /// be serialized for a network connection or cache
+        /// </summary>
+        /// <param name="baseNetworkable"></param>
+        /// <param name="saveInfo"></param>
+        [HookMethod("IOnEntitySaved")]
+        private void IOnEntitySaved(BaseNetworkable baseNetworkable, BaseNetworkable.SaveInfo saveInfo)
+        {
+            // Only call when saving for the network since we don't expect plugins to want to intercept saving to disk
+            if (!serverInitialized || saveInfo.forConnection == null)
+            {
+                return;
+            }
+
+            Interface.CallHook("OnEntitySaved", baseNetworkable, saveInfo);
+        }
+
         #endregion Entity Hooks
 
         #region Item Hooks
@@ -689,6 +707,13 @@ namespace Oxide.Game.Rust
             }
 
             return null;
+        }
+
+        [HookMethod("OnEntitySaved")]
+        private void OnEntitySaved(Elevator elevator, BaseNetworkable.SaveInfo saveInfo)
+        {
+            Interface.Oxide.CallDeprecatedHook("OnElevatorSaved", "OnEntitySaved(Elevator elevator, BaseNetworkable.SaveInfo saveInfo)",
+                new System.DateTime(2021, 3, 1), elevator, saveInfo);
         }
 
         #endregion Deprecated Hooks

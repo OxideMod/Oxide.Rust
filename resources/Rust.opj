@@ -13970,32 +13970,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 17,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0",
-            "HookTypeName": "Simple",
-            "Name": "OnElevatorSaved",
-            "HookName": "OnElevatorSaved",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Elevator",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Save",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseNetworkable/SaveInfo"
-              ]
-            },
-            "MSILHash": "qsQ9/jyxnYIJY79QA1Ei4ZdqFNs3AyMAM8evploGvKU=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -14401,6 +14375,138 @@
             },
             "MSILHash": "EPpjxhDmTMcxrZUN2ASehLW+b1X/7HRX0wD/nNqbTV4=",
             "BaseHookName": "OnPhoneNameUpdate",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 26,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a1",
+            "HookTypeName": "Simple",
+            "Name": "IOnEntitySaved",
+            "HookName": "IOnEntitySaved",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseNetworkable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ToStream",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.IO.Stream",
+                "BaseNetworkable/SaveInfo"
+              ]
+            },
+            "MSILHash": "4osFyUWXrAggoRzs7vhPacYm8tF3fwewKVHFvu8Joy4=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnEntitySnapshot",
+            "HookName": "OnEntitySnapshot",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseNetworkable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "SendAsSnapshot",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Connection",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "6bB73ajskchotLYKe+TKZ/cqWB0W2xf4vsuFkgClTV4=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this.net.connection",
+            "HookTypeName": "Simple",
+            "Name": "OnEntitySnapshot [BasePlayer]",
+            "HookName": "OnEntitySnapshot",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SendEntitySnapshot",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseNetworkable"
+              ]
+            },
+            "MSILHash": "+rCpTPYV2zRpoyj++Wbxa+MufcfLVfJpB+MkVULPg94=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNetworkGroupEntered",
+            "HookName": "OnNetworkGroupEntered",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseNetworkable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnNetworkGroupEnter",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Visibility.Group"
+              ]
+            },
+            "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNetworkGroupLeft",
+            "HookName": "OnNetworkGroupLeft",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseNetworkable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnNetworkGroupLeave",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Visibility.Group"
+              ]
+            },
+            "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk=",
+            "BaseHookName": null,
             "HookCategory": "Entity"
           }
         }

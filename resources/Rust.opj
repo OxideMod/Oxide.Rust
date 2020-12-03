@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "ky7uHxDVTQzcxtdD3g+Xvj1zK/2Gp49upJ083WNjYCc=",
+            "MSILHash": "cmyVZ4NdKA6WOEbHXr0rL+l2baEdIY3UTb4DSHdNZeA=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2361,7 +2361,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "ceyM4BdkY+NPfzcPbWQhRFxSfOC6/LUIN+6Vv1od1Ng=",
+            "MSILHash": "EzqTjRlAMI719XXui6gKEdZroQWEmMPvqmIWuNcCZNo=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2388,7 +2388,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "C28K5s+WvhFqgUjM497jAQ1jzG43UNFmluFF48nCotE=",
+            "MSILHash": "5MWIlFRp/hzm6H0HHk3INz6YbDe9WH24fx6Q8iFwIp0=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2439,7 +2439,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "C28K5s+WvhFqgUjM497jAQ1jzG43UNFmluFF48nCotE=",
+            "MSILHash": "5MWIlFRp/hzm6H0HHk3INz6YbDe9WH24fx6Q8iFwIp0=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -7316,7 +7316,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 26,
+            "InjectionIndex": 27,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, a0",
@@ -7338,7 +7338,7 @@
                 "UnityEngine.Vector3"
               ]
             },
-            "MSILHash": "Wv9mPvPKe8izEVN+h7Dlgr4tGyg7AhNSexRRtGrnnOA=",
+            "MSILHash": "n0mXPhze9L4SMA/3DimBm7tQsYAoCQtJyzeyJAhU7sw=",
             "BaseHookName": null,
             "HookCategory": "World"
           }
@@ -8728,7 +8728,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "4mVdvab2YHY+Dovy0Pnq6AP6MTAyHzL7ePh24Zsh4zM=",
+            "MSILHash": "Zzo6roRwtRP3Gm2MKTUlsuFMrscAXFF7f7UEh97A9Ro=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8752,7 +8752,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "4mVdvab2YHY+Dovy0Pnq6AP6MTAyHzL7ePh24Zsh4zM=",
+            "MSILHash": "Zzo6roRwtRP3Gm2MKTUlsuFMrscAXFF7f7UEh97A9Ro=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -10634,7 +10634,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "ZzAyzxlylR1eg1L+Z58dcgpE0ILDr1FKB8TkdqORANQ=",
+            "MSILHash": "5kIzn6x/UKcpag715pSVXkQUxsR3n+E6cwp1iuYvHUs=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -13572,7 +13572,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "lWVHFE9tidj4At4ZQjXH3qbpXAqhUGqiHmB8hsjEyBo=",
+            "MSILHash": "WKswuXh6UcX21VPsdepuGvxtTrw1ruEGBLrdTzBYECs=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
@@ -13580,7 +13580,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 70,
+            "InjectionIndex": 75,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l2, this, l0",
@@ -13598,7 +13598,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "lWVHFE9tidj4At4ZQjXH3qbpXAqhUGqiHmB8hsjEyBo=",
+            "MSILHash": "WKswuXh6UcX21VPsdepuGvxtTrw1ruEGBLrdTzBYECs=",
             "BaseHookName": "OnVehicleModuleSelect",
             "HookCategory": "Vehicle"
           }
@@ -13612,7 +13612,7 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 76
+                "Operand": 81
               }
             ],
             "HookTypeName": "Modify",
@@ -13629,7 +13629,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "lWVHFE9tidj4At4ZQjXH3qbpXAqhUGqiHmB8hsjEyBo=",
+            "MSILHash": "WKswuXh6UcX21VPsdepuGvxtTrw1ruEGBLrdTzBYECs=",
             "BaseHookName": "OnVehicleModuleSelected",
             "HookCategory": "Vehicle"
           }

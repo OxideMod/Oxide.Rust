@@ -1437,7 +1437,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 47,
+            "InjectionIndex": 57,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a1, a0",
@@ -1459,7 +1459,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "9w3oXoCRSx7pKPkPNjWRAEMl+GjxkU5lPUxTUuRvRKI=",
+            "MSILHash": "d+t4CwtBgJsjqntJKK52jnxFHfsXz5pADeEmOCYpVZE=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -10634,7 +10634,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "5kIzn6x/UKcpag715pSVXkQUxsR3n+E6cwp1iuYvHUs=",
+            "MSILHash": "f16v09Mv7Dd+SBkPOFF5yaEdqmYWFSDErQUgDngJjjo=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -14091,60 +14091,6 @@
             "MSILHash": "dcYduEiYCW8njanQncIxeZ0ju8Xyo8KU8emmHMURWxQ=",
             "BaseHookName": null,
             "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 27,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, this.<>4__this, a1",
-            "HookTypeName": "Simple",
-            "Name": "OnItemCook",
-            "HookName": "OnItemCook",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ItemModCookable/<>c__DisplayClass7_0",
-            "Flagged": true,
-            "Signature": {
-              "Exposure": 3,
-              "Name": "<OnItemCreated>b__0",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Item",
-                "System.Single"
-              ]
-            },
-            "MSILHash": "3oIDJHL3h1GJEhGG87KHlx5hmHmh4mA2QanbUZQE6NA=",
-            "BaseHookName": null,
-            "HookCategory": "Item"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 111,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "l2, this.<>4__this",
-            "HookTypeName": "Simple",
-            "Name": "OnItemCooked",
-            "HookName": "OnItemCooked",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ItemModCookable/<>c__DisplayClass7_0",
-            "Flagged": true,
-            "Signature": {
-              "Exposure": 3,
-              "Name": "<OnItemCreated>b__0",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Item",
-                "System.Single"
-              ]
-            },
-            "MSILHash": "3oIDJHL3h1GJEhGG87KHlx5hmHmh4mA2QanbUZQE6NA=",
-            "BaseHookName": "OnItemCook",
-            "HookCategory": "Item"
           }
         },
         {

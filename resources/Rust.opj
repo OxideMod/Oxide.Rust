@@ -14626,6 +14626,69 @@
             "BaseHookName": "OnFuelConsume",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|IOEntity/IORef|ioEnt"
+              },
+              {
+                "OpCode": "stloc_0",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnIORefCleared [patch]",
+            "HookName": "OnIORefCleared [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "IOEntity/IORef",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Clear",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "PgdLt2KPMkooci/pBv8pJIKmyVMsEkxB0WKZXLpcKWg=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnIORefCleared",
+            "HookName": "OnIORefCleared",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "IOEntity/IORef",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Clear",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "PgdLt2KPMkooci/pBv8pJIKmyVMsEkxB0WKZXLpcKWg=",
+            "BaseHookName": "OnIORefCleared [patch]",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

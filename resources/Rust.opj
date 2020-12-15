@@ -14626,6 +14626,60 @@
             "BaseHookName": "OnFuelConsume",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a1, this",
+            "HookTypeName": "Simple",
+            "Name": "CanPlayerUnlock",
+            "HookName": "CanPlayerUnlock",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TechTreeData",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerCanUnlock",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "TechTreeData/NodeInstance"
+              ]
+            },
+            "MSILHash": "YU5WD6A6IKJ+VI8LwSmCkfJ6grEAaIfk3da7g5+TgMI=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a1, this",
+            "HookTypeName": "Simple",
+            "Name": "OnUnlockPathCheck",
+            "HookName": "OnUnlockPathCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TechTreeData",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerHasPathForUnlock",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "TechTreeData/NodeInstance"
+              ]
+            },
+            "MSILHash": "HSv8gCPuE5vz7UGz+M0mOtg+w/aHizacM5rzOahKBn8=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

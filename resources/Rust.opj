@@ -27967,6 +27967,139 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "NeonSign::animationSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NeonSign",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "animationSpeed",
+            "FullTypeName": "System.Single NeonSign::animationSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NeonSign::currentFrame",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NeonSign",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentFrame",
+            "FullTypeName": "System.Int32 NeonSign::currentFrame",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NeonSign::frameLighting",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NeonSign",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "frameLighting",
+            "FullTypeName": "System.Collections.Generic.List`1<ProtoBuf.NeonSign/Lights> NeonSign::frameLighting",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NeonSign::isAnimating",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NeonSign",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "isAnimating",
+            "FullTypeName": "System.Boolean NeonSign::isAnimating",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NeonSign::animationLoopAction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NeonSign",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "animationLoopAction",
+            "FullTypeName": "System.Action NeonSign::animationLoopAction",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NeonSign::EnsureInitialized",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NeonSign",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EnsureInitialized",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "liP9ceb12JWyYn6Nzv3DurkoCcOyBdHrx0tQ/+nfiMY="
+        },
+        {
+          "Name": "Signage::EnsureInitialized",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Signage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EnsureInitialized",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "i4D7EZTe/CAzRKYfVEoNvdFHXDzcDvruadHdtziyF1g="
         }
       ],
       "Fields": [

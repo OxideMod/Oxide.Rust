@@ -14896,6 +14896,34 @@
             "BaseHookName": "OnIORefCleared [patch]",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 19,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a1, a0, l0, a2",
+            "HookTypeName": "Simple",
+            "Name": "OnInventorySaved",
+            "HookName": "OnInventorySaved",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerInventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SendUpdatedInventory",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "PlayerInventory/Type",
+                "ItemContainer",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "6LiopRQSOWIlmdVGJNfGkV1ZXwq0nUq3x27OZbPzq54=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

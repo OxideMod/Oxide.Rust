@@ -28367,6 +28367,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Modular.ModularCarPhysics::GetModifiedDrag",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.ModularCarPhysics",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetModifiedDrag",
+            "FullTypeName": "System.Single",
+            "Parameters": []
+          },
+          "MSILHash": "KxCZj+drq6ef4xArJ9QT6FiYOtFFBy024TD4WXBurLY="
+        },
+        {
+          "Name": "Rust.Modular.ModularCarPhysics::timeSinceWaterCheck",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.ModularCarPhysics",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceWaterCheck",
+            "FullTypeName": "TimeSince Rust.Modular.ModularCarPhysics::timeSinceWaterCheck",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

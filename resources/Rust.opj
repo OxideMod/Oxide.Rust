@@ -4945,8 +4945,8 @@
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnItemScrap",
-            "HookName": "OnItemScrap",
+            "Name": "OnResearchCostDetermine",
+            "HookName": "OnResearchCostDetermine",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ResearchTable",
             "Flagged": false,
@@ -14895,6 +14895,32 @@
             "MSILHash": "PgdLt2KPMkooci/pBv8pJIKmyVMsEkxB0WKZXLpcKWg=",
             "BaseHookName": "OnIORefCleared [patch]",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnResearchCostDetermine",
+            "HookName": "OnResearchCostDetermine",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ResearchTable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ScrapForResearch",
+              "ReturnType": "System.Int32",
+              "Parameters": [
+                "ItemDefinition"
+              ]
+            },
+            "MSILHash": "xqxClx/7PM6dHF3EqipkoL2JZdxGEkRqZ6StxP/vQJo=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
           }
         }
       ],

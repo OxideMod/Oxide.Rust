@@ -14896,6 +14896,151 @@
             "BaseHookName": "OnIORefCleared [patch]",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 73,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l2, l0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnTechTreeNodeUnlock",
+            "HookName": "OnTechTreeNodeUnlock",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Workbench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_TechTreeUnlock",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "LR3hMuU56u07LSI+9kse4Vg2i3bSXrtLTRSeq3HN8LY=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 107,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l2, l0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnTechTreeNodeUnlocked",
+            "HookName": "OnTechTreeNodeUnlocked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Workbench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_TechTreeUnlock",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "LR3hMuU56u07LSI+9kse4Vg2i3bSXrtLTRSeq3HN8LY=",
+            "BaseHookName": "OnTechTreeNodeUnlock",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 25,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "brfalse",
+                "OpType": "Instruction",
+                "Operand": 113
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnTechTreeNodeUnlocked [patch 1]",
+            "HookName": "OnTechTreeNodeUnlocked [patch 1]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Workbench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_TechTreeUnlock",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "LR3hMuU56u07LSI+9kse4Vg2i3bSXrtLTRSeq3HN8LY=",
+            "BaseHookName": "OnTechTreeNodeUnlocked",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 72,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 113
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnTechTreeNodeUnlocked [patch 2]",
+            "HookName": "OnTechTreeNodeUnlocked [patch 2]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Workbench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_TechTreeUnlock",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "LR3hMuU56u07LSI+9kse4Vg2i3bSXrtLTRSeq3HN8LY=",
+            "BaseHookName": "OnTechTreeNodeUnlocked [patch 1]",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 94,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "blt_s",
+                "OpType": "Instruction",
+                "Operand": 113
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnTechTreeNodeUnlocked [patch 3]",
+            "HookName": "OnTechTreeNodeUnlocked [patch 3]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Workbench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_TechTreeUnlock",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "LR3hMuU56u07LSI+9kse4Vg2i3bSXrtLTRSeq3HN8LY=",
+            "BaseHookName": "OnTechTreeNodeUnlocked [patch 2]",
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

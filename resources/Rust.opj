@@ -14896,6 +14896,30 @@
             "BaseHookName": "OnIORefCleared [patch]",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 27,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityFlagsNetworkUpdate",
+            "HookName": "OnEntityFlagsNetworkUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "SendNetworkUpdate_Flags",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "1JpW7U80IMTBb8tDqdYJS6x75INmaXdJ6aP6XJjsg74=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [
@@ -28367,6 +28391,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseNetworkable::GetSubscribers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "GetSubscribers",
+            "FullTypeName": "System.Collections.Generic.List`1<Network.Connection>",
+            "Parameters": []
+          },
+          "MSILHash": "DYKTp/ghYQgeINCkvR1MpkAQdk8Gtg1gEClR9TdJWgU="
         }
       ],
       "Fields": [

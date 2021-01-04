@@ -14896,6 +14896,30 @@
             "BaseHookName": "OnIORefCleared [patch]",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "OnSendPlayerLoot",
+            "HookName": "OnSendPlayerLoot",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerLoot",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SendUpdate",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "+P+A2zTjv0fBxo+yjEUTsSvxeDK7FPzX81NgUvwPJFs=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [
@@ -28367,6 +28391,28 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseNetworkable::SendAsSnapshot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "SendAsSnapshot",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Network.Connection",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "6bB73ajskchotLYKe+TKZ/cqWB0W2xf4vsuFkgClTV4="
         }
       ],
       "Fields": [

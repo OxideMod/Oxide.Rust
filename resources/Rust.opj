@@ -15015,6 +15015,256 @@
             "BaseHookName": "OnTechTreeNodeUnlocked [patch 2]",
             "HookCategory": "TechTree"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 20,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.activeCallTo",
+            "HookTypeName": "Simple",
+            "Name": "OnPhoneAnswer",
+            "HookName": "OnPhoneAnswer",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AnswerPhone",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Cp4RE1P/zM2SYXpPNx4qGlc91QmpS+sH1+5gLeSPe7c=",
+            "BaseHookName": null,
+            "HookCategory": "Phone"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.activeCallTo, this.currentPlayer",
+            "HookTypeName": "Simple",
+            "Name": "OnPhoneCallStart",
+            "HookName": "OnPhoneCallStart",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "BeginCall",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "rBkkozb2N9Jcan+HEA/C4BXpw+D0HzC7yqk5zt0urPk=",
+            "BaseHookName": null,
+            "HookCategory": "Phone"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 20,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.activeCallTo, this.currentPlayer",
+            "HookTypeName": "Simple",
+            "Name": "OnPhoneCallStarted",
+            "HookName": "OnPhoneCallStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "BeginCall",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "rBkkozb2N9Jcan+HEA/C4BXpw+D0HzC7yqk5zt0urPk=",
+            "BaseHookName": "OnPhoneCallStart",
+            "HookCategory": "Phone"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "CanReceiveCall",
+            "HookName": "CanReceiveCall",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CanReceiveCall",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "I8TMqAz4k67jQFT1+Fb6pKg85wI2SsE1+IPX0k7HzOU=",
+            "BaseHookName": null,
+            "HookCategory": "Phone"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 24,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, this.currentPlayer",
+            "HookTypeName": "Simple",
+            "Name": "OnPhoneDial",
+            "HookName": "OnPhoneDial",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CallPhone",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "FQI8VRhQHtTt8txZaYduWIlSTK/CWV1k7SfbZ68YccY=",
+            "BaseHookName": null,
+            "HookCategory": "Phone"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, this.currentPlayer",
+            "HookTypeName": "Simple",
+            "Name": "OnPhoneDialFail",
+            "HookName": "OnPhoneDialFail",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnDialFailed",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Telephone/DialFailReason"
+              ]
+            },
+            "MSILHash": "iVEXUPy3r0mLdkwRb7Pj+VhGaLrJOdRErJuyrx8MRBY=",
+            "BaseHookName": null,
+            "HookCategory": "Phone"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.activeCallTo, this.currentPlayer",
+            "HookTypeName": "Simple",
+            "Name": "OnPhoneDialTimeout",
+            "HookName": "OnPhoneDialTimeout",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "TimeOutDialing",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "cLv4Vdb84XBMueM6MxdX4pakp85HlL4Vw+3CT6EOLkw=",
+            "BaseHookName": null,
+            "HookCategory": "Phone"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 55,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, this.currentPlayer",
+            "HookTypeName": "Simple",
+            "Name": "OnPhoneDialFailed",
+            "HookName": "OnPhoneDialFailed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnDialFailed",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Telephone/DialFailReason"
+              ]
+            },
+            "MSILHash": "iVEXUPy3r0mLdkwRb7Pj+VhGaLrJOdRErJuyrx8MRBY=",
+            "BaseHookName": "OnPhoneDialFail",
+            "HookCategory": "Phone"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.activeCallTo, this.currentPlayer",
+            "HookTypeName": "Simple",
+            "Name": "OnPhoneDialTimedOut",
+            "HookName": "OnPhoneDialTimedOut",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "TimeOutDialing",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "cLv4Vdb84XBMueM6MxdX4pakp85HlL4Vw+3CT6EOLkw=",
+            "BaseHookName": "OnPhoneDialTimeout",
+            "HookCategory": "Phone"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 36,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.activeCallTo",
+            "HookTypeName": "Simple",
+            "Name": "OnPhoneAnswered",
+            "HookName": "OnPhoneAnswered",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PhoneController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AnswerPhone",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Cp4RE1P/zM2SYXpPNx4qGlc91QmpS+sH1+5gLeSPe7c=",
+            "BaseHookName": "OnPhoneAnswer",
+            "HookCategory": "Phone"
+          }
         }
       ],
       "Modifiers": [
@@ -28483,6 +28733,63 @@
             ],
             "Name": "nextFuelCheckTime",
             "FullTypeName": "System.Single EntityFuelSystem::nextFuelCheckTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PhoneController::<serverState>k__BackingField",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PhoneController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<serverState>k__BackingField",
+            "FullTypeName": "Telephone/CallState PhoneController::<serverState>k__BackingField",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PhoneController::activeCallTo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PhoneController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "activeCallTo",
+            "FullTypeName": "PhoneController PhoneController::activeCallTo",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PhoneController::<savedNumbers>k__BackingField",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PhoneController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<savedNumbers>k__BackingField",
+            "FullTypeName": "ProtoBuf.PhoneDirectory PhoneController::<savedNumbers>k__BackingField",
             "Parameters": []
           },
           "MSILHash": ""

@@ -736,7 +736,7 @@
             },
             "MSILHash": "eR8dNlfWufg8r9aWIARVOQrxH9lx80pMD453LD1i2AA=",
             "BaseHookName": null,
-            "HookCategory": "Item"
+            "HookCategory": "Fuel"
           }
         },
         {
@@ -14624,7 +14624,7 @@
             },
             "MSILHash": "eR8dNlfWufg8r9aWIARVOQrxH9lx80pMD453LD1i2AA=",
             "BaseHookName": "OnFuelConsume",
-            "HookCategory": "Item"
+            "HookCategory": "Fuel"
           }
         },
         {
@@ -14648,7 +14648,7 @@
             },
             "MSILHash": "sp8yuC6cMzp6Fp6SZkhNIyMqoNPUUBa1lcXXyO5Xfms=",
             "BaseHookName": null,
-            "HookCategory": "Item"
+            "HookCategory": "Fuel"
           }
         },
         {
@@ -14672,16 +14672,16 @@
             },
             "MSILHash": "tEDVXIr7sssNaFWY8IXnxOqtiiSJ+Zao18Zo66sJKKo=",
             "BaseHookName": null,
-            "HookCategory": "Item"
+            "HookCategory": "Fuel"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
+            "InjectionIndex": 7,
             "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0",
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
             "HookTypeName": "Simple",
             "Name": "OnFuelCheck",
             "HookName": "OnFuelCheck",
@@ -14698,7 +14698,7 @@
             },
             "MSILHash": "d/3tSEyHXtJf3UU5zfzOH/G6Qt5DpFofZzkO3wJAyf8=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Fuel"
           }
         },
         {
@@ -14707,10 +14707,10 @@
             "InjectionIndex": 3,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0, l0",
+            "ArgumentString": "this, l0, a0",
             "HookTypeName": "Simple",
-            "Name": "OnFuelRangeCheck",
-            "HookName": "OnFuelRangeCheck",
+            "Name": "CanCheckFuel",
+            "HookName": "CanCheckFuel",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "EntityFuelSystem",
             "Flagged": false,
@@ -14724,33 +14724,7 @@
             },
             "MSILHash": "QGEaTqGFXnU/vXUaaYbxbNLdsJDsQnI+IYHeydV7S3Y=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 4,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0",
-            "HookTypeName": "Simple",
-            "Name": "OnFuelLoot",
-            "HookName": "OnFuelLoot",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "EntityFuelSystem",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "LootFuel",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BasePlayer"
-              ]
-            },
-            "MSILHash": "PAn9DWSp3QRJlURRWNDEcZrQLDlDFU+4mf+gy4hYvic=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Fuel"
           }
         },
         {
@@ -14761,8 +14735,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, a0, a1",
             "HookTypeName": "Simple",
-            "Name": "OnFuelUse",
-            "HookName": "OnFuelUse",
+            "Name": "CanUseFuel",
+            "HookName": "CanUseFuel",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "EntityFuelSystem",
             "Flagged": false,
@@ -14777,7 +14751,7 @@
             },
             "MSILHash": "lXRMZRU6x7961KKvvXbcJgXVv6RX/joglZlLwyTq2aw=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Fuel"
           }
         },
         {

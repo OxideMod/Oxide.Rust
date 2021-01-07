@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "E:\\Servers\\Rust-staging\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-staging\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -15172,7 +15172,7 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, this.activeCallTo, this.currentPlayer",
+            "ArgumentString": " this.activeCallTo, this, this.activeCallTo.currentPlayer",
             "HookTypeName": "Simple",
             "Name": "OnPhoneDialTimeout",
             "HookName": "OnPhoneDialTimeout",
@@ -15219,10 +15219,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 17,
+            "InjectionIndex": 18,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, this.activeCallTo, this.currentPlayer",
+            "ArgumentString": " this.activeCallTo, this, this.activeCallTo.currentPlayer",
             "HookTypeName": "Simple",
             "Name": "OnPhoneDialTimedOut",
             "HookName": "OnPhoneDialTimedOut",

@@ -15343,6 +15343,30 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "OnLootNetworkUpdate",
+            "HookName": "OnLootNetworkUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerLoot",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SendUpdate",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "+P+A2zTjv0fBxo+yjEUTsSvxeDK7FPzX81NgUvwPJFs=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [
@@ -28928,6 +28952,49 @@
             "Parameters": []
           },
           "MSILHash": "DYKTp/ghYQgeINCkvR1MpkAQdk8Gtg1gEClR9TdJWgU="
+        },
+        {
+          "Name": "BaseNetworkable::SendAsSnapshot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "SendAsSnapshot",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Network.Connection",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "6bB73ajskchotLYKe+TKZ/cqWB0W2xf4vsuFkgClTV4="
+        },
+        {
+          "Name": "EntityComponent`1::baseEntity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "EntityComponent`1",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "baseEntity",
+            "FullTypeName": "T EntityComponent`1::baseEntity()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

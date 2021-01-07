@@ -14,7 +14,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <SteamAppId>258550</SteamAppId>
-    <SteamBranch>staging</SteamBranch>
+    <SteamBranch>public</SteamBranch>
     <SteamLogin>anonymous</SteamLogin>
     <GamePlatform>windows;linux</GamePlatform>
     <GameExe>RustDedicated.exe;RustDedicated</GameExe>

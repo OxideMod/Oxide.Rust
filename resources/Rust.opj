@@ -4942,11 +4942,11 @@
           "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
             "HookTypeName": "Simple",
-            "Name": "OnItemScrap",
-            "HookName": "OnItemScrap",
+            "Name": "OnResearchCostDetermine [Item]",
+            "HookName": "OnResearchCostDetermine",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ResearchTable",
             "Flagged": false,
@@ -15292,6 +15292,32 @@
             "MSILHash": "6LiopRQSOWIlmdVGJNfGkV1ZXwq0nUq3x27OZbPzq54=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0",
+            "HookTypeName": "Simple",
+            "Name": "OnResearchCostDetermine [ItemDef]",
+            "HookName": "OnResearchCostDetermine",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ResearchTable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ScrapForResearch",
+              "ReturnType": "System.Int32",
+              "Parameters": [
+                "ItemDefinition"
+              ]
+            },
+            "MSILHash": "xqxClx/7PM6dHF3EqipkoL2JZdxGEkRqZ6StxP/vQJo=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
           }
         }
       ],

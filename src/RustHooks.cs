@@ -723,6 +723,13 @@ namespace Oxide.Game.Rust
                 new System.DateTime(2021, 3, 1), elevator, saveInfo);
         }
 
+        [HookMethod("OnResearchCostDetermine")]
+        private object OnResearchCostDetermine(Item item, ResearchTable table)
+        {
+            return Interface.Oxide.CallDeprecatedHook("OnItemScrap", "OnResearchCostDetermine(Item item, ResearchTable table)",
+                new System.DateTime(2021, 4, 1), table, item);
+        }
+
         #endregion Deprecated Hooks
     }
 }

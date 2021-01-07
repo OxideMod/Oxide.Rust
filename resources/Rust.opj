@@ -28995,6 +28995,27 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseNetworkable::TerminateOnClient",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TerminateOnClient",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseNetworkable/DestroyMode"
+            ]
+          },
+          "MSILHash": "xUFW++B0bRttK9P2wRgCl3fZzvSuTjKwO9NTKkdqCRA="
         }
       ],
       "Fields": [

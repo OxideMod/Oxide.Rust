@@ -52,7 +52,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             public ConsoleSystem.Command RustCommand;
 
             /// <summary>
-            /// The orrignal console command when overridden
+            /// The original console command when overridden
             /// </summary>
             public ConsoleSystem.Command OriginalRustCommand;
 

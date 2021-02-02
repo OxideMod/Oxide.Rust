@@ -3,9 +3,10 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)
 clear
 while :
 do
-    echo "Starting server...\n"
+    echo "Starting server..."
+    echo
 
-    exec ./RustDedicated -batchmode -nographics \
+    ./RustDedicated -batchmode -nographics \
     -rcon.ip 0.0.0.0 \
     -rcon.port 28016 \
     -rcon.password "changeme" \
@@ -23,6 +24,7 @@ do
     -server.headerimage "http://i.imgur.com/xNyLhMt.jpg" \
     -server.url "https://oxidemod.org"
 
-    echo "\nRestarting server...\n"
+    echo
+    echo "Restarting server..."
     sleep 10
 done

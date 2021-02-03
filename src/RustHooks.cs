@@ -269,15 +269,16 @@ namespace Oxide.Game.Rust
         /// <param name="group"></param>
         /// <param name="name"></param>
         /// <param name="reason"></param>
+        /// <param name="expiry"></param>
         [HookMethod("IOnServerUsersSet")]
-        private void IOnServerUsersSet(ulong steamId, ServerUsers.UserGroup group, string playerName, string reason)
+        private void IOnServerUsersSet(ulong steamId, ServerUsers.UserGroup group, string playerName, string reason, ulong expiry)
         {
             if (serverInitialized && group == ServerUsers.UserGroup.Banned)
             {
                 string playerId = steamId.ToString();
                 IPlayer player = Covalence.PlayerManager.FindPlayerById(playerId);
-                Interface.CallHook("OnPlayerBanned", playerName, steamId, player?.Address ?? "0", reason);
-                Interface.CallHook("OnUserBanned", playerName, playerId, player?.Address ?? "0", reason);
+                Interface.CallHook("OnPlayerBanned", playerName, steamId, player?.Address ?? "0", reason, expiry);
+                Interface.CallHook("OnUserBanned", playerName, playerId, player?.Address ?? "0", reason, expiry);
             }
         }
 

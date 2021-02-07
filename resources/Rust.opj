@@ -15347,6 +15347,58 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 103,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1, l4",
+            "HookTypeName": "Simple",
+            "Name": "OnBookmarkControlStarted",
+            "HookName": "OnBookmarkControlStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "BeginControllingBookmark",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "1MQGejmAMZSMzpbYkP5vruAc6Jtpl+g8F5zNL8ra2Qs=",
+            "BaseHookName": "OnBookmarkControl",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 42,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnBookmarkControlEnded",
+            "HookName": "OnBookmarkControlEnded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopControl",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "XmZ87gSCZKj5YjT3LS76a29DIWdtGmaTQVwnuUpikXQ=",
+            "BaseHookName": "OnBookmarkControlEnd",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

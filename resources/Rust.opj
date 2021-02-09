@@ -29185,6 +29185,177 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::currentRadiation",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentRadiation",
+            "FullTypeName": "System.Single CargoShip::currentRadiation",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::currentThrottle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentThrottle",
+            "FullTypeName": "System.Single CargoShip::currentThrottle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::currentTurnSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentTurnSpeed",
+            "FullTypeName": "System.Single CargoShip::currentTurnSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::currentVelocity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentVelocity",
+            "FullTypeName": "UnityEngine.Vector3 CargoShip::currentVelocity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::egressing",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "egressing",
+            "FullTypeName": "System.Boolean CargoShip::egressing",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::hornCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hornCount",
+            "FullTypeName": "System.Int32 CargoShip::hornCount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::lootRoundsPassed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lootRoundsPassed",
+            "FullTypeName": "System.Int32 CargoShip::lootRoundsPassed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::mapMarkerInstance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "mapMarkerInstance",
+            "FullTypeName": "BaseEntity CargoShip::mapMarkerInstance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::turnScale",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "turnScale",
+            "FullTypeName": "System.Single CargoShip::turnScale",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

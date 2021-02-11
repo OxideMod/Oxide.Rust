@@ -15347,6 +15347,32 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 15,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.connection, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerDisconnectReason",
+            "HookName": "OnPlayerDisconnectReason",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ReadDisconnectReason",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Message"
+              ]
+            },
+            "MSILHash": "EeLGulYeJ7ZvwHqANi9E+5MRkXbfM384T4XhQCUfyOE=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

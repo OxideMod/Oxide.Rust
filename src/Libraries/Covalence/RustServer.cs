@@ -1,7 +1,6 @@
 using Facepunch;
 using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
-using Steamworks;
 using System;
 using System.Globalization;
 using System.IO;
@@ -44,24 +43,11 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             {
                 try
                 {
-                    if (address == null)
+                    if (address == null || !Utility.ValidateIPv4(address.ToString()))
                     {
-                        if (Utility.ValidateIPv4(ConVar.Server.ip) && !Utility.IsLocalIP(ConVar.Server.ip))
-                        {
-                            IPAddress.TryParse(ConVar.Server.ip, out address);
-                            Interface.Oxide.LogInfo($"IP address from command-line: {address}");
-                        }
-                        else if (SteamServer.IsValid && SteamServer.PublicIp != null)
-                        {
-                            address = SteamServer.PublicIp;
-                            Interface.Oxide.LogInfo($"IP address from Steam query: {address}");
-                        }
-                        else
-                        {
-                            WebClient webClient = new WebClient();
-                            IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
-                            Interface.Oxide.LogInfo($"IP address from external API: {address}");
-                        }
+                        WebClient webClient = new WebClient();
+                        IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
+                        Interface.Oxide.LogInfo($"IP address from external API: {address}");
                     }
 
                     return address;

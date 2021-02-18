@@ -45,9 +45,17 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 {
                     if (address == null || !Utility.ValidateIPv4(address.ToString()))
                     {
-                        WebClient webClient = new WebClient();
-                        IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
-                        Interface.Oxide.LogInfo($"IP address from external API: {address}");
+                        if (Utility.ValidateIPv4(ConVar.Server.ip) && !Utility.IsLocalIP(ConVar.Server.ip))
+                        {
+                            IPAddress.TryParse(ConVar.Server.ip, out address);
+                            Interface.Oxide.LogInfo($"IP address from command-line: {address}");
+                        }
+                        else
+                        {
+                            WebClient webClient = new WebClient();
+                            IPAddress.TryParse(webClient.DownloadString("http://api.ipify.org"), out address);
+                            Interface.Oxide.LogInfo($"IP address from external API: {address}");
+                        }
                     }
 
                     return address;

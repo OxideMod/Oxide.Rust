@@ -15275,6 +15275,58 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 5,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnNpcConversationEnded",
+            "HookName": "OnNpcConversationEnded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCTalking",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ForceEndConversation",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "eer3OsOtuC2dPz+JjP7fnQ9eZ6uFN2bw5d2e2x1tAcA=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnNpcConversationEnded",
+            "HookName": "OnNpcConversationEnded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCTalking",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_EndTalking",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "JzGz65LkGnpaeuOWDc8aglYijhIXH0SSM89/KIHgASQ=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

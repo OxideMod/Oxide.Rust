@@ -611,7 +611,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 163,
+            "InjectionIndex": 153,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0",
@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "ekrOugcXhgazzMAEWS0ZGkPafpE3Oo43qyCvq5vzmGM=",
+            "MSILHash": "qHkfhuLxat2IwJMKSLhfFq4VPsJ8k3j1M2NqzXvCWhg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1482,10 +1482,11 @@
               "Name": "OnObjectAdded",
               "ReturnType": "System.Void",
               "Parameters": [
-                "UnityEngine.GameObject"
+                "UnityEngine.GameObject",
+                "UnityEngine.Collider"
               ]
             },
-            "MSILHash": "WJ5sRCziAPnQ7n4UOb8pP6jxCRVPkT1ft0FqzefL8wI=",
+            "MSILHash": "dglLbZfatV83+GpvJOGo0z5I/lzpqzLnQkoVEAzvINA=",
             "BaseHookName": null,
             "HookCategory": "Trap"
           }
@@ -2361,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "YJMC+rqI/TuwGE3qlm35A2Dj/cAf3eDQCMv4o3ELiGk=",
+            "MSILHash": "IOal3SYu6z1IzUN81+8WkOAeHpS7w1K6/eKBGNOv4+0=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2388,7 +2389,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "/2taVz5TNZ2YtaeYa+TdbbhjJC4YSHf9/BaEu8uWIl8=",
+            "MSILHash": "nRUJTa2STcZwrSvt+rq+RUhBAoLQyFToVWApcTYoyU0=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2439,7 +2440,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "/2taVz5TNZ2YtaeYa+TdbbhjJC4YSHf9/BaEu8uWIl8=",
+            "MSILHash": "nRUJTa2STcZwrSvt+rq+RUhBAoLQyFToVWApcTYoyU0=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -2800,7 +2801,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 41,
+            "InjectionIndex": 38,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l4, this",
@@ -2816,7 +2817,7 @@
               "ReturnType": "System.Boolean",
               "Parameters": []
             },
-            "MSILHash": "QCrsm4a9Cwo8zNG0bzJPfaPf8iKnSEGz/4nV+vAPJ00=",
+            "MSILHash": "Jj55TGLtWGAl7MTT1qgJPeQzEmWWoqREvWbpm4P7rg8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -3754,7 +3755,7 @@
             },
             "MSILHash": "C72NNyglnn29ADbvIJLCBL/dS7tAsK7l2sPx5plP2y8=",
             "BaseHookName": "OnRecycleItem",
-            "HookCategory": "Item"
+            "HookCategory": "_Patches"
           }
         },
         {
@@ -5095,7 +5096,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 50,
+            "InjectionIndex": 47,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -5121,7 +5122,7 @@
               "ReturnType": "System.Boolean",
               "Parameters": []
             },
-            "MSILHash": "QCrsm4a9Cwo8zNG0bzJPfaPf8iKnSEGz/4nV+vAPJ00=",
+            "MSILHash": "Jj55TGLtWGAl7MTT1qgJPeQzEmWWoqREvWbpm4P7rg8=",
             "BaseHookName": "CanBeTargeted [FlameTurret]",
             "HookCategory": "Player"
           }
@@ -7052,7 +7053,7 @@
                 "UnityEngine.Transform"
               ]
             },
-            "MSILHash": "NYssmxSMHvhWb3tqM2ePuUJ3jEo44JCcOKq1pcjssA0=",
+            "MSILHash": "SECj+BdE1zkB7rmWNrijsjTiFpt8FRGItlK57T3VLaM=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -7363,7 +7364,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "TjWREUvoUuxaPFyiNUlBMw1xq+B3BFPq1cpxVXo/N2c=",
+            "MSILHash": "tbeyH3QJIs9BOpfbnGuQi3KCSooYduqqn32AYhRqgU0=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8598,7 +8599,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "ojlRjXnOhPx/CROCTqtNrrcskgCWLXWSGAkZ4sDjLXE=",
+            "MSILHash": "JIh0UffncqOcDvtvnhWLBJOUHgKfnpkh++IoFK5yEyw=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8622,7 +8623,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "ojlRjXnOhPx/CROCTqtNrrcskgCWLXWSGAkZ4sDjLXE=",
+            "MSILHash": "JIh0UffncqOcDvtvnhWLBJOUHgKfnpkh++IoFK5yEyw=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -10430,7 +10431,7 @@
               "ReturnType": "BaseCorpse",
               "Parameters": []
             },
-            "MSILHash": "Kf7VIdbQMRz75RvD4NuyplXFqhnhpvTJ5Wv+qseAbhk=",
+            "MSILHash": "vXPzmK5hSqqr3EW5LSeEL+np9HgabWa4SWRfWxS9PCo=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -12947,169 +12948,6 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 4,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnEngineStart"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Assembly-CSharp|BaseVehicle|GetDriver"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
-              },
-              {
-                "OpCode": "brfalse_s",
-                "OpType": "Instruction",
-                "Operand": 4
-              },
-              {
-                "OpCode": "ret",
-                "OpType": "None",
-                "Operand": null
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnEngineStart [MiniCopter]",
-            "HookName": "OnEngineStart",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "MiniCopter",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "EngineStartup",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "8pAleyRavdKKmX08YZ8lXfAd+OKZTQJwDFGeYol1aCU=",
-            "BaseHookName": null,
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 12,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnEngineStarted"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "callvirt",
-                "OpType": "Method",
-                "Operand": "Assembly-CSharp|BaseVehicle|GetDriver"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
-              },
-              {
-                "OpCode": "pop",
-                "OpType": "None",
-                "Operand": null
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnEngineStarted [MiniCopter]",
-            "HookName": "OnEngineStarted",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "MiniCopter",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "EngineOn",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "uGuGY+OLvod3jlN0v0YKegfsJQheyWGZSaO5JFcjpTU=",
-            "BaseHookName": null,
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 29,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "OnEngineStart [ModularCar]",
-            "HookName": "OnEngineStart",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ModularCar",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "TryStartEngines",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BasePlayer"
-              ]
-            },
-            "MSILHash": "/jjEIeVhy3DEZMmimimPjT6H6qOVUH/yGRM5MX9tBjs=",
-            "BaseHookName": null,
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 21,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 1,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "OnEngineStarted [ModularCar]",
-            "HookName": "OnEngineStarted",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ModularCar",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "FinishStartingEngine",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "AbyGq7OAmBd5ryaLMyt+qZbU1ivWh305i6RDXv0Xhr0=",
-            "BaseHookName": null,
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
             "InjectionIndex": 6,
             "RemoveCount": 0,
             "Instructions": [
@@ -13606,7 +13444,7 @@
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
-              "Name": "<CallElevator>b__26_0",
+              "Name": "<CallElevator>b__28_0",
               "ReturnType": "System.Void",
               "Parameters": [
                 "Elevator"
@@ -13671,7 +13509,7 @@
             "TypeName": "Elevator",
             "Flagged": false,
             "Signature": {
-              "Exposure": 0,
+              "Exposure": 1,
               "Name": "RequestMoveLiftTo",
               "ReturnType": "System.Boolean",
               "Parameters": [
@@ -13679,7 +13517,7 @@
                 "System.Single&"
               ]
             },
-            "MSILHash": "WlGtRxCXGMxLWa+G49FB/Knvy5wWlRYRAWKXLdOTcAg=",
+            "MSILHash": "iEYP4K7QshHZRCYvz/8QRIr6H+hW1QJzxywBk2jNqkE=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -14547,7 +14385,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "lXRMZRU6x7961KKvvXbcJgXVv6RX/joglZlLwyTq2aw=",
+            "MSILHash": "vghLfzwydZgcsgTYrnb0JJV9EJHHG9QjoJKo1aGhWUQ=",
             "BaseHookName": null,
             "HookCategory": "Fuel"
           }
@@ -15604,6 +15442,106 @@
             "MSILHash": "2YhM0BhYOAH5j+x4RplIvEP6igWFVDNDAgTU5ezM6pA=",
             "BaseHookName": "OnSupplyDropDropped [Patch 2]",
             "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEngineStop",
+            "HookName": "OnEngineStop",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleEngineController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopEngine",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "jOY1sUKWcPq1qUlM8ne6uLOOmnw3bcEEFhoUSPAG98Q=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 25,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnEngineStart",
+            "HookName": "OnEngineStart",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleEngineController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryStartEngine",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "kxTPZzOQvb51sC/onVuxsZ0s6MgZzKlIyIdp9Ap/5GY=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 31,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEngineStopped",
+            "HookName": "OnEngineStopped",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleEngineController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopEngine",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "jOY1sUKWcPq1qUlM8ne6uLOOmnw3bcEEFhoUSPAG98Q=",
+            "BaseHookName": "OnEngineStop",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 56,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnEngineStarted",
+            "HookName": "OnEngineStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleEngineController",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryStartEngine",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "kxTPZzOQvb51sC/onVuxsZ0s6MgZzKlIyIdp9Ap/5GY=",
+            "BaseHookName": "OnEngineStart",
+            "HookCategory": "Vehicle"
           }
         }
       ],
@@ -21057,27 +20995,6 @@
           "MSILHash": "DniKWF6OJl3yPLsP62J/G27rzTuobqV//dx/kjqsUdc="
         },
         {
-          "Name": "TriggerBase::OnObjectAdded",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "TriggerBase",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              3
-            ],
-            "Name": "OnObjectAdded",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "UnityEngine.GameObject"
-            ]
-          },
-          "MSILHash": "pnr+ulkm04QPeHWREPzZk0PvPGetVccNIyZXXvu2Lkc="
-        },
-        {
           "Name": "TriggerBase::OnObjectRemoved",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "TriggerBase",
@@ -21833,27 +21750,6 @@
             "Parameters": []
           },
           "MSILHash": "A+psSme2TO3cOE5WA1M34PIbum4cVDDS2c+R/juHW3M="
-        },
-        {
-          "Name": "BaseTrapTrigger::OnObjectAdded",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseTrapTrigger",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              3
-            ],
-            "Name": "OnObjectAdded",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "UnityEngine.GameObject"
-            ]
-          },
-          "MSILHash": "WJ5sRCziAPnQ7n4UOb8pP6jxCRVPkT1ft0FqzefL8wI="
         },
         {
           "Name": "ArcadeNetworkTrigger::InterestedInObject",
@@ -22733,44 +22629,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "ModularCar::CancelEngineStart",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "CancelEngineStart",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "mRpwsxYA64KuohUkUKwYvBakXbiTuJzoaMylDCpf/nc="
-        },
-        {
-          "Name": "ModularCar::CanRunEngines",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "CanRunEngines",
-            "FullTypeName": "System.Boolean",
-            "Parameters": []
-          },
-          "MSILHash": "43mZSzvvmWGHW9H0AiC8ZOJCR0a4f8/+wsqGBqOQybo="
-        },
-        {
           "Name": "ModularCar::CanPushNow",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "ModularCar",
@@ -22790,25 +22648,6 @@
             ]
           },
           "MSILHash": "+Ix5xuFhIXmDVfOBxxGI9tDNoFiL7bnjAqAPUxpf64A="
-        },
-        {
-          "Name": "ModularCar::FinishStartingEngine",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "FinishStartingEngine",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "AbyGq7OAmBd5ryaLMyt+qZbU1ivWh305i6RDXv0Xhr0="
         },
         {
           "Name": "ModularCar::DoCollisionDamage",
@@ -23057,46 +22896,6 @@
             "Parameters": []
           },
           "MSILHash": "274yT4IJ3fuxLHwhPNn2uaxwCSO8438cQhc49fPrshU="
-        },
-        {
-          "Name": "ModularCar::StopEngines",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "StopEngines",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "4jOvoqBZfHbR8Bvw1pKkqzWNTvkYV8CPc/m33GWeiO4="
-        },
-        {
-          "Name": "ModularCar::TryStartEngines",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "TryStartEngines",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "BasePlayer"
-            ]
-          },
-          "MSILHash": "/jjEIeVhy3DEZMmimimPjT6H6qOVUH/yGRM5MX9tBjs="
         },
         {
           "Name": "ModularCar::UpdateNetwork",
@@ -23519,25 +23318,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "ModularCar::lastEngineTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "lastEngineTime",
-            "FullTypeName": "System.Single ModularCar::lastEngineTime",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "ModularCar::lastSetEngineState",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "ModularCar",
@@ -23552,25 +23332,6 @@
             ],
             "Name": "lastSetEngineState",
             "FullTypeName": "ModularCar/EngineState ModularCar::lastSetEngineState",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "ModularCar::mainServerCollider",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "mainServerCollider",
-            "FullTypeName": "UnityEngine.Collider ModularCar::mainServerCollider",
             "Parameters": []
           },
           "MSILHash": ""
@@ -24548,25 +24309,6 @@
             ],
             "Name": "isPushing",
             "FullTypeName": "System.Boolean MiniCopter::isPushing",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "MiniCopter::lastEngineTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "lastEngineTime",
-            "FullTypeName": "System.Single MiniCopter::lastEngineTime",
             "Parameters": []
           },
           "MSILHash": ""
@@ -27408,29 +27150,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "PlaceMonuments::CheckRadius",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlaceMonuments",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "CheckRadius",
-            "FullTypeName": "System.Boolean",
-            "Parameters": [
-              "System.Collections.Generic.List`1<PlaceMonuments/SpawnInfo>",
-              "UnityEngine.Vector3",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "OiKSRGTUJQmdqAxDw2RcZF4M45lGOUuBPcdzkGLmtsQ="
-        },
-        {
           "Name": "PlaceMonumentsRoadside/SpawnInfo",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "PlaceMonumentsRoadside/SpawnInfo",
@@ -27467,29 +27186,6 @@
             "Parameters": []
           },
           "MSILHash": ""
-        },
-        {
-          "Name": "PlaceMonumentsRoadside::CheckRadius",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlaceMonumentsRoadside",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "CheckRadius",
-            "FullTypeName": "System.Boolean",
-            "Parameters": [
-              "System.Collections.Generic.List`1<PlaceMonumentsRoadside/SpawnInfo>",
-              "UnityEngine.Vector3",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "RGTIZlpFK66PgF9xXmG397TSIdT5a00IMSbaTQP684Y="
         },
         {
           "Name": "PlaceMonumentsOffshore::CheckRadius",
@@ -27983,27 +27679,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "Elevator::Floor",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Elevator",
-          "Type": 2,
-          "TargetExposure": [
-            2,
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              2,
-              0
-            ],
-            "Name": "Floor",
-            "FullTypeName": "System.Int32 Elevator::Floor()",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "Elevator::liftEntity",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "Elevator",
@@ -28061,25 +27736,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "Elevator::ClearBusy",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Elevator",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ClearBusy",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "c5eubGOyZTGu0SHWyXf7PvPxleMOF+hvefiQW/KZKh0="
-        },
-        {
           "Name": "Elevator::GetElevatorInDirection",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "Elevator",
@@ -28099,89 +27755,6 @@
             ]
           },
           "MSILHash": "H1gUstd0DKiO9ISGsm7MHsm+h66avvAX/zDnEcpylxQ="
-        },
-        {
-          "Name": "Elevator::GetWorldSpaceFloorPosition",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Elevator",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GetWorldSpaceFloorPosition",
-            "FullTypeName": "UnityEngine.Vector3",
-            "Parameters": [
-              "System.Int32"
-            ]
-          },
-          "MSILHash": "0ejuai9biaMewwkjCmLFTqp6gyXoN2JtEfadQb8scSU="
-        },
-        {
-          "Name": "Elevator::IsValidFloor",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Elevator",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "IsValidFloor",
-            "FullTypeName": "System.Boolean",
-            "Parameters": [
-              "System.Int32"
-            ]
-          },
-          "MSILHash": "c3I4v2tidJvk+GzTwEE42KtjXf+GDCuJcUNY8iG7cso="
-        },
-        {
-          "Name": "Elevator::LiftPositionToFloor",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Elevator",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "LiftPositionToFloor",
-            "FullTypeName": "System.Int32",
-            "Parameters": []
-          },
-          "MSILHash": "wy0eiXUTVtMOHI1kwOZ33GglBHvvFb9nvEHyx3YGP98="
-        },
-        {
-          "Name": "Elevator::RequestMoveLiftTo",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Elevator",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "RequestMoveLiftTo",
-            "FullTypeName": "System.Boolean",
-            "Parameters": [
-              "System.Int32",
-              "System.Single&"
-            ]
-          },
-          "MSILHash": "WlGtRxCXGMxLWa+G49FB/Knvy5wWlRYRAWKXLdOTcAg="
         },
         {
           "Name": "Elevator::TimeToTravelDistance",
@@ -28205,26 +27778,6 @@
           "MSILHash": "ZZhN7QHNRQMxw2jQ9RENnlFoPp4bKK3forfxZLEfczU="
         },
         {
-          "Name": "Elevator::TopFloorFlag",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Elevator",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "TopFloorFlag",
-            "FullTypeName": "BaseEntity/Flags Elevator::TopFloorFlag",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "Climate::Overrides",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "Climate",
@@ -28241,27 +27794,6 @@
             ],
             "Name": "Overrides",
             "FullTypeName": "LegacyWeatherState Climate::Overrides()",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Climate::WeatherClamps",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Climate",
-          "Type": 2,
-          "TargetExposure": [
-            2,
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              2,
-              0
-            ],
-            "Name": "WeatherClamps",
-            "FullTypeName": "WeatherPreset Climate::WeatherClamps()",
             "Parameters": []
           },
           "MSILHash": ""
@@ -29611,6 +29143,3382 @@
             ],
             "Name": "turnScale",
             "FullTypeName": "System.Single CargoShip::turnScale",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TriggerBase::CheckEntity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "CheckEntity",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "5ewlLo9bIswwTccjOyXqjUscpC+ac7hsXwe2fjJe8sk="
+        },
+        {
+          "Name": "TriggerBase::OnObjectAdded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnObjectAdded",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.GameObject",
+              "UnityEngine.Collider"
+            ]
+          },
+          "MSILHash": "pnr+ulkm04QPeHWREPzZk0PvPGetVccNIyZXXvu2Lkc="
+        },
+        {
+          "Name": "TriggerBase::OnTriggerExit",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnTriggerExit",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.GameObject"
+            ]
+          },
+          "MSILHash": "48ICsQJUkr4EAK4D6GEH5juZEMvu5fa7C/p+U0Zz7UM="
+        },
+        {
+          "Name": "TriggerBase::RemoveInvalidEntities",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerBase",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "RemoveInvalidEntities",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "j+dBTjn+elHyZkgkBqhgK5XEpl+ChmTrQ+eKYYWZJp4="
+        },
+        {
+          "Name": "PlaceMonumentsRoadside::GetDistanceInfo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonumentsRoadside",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetDistanceInfo",
+            "FullTypeName": "PlaceMonumentsRoadside/DistanceInfo",
+            "Parameters": [
+              "System.Collections.Generic.List`1<PlaceMonumentsRoadside/SpawnInfo>",
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "DvR5gw1HRFgMZZvnVlLFKKuHDcYn0EgeZfve8d5AFwI="
+        },
+        {
+          "Name": "PlaceMonumentsRoadside::GroupCandidates",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonumentsRoadside",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GroupCandidates",
+            "FullTypeName": "System.Int32 PlaceMonumentsRoadside::GroupCandidates",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonumentsRoadside::IndividualCandidates",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonumentsRoadside",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IndividualCandidates",
+            "FullTypeName": "System.Int32 PlaceMonumentsRoadside::IndividualCandidates",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonumentsRoadside::rot90",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonumentsRoadside",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rot90",
+            "FullTypeName": "UnityEngine.Quaternion PlaceMonumentsRoadside::rot90",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonuments::Attempts",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonuments",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Attempts",
+            "FullTypeName": "System.Int32 PlaceMonuments::Attempts",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonuments::GroupCandidates",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonuments",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GroupCandidates",
+            "FullTypeName": "System.Int32 PlaceMonuments::GroupCandidates",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonuments::IndividualCandidates",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonuments",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IndividualCandidates",
+            "FullTypeName": "System.Int32 PlaceMonuments::IndividualCandidates",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonuments::GetDistanceInfo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonuments",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetDistanceInfo",
+            "FullTypeName": "PlaceMonuments/DistanceInfo",
+            "Parameters": [
+              "System.Collections.Generic.List`1<PlaceMonuments/SpawnInfo>",
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "+/B45AKIDDv3o6AIWfvaC8bFwsAyhlaak0ehdE8vKVs="
+        },
+        {
+          "Name": "ModularCar::engineController",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineController",
+            "FullTypeName": "VehicleEngineController ModularCar::engineController",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::lastEngineOnTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastEngineOnTime",
+            "FullTypeName": "System.Single ModularCar::lastEngineOnTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCar::DoServerDestroy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DoServerDestroy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "bOA55sXg5h2O0vJOMmostTbAURxvIF8sxK+mnQBzSm8="
+        },
+        {
+          "Name": "ModularCar::QueueCollisionDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "QueueCollisionDamage",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "BaseEntity",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "Ab6tuRSeONQadiOc4WvC9TUXv5ULCBWk5ghyPjynoS0="
+        },
+        {
+          "Name": "Climate::defaultTemp",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 0,
+          "TargetExposure": [
+            0,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "defaultTemp",
+            "FullTypeName": "System.Single Climate::defaultTemp",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::fadeAngle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 0,
+          "TargetExposure": [
+            0,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fadeAngle",
+            "FullTypeName": "System.Single Climate::fadeAngle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::weatherDurationHours",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 0,
+          "TargetExposure": [
+            0,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "weatherDurationHours",
+            "FullTypeName": "System.Int32 Climate::weatherDurationHours",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::weatherFadeHours",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 0,
+          "TargetExposure": [
+            0,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "weatherFadeHours",
+            "FullTypeName": "System.Int32 Climate::weatherFadeHours",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Climate::Update",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Climate",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "Update",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "V6yHMUVlWzJa3hl08izpmUrWJgqiOnYtAyBebDLR6vU="
+        },
+        {
+          "Name": "MiniCopter::engineController",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineController",
+            "FullTypeName": "VehicleEngineController MiniCopter::engineController",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MiniCopter::lastEngineOnTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastEngineOnTime",
+            "FullTypeName": "System.Single MiniCopter::lastEngineOnTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MiniCopter::CanPushNow",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MiniCopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CanPushNow",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "87zgqtExM7J6tshGbozl75P2Yc+pnbTVVsJubuWiyDA="
+        },
+        {
+          "Name": "BaseTrain::IsAtAStation",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "IsAtAStation",
+            "FullTypeName": "System.Boolean BaseTrain::IsAtAStation()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::RearTrackSection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              0
+            ],
+            "Name": "RearTrackSection",
+            "FullTypeName": "TrainTrackSpline BaseTrain::RearTrackSection()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::TrackSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "TrackSpeed",
+            "FullTypeName": "System.Single BaseTrain::TrackSpeed()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::FrontTrackSection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              1
+            ],
+            "Name": "FrontTrackSection",
+            "FullTypeName": "TrainTrackSpline BaseTrain::FrontTrackSection()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::ApplyCollisionDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyCollisionDamage",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "F+OoUFenl7nDpB5mBB7vMHEhM/sRFGko068aSV9dMSI="
+        },
+        {
+          "Name": "BaseTrain::ApplyCollisions",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyCollisions",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single",
+              "System.Boolean",
+              "TriggerTrainCollisions",
+              "BaseTrain/StaticCollisionState&",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "lewaCGiVyIeLLIo6WQ1jiAYWj7DzNDrim/O/9lB/tiE="
+        },
+        {
+          "Name": "BaseTrain::ApplyCollisionsToTrackSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyCollisionsToTrackSpeed",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "s8XqINiX6g8gGMi4D9M3rQtHsxftfwLvEfppfbXZ/Hg="
+        },
+        {
+          "Name": "BaseTrain::DoServerDestroy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DoServerDestroy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "2zUsN4ziGN/iJBp0OopeshCRKaN2AphN2WoDoamVTcU="
+        },
+        {
+          "Name": "BaseTrain::FixedUpdateMoveTrain",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FixedUpdateMoveTrain",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "bXst+nrG69x+v5+L8+NNCQu7LDRcf9U4NS4pShSUTyk="
+        },
+        {
+          "Name": "BaseTrain::FixedUpdateTrainOnTrack",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FixedUpdateTrainOnTrack",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "M3XAOJk8IJqW523uhZ266Rj3QJUGnh9z5i8h5zaMT6o="
+        },
+        {
+          "Name": "BaseTrain::GetFrontWheelPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetFrontWheelPos",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": []
+          },
+          "MSILHash": "M0rZpGj764daz+yLURfs8nTvxX0OaKkgJkK8ZtuOQw4="
+        },
+        {
+          "Name": "BaseTrain::GetRearWheelPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetRearWheelPos",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": []
+          },
+          "MSILHash": "tR3PUw2S6Fob+8A97A3NXigk2u0Uofns7S7BpIQtiXM="
+        },
+        {
+          "Name": "BaseTrain::HandleRigidbodyCollision",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HandleRigidbodyCollision",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Boolean",
+              "System.Single",
+              "UnityEngine.Rigidbody",
+              "System.Single",
+              "System.Single",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "xwAP596h53XhVmpwjyLL6d+r8QEk9IDPslBRZzt7ErQ="
+        },
+        {
+          "Name": "BaseTrain::HandleStaticCollisions",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HandleStaticCollisions",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Boolean",
+              "System.Boolean",
+              "System.Single",
+              "BaseTrain/StaticCollisionState&"
+            ]
+          },
+          "MSILHash": "i3himhJWT5KoLsHrYLHBAvu4NHXNH4JhaVH0jLZdHVc="
+        },
+        {
+          "Name": "BaseTrain::HandleTrainCollision",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HandleTrainCollision",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Boolean",
+              "System.Single",
+              "BaseTrain",
+              "System.Single",
+              "BaseTrain/StaticCollisionState&"
+            ]
+          },
+          "MSILHash": "SvPRzLwPBHJr5T2iYr8R46cjBNBxICpU9hMK344i5EI="
+        },
+        {
+          "Name": "BaseTrain::HasAnyCollisions",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "HasAnyCollisions",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "J6rclRdrO754BmGUNdxcnYMa7wIyxMYchifE+tLAvR4="
+        },
+        {
+          "Name": "BaseTrain::SetTheRestFromFrontWheelData",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetTheRestFromFrontWheelData",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "TrainTrackSpline",
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "73e+yLJB6JSatamoMMTPItHIGfkAtsIWNtwDI0gpCEE="
+        },
+        {
+          "Name": "BaseTrain::SetTrackSelection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "SetTrackSelection",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "TrainTrackSpline/TrackSelection"
+            ]
+          },
+          "MSILHash": "St36KTWwAtmMQ20vtB7NUE9AdQja48YVf0B7/l2G5Qk="
+        },
+        {
+          "Name": "BaseTrain::VehicleFixedUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "VehicleFixedUpdate",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "h5Tk6hfT9m/a46mgNCPLeCOiE5oRxie8cSe6tTFrvvk="
+        },
+        {
+          "Name": "TrainEngine::MaxThrottle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MaxThrottle",
+            "FullTypeName": "TrainEngine/EngineSpeeds TrainEngine::MaxThrottle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::MinThrottle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MinThrottle",
+            "FullTypeName": "TrainEngine/EngineSpeeds TrainEngine::MinThrottle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::CurThrottleSetting",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "CurThrottleSetting",
+            "FullTypeName": "TrainEngine/EngineSpeeds TrainEngine::CurThrottleSetting()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::lastNetworkUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastNetworkUpdate",
+            "FullTypeName": "System.Single BaseHelicopter::lastNetworkUpdate",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::flightEngineGainMod",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "flightEngineGainMod",
+            "FullTypeName": "SoundModulation/Modulator BaseHelicopter::flightEngineGainMod",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::flightThwopsGainMod",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "flightThwopsGainMod",
+            "FullTypeName": "SoundModulation/Modulator BaseHelicopter::flightThwopsGainMod",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularVehicleShopFront::WithinUseDistance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularVehicleShopFront",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "WithinUseDistance",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "yx0LGIQbYP/qLcaKZJUOsi9/ujM9/7UuK1gq4o0u6jQ="
+        },
+        {
+          "Name": "ModularVehicleShopFront::maxUseDistance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularVehicleShopFront",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxUseDistance",
+            "FullTypeName": "System.Single ModularVehicleShopFront::maxUseDistance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarSeat::leftFootIKPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarSeat",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "leftFootIKPos",
+            "FullTypeName": "UnityEngine.Vector3 ModularCarSeat::leftFootIKPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarSeat::rightFootIKPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarSeat",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rightFootIKPos",
+            "FullTypeName": "UnityEngine.Vector3 ModularCarSeat::rightFootIKPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleEngineController::CancelEngineStart",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleEngineController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CancelEngineStart",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "+R5WYpuafMWhA99tT7X2YFl5JKbrAVYCuRBGm2aUxmU="
+        },
+        {
+          "Name": "VehicleEngineController::engineStartingFlag",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleEngineController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineStartingFlag",
+            "FullTypeName": "BaseEntity/Flags VehicleEngineController::engineStartingFlag",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleEngineController::engineStartupTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleEngineController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineStartupTime",
+            "FullTypeName": "System.Single VehicleEngineController::engineStartupTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleEngineController::owner",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleEngineController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "owner",
+            "FullTypeName": "IEngineControllerUser VehicleEngineController::owner",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::buttonHoldTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "buttonHoldTime",
+            "FullTypeName": "System.Single TrainEngine::buttonHoldTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::decayingFor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "decayingFor",
+            "FullTypeName": "System.Single TrainEngine::decayingFor",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::decayTickSpacing",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "decayTickSpacing",
+            "FullTypeName": "System.Single TrainEngine::decayTickSpacing",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::driverProtection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "driverProtection",
+            "FullTypeName": "ProtectionProperties TrainEngine::driverProtection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::engineController",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineController",
+            "FullTypeName": "VehicleEngineController TrainEngine::engineController",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::engineDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineDamage",
+            "FullTypeName": "EngineDamageOverTime TrainEngine::engineDamage",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::engineDamageTimeframe",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineDamageTimeframe",
+            "FullTypeName": "System.Single TrainEngine::engineDamageTimeframe",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::engineDamageToSlow",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineDamageToSlow",
+            "FullTypeName": "System.Single TrainEngine::engineDamageToSlow",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::engineForce",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineForce",
+            "FullTypeName": "System.Single TrainEngine::engineForce",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::engineLocalOffset",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineLocalOffset",
+            "FullTypeName": "UnityEngine.Vector3 TrainEngine::engineLocalOffset",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::engineSlowedMaxVel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineSlowedMaxVel",
+            "FullTypeName": "System.Single TrainEngine::engineSlowedMaxVel",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::engineSlowedTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineSlowedTime",
+            "FullTypeName": "System.Single TrainEngine::engineSlowedTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::engineStartupTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineStartupTime",
+            "FullTypeName": "System.Single TrainEngine::engineStartupTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::engineWorldCol",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineWorldCol",
+            "FullTypeName": "UnityEngine.BoxCollider TrainEngine::engineWorldCol",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::detailedCabinColliderObj",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "detailedCabinColliderObj",
+            "FullTypeName": "UnityEngine.GameObject TrainEngine::detailedCabinColliderObj",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::fuelStoragePoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelStoragePoint",
+            "FullTypeName": "UnityEngine.Transform TrainEngine::fuelStoragePoint",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::fxFinalExplosion",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fxFinalExplosion",
+            "FullTypeName": "GameObjectRef TrainEngine::fxFinalExplosion",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::fxHeavyDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fxHeavyDamage",
+            "FullTypeName": "ParticleSystemContainer TrainEngine::fxHeavyDamage",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::fxLightDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fxLightDamage",
+            "FullTypeName": "ParticleSystemContainer TrainEngine::fxLightDamage",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::fxMediumDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fxMediumDamage",
+            "FullTypeName": "ParticleSystemContainer TrainEngine::fxMediumDamage",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::idleFuelPerSec",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "idleFuelPerSec",
+            "FullTypeName": "System.Single TrainEngine::idleFuelPerSec",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::lastDecayTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastDecayTick",
+            "FullTypeName": "System.Single TrainEngine::lastDecayTick",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::leftHandGrip",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "leftHandGrip",
+            "FullTypeName": "UnityEngine.Transform TrainEngine::leftHandGrip",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::leftHandLever",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "leftHandLever",
+            "FullTypeName": "UnityEngine.Transform TrainEngine::leftHandLever",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::lights",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lights",
+            "FullTypeName": "VehicleLight[] TrainEngine::lights",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::maxFuelPerSec",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxFuelPerSec",
+            "FullTypeName": "System.Single TrainEngine::maxFuelPerSec",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::maxSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxSpeed",
+            "FullTypeName": "System.Single TrainEngine::maxSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::monitorConvas",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "monitorConvas",
+            "FullTypeName": "UnityEngine.Canvas TrainEngine::monitorConvas",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::monitorText",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "monitorText",
+            "FullTypeName": "Rust.UI.RustText TrainEngine::monitorText",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::platformParentTrigger",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "platformParentTrigger",
+            "FullTypeName": "TriggerParent TrainEngine::platformParentTrigger",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::platformParentTriggerCollider",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "platformParentTriggerCollider",
+            "FullTypeName": "UnityEngine.BoxCollider TrainEngine::platformParentTriggerCollider",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::rightHandGrip",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rightHandGrip",
+            "FullTypeName": "UnityEngine.Transform TrainEngine::rightHandGrip",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::rightHandLever",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rightHandLever",
+            "FullTypeName": "UnityEngine.Transform TrainEngine::rightHandLever",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::spawnOrigin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spawnOrigin",
+            "FullTypeName": "UnityEngine.Vector3 TrainEngine::spawnOrigin",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::wheelRadius",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "wheelRadius",
+            "FullTypeName": "System.Single TrainEngine::wheelRadius",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::wheelVisuals",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "wheelVisuals",
+            "FullTypeName": "UnityEngine.Transform[] TrainEngine::wheelVisuals",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::AnyPlayersNearby",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "AnyPlayersNearby",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "wJxsfKX4T6Fhaotpoa52ERbaKCW7fNp7I/MYRxafb1c="
+        },
+        {
+          "Name": "TrainEngine::AnyPlayersOnTrain",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "AnyPlayersOnTrain",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "N6HJr+S9shV8Jd6EjhsRGAB0DE0w4GdrTqKQiTwuh74="
+        },
+        {
+          "Name": "TrainEngine::CanMount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanMount",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "Nh/7WvmqsSsQa4zN7fv8zjNqXHld3KvmJagYDX4YRN0="
+        },
+        {
+          "Name": "TrainEngine::CheckForHazards",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CheckForHazards",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "/0S165tXvPs8zy9t6lmTm66oXpF3X8tE/BmS6wkHBe4="
+        },
+        {
+          "Name": "TrainEngine::DecayTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DecayTick",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "HOJ65ECYO5ysUhkVXlq+ZVTOxPyuN0gJyFQCUo8Yaa8="
+        },
+        {
+          "Name": "TrainEngine::DecreaseThrottle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DecreaseThrottle",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "PxHURo8xSC1KliHTCVIxPe5hjdBw3m7i/ssOg3M+tps="
+        },
+        {
+          "Name": "TrainEngine::GetCurEngineForce",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetCurEngineForce",
+            "FullTypeName": "System.Single",
+            "Parameters": []
+          },
+          "MSILHash": "3MSi+NwiPZUBmScY4gW+Ii8XCF1f0iP2HE9W7L4XeuY="
+        },
+        {
+          "Name": "TrainEngine::GetCurTopSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetCurTopSpeed",
+            "FullTypeName": "System.Single",
+            "Parameters": []
+          },
+          "MSILHash": "a/cU/XHjUiCfOt04yZGfmpvotf1ddKKzb+sFuUKun+k="
+        },
+        {
+          "Name": "TrainEngine::GetEnginePowerMultiplier",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetEnginePowerMultiplier",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "A2XFi2NYIk1EROSTUsH6tALWEB18933+p+zaY10cfZQ="
+        },
+        {
+          "Name": "TrainEngine::GetFuelAmount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetFuelAmount",
+            "FullTypeName": "System.Int32",
+            "Parameters": []
+          },
+          "MSILHash": "Wk8l0hYSdOnxG0lBzc1ajIzw9lSq5GdFI4h/e+oDVVM="
+        },
+        {
+          "Name": "TrainEngine::IncreaseThrottle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IncreaseThrottle",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "2veC8zf5IwoekA5j9WlfjpUkPQlg1osmnwcB8FQC1F4="
+        },
+        {
+          "Name": "TrainEngine::OnEngineTookHeavyDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnEngineTookHeavyDamage",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "dwQgm82LTWCN3WwOoCmvxpqdxOAnxaa4zLcc26va5vM="
+        },
+        {
+          "Name": "TrainEngine::ResetEngineToNormal",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ResetEngineToNormal",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "KQ+55q+L2baGePYDQHD1ydMLSpL8Hpqt6Sx1hCW8NZw="
+        },
+        {
+          "Name": "TrainEngine::ServerFlagsChanged",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ServerFlagsChanged",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity/Flags",
+              "BaseEntity/Flags"
+            ]
+          },
+          "MSILHash": "u+KgjbbWm6T7qDCJ4ZylCSgI798fiCb1nDUsohxWBYE="
+        },
+        {
+          "Name": "TrainEngine::SetThrottle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetThrottle",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "TrainEngine/EngineSpeeds"
+            ]
+          },
+          "MSILHash": "znuR6O7K4G3Gcm33/Ahqcyeof/Ll9r42QioGxoB2d2c="
+        },
+        {
+          "Name": "TrainEngine::SetTrackSelection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "SetTrackSelection",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "TrainTrackSpline/TrackSelection"
+            ]
+          },
+          "MSILHash": "+kSmrGnKFkEqeXeaZ5U/eIwQPDrgWEoiSUxMS3p+cpY="
+        },
+        {
+          "Name": "TrainEngine::SetZeroThrottle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetZeroThrottle",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "5hgfebidJ9pmXXiCqYsM3nXFoBcXNWhB2cZpZPkbUsw="
+        },
+        {
+          "Name": "TrainEngine::VehicleFixedUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "VehicleFixedUpdate",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "JObJ6IK/o7eL+//SKls87YkmAj9ARTQaMCXMTFmK8Xg="
+        },
+        {
+          "Name": "BaseHelicopterVehicle::avgTerrainHeight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "avgTerrainHeight",
+            "FullTypeName": "System.Single BaseHelicopterVehicle::avgTerrainHeight",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle::damageTorque",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "damageTorque",
+            "FullTypeName": "UnityEngine.Vector3 BaseHelicopterVehicle::damageTorque",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle::nextDamageTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextDamageTime",
+            "FullTypeName": "System.Single BaseHelicopterVehicle::nextDamageTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle::nextEffectTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextEffectTime",
+            "FullTypeName": "System.Single BaseHelicopterVehicle::nextEffectTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle::pendingImpactDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "pendingImpactDamage",
+            "FullTypeName": "System.Single BaseHelicopterVehicle::pendingImpactDamage",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopterVehicle::OnCollisionEnter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnCollisionEnter",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.Collision"
+            ]
+          },
+          "MSILHash": "tCBWkdtDqDi+dNpXa7oJj7sf8mEL1HDkw2Tas1fnMp4="
+        },
+        {
+          "Name": "BaseHelicopterVehicle::OnPhysicsNeighbourChanged",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnPhysicsNeighbourChanged",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "YwybJZRPvBNDfcul58V0ATNXSkmbNlcEuR5Ybd9TvSM="
+        },
+        {
+          "Name": "BaseHelicopterVehicle::VehicleFixedUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopterVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "VehicleFixedUpdate",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "0rsA8tzTJzUPND7cyelEnuasnMv/oKbgVSv0RdvC+Kg="
+        },
+        {
+          "Name": "BaseVehicle::clearRecentDriverAction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "clearRecentDriverAction",
+            "FullTypeName": "System.Action BaseVehicle::clearRecentDriverAction",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseVehicle::recentDrivers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "recentDrivers",
+            "FullTypeName": "System.Collections.Generic.Queue`1<BasePlayer> BaseVehicle::recentDrivers",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseVehicle::CanPushNow",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CanPushNow",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "tGFO78ccrTe+C+8/C+AKkOBPazNyUhGuRrLetVOm/jw="
+        },
+        {
+          "Name": "BaseVehicle::ClearRecentDriver",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ClearRecentDriver",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "oLfatn9hHQGq+d9BDoaVz4wQtJi1u9KlBRP/3I4DPZ0="
+        },
+        {
+          "Name": "BaseVehicle::GetIdealMountPointFor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "GetIdealMountPointFor",
+            "FullTypeName": "BaseMountable",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "I3l9aJgbcZAhCCoyztHdfUcuo/EIYot9WP2CSQAuLO4="
+        },
+        {
+          "Name": "BaseVehicle::SpawnMountPoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SpawnMountPoint",
+            "FullTypeName": "BaseMountable",
+            "Parameters": [
+              "BaseVehicle/MountPointInfo",
+              "Model"
+            ]
+          },
+          "MSILHash": "OJu3ah1yvr7FhzoWK+XMblMcI2BEoZk10lK8kz51puM="
+        },
+        {
+          "Name": "BaseVehicle::VehicleFixedUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "VehicleFixedUpdate",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "pQJfGxXdxxCPHD7C5ajdvgI9Q4rdXkVSn+ucniuKzEA="
+        },
+        {
+          "Name": "ModularCarGarage::HasDriveableOccupant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "HasDriveableOccupant",
+            "FullTypeName": "System.Boolean ModularCarGarage::HasDriveableOccupant()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::HasEditableOccupant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "HasEditableOccupant",
+            "FullTypeName": "System.Boolean ModularCarGarage::HasEditableOccupant()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::HasOccupant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "HasOccupant",
+            "FullTypeName": "System.Boolean ModularCarGarage::HasOccupant()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::LiftIsDown",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "LiftIsDown",
+            "FullTypeName": "System.Boolean ModularCarGarage::LiftIsDown()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::LiftIsMoving",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "LiftIsMoving",
+            "FullTypeName": "System.Boolean ModularCarGarage::LiftIsMoving()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::LiftIsUp",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "LiftIsUp",
+            "FullTypeName": "System.Boolean ModularCarGarage::LiftIsUp()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::OccupantLockID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "OccupantLockID",
+            "FullTypeName": "System.Int32 ModularCarGarage::OccupantLockID()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::OccupantLockState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "OccupantLockState",
+            "FullTypeName": "ModularCarGarage/OccupantLock ModularCarGarage::OccupantLockState()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::PlatformIsOccupied",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "PlatformIsOccupied",
+            "FullTypeName": "System.Boolean ModularCarGarage::PlatformIsOccupied()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ModularCarGarage::DoServerDestroy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            3
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DoServerDestroy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "XfWLX9blNs+4qg5GOXubnWlUMqHjZuTWICe2FrxCFr0="
+        },
+        {
+          "Name": "ModularCarGarage::EditableOccupantEntered",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EditableOccupantEntered",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "qqZbhAQ1RnzctJ7Y6zdMiAn/7BImePRYMW6kW5rN8ds="
+        },
+        {
+          "Name": "ModularCarGarage::EditableOccupantLeft",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EditableOccupantLeft",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "qqZbhAQ1RnzctJ7Y6zdMiAn/7BImePRYMW6kW5rN8ds="
+        },
+        {
+          "Name": "ModularCarGarage::FixedUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "FixedUpdate",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "cacrG15Kb7Ck4GawDPjzkX2vzO5KNe0p6eQoU88g4Xg="
+        },
+        {
+          "Name": "ModularCarGarage::GrabOccupant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCarGarage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GrabOccupant",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "ModularCar"
+            ]
+          },
+          "MSILHash": "9WOMbYMXbf2ZSQW7a4clfTY/2E5GAXtRVOc1xuYHrnY="
+        },
+        {
+          "Name": "BaseTrain::GetTotalPushingForces",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "GetTotalPushingForces",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "System.Collections.Generic.List`1<BaseTrain>"
+            ]
+          },
+          "MSILHash": "/OhLg5j39LsffvTKfmLNpKUNtHZZ+tawn2kyGe5fAQ8="
+        },
+        {
+          "Name": "BaseTrain::GetTotalPushingMass",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetTotalPushingMass",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "System.Collections.Generic.List`1<BaseTrain>"
+            ]
+          },
+          "MSILHash": "tliSd2L6SNSl/PcgPNCbnyG9FHqVoyhPBWbNKyj81hU="
+        },
+        {
+          "Name": "Elevator::ClearBusy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ClearBusy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "c5eubGOyZTGu0SHWyXf7PvPxleMOF+hvefiQW/KZKh0="
+        },
+        {
+          "Name": "Elevator::CallElevator",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CallElevator",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "e4Lu6a+FhCerMdW8/MDqRR10szcoDR8HrvpRD8bHsNQ="
+        },
+        {
+          "Name": "Elevator::GetWorldSpaceFloorPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "GetWorldSpaceFloorPosition",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "cKxtYl0xoDOFLsVvfRUxqRiGrRpPNcnTctFBV/fzmjo="
+        },
+        {
+          "Name": "Elevator::HasFloorSocketConnection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HasFloorSocketConnection",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "0bK7SO8PEEKB0ixwzeix80peYcHqXXlZsVz1GvLQQVs="
+        },
+        {
+          "Name": "Elevator::IsValidFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "IsValidFloor",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "c3I4v2tidJvk+GzTwEE42KtjXf+GDCuJcUNY8iG7cso="
+        },
+        {
+          "Name": "Elevator::LiftPositionToFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "LiftPositionToFloor",
+            "FullTypeName": "System.Int32",
+            "Parameters": []
+          },
+          "MSILHash": "0FI6u6j5+1Yho5CeaIWX6AexcHfUepvp1NwK7Ee5RN0="
+        },
+        {
+          "Name": "Elevator::RequestMoveLiftTo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "RequestMoveLiftTo",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Int32",
+              "System.Single&"
+            ]
+          },
+          "MSILHash": "iEYP4K7QshHZRCYvz/8QRIr6H+hW1QJzxywBk2jNqkE="
+        },
+        {
+          "Name": "Elevator::FindExistingIOChild",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FindExistingIOChild",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "f5aDl6y61uG7/t9f2hjipLasHZUvXyaAQfdr50MSKEY="
+        },
+        {
+          "Name": "Elevator::FindExistingLiftChild",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FindExistingLiftChild",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "cq4FWmQj62peCeJhrubB0mgw1J2YcFwW/OarnY/fNPQ="
+        },
+        {
+          "Name": "Elevator::IsStatic",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "IsStatic",
+            "FullTypeName": "System.Boolean Elevator::IsStatic()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Elevator::FloorHeight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "FloorHeight",
+            "FullTypeName": "System.Single Elevator::FloorHeight()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Elevator::IsTop",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "IsTop",
+            "FullTypeName": "System.Boolean Elevator::IsTop()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Elevator::OnLiftCalledWhenAtTargetFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnLiftCalledWhenAtTargetFloor",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk="
+        },
+        {
+          "Name": "Elevator::OnMoveBegin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnMoveBegin",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk="
+        },
+        {
+          "Name": "ElevatorStatic::floorPositions",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "floorPositions",
+            "FullTypeName": "System.Collections.Generic.List`1<ElevatorStatic> ElevatorStatic::floorPositions",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ElevatorStatic::ownerElevator",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ownerElevator",
+            "FullTypeName": "ElevatorStatic ElevatorStatic::ownerElevator",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ElevatorStatic::IsStatic",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "IsStatic",
+            "FullTypeName": "System.Boolean ElevatorStatic::IsStatic()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ElevatorStatic::CallElevator",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CallElevator",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "0dbpnZlQ0UILx9yjc1Vv6Q3UURKndbVn48iYrqsqYIw="
+        },
+        {
+          "Name": "ElevatorStatic::ClearBusy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ClearBusy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "plRgbUjV2vbXMSawMGjjq8EERnicrApE6CsgleZl+Vo="
+        },
+        {
+          "Name": "ElevatorStatic::ClearPowerOutput",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ClearPowerOutput",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "DLXzde5UfAbBNoqdeARFnludncvrxfk7Ilbf8JFynhI="
+        },
+        {
+          "Name": "ElevatorStatic::ElevatorAtFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ElevatorAtFloor",
+            "FullTypeName": "ElevatorStatic",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "mb+jSPiVxC/TFuBxvI5SfITtkU9WKqS22b3LzaaJiFY="
+        },
+        {
+          "Name": "ElevatorStatic::GetWorldSpaceFloorPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "GetWorldSpaceFloorPosition",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "s7gLPDjV6v9V82GH5xH/rtUAt7JtB5arR1nYgSWMXsg="
+        },
+        {
+          "Name": "ElevatorStatic::IsValidFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "IsValidFloor",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "HwU0kjEntaYWeJJ0bXJqEV0KhkeDZpCZ6NW2C5m7LYY="
+        },
+        {
+          "Name": "ElevatorStatic::OnLiftArrivedAtFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnLiftArrivedAtFloor",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "5+u0s9KqM6tBVW/XKdq7cuCSEdBAHKGt1Hi6zkI5LKw="
+        },
+        {
+          "Name": "ElevatorStatic::OnLiftCalledWhenAtTargetFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnLiftCalledWhenAtTargetFloor",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "kCzBVxYDRnUzS39/gh2vpaG6kOYroi97iPOSH4DGg4c="
+        },
+        {
+          "Name": "ElevatorStatic::OnLiftLeavingFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnLiftLeavingFloor",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "HrTmzieHLPNVdrUOwifP5Z4fUyozvTAix64c2aWotFA="
+        },
+        {
+          "Name": "ElevatorStatic::OnMoveBegin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnMoveBegin",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "P0+oXGq1MOrCmJ7Ad6TPAb4phvrlufGKCElFaWF/gpQ="
+        },
+        {
+          "Name": "ElevatorStatic::LiftRecentlyArrived",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "LiftRecentlyArrived",
+            "FullTypeName": "BaseEntity/Flags ElevatorStatic::LiftRecentlyArrived",
             "Parameters": []
           },
           "MSILHash": ""

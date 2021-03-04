@@ -32078,7 +32078,7 @@
           "TypeName": "Elevator",
           "Type": 1,
           "TargetExposure": [
-            1
+            2
           ],
           "Flagged": false,
           "Signature": {
@@ -32150,6 +32150,378 @@
             "Parameters": []
           },
           "MSILHash": "cq4FWmQj62peCeJhrubB0mgw1J2YcFwW/OarnY/fNPQ="
+        },
+        {
+          "Name": "Elevator::IsStatic",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "IsStatic",
+            "FullTypeName": "System.Boolean Elevator::IsStatic()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Elevator::FloorHeight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "FloorHeight",
+            "FullTypeName": "System.Single Elevator::FloorHeight()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Elevator::IsTop",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "IsTop",
+            "FullTypeName": "System.Boolean Elevator::IsTop()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Elevator::OnLiftCalledWhenAtTargetFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnLiftCalledWhenAtTargetFloor",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk="
+        },
+        {
+          "Name": "Elevator::OnMoveBegin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Elevator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnMoveBegin",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk="
+        },
+        {
+          "Name": "ElevatorStatic::floorPositions",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "floorPositions",
+            "FullTypeName": "System.Collections.Generic.List`1<ElevatorStatic> ElevatorStatic::floorPositions",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ElevatorStatic::ownerElevator",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ownerElevator",
+            "FullTypeName": "ElevatorStatic ElevatorStatic::ownerElevator",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ElevatorStatic::IsStatic",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "IsStatic",
+            "FullTypeName": "System.Boolean ElevatorStatic::IsStatic()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ElevatorStatic::CallElevator",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CallElevator",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "0dbpnZlQ0UILx9yjc1Vv6Q3UURKndbVn48iYrqsqYIw="
+        },
+        {
+          "Name": "ElevatorStatic::ClearBusy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ClearBusy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "plRgbUjV2vbXMSawMGjjq8EERnicrApE6CsgleZl+Vo="
+        },
+        {
+          "Name": "ElevatorStatic::ClearPowerOutput",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ClearPowerOutput",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "DLXzde5UfAbBNoqdeARFnludncvrxfk7Ilbf8JFynhI="
+        },
+        {
+          "Name": "ElevatorStatic::ElevatorAtFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ElevatorAtFloor",
+            "FullTypeName": "ElevatorStatic",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "mb+jSPiVxC/TFuBxvI5SfITtkU9WKqS22b3LzaaJiFY="
+        },
+        {
+          "Name": "ElevatorStatic::GetWorldSpaceFloorPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "GetWorldSpaceFloorPosition",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "s7gLPDjV6v9V82GH5xH/rtUAt7JtB5arR1nYgSWMXsg="
+        },
+        {
+          "Name": "ElevatorStatic::IsValidFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "IsValidFloor",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "HwU0kjEntaYWeJJ0bXJqEV0KhkeDZpCZ6NW2C5m7LYY="
+        },
+        {
+          "Name": "ElevatorStatic::OnLiftArrivedAtFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnLiftArrivedAtFloor",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "5+u0s9KqM6tBVW/XKdq7cuCSEdBAHKGt1Hi6zkI5LKw="
+        },
+        {
+          "Name": "ElevatorStatic::OnLiftCalledWhenAtTargetFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnLiftCalledWhenAtTargetFloor",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "kCzBVxYDRnUzS39/gh2vpaG6kOYroi97iPOSH4DGg4c="
+        },
+        {
+          "Name": "ElevatorStatic::OnLiftLeavingFloor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnLiftLeavingFloor",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "HrTmzieHLPNVdrUOwifP5Z4fUyozvTAix64c2aWotFA="
+        },
+        {
+          "Name": "ElevatorStatic::OnMoveBegin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "OnMoveBegin",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "P0+oXGq1MOrCmJ7Ad6TPAb4phvrlufGKCElFaWF/gpQ="
+        },
+        {
+          "Name": "ElevatorStatic::LiftRecentlyArrived",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElevatorStatic",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "LiftRecentlyArrived",
+            "FullTypeName": "BaseEntity/Flags ElevatorStatic::LiftRecentlyArrived",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

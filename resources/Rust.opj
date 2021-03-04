@@ -32522,6 +32522,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::activeTelephone",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "activeTelephone",
+            "FullTypeName": "PhoneController BasePlayer::activeTelephone",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

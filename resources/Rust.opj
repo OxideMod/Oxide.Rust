@@ -15441,6 +15441,170 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 37,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this ",
+            "HookTypeName": "Simple",
+            "Name": "OnCargoPlaneSignaled",
+            "HookName": "OnCargoPlaneSignaled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SupplySignal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Explode",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "LcLZCJAe3ZH2mc49ZkVX/YiKCmXZqGUEHOr+6hos4RU=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 15,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 42
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCargoPlaneSignaled [Patch]",
+            "HookName": "OnCargoPlaneSignaled [Patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SupplySignal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Explode",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "LcLZCJAe3ZH2mc49ZkVX/YiKCmXZqGUEHOr+6hos4RU=",
+            "BaseHookName": "OnCargoPlaneSignaled",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 47,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, this",
+            "HookTypeName": "Simple",
+            "Name": "OnSupplyDropDropped",
+            "HookName": "OnSupplyDropDropped",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CargoPlane",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Update",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "2YhM0BhYOAH5j+x4RplIvEP6igWFVDNDAgTU5ezM6pA=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 19,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 52
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnSupplyDropDropped [Patch 1]",
+            "HookName": "OnSupplyDropDropped [Patch 1]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CargoPlane",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Update",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "2YhM0BhYOAH5j+x4RplIvEP6igWFVDNDAgTU5ezM6pA=",
+            "BaseHookName": "OnSupplyDropDropped",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 22,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "blt_un_s",
+                "OpType": "Instruction",
+                "Operand": 52
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnSupplyDropDropped [Patch 2]",
+            "HookName": "OnSupplyDropDropped [Patch 2]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CargoPlane",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Update",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "2YhM0BhYOAH5j+x4RplIvEP6igWFVDNDAgTU5ezM6pA=",
+            "BaseHookName": "OnSupplyDropDropped [Patch 1]",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 41,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 52
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnSupplyDropDropped [Patch 3]",
+            "HookName": "OnSupplyDropDropped [Patch 3]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CargoPlane",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Update",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "2YhM0BhYOAH5j+x4RplIvEP6igWFVDNDAgTU5ezM6pA=",
+            "BaseHookName": "OnSupplyDropDropped [Patch 2]",
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

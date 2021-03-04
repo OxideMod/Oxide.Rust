@@ -15379,6 +15379,68 @@
             "BaseHookName": "OnBookmarkControlEnd",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 166,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnPlayerAddModifiers"
+              },
+              {
+                "OpCode": "ldarg_2",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "bne_un_s",
+                "OpType": "Instruction",
+                "Operand": 171
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnPlayerAddModifiers",
+            "HookName": "OnPlayerAddModifiers",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemModConsume",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoAction",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "X1dBE7BQykS3OqYCNUN8IlIqossjWDb/qM5r0MpOo8Y=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

@@ -29637,8 +29637,7 @@
           "TypeName": "BaseTrain",
           "Type": 2,
           "TargetExposure": [
-            2,
-            4
+            2
           ],
           "Flagged": false,
           "Signature": {
@@ -31137,7 +31136,7 @@
           "TypeName": "TrainEngine",
           "Type": 1,
           "TargetExposure": [
-            0
+            2
           ],
           "Flagged": false,
           "Signature": {
@@ -32538,6 +32537,809 @@
             ],
             "Name": "activeTelephone",
             "FullTypeName": "PhoneController BasePlayer::activeTelephone",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::DungeonCells",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DungeonCells",
+            "FullTypeName": "System.Collections.Generic.List`1<DungeonCell> TerrainPath::DungeonCells",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::DungeonEntrances",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DungeonEntrances",
+            "FullTypeName": "System.Collections.Generic.List`1<DungeonInfo> TerrainPath::DungeonEntrances",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::DungeonRoot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DungeonRoot",
+            "FullTypeName": "UnityEngine.GameObject TerrainPath::DungeonRoot",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainTrackSpline::nextTracks",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextTracks",
+            "FullTypeName": "System.Collections.Generic.List`1<TrainTrackSpline/ConnectedTrackInfo> TrainTrackSpline::nextTracks",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainTrackSpline::prevTracks",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "prevTracks",
+            "FullTypeName": "System.Collections.Generic.List`1<TrainTrackSpline/ConnectedTrackInfo> TrainTrackSpline::prevTracks",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainTrackSpline::straightestNextIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "straightestNextIndex",
+            "FullTypeName": "System.Int32 TrainTrackSpline::straightestNextIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainTrackSpline::straightestPrevIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "straightestPrevIndex",
+            "FullTypeName": "System.Int32 TrainTrackSpline::straightestPrevIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainTrackSpline::trackUsers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "trackUsers",
+            "FullTypeName": "System.Collections.Generic.HashSet`1<TrainTrackSpline/ITrainTrackUser> TrainTrackSpline::trackUsers",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainTrackSpline::GetOverallVector",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetOverallVector",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "TrainTrackSpline/TrackOrientation"
+            ]
+          },
+          "MSILHash": "i2mxRPUI0U16csVL2V4zIuX/idxrOWrLJJ4uTsANDck="
+        },
+        {
+          "Name": "TrainTrackSpline::GetSplineDistAfterMove",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetSplineDistAfterMove",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single",
+              "System.Single",
+              "TrainTrackSpline/TrackSelection",
+              "System.Boolean",
+              "TrainTrackSpline&",
+              "System.Boolean&",
+              "TrainTrackSpline"
+            ]
+          },
+          "MSILHash": "HtQkgS2QXfSrJpTBVZ6Ulzv0GahhIr/0p4H90kldQPg="
+        },
+        {
+          "Name": "TrainTrackSpline::GetTrackSelection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetTrackSelection",
+            "FullTypeName": "TrainTrackSpline/ConnectedTrackInfo",
+            "Parameters": [
+              "System.Collections.Generic.List`1<TrainTrackSpline/ConnectedTrackInfo>",
+              "System.Int32",
+              "TrainTrackSpline/TrackSelection",
+              "System.Boolean",
+              "System.Boolean",
+              "TrainTrackSpline"
+            ]
+          },
+          "MSILHash": "SmrDD4MoC99H98w0ak+hD/5bk1MI8z/i0NHlhK0qLvs="
+        },
+        {
+          "Name": "TrainTrackSpline::HasClearTrackSpace",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HasClearTrackSpace",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "TrainTrackSpline/ITrainTrackUser"
+            ]
+          },
+          "MSILHash": "RkOqiaxzKXGRwx9fJ0igK+JTMuAXpMciIHJrGUD/iHg="
+        },
+        {
+          "Name": "BaseTrain::centreOfMassTransform",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "centreOfMassTransform",
+            "FullTypeName": "UnityEngine.Transform BaseTrain::centreOfMassTransform",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::collisionDamageDivide",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "collisionDamageDivide",
+            "FullTypeName": "System.Single BaseTrain::collisionDamageDivide",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::collisionEffect",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "collisionEffect",
+            "FullTypeName": "GameObjectRef BaseTrain::collisionEffect",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::corpseSeconds",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "corpseSeconds",
+            "FullTypeName": "System.Single BaseTrain::corpseSeconds",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::curTrackSelection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "curTrackSelection",
+            "FullTypeName": "TrainTrackSpline/TrackSelection BaseTrain::curTrackSelection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::derailCollisionForce",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "derailCollisionForce",
+            "FullTypeName": "System.Single BaseTrain::derailCollisionForce",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::distFrontToBackWheel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "distFrontToBackWheel",
+            "FullTypeName": "System.Single BaseTrain::distFrontToBackWheel",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::frontCollisionTrigger",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "frontCollisionTrigger",
+            "FullTypeName": "TriggerTrainCollisions BaseTrain::frontCollisionTrigger",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::frontWheelWorldCol",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "frontWheelWorldCol",
+            "FullTypeName": "UnityEngine.CapsuleCollider BaseTrain::frontWheelWorldCol",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::hurtTriggerFront",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hurtTriggerFront",
+            "FullTypeName": "TriggerHurtNotChild BaseTrain::hurtTriggerFront",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::hurtTriggerMinSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hurtTriggerMinSpeed",
+            "FullTypeName": "System.Single BaseTrain::hurtTriggerMinSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::hurtTriggerRear",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hurtTriggerRear",
+            "FullTypeName": "TriggerHurtNotChild BaseTrain::hurtTriggerRear",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::impactEnergyFraction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "impactEnergyFraction",
+            "FullTypeName": "System.Single BaseTrain::impactEnergyFraction",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::initialSpawnTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "initialSpawnTime",
+            "FullTypeName": "System.Single BaseTrain::initialSpawnTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::lastMovingTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastMovingTime",
+            "FullTypeName": "System.Single BaseTrain::lastMovingTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::nextCollisionFXTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextCollisionFXTime",
+            "FullTypeName": "System.Single BaseTrain::nextCollisionFXTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::prevTrackSpeeds",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "prevTrackSpeeds",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<UnityEngine.Rigidbody,System.Single> BaseTrain::prevTrackSpeeds",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::rearCollisionTrigger",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rearCollisionTrigger",
+            "FullTypeName": "TriggerTrainCollisions BaseTrain::rearCollisionTrigger",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::rearWheelWorldCol",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rearWheelWorldCol",
+            "FullTypeName": "UnityEngine.CapsuleCollider BaseTrain::rearWheelWorldCol",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::staticCollidingAtFront",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "staticCollidingAtFront",
+            "FullTypeName": "BaseTrain/StaticCollisionState BaseTrain::staticCollidingAtFront",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::staticCollidingAtRear",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "staticCollidingAtRear",
+            "FullTypeName": "BaseTrain/StaticCollisionState BaseTrain::staticCollidingAtRear",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain::RecentlySpawned",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "RecentlySpawned",
+            "FullTypeName": "System.Boolean BaseTrain::RecentlySpawned()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainTrackSpline::HasNextTrack",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "HasNextTrack",
+            "FullTypeName": "System.Boolean TrainTrackSpline::HasNextTrack()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainTrackSpline::HasPrevTrack",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "HasPrevTrack",
+            "FullTypeName": "System.Boolean TrainTrackSpline::HasPrevTrack()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainTrackSpline/ConnectedTrackInfo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainTrackSpline/ConnectedTrackInfo",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ConnectedTrackInfo",
+            "FullTypeName": "TrainTrackSpline/ConnectedTrackInfo",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseTrain/StaticCollisionState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseTrain/StaticCollisionState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StaticCollisionState",
+            "FullTypeName": "BaseTrain/StaticCollisionState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::PlayerIsInParentTrigger",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PlayerIsInParentTrigger",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "MUwC+wL3ol9QYsNajk4X89oLeyETQ4L5NVVlqJVXTFU="
+        },
+        {
+          "Name": "TrainEngine::fuelSystem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelSystem",
+            "FullTypeName": "EntityFuelSystem TrainEngine::fuelSystem",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::fuelStoragePrefab",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelStoragePrefab",
+            "FullTypeName": "GameObjectRef TrainEngine::fuelStoragePrefab",
             "Parameters": []
           },
           "MSILHash": ""

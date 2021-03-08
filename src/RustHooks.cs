@@ -267,11 +267,11 @@ namespace Oxide.Game.Rust
         /// </summary>
         /// <param name="steamId"></param>
         /// <param name="group"></param>
-        /// <param name="name"></param>
+        /// <param name="playerName"></param>
         /// <param name="reason"></param>
         /// <param name="expiry"></param>
         [HookMethod("IOnServerUsersSet")]
-        private void IOnServerUsersSet(ulong steamId, ServerUsers.UserGroup group, string playerName, string reason, ulong expiry)
+        private void IOnServerUsersSet(ulong steamId, ServerUsers.UserGroup group, string playerName, string reason, long expiry)
         {
             if (serverInitialized && group == ServerUsers.UserGroup.Banned)
             {

@@ -33415,6 +33415,83 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseNetworkable::SendNetworkUpdate_Position",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "SendNetworkUpdate_Position",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "TnnY9tD0THg78Q2274GGU7uxWoHRYMgZ4grwAhKf9HM="
+        },
+        {
+          "Name": "BaseNetworkable::SendNetworkGroupChange",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "SendNetworkGroupChange",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "PvKn3QX2iDfK4LSVRXEy3ucGIelumBcSmWSE7FYKTnk="
+        },
+        {
+          "Name": "BaseNetworkable::connectionsInSphereList",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "connectionsInSphereList",
+            "FullTypeName": "System.Collections.Generic.List`1<Network.Connection> BaseNetworkable::connectionsInSphereList",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseEntity::SendNetworkUpdate_Flags",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "SendNetworkUpdate_Flags",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "1JpW7U80IMTBb8tDqdYJS6x75INmaXdJ6aP6XJjsg74="
         }
       ],
       "Fields": [

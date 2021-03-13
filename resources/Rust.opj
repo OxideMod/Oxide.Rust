@@ -33492,6 +33492,28 @@
             "Parameters": []
           },
           "MSILHash": "1JpW7U80IMTBb8tDqdYJS6x75INmaXdJ6aP6XJjsg74="
+        },
+        {
+          "Name": "PhoneController::PositionToGridCoord",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PhoneController",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PositionToGridCoord",
+            "FullTypeName": "System.String",
+            "Parameters": [
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "zbH2srw1m0QMa3vAxHViJVqfyUfc0pVZtgQG+/EpMOY="
         }
       ],
       "Fields": [

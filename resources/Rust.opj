@@ -15615,6 +15615,32 @@
             "BaseHookName": "OnEngineStart",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 21,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnSubmitInputItems",
+            "HookName": "OnSubmitInputItems",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Mailbox",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SubmitInputItems",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "OgNkvYvB3EnWO9YH2P0Sk76FGg9cTHvCjRajtzgfk1Y=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

@@ -15840,6 +15840,32 @@
             "BaseHookName": "IOnBasePlayerAttacked",
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnItemSubmit",
+            "HookName": "OnItemSubmit",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Mailbox",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SubmitInputItems",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "OgNkvYvB3EnWO9YH2P0Sk76FGg9cTHvCjRajtzgfk1Y=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

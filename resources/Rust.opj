@@ -33514,6 +33514,485 @@
             ]
           },
           "MSILHash": "zbH2srw1m0QMa3vAxHViJVqfyUfc0pVZtgQG+/EpMOY="
+        },
+        {
+          "Name": "DeliveryDrone::_goToY",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_goToY",
+            "FullTypeName": "System.Nullable`1<System.Single> DeliveryDrone::_goToY",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DeliveryDrone::_mapMarkerInstance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_mapMarkerInstance",
+            "FullTypeName": "BaseEntity DeliveryDrone::_mapMarkerInstance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DeliveryDrone::_minimumYLock",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_minimumYLock",
+            "FullTypeName": "System.Nullable`1<System.Single> DeliveryDrone::_minimumYLock",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DeliveryDrone::_pickUpTicks",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_pickUpTicks",
+            "FullTypeName": "System.Int32 DeliveryDrone::_pickUpTicks",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DeliveryDrone::_sinceLastObstacleBlock",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_sinceLastObstacleBlock",
+            "FullTypeName": "TimeSince DeliveryDrone::_sinceLastObstacleBlock",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DeliveryDrone::_sinceLastStateChange",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_sinceLastStateChange",
+            "FullTypeName": "RealTimeSince DeliveryDrone::_sinceLastStateChange",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DeliveryDrone::_state",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_state",
+            "FullTypeName": "DeliveryDrone/State DeliveryDrone::_state",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DeliveryDrone::_stateGoalPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_stateGoalPosition",
+            "FullTypeName": "System.Nullable`1<UnityEngine.Vector3> DeliveryDrone::_stateGoalPosition",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DeliveryDrone::<Think>g__CalculatePreferredY|24_0",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<Think>g__CalculatePreferredY|24_0",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Boolean&",
+              "DeliveryDrone/<>c__DisplayClass24_0&"
+            ]
+          },
+          "MSILHash": "RR8GU4HoM1DOegUBz8n+nx/pKju9Fs+vKnJitHefeWM="
+        },
+        {
+          "Name": "DeliveryDrone::<Think>g__GetMinimumHeight|24_1",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<Think>g__GetMinimumHeight|24_1",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "DeliveryDrone/<>c__DisplayClass24_0&"
+            ]
+          },
+          "MSILHash": "sdl2ACBQ99PosJtct1zNUmolIHr5xW4KJBTRnFKXmuU="
+        },
+        {
+          "Name": "DeliveryDrone::<Think>g__IsAtGoalPosition|24_4",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<Think>g__IsAtGoalPosition|24_4",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "DeliveryDrone/<>c__DisplayClass24_0&"
+            ]
+          },
+          "MSILHash": "t55H5dfAuYeMHmcoFZUXd4CWKvybCQTW+c4mFcqp/kE="
+        },
+        {
+          "Name": "DeliveryDrone::<Think>g__IsAtGoToY|24_6",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<Think>g__IsAtGoToY|24_6",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "DeliveryDrone/<>c__DisplayClass24_0&"
+            ]
+          },
+          "MSILHash": "MqCdq+9KnvAOvImup8L4slEnZq0k6tiaHY0+lSb4Bzo="
+        },
+        {
+          "Name": "DeliveryDrone::<Think>g__LandingPosition|24_2",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<Think>g__LandingPosition|24_2",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "DeliveryDrone/<>c__DisplayClass24_0&"
+            ]
+          },
+          "MSILHash": "3NQFFJ59qpCNRcN6rvgpWuXuHGgjGRgwyYBbh3cwrNg="
+        },
+        {
+          "Name": "DeliveryDrone::<Think>g__SetGoalPosition|24_3",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<Think>g__SetGoalPosition|24_3",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "DeliveryDrone/<>c__DisplayClass24_0&"
+            ]
+          },
+          "MSILHash": "ypyG6bSll1SU7f6Aov/lMZv4yRmuQV8NGVI8a4vlH9U="
+        },
+        {
+          "Name": "DeliveryDrone::<Think>g__SetGoToY|24_5",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<Think>g__SetGoToY|24_5",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Single",
+              "DeliveryDrone/<>c__DisplayClass24_0&"
+            ]
+          },
+          "MSILHash": "EMPcrH4N9iXljz2zskDi1/Q8xNVVe/cr0eu+0c/VDqs="
+        },
+        {
+          "Name": "DeliveryDrone::<Think>g__SetState|24_7",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<Think>g__SetState|24_7",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "DeliveryDrone/State",
+              "DeliveryDrone/<>c__DisplayClass24_0&"
+            ]
+          },
+          "MSILHash": "eVqP0DBedHv6c4bGLYWAEmfWIVOts24Ff3DQ4WkZwxA="
+        },
+        {
+          "Name": "DeliveryDrone::ForceRemove",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ForceRemove",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "trDHzoaLU2y8w9B9JpFI43umA8DWRZ5K98q5Ju9wmqI="
+        },
+        {
+          "Name": "DeliveryDrone::Think",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeliveryDrone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Think",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "fSTWRea4m/kTtVcfnfZU/pp5LZsQcmUhjBo5rAYmwYc="
+        },
+        {
+          "Name": "Drone::currentInput",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentInput",
+            "FullTypeName": "Drone/DroneInputState Drone::currentInput",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Drone::isGrounded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "isGrounded",
+            "FullTypeName": "System.Boolean Drone::isGrounded",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Drone::lastCollision",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastCollision",
+            "FullTypeName": "System.Double Drone::lastCollision",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Drone::lastInputTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastInputTime",
+            "FullTypeName": "System.Single Drone::lastInputTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Drone::targetPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "targetPosition",
+            "FullTypeName": "System.Nullable`1<UnityEngine.Vector3> Drone::targetPosition",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RemoteControlEntity::IsBeingControlled",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RemoteControlEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "IsBeingControlled",
+            "FullTypeName": "System.Boolean RemoteControlEntity::IsBeingControlled()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

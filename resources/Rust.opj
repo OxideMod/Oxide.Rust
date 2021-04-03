@@ -33993,6 +33993,47 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseNetworkable::_NetworkCache",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_NetworkCache",
+            "FullTypeName": "System.IO.MemoryStream BaseNetworkable::_NetworkCache",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNetworkable::ToStream",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ToStream",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.IO.Stream",
+              "BaseNetworkable/SaveInfo"
+            ]
+          },
+          "MSILHash": "4osFyUWXrAggoRzs7vhPacYm8tF3fwewKVHFvu8Joy4="
         }
       ],
       "Fields": [

@@ -34034,6 +34034,148 @@
             ]
           },
           "MSILHash": "4osFyUWXrAggoRzs7vhPacYm8tF3fwewKVHFvu8Joy4="
+        },
+        {
+          "Name": "AutoTurret::ScheduleForTargetScan",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ScheduleForTargetScan",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "WkHNCzqTDLOh0Z/9AcObagZTuM93cHQFyGoK5ZLsWi4="
+        },
+        {
+          "Name": "AutoTurret::ApplyDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyDamage",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseCombatEntity",
+              "UnityEngine.Vector3",
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "nRNuYuacf3uc2zHxu7idUMILvn65zYuk3hC2uyVXTXk="
+        },
+        {
+          "Name": "AutoTurret::GetAngle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetAngle",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "UnityEngine.Vector3",
+              "System.Single",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "JNfsdaUODjNt18+bBOA4OMoFPvKQ/a341/w3K6KjQYE="
+        },
+        {
+          "Name": "AutoTurret::HasGenericFireable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HasGenericFireable",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "lNl86bNfn3oUw03ED/HV2pdEwYrNpRN6jgvRnvohPkw="
+        },
+        {
+          "Name": "AutoTurret::initialAimDir",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "initialAimDir",
+            "FullTypeName": "UnityEngine.Vector3 AutoTurret::initialAimDir",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::peekIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "peekIndex",
+            "FullTypeName": "System.Int32 AutoTurret::peekIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::rcIdentifier",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rcIdentifier",
+            "FullTypeName": "System.String AutoTurret::rcIdentifier",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -15866,6 +15866,35 @@
             "BaseHookName": null,
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 109,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l3, this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnItemStacked",
+            "HookName": "OnItemStacked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Item",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MoveToContainer",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "ItemContainer",
+                "System.Int32",
+                "System.Boolean",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "VVmQczZZC9ad7nkA6FTpnZKlrlOY3SncFx1cLrdNRm0=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

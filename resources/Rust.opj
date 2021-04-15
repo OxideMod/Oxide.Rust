@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "E:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "E:\\Servers\\Rust-staging\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "a9d3qdX2kPdcMiY1EJ2o19zTkP28CB6bg/13iNISqXw=",
+            "MSILHash": "fK72M85qC6fj440w0mP15W51kgNHvwq7rHbNGi1BxII=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -965,7 +965,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "U4noDUPiNSqPSBM6Ny+n3z+9l9dYbiRS5omReVpP/1k=",
+            "MSILHash": "iVo2p5NC3UturlKycDJmzaiZJaHKiOcUh8NjE9yNxQ4=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2362,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "ZBz5glXuc5fJNJnp+5B2+zWiyUsDvS564Lt3Gn2If/Y=",
+            "MSILHash": "Nr/jXJMO6ejtdVMqDhSaOSGrU/woqfVXXOrhQY0zrQQ=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5518,7 +5518,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 29,
+            "InjectionIndex": 28,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, this.serverInput",
@@ -5537,7 +5537,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "U4noDUPiNSqPSBM6Ny+n3z+9l9dYbiRS5omReVpP/1k=",
+            "MSILHash": "iVo2p5NC3UturlKycDJmzaiZJaHKiOcUh8NjE9yNxQ4=",
             "BaseHookName": "OnPlayerTick",
             "HookCategory": "Player"
           }
@@ -8599,7 +8599,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "5497uu8CSKipxhLuz/8Et0vvqYU1dvMQwxDPgP09TNE=",
+            "MSILHash": "dEkeWXpfpC6pJUjVSjV0YXRhEowMFfWP8mClBOjwMzg=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8623,7 +8623,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "5497uu8CSKipxhLuz/8Et0vvqYU1dvMQwxDPgP09TNE=",
+            "MSILHash": "dEkeWXpfpC6pJUjVSjV0YXRhEowMFfWP8mClBOjwMzg=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -10715,7 +10715,7 @@
                 "HitchTrough/HitchSpot"
               ]
             },
-            "MSILHash": "aoW/02S+Dtizt0h9hEPQNUUqi/RafTVvLHLjvvK58y8=",
+            "MSILHash": "TlvFmij8oYfsiWNlRRzRWD11JpsmzPjeYk6QiH3cU44=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -13589,7 +13589,7 @@
                 "System.Single&"
               ]
             },
-            "MSILHash": "iEYP4K7QshHZRCYvz/8QRIr6H+hW1QJzxywBk2jNqkE=",
+            "MSILHash": "VtkOmVLxuuTUkEcZmQUV+aamQWXvBcsnM33GqIIsqiE=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }

@@ -15615,6 +15615,32 @@
             "BaseHookName": "OnEngineStart",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, a0.connection",
+            "HookTypeName": "Simple",
+            "Name": "OnClientCommand",
+            "HookName": "OnClientCommand",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConsoleNetwork",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "OnClientCommand",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Message"
+              ]
+            },
+            "MSILHash": "PbkGC9LgOrgCN7drXYLFi6zzhoVlR5am4XgwHXApzk4=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

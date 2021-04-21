@@ -15615,6 +15615,30 @@
             "BaseHookName": "OnEngineStart",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 16,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerEnsureUpdated",
+            "HookName": "OnPlayerEnsureUpdated",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EnsureUpdated",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "afqdQV9JHf6DuCBJ2CVNO8D2Bv/nrB8oqqAg3psrzpE=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

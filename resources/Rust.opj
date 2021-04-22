@@ -15615,6 +15615,174 @@
             "BaseHookName": "OnEngineStart",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|HitInfo|get_InitiatorPlayer"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Object|op_Implicit"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|HitInfo|get_InitiatorPlayer"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "LimitNetworkNoImpacts [patch 1]",
+            "HookName": "LimitNetworkNoImpacts [patch 1]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Effect/server",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ImpactEffect",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "YJfYuZg8wWyOtE1O3CaHOWMcD2/1JrRliymXVuFS+3A=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 207,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 223
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "LimitNetworkNoImpacts [patch 2]",
+            "HookName": "LimitNetworkNoImpacts [patch 2]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseProjectile",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CLProject",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "PQ0SAePFnH4BuzR/BJRrzQv7vjJcYCUkrbwh7qXmbNI=",
+            "BaseHookName": "OnWeaponFired",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 209,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 8
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Object|op_Implicit"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 209
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 8
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 228
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "LimitNetworkNoImpacts [patch 3]",
+            "HookName": "LimitNetworkNoImpacts [patch 3]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnAttacked",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "BP7rBTCLZXIH0FPBVGbW5KDUJjnXnCa4fwaqunYqaj4=",
+            "BaseHookName": "IOnBasePlayerAttacked",
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

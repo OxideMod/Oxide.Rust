@@ -15615,6 +15615,32 @@
             "BaseHookName": "OnEngineStart",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnConvertWater",
+            "HookName": "OnConvertWater",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WaterPurifier",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "ConvertWater",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Single"
+              ]
+            },
+            "MSILHash": "FVTIlYkFKoTBRxox3pVrm84K+l4hC+iadQwEH3QtEUw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

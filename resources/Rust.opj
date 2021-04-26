@@ -15919,6 +15919,58 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 17,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnWaterPurify",
+            "HookName": "OnWaterPurify",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WaterPurifier",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "ConvertWater",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Single"
+              ]
+            },
+            "MSILHash": "FVTIlYkFKoTBRxox3pVrm84K+l4hC+iadQwEH3QtEUw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 156,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnWaterPurified",
+            "HookName": "OnWaterPurified",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WaterPurifier",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "ConvertWater",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Single"
+              ]
+            },
+            "MSILHash": "FVTIlYkFKoTBRxox3pVrm84K+l4hC+iadQwEH3QtEUw=",
+            "BaseHookName": "OnWaterPurify",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

@@ -34544,6 +34544,48 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::Server_StartGesture",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Server_StartGesture",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity/RPCMessage"
+            ]
+          },
+          "MSILHash": "vb45HJ/wnznMNODh9+ACHzKMknW7jtsQbBxCcniXKRI="
+        },
+        {
+          "Name": "BasePlayer::Server_StartGesture",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Server_StartGesture",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "GestureConfig"
+            ]
+          },
+          "MSILHash": "4UyUM90OmRqmy5jjYh04rdOafo9tsgD/sKHLo2IpzPc="
         }
       ],
       "Fields": [

@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "E:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "C:\\Users\\zloyk\\Desktop\\rustserv\\rustserv\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -15614,6 +15614,32 @@
             "MSILHash": "kxTPZzOQvb51sC/onVuxsZ0s6MgZzKlIyIdp9Ap/5GY=",
             "BaseHookName": "OnEngineStart",
             "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "IsOwnedBy",
+            "HookName": "OnIsOwnedBy",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GestureConfig",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsOwnedBy",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "C+J+NWt1DPhGCXDzxNhlYgAaeiCIbIQV0j2P/49HCZ8=",
+            "BaseHookName": null,
+            "HookCategory": null
           }
         }
       ],

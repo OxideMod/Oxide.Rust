@@ -15615,6 +15615,63 @@
             "BaseHookName": "OnEngineStart",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 74,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l6",
+            "HookTypeName": "Simple",
+            "Name": "OnBookmarkControlEnded [2]",
+            "HookName": "OnBookmarkControlEnded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "BeginControllingBookmark",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "1MQGejmAMZSMzpbYkP5vruAc6Jtpl+g8F5zNL8ra2Qs=",
+            "BaseHookName": "OnBookmarkControlStarted",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 66,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 80
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnBookmarkControlEnded [2] [patch]",
+            "HookName": "OnBookmarkControlEnded [2] [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ComputerStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "BeginControllingBookmark",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "1MQGejmAMZSMzpbYkP5vruAc6Jtpl+g8F5zNL8ra2Qs=",
+            "BaseHookName": "OnBookmarkControlEnded [2]",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

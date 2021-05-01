@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "C:\\Users\\zloyk\\Desktop\\rustserv\\rustserv\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "E:\\Servers\\Rust\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -15625,7 +15625,7 @@
             "ArgumentString": "this",
             "HookTypeName": "Simple",
             "Name": "IsOwnedBy",
-            "HookName": "OnIsOwnedBy",
+            "HookName": "CanUseGesture",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "GestureConfig",
             "Flagged": false,

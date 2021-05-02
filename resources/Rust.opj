@@ -35955,6 +35955,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Network.Visibility.Manager::provider",
+          "AssemblyName": "Facepunch.Network.dll",
+          "TypeName": "Network.Visibility.Manager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "provider",
+            "FullTypeName": "Network.Visibility.Provider Network.Visibility.Manager::provider",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Network.Visibility.Manager::groups",
+          "AssemblyName": "Facepunch.Network.dll",
+          "TypeName": "Network.Visibility.Manager",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "groups",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.UInt32,Network.Visibility.Group> Network.Visibility.Manager::groups",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": []

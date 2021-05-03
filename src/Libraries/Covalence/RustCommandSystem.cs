@@ -276,16 +276,22 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             // If this was originally a vanilla Rust command then restore it, otherwise remove it
             if (cmd.OriginalCallback != null)
             {
-                ConsoleSystem.Index.Server.Dict[fullName].Call = cmd.OriginalCallback;
-                if (fullName.StartsWith("global."))
+                if (ConsoleSystem.Index.Server.Dict.ContainsKey(fullName))
+                {
+                    ConsoleSystem.Index.Server.Dict[fullName].Call = cmd.OriginalCallback;
+                }
+                if (fullName.StartsWith("global.") && ConsoleSystem.Index.Server.GlobalDict.ContainsKey(name))
                 {
                     ConsoleSystem.Index.Server.GlobalDict[name].Call = cmd.OriginalCallback;
                 }
                 // This part handles Rust commands, above handles overwritten across plugins
                 if (cmd.OriginalRustCommand != null)
                 {
-                    ConsoleSystem.Index.Server.Dict[fullName] = cmd.OriginalRustCommand;
-                    if (fullName.StartsWith("global."))
+                    if (ConsoleSystem.Index.Server.Dict.ContainsKey(fullName))
+                    {
+                        ConsoleSystem.Index.Server.Dict[fullName] = cmd.OriginalRustCommand;
+                    }
+                    if (fullName.StartsWith("global.") && ConsoleSystem.Index.Server.GlobalDict.ContainsKey(name))
                     {
                         ConsoleSystem.Index.Server.GlobalDict[name] = cmd.OriginalRustCommand;
                     }

@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "a9d3qdX2kPdcMiY1EJ2o19zTkP28CB6bg/13iNISqXw=",
+            "MSILHash": "p8KVhRWsPhpqS0huBhXaFT93hLyMse/7VZjCKQf8UAE=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2362,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "ZBz5glXuc5fJNJnp+5B2+zWiyUsDvS564Lt3Gn2If/Y=",
+            "MSILHash": "sxT1fP4QeQAP4OLZM6U77efafOwj2Dayi82z4lMp/WA=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2389,7 +2389,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "/mTE2rFCrCuUYGpMmnJEX/Xqk30HbT4WK+h3s7lhjBg=",
+            "MSILHash": "CF9SI8GYPeYGjGlI5f3k3Z7GinYyyWcLz7hltgAxiXI=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2440,7 +2440,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "/mTE2rFCrCuUYGpMmnJEX/Xqk30HbT4WK+h3s7lhjBg=",
+            "MSILHash": "CF9SI8GYPeYGjGlI5f3k3Z7GinYyyWcLz7hltgAxiXI=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -8599,7 +8599,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "5497uu8CSKipxhLuz/8Et0vvqYU1dvMQwxDPgP09TNE=",
+            "MSILHash": "C9ay5NFsSNVbnxYK+aa2ZPZgPhmsBBQD97sK0yfsgWk=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8623,7 +8623,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "5497uu8CSKipxhLuz/8Et0vvqYU1dvMQwxDPgP09TNE=",
+            "MSILHash": "C9ay5NFsSNVbnxYK+aa2ZPZgPhmsBBQD97sK0yfsgWk=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -10715,7 +10715,7 @@
                 "HitchTrough/HitchSpot"
               ]
             },
-            "MSILHash": "aoW/02S+Dtizt0h9hEPQNUUqi/RafTVvLHLjvvK58y8=",
+            "MSILHash": "TlvFmij8oYfsiWNlRRzRWD11JpsmzPjeYk6QiH3cU44=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -13589,7 +13589,7 @@
                 "System.Single&"
               ]
             },
-            "MSILHash": "iEYP4K7QshHZRCYvz/8QRIr6H+hW1QJzxywBk2jNqkE=",
+            "MSILHash": "VtkOmVLxuuTUkEcZmQUV+aamQWXvBcsnM33GqIIsqiE=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -29711,28 +29711,6 @@
           "MSILHash": "j+dBTjn+elHyZkgkBqhgK5XEpl+ChmTrQ+eKYYWZJp4="
         },
         {
-          "Name": "PlaceMonumentsRoadside::GetDistanceInfo",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlaceMonumentsRoadside",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GetDistanceInfo",
-            "FullTypeName": "PlaceMonumentsRoadside/DistanceInfo",
-            "Parameters": [
-              "System.Collections.Generic.List`1<PlaceMonumentsRoadside/SpawnInfo>",
-              "UnityEngine.Vector3"
-            ]
-          },
-          "MSILHash": "DvR5gw1HRFgMZZvnVlLFKKuHDcYn0EgeZfve8d5AFwI="
-        },
-        {
           "Name": "PlaceMonumentsRoadside::GroupCandidates",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "PlaceMonumentsRoadside",
@@ -29851,28 +29829,6 @@
             "Parameters": []
           },
           "MSILHash": ""
-        },
-        {
-          "Name": "PlaceMonuments::GetDistanceInfo",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlaceMonuments",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GetDistanceInfo",
-            "FullTypeName": "PlaceMonuments/DistanceInfo",
-            "Parameters": [
-              "System.Collections.Generic.List`1<PlaceMonuments/SpawnInfo>",
-              "UnityEngine.Vector3"
-            ]
-          },
-          "MSILHash": "+/B45AKIDDv3o6AIWfvaC8bFwsAyhlaak0ehdE8vKVs="
         },
         {
           "Name": "ModularCar::engineController",
@@ -35900,6 +35856,29 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "PlaceMonuments::GetDistanceInfo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlaceMonuments",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetDistanceInfo",
+            "FullTypeName": "PlaceMonuments/DistanceInfo",
+            "Parameters": [
+              "System.Collections.Generic.List`1<PlaceMonuments/SpawnInfo>",
+              "UnityEngine.Vector3",
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "pahO78Z80x0tE3v0eira+f+t0I9zU8AeRSZ9kpsDP+A="
         }
       ],
       "Fields": [

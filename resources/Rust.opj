@@ -35879,6 +35879,139 @@
             ]
           },
           "MSILHash": "pahO78Z80x0tE3v0eira+f+t0I9zU8AeRSZ9kpsDP+A="
+        },
+        {
+          "Name": "BaseCrane::fuelSystem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "fuelSystem",
+            "FullTypeName": "EntityFuelSystem BaseCrane::fuelSystem",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCrane::handbrakeOn",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "handbrakeOn",
+            "FullTypeName": "System.Boolean BaseCrane::handbrakeOn",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCrane::lastDamagePos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastDamagePos",
+            "FullTypeName": "UnityEngine.Vector3 BaseCrane::lastDamagePos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCrane::lastDrivenTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastDrivenTime",
+            "FullTypeName": "System.Single BaseCrane::lastDrivenTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCrane::lastExtensionArmState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastExtensionArmState",
+            "FullTypeName": "System.Single BaseCrane::lastExtensionArmState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCrane::lastRaiseArmState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastRaiseArmState",
+            "FullTypeName": "System.Single BaseCrane::lastRaiseArmState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCrane::lastYawState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastYawState",
+            "FullTypeName": "System.Single BaseCrane::lastYawState",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

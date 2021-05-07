@@ -36513,6 +36513,87 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Network.Networkable::updateSubscriptions",
+          "AssemblyName": "Facepunch.Network.dll",
+          "TypeName": "Network.Networkable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "updateSubscriptions",
+            "FullTypeName": "System.Boolean Network.Networkable::updateSubscriptions",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Network.Networkable::OnGroupTransition",
+          "AssemblyName": "Facepunch.Network.dll",
+          "TypeName": "Network.Networkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnGroupTransition",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Network.Visibility.Group"
+            ]
+          },
+          "MSILHash": "0Z8K5YHOcAdMdgDAGMO8rPTbTj+iEnnXAq6BwxC7EFk="
+        },
+        {
+          "Name": "Network.Networkable::OnSubscriptionChange",
+          "AssemblyName": "Facepunch.Network.dll",
+          "TypeName": "Network.Networkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "OnSubscriptionChange",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "weZu5G0rM+aJOHQOdCOXbzlHvb/K3MqlApIeKqMzzTU="
+        },
+        {
+          "Name": "Network.Networkable::AddVisibleFromNear",
+          "AssemblyName": "Facepunch.Network.dll",
+          "TypeName": "Network.Networkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "AddVisibleFromNear",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Network.Visibility.Group",
+              "System.Collections.Generic.List`1<Network.Visibility.Group>"
+            ]
+          },
+          "MSILHash": "+8iarpRy3RcIagc9Lpooso7KiUBairaaB8riVApna+Q="
         }
       ],
       "Fields": []

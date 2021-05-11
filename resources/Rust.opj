@@ -16052,6 +16052,30 @@
             "BaseHookName": null,
             "HookCategory": "Crafting"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 76,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnRespawnInformationGiven",
+            "HookName": "OnRespawnInformationGiven",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SendRespawnOptions",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "srIDNnEVLk5HxmKqdm6bkRKRz+fNVnJ55xdIcUs9OdM=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

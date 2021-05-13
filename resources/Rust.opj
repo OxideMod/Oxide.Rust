@@ -36012,6 +36012,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "DecayEntity::upkeep",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DecayEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "upkeep",
+            "FullTypeName": "Upkeep DecayEntity::upkeep",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

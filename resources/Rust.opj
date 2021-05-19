@@ -16023,6 +16023,30 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 101,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "VehicleFixedUpdate",
+            "HookName": "OnCraneTakeDamageWhenNotInJunkyard",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseCrane",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "VehicleFixedUpdate",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "6i2WLMuwNHB3xqTHNiUYdZlU/k8Icc31gdSu/h7gywM=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

@@ -16023,6 +16023,35 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnIngredientsCollect",
+            "HookName": "OnIngredientsCollect",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemCrafter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CollectIngredients",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ItemBlueprint",
+                "ItemCraftTask",
+                "System.Int32",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "q1SA/27kZQsZ8ALA8oW5tJID0kBo33YHXKzVMAISmR8=",
+            "BaseHookName": null,
+            "HookCategory": "Crafting"
+          }
         }
       ],
       "Modifiers": [
@@ -36031,6 +36060,75 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ItemCrafter::CollectIngredients",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ItemCrafter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CollectIngredients",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "ItemBlueprint",
+              "ItemCraftTask",
+              "System.Int32",
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "q1SA/27kZQsZ8ALA8oW5tJID0kBo33YHXKzVMAISmR8="
+        },
+        {
+          "Name": "ItemCrafter::CollectIngredient",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ItemCrafter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CollectIngredient",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Int32",
+              "System.Int32",
+              "System.Collections.Generic.List`1<Item>"
+            ]
+          },
+          "MSILHash": "844BavRqGduVqbyA8Pj+vghKt7lqCyDmHdOUauU9g5c="
+        },
+        {
+          "Name": "ItemCrafter::DoesHaveUsableItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ItemCrafter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DoesHaveUsableItem",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Int32",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "ZxX+sEzPLnkS8Mt8405xZ0YPUGmz9g9QWKwFhKx4KUY="
         }
       ],
       "Fields": [

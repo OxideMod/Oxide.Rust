@@ -16176,6 +16176,33 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnSleepingBagValidCheck",
+            "HookName": "OnSleepingBagValidCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SleepingBag",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ValidForPlayer",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.UInt64",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "NPeOF52CCYRDvClXOnxey1p26kcJAJrsh1y1A0zE4q0=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

@@ -1658,7 +1658,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
             "HookTypeName": "Simple",
-            "Name": "OnCupboardAuthorize",
+            "Name": "OnCupboardAuthorize [BuildingPrivlidge]",
             "HookName": "OnCupboardAuthorize",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BuildingPrivlidge",
@@ -16202,6 +16202,33 @@
             "MSILHash": "NPeOF52CCYRDvClXOnxey1p26kcJAJrsh1y1A0zE4q0=",
             "BaseHookName": null,
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 16,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnCupboardAuthorize [ItemModDeployable]",
+            "HookName": "OnCupboardAuthorize",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemModDeployable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "OnDeployed",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "MZUlImumgF5vtUH9fgFViWHBgj3LxMa2fsaTnxe1A8o=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
           }
         }
       ],

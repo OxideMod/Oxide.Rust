@@ -16203,6 +16203,33 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 16,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnCupboardAuthorize [ItemModDeployable]",
+            "HookName": "OnCupboardAuthorize",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemModDeployable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "OnDeployed",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "MZUlImumgF5vtUH9fgFViWHBgj3LxMa2fsaTnxe1A8o=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

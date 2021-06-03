@@ -16076,6 +16076,80 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnCentralizedBanCheck"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|Auth_CentralizedBans/<Run>d__0|connection"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
+              },
+              {
+                "OpCode": "stloc_3",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_3",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCentralizedBanCheck",
+            "HookName": "OnCentralizedBanCheck",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Auth_CentralizedBans/<Run>d__0",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MoveNext",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "jxBIpDhb74pQlVmZTth8+xKprF5z4iV83lceuj9UGBE=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

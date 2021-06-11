@@ -16254,6 +16254,70 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseAnimalNPC|brain"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Object|op_Inequality(UnityEngine.CoreModule|UnityEngine.Object,UnityEngine.CoreModule|UnityEngine.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 7
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity|HasBrain"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 7
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "FixTryThinkNRE [patch]",
+            "HookName": "FixTryThinkNRE [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseAnimalNPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryThink",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "W2qCW1z2sEpH8S8t+c4WmNY3t0abmAUbb2cINLTgAWQ=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

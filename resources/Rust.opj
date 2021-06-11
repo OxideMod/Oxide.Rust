@@ -16318,6 +16318,73 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 26,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnNpcTarget"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|AIBrainSenses|owner"
+              },
+              {
+                "OpCode": "ldloc_3",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 26
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnNpcTarget [AIBrainSenses]",
+            "HookName": "OnNpcTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AIBrainSenses",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "GetNearest",
+              "ReturnType": "BaseEntity",
+              "Parameters": [
+                "System.Collections.Generic.List`1<BaseEntity>",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "QZtlq3Matu57wJS8tX2ERO+qm29qC6dM6orh2Kok8rQ=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

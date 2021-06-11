@@ -688,14 +688,14 @@ namespace Oxide.Game.Rust
         private object OnExperimentStart(Workbench workbench, BasePlayer player)
         {
             return Interface.Oxide.CallDeprecatedHook("CanExperiment", "OnExperimentStart(Workbench workbench, BasePlayer player)",
-                new System.DateTime(2021, 7, 1), player, workbench);
+                new System.DateTime(2021, 12, 31), player, workbench);
         }
 
         [HookMethod("OnPlayerCorpseSpawned")]
         private object OnPlayerCorpseSpawned(BasePlayer player, BaseCorpse corpse)
         {
             return Interface.Oxide.CallDeprecatedHook("OnPlayerCorpse", "OnPlayerCorpseSpawned(BasePlayer player, BaseCorpse corpse)",
-                new System.DateTime(2021, 7, 1), player, corpse);
+                new System.DateTime(2021, 12, 31), player, corpse);
         }
 
         [HookMethod("OnVehiclePush")]
@@ -704,7 +704,7 @@ namespace Oxide.Game.Rust
             if (vehicle is MotorRowboat)
             {
                 return Interface.Oxide.CallDeprecatedHook("CanPushBoat", "CanPushVehicle(BaseVehicle vehicle, BasePlayer player)",
-                new System.DateTime(2021, 7, 1), player, vehicle as MotorRowboat);
+                new System.DateTime(2021, 12, 31), player, vehicle as MotorRowboat);
             }
 
             return null;

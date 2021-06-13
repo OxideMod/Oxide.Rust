@@ -4755,6 +4755,33 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 52,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnEntityDismounted [lite]",
+            "HookName": "OnEntityDismounted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMountable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DismountPlayer",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "VahM3DLMGLcQO6cuNr1Tfinm9/J97G622skBofrzYBQ=",
+            "BaseHookName": "OnEntityDismounted",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 12,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

@@ -16493,6 +16493,54 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnWaterCollect",
+            "HookName": "OnWaterCollect",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WaterCatcher",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CollectWater",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "qLkZbS6GCEy+x8D9oKqbYqdK6E8vzKp8HqEh8OPtrZ0=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 31,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l3",
+            "HookTypeName": "Simple",
+            "Name": "OnLiquidVesselFill",
+            "HookName": "OnLiquidVesselFill",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseLiquidVessel",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FillCheck",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "zHhKky3MJXMsbOtNM9cm7oO1Dqbum8nEg/K1MIOj3c0=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

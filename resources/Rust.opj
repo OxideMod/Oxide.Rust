@@ -16385,6 +16385,48 @@
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 34,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldloc_3",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 92
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "UpdateAcquaintancesFor [patch]",
+            "HookName": "UpdateAcquaintancesFor [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateAcquaintancesFor",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "QZmlTHqlHR3LfNgtlxvJb/b9cqz5ojd/K2t/ZVhXokQ=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

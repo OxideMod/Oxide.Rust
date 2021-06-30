@@ -16541,6 +16541,32 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnCCTVDirectionChange",
+            "HookName": "OnCCTVDirectionChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CCTV_RC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_SetDir",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "4gaLp1xVDk1CWolE88UOpOfLBLeigwGnkvFwtO1QS64=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

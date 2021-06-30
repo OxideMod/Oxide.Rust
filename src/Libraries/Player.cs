@@ -200,7 +200,7 @@ namespace Oxide.Game.Rust.Libraries
                     //player.SetPlayerFlag(BasePlayer.PlayerFlags.ReceivingSnapshot, true);
                     //player.UpdatePlayerCollider(true);
                     //player.UpdatePlayerRigidbody(false);
-                    player.EnableServerFall(true);
+                    player.SetServerFall(true);
 
                     // Teleport the player to position
                     player.MovePosition(destination);
@@ -220,7 +220,7 @@ namespace Oxide.Game.Rust.Libraries
                     // Restore player behavior
                     //player.UpdatePlayerCollider(true);
                     //player.UpdatePlayerRigidbody(true);
-                    player.EnableServerFall(false);
+                    player.SetServerFall(false);
                 }
             }
         }

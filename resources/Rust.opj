@@ -16567,6 +16567,36 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 31,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a1, a2",
+            "HookTypeName": "Simple",
+            "Name": "CanSetRelationship",
+            "HookName": "CanSetRelationship",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetRelationship",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "BasePlayer",
+                "RelationshipManager/RelationshipType",
+                "System.Int32",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "L5mFXmT6vbCFqvxOGCIpjRkdEH2fP+zS//ZTprKlrXA=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

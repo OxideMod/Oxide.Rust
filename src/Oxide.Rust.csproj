@@ -2,7 +2,7 @@
 <Project>
   <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
   <PropertyGroup>
-    <Version>2.0.5080</Version>
+    <Version>2.0.0</Version>
     <GameName>Rust</GameName>
     <Authors>Oxide Team and Contributors</Authors>
     <Copyright>(c) 2013-$([System.DateTime]::Now.Year) $(Authors)</Copyright>

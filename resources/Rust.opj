@@ -2597,32 +2597,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnPlayerRecover",
-            "HookName": "OnPlayerRecover",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "StopWounded",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BasePlayer"
-              ]
-            },
-            "MSILHash": "OHUG1LYeulSqlO2FUPkMAECjR0MHQyn9PID8hKV9CIs=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 4,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
@@ -16509,13 +16483,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 33,
-            "ReturnBehavior": 0,
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnPlayerRecovered",
-            "HookName": "OnPlayerRecovered",
+            "Name": "OnPlayerRecover",
+            "HookName": "OnPlayerRecover",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
             "Flagged": false,
@@ -16553,6 +16527,30 @@
             },
             "MSILHash": "YJanmhQKJtjJk+pOINBee76oAwVk9xIg29EmrfuwViY=",
             "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 39,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerRecovered",
+            "HookName": "OnPlayerRecovered",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RecoverFromWounded",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "w/EEw6p0fF/dPYCAfTzu6NBNknLQRjlDtoAJMV0aq44=",
+            "BaseHookName": "OnPlayerRecover",
             "HookCategory": "Player"
           }
         }

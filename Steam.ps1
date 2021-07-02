@@ -40,7 +40,7 @@ $references_file = Join-Path $tools_dir ".references"
 New-Item "$tools_dir", "$managed_dir" -ItemType Directory -Force | Out-Null
 
 # Set URLs of dependencies and tools to download
-$steam_depotdl_url = "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_2.3.2/depotdownloader-2.3.2.zip"
+$steam_depotdl_url = "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_2.4.3/depotdownloader-2.4.3-hotfix1.zip"
 $de4dot_url = "https://github.com/0xd4d/de4dot/suites/507020524/artifacts/2658127"
 $patcher_url = "https://github.com/OxideMod/Oxide.Patcher/releases/download/latest/OxidePatcher.exe"
 
@@ -79,8 +79,8 @@ function Find-Dependencies {
         Write-Host "Getting references for $steam_branch branch of $steam_appid"
         try {
             # TODO: Exclude dependencies included in repository
-            ($xml.selectNodes("//Reference") | Select-Object Include -ExpandProperty Include) -Replace "\S+$", "$&.dll" | Out-File $references_file
-            Write-Host "References:" ((Get-Content $references_file) -Join ', ')
+            ($xml.selectNodes("//Reference") | Select-Object Include -ExpandProperty Include) -Replace "\S+$", "regex:$&.dll" | Out-File $references_file
+            Write-Host "References:" ((Get-Content $references_file).Replace('regex:', '') -Join ', ')
         } catch {
             Write-Host "Error: Could not get references or none found in $project.csproj"
             Write-Host $_.Exception | Format-List -Force

@@ -16553,6 +16553,53 @@
             "BaseHookName": "OnPlayerRecover",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 15,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldc_i4",
+                "OpType": "Int32",
+                "Operand": "524288"
+              },
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BasePlayer|SetPlayerFlag(Assembly-CSharp|BasePlayer/PlayerFlags,System.Boolean)"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "IncapacitatedFalseRespawn [patch]",
+            "HookName": "IncapacitatedFalseRespawn [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RespawnAt",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3",
+                "UnityEngine.Quaternion"
+              ]
+            },
+            "MSILHash": "BtZAmodpLfHpCb3qsluAPnFmUS4nX/TXUeBU6T95XAU=",
+            "BaseHookName": "OnPlayerRespawned",
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

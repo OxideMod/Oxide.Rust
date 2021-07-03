@@ -36955,6 +36955,1130 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BoomBox::DeductCondition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BoomBox",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DeductCondition",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "M90sFg6cMkkbpjp3pOY+5xUmMw0NDYC5wqO+qa51Wes="
+        },
+        {
+          "Name": "BoomBox::HasFlag",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BoomBox",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HasFlag",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BaseEntity/Flags"
+            ]
+          },
+          "MSILHash": "pW2kbHvYoiqXiJarxo3f//v2WWf5UBrgnCf1SkyGI0M="
+        },
+        {
+          "Name": "BoomBox::IsOn",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BoomBox",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsOn",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "3yqsNMUGJ+cs/GCly+IpgFkTStlbtdVa+MHlsVuObxE="
+        },
+        {
+          "Name": "BoomBox::IsPowered",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BoomBox",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsPowered",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "YHkD9Sd8GhWh21cm86xDTNyeU94WHphayoX0DGxP3cU="
+        },
+        {
+          "Name": "BoomBox::SetFlag",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BoomBox",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetFlag",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity/Flags",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "ifHWtqpnKKbvRtpXNvo192lqM747S9fuDgZ0CfxsUuE="
+        },
+        {
+          "Name": "BoomBox::CurrentRadioIp",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BoomBox",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "CurrentRadioIp",
+            "FullTypeName": "System.String BoomBox::CurrentRadioIp()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BoomBox::lastParsedServerList",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BoomBox",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastParsedServerList",
+            "FullTypeName": "System.String BoomBox::lastParsedServerList",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BoomBox::GetStationData",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BoomBox",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetStationData",
+            "FullTypeName": "System.String",
+            "Parameters": []
+          },
+          "MSILHash": "WFx3aw8UvGvFv04nta5sGvuk2tMJ3rDgHorqNAHs4j4="
+        },
+        {
+          "Name": "BoomBox::IsStationValid",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BoomBox",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsStationValid",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.String"
+            ]
+          },
+          "MSILHash": "JjyGnUulaIPG6tvqQOKjP7CkdNltisMKzUDlDrWe8uA="
+        },
+        {
+          "Name": "DeployableBoomBox::ItemFilter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeployableBoomBox",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ItemFilter",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "sYW+3bkN80VspHsgO+eM2yVprr7jQlwpaoWAXOi8DfI="
+        },
+        {
+          "Name": "DeployableBoomBox::Server_UpdateRadioIP",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeployableBoomBox",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Server_UpdateRadioIP",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity/RPCMessage"
+            ]
+          },
+          "MSILHash": "ifWcrWDaXypkaTBsabY/5Nk0fLheOQu9ZzQ+f6zWRGk="
+        },
+        {
+          "Name": "DeployableBoomBox::MaxBacktrackHopsClient",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DeployableBoomBox",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "MaxBacktrackHopsClient",
+            "FullTypeName": "System.Int32 DeployableBoomBox::MaxBacktrackHopsClient",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::WoundInsteadOfDying",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "WoundInsteadOfDying",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "HitInfo"
+            ]
+          },
+          "MSILHash": "80lAI4k4rMzIWIsSordn2KXlBDrCKIeTZvbljvdfkDQ="
+        },
+        {
+          "Name": "BasePlayer::WoundingTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "WoundingTick",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "pQiBYU2Yd9K4EEL+QXeN60nPQLXvd4oTxWV5zg0H95Y="
+        },
+        {
+          "Name": "BasePlayer::WoundingCausingImmortality",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "WoundingCausingImmortality",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "HitInfo"
+            ]
+          },
+          "MSILHash": "R2T2BcGyyB2YQJHx8r46tXe3AMMkSdvL26felAye7xo="
+        },
+        {
+          "Name": "BasePlayer::WoundedStartSharedCode",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "WoundedStartSharedCode",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "HitInfo"
+            ]
+          },
+          "MSILHash": "XIHA/gFY+FUstPdVgnRIpAEn+/Zlnkhr8XUTM0qRYbI="
+        },
+        {
+          "Name": "BasePlayer::StartWoundedTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StartWoundedTick",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Int32",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "i11f7M9LCxxuqF3Wg8UHSEoqXUVa+rLOuTg9pXB46bc="
+        },
+        {
+          "Name": "BasePlayer::ResetWoundingVars",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ResetWoundingVars",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "vFe+hw8dQlyRhSh/gbw4XEPEA5E1ze9fipPSeGoYfcQ="
+        },
+        {
+          "Name": "BasePlayer::RecoverFromWounded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RecoverFromWounded",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "w/EEw6p0fF/dPYCAfTzu6NBNknLQRjlDtoAJMV0aq44="
+        },
+        {
+          "Name": "CardTable::CanSwapSeats",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CardTable",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "CanSwapSeats",
+            "FullTypeName": "System.Boolean CardTable::CanSwapSeats()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::playerData",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "playerData",
+            "FullTypeName": "Facepunch.CardGames.CardPlayerData[] Facepunch.CardGames.CardGameController::playerData",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::localPlayerCards",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "localPlayerCards",
+            "FullTypeName": "ProtoBuf.CardTable/CardList Facepunch.CardGames.CardGameController::localPlayerCards",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::Owner",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              0
+            ],
+            "Name": "Owner",
+            "FullTypeName": "CardTable Facepunch.CardGames.CardGameController::Owner()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::ScrapItemID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "ScrapItemID",
+            "FullTypeName": "System.Int32 Facepunch.CardGames.CardGameController::ScrapItemID()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::State",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "State",
+            "FullTypeName": "Facepunch.CardGames.CardGameController/CardGameState Facepunch.CardGames.CardGameController::State()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::winnerInfo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "winnerInfo",
+            "FullTypeName": "ProtoBuf.CardTable/WinnerBreakdown Facepunch.CardGames.CardGameController::winnerInfo()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::AddAllToPot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "AddAllToPot",
+            "FullTypeName": "System.Int32",
+            "Parameters": [
+              "Facepunch.CardGames.CardPlayerData"
+            ]
+          },
+          "MSILHash": "LARNUeHzZfPQj7FwYT6pneDT8f5YDcR9unYmgjXd+so="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::AddToPot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "AddToPot",
+            "FullTypeName": "System.Int32",
+            "Parameters": [
+              "Facepunch.CardGames.CardPlayerData",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "+3/YPT2nCK7EvXGFCK346ztrKOhTbT9yAQ6Yuo/RUGk="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::ClearWinnerInfo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ClearWinnerInfo",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "bormxbfxSa/7Sv1YZsTEtsFChTMxMDNWBGeEV0b9qGo="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::EndGameplay",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EndGameplay",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "OFZfUg8AhqooIoN2A6KRM5c3dGxguYhZBH3o4sjIrrU="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::EndRound",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "EndRound",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "8Ecj99uSe1RrLTvU9KW4PiTwwGNWMfYfk29RMuLfQ5k="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::InvokeStartNewRound",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "InvokeStartNewRound",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "CEdpHxHSdqfRmm8H9dIwn58n34Qlv8yyQUyIb7JruvE="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::IsAtTable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsAtTable",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.UInt64"
+            ]
+          },
+          "MSILHash": "A8hDeTzRAKmMyvFujiqvyJUv7jo8nm+Vejcuce7rWNY="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::JoinTable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "JoinTable",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.UInt64"
+            ]
+          },
+          "MSILHash": "5/dUf5XX1ShLJhDxZPaHr2lgoo9XUWCZ33h5PjPwTLA="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::PayOut",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "PayOut",
+            "FullTypeName": "System.Int32",
+            "Parameters": [
+              "Facepunch.CardGames.CardPlayerData",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "bFBGi3qLNq5q1ZSjJwM5KmBsStd8yI4w8TzIxRdT0+Q="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::PayOutAll",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "PayOutAll",
+            "FullTypeName": "System.Int32",
+            "Parameters": [
+              "Facepunch.CardGames.CardPlayerData"
+            ]
+          },
+          "MSILHash": "G5zUROJX9aP3+rK7p0apAbpzZACDoGm6voiahk1kfvI="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::ReceivedInputFromPlayer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ReceivedInputFromPlayer",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Facepunch.CardGames.CardPlayerData",
+              "System.Int32",
+              "System.Boolean",
+              "System.Int32",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "KG6h0STOoDRQgOzkM7PW3JSjZwD66vo8WITUI2qHGE8="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::RemoveScrapFromStorage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "RemoveScrapFromStorage",
+            "FullTypeName": "System.Int32",
+            "Parameters": [
+              "Facepunch.CardGames.CardPlayerData"
+            ]
+          },
+          "MSILHash": "5wLcJKroam7cZXIT+dFG5RKwnUafAyyzRz9ADKTzHJw="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::ServerPlaySound",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ServerPlaySound",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "CardGameSounds/SoundType"
+            ]
+          },
+          "MSILHash": "gg5pZJ+jU2ix9qMceT5oJpKTeSRbfUq3y5yEGoLl3Zg="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::TryStartNewRound",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TryStartNewRound",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "VbXguKxFXD1YoAk9fhN3KEHJFjILHJfJJoADUm/AbpE="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::UpdateAllAvailableInputs",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "UpdateAllAvailableInputs",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "XxZYn0zL77itA3E7zMrh4uJEujQnJldq6QAtSCXCt2c="
+        },
+        {
+          "Name": "Facepunch.CardGames.CardPlayerData::scrapItemID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardPlayerData",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "scrapItemID",
+            "FullTypeName": "System.Int32 Facepunch.CardGames.CardPlayerData::scrapItemID",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardPlayerData::UserID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardPlayerData",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "UserID",
+            "FullTypeName": "System.UInt64 Facepunch.CardGames.CardPlayerData::UserID()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardPlayerData::State",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardPlayerData",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "State",
+            "FullTypeName": "Facepunch.CardGames.CardPlayerData/CardPlayerState Facepunch.CardGames.CardPlayerData::State()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardPlayerData::SendCardDetails",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardPlayerData",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "SendCardDetails",
+            "FullTypeName": "System.Boolean Facepunch.CardGames.CardPlayerData::SendCardDetails()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardPlayerData::LeftRoundEarly",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardPlayerData",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "LeftRoundEarly",
+            "FullTypeName": "System.Boolean Facepunch.CardGames.CardPlayerData::LeftRoundEarly()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardPlayerData::hasActedThisTurn",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardPlayerData",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "hasActedThisTurn",
+            "FullTypeName": "System.Boolean Facepunch.CardGames.CardPlayerData::hasActedThisTurn()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Megaphone::UpdateItemCondition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Megaphone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateItemCondition",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "QCdmhTd4/Xknm/2FNpuJ3Vhy6n+nJUVHpS/KubrE5lw="
+        },
+        {
+          "Name": "Cassette::currentCassettePlayer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Cassette",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentCassettePlayer",
+            "FullTypeName": "ICassettePlayer Cassette::currentCassettePlayer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Cassette::preloadedAudioId",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Cassette",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "preloadedAudioId",
+            "FullTypeName": "System.Int32 Cassette::preloadedAudioId",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Cassette::ClearSavedAudio",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Cassette",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ClearSavedAudio",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "ArtvznwtIOpTNqs4s6RGQH4xKqe6FCacxBCwjIcFYPw="
+        },
+        {
+          "Name": "Cassette::DelayedCassetteInserted",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Cassette",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DelayedCassetteInserted",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "BBewWya/rhfPS5j5V6wwFoxpHN6t//bIY1Draj1u9cE="
+        },
+        {
+          "Name": "Cassette::ByteToMegabyte",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Cassette",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ByteToMegabyte",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "G2Nv5VRY/jEZHeWmNpptSL4fa3zGBi2IpJ5YKDd3KsU="
+        },
+        {
+          "Name": "Cassette::GetOggLength",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Cassette",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetOggLength",
+            "FullTypeName": "System.Double",
+            "Parameters": [
+              "System.Byte[]"
+            ]
+          },
+          "MSILHash": "acqjn4sn1Nepj2pAOlycfZACV4czTwyvAxaRn0Ut6Wg="
+        },
+        {
+          "Name": "Cassette::IsOggValid",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Cassette",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsOggValid",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Byte[]",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "5co/zcrh581n51rsTdeS2dJTFpu6BC/e7NZqwPO7ItQ="
         }
       ],
       "Fields": [

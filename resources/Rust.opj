@@ -37183,26 +37183,6 @@
           "MSILHash": "ifWcrWDaXypkaTBsabY/5Nk0fLheOQu9ZzQ+f6zWRGk="
         },
         {
-          "Name": "DeployableBoomBox::MaxBacktrackHopsClient",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "DeployableBoomBox",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              2
-            ],
-            "Name": "MaxBacktrackHopsClient",
-            "FullTypeName": "System.Int32 DeployableBoomBox::MaxBacktrackHopsClient",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BasePlayer::WoundInsteadOfDying",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BasePlayer",

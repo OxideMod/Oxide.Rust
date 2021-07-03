@@ -38251,6 +38251,63 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseEntity/Query/EntityTree::BrainGrid",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseEntity/Query/EntityTree",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "BrainGrid",
+            "FullTypeName": "Spatial.Grid`1<BaseEntity> BaseEntity/Query/EntityTree::BrainGrid",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseEntity/Query/EntityTree::Grid",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseEntity/Query/EntityTree",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Grid",
+            "FullTypeName": "Spatial.Grid`1<BaseEntity> BaseEntity/Query/EntityTree::Grid",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseEntity/Query/EntityTree::PlayerGrid",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseEntity/Query/EntityTree",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PlayerGrid",
+            "FullTypeName": "Spatial.Grid`1<BasePlayer> BaseEntity/Query/EntityTree::PlayerGrid",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

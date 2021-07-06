@@ -19,8 +19,8 @@
             "TypeName": "World",
             "Flagged": false,
             "Signature": {
-              "Exposure": 3,
-              "Name": "SaveFileName",
+              "Exposure": 2,
+              "Name": "SaveFileName::get",
               "ReturnType": "System.String",
               "Parameters": []
             },

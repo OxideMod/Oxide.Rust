@@ -6,6 +6,29 @@
       "AssemblyName": "Assembly-CSharp.dll",
       "Hooks": [
         {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "WorldFilename",
+            "HookName": "WorldFilename",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "World",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "SaveFileName",
+              "ReturnType": "System.String",
+              "Parameters": []
+            },
+            "BaseHookName": null,
+            "HookCategory": "Server"
+          }
+        },
+        {
           "Type": "InitOxide",
           "Hook": {
             "InjectionIndex": 46,

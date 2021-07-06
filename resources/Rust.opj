@@ -2471,6 +2471,32 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 0,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnBeforeSaveLoad",
+            "HookName": "OnBeforeSaveLoad",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SaveRestore",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Load",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.String",
+                "System.Boolean"
+              ]
+            },
+            "BaseHookName": "OnNewSave",
+            "HookCategory": "Server"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 4,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

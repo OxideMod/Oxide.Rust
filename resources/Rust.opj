@@ -16672,6 +16672,34 @@
             "BaseHookName": "OnPlayerWantsDismount",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanAccessVendingMachine",
+            "HookName": "CanAccessVendingMachine",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DeliveryDroneConfig",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsVendingMachineAccessible",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "VendingMachine",
+                "UnityEngine.Vector3",
+                "UnityEngine.RaycastHit&"
+              ]
+            },
+            "MSILHash": "/36CBLbvffYk8IyR7yLXTvN4wgp3pxt5j+vdZkfZFU0=",
+            "BaseHookName": null,
+            "HookCategory": "Electronics"
+          }
         }
       ],
       "Modifiers": [

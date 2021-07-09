@@ -16212,8 +16212,8 @@
               }
             ],
             "HookTypeName": "Modify",
-            "Name": "FixAIBrainTryThinkNRE [patch]",
-            "HookName": "FixAIBrainTryThinkNRE [patch]",
+            "Name": "FixTryThinkNRE [patch]",
+            "HookName": "FixTryThinkNRE [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseAnimalNPC",
             "Flagged": false,
@@ -16602,75 +16602,31 @@
           }
         },
         {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 0,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ldnull",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "UnityEngine.CoreModule|UnityEngine.Object|op_Equality(UnityEngine.CoreModule|UnityEngine.Object,UnityEngine.CoreModule|UnityEngine.Object)"
-              },
-              {
-                "OpCode": "brtrue_s",
-                "OpType": "Instruction",
-                "Operand": 2
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "FixAIBrainThinkNRE [patch]",
-            "HookName": "FixAIBrainThinkNRE [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseAIBrain`1",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Think",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.Single"
-              ]
-            },
-            "MSILHash": "hX3hrBGJUK0/kDV4h/tKznrG/mhPACVHpo/wrVnKYbo=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
-          }
-        },
-        {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 7,
-            "ReturnBehavior": 0,
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l0, this",
+            "ArgumentString": "this, a0",
             "HookTypeName": "Simple",
-            "Name": "OnPlayerDismountFailed",
-            "HookName": "OnPlayerDismountFailed",
+            "Name": "CanAccessVendingMachine",
+            "HookName": "CanAccessVendingMachine",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseMountable",
+            "TypeName": "DeliveryDroneConfig",
             "Flagged": false,
             "Signature": {
               "Exposure": 2,
-              "Name": "RPC_WantsDismount",
-              "ReturnType": "System.Void",
+              "Name": "IsVendingMachineAccessible",
+              "ReturnType": "System.Boolean",
               "Parameters": [
-                "BaseEntity/RPCMessage"
+                "VendingMachine",
+                "UnityEngine.Vector3",
+                "UnityEngine.RaycastHit&"
               ]
             },
-            "MSILHash": "Z5c8LL6Ch3aqFj1jdfqqcTrwIpcR6O21zrNfegooofo=",
-            "BaseHookName": "OnPlayerWantsDismount",
-            "HookCategory": "Player"
+            "MSILHash": "/36CBLbvffYk8IyR7yLXTvN4wgp3pxt5j+vdZkfZFU0=",
+            "BaseHookName": null,
+            "HookCategory": "Electronics"
           }
         }
       ],
@@ -38131,25 +38087,6 @@
             ]
           },
           "MSILHash": "5co/zcrh581n51rsTdeS2dJTFpu6BC/e7NZqwPO7ItQ="
-        },
-        {
-          "Name": "Drone/DroneInputState",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Drone/DroneInputState",
-          "Type": 3,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "DroneInputState",
-            "FullTypeName": "Drone/DroneInputState",
-            "Parameters": []
-          },
-          "MSILHash": ""
         }
       ],
       "Fields": [

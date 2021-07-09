@@ -16610,7 +16610,7 @@
             "ArgumentString": null,
             "HookTypeName": "Simple",
             "Name": "IsVendingMachineAccessible",
-            "HookName": "IsVendingMachineAccessible",
+            "HookName": "CanDeliveryDroneAccessVendingMachine ",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "DeliveryDroneConfig",
             "Flagged": false,
@@ -16626,7 +16626,7 @@
             },
             "MSILHash": "/36CBLbvffYk8IyR7yLXTvN4wgp3pxt5j+vdZkfZFU0=",
             "BaseHookName": null,
-            "HookCategory": "Drone"
+            "HookCategory": "Delivery Drone"
           }
         }
       ],

@@ -714,21 +714,21 @@ namespace Oxide.Game.Rust
         private void OnFuelConsume(BaseOven oven, Item fuel, ItemModBurnable burnable)
         {
             Interface.Oxide.CallDeprecatedHook("OnConsumeFuel", "OnFuelConsume(BaseOven oven, Item fuel, ItemModBurnable burnable)",
-                new System.DateTime(2021, 7, 1), oven, fuel, burnable);
+                new System.DateTime(2021, 12, 31), oven, fuel, burnable);
         }
 
         [HookMethod("OnEntitySaved")]
         private void OnEntitySaved(Elevator elevator, BaseNetworkable.SaveInfo saveInfo)
         {
             Interface.Oxide.CallDeprecatedHook("OnElevatorSaved", "OnEntitySaved(Elevator elevator, BaseNetworkable.SaveInfo saveInfo)",
-                new System.DateTime(2021, 7, 1), elevator, saveInfo);
+                new System.DateTime(2021, 12, 31), elevator, saveInfo);
         }
 
         [HookMethod("OnResearchCostDetermine")]
         private object OnResearchCostDetermine(Item item, ResearchTable table)
         {
             return Interface.Oxide.CallDeprecatedHook("OnItemScrap", "OnResearchCostDetermine(Item item, ResearchTable table)",
-                new System.DateTime(2021, 7, 1), table, item);
+                new System.DateTime(2021, 12, 31), table, item);
         }
 
         #endregion Deprecated Hooks

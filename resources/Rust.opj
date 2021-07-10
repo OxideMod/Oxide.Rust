@@ -16212,8 +16212,8 @@
               }
             ],
             "HookTypeName": "Modify",
-            "Name": "FixTryThinkNRE [patch]",
-            "HookName": "FixTryThinkNRE [patch]",
+            "Name": "FixAIBrainTryThinkNRE [patch]",
+            "HookName": "FixAIBrainTryThinkNRE [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseAnimalNPC",
             "Flagged": false,
@@ -16598,6 +16598,52 @@
             },
             "MSILHash": "BtZAmodpLfHpCb3qsluAPnFmUS4nX/TXUeBU6T95XAU=",
             "BaseHookName": "OnPlayerRespawned",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Object|op_Equality(UnityEngine.CoreModule|UnityEngine.Object,UnityEngine.CoreModule|UnityEngine.Object)"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 2
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "FixAIBrainThinkNRE [patch]",
+            "HookName": "FixAIBrainThinkNRE [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseAIBrain`1",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Think",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Single"
+              ]
+            },
+            "MSILHash": "hX3hrBGJUK0/kDV4h/tKznrG/mhPACVHpo/wrVnKYbo=",
+            "BaseHookName": null,
             "HookCategory": "_Patches"
           }
         }

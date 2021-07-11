@@ -16646,6 +16646,79 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|AutoTurret|consumptionAmount"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "ConsumptionAmount [AutoTurret]",
+            "HookName": "ConsumptionAmount [AutoTurret]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ConsumptionAmount",
+              "ReturnType": "System.Int32",
+              "Parameters": []
+            },
+            "MSILHash": "4Act+y8UAH9ZIu8gewP4EzXBfP1MjKVnkKUKogxIZ2I=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldc_i4_s",
+                "OpType": "SByte",
+                "Operand": "10"
+              },
+              {
+                "OpCode": "stfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|AutoTurret|consumptionAmount"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": ".ctor [AutoTurret]",
+            "HookName": ".ctor [AutoTurret]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": ".ctor",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "12KIPLNo0jAHNWrElbT3TMAg6HtfUdCbbumNVnxQX7g=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [
@@ -38132,6 +38205,13 @@
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BasePlayer",
           "FieldType": "Oxide.Core|Oxide.Core.Libraries.Covalence.IPlayer",
+          "Flagged": false
+        },
+        {
+          "Name": "consumptionAmount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "FieldType": "mscorlib|System.Int32",
           "Flagged": false
         }
       ]

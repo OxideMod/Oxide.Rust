@@ -16646,6 +16646,32 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerDismountFailed",
+            "HookName": "OnPlayerDismountFailed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMountable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_WantsDismount",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Z5c8LL6Ch3aqFj1jdfqqcTrwIpcR6O21zrNfegooofo=",
+            "BaseHookName": "OnPlayerWantsDismount",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

@@ -16705,30 +16705,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 153,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnDecayTickDamage",
-            "HookName": "OnDecayTickDamage",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "DecayEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "DecayTick",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "BPfeNle4fC2wQVcKSAcau8OG5cXIBhVZc44cFkDPqkc=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 74,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 1,
@@ -16746,8 +16722,32 @@
               "Parameters": []
             },
             "MSILHash": "BPfeNle4fC2wQVcKSAcau8OG5cXIBhVZc44cFkDPqkc=",
-            "BaseHookName": "OnDecayTickDamage",
-            "HookCategory": "Entity"
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 159,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnDecayTickDamage",
+            "HookName": "OnDecayTickDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DecayEntity",
+            "Flagged": true,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DecayTick",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "BPfeNle4fC2wQVcKSAcau8OG5cXIBhVZc44cFkDPqkc=",
+            "BaseHookName": "OnDecayTickHeal",
+            "HookCategory": null
           }
         },
         {
@@ -16771,7 +16771,7 @@
             },
             "MSILHash": "3oQJuRK8woZxc6W+Z0/iAZn5mBVPYccBw8xLu6hTRoU=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": null
           }
         },
         {
@@ -16779,7 +16779,7 @@
           "Hook": {
             "InjectionIndex": 39,
             "ReturnBehavior": 0,
-            "ArgumentBehavior": 0,
+            "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
             "Name": "OnWindUpdated",
@@ -16794,8 +16794,8 @@
               "Parameters": []
             },
             "MSILHash": "3oQJuRK8woZxc6W+Z0/iAZn5mBVPYccBw8xLu6hTRoU=",
-            "BaseHookName": "WindUpdate",
-            "HookCategory": "Entity"
+            "BaseHookName": "OnWindUpdate",
+            "HookCategory": null
           }
         }
       ],

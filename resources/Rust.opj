@@ -16773,6 +16773,102 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 74,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnDecayHeal",
+            "HookName": "OnDecayHeal",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DecayEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DecayTick",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "BPfeNle4fC2wQVcKSAcau8OG5cXIBhVZc44cFkDPqkc=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 159,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnDecayDamage",
+            "HookName": "OnDecayDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DecayEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DecayTick",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "BPfeNle4fC2wQVcKSAcau8OG5cXIBhVZc44cFkDPqkc=",
+            "BaseHookName": "OnDecayHeal",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnWindUpdate",
+            "HookName": "OnWindUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ElectricWindmill",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "WindUpdate",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "3oQJuRK8woZxc6W+Z0/iAZn5mBVPYccBw8xLu6hTRoU=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 39,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnWindUpdated",
+            "HookName": "OnWindUpdated",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ElectricWindmill",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "WindUpdate",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "3oQJuRK8woZxc6W+Z0/iAZn5mBVPYccBw8xLu6hTRoU=",
+            "BaseHookName": "OnWindUpdate",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

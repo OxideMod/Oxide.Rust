@@ -38308,6 +38308,27 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "FileStorage::RemoveAllByEntity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "FileStorage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "RemoveAllByEntity",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.UInt32"
+            ]
+          },
+          "MSILHash": "Z9QaByiEr0ortXV7eqbMM4dc+af/zMlKA5tH4SC0NqY="
         }
       ],
       "Fields": [

@@ -16869,6 +16869,30 @@
             "BaseHookName": "OnWindUpdate",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "CanElevatorLiftMove",
+            "HookName": "CanElevatorLiftMove",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ElevatorLift",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanMove",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "KWy313sP9hY7kCOBQ7kwO19TNmVOQl7s+rlbj1hNG8Q=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

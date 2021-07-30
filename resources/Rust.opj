@@ -16893,6 +16893,34 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnGrowableStateChange",
+            "HookName": "OnGrowableStateChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GrowableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ChangeState",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "PlantProperties/State",
+                "System.Boolean",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "0C1+c0xi0SgtdDqbYMP3WIs4j01WlvZB/YEWL8hhpaE=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
+          }
         }
       ],
       "Modifiers": [

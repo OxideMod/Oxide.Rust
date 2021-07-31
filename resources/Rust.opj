@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "E:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "tmRfog+FBmFf5F8HX9L/ADSXMakEgLEC0xOvOu2DgWo=",
+            "MSILHash": "KAnMUzqH/cK4NivRJHmhYOIwL5TfuyqWVLhMUNQ0gO0=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -965,7 +965,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "9gXmaINjNxGv/EYEQdCh9VrZZwIcR7dDop2UYWOryjI=",
+            "MSILHash": "Rn1cyjYr9/kg3xCQKifZy6VfS8HYFK7k55wFYc0AtDE=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1249,7 +1249,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "2aQU42yqZ+VWBoky1GCPqDZKNpqG1WsWEHyE29/s3tI=",
+            "MSILHash": "2BSWHyYcSyPMt3McAES5ZbLdEzisHGsgadnn+Qwgk8w=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1915,7 +1915,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 157,
+            "InjectionIndex": 177,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
             "ArgumentString": null,
@@ -1934,7 +1934,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "DP47EuTKl++lI9FRHrShuf53R1FtnbzWg5qlKRnMwSM=",
+            "MSILHash": "t4FcBDhmPRvvOBB82omLXHGLWIu+ZTzB6ZK4EUWLXHg=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -2362,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "LYCvM0bj1jIbzoovLuxvAsYtOIJD7WhTLQJGzipFcEc=",
+            "MSILHash": "x68YIc6lBeKHZWrdds8URcLNZMEdxnhEfwTpEH8JcTU=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2389,7 +2389,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "9Z8T2OuwaTWsrwxdspKQEyyI6FcVwPu/Jez6UorFoiw=",
+            "MSILHash": "2UQwl8bexhMXwGfSq7zlL+cAtRGTGefgHrp0+N3sGvs=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2440,7 +2440,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "9Z8T2OuwaTWsrwxdspKQEyyI6FcVwPu/Jez6UorFoiw=",
+            "MSILHash": "2UQwl8bexhMXwGfSq7zlL+cAtRGTGefgHrp0+N3sGvs=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -3424,7 +3424,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 15,
+            "InjectionIndex": 17,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l3",
@@ -3440,7 +3440,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "C72NNyglnn29ADbvIJLCBL/dS7tAsK7l2sPx5plP2y8=",
+            "MSILHash": "RFZu0mx4YZ58yn8eeo6E6V/4qNNvwORx0d5taoi6Cow=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -3686,7 +3686,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 21,
+            "InjectionIndex": 23,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -3702,7 +3702,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 306
+                "Operand": 302
               },
               {
                 "OpCode": "ldarg_0",
@@ -3727,7 +3727,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "C72NNyglnn29ADbvIJLCBL/dS7tAsK7l2sPx5plP2y8=",
+            "MSILHash": "RFZu0mx4YZ58yn8eeo6E6V/4qNNvwORx0d5taoi6Cow=",
             "BaseHookName": "OnRecycleItem",
             "HookCategory": "_Patches"
           }
@@ -5013,7 +5013,7 @@
                 "System.UInt32"
               ]
             },
-            "MSILHash": "VTSYYnNj6QKf3SANX7wPNiImCf0766yuHG8yaWlUv+Y=",
+            "MSILHash": "jo37zL4IpZdqNz87Lq/l3++sS32bAlOm+oED236GJMU=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5514,7 +5514,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "9gXmaINjNxGv/EYEQdCh9VrZZwIcR7dDop2UYWOryjI=",
+            "MSILHash": "Rn1cyjYr9/kg3xCQKifZy6VfS8HYFK7k55wFYc0AtDE=",
             "BaseHookName": "OnPlayerTick",
             "HookCategory": "Player"
           }
@@ -7222,7 +7222,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "hPuZGjNHmNHRVf7jQlBYtzDYim8avvl014EbvwpzTj4=",
+            "MSILHash": "Z0XlWvLMBWvsDpnMh4aaoJktkB/D5w3VI1eaU00UHJA=",
             "BaseHookName": null,
             "HookCategory": "Resource"
           }
@@ -7300,7 +7300,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "scOqv3xzqlM5BzGrFaMg3vcvwHiFz9ycohp38UDRNJg=",
+            "MSILHash": "fwFMgKsfIB2OMKTMgjynJYCEPF9fHxVVBIfvXIo0z2U=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8285,7 +8285,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 79,
+            "InjectionIndex": 81,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1, l2",
@@ -8303,7 +8303,7 @@
                 "System.UInt32"
               ]
             },
-            "MSILHash": "VTSYYnNj6QKf3SANX7wPNiImCf0766yuHG8yaWlUv+Y=",
+            "MSILHash": "jo37zL4IpZdqNz87Lq/l3++sS32bAlOm+oED236GJMU=",
             "BaseHookName": "OnActiveItemChange",
             "HookCategory": "Player"
           }
@@ -8535,7 +8535,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "dzTqU7pJ2bXOXvFb6jadjktS+xUtRRP/nAf8QEMQWsY=",
+            "MSILHash": "h7LQGMMf6xENfgSbULYLsVzrb3zqshQWmgymceNzv+s=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8559,7 +8559,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "dzTqU7pJ2bXOXvFb6jadjktS+xUtRRP/nAf8QEMQWsY=",
+            "MSILHash": "h7LQGMMf6xENfgSbULYLsVzrb3zqshQWmgymceNzv+s=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -9482,7 +9482,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 8,
+            "InjectionIndex": 16,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
@@ -9498,7 +9498,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "zryZTNlib/BOQDmS3nV7rUM2FEJ1iETAeXVRgQM0fkk=",
+            "MSILHash": "JNwpy8p+O/bRg5NejzC+UCvx8PXllh3hEr6eHEGmQGk=",
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
@@ -10144,7 +10144,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "mYR4HykOMFV7f1kXCpgaJOEJCN2cs6Lqhzz3klVNz64=",
+            "MSILHash": "VouNU3BIAbshIpFBERZcqmDt89Rh2ZEZXZPrj1CwHeo=",
             "BaseHookName": null,
             "HookCategory": "Resource"
           }
@@ -10911,7 +10911,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "iwR7QdEnP2v11uzysLT3s7FCGU6kjgGYRJbcA1RTX5g=",
+            "MSILHash": "NzkbMXSEk4f6FM7Vh0cu/Noxo5/mfBdiDaUcIjv8BT0=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
@@ -16925,25 +16925,6 @@
       ],
       "Modifiers": [
         {
-          "Name": "BasePlayer::serverInput",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BasePlayer",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "serverInput",
-            "FullTypeName": "InputState BasePlayer::serverInput",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "CodeLock::code",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "CodeLock",
@@ -18564,25 +18545,6 @@
             ],
             "Name": "propDirection",
             "FullTypeName": "DirectionProperties[] BaseCombatEntity::propDirection",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "ServerProjectile::_currentVelocity",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ServerProjectile",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "_currentVelocity",
-            "FullTypeName": "UnityEngine.Vector3 ServerProjectile::_currentVelocity",
             "Parameters": []
           },
           "MSILHash": ""
@@ -23754,44 +23716,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "MiniCopter::VehicleFixedUpdate",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "VehicleFixedUpdate",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "mlXcdt1NKVQchuEavvPDSS4w01klU85u4N1/JVm5WuU="
-        },
-        {
-          "Name": "MotorRowboat::VehicleFixedUpdate",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MotorRowboat",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "VehicleFixedUpdate",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "9+wB61LbuW8ofGHjsdUl3EwUyiIcKEghAd56XhxYCn4="
-        },
-        {
           "Name": "BaseCombatEntity::unHostileTime",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseCombatEntity",
@@ -24012,27 +23936,6 @@
           "MSILHash": "YdcRvlZXG9m9r27GA3sqVLbGnb1sKt9lPW7/W/ZA1DI="
         },
         {
-          "Name": "ModularCar::DoPushAction",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "DoPushAction",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "BasePlayer"
-            ]
-          },
-          "MSILHash": "nckcDS+23wwgI9BRDD1JTLHLpzwmRk22k98LXSQxFKE="
-        },
-        {
           "Name": "ModularCar::GetCOMMultiplier",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "ModularCar",
@@ -24236,25 +24139,6 @@
             "Parameters": []
           },
           "MSILHash": "274yT4IJ3fuxLHwhPNn2uaxwCSO8438cQhc49fPrshU="
-        },
-        {
-          "Name": "ModularCar::VehicleFixedUpdate",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "VehicleFixedUpdate",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "SWCyaUztbc66S8saNeZTaAXr3EMDi2shVPDCR/qwHDQ="
         },
         {
           "Name": "ModularCar::DecayTick",
@@ -25328,25 +25212,6 @@
             ]
           },
           "MSILHash": "NDJrvrX7BWDSvDNVmIi7ibjcLBtBVu6TtKggOkNGihk="
-        },
-        {
-          "Name": "BaseModularVehicle::VehicleFixedUpdate",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseModularVehicle",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "VehicleFixedUpdate",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "2JhuDR76BXPGAdVAifotkffCNOT4AeaHttSymmtLrZk="
         },
         {
           "Name": "SmartAlarm::_lastSentTime",
@@ -31236,25 +31101,6 @@
           "MSILHash": "St36KTWwAtmMQ20vtB7NUE9AdQja48YVf0B7/l2G5Qk="
         },
         {
-          "Name": "BaseTrain::VehicleFixedUpdate",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseTrain",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "VehicleFixedUpdate",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "h5Tk6hfT9m/a46mgNCPLeCOiE5oRxie8cSe6tTFrvvk="
-        },
-        {
           "Name": "TrainEngine::MaxThrottle",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "TrainEngine",
@@ -32547,25 +32393,6 @@
           "MSILHash": "5hgfebidJ9pmXXiCqYsM3nXFoBcXNWhB2cZpZPkbUsw="
         },
         {
-          "Name": "TrainEngine::VehicleFixedUpdate",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "TrainEngine",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "VehicleFixedUpdate",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "JObJ6IK/o7eL+//SKls87YkmAj9ARTQaMCXMTFmK8Xg="
-        },
-        {
           "Name": "BaseHelicopterVehicle::avgTerrainHeight",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseHelicopterVehicle",
@@ -32701,25 +32528,6 @@
           "MSILHash": "YwybJZRPvBNDfcul58V0ATNXSkmbNlcEuR5Ybd9TvSM="
         },
         {
-          "Name": "BaseHelicopterVehicle::VehicleFixedUpdate",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "VehicleFixedUpdate",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "0rsA8tzTJzUPND7cyelEnuasnMv/oKbgVSv0RdvC+Kg="
-        },
-        {
           "Name": "BaseVehicle::clearRecentDriverAction",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseVehicle",
@@ -32839,25 +32647,6 @@
             ]
           },
           "MSILHash": "OJu3ah1yvr7FhzoWK+XMblMcI2BEoZk10lK8kz51puM="
-        },
-        {
-          "Name": "BaseVehicle::VehicleFixedUpdate",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseVehicle",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "VehicleFixedUpdate",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "pQJfGxXdxxCPHD7C5ajdvgI9Q4rdXkVSn+ucniuKzEA="
         },
         {
           "Name": "ModularCarGarage::HasDriveableOccupant",
@@ -33754,63 +33543,6 @@
             ],
             "Name": "activeTelephone",
             "FullTypeName": "PhoneController BasePlayer::activeTelephone",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "TerrainPath::DungeonCells",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "TerrainPath",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              3
-            ],
-            "Name": "DungeonCells",
-            "FullTypeName": "System.Collections.Generic.List`1<DungeonCell> TerrainPath::DungeonCells",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "TerrainPath::DungeonEntrances",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "TerrainPath",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              3
-            ],
-            "Name": "DungeonEntrances",
-            "FullTypeName": "System.Collections.Generic.List`1<DungeonInfo> TerrainPath::DungeonEntrances",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "TerrainPath::DungeonRoot",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "TerrainPath",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              3
-            ],
-            "Name": "DungeonRoot",
-            "FullTypeName": "UnityEngine.GameObject TerrainPath::DungeonRoot",
             "Parameters": []
           },
           "MSILHash": ""
@@ -38477,6 +38209,160 @@
             ]
           },
           "MSILHash": "Z9QaByiEr0ortXV7eqbMM4dc+af/zMlKA5tH4SC0NqY="
+        },
+        {
+          "Name": "ServerProjectile::currentVelocity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ServerProjectile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "currentVelocity",
+            "FullTypeName": "UnityEngine.Vector3 ServerProjectile::currentVelocity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseVehicle::DoPushAction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseVehicle",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "DoPushAction",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "F2KDIC1K5KWC0V59YmX4QH4qvSJT0EdRXmOyjLFVfZ8="
+        },
+        {
+          "Name": "TerrainPath::DungeonBaseEntrances",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DungeonBaseEntrances",
+            "FullTypeName": "System.Collections.Generic.List`1<DungeonBaseInfo> TerrainPath::DungeonBaseEntrances",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::DungeonGridCells",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DungeonGridCells",
+            "FullTypeName": "System.Collections.Generic.List`1<DungeonGridCell> TerrainPath::DungeonGridCells",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::DungeonGridEntrances",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DungeonGridEntrances",
+            "FullTypeName": "System.Collections.Generic.List`1<DungeonGridInfo> TerrainPath::DungeonGridEntrances",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::Landmarks",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Landmarks",
+            "FullTypeName": "System.Collections.Generic.List`1<LandmarkInfo> TerrainPath::Landmarks",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::DungeonBaseRoot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DungeonBaseRoot",
+            "FullTypeName": "UnityEngine.GameObject TerrainPath::DungeonBaseRoot",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::DungeonGridRoot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DungeonGridRoot",
+            "FullTypeName": "UnityEngine.GameObject TerrainPath::DungeonGridRoot",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

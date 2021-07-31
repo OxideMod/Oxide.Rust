@@ -7391,7 +7391,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, this",
             "HookTypeName": "Simple",
-            "Name": "CanAdministerVending [npc]",
+            "Name": "CanAdministerVending [NPC]",
             "HookName": "CanAdministerVending",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "NPCVendingMachine",
@@ -16920,6 +16920,30 @@
             "MSILHash": "0C1+c0xi0SgtdDqbYMP3WIs4j01WlvZB/YEWL8hhpaE=",
             "BaseHookName": null,
             "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 25,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnVendingMachineRefill [NPC]",
+            "HookName": "OnVendingMachineRefill",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCVendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Refill",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "62FasNCKI0yu4MQwoJ8gaf7qrQr2l2SWXGcJxvZxIow=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
           }
         }
       ],
@@ -38911,6 +38935,25 @@
             ],
             "Name": "timeUntilAutoSurface",
             "FullTypeName": "System.Single BaseSubmarine::timeUntilAutoSurface",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCVendingMachine::refillTimes",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCVendingMachine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "refillTimes",
+            "FullTypeName": "System.Single[] NPCVendingMachine::refillTimes",
             "Parameters": []
           },
           "MSILHash": ""

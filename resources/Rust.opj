@@ -16921,6 +16921,249 @@
             "BaseHookName": null,
             "HookCategory": "Resource"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnMetabolismDamage",
+            "HookName": "OnMetabolismDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": null,
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnColdDamage",
+            "HookName": "OnColdDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnMetabolismDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 49,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnColdDamage",
+            "HookName": "OnColdDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnColdDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 80,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnColdDamage",
+            "HookName": "OnColdDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnColdDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 110,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnHeatDamage",
+            "HookName": "OnHeatDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnColdDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 140,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnOxygenDamage",
+            "HookName": "OnOxygenDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnHeatDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 170,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnBleedingDamage",
+            "HookName": "OnBleedingDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnOxygenDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 199,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnPoisonDamage",
+            "HookName": "OnPoisonDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnBleedingDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 228,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnRadiationDamage",
+            "HookName": "OnRadiationDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnPoisonDamage",
+            "HookCategory": "Metabolism"
+          }
         }
       ],
       "Modifiers": [

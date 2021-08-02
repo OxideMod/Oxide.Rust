@@ -797,7 +797,7 @@
             "InjectionIndex": 115,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player",
+            "ArgumentString": "this, a0.player, l0",
             "HookTypeName": "Simple",
             "Name": "OnSignUpdated [Signage]",
             "HookName": "OnSignUpdated",
@@ -16212,8 +16212,8 @@
               }
             ],
             "HookTypeName": "Modify",
-            "Name": "FixTryThinkNRE [patch]",
-            "HookName": "FixTryThinkNRE [patch]",
+            "Name": "FixAIBrainTryThinkNRE [patch]",
+            "HookName": "FixAIBrainTryThinkNRE [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseAnimalNPC",
             "Flagged": false,
@@ -16602,6 +16602,78 @@
           }
         },
         {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Object|op_Equality(UnityEngine.CoreModule|UnityEngine.Object,UnityEngine.CoreModule|UnityEngine.Object)"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 2
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "FixAIBrainThinkNRE [patch]",
+            "HookName": "FixAIBrainThinkNRE [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseAIBrain`1",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Think",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Single"
+              ]
+            },
+            "MSILHash": "hX3hrBGJUK0/kDV4h/tKznrG/mhPACVHpo/wrVnKYbo=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerDismountFailed",
+            "HookName": "OnPlayerDismountFailed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMountable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_WantsDismount",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Z5c8LL6Ch3aqFj1jdfqqcTrwIpcR6O21zrNfegooofo=",
+            "BaseHookName": "OnPlayerWantsDismount",
+            "HookCategory": "Player"
+          }
+        },
+        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 0,
@@ -16710,8 +16782,8 @@
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnDecayTickHeal",
-            "HookName": "OnDecayTickHeal",
+            "Name": "OnDecayHeal",
+            "HookName": "OnDecayHeal",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "DecayEntity",
             "Flagged": false,
@@ -16723,7 +16795,7 @@
             },
             "MSILHash": "BPfeNle4fC2wQVcKSAcau8OG5cXIBhVZc44cFkDPqkc=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Entity"
           }
         },
         {
@@ -16734,11 +16806,11 @@
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnDecayTickDamage",
-            "HookName": "OnDecayTickDamage",
+            "Name": "OnDecayDamage",
+            "HookName": "OnDecayDamage",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "DecayEntity",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "DecayTick",
@@ -16746,8 +16818,8 @@
               "Parameters": []
             },
             "MSILHash": "BPfeNle4fC2wQVcKSAcau8OG5cXIBhVZc44cFkDPqkc=",
-            "BaseHookName": "OnDecayTickHeal",
-            "HookCategory": null
+            "BaseHookName": "OnDecayHeal",
+            "HookCategory": "Entity"
           }
         },
         {
@@ -16771,7 +16843,7 @@
             },
             "MSILHash": "3oQJuRK8woZxc6W+Z0/iAZn5mBVPYccBw8xLu6hTRoU=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Entity"
           }
         },
         {
@@ -16795,7 +16867,302 @@
             },
             "MSILHash": "3oQJuRK8woZxc6W+Z0/iAZn5mBVPYccBw8xLu6hTRoU=",
             "BaseHookName": "OnWindUpdate",
-            "HookCategory": null
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "CanElevatorLiftMove",
+            "HookName": "CanElevatorLiftMove",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ElevatorLift",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanMove",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "KWy313sP9hY7kCOBQ7kwO19TNmVOQl7s+rlbj1hNG8Q=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnGrowableStateChange",
+            "HookName": "OnGrowableStateChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GrowableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ChangeState",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "PlantProperties/State",
+                "System.Boolean",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "0C1+c0xi0SgtdDqbYMP3WIs4j01WlvZB/YEWL8hhpaE=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnMetabolismDamage",
+            "HookName": "OnMetabolismDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": null,
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnColdDamage",
+            "HookName": "OnColdDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnMetabolismDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 49,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnColdDamage",
+            "HookName": "OnColdDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnColdDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 80,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnColdDamage",
+            "HookName": "OnColdDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnColdDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 110,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnHeatDamage",
+            "HookName": "OnHeatDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnColdDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 140,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnOxygenDamage",
+            "HookName": "OnOxygenDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnHeatDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 170,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnBleedingDamage",
+            "HookName": "OnBleedingDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnOxygenDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 199,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnPoisonDamage",
+            "HookName": "OnPoisonDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnBleedingDamage",
+            "HookCategory": "Metabolism"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 228,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnRadiationDamage",
+            "HookName": "OnRadiationDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerMetabolism",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "DoMetabolismDamage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCombatEntity",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "OOwZCjdjS6K4MXh1XTOC7dSwwBW9EdytqeXbBr/v3U0=",
+            "BaseHookName": "OnPoisonDamage",
+            "HookCategory": "Metabolism"
           }
         }
       ],
@@ -38258,6 +38625,25 @@
           "MSILHash": "5co/zcrh581n51rsTdeS2dJTFpu6BC/e7NZqwPO7ItQ="
         },
         {
+          "Name": "Drone/DroneInputState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone/DroneInputState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DroneInputState",
+            "FullTypeName": "Drone/DroneInputState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
           "Name": "BaseEntity/Query/EntityTree::BrainGrid",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseEntity/Query/EntityTree",
@@ -38313,6 +38699,27 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "FileStorage::RemoveAllByEntity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "FileStorage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "RemoveAllByEntity",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.UInt32"
+            ]
+          },
+          "MSILHash": "Z9QaByiEr0ortXV7eqbMM4dc+af/zMlKA5tH4SC0NqY="
         }
       ],
       "Fields": [

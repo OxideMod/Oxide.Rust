@@ -16921,6 +16921,32 @@
             "BaseHookName": null,
             "HookCategory": "Resource"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanBeRecycled",
+            "HookName": "CanItemBeRecycled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Recycler",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CanBeRecycled",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "Item"
+              ]
+            },
+            "MSILHash": "A5AcQ8ZT2YgZHSOXGm0sQu4Oi/3pHOVghfJaBLh65Rw=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

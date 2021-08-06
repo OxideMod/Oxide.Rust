@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "E:\\Servers\\Rust\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -21598,7 +21598,7 @@
           "Type": 2,
           "TargetExposure": [
             2,
-            0
+            2
           ],
           "Flagged": false,
           "Signature": {
@@ -38360,6 +38360,310 @@
             ],
             "Name": "DungeonGridRoot",
             "FullTypeName": "UnityEngine.GameObject TerrainPath::DungeonGridRoot",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::cachedFuelAmount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "cachedFuelAmount",
+            "FullTypeName": "System.Single BaseSubmarine::cachedFuelAmount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::depthChangeTargetSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "depthChangeTargetSpeed",
+            "FullTypeName": "System.Single BaseSubmarine::depthChangeTargetSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::engineKW",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineKW",
+            "FullTypeName": "System.Single BaseSubmarine::engineKW",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::engineStartupTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineStartupTime",
+            "FullTypeName": "System.Single BaseSubmarine::engineStartupTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::fuelSystem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "fuelSystem",
+            "FullTypeName": "EntityFuelSystem BaseSubmarine::fuelSystem",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::idleFuelPerSec",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "idleFuelPerSec",
+            "FullTypeName": "System.Single BaseSubmarine::idleFuelPerSec",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::maxDamageThisTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxDamageThisTick",
+            "FullTypeName": "System.Single BaseSubmarine::maxDamageThisTick",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::maxFireRate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxFireRate",
+            "FullTypeName": "System.Single BaseSubmarine::maxFireRate",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::maxFuelPerSec",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxFuelPerSec",
+            "FullTypeName": "System.Single BaseSubmarine::maxFuelPerSec",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::maxRudderAngle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "maxRudderAngle",
+            "FullTypeName": "System.Single BaseSubmarine::maxRudderAngle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::targetClimbSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "targetClimbSpeed",
+            "FullTypeName": "System.Single BaseSubmarine::targetClimbSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::fuelStoragePoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelStoragePoint",
+            "FullTypeName": "UnityEngine.Transform BaseSubmarine::fuelStoragePoint",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::torpedoFiringPoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "torpedoFiringPoint",
+            "FullTypeName": "UnityEngine.Transform BaseSubmarine::torpedoFiringPoint",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::torpedoStoragePoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "torpedoStoragePoint",
+            "FullTypeName": "UnityEngine.Transform BaseSubmarine::torpedoStoragePoint",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::turnPower",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "turnPower",
+            "FullTypeName": "System.Single BaseSubmarine::turnPower",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::buoyancy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "buoyancy",
+            "FullTypeName": "Buoyancy BaseSubmarine::buoyancy",
             "Parameters": []
           },
           "MSILHash": ""

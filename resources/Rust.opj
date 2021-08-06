@@ -16925,30 +16925,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 25,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnVendingMachineRefill [NPC]",
-            "HookName": "OnVendingMachineRefill",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCVendingMachine",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Refill",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "62FasNCKI0yu4MQwoJ8gaf7qrQr2l2SWXGcJxvZxIow=",
-            "BaseHookName": null,
-            "HookCategory": "Vending"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

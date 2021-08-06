@@ -38667,6 +38667,253 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::timeSinceLastUsed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceLastUsed",
+            "FullTypeName": "TimeSince BaseSubmarine::timeSinceLastUsed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::timeSinceTorpedoFired",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceTorpedoFired",
+            "FullTypeName": "TimeSince BaseSubmarine::timeSinceTorpedoFired",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::engineController",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "engineController",
+            "FullTypeName": "VehicleEngineController BaseSubmarine::engineController",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::waterSurfaceY",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "waterSurfaceY",
+            "FullTypeName": "System.Single BaseSubmarine::waterSurfaceY",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::curSubDepthY",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "curSubDepthY",
+            "FullTypeName": "System.Single BaseSubmarine::curSubDepthY",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::SubmarineDecay",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SubmarineDecay",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "7zTy0k+hQwSgjNUAtOsh0/aT4JiQHNNURMXg34Se5eM="
+        },
+        {
+          "Name": "BaseSubmarine::UpdateClients",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateClients",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "wG1kiMnYbWUR85W0R58G80sWcqZlMK84ZeKRr/gO2os="
+        },
+        {
+          "Name": "BaseSubmarine::waterLayerMask",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "waterLayerMask",
+            "FullTypeName": "System.Int32 BaseSubmarine::waterLayerMask",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::ResetInputs",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ResetInputs",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "FAJTVIp19xthQh6PvTAX0r07mqPtqrCCc/C64Q52NHg="
+        },
+        {
+          "Name": "BaseSubmarine::torpedoStorageInstance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "torpedoStorageInstance",
+            "FullTypeName": "EntityRef BaseSubmarine::torpedoStorageInstance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::torpedoStoragePrefab",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "torpedoStoragePrefab",
+            "FullTypeName": "GameObjectRef BaseSubmarine::torpedoStoragePrefab",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::parentTriggers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "parentTriggers",
+            "FullTypeName": "BaseSubmarine/ParentTriggerInfo[] BaseSubmarine::parentTriggers",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::timeUntilAutoSurface",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeUntilAutoSurface",
+            "FullTypeName": "System.Single BaseSubmarine::timeUntilAutoSurface",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

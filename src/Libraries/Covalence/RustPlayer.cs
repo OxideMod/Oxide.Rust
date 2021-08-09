@@ -14,8 +14,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
     {
         #region Initialization
 
-        internal readonly Player Player = new Player();
-
+        private static Player libPlayer;
         private static Permission libPerms;
 
         private readonly BasePlayer player;
@@ -26,6 +25,11 @@ namespace Oxide.Game.Rust.Libraries.Covalence
             if (libPerms == null)
             {
                 libPerms = Interface.Oxide.GetLibrary<Permission>();
+            }
+
+            if (libPlayer == null)
+            {
+                libPlayer = Interface.Oxide.GetLibrary<Player>();
             }
 
             steamId = id;
@@ -69,37 +73,37 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <summary>
         /// Gets the player's language
         /// </summary>
-        public CultureInfo Language => player != null ? Player.Language(player) : CultureInfo.GetCultureInfo("en");
+        public CultureInfo Language => player != null ? libPlayer.Language(player) : CultureInfo.GetCultureInfo("en");
 
         /// <summary>
         /// Gets the player's IP address
         /// </summary>
-        public string Address => player != null ? Player.Address(player) : "0.0.0.0";
+        public string Address => player != null ? libPlayer.Address(player) : "0.0.0.0";
 
         /// <summary>
         /// Gets the player's average network ping
         /// </summary>
-        public int Ping => player != null ? Player.Ping(player) : 0;
+        public int Ping => player != null ? libPlayer.Ping(player) : 0;
 
         /// <summary>
         /// Returns if the player is admin
         /// </summary>
-        public bool IsAdmin => Player.IsAdmin(steamId);
+        public bool IsAdmin => libPlayer.IsAdmin(steamId);
 
         /// <summary>
         /// Gets if the player is banned
         /// </summary>
-        public bool IsBanned => Player.IsBanned(steamId);
+        public bool IsBanned => libPlayer.IsBanned(steamId);
 
         /// <summary>
         /// Returns if the player is connected
         /// </summary>
-        public bool IsConnected => player != null ? Player.IsConnected(player) : BasePlayer.FindByID(steamId) != null;
+        public bool IsConnected => player != null ? libPlayer.IsConnected(player) : BasePlayer.FindByID(steamId) != null;
 
         /// <summary>
         /// Returns if the player is sleeping
         /// </summary>
-        public bool IsSleeping => player != null ? Player.IsSleeping(player) : BasePlayer.FindSleeping(steamId) != null;
+        public bool IsSleeping => player != null ? libPlayer.IsSleeping(player) : BasePlayer.FindSleeping(steamId) != null;
 
         /// <summary>
         /// Returns if the player is the server
@@ -115,7 +119,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// </summary>
         /// <param name="reason"></param>
         /// <param name="duration"></param>
-        public void Ban(string reason, TimeSpan duration = default) => Player.Ban(steamId, reason);
+        public void Ban(string reason, TimeSpan duration = default) => libPlayer.Ban(steamId, reason);
 
         /// <summary>
         /// Gets the amount of time remaining on the player's ban
@@ -126,7 +130,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// Heals the player's character by specified amount
         /// </summary>
         /// <param name="amount"></param>
-        public void Heal(float amount) => Player.Heal(player, amount);
+        public void Heal(float amount) => libPlayer.Heal(player, amount);
 
         /// <summary>
         /// Gets/sets the player's health
@@ -141,18 +145,18 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// Damages the player's character by specified amount
         /// </summary>
         /// <param name="amount"></param>
-        public void Hurt(float amount) => Player.Hurt(player, amount);
+        public void Hurt(float amount) => libPlayer.Hurt(player, amount);
 
         /// <summary>
         /// Kicks the player from the game
         /// </summary>
         /// <param name="reason"></param>
-        public void Kick(string reason) => Player.Kick(player, reason);
+        public void Kick(string reason) => libPlayer.Kick(player, reason);
 
         /// <summary>
         /// Causes the player's character to die
         /// </summary>
-        public void Kill() => Player.Kill(player);
+        public void Kill() => libPlayer.Kill(player);
 
         /// <summary>
         /// Gets/sets the player's maximum health
@@ -167,7 +171,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// Renames the player to specified name
         /// <param name="name"></param>
         /// </summary>
-        public void Rename(string name) => Player.Rename(player, name);
+        public void Rename(string name) => libPlayer.Rename(player, name);
 
         /// <summary>
         /// Teleports the player's character to the specified position
@@ -175,7 +179,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <param name="z"></param>
-        public void Teleport(float x, float y, float z) => Player.Teleport(player, x, y, z);
+        public void Teleport(float x, float y, float z) => libPlayer.Teleport(player, x, y, z);
 
         /// <summary>
         /// Teleports the player's character to the specified generic position
@@ -186,7 +190,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <summary>
         /// Unbans the player
         /// </summary>
-        public void Unban() => Player.Unban(steamId);
+        public void Unban() => libPlayer.Unban(steamId);
 
         #endregion Administration
 
@@ -200,7 +204,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="z"></param>
         public void Position(out float x, out float y, out float z)
         {
-            Vector3 pos = Player.Position(player);
+            Vector3 pos = libPlayer.Position(player);
             x = pos.x;
             y = pos.y;
             z = pos.z;
@@ -212,7 +216,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <returns></returns>
         public GenericPosition Position()
         {
-            Vector3 pos = Player.Position(player);
+            Vector3 pos = libPlayer.Position(player);
             return new GenericPosition(pos.x, pos.y, pos.z);
         }
 
@@ -228,7 +232,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="args"></param>
         public void Message(string message, string prefix, params object[] args)
         {
-            Player.Message(player, message, prefix, 0, args);
+            libPlayer.Message(player, message, prefix, 0, args);
         }
 
         /// <summary>

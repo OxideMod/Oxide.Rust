@@ -14,7 +14,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
     {
         #region Initialization
 
-        internal readonly Player Player = new Player();
+        internal readonly Player Player = Interface.Oxide.GetLibrary<Player>();
 
         private static Permission libPerms;
 

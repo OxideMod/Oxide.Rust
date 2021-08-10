@@ -15430,8 +15430,8 @@
           "Hook": {
             "InjectionIndex": 8,
             "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner",
             "HookTypeName": "Simple",
             "Name": "OnEngineStop",
             "HookName": "OnEngineStop",

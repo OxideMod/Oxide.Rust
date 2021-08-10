@@ -15478,10 +15478,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 31,
+            "InjectionIndex": 32,
             "ReturnBehavior": 0,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner",
             "HookTypeName": "Simple",
             "Name": "OnEngineStopped",
             "HookName": "OnEngineStopped",

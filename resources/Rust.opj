@@ -38996,6 +38996,101 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "DungeonBaseInfo::Floors",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DungeonBaseInfo",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Floors",
+            "FullTypeName": "System.Collections.Generic.List`1<DungeonBaseFloor> DungeonBaseInfo::Floors",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DungeonBaseInfo::Links",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DungeonBaseInfo",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Links",
+            "FullTypeName": "System.Collections.Generic.List`1<UnityEngine.GameObject> DungeonBaseInfo::Links",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DungeonBaseLink::Dungeon",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DungeonBaseLink",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Dungeon",
+            "FullTypeName": "DungeonBaseInfo DungeonBaseLink::Dungeon",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DungeonBaseLink::sockets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DungeonBaseLink",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "sockets",
+            "FullTypeName": "System.Collections.Generic.List`1<DungeonBaseSocket> DungeonBaseLink::sockets",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DungeonBaseLink::volumes",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DungeonBaseLink",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "volumes",
+            "FullTypeName": "System.Collections.Generic.List`1<DungeonVolume> DungeonBaseLink::volumes",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -17022,6 +17022,33 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityPickedUp",
+            "HookName": "OnEntityPickedUp",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseCombatEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnPickedUp",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

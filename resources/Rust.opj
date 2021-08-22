@@ -7099,30 +7099,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 70,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l8, l2",
-            "HookTypeName": "Simple",
-            "Name": "OnBigWheelLoss",
-            "HookName": "OnBigWheelLoss",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BigWheelGame",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Payout",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "6OtAzaKfUMiE57Pp/HCOOk0AH/e+qJlMxs37d+DEyB0=",
-            "BaseHookName": "OnBigWheelWin",
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 40,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 1,
@@ -16946,6 +16922,65 @@
             "MSILHash": "A5AcQ8ZT2YgZHSOXGm0sQu4Oi/3pHOVghfJaBLh65Rw=",
             "BaseHookName": null,
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 70,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnBigWheelLoss"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 8
+              },
+              {
+                "OpCode": "ldloc_2",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 70
+              },
+              {
+                "OpCode": "br_s",
+                "OpType": "Instruction",
+                "Operand": 64
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnBigWheelLoss",
+            "HookName": "OnBigWheelLoss",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BigWheelGame",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Payout",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "6OtAzaKfUMiE57Pp/HCOOk0AH/e+qJlMxs37d+DEyB0=",
+            "BaseHookName": "OnBigWheelWin",
+            "HookCategory": "Resource"
           }
         }
       ],

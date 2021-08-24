@@ -17022,6 +17022,108 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 484,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, this, l13 => l13",
+            "HookTypeName": "Simple",
+            "Name": "OnFishCaught",
+            "HookName": "OnFishCaught",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFishingRod",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CatchProcess",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "oc0ErwKgd9YVHR4gN+gl19lfZGu1kbNmvzJam7+9dys=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, this, l2",
+            "HookTypeName": "Simple",
+            "Name": "CanCastFishingRod",
+            "HookName": "CanCastFishingRod",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFishingRod",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Server_RequestCast",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "2LifCXymQzrEYRqVTPuaJWTnQoTgy6UuSJHI+2zJvkk=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 193,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, this, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnFishingRodCast",
+            "HookName": "OnFishingRodCast",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFishingRod",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Server_RequestCast",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "2LifCXymQzrEYRqVTPuaJWTnQoTgy6UuSJHI+2zJvkk=",
+            "BaseHookName": "CanCastFishingRod",
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, p0",
+            "HookTypeName": "Simple",
+            "Name": "CanWildlifeTrap",
+            "HookName": "CanWildlifeTrap",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WildlifeTrap",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TrapWildlife",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "TrappableWildlife"
+              ]
+            },
+            "MSILHash": "t2h/F+M6gerJ6NzJ5NJBQfQb2QT2KvL+z2nVSpmWWoc=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

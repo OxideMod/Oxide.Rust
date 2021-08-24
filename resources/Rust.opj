@@ -17049,6 +17049,32 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 60,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "p0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnFishingInterrupted",
+            "HookName": "OnFishingInterrupted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFishingRod",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Server_Cancel",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseFishingRod/FailReason"
+              ]
+            },
+            "MSILHash": "YmhFeZPLIqcmILS5BIlR+GJyq6rVcZguwHyIcQUUqWA=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

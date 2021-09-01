@@ -39080,6 +39080,27 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::GoToCrawling",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GoToCrawling",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "HitInfo"
+            ]
+          },
+          "MSILHash": "zuUZtzGrQG51LD/b+AAEibaDYPUXaQXAH7+SOmSJttk="
         }
       ],
       "Fields": [

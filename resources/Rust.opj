@@ -17094,6 +17094,283 @@
             "BaseHookName": "CanUseHelicopter",
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnWildlifeTrap",
+            "HookName": "OnWildlifeTrap",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WildlifeTrap",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TrapWildlife",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "TrappableWildlife"
+              ]
+            },
+            "MSILHash": "t2h/F+M6gerJ6NzJ5NJBQfQb2QT2KvL+z2nVSpmWWoc=",
+            "BaseHookName": null,
+            "HookCategory": "Fishing"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 60,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnFishingStopped",
+            "HookName": "OnFishingStopped",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFishingRod",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Server_Cancel",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseFishingRod/FailReason"
+              ]
+            },
+            "MSILHash": "YmhFeZPLIqcmILS5BIlR+GJyq6rVcZguwHyIcQUUqWA=",
+            "BaseHookName": null,
+            "HookCategory": "Fishing"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 28,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "CanCastFishingRod"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "stloc",
+                "OpType": "VariableIndex",
+                "Operand": "7"
+              },
+              {
+                "OpCode": "ldloc",
+                "OpType": "VariableIndex",
+                "Operand": "7"
+              },
+              {
+                "OpCode": "isinst",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Boolean"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 28
+              },
+              {
+                "OpCode": "ldloc",
+                "OpType": "VariableIndex",
+                "Operand": "7"
+              },
+              {
+                "OpCode": "unbox_any",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Boolean"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 28
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanCastFishingRod",
+            "HookName": "CanCastFishingRod",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFishingRod",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Server_RequestCast",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "XLRgAS3RdQN/Nd3iaBndgpPPtM5u02eIr+b8AUwGBTg=",
+            "BaseHookName": null,
+            "HookCategory": "Fishing"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 491,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "CanCatchFish"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc",
+                "OpType": "Variable",
+                "Operand": 13
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "stloc",
+                "OpType": "VariableIndex",
+                "Operand": "14"
+              },
+              {
+                "OpCode": "ldloc",
+                "OpType": "VariableIndex",
+                "Operand": "14"
+              },
+              {
+                "OpCode": "isinst",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Boolean"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 491
+              },
+              {
+                "OpCode": "ldloc",
+                "OpType": "VariableIndex",
+                "Operand": "14"
+              },
+              {
+                "OpCode": "unbox_any",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Boolean"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 491
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanCatchFish",
+            "HookName": "CanCatchFish",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFishingRod",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CatchProcessBudgeted",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "RMHkBgQyqgDaV8BA1spXY6UQ5HicUCrK1o8KI+FAIOQ=",
+            "BaseHookName": null,
+            "HookCategory": "Fishing"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 205,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnFishingRodCast",
+            "HookName": "OnFishingRodCast",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFishingRod",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Server_RequestCast",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "XLRgAS3RdQN/Nd3iaBndgpPPtM5u02eIr+b8AUwGBTg=",
+            "BaseHookName": "CanCastFishingRod",
+            "HookCategory": "Fishing"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 549,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l13, this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnFishCaught",
+            "HookName": "OnFishCaught",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFishingRod",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CatchProcessBudgeted",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "RMHkBgQyqgDaV8BA1spXY6UQ5HicUCrK1o8KI+FAIOQ=",
+            "BaseHookName": "CanCatchFish",
+            "HookCategory": "Fishing"
+          }
         }
       ],
       "Modifiers": [

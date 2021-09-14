@@ -39101,6 +39101,25 @@
             ]
           },
           "MSILHash": "zuUZtzGrQG51LD/b+AAEibaDYPUXaQXAH7+SOmSJttk="
+        },
+        {
+          "Name": "ServerMgr::restartCoroutine",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ServerMgr",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "restartCoroutine",
+            "FullTypeName": "System.Collections.IEnumerator ServerMgr::restartCoroutine",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

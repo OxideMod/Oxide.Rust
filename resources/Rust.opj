@@ -17049,6 +17049,60 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 0,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnServerRestartInterrupt",
+            "HookName": "OnServerRestartInterrupt",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RestartServer",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "xQqd1l4OdCgri/SH1AMaVoJ9sdDpgZOV/BXRbc/g9Gs=",
+            "BaseHookName": null,
+            "HookCategory": "Server"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 38,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0,a1",
+            "HookTypeName": "Simple",
+            "Name": "OnServerRestart",
+            "HookName": "OnServerRestart",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RestartServer",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "xQqd1l4OdCgri/SH1AMaVoJ9sdDpgZOV/BXRbc/g9Gs=",
+            "BaseHookName": "OnServerRestartInterrupt",
+            "HookCategory": "Server"
+          }
         }
       ],
       "Modifiers": [

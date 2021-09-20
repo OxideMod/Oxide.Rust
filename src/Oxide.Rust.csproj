@@ -20,6 +20,7 @@
     <GameExe>RustDedicated.exe;RustDedicated</GameExe>
     <ManagedDir>RustDedicated_Data/Managed</ManagedDir>
     <NoWarn>NU1701</NoWarn>
+    <GitBranch></GitBranch>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Oxide.References" Version="2.0.*" />
@@ -56,6 +57,17 @@
   <ItemGroup>
     <PatchedFiles Include="$(TargetDir)\Assembly-CSharp.dll; $(TargetDir)\Facepunch.Console.dll; $(TargetDir)\Facepunch.Network.dll; $(TargetDir)\Facepunch.Rcon.dll; $(TargetDir)\Facepunch.UnityEngine.dll; $(TargetDir)\NewAssembly.dll" />
   </ItemGroup>
+  <Target Name="AddGitBranchMeta" BeforeTargets="CoreGenerateAssemblyInfo">
+    <Exec Command="git rev-parse --abbrev-ref HEAD" WorkingDirectory="$(MSBuildProjectDirectory)" ConsoleToMSBuild="True">
+      <Output TaskParameter="ConsoleOutput" PropertyName="GitBranch"/>
+    </Exec>
+    <ItemGroup>
+      <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute" Condition="$(GitBranch) != ''">
+        <_Parameter1>GitBranch</_Parameter1>
+        <_Parameter2>$(GitBranch)</_Parameter2>
+      </AssemblyAttribute>
+    </ItemGroup>
+  </Target>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Import Project="..\Game.targets" />
 </Project>

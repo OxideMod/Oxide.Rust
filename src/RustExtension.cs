@@ -2,6 +2,7 @@ using Oxide.Core;
 using Oxide.Core.Extensions;
 using Oxide.Plugins;
 using System;
+using System.Linq;
 using System.Reflection;
 
 namespace Oxide.Game.Rust
@@ -15,6 +16,10 @@ namespace Oxide.Game.Rust
         internal static AssemblyName AssemblyName = Assembly.GetName();
         internal static VersionNumber AssemblyVersion = new VersionNumber(AssemblyName.Version.Major, AssemblyName.Version.Minor, AssemblyName.Version.Build);
         internal static string AssemblyAuthors = ((AssemblyCompanyAttribute)Attribute.GetCustomAttribute(Assembly, typeof(AssemblyCompanyAttribute), false)).Company;
+        internal static string AssemblyBranch =
+            Attribute.GetCustomAttributes(Assembly, typeof(AssemblyMetadataAttribute))
+                .Cast<AssemblyMetadataAttribute>()
+                .Single(attr => attr.Key == "GitBranch").Value;
 
         /// <summary>
         /// Gets whether this extension is for a specific game
@@ -39,7 +44,7 @@ namespace Oxide.Game.Rust
         /// <summary>
         /// Gets the branch of this extension
         /// </summary>
-        public override string Branch => "public"; // TODO: Handle this programmatically
+        public override string Branch => AssemblyBranch;
 
         /// <summary>
         /// Default game-specific references for use in plugins

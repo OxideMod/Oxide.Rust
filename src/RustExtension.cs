@@ -3,7 +3,9 @@ using Oxide.Core.Extensions;
 using Oxide.Plugins;
 using System;
 using System.Linq;
+using System.Net;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace Oxide.Game.Rust
 {
@@ -12,6 +14,7 @@ namespace Oxide.Game.Rust
     /// </summary>
     public class RustExtension : Extension
     {
+        private const string OxideRustReleaseListUrl = "https://api.github.com/repos/OxideMod/Oxide.Rust/releases";
         internal static Assembly Assembly = Assembly.GetExecutingAssembly();
         internal static AssemblyName AssemblyName = Assembly.GetName();
         internal static VersionNumber AssemblyVersion = new VersionNumber(AssemblyName.Version.Major, AssemblyName.Version.Minor, AssemblyName.Version.Build);
@@ -20,6 +23,9 @@ namespace Oxide.Game.Rust
             Attribute.GetCustomAttributes(Assembly, typeof(AssemblyMetadataAttribute))
                 .Cast<AssemblyMetadataAttribute>()
                 .Single(attr => attr.Key == "GitBranch").Value;
+
+        private static readonly WebClient WebClient = new WebClient();
+        private static VersionNumber LatestExtVersion = AssemblyVersion;
 
         /// <summary>
         /// Gets whether this extension is for a specific game
@@ -126,6 +132,8 @@ namespace Oxide.Game.Rust
             {
                 Cleanup.Add("Facepunch.Steamworks.Win64.dll"); // TODO: Remove after a few updates
             }
+
+            WebClient.Headers["User-Agent"] = $"Oxide.Rust {Version}";
         }
 
         /// <summary>
@@ -142,6 +150,72 @@ namespace Oxide.Game.Rust
         public override void OnModLoad()
         {
             CSharpPluginLoader.PluginReferences.UnionWith(DefaultReferences);
+        }
+
+        /// <summary>
+        /// Gets latest official Oxide.Rust build version
+        /// </summary>
+        /// <param name="callback">Callback to execute.<br/>
+        /// First argument is the version (latest, if request was successful, current otherwise)<br/>
+        /// Second argument is the exception indicating fail reason. Null if request was successful.
+        /// </param>
+        public void GetLatestVersion(Action<VersionNumber, Exception> callback)
+        {
+            if (callback == null)
+            {
+                throw new ArgumentNullException(nameof(callback), "Callback cannot be null");
+            }
+
+            if (LatestExtVersion > AssemblyVersion)
+            {
+                callback(LatestExtVersion, null);
+            }
+            else
+            {
+                GetLatestExtensionVersion().ContinueWith(
+                    task => {
+                        if (task.Exception == null)
+                        {
+                            LatestExtVersion = task.Result;
+                        }
+
+                        callback(LatestExtVersion, task.Exception?.InnerException);
+                    }
+                );
+            }
+        }
+
+        private async Task<VersionNumber> GetLatestExtensionVersion()
+        {
+            string json = await WebClient.DownloadStringTaskAsync(OxideRustReleaseListUrl);
+            if (string.IsNullOrWhiteSpace(json))
+            {
+                throw new Exception("Could not retrieve latest Oxide.Rust version from GitHub API");
+            }
+
+            JSON.Array releaseArray = JSON.Array.Parse(json);
+            JSON.Object latest = releaseArray[0].Obj;
+
+            string tag = latest.GetString("tag_name");
+
+            if (string.IsNullOrWhiteSpace(tag))
+            {
+                throw new Exception("Tag name is undefined");
+            }
+
+            VersionNumber tagVersion = ParseVersionNumber(tag);
+
+            return tagVersion;
+        }
+
+        private VersionNumber ParseVersionNumber(string versionString) // definitely needs a unification inside the VersionNumber itself
+        {
+            string[] array = versionString.Split(new char[] { '.' }, StringSplitOptions.RemoveEmptyEntries);
+            int major = int.Parse(array[0]);
+            int minor = int.Parse(array[1]);
+            int patch = int.Parse(array[2]);
+
+            return new VersionNumber(major, minor, patch);
         }
     }
 }

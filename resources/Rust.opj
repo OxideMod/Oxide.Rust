@@ -39165,6 +39165,27 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "RecorderTool::cachedCassette",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RecorderTool",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "cachedCassette",
+            "FullTypeName": "Cassette RecorderTool::cachedCassette()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

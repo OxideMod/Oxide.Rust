@@ -39443,46 +39443,6 @@
       "Hooks": [],
       "Modifiers": [
         {
-          "Name": "AssetBundleBackend::files",
-          "AssemblyName": "NewAssembly.dll",
-          "TypeName": "AssetBundleBackend",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "files",
-            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.AssetBundle> AssetBundleBackend::files",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "AssetBundleBackend::bundles",
-          "AssemblyName": "NewAssembly.dll",
-          "TypeName": "AssetBundleBackend",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "bundles",
-            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.AssetBundle> AssetBundleBackend::bundles",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "FileSystemBackend::cache",
           "AssemblyName": "NewAssembly.dll",
           "TypeName": "FileSystemBackend",
@@ -39501,65 +39461,6 @@
             "Parameters": []
           },
           "MSILHash": ""
-        },
-        {
-          "Name": "AssetBundleBackend::rootBundle",
-          "AssemblyName": "NewAssembly.dll",
-          "TypeName": "AssetBundleBackend",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "rootBundle",
-            "FullTypeName": "UnityEngine.AssetBundle AssetBundleBackend::rootBundle",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "AssetBundleBackend::manifest",
-          "AssemblyName": "NewAssembly.dll",
-          "TypeName": "AssetBundleBackend",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "manifest",
-            "FullTypeName": "UnityEngine.AssetBundleManifest AssetBundleBackend::manifest",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "AssetBundleBackend::LoadBundle",
-          "AssemblyName": "NewAssembly.dll",
-          "TypeName": "AssetBundleBackend",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "LoadBundle",
-            "FullTypeName": "UnityEngine.AssetBundle",
-            "Parameters": [
-              "System.String"
-            ]
-          },
-          "MSILHash": "WUbQuoaA14BZ5c3CXj6INVSx2B7Cp5h8bXXtCK1DE9o="
         },
         {
           "Name": "AssetBundleBackend::LoadBundleAsync",

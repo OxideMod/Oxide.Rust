@@ -17169,9 +17169,14 @@
                 "Operand": null
               },
               {
+                "OpCode": "ldloc_2",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
               },
               {
                 "OpCode": "stloc",
@@ -17325,10 +17330,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 205,
+            "InjectionIndex": 206,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l1",
+            "ArgumentString": "this, l1, l2",
             "HookTypeName": "Simple",
             "Name": "OnFishingRodCast",
             "HookName": "OnFishingRodCast",

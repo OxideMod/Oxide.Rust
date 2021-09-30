@@ -17376,6 +17376,32 @@
             "BaseHookName": "CanCatchFish",
             "HookCategory": "Fishing"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 9,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnNpcTarget [HumanNPCNew]",
+            "HookName": "OnNpcTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HumanNPCNew",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanSeeTarget",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BaseEntity"
+              ]
+            },
+            "MSILHash": "7ebMrz5YMSuP4DenWVC9p1/IFwQxM6JMPGOqZUPej3A=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

@@ -17560,6 +17560,63 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 6,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, this",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerDrink",
+            "HookName": "OnPlayerDrink",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "LiquidContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SVDrink",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "awvHTTy/txvu29esHu0Fd0+exc8Ljt4+deYHaaYvTvw=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 241,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l13, a5, this, a3",
+            "HookTypeName": "Simple",
+            "Name": "CanPurchaseItem",
+            "HookName": "CanPurchaseItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoTransaction",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.Int32",
+                "System.Int32",
+                "ItemContainer",
+                "System.Action`2<BasePlayer,Item>",
+                "System.Action`2<BasePlayer,Item>"
+              ]
+            },
+            "MSILHash": "/LXFSxBjpaeeQVDLxJy3hdlZDxeQaJexRBFBsC4lekA=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 29,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,

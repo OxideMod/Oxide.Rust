@@ -17402,6 +17402,103 @@
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 241,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "CanItemPurchased"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 13
+              },
+              {
+                "OpCode": "ldarg_s",
+                "OpType": "Parameter",
+                "Operand": 3
+              },
+              {
+                "OpCode": "ldarg_s",
+                "OpType": "Parameter",
+                "Operand": 5
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 271
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanItemPurchased",
+            "HookName": "CanItemPurchased",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoTransaction",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.Int32",
+                "System.Int32",
+                "ItemContainer",
+                "System.Action`2<BasePlayer,Item>",
+                "System.Action`2<BasePlayer,Item>"
+              ]
+            },
+            "MSILHash": "/LXFSxBjpaeeQVDLxJy3hdlZDxeQaJexRBFBsC4lekA=",
+            "BaseHookName": null,
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 6,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerDrink",
+            "HookName": "OnPlayerDrink",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "LiquidContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SVDrink",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "awvHTTy/txvu29esHu0Fd0+exc8Ljt4+deYHaaYvTvw=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

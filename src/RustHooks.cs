@@ -397,8 +397,7 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnPlayerCommand")]
         private void IOnPlayerCommand(BasePlayer basePlayer, string message)
         {
-            // Check if using Rust+ app
-            if (basePlayer == null || !basePlayer.IsConnected)
+            if (basePlayer == null)
             {
                 return;
             }
@@ -415,6 +414,14 @@ namespace Oxide.Game.Rust
             ParseCommand(str.TrimStart('/'), out string cmd, out string[] args);
             if (cmd == null)
             {
+                return;
+            }
+
+            // Check if using Rust+ app
+            if (!basePlayer.IsConnected)
+            {
+                Interface.CallHook("OnApplicationCommand", basePlayer, cmd, args);
+                Interface.CallHook("OnUserApplicationCommand", basePlayer.IPlayer, cmd, args);
                 return;
             }
 

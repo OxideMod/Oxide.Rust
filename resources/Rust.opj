@@ -17328,30 +17328,6 @@
           }
         },
         {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 549,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "l13, this, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnFishCaught",
-            "HookName": "OnFishCaught",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseFishingRod",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "CatchProcessBudgeted",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "RMHkBgQyqgDaV8BA1spXY6UQ5HicUCrK1o8KI+FAIOQ=",
-            "BaseHookName": "CanCatchFish",
-            "HookCategory": "Fishing"
-          }
-        },
-        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 9,
@@ -17436,6 +17412,149 @@
             "MSILHash": "lBigoe6HPdWgmUywXNLHnTU0YUAEpRcaWB3RJPKVstU=",
             "BaseHookName": null,
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 504,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnFishCatch"
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 13
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "stloc_s",
+                "OpType": "VariableIndex",
+                "Operand": "15"
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "VariableIndex",
+                "Operand": "15"
+              },
+              {
+                "OpCode": "isinst",
+                "OpType": "Type",
+                "Operand": "Assembly-CSharp|Item"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 504
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "VariableIndex",
+                "Operand": "15"
+              },
+              {
+                "OpCode": "isinst",
+                "OpType": "Type",
+                "Operand": "Assembly-CSharp|Item"
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 13
+              },
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 504
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 13
+              },
+              {
+                "OpCode": "ldc_r4",
+                "OpType": "Single",
+                "Operand": "0"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|Item|Remove(System.Single)"
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "VariableIndex",
+                "Operand": "15"
+              },
+              {
+                "OpCode": "castclass",
+                "OpType": "Type",
+                "Operand": "Assembly-CSharp|Item"
+              },
+              {
+                "OpCode": "stloc_s",
+                "OpType": "Variable",
+                "Operand": 13
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnFishCatch",
+            "HookName": "OnFishCatch",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFishingRod",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CatchProcessBudgeted",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "RMHkBgQyqgDaV8BA1spXY6UQ5HicUCrK1o8KI+FAIOQ=",
+            "BaseHookName": "CanCatchFish",
+            "HookCategory": "Fishing"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 568,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.currentFishTarget, this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnFishCaught",
+            "HookName": "OnFishCaught",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFishingRod",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CatchProcessBudgeted",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "RMHkBgQyqgDaV8BA1spXY6UQ5HicUCrK1o8KI+FAIOQ=",
+            "BaseHookName": "OnFishCatch",
+            "HookCategory": "Fishing"
           }
         }
       ],

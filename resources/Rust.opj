@@ -39510,6 +39510,143 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "SupplyDrop::CheckNightLight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SupplyDrop",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CheckNightLight",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "gI7LHC4N7dRo6qPtu/TClK1n4OhuTcKePX0sGdDg8Ic="
+        },
+        {
+          "Name": "SupplyDrop::FlagNightLight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SupplyDrop",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FlagNightLight",
+            "FullTypeName": "BaseEntity/Flags SupplyDrop::FlagNightLight",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "StorageMonitor::_onContainerChangedHandler",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "StorageMonitor",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_onContainerChangedHandler",
+            "FullTypeName": "System.Action`2<Item,System.Boolean> StorageMonitor::_onContainerChangedHandler",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "StorageMonitor::OnContainerChanged",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "StorageMonitor",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnContainerChanged",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Item",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "RLUKJszybaEXVHh8wdYU2SPbvZLe13mf2sApeKjRPO0="
+        },
+        {
+          "Name": "VehicleModuleCamper::activeStorage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleModuleCamper",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "activeStorage",
+            "FullTypeName": "EntityRef`1<StorageContainer> VehicleModuleCamper::activeStorage",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleModuleCamper::activeLocker",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleModuleCamper",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "activeLocker",
+            "FullTypeName": "EntityRef`1<Locker> VehicleModuleCamper::activeLocker",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleModuleCamper::activeBbq",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleModuleCamper",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "activeBbq",
+            "FullTypeName": "EntityRef`1<BaseOven> VehicleModuleCamper::activeBbq",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

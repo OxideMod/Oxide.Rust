@@ -17640,6 +17640,32 @@
             "BaseHookName": null,
             "HookCategory": "Vending"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 20,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, this, l0",
+            "HookTypeName": "Simple",
+            "Name": "CanAssignTurret",
+            "HookName": "CanAssignTurret",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AssignToFriend",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "PV4p+3QUqkkPThJEQ9mwTnPLJYbT/ZLJvWwk9q3lVPE=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

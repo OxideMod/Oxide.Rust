@@ -17738,6 +17738,170 @@
             "BaseHookName": "OnTurretAssign",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 19,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnMissionFailed",
+            "HookName": "OnMissionFailed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMission",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MissionFailed",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseMission/MissionInstance",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "BMIBU9IQoIeGDW4ft3QuRKPQtYG4pdZhkSNs3ww5YkM=",
+            "BaseHookName": null,
+            "HookCategory": "Missions"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnMissionSucceeded",
+            "HookName": "OnMissionSucceeded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMission",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MissionSuccess",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseMission/MissionInstance",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "x5FGpTL4A0YPQKnnvwP8Lu2x/Ye4i1Qni54aDEiRSds=",
+            "BaseHookName": null,
+            "HookCategory": "Missions"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnMissionStart",
+            "HookName": "OnMissionStart",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMission",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MissionStart",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseMission/MissionInstance",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "WHznIULkMP9M6HYbtRr/aRvLdwo8FLWhx5XkkZJbXew=",
+            "BaseHookName": null,
+            "HookCategory": "Missions"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a2, a1",
+            "HookTypeName": "Simple",
+            "Name": "CanAssignMission",
+            "HookName": "CanAssignMission",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMission",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AssignMission",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "IMissionProvider",
+                "BaseMission"
+              ]
+            },
+            "MSILHash": "zG2/L0pEMLk0H3LWskcX8mp74WM0wRLgwXZRmA/bZGo=",
+            "BaseHookName": null,
+            "HookCategory": "Missions"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 85,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a2, a1, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnMissionAssigned",
+            "HookName": "OnMissionAssigned",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMission",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AssignMission",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "IMissionProvider",
+                "BaseMission"
+              ]
+            },
+            "MSILHash": "zG2/L0pEMLk0H3LWskcX8mp74WM0wRLgwXZRmA/bZGo=",
+            "BaseHookName": "CanAssignMission",
+            "HookCategory": "Missions"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 117,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnMissionStarted",
+            "HookName": "OnMissionStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMission",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MissionStart",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseMission/MissionInstance",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "WHznIULkMP9M6HYbtRr/aRvLdwo8FLWhx5XkkZJbXew=",
+            "BaseHookName": "OnMissionStart",
+            "HookCategory": "Missions"
+          }
         }
       ],
       "Modifiers": [

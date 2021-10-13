@@ -17595,7 +17595,7 @@
             "HookName": "CanPurchaseItem",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "VendingMachine",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "DoTransaction",
@@ -17611,7 +17611,7 @@
             },
             "MSILHash": "/LXFSxBjpaeeQVDLxJy3hdlZDxeQaJexRBFBsC4lekA=",
             "BaseHookName": null,
-            "HookCategory": "Player"
+            "HookCategory": "Vending"
           }
         },
         {

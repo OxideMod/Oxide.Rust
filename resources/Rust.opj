@@ -17586,7 +17586,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 241,
+            "InjectionIndex": 257,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, l13, a5, this, a3",
@@ -17595,7 +17595,7 @@
             "HookName": "CanPurchaseItem",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "VendingMachine",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "DoTransaction",
@@ -17610,7 +17610,7 @@
               ]
             },
             "MSILHash": "/LXFSxBjpaeeQVDLxJy3hdlZDxeQaJexRBFBsC4lekA=",
-            "BaseHookName": null,
+            "BaseHookName": "OnVendingTransaction",
             "HookCategory": "Vending"
           }
         },

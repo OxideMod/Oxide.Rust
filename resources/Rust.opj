@@ -39910,6 +39910,25 @@
             ]
           },
           "MSILHash": "4W5DduKD+57rx+K6v5MixEts2Q64dAw20fSNsjjS/mM="
+        },
+        {
+          "Name": "ItemBasedFlowRestrictor::inventory",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ItemBasedFlowRestrictor",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "inventory",
+            "FullTypeName": "ItemContainer ItemBasedFlowRestrictor::inventory",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

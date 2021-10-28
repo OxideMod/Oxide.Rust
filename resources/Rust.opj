@@ -558,7 +558,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 1676,
+            "InjectionIndex": 1692,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -576,7 +576,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "My9vBjfLppBC/3Y5uZdPgiDOAF5I7OQzxPJP4CLE7YY=",
+            "MSILHash": "R8QGyjkBeRCcyOL6yutRjulLoiRvsBwfzr/MBih9HSA=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "mwZA0Yyvu7xj7WgB23JWf9x5dWj5deRtVaYYGj/3dHM=",
+            "MSILHash": "gBFJrihIG6fLRIYIOktvHco/z0XLYcvkXPKkpkvTjxo=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1121,7 +1121,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "HUYvOdZ+BYLQBrvpzafPfoESkUzySqU5/eL8fT/mWno=",
+            "MSILHash": "4isyGHiFAHDSVKV9bNI15drJJrJuB13mDkUn5Lsr3QI=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -1907,7 +1907,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "h+0LIL/H92vf7pAhAMKkk1UzSE+BsOrlVmd7TZvFeF8=",
+            "MSILHash": "wi+l7fT1IqDVDuV+Z44UF2mOWer5/aYlhvhmmXJan70=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -2362,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "l49NvkfRs8I18UE170nYZdH2r6caH+Hk3AKkyWDcfXo=",
+            "MSILHash": "4/1r8JE4KWTb5auH+Gh9K6m2K3g0QtAa2mishl3PJdA=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2665,7 +2665,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "HUYvOdZ+BYLQBrvpzafPfoESkUzySqU5/eL8fT/mWno=",
+            "MSILHash": "4isyGHiFAHDSVKV9bNI15drJJrJuB13mDkUn5Lsr3QI=",
             "BaseHookName": "OnHealingItemUse",
             "HookCategory": "Player"
           }
@@ -5389,7 +5389,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "HUYvOdZ+BYLQBrvpzafPfoESkUzySqU5/eL8fT/mWno=",
+            "MSILHash": "4isyGHiFAHDSVKV9bNI15drJJrJuB13mDkUn5Lsr3QI=",
             "BaseHookName": "OnPlayerRevive",
             "HookCategory": "_Patches"
           }
@@ -6878,12 +6878,12 @@
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 270,
-            "RemoveCount": 17,
+            "RemoveCount": 8,
             "Instructions": [
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 411
+                "Operand": 415
               }
             ],
             "HookTypeName": "Modify",
@@ -6901,7 +6901,7 @@
                 "UnityEngine.Transform"
               ]
             },
-            "MSILHash": "SECj+BdE1zkB7rmWNrijsjTiFpt8FRGItlK57T3VLaM=",
+            "MSILHash": "dQyYSdw5vT36Ug0Yc1Uvn/6eofzte4yM6pSdeXrdLRY=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -7164,7 +7164,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "KZwOyQvEsqAi8c3rbN4bXHZQtNRrsS4O/fyFGXOMzeo=",
+            "MSILHash": "GYNry1vapKK2X5wHKVmPJr96R490lW/IzUKM3Kb2lDY=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8399,7 +8399,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "hDo9tNa5te0ovF6mj2sWd9r+earvbhrgtASdtBKmKoQ=",
+            "MSILHash": "94H56dWqqS2ib5q1jM94YrQOFP3xleLv6/3JkLDCAas=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8423,7 +8423,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "hDo9tNa5te0ovF6mj2sWd9r+earvbhrgtASdtBKmKoQ=",
+            "MSILHash": "94H56dWqqS2ib5q1jM94YrQOFP3xleLv6/3JkLDCAas=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -11223,7 +11223,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "niij0S7GRh4fbhGOo4YOF5mz3r7vSzPXGhMCCiob65Y=",
+            "MSILHash": "GqXNUfjLzCqjsnAimJsMdKAV5/F1Iy7BT0kVu4gZM9s=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -11231,7 +11231,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 137,
+            "InjectionIndex": 200,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this",
@@ -11247,7 +11247,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "niij0S7GRh4fbhGOo4YOF5mz3r7vSzPXGhMCCiob65Y=",
+            "MSILHash": "GqXNUfjLzCqjsnAimJsMdKAV5/F1Iy7BT0kVu4gZM9s=",
             "BaseHookName": "OnDefaultItemsReceive",
             "HookCategory": "Player"
           }
@@ -17871,7 +17871,7 @@
           "Flagged": false,
           "Signature": {
             "Exposure": [
-              0
+              1
             ],
             "Name": "_health",
             "FullTypeName": "System.Single BaseCombatEntity::_health",
@@ -17890,7 +17890,7 @@
           "Flagged": false,
           "Signature": {
             "Exposure": [
-              0
+              1
             ],
             "Name": "_maxHealth",
             "FullTypeName": "System.Single BaseCombatEntity::_maxHealth",
@@ -27389,7 +27389,7 @@
           "Flagged": false,
           "Signature": {
             "Exposure": [
-              0
+              1
             ],
             "Name": "currentProductionItem",
             "FullTypeName": "ItemDefinition MixingTable::currentProductionItem",
@@ -37481,7 +37481,7 @@
           "Flagged": false,
           "Signature": {
             "Exposure": [
-              0
+              1
             ],
             "Name": "SwitchToState",
             "FullTypeName": "System.Boolean",

@@ -16268,7 +16268,7 @@
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnWaterCollect",
+            "Name": "OnWaterCollect [WaterCatcher]",
             "HookName": "OnWaterCollect",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WaterCatcher",
@@ -17927,6 +17927,30 @@
             "MSILHash": "bLiVE2ghP/zaN5LJ3Wb86gFgp2NNiCFPMfOTdU7Uljo=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 13,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnWaterCollect [WaterPump]",
+            "HookName": "OnWaterCollect",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WaterPump",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CreateWater",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "yxFUgrdQkZcW07kztoJjoxTwtQALiWhTHBN0i3IvO7Q=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
           }
         }
       ],

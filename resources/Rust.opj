@@ -39870,6 +39870,46 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::isRetiring",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "isRetiring",
+            "FullTypeName": "System.Boolean PatrolHelicopterAI::isRetiring",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingBlock::RefreshNeighbours",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RefreshNeighbours",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "4W5DduKD+57rx+K6v5MixEts2Q64dAw20fSNsjjS/mM="
         }
       ],
       "Fields": [

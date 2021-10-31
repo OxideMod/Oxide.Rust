@@ -17640,6 +17640,32 @@
             "BaseHookName": null,
             "HookCategory": "Vending"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanUpdateSign [CarvablePumpkin]",
+            "HookName": "CanUpdateSign",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CarvablePumpkin",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanUpdateSign",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "bLiVE2ghP/zaN5LJ3Wb86gFgp2NNiCFPMfOTdU7Uljo=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

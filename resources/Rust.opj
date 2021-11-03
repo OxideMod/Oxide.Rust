@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "gBFJrihIG6fLRIYIOktvHco/z0XLYcvkXPKkpkvTjxo=",
+            "MSILHash": "ZkhDTAY7+XGKUKakLK+rrLG4srsncOCnm9fnRh6Jj1g=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2362,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "4/1r8JE4KWTb5auH+Gh9K6m2K3g0QtAa2mishl3PJdA=",
+            "MSILHash": "276Q26RNN02qFS+Qub4/e8oesVJ1FhnxpW8tNykIRYc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2389,7 +2389,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "sRQSBSmJIzwN7hjL5ruMl0vE753NlOVgkY441aYQUGc=",
+            "MSILHash": "Lkt+UD5ddG7TdvNzrX3KSI4UnsUnp+MdxS/y8nIoTzQ=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2440,7 +2440,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "sRQSBSmJIzwN7hjL5ruMl0vE753NlOVgkY441aYQUGc=",
+            "MSILHash": "Lkt+UD5ddG7TdvNzrX3KSI4UnsUnp+MdxS/y8nIoTzQ=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -5981,32 +5981,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 48,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnFlameExplosion",
-            "HookName": "OnFlameExplosion",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "FlameExplosive",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Explode",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "UnityEngine.Vector3"
-              ]
-            },
-            "MSILHash": "fja2OjM7Mh4F7MLvQJP/BIMRlnGe+s4SDku5RB0Fjrw=",
-            "BaseHookName": null,
-            "HookCategory": "Weapon"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 131,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
@@ -6911,7 +6885,7 @@
             "HookName": "AllowNpcAttackingNpc [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseProjectile",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "ServerUse",
@@ -7023,7 +6997,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "UEuh5wug5rmyYj5RnAx3FOuIZ7Q+blYz2n3hEugtAIA=",
+            "MSILHash": "Y0RAOBGmf3ZDiciM1EfESPfLQXX9iw/e+uQmaxvLwN8=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -7184,7 +7158,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "GYNry1vapKK2X5wHKVmPJr96R490lW/IzUKM3Kb2lDY=",
+            "MSILHash": "N3/9aDP+F68F7DiAyIj2aotPOkcsVZZMbAHiy0ySJ1U=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8419,7 +8393,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "94H56dWqqS2ib5q1jM94YrQOFP3xleLv6/3JkLDCAas=",
+            "MSILHash": "9t7myKoo+kSb/pRcxKkXWacv3D3DOcwm5keZ4+Ci4fs=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8443,7 +8417,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "94H56dWqqS2ib5q1jM94YrQOFP3xleLv6/3JkLDCAas=",
+            "MSILHash": "9t7myKoo+kSb/pRcxKkXWacv3D3DOcwm5keZ4+Ci4fs=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -9458,7 +9432,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "EbjWntN5KUeqcM0Qc5NzNIG1vDbGrWbaxlVmixhBMnM=",
+            "MSILHash": "2RQUiLRDOb/Oai0jhguV1MeVQfeOMdeGsR4DB5VP3r8=",
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
@@ -9838,7 +9812,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 69,
+            "InjectionIndex": 75,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -9864,7 +9838,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 97
+                "Operand": 78
               }
             ],
             "HookTypeName": "Modify",
@@ -9879,7 +9853,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "qDw5KK1BMp5L/k0YSl5QgotyS+Vf83v8OXEZNaaFJTg=",
+            "MSILHash": "gSzILzDalasPQnUvgRrVtu4+rTqaVZhAbT36F5f7gy8=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -9972,7 +9946,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "T1pa+k8VqlMF14rSDkWt4pL3oAcFSWWZNXbfohz5PJ0=",
+            "MSILHash": "kcs2lBcbL1fKRRrIaUnjPmx94CpYFt1cJYBUyDcfvfk=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -13100,7 +13074,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "wrLupfllj6ECxrFtPA7oihRogZJrHx+D5n45rVC3a7Y=",
+            "MSILHash": "IHO+841vJa+N2hmwdnU1rHW0jspyvnwA6PFFWyqwQ9w=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
@@ -13108,7 +13082,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 75,
+            "InjectionIndex": 95,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l2, this, l0",
@@ -13126,7 +13100,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "wrLupfllj6ECxrFtPA7oihRogZJrHx+D5n45rVC3a7Y=",
+            "MSILHash": "IHO+841vJa+N2hmwdnU1rHW0jspyvnwA6PFFWyqwQ9w=",
             "BaseHookName": "OnVehicleModuleSelect",
             "HookCategory": "Vehicle"
           }
@@ -13140,12 +13114,12 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 81
+                "Operand": 101
               }
             ],
             "HookTypeName": "Modify",
-            "Name": "OnVehicleModuleSelected [patch]",
-            "HookName": "OnVehicleModuleSelected [patch]",
+            "Name": "OnVehicleModuleSelectedFix [patch]",
+            "HookName": "OnVehicleModuleSelectedFix [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ModularCarGarage",
             "Flagged": false,
@@ -13157,7 +13131,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "wrLupfllj6ECxrFtPA7oihRogZJrHx+D5n45rVC3a7Y=",
+            "MSILHash": "IHO+841vJa+N2hmwdnU1rHW0jspyvnwA6PFFWyqwQ9w=",
             "BaseHookName": "OnVehicleModuleSelected",
             "HookCategory": "Vehicle"
           }
@@ -16237,7 +16211,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 92
+                "Operand": 93
               }
             ],
             "HookTypeName": "Modify",
@@ -16255,7 +16229,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "QZmlTHqlHR3LfNgtlxvJb/b9cqz5ojd/K2t/ZVhXokQ=",
+            "MSILHash": "rYZ4ZkE3q9pEVaIxQJx8wjPWqa7UrtjajlHRP5rvXYw=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -17403,7 +17377,7 @@
                 "BaseEntity"
               ]
             },
-            "MSILHash": "7ebMrz5YMSuP4DenWVC9p1/IFwQxM6JMPGOqZUPej3A=",
+            "MSILHash": "iPELFnISB+jqcFs6Y21J3TGWphQWvBTBRILarXOIlpw=",
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
@@ -17975,6 +17949,32 @@
             "MSILHash": "gSzILzDalasPQnUvgRrVtu4+rTqaVZhAbT36F5f7gy8=",
             "BaseHookName": "OnSamSiteTarget",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 48,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnFlameExplosion",
+            "HookName": "OnFlameExplosion",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FlameExplosive",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FlameExplode",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "fja2OjM7Mh4F7MLvQJP/BIMRlnGe+s4SDku5RB0Fjrw=",
+            "BaseHookName": null,
+            "HookCategory": "Weapon"
           }
         }
       ],
@@ -32941,25 +32941,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "TrainEngine::monitorConvas",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "TrainEngine",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "monitorConvas",
-            "FullTypeName": "UnityEngine.Canvas TrainEngine::monitorConvas",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "TrainEngine::monitorText",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "TrainEngine",
@@ -39247,25 +39228,6 @@
           "MSILHash": "Z9QaByiEr0ortXV7eqbMM4dc+af/zMlKA5tH4SC0NqY="
         },
         {
-          "Name": "ServerProjectile::currentVelocity",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ServerProjectile",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "currentVelocity",
-            "FullTypeName": "UnityEngine.Vector3 ServerProjectile::currentVelocity",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BaseVehicle::DoPushAction",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseVehicle",
@@ -40242,6 +40204,106 @@
             ],
             "Name": "inventory",
             "FullTypeName": "ItemContainer ItemBasedFlowRestrictor::inventory",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainEngine::monitorCanvas",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainEngine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "monitorCanvas",
+            "FullTypeName": "UnityEngine.Canvas TrainEngine::monitorCanvas",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ServerProjectile::CurrentVelocity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ServerProjectile",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              1
+            ],
+            "Name": "CurrentVelocity",
+            "FullTypeName": "UnityEngine.Vector3 ServerProjectile::CurrentVelocity()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TriggerParentEnclosed::boxCollider",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerParentEnclosed",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "boxCollider",
+            "FullTypeName": "UnityEngine.BoxCollider TriggerParentEnclosed::boxCollider",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TriggerParentEnclosed::IsInside",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerParentEnclosed",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsInside",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BaseEntity",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "n1hzuahy/bfwCEuiW9wMS7Nk8BukokW0ngLNmZ2wx0I="
+        },
+        {
+          "Name": "TriggerParent::doClippingCheck",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TriggerParent",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "doClippingCheck",
+            "FullTypeName": "System.Boolean TriggerParent::doClippingCheck",
             "Parameters": []
           },
           "MSILHash": ""

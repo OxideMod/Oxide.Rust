@@ -6884,6 +6884,26 @@
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
                 "Operand": 415
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 21
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Object|op_Inequality(UnityEngine.CoreModule|UnityEngine.Object,UnityEngine.CoreModule|UnityEngine.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 415
               }
             ],
             "HookTypeName": "Modify",

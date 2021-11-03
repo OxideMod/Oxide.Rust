@@ -17952,6 +17952,30 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 37,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnSamSiteTargetScan",
+            "HookName": "OnSamSiteTargetScan",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SamSite",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TargetScan",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "gSzILzDalasPQnUvgRrVtu4+rTqaVZhAbT36F5f7gy8=",
+            "BaseHookName": "OnSamSiteTarget",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

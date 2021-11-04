@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "E:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -40304,6 +40304,84 @@
             ],
             "Name": "doClippingCheck",
             "FullTypeName": "System.Boolean TriggerParent::doClippingCheck",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SamSite::SetTarget",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetTarget",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "SamSite/ISamSiteTarget"
+            ]
+          },
+          "MSILHash": "/OJYdmPCLtSV1rIMqMwjTceNqezJk48zbFEY5dPRExE="
+        },
+        {
+          "Name": "SamSite::ClearTarget",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ClearTarget",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "R4rs7hX2xHLpTvOloMOAFYbGJqinqVZhvY819ByJ1j0="
+        },
+        {
+          "Name": "SamSite::mostRecentTargetType",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "mostRecentTargetType",
+            "FullTypeName": "SamSite/SamTargetType SamSite::mostRecentTargetType",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SamSite::currentTarget",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentTarget",
+            "FullTypeName": "SamSite/ISamSiteTarget SamSite::currentTarget",
             "Parameters": []
           },
           "MSILHash": ""

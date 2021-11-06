@@ -17930,30 +17930,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 37,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0",
-            "HookTypeName": "Simple",
-            "Name": "OnSamSiteTargetScan",
-            "HookName": "OnSamSiteTargetScan",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "SamSite",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "TargetScan",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "gSzILzDalasPQnUvgRrVtu4+rTqaVZhAbT36F5f7gy8=",
-            "BaseHookName": "OnSamSiteTarget",
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 48,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
@@ -17975,6 +17951,55 @@
             "MSILHash": "fja2OjM7Mh4F7MLvQJP/BIMRlnGe+s4SDku5RB0Fjrw=",
             "BaseHookName": null,
             "HookCategory": "Weapon"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 25,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnSamSiteTargetScan"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 37
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnSamSiteTargetScan",
+            "HookName": "OnSamSiteTargetScan",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SamSite",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TargetScan",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "gSzILzDalasPQnUvgRrVtu4+rTqaVZhAbT36F5f7gy8=",
+            "BaseHookName": "OnSamSiteTarget",
+            "HookCategory": "Entity"
           }
         }
       ],

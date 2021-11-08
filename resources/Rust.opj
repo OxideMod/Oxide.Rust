@@ -33686,8 +33686,7 @@
           "TypeName": "ModularCarGarage",
           "Type": 2,
           "TargetExposure": [
-            2,
-            4
+            2
           ],
           "Flagged": false,
           "Signature": {
@@ -33707,8 +33706,7 @@
           "TypeName": "ModularCarGarage",
           "Type": 2,
           "TargetExposure": [
-            2,
-            4
+            2
           ],
           "Flagged": false,
           "Signature": {
@@ -33728,8 +33726,7 @@
           "TypeName": "ModularCarGarage",
           "Type": 2,
           "TargetExposure": [
-            2,
-            4
+            2
           ],
           "Flagged": false,
           "Signature": {
@@ -33749,8 +33746,7 @@
           "TypeName": "ModularCarGarage",
           "Type": 2,
           "TargetExposure": [
-            2,
-            4
+            2
           ],
           "Flagged": false,
           "Signature": {
@@ -40472,6 +40468,795 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::CanBeUsed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "CanBeUsed",
+            "FullTypeName": "System.Boolean MLRS::CanBeUsed()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::CanFire",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "CanFire",
+            "FullTypeName": "System.Boolean MLRS::CanFire()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::CurGravityMultiplier",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "CurGravityMultiplier",
+            "FullTypeName": "System.Single MLRS::CurGravityMultiplier()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::HRotation",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              0
+            ],
+            "Name": "HRotation",
+            "FullTypeName": "System.Single MLRS::HRotation()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::IsRealigning",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "IsRealigning",
+            "FullTypeName": "System.Boolean MLRS::IsRealigning()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::RocketAmmoCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "RocketAmmoCount",
+            "FullTypeName": "System.Int32 MLRS::RocketAmmoCount()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::TrueHitPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "TrueHitPos",
+            "FullTypeName": "UnityEngine.Vector3 MLRS::TrueHitPos()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::UserTargetHitPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "UserTargetHitPos",
+            "FullTypeName": "UnityEngine.Vector3 MLRS::UserTargetHitPos()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::VRotation",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              0
+            ],
+            "Name": "VRotation",
+            "FullTypeName": "System.Single MLRS::VRotation()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::EndFiring",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EndFiring",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "rLC6bm2DQj6o2IX1jEfjYKnGHQTVPPwIz6hX4Wi44HA="
+        },
+        {
+          "Name": "MLRS::Fire",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Fire",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "zG9+J/EQ0iOKiG+4heMoWAPgKQ8E4W52TI1Sx8Pcai8="
+        },
+        {
+          "Name": "MLRS::FireNextRocket",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FireNextRocket",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "JLvKVO0aTVARBYVPeuB8s68+zzHkmb0kJp79h1yTFDE="
+        },
+        {
+          "Name": "MLRS::GetAimToTarget",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetAimToTarget",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "System.Single&"
+            ]
+          },
+          "MSILHash": "HFGh71E8pgj2NwWyubxA2dFZx+SYaWP2TpGu7Y5nQJI="
+        },
+        {
+          "Name": "MLRS::GetDashboardContainer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetDashboardContainer",
+            "FullTypeName": "StorageContainer",
+            "Parameters": []
+          },
+          "MSILHash": "rq6IVfQw6wlFFcOKiVPGDWHigJk/mDtvvIZJmFo9+9c="
+        },
+        {
+          "Name": "MLRS::GetRocketContainer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetRocketContainer",
+            "FullTypeName": "StorageContainer",
+            "Parameters": []
+          },
+          "MSILHash": "JthzYSoGZCH6ONklkj+W9qA3KCaxTiazrNqgh/GKbJg="
+        },
+        {
+          "Name": "MLRS::GetSurfaceHeight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetSurfaceHeight",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "mpUpa1YZrTNd8THQs6k5+hw94T2tJ0g+nH2oMxSC9KQ="
+        },
+        {
+          "Name": "MLRS::GetTrueHitPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetTrueHitPos",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": []
+          },
+          "MSILHash": "XtjRPCHVBPB20JUX6ZVTWjp7OH3B/5cD2qEDymFf/zo="
+        },
+        {
+          "Name": "MLRS::HitPosToRotation",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HitPosToRotation",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "System.Single&",
+              "System.Single&",
+              "System.Single&"
+            ]
+          },
+          "MSILHash": "/7JT+0D6v6a/L1VznVzlK8qyBwhYlcWPEkyOxGHh3iQ="
+        },
+        {
+          "Name": "MLRS::NextRayHitSomething",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "NextRayHitSomething",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "MLRS/TheoreticalProjectile&",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "GXQqgZDdr0YvsdFOuzJx4Xo04EDNBLhttnF2STKoAi0="
+        },
+        {
+          "Name": "MLRS::SetRepaired",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetRepaired",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "T/Xvw14/R99cZqaD5GPUvSaR0IqxEWgm/Nr3vanUxnw="
+        },
+        {
+          "Name": "MLRS::SetUserTargetHitPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetUserTargetHitPos",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "vdDwguOV28/IMDu3GUkuO8qicwFKpeB+awrljmgF4U0="
+        },
+        {
+          "Name": "MLRS::TryGetAimingModule",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TryGetAimingModule",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item&"
+            ]
+          },
+          "MSILHash": "sLaYUGGnM3swTnTCVVzuaR6bltkYwybBBJ6opN3wWkk="
+        },
+        {
+          "Name": "MLRS::ProjectileDistToGravity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ProjectileDistToGravity",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single",
+              "System.Single",
+              "System.Single",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "qLFncVvS50Gzl1QKFoerbMBahmD8XBZMTtvYAfbAMZQ="
+        },
+        {
+          "Name": "MLRS::ProjectileDistToSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ProjectileDistToSpeed",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Single",
+              "System.Single",
+              "System.Single",
+              "System.Single",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "y8wuGPO/TNFG6ePA35sKg2IhCn9HdOXkjKKT3mZsvSc="
+        },
+        {
+          "Name": "MLRS::hRotSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hRotSpeed",
+            "FullTypeName": "System.Single MLRS::hRotSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::nextRocketIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextRocketIndex",
+            "FullTypeName": "System.Int32 MLRS::nextRocketIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::radiusModIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "radiusModIndex",
+            "FullTypeName": "System.Int32 MLRS::radiusModIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::rocketBaseGravity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rocketBaseGravity",
+            "FullTypeName": "System.Single MLRS::rocketBaseGravity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::rocketDamageRadius",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rocketDamageRadius",
+            "FullTypeName": "System.Single MLRS::rocketDamageRadius",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::rocketOwnerRef",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rocketOwnerRef",
+            "FullTypeName": "EntityRef MLRS::rocketOwnerRef",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::rocketSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rocketSpeed",
+            "FullTypeName": "System.Single MLRS::rocketSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::rocketTubes",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rocketTubes",
+            "FullTypeName": "MLRS/RocketTube[] MLRS::rocketTubes",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::timeSinceBroken",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceBroken",
+            "FullTypeName": "TimeSince MLRS::timeSinceBroken",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::trueTargetHitPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "trueTargetHitPos",
+            "FullTypeName": "UnityEngine.Vector3 MLRS::trueTargetHitPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::vRotMax",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "vRotMax",
+            "FullTypeName": "System.Single MLRS::vRotMax",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::vRotSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "vRotSpeed",
+            "FullTypeName": "System.Single MLRS::vRotSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::lastSentTargetHitPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastSentTargetHitPos",
+            "FullTypeName": "UnityEngine.Vector3 MLRS::lastSentTargetHitPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MLRS::lastSentTrueHitPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MLRS",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastSentTrueHitPos",
+            "FullTypeName": "UnityEngine.Vector3 MLRS::lastSentTrueHitPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CarvablePumpkin::EnsureInitialized",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CarvablePumpkin",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EnsureInitialized",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "u4bH0bbiLgpm+t0S8TvKmfSAN7rTSt7TKpeLUvFaWKE="
         }
       ],
       "Fields": [

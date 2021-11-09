@@ -40410,6 +40410,120 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "IAISenses",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IAISenses",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IAISenses",
+            "FullTypeName": "IAISenses",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IAIEventListener",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IAIEventListener",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "IAIEventListener",
+            "FullTypeName": "IAIEventListener",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IAIHungerAbove",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IAIHungerAbove",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IAIHungerAbove",
+            "FullTypeName": "IAIHungerAbove",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IAIMounted",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IAIMounted",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IAIMounted",
+            "FullTypeName": "IAIMounted",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IAISleep",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IAISleep",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IAISleep",
+            "FullTypeName": "IAISleep",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IAITirednessAbove",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IAITirednessAbove",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IAITirednessAbove",
+            "FullTypeName": "IAITirednessAbove",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

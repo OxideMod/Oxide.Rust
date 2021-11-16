@@ -41607,6 +41607,117 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 43,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnNetworkSubscriptionsUpdate"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_2",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 122
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnNetworkSubscriptionsUpdate",
+            "HookName": "OnNetworkSubscriptionsUpdate",
+            "AssemblyName": "Facepunch.Network.dll",
+            "TypeName": "Network.Networkable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateSubscriptions",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.Int32",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "cptic6PumTgzDzaGTSzlJaU0kThAKbSfNb0golYjFsI=",
+            "BaseHookName": null,
+            "HookCategory": "Networking"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 33,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnNetworkSubscriptionsUpdate"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 60
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnNetworkSubscriptionsUpdate [2]",
+            "HookName": "OnNetworkSubscriptionsUpdate",
+            "AssemblyName": "Facepunch.Network.dll",
+            "TypeName": "Network.Networkable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateHighPrioritySubscriptions",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "gN7B2d+U+pcqgTS9l5Bf3WcnsPlFtxUP/SemvfpmFhc=",
+            "BaseHookName": null,
+            "HookCategory": "Networking"
+          }
         }
       ],
       "Modifiers": [

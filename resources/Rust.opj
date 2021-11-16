@@ -4817,7 +4817,7 @@
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnLootSpawn",
+            "Name": "OnLootSpawn [LootContainer]",
             "HookName": "OnLootSpawn",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "LootContainer",
@@ -18000,6 +18000,34 @@
             "MSILHash": "gSzILzDalasPQnUvgRrVtu4+rTqaVZhAbT36F5f7gy8=",
             "BaseHookName": "OnSamSiteTarget",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 9,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a2",
+            "HookTypeName": "Simple",
+            "Name": "OnLootSpawn [ItemModUnwrap]",
+            "HookName": "OnLootSpawn",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemModUnwrap",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerCommand",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Item",
+                "System.String",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "V1sfskUHMNBCv6nDdQRXP4UdvZLyGgiUGHXZvalfSUo=",
+            "BaseHookName": null,
+            "HookCategory": "Resource"
           }
         }
       ],

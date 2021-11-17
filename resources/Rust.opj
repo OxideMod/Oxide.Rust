@@ -40524,6 +40524,63 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "StabilityEntity::supports",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "StabilityEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "supports",
+            "FullTypeName": "System.Collections.Generic.List`1<StabilityEntity/Support> StabilityEntity::supports",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "StabilityEntity/Support",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "StabilityEntity/Support",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Support",
+            "FullTypeName": "StabilityEntity/Support",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseEntity::links",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "links",
+            "FullTypeName": "System.Collections.Generic.List`1<EntityLink> BaseEntity::links",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

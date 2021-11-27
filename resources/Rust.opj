@@ -41285,6 +41285,27 @@
             "Parameters": []
           },
           "MSILHash": "u4bH0bbiLgpm+t0S8TvKmfSAN7rTSt7TKpeLUvFaWKE="
+        },
+        {
+          "Name": "BuildingBlock::DoRotation",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DoRotation",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity/RPCMessage"
+            ]
+          },
+          "MSILHash": "rw3CDBvF03WJOVVzwxtVNxUwF8j91ha1W7cHknY9U1w="
         }
       ],
       "Fields": [

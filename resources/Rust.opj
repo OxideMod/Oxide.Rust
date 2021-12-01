@@ -17502,6 +17502,120 @@
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 34,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnXmasLootDistribute",
+            "HookName": "OnXmasLootDistribute",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "XMasRefill",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerInit",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "4m7Jry163okDslYHYXOhsiy91ZjMZ7JdQHmg7FllDBQ=",
+            "BaseHookName": null,
+            "HookCategory": "Seasonal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnXmasStockingFill",
+            "HookName": "OnXmasStockingFill",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Stocking",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SpawnLoot",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "4/Lix3wnQcQyh2A5vMu32FvHnpUW9W0mLVOTaZWD5dQ=",
+            "BaseHookName": null,
+            "HookCategory": "Seasonal"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnXmasGiftsDistribute"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnXmasGiftsDistribute",
+            "HookName": "OnXmasGiftsDistribute",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "XMasRefill",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DistributeGiftsForPlayer",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "QzntBqGab7O8R3/Jz7iyexrjicuzbZkdSiopYmyEGvY=",
+            "BaseHookName": null,
+            "HookCategory": "Seasonal"
+          }
         }
       ],
       "Modifiers": [
@@ -41082,6 +41196,25 @@
             ],
             "Name": "links",
             "FullTypeName": "System.Collections.Generic.List`1<EntityLink> BaseEntity::links",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SantaSleigh::dropPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SantaSleigh",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "dropPosition",
+            "FullTypeName": "UnityEngine.Vector3 SantaSleigh::dropPosition",
             "Parameters": []
           },
           "MSILHash": ""

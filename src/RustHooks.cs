@@ -40,100 +40,6 @@ namespace Oxide.Game.Rust
             return entity is BasePlayer ? null : Interface.CallHook("OnEntityTakeDamage", entity, hitInfo);
         }
 
-        private int GetPlayersSensed(NPCPlayerApex npc, Vector3 position, float distance, BaseEntity[] targetList)
-        {
-            return BaseEntity.Query.Server.GetInSphere(position, distance, targetList,
-                entity =>
-                {
-                    BasePlayer target = entity as BasePlayer;
-                    object callHook = target != null && npc != null && target != npc ? Interface.CallHook("OnNpcTarget", npc, target) : null;
-                    if (callHook != null)
-                    {
-                        foreach (Memory.SeenInfo seenInfo in npc.AiContext.Memory.All)
-                        {
-                            if (seenInfo.Entity == target)
-                            {
-                                npc.AiContext.Memory.All.Remove(seenInfo);
-                                break;
-                            }
-                        }
-
-                        foreach (Memory.ExtendedInfo extendedInfo in npc.AiContext.Memory.AllExtended)
-                        {
-                            if (extendedInfo.Entity == target)
-                            {
-                                npc.AiContext.Memory.AllExtended.Remove(extendedInfo);
-                                break;
-                            }
-                        }
-                    }
-
-                    return target != null && callHook == null && target.isServer && !target.IsSleeping() && !target.IsDead() && target.Family != npc.Family;
-                });
-        }
-
-        /// <summary>
-        /// Called when an Apex NPC player tries to target an entity based on closeness
-        /// </summary>
-        /// <param name="npc"></param>
-        /// <returns></returns>
-        [HookMethod("IOnNpcSenseClose")]
-        private object IOnNpcSenseClose(NPCPlayerApex npc)
-        {
-            NPCPlayerApex.EntityQueryResultCount = GetPlayersSensed(npc, npc.ServerPosition, npc.Stats.CloseRange, NPCPlayerApex.EntityQueryResults);
-            return true;
-        }
-
-        /// <summary>
-        /// Called when an Apex NPC player tries to target an entity based on vision
-        /// </summary>
-        /// <param name="npc"></param>
-        /// <returns></returns>
-        [HookMethod("IOnNpcSenseVision")]
-        private object IOnNpcSenseVision(NPCPlayerApex npc)
-        {
-            NPCPlayerApex.PlayerQueryResultCount = GetPlayersSensed(npc, npc.ServerPosition, npc.Stats.VisionRange, NPCPlayerApex.PlayerQueryResults);
-            return true;
-        }
-
-        /// <summary>
-        /// Called when an Apex NPC player (i.e. murderer) tries to target an entity
-        /// </summary>
-        /// <param name="npc"></param>
-        /// <param name="target"></param>
-        /// <returns></returns>
-        [HookMethod("IOnNpcTarget")]
-        private object IOnNpcTarget(NPCPlayerApex npc, BaseEntity target)
-        {
-            if (Interface.CallHook("OnNpcTarget", npc, target) != null)
-            {
-                return 0f;
-            }
-
-            return null;
-        }
-
-        /// <summary>
-        /// Called when an HTN NPC player (old scientist) tries to target an entity
-        /// </summary>
-        /// <param name="npc"></param>
-        /// <param name="target"></param>
-        /// <param name="index"></param>
-        /// <returns></returns>
-        [HookMethod("IOnNpcTarget")]
-        private object IOnNpcTarget(IHTNAgent npc, BasePlayer target, int index)
-        {
-            if (npc != null && Interface.CallHook("OnNpcTarget", npc.Body, target) != null)
-            {
-                npc.AiDomain.NpcContext.PlayersInRange.RemoveAt(index);
-                npc.AiDomain.NpcContext.BaseMemory.Forget(0f); // Unsure if still needed
-                npc.AiDomain.NpcContext.BaseMemory.PrimaryKnownEnemyPlayer.PlayerInfo.Player = null; // Unsure if still needed
-                return true;
-            }
-
-            return null;
-        }
-
         /// <summary>
         /// Called when an NPC animal tries to target an entity
         /// </summary>
@@ -148,8 +54,11 @@ namespace Oxide.Game.Rust
                 npc.SetFact(BaseNpc.Facts.HasEnemy, 0);
                 npc.SetFact(BaseNpc.Facts.EnemyRange, 3);
                 npc.SetFact(BaseNpc.Facts.AfraidRange, 1);
-                npc.AiContext.EnemyPlayer = null;
-                npc.AiContext.LastEnemyPlayerScore = 0f;
+
+                //TODO: Find replacements of those:
+                // npc.AiContext.EnemyPlayer = null;
+                // npc.AiContext.LastEnemyPlayerScore = 0f;
+
                 npc.playerTargetDecisionStartTime = 0f;
                 return 0f;
             }

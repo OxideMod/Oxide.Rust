@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "E:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "hXb4zddDHRaYwDQ9MKloI9S6dEpSL3tJ/88m4Pt1rUQ=",
+            "MSILHash": "Yn9hM+MVUofzFMTcoHKfuTzonbtmezibbGRr1Hf/hl8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -991,7 +991,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "0I+H1nb0PzqnED4Jqz+iw58w+zoHCvS4wmf91A4vqmQ=",
+            "MSILHash": "dfpghjkPVh//byagej63otIfTkal3pmVTm2NaOVaSQY=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1017,7 +1017,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "Z/M5jgh+MWlj2hgrlq3rxugSl4XwbIazLFGA3Xkoegs=",
+            "MSILHash": "3iiTbaYGovIclIdBGSICHhNjqOpSI3KVhckqp1SiXbQ=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2362,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "t5sTDYi2Y+LGAQP9h+qNb6fo3LOMDxnxNGus7lobVtU=",
+            "MSILHash": "N+y0PuqCA68JZmvyZgMRvYuPZjAMa3BJaP0yS26I+/8=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2389,7 +2389,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "Lkt+UD5ddG7TdvNzrX3KSI4UnsUnp+MdxS/y8nIoTzQ=",
+            "MSILHash": "7AbwX3OBuCmHTHYSqk4rwk2xVLSoHYJRkDdzJZw/6Uk=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2440,7 +2440,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "Lkt+UD5ddG7TdvNzrX3KSI4UnsUnp+MdxS/y8nIoTzQ=",
+            "MSILHash": "7AbwX3OBuCmHTHYSqk4rwk2xVLSoHYJRkDdzJZw/6Uk=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -2613,7 +2613,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "EeocpRnJ0NJr/YE1wAnYzY8wSW7Y2Ztkd0GYYQBhzfo=",
+            "MSILHash": "e5h2zspknR8Mf+0W+oDPk0KkZPlEmBrju0ba6wCC988=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2849,7 +2849,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 118,
+            "InjectionIndex": 122,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.player, l2, this",
@@ -2867,7 +2867,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "jfiLMmDGwzG3OQsaIQRFqmNZuHP+2UTFoB4UsXZ4GZM=",
+            "MSILHash": "6amx9OMiqw0/WYagMBkH5Lty3PI901YyNAJ9aAhe2E4=",
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
@@ -3244,7 +3244,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 14,
+            "InjectionIndex": 18,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player, l0",
@@ -3262,7 +3262,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "oUlzBJV1mKo9cQreIIbxhbZswEz2iumELhKyKh0VvEE=",
+            "MSILHash": "iCoC4gH6vow3Wq02mXRns+mJWRiWgIZ6VT9C87LKRmg=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -3288,7 +3288,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "OkQn+8wqsHsH2A0A9MUlZJVQXAAp1AZwXRKWXSAYzwc=",
+            "MSILHash": "yLnH2bOoF7WvdBFUF0yrn5aBd3KXBqOBWmjKTfDZlR4=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -3931,7 +3931,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "wVAVy+6VZWkaEdiDIcc1NoQkuhiNgWyf2FXab7tg23Y=",
+            "MSILHash": "lD6yicqZ7+VOfOdxdt++iTd3eV8sH4+IoPdFQoPeDxU=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -4499,32 +4499,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 6,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "IOnNpcTarget [NPCPlayerApex]",
-            "HookName": "IOnNpcTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCPlayerApex",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "GetWantsToAttack",
-              "ReturnType": "System.Single",
-              "Parameters": [
-                "BaseEntity"
-              ]
-            },
-            "MSILHash": "nRpCYOPAnCg4TaMkeh2keNl+Q3yINU8w9S6SP29LMtw=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 1,
@@ -4644,7 +4618,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "VahM3DLMGLcQO6cuNr1Tfinm9/J97G622skBofrzYBQ=",
+            "MSILHash": "APfMP7vHOS7R8jN9Z8gyTEPHM+6XevArKDy4X+YRHTY=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -4652,7 +4626,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 224,
+            "InjectionIndex": 228,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -4671,7 +4645,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "VahM3DLMGLcQO6cuNr1Tfinm9/J97G622skBofrzYBQ=",
+            "MSILHash": "APfMP7vHOS7R8jN9Z8gyTEPHM+6XevArKDy4X+YRHTY=",
             "BaseHookName": "CanDismountEntity",
             "HookCategory": "Entity"
           }
@@ -4698,7 +4672,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "VahM3DLMGLcQO6cuNr1Tfinm9/J97G622skBofrzYBQ=",
+            "MSILHash": "APfMP7vHOS7R8jN9Z8gyTEPHM+6XevArKDy4X+YRHTY=",
             "BaseHookName": "OnEntityDismounted",
             "HookCategory": "Entity"
           }
@@ -4724,7 +4698,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "SWVa83uz5ivf1ETXUekdHuax78p0RtNjS1YGEn/6Fhk=",
+            "MSILHash": "XrZspOnekYBYXrDvULmXgufE68T+AtltrEsgYBoX4eU=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -4732,7 +4706,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 80,
+            "InjectionIndex": 74,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "ArgumentString": null,
@@ -4750,7 +4724,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "SWVa83uz5ivf1ETXUekdHuax78p0RtNjS1YGEn/6Fhk=",
+            "MSILHash": "XrZspOnekYBYXrDvULmXgufE68T+AtltrEsgYBoX4eU=",
             "BaseHookName": "CanMountEntity",
             "HookCategory": "Player"
           }
@@ -5219,7 +5193,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 183,
+            "InjectionIndex": 206,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1",
@@ -5238,7 +5212,7 @@
                 "Construction"
               ]
             },
-            "MSILHash": "2obOwxQ8ymYyV2CbzatBohhCYcruqnhMitPfeM6vjX8=",
+            "MSILHash": "em7Lajj326NSNwRQycDNkeEw2VkHj8NZ9Kmb6XmDSV0=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -5515,30 +5489,6 @@
               ]
             },
             "MSILHash": "jqblFXYqlGSCbMi7JuiulJX1MtOCxJCwYAV5gzIxsqM=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 349,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, this.AiContext.AIAgent.AttackTarget",
-            "HookTypeName": "Simple",
-            "Name": "IOnNpcTarget [BaseNpc]",
-            "HookName": "IOnNpcTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseNpc",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "AggroClosestEnemy",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "V4Ef3E4zz3zY9+hTKXIP2F58f96c/l69RBUhLMh/3RY=",
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
@@ -6056,80 +6006,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 33,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnNpcResume [NPCPlayerApex]",
-            "HookName": "OnNpcResume",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCPlayerApex",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Resume",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "OuCHXTTdf5ozPkkcJDwL2QCYBvMA87rTLsMlPWvlG2c=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnNpcDestinationSet [NPCPlayerApex]",
-            "HookName": "OnNpcDestinationSet",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCPlayerApex",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "SetDestination",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "UnityEngine.Vector3"
-              ]
-            },
-            "MSILHash": "9NkBG7h94cCAVjC+Qkk2CptSS428H2OqJeeelj7vNU8=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnNpcStopMoving [NPCPlayerApex]",
-            "HookName": "OnNpcStopMoving",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCPlayerApex",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "StopMoving",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "BOyzeAstDuXe+ImA+wdLfTjQNSbGmZMYsOsEquWEXyI=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
@@ -6202,198 +6078,6 @@
           }
         },
         {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 8,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "IOnNpcSenseVision [NPCPlayerApex]",
-            "HookName": "IOnNpcSenseVision",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCPlayerApex",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "_FindPlayersInVisionRange",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "jz9fKBpBxfL2Y2pkNZEz/pQCONGxVQi/uRhlcREIUP4=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "IOnNpcSenseClose [NPCPlayerApex]",
-            "HookName": "IOnNpcSenseClose",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCPlayerApex",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "_FindEntitiesInCloseRange",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "Z+ZEHjWslPzo8186afilISH9u2SMA5TBOMcmvp7oQzQ=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 2,
-            "RemoveCount": 1,
-            "Instructions": [
-              {
-                "OpCode": "brfalse",
-                "OpType": "Instruction",
-                "Operand": 3
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "isinst",
-                "OpType": "Type",
-                "Operand": "Assembly-CSharp|NPCMurderer"
-              },
-              {
-                "OpCode": "brfalse",
-                "OpType": "Instruction",
-                "Operand": 4
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "FixMurdererRpcIssue [patch]",
-            "HookName": "FixMurdererRpcIssue [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCPlayerApex",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OnSensation",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Rust.Ai.Sensation"
-              ]
-            },
-            "MSILHash": "nvUDMPnIgsbpYApuphzylGAU+98ZJZcXpOzQtCgMYrc=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 0,
-            "RemoveCount": 1,
-            "Instructions": [
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ldfld",
-                "OpType": "Field",
-                "Operand": "Assembly-CSharp|BaseCombatEntity|_maxHealth"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "SetMaxHealthNpcMurderers [patch]",
-            "HookName": "SetMaxHealthNpcMurderers [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCMurderer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "MaxHealth",
-              "ReturnType": "System.Single",
-              "Parameters": []
-            },
-            "MSILHash": "Y05ykFor8PFxxgseU/rKQ3smkwN7RilPPD0iZufi4SE=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 3,
-            "RemoveCount": 1,
-            "Instructions": [
-              {
-                "OpCode": "brtrue",
-                "OpType": "Instruction",
-                "Operand": 4
-              },
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnNpcTarget"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ldarg_1",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
-              },
-              {
-                "OpCode": "ldnull",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "beq_s",
-                "OpType": "Instruction",
-                "Operand": 10
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnNpcTarget [NPCPlayerApex]",
-            "HookName": "OnNpcTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCPlayerApex",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "UpdateTargetMemory",
-              "ReturnType": "Rust.Ai.Memory/SeenInfo",
-              "Parameters": [
-                "BaseEntity",
-                "System.Single",
-                "UnityEngine.Vector3",
-                "Rust.Ai.Memory/ExtendedInfo&"
-              ]
-            },
-            "MSILHash": "/nEuvnw+JQmAu0tQUMVatcE+LV/V32o2o2HJf3ec34Q=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 0,
@@ -6451,115 +6135,6 @@
             "MSILHash": "1kwrW2PgnFeS+Yj1LYP4o9KCUQQY9huvRYFYu+oJdC0=",
             "BaseHookName": null,
             "HookCategory": "Item"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0",
-            "HookTypeName": "Simple",
-            "Name": "OnNpcTarget [BaseNpc]",
-            "HookName": "OnNpcTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Rust.Ai.HTN.BaseNpcMemory",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "RememberPrimaryAnimal",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseNpc"
-              ]
-            },
-            "MSILHash": "AHAPnApIB6XsR4a3VkKxJaDU68s1Ddaj5sQWSueXIqE=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 27,
-            "RemoveCount": 2,
-            "Instructions": [],
-            "HookTypeName": "Modify",
-            "Name": "NoNpcMemoryWarning [patch]",
-            "HookName": "NoNpcMemoryWarning [patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Rust.Ai.HTN.BaseNpcMemory",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "RememberPrimaryEnemyPlayer",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BasePlayer"
-              ]
-            },
-            "MSILHash": "N7Y1M4WOx1BZSp9OkFMLeBxcf6eSc5A7WFfqEBFa6nc=",
-            "BaseHookName": null,
-            "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 24,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0.Body, a1.Player",
-            "HookTypeName": "Simple",
-            "Name": "OnNpcTarget [HTNPlayer]",
-            "HookName": "OnNpcTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Rust.Ai.HTN.BaseNpcMemory",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "RememberEnemyPlayer",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Rust.Ai.HTN.IHTNAgent",
-                "Rust.Ai.HTN.NpcPlayerInfo&",
-                "System.Single",
-                "System.Single",
-                "System.String"
-              ]
-            },
-            "MSILHash": "66fWKhBmLgHOrluqq5bQWpxJ3AcyX52NU+Ljdfl0c+o=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 138,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, l10.Player, l9",
-            "HookTypeName": "Simple",
-            "Name": "IOnNpcTarget [HTNPlayer]",
-            "HookName": "IOnNpcTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Rust.Ai.HTN.Sensors.PlayersInRangeSensor",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Tick",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "Rust.Ai.HTN.IHTNAgent",
-                "System.Single",
-                "System.Single"
-              ]
-            },
-            "MSILHash": "M5QSAh4W32SQcwq/dndv+Npto1ZYMIZyBV2cpzq/7P4=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
           }
         },
         {
@@ -7106,7 +6681,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "N3/9aDP+F68F7DiAyIj2aotPOkcsVZZMbAHiy0ySJ1U=",
+            "MSILHash": "t2uuOOXTotQvETDPvW8XzYADDpuP5XvhVkRMoZ5zjwk=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -7813,7 +7388,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "5PA4iGZDZA6fa16X0HUvnwFS/RLuM43aZQ9ljCk7HNI=",
+            "MSILHash": "AK5m41VbU+uzhOke9N1ZL9y8H/6VDmj7Kdl8xnkbsNw=",
             "BaseHookName": null,
             "HookCategory": "Team"
           }
@@ -8341,7 +7916,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "nsMkWPmpiOIFLX2IocYa3iOK6YWz5Ir+TwelTV0Hsug=",
+            "MSILHash": "UxzHqjnchyOVm0wLa38HWKESbFADKZVL9rx3owvViIA=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -8365,7 +7940,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "nsMkWPmpiOIFLX2IocYa3iOK6YWz5Ir+TwelTV0Hsug=",
+            "MSILHash": "UxzHqjnchyOVm0wLa38HWKESbFADKZVL9rx3owvViIA=",
             "BaseHookName": "IOnUpdateServerInformation",
             "HookCategory": "Server"
           }
@@ -8902,75 +8477,6 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 58,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
-              },
-              {
-                "OpCode": "brtrue_s",
-                "OpType": "Instruction",
-                "Operand": 1032
-              },
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnSendModelState"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
-              },
-              {
-                "OpCode": "ldnull",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "beq_s",
-                "OpType": "Instruction",
-                "Operand": 58
-              },
-              {
-                "OpCode": "ret",
-                "OpType": "None",
-                "Operand": null
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnSendModelState",
-            "HookName": "OnSendModelState",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "SendModelState",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "+6czrDEvfOcCoQcqERwkR3+KUl5wVTCFh8TxskkhQIg=",
-            "BaseHookName": null,
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
             "InjectionIndex": 9,
             "RemoveCount": 0,
             "Instructions": [
@@ -9354,33 +8860,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "10KNwfL+uH6FaCb7WbcFfE9k5PWMjnW4fOK+TMcbFg0=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 129,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l11",
-            "HookTypeName": "Simple",
-            "Name": "OnNpcTarget [HumanNPC]",
-            "HookName": "OnNpcTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "HumanNPC",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "UpdateTargets",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.Single"
-              ]
-            },
-            "MSILHash": "2RQUiLRDOb/Oai0jhguV1MeVQfeOMdeGsR4DB5VP3r8=",
+            "MSILHash": "D59eTfrQiCCGrrEx0I6R1yygiRFd1BtVR+MVELFXv8A=",
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
@@ -9801,7 +9281,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "gSzILzDalasPQnUvgRrVtu4+rTqaVZhAbT36F5f7gy8=",
+            "MSILHash": "kTIwaaM0uwzK3aDAj0vPI0lwRgY9dhIlnoh+6XR8WPc=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -10027,136 +9507,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 166,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnCorpsePopulate [HTN.Murderer]",
-            "HookName": "OnCorpsePopulate",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Rust.Ai.HTN.Murderer.MurdererDefinition",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OnCreateCorpse",
-              "ReturnType": "BaseCorpse",
-              "Parameters": [
-                "HTNPlayer"
-              ]
-            },
-            "MSILHash": "XKbxqvkvJN6cQmm2bd4XIkOxf3v9MN34F0ffXYHtVvc=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 130,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnCorpsePopulate [HTN.Scientist]",
-            "HookName": "OnCorpsePopulate",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Rust.Ai.HTN.Scientist.ScientistDefinition",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OnCreateCorpse",
-              "ReturnType": "BaseCorpse",
-              "Parameters": [
-                "HTNPlayer"
-              ]
-            },
-            "MSILHash": "ZV3sZvkz30yPhzxi4xfgWl4w4vsJQgORN0kU0QeQ4Pw=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 137,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnCorpsePopulate [HTN.NPCTurret]",
-            "HookName": "OnCorpsePopulate",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Rust.Ai.HTN.NPCTurret.NPCTurretDefinition",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OnCreateCorpse",
-              "ReturnType": "BaseCorpse",
-              "Parameters": [
-                "HTNPlayer"
-              ]
-            },
-            "MSILHash": "FC66JmDjrJuHlhNfG0iuVUQAY7aKUOopsFfQE9qidbA=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 130,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnCorpsePopulate [HTN.ScientistAStar]",
-            "HookName": "OnCorpsePopulate",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Rust.Ai.HTN.ScientistAStar.ScientistAStarDefinition",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OnCreateCorpse",
-              "ReturnType": "BaseCorpse",
-              "Parameters": [
-                "HTNPlayer"
-              ]
-            },
-            "MSILHash": "ZXKCFeJjA7IK4IeHlXnMnnllSlUN2hB35aJakQJx7RM=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 130,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnCorpsePopulate [HTN.ScientistJunkpile]",
-            "HookName": "OnCorpsePopulate",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Rust.Ai.HTN.ScientistJunkpile.ScientistJunkpileDefinition",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OnCreateCorpse",
-              "ReturnType": "BaseCorpse",
-              "Parameters": [
-                "HTNPlayer"
-              ]
-            },
-            "MSILHash": "mS8SBEz1oHbdVTyOjeMzw0KFsMj74eSrrE2+ZQbKprQ=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 99,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -10174,54 +9524,6 @@
               "Parameters": []
             },
             "MSILHash": "vXPzmK5hSqqr3EW5LSeEL+np9HgabWa4SWRfWxS9PCo=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 123,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnCorpsePopulate [NPCMurderer]",
-            "HookName": "OnCorpsePopulate",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "NPCMurderer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "CreateCorpse",
-              "ReturnType": "BaseCorpse",
-              "Parameters": []
-            },
-            "MSILHash": "AZ48FOW03Lrozdmy/TgQLBEevdNaTl3CHrwJHLEVXG0=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 99,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnCorpsePopulate [Scientist]",
-            "HookName": "OnCorpsePopulate",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Scientist",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "CreateCorpse",
-              "ReturnType": "BaseCorpse",
-              "Parameters": []
-            },
-            "MSILHash": "NRJ79HMhjDs2I28hQrAJJUFaD9NexeTcVNvF1GeaoJg=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -15234,106 +14536,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 8,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this.owner",
-            "HookTypeName": "Simple",
-            "Name": "OnEngineStop",
-            "HookName": "OnEngineStop",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "VehicleEngineController",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "StopEngine",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "jOY1sUKWcPq1qUlM8ne6uLOOmnw3bcEEFhoUSPAG98Q=",
-            "BaseHookName": null,
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 25,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this.owner, a0",
-            "HookTypeName": "Simple",
-            "Name": "OnEngineStart",
-            "HookName": "OnEngineStart",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "VehicleEngineController",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "TryStartEngine",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BasePlayer"
-              ]
-            },
-            "MSILHash": "kxTPZzOQvb51sC/onVuxsZ0s6MgZzKlIyIdp9Ap/5GY=",
-            "BaseHookName": null,
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 32,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this.owner",
-            "HookTypeName": "Simple",
-            "Name": "OnEngineStopped",
-            "HookName": "OnEngineStopped",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "VehicleEngineController",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "StopEngine",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "jOY1sUKWcPq1qUlM8ne6uLOOmnw3bcEEFhoUSPAG98Q=",
-            "BaseHookName": "OnEngineStop",
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 56,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this.owner, a0",
-            "HookTypeName": "Simple",
-            "Name": "OnEngineStarted",
-            "HookName": "OnEngineStarted",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "VehicleEngineController",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "TryStartEngine",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BasePlayer"
-              ]
-            },
-            "MSILHash": "kxTPZzOQvb51sC/onVuxsZ0s6MgZzKlIyIdp9Ap/5GY=",
-            "BaseHookName": "OnEngineStart",
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 74,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
@@ -15551,7 +14753,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "0I+H1nb0PzqnED4Jqz+iw58w+zoHCvS4wmf91A4vqmQ=",
+            "MSILHash": "dfpghjkPVh//byagej63otIfTkal3pmVTm2NaOVaSQY=",
             "BaseHookName": "IOnBasePlayerAttacked",
             "HookCategory": "_Patches"
           }
@@ -15944,30 +15146,6 @@
             "MSILHash": "MZUlImumgF5vtUH9fgFViWHBgj3LxMa2fsaTnxe1A8o=",
             "BaseHookName": null,
             "HookCategory": "Structure"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 99,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnCorpsePopulate [HumanNPCNew]",
-            "HookName": "OnCorpsePopulate",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "HumanNPCNew",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "CreateCorpse",
-              "ReturnType": "BaseCorpse",
-              "Parameters": []
-            },
-            "MSILHash": "vPqlWSLby17ux8/nmX7lu86nHSWGbUeuPleEeTBOEdk=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
           }
         },
         {
@@ -16448,7 +15626,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "hX3hrBGJUK0/kDV4h/tKznrG/mhPACVHpo/wrVnKYbo=",
+            "MSILHash": "CSWcLIJmZ0KB9vEFT7WAhyVVZaY/6T9fymiR4xZrknY=",
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
@@ -17270,67 +16448,6 @@
           }
         },
         {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 9,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnNpcTarget"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ldloc_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
-              },
-              {
-                "OpCode": "brfalse_s",
-                "OpType": "Instruction",
-                "Operand": 9
-              },
-              {
-                "OpCode": "ldc_i4_0",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ret",
-                "OpType": "None",
-                "Operand": null
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnNpcTarget [HumanNPCNew]",
-            "HookName": "OnNpcTarget",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "HumanNPCNew",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "CanSeeTarget",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "BaseEntity"
-              ]
-            },
-            "MSILHash": "iPELFnISB+jqcFs6Y21J3TGWphQWvBTBRILarXOIlpw=",
-            "BaseHookName": null,
-            "HookCategory": "NPC"
-          }
-        },
-        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 17,
@@ -17945,7 +17062,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "gSzILzDalasPQnUvgRrVtu4+rTqaVZhAbT36F5f7gy8=",
+            "MSILHash": "kTIwaaM0uwzK3aDAj0vPI0lwRgY9dhIlnoh+6XR8WPc=",
             "BaseHookName": "OnSamSiteTarget",
             "HookCategory": "Entity"
           }
@@ -17976,6 +17093,307 @@
             "MSILHash": "V1sfskUHMNBCv6nDdQRXP4UdvZLyGgiUGHXZvalfSUo=",
             "BaseHookName": null,
             "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 60,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 1032
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnSendModelState"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 60
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnSendModelState",
+            "HookName": "OnSendModelState",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SendModelState",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "f586rlfKl5X0gwoRhggEqq2Cn9N+lVISFAtRprkbJQQ=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 26,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnEngineStart"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|VehicleEngineController`1|owner"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String, System.Object, System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 26
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnEngineStart",
+            "HookName": "OnEngineStart",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleEngineController`1",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryStartEngine",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "AnxSRChg7ma/wZAYxk5l40aAgBl1/H3gTjQjzdnCezA=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 60,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnEngineStarted"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|VehicleEngineController`1|owner"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object, System.Object)"
+              },
+              {
+                "OpCode": "pop",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnEngineStarted",
+            "HookName": "OnEngineStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleEngineController`1",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryStartEngine",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "AnxSRChg7ma/wZAYxk5l40aAgBl1/H3gTjQjzdnCezA=",
+            "BaseHookName": "OnEngineStart",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 8,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnEngineStop"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|VehicleEngineController`1|owner"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 8
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnEngineStop",
+            "HookName": "OnEngineStop",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleEngineController`1",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopEngine",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "3+IgLAcTzvLlMBDcoh/2eKeYBZ1jXbMr88yf71mQdwo=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 34,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnEngineStopped"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|VehicleEngineController`1|owner"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
+              },
+              {
+                "OpCode": "pop",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnEngineStopped",
+            "HookName": "OnEngineStopped",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleEngineController`1",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StopEngine",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "3+IgLAcTzvLlMBDcoh/2eKeYBZ1jXbMr88yf71mQdwo=",
+            "BaseHookName": "OnEngineStop",
+            "HookCategory": "Vehicle"
           }
         }
       ],
@@ -20497,25 +19915,6 @@
           "MSILHash": "52mO0CzpWJyKJrYReFbg3gwzipy7UjK4cFquld+zqGw="
         },
         {
-          "Name": "NPCPlayerApex::utilityAiComponent",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "NPCPlayerApex",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "utilityAiComponent",
-            "FullTypeName": "Apex.AI.Components.UtilityAIComponent NPCPlayerApex::utilityAiComponent",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "VendingMachine::transactionActive",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "VendingMachine",
@@ -20530,86 +19929,6 @@
             ],
             "Name": "transactionActive",
             "FullTypeName": "System.Boolean VendingMachine::transactionActive",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "NPCPlayerApex::PlayerQueryResultCount",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "NPCPlayerApex",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "PlayerQueryResultCount",
-            "FullTypeName": "System.Int32 NPCPlayerApex::PlayerQueryResultCount",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "NPCPlayerApex::PlayerQueryResults",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "NPCPlayerApex",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "PlayerQueryResults",
-            "FullTypeName": "BasePlayer[] NPCPlayerApex::PlayerQueryResults",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "NPCPlayerApex::EntityQueryResultCount",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "NPCPlayerApex",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "EntityQueryResultCount",
-            "FullTypeName": "System.Int32 NPCPlayerApex::EntityQueryResultCount",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "NPCPlayerApex::EntityQueryResults",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "NPCPlayerApex",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "EntityQueryResults",
-            "FullTypeName": "BaseEntity[] NPCPlayerApex::EntityQueryResults",
             "Parameters": []
           },
           "MSILHash": ""
@@ -21843,25 +21162,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "HumanNPC::_targets",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "HumanNPC",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "_targets",
-            "FullTypeName": "System.Collections.Generic.List`1<BaseCombatEntity> HumanNPC::_targets",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "HumanNPC::nextZoneSearchTime",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "HumanNPC",
@@ -22066,26 +21366,6 @@
             ],
             "Name": "currentAmmoVelocity",
             "FullTypeName": "System.Single AutoTurret::currentAmmoVelocity",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Scientist::AllScientists",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Scientist",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "AllScientists",
-            "FullTypeName": "System.Collections.Generic.HashSet`1<Scientist> Scientist::AllScientists",
             "Parameters": []
           },
           "MSILHash": ""
@@ -22355,111 +21635,6 @@
             "Parameters": []
           },
           "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Ai.HTN.Scientist.ScientistDefinition::EquipWeapon",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Ai.HTN.Scientist.ScientistDefinition",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "EquipWeapon",
-            "FullTypeName": "System.Collections.IEnumerator",
-            "Parameters": [
-              "HTNPlayer"
-            ]
-          },
-          "MSILHash": "FL6E50zsmYoCh3pnF8NVYV8U8w9BevMtbaUU9b1CuFg="
-        },
-        {
-          "Name": "Rust.Ai.HTN.ScientistJunkpile.ScientistJunkpileDefinition::EquipTool",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Ai.HTN.ScientistJunkpile.ScientistJunkpileDefinition",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "EquipTool",
-            "FullTypeName": "System.Collections.IEnumerator",
-            "Parameters": [
-              "HTNPlayer"
-            ]
-          },
-          "MSILHash": "05nJW8RZhvK+J8uj7xn8CPmK9hYai6RGQvWRrCNgdqk="
-        },
-        {
-          "Name": "Rust.Ai.HTN.Murderer.MurdererDefinition::EquipWeapon",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Ai.HTN.Murderer.MurdererDefinition",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "EquipWeapon",
-            "FullTypeName": "System.Collections.IEnumerator",
-            "Parameters": [
-              "HTNPlayer"
-            ]
-          },
-          "MSILHash": "VBw0vU4qlSfRwZIFZzSlcOkgs2Ia12W/onAun444VMQ="
-        },
-        {
-          "Name": "Rust.Ai.HTN.ScientistAStar.ScientistAStarDefinition::EquipWeapon",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Ai.HTN.ScientistAStar.ScientistAStarDefinition",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "EquipWeapon",
-            "FullTypeName": "System.Collections.IEnumerator",
-            "Parameters": [
-              "HTNPlayer"
-            ]
-          },
-          "MSILHash": "dfmZkIYQEeJ6M91ZKDyYko1+bZewzOEao+n/Aqzi8AQ="
-        },
-        {
-          "Name": "Rust.Ai.HTN.NPCTurret.NPCTurretDefinition::EquipWeapon",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Ai.HTN.NPCTurret.NPCTurretDefinition",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "EquipWeapon",
-            "FullTypeName": "System.Collections.IEnumerator",
-            "Parameters": [
-              "HTNPlayer"
-            ]
-          },
-          "MSILHash": "v6ylFvw769svmil+/WZPpIKhH+YYhATqvfuawM6WGls="
         },
         {
           "Name": "GrowableEntity::ApplyDeathRate",
@@ -25465,25 +24640,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "ModularCar::fuelSystem",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "fuelSystem",
-            "FullTypeName": "EntityFuelSystem ModularCar::fuelSystem",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "ModularCar::groundedCOMMultiplier",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "ModularCar",
@@ -25916,44 +25072,6 @@
             ],
             "Name": "realLocalCOM",
             "FullTypeName": "UnityEngine.Vector3 BaseModularVehicle::realLocalCOM",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "BaseModularVehicle::waterlogged",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseModularVehicle",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "waterlogged",
-            "FullTypeName": "System.Boolean BaseModularVehicle::waterlogged",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "BaseModularVehicle::waterSample",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseModularVehicle",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "waterSample",
-            "FullTypeName": "UnityEngine.Transform BaseModularVehicle::waterSample",
             "Parameters": []
           },
           "MSILHash": ""
@@ -26513,25 +25631,6 @@
             ],
             "Name": "cachedYaw",
             "FullTypeName": "System.Single MiniCopter::cachedYaw",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "MiniCopter::fuelSystem",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "fuelSystem",
-            "FullTypeName": "EntityFuelSystem MiniCopter::fuelSystem",
             "Parameters": []
           },
           "MSILHash": ""
@@ -30795,25 +29894,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "EntityFuelSystem::owner",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "EntityFuelSystem",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "owner",
-            "FullTypeName": "BaseEntity EntityFuelSystem::owner",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "EntityFuelSystem::nextFuelCheckTime",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "EntityFuelSystem",
@@ -31010,44 +30090,6 @@
           "MSILHash": "xUFW++B0bRttK9P2wRgCl3fZzvSuTjKwO9NTKkdqCRA="
         },
         {
-          "Name": "HumanNPC::_brain",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "HumanNPC",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "_brain",
-            "FullTypeName": "HumanBrain HumanNPC::_brain",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "HumanNPC::myMemory",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "HumanNPC",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "myMemory",
-            "FullTypeName": "Rust.AI.SimpleAIMemory HumanNPC::myMemory",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "HumanNPC::aimOverridePosition",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "HumanNPC",
@@ -31105,25 +30147,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "HumanNPC::navmeshEnabled",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "HumanNPC",
-          "Type": 0,
-          "TargetExposure": [
-            0
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "navmeshEnabled",
-            "FullTypeName": "System.Boolean HumanNPC::navmeshEnabled",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "HumanNPC::targetAimedDuration",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "HumanNPC",
@@ -31138,44 +30161,6 @@
             ],
             "Name": "targetAimedDuration",
             "FullTypeName": "System.Single HumanNPC::targetAimedDuration",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "HumanNPC::timeSinceItemTick",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "HumanNPC",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "timeSinceItemTick",
-            "FullTypeName": "System.Single HumanNPC::timeSinceItemTick",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "HumanNPC::timeSinceTargetUpdate",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "HumanNPC",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "timeSinceTargetUpdate",
-            "FullTypeName": "System.Single HumanNPC::timeSinceTargetUpdate",
             "Parameters": []
           },
           "MSILHash": ""
@@ -32353,82 +31338,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "VehicleEngineController::CancelEngineStart",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "VehicleEngineController",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "CancelEngineStart",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "+R5WYpuafMWhA99tT7X2YFl5JKbrAVYCuRBGm2aUxmU="
-        },
-        {
-          "Name": "VehicleEngineController::engineStartingFlag",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "VehicleEngineController",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "engineStartingFlag",
-            "FullTypeName": "BaseEntity/Flags VehicleEngineController::engineStartingFlag",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "VehicleEngineController::engineStartupTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "VehicleEngineController",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "engineStartupTime",
-            "FullTypeName": "System.Single VehicleEngineController::engineStartupTime",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "VehicleEngineController::owner",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "VehicleEngineController",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "owner",
-            "FullTypeName": "IEngineControllerUser VehicleEngineController::owner",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "TrainEngine::buttonHoldTime",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "TrainEngine",
@@ -32709,25 +31618,6 @@
             ],
             "Name": "detailedCabinColliderObj",
             "FullTypeName": "UnityEngine.GameObject TrainEngine::detailedCabinColliderObj",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "TrainEngine::fuelStoragePoint",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "TrainEngine",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "fuelStoragePoint",
-            "FullTypeName": "UnityEngine.Transform TrainEngine::fuelStoragePoint",
             "Parameters": []
           },
           "MSILHash": ""
@@ -35268,25 +34158,6 @@
             ]
           },
           "MSILHash": "MUwC+wL3ol9QYsNajk4X89oLeyETQ4L5NVVlqJVXTFU="
-        },
-        {
-          "Name": "TrainEngine::fuelSystem",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "TrainEngine",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "fuelSystem",
-            "FullTypeName": "EntityFuelSystem TrainEngine::fuelSystem",
-            "Parameters": []
-          },
-          "MSILHash": ""
         },
         {
           "Name": "TrainEngine::fuelStoragePrefab",
@@ -39436,25 +38307,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "BaseSubmarine::fuelSystem",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseSubmarine",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "fuelSystem",
-            "FullTypeName": "EntityFuelSystem BaseSubmarine::fuelSystem",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BaseSubmarine::idleFuelPerSec",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseSubmarine",
@@ -39569,25 +38421,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "BaseSubmarine::fuelStoragePoint",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseSubmarine",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "fuelStoragePoint",
-            "FullTypeName": "UnityEngine.Transform BaseSubmarine::fuelStoragePoint",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BaseSubmarine::torpedoFiringPoint",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseSubmarine",
@@ -39602,25 +38435,6 @@
             ],
             "Name": "torpedoFiringPoint",
             "FullTypeName": "UnityEngine.Transform BaseSubmarine::torpedoFiringPoint",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "BaseSubmarine::torpedoStoragePoint",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseSubmarine",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "torpedoStoragePoint",
-            "FullTypeName": "UnityEngine.Transform BaseSubmarine::torpedoStoragePoint",
             "Parameters": []
           },
           "MSILHash": ""
@@ -41078,25 +39892,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "MLRS::rocketDamageRadius",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MLRS",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "rocketDamageRadius",
-            "FullTypeName": "System.Single MLRS::rocketDamageRadius",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "MLRS::rocketOwnerRef",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "MLRS",
@@ -41285,6 +40080,182 @@
             "Parameters": []
           },
           "MSILHash": "u4bH0bbiLgpm+t0S8TvKmfSAN7rTSt7TKpeLUvFaWKE="
+        },
+        {
+          "Name": "BaseModularVehicle::waterSample",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseModularVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "waterSample",
+            "FullTypeName": "UnityEngine.Transform BaseModularVehicle::waterSample",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleEngineController`1::CancelEngineStart",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleEngineController`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CancelEngineStart",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "ituYk3EqGfKr6OCDCc7zmQmwFl/nOhzXyOI8DtwxM/E="
+        },
+        {
+          "Name": "VehicleEngineController`1::engineStartingFlag",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleEngineController`1",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineStartingFlag",
+            "FullTypeName": "BaseEntity/Flags VehicleEngineController`1::engineStartingFlag",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleEngineController`1::owner",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleEngineController`1",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "owner",
+            "FullTypeName": "TOwner VehicleEngineController`1::owner",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleEngineController`1::engineStartupTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleEngineController`1",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineStartupTime",
+            "FullTypeName": "System.Single VehicleEngineController`1::engineStartupTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNavigator::Warp",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNavigator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Warp",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "Hxqzwkonae35xsHh4tMlEfwmIpnYuB2YSXwYRzIkX7c="
+        },
+        {
+          "Name": "BaseNavigator::Destination",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNavigator",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              1
+            ],
+            "Name": "Destination",
+            "FullTypeName": "UnityEngine.Vector3 BaseNavigator::Destination()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNavigator::stuckTriggerDuration",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNavigator",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "stuckTriggerDuration",
+            "FullTypeName": "System.Single BaseNavigator::stuckTriggerDuration",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNavigator::stuckTimer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNavigator",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "stuckTimer",
+            "FullTypeName": "System.Single BaseNavigator::stuckTimer",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

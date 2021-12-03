@@ -40256,6 +40256,514 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseAnimalNPC::brain",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAnimalNPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "brain",
+            "FullTypeName": "BaseAIBrain`1<BaseAnimalNPC> BaseAnimalNPC::brain",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HumanNPC::Brain",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HumanNPC",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Brain",
+            "FullTypeName": "BaseAIBrain`1<HumanNPC> HumanNPC::Brain()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::hostileTargetsOnly",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hostileTargetsOnly",
+            "FullTypeName": "System.Boolean AIBrainSenses::hostileTargetsOnly",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::listenRange",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "listenRange",
+            "FullTypeName": "System.Single AIBrainSenses::listenRange",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::maxRange",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxRange",
+            "FullTypeName": "System.Single AIBrainSenses::maxRange",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::nextUpdateTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextUpdateTime",
+            "FullTypeName": "System.Single AIBrainSenses::nextUpdateTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::nextKnownPlayersLOSUpdateTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextKnownPlayersLOSUpdateTime",
+            "FullTypeName": "System.Single AIBrainSenses::nextKnownPlayersLOSUpdateTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::owner",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "owner",
+            "FullTypeName": "BaseEntity AIBrainSenses::owner",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::ownerAttack",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ownerAttack",
+            "FullTypeName": "IAIAttack AIBrainSenses::ownerAttack",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::ownerSenses",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ownerSenses",
+            "FullTypeName": "IAISenses AIBrainSenses::ownerSenses",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::playerOwner",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerOwner",
+            "FullTypeName": "BasePlayer AIBrainSenses::playerOwner",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::refreshKnownLOS",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "refreshKnownLOS",
+            "FullTypeName": "System.Boolean AIBrainSenses::refreshKnownLOS",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::senseFriendlies",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "senseFriendlies",
+            "FullTypeName": "System.Boolean AIBrainSenses::senseFriendlies",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::targetLostRange",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "targetLostRange",
+            "FullTypeName": "System.Single AIBrainSenses::targetLostRange",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::checkLOS",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "checkLOS",
+            "FullTypeName": "System.Boolean AIBrainSenses::checkLOS",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::checkVision",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "checkVision",
+            "FullTypeName": "System.Boolean AIBrainSenses::checkVision",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::ignoreNonVisionSneakers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ignoreNonVisionSneakers",
+            "FullTypeName": "System.Boolean AIBrainSenses::ignoreNonVisionSneakers",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::knownPlayersLOSUpdateInterval",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "knownPlayersLOSUpdateInterval",
+            "FullTypeName": "System.Single AIBrainSenses::knownPlayersLOSUpdateInterval",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::senseTypes",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "senseTypes",
+            "FullTypeName": "EntityType AIBrainSenses::senseTypes",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::visionCone",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "visionCone",
+            "FullTypeName": "System.Single AIBrainSenses::visionCone",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::ignoreSafeZonePlayers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "ignoreSafeZonePlayers",
+            "FullTypeName": "System.Boolean AIBrainSenses::ignoreSafeZonePlayers()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::Memory",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Memory",
+            "FullTypeName": "Rust.AI.SimpleAIMemory AIBrainSenses::Memory()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::playerQueryResults",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerQueryResults",
+            "FullTypeName": "BasePlayer[] AIBrainSenses::playerQueryResults",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AIBrainSenses::queryResults",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AIBrainSenses",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "queryResults",
+            "FullTypeName": "BaseEntity[] AIBrainSenses::queryResults",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNavigator::SetCurrentNavigationType",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNavigator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "SetCurrentNavigationType",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseNavigator/NavigationType"
+            ]
+          },
+          "MSILHash": "aSOya1NTzxBU3ulPrvizSocbIYHJnnTkN70uhSdXg2U="
+        },
+        {
+          "Name": "BaseNavigator::SetCustomDestination",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNavigator",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "SetCustomDestination",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "System.Single",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "EJMr8DsDoGz/1cTSLjeeEgdplJzbFFM3mJL/uoLS3WQ="
         }
       ],
       "Fields": [

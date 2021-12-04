@@ -41218,6 +41218,26 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "GameManifest::pathToGuid",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GameManifest",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "pathToGuid",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,System.String> GameManifest::pathToGuid",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

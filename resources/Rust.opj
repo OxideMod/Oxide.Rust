@@ -40812,6 +40812,122 @@
             ]
           },
           "MSILHash": "EJMr8DsDoGz/1cTSLjeeEgdplJzbFFM3mJL/uoLS3WQ="
+        },
+        {
+          "Name": "FrankensteinPet::nextAttackTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "FrankensteinPet",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextAttackTime",
+            "FullTypeName": "System.Single FrankensteinPet::nextAttackTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCShopKeeper::greetDir",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCShopKeeper",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "greetDir",
+            "FullTypeName": "System.Single NPCShopKeeper::greetDir",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCShopKeeper::initialFacingDir",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCShopKeeper",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "initialFacingDir",
+            "FullTypeName": "UnityEngine.Vector3 NPCShopKeeper::initialFacingDir",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "NPCShopKeeper::lastWavedAtPlayer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCShopKeeper",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastWavedAtPlayer",
+            "FullTypeName": "BasePlayer NPCShopKeeper::lastWavedAtPlayer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ScarecrowNPC::nextAttackTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ScarecrowNPC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextAttackTime",
+            "FullTypeName": "System.Single ScarecrowNPC::nextAttackTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ScarecrowNPC::Brain",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ScarecrowNPC",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              1
+            ],
+            "Name": "Brain",
+            "FullTypeName": "BaseAIBrain`1<ScarecrowNPC> ScarecrowNPC::Brain()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

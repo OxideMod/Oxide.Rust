@@ -9525,7 +9525,7 @@
             },
             "MSILHash": "vXPzmK5hSqqr3EW5LSeEL+np9HgabWa4SWRfWxS9PCo=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "NPC"
           }
         },
         {
@@ -17394,6 +17394,54 @@
             "MSILHash": "3+IgLAcTzvLlMBDcoh/2eKeYBZ1jXbMr88yf71mQdwo=",
             "BaseHookName": "OnEngineStop",
             "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [FrankensteinPet]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FrankensteinPet",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CreateCorpse",
+              "ReturnType": "BaseCorpse",
+              "Parameters": []
+            },
+            "MSILHash": "XEYaOrmSi/x+JUPu2h1AhWnmIJ3FTnBncz1JhsA0/fA=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 96,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [ScarecrowNPC]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ScarecrowNPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CreateCorpse",
+              "ReturnType": "BaseCorpse",
+              "Parameters": []
+            },
+            "MSILHash": "zNZSHWXJPuTgNAmje8ZSKEkAHBW2+xIoHLlZrXxvXd4=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
           }
         }
       ],

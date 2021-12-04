@@ -40256,6 +40256,66 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseAIBrain`1",
+            "FullTypeName": "BaseAIBrain`1",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1::IAIDesign.LoadAIDesign",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IAIDesign.LoadAIDesign",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "ProtoBuf.AIDesign",
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "Zp3YP5Y9U8WRCgLrPaIJFkUwwD3gO2R03LWM8FH0ERg="
+        },
+        {
+          "Name": "BaseAIBrain`1::IAIDesign.StopDesigning",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IAIDesign.StopDesigning",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "pCAkggsKc46cOpfVBmF1V9OIloLTtX/ABOsjyNL+Kn8="
         }
       ],
       "Fields": [

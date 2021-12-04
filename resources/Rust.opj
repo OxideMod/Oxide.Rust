@@ -17395,6 +17395,32 @@
             "BaseHookName": "OnEngineStop",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "RidableCorpseSpawn",
+            "HookName": "RidableCorpseSpawn",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseRidableAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetupCorpse",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseCorpse"
+              ]
+            },
+            "MSILHash": "I4/tTgtSG/Gu+QhFhUXJTv3XTpCIsOYPI1VQJD4zSpE=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [
@@ -40253,6 +40279,67 @@
             ],
             "Name": "stuckTimer",
             "FullTypeName": "System.Single BaseNavigator::stuckTimer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseRidableAnimal::SetupCorpse",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseRidableAnimal",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "SetupCorpse",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseCorpse"
+            ]
+          },
+          "MSILHash": "I4/tTgtSG/Gu+QhFhUXJTv3XTpCIsOYPI1VQJD4zSpE="
+        },
+        {
+          "Name": "HumanNPC",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HumanNPC",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "HumanNPC",
+            "FullTypeName": "HumanNPC",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HumanNPC::Brain",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HumanNPC",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Brain",
+            "FullTypeName": "BaseAIBrain`1<HumanNPC> HumanNPC::Brain()",
             "Parameters": []
           },
           "MSILHash": ""

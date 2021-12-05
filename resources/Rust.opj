@@ -17616,6 +17616,58 @@
             "BaseHookName": null,
             "HookCategory": "Seasonal"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnSuppliesRequest",
+            "HookName": "OnSuppliesRequest",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ExcavatorSignalComputer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RequestSupplies",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "xXBcJrTEu0k1x/ChH4YeWKYUDgLpfog7UQM8W958mb0=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 65,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnSuppliesRequested",
+            "HookName": "OnSuppliesRequested",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ExcavatorSignalComputer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RequestSupplies",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "xXBcJrTEu0k1x/ChH4YeWKYUDgLpfog7UQM8W958mb0=",
+            "BaseHookName": "OnSuppliesRequest",
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

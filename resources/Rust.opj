@@ -40256,6 +40256,46 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1::Senses",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Senses",
+            "FullTypeName": "AIBrainSenses BaseAIBrain`1::Senses()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1::<Navigator>k__BackingField",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 0,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<Navigator>k__BackingField",
+            "FullTypeName": "BaseNavigator BaseAIBrain`1::<Navigator>k__BackingField",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

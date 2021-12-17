@@ -567,7 +567,7 @@
             "HookName": "OnPlayerAttack",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "OnProjectileAttack",
@@ -576,7 +576,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "R8QGyjkBeRCcyOL6yutRjulLoiRvsBwfzr/MBih9HSA=",
+            "MSILHash": "1kR0oWiuXhrnIGj+GtJUd+AC4zATe9dbTDYcrCEUZ10=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2213,7 +2213,7 @@
             "HookName": "OnPlayerRespawned",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "RespawnAt",
@@ -2223,7 +2223,7 @@
                 "UnityEngine.Quaternion"
               ]
             },
-            "MSILHash": "BtZAmodpLfHpCb3qsluAPnFmUS4nX/TXUeBU6T95XAU=",
+            "MSILHash": "ysi/9qADSC1qc92YMKdTE9joUr5WhI6iKiF3jp0+pQw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -3816,7 +3816,7 @@
             "HookName": "OnContainerDropItems",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "DropUtil",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "DropItems",
@@ -3894,7 +3894,7 @@
             "HookName": "OnMeleeAttack",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseMelee",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "PlayerAttack",
@@ -3903,7 +3903,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "TDb9LMNWlI9U2o9HYI6vhmwNrj7T0Tzb9R9ryEz6deA=",
+            "MSILHash": "/q4nrBOZ3IqK4cE2mMio/6oY8vTVMVZR84E/MepV9w4=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -5202,7 +5202,7 @@
             "HookName": "OnEntityBuilt",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Planner",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "DoBuild",
@@ -5212,7 +5212,7 @@
                 "Construction"
               ]
             },
-            "MSILHash": "em7Lajj326NSNwRQycDNkeEw2VkHj8NZ9Kmb6XmDSV0=",
+            "MSILHash": "xfyCCg8NH/cCEeAfvuzYA6VZxA7wMUBUAJey5YFsaTo=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -9009,7 +9009,7 @@
             "HookName": "IOnPlayerConnected",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "PlayerInit",
@@ -9018,7 +9018,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "csCCfeIdo0A5OLJCvgD2JQFsBWNDXx9sqs/k8f2UtlM=",
+            "MSILHash": "lEqD9jmgKL/oSh0k7m/+VuKSWLuRXUYKINv62eP7MV4=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -15570,7 +15570,7 @@
             "HookName": "IncapacitatedFalseRespawn [patch]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "RespawnAt",
@@ -15580,7 +15580,7 @@
                 "UnityEngine.Quaternion"
               ]
             },
-            "MSILHash": "BtZAmodpLfHpCb3qsluAPnFmUS4nX/TXUeBU6T95XAU=",
+            "MSILHash": "ysi/9qADSC1qc92YMKdTE9joUr5WhI6iKiF3jp0+pQw=",
             "BaseHookName": "OnPlayerRespawned",
             "HookCategory": "_Patches"
           }
@@ -17646,6 +17646,32 @@
             "MSILHash": "Z0XlWvLMBWvsDpnMh4aaoJktkB/D5w3VI1eaU00UHJA=",
             "BaseHookName": "OnCollectiblePickup",
             "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "ServerSetFireworkDesign",
+            "HookName": "OnServerSetFireworkDesign",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatternFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ServerSetFireworkDesign",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "NZuT3O3JNaQGzdu9LJN8F+EDbfSGghAJXtWXbUqhzws=",
+            "BaseHookName": null,
+            "HookCategory": null
           }
         }
       ],

@@ -17647,6 +17647,32 @@
             "BaseHookName": "OnCollectiblePickup",
             "HookCategory": "Resource"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 9,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "CanModifyFireworkDesign",
+            "HookName": "CanModifyFireworkDesign",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatternFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "PlayerCanModify",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "Bvt1afBUCuEmJ5FVAUAhoS2K4J1kVu48EHfaaVBLSK8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

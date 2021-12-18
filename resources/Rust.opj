@@ -17930,6 +17930,58 @@
             "BaseHookName": null,
             "HookCategory": "Firework"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnFireworkDesignChange",
+            "HookName": "OnFireworkDesignChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatternFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ServerSetFireworkDesign",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "zJlPgaW2tDMTTPlK0xUEfIGrD7QtApnrSdqP6kHskvQ=",
+            "BaseHookName": null,
+            "HookCategory": "Firework"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 107,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnFireworkDesignChanged",
+            "HookName": "OnFireworkDesignChanged",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatternFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ServerSetFireworkDesign",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "zJlPgaW2tDMTTPlK0xUEfIGrD7QtApnrSdqP6kHskvQ=",
+            "BaseHookName": "OnFireworkDesignChange",
+            "HookCategory": "Firework"
+          }
         }
       ],
       "Modifiers": [

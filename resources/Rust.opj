@@ -17658,6 +17658,7 @@
             "HookTypeName": "Simple",
             "Name": "ServerSetFireworkDesign",
             "HookName": "OnServerSetFireworkDesign",
+            "HookName": "OnFireworkDesignChanged",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PatternFirework",
             "Flagged": false,
@@ -17671,6 +17672,32 @@
             },
             "MSILHash": "NZuT3O3JNaQGzdu9LJN8F+EDbfSGghAJXtWXbUqhzws=",
             "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "ServerSetFireworkDesign",
+            "HookName": "OnFireworkDesignChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatternFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ServerSetFireworkDesign",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "NZuT3O3JNaQGzdu9LJN8F+EDbfSGghAJXtWXbUqhzws=",
+            "BaseHookName": "ServerSetFireworkDesign",
             "HookCategory": null
           }
         }
@@ -41379,6 +41406,27 @@
             ]
           },
           "MSILHash": "PgzW/9B6wsf3/sPOLYR+6k+3CZenTev/ktffr4GGlM4="
+        },
+        {
+          "Name": "PatternFirework::ServerSetFireworkDesign",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatternFirework",
+          "Type": 1,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ServerSetFireworkDesign",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity/RPCMessage"
+            ]
+          },
+          "MSILHash": "NZuT3O3JNaQGzdu9LJN8F+EDbfSGghAJXtWXbUqhzws="
         }
       ],
       "Fields": [

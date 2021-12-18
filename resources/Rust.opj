@@ -17656,8 +17656,6 @@
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "ServerSetFireworkDesign",
-            "HookName": "OnServerSetFireworkDesign",
             "Name": "OnFireworkDesignChanged",
             "HookName": "OnFireworkDesignChanged",
             "AssemblyName": "Assembly-CSharp.dll",
@@ -17673,7 +17671,6 @@
             },
             "MSILHash": "NZuT3O3JNaQGzdu9LJN8F+EDbfSGghAJXtWXbUqhzws=",
             "BaseHookName": null,
-            "HookCategory": null
             "HookCategory": "Entity"
           }
         },
@@ -17685,7 +17682,6 @@
             "ArgumentBehavior": 3,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "ServerSetFireworkDesign",
             "Name": "OnFireworkDesignChange",
             "HookName": "OnFireworkDesignChange",
             "AssemblyName": "Assembly-CSharp.dll",
@@ -17700,8 +17696,6 @@
               ]
             },
             "MSILHash": "NZuT3O3JNaQGzdu9LJN8F+EDbfSGghAJXtWXbUqhzws=",
-            "BaseHookName": "ServerSetFireworkDesign",
-            "HookCategory": null
             "BaseHookName": "OnFireworkDesignChanged",
             "HookCategory": "Entity"
           }

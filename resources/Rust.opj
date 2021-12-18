@@ -17830,6 +17830,106 @@
             "BaseHookName": null,
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 9,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanDesignFirework",
+            "HookName": "CanDesignFirework",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatternFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "PlayerCanModify",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "Bvt1afBUCuEmJ5FVAUAhoS2K4J1kVu48EHfaaVBLSK8=",
+            "BaseHookName": null,
+            "HookCategory": "Firework"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnFireworkStarted",
+            "HookName": "OnFireworkStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Begin",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "a6MqfeKeRsfRPS38EntRz3Var7rhZCppcmT0NiTjnmY=",
+            "BaseHookName": null,
+            "HookCategory": "Firework"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnFireworkExhausted",
+            "HookName": "OnFireworkExhausted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnExhausted",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "LsqryEDXtfmgBTlrRAQMo/kT3c6BWwV8cLF6c50f1lY=",
+            "BaseHookName": null,
+            "HookCategory": "Firework"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnFireworkDamage",
+            "HookName": "OnFireworkDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnAttacked",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "x8FkxCPfHyzzYk8tm5S39EiTgBDuvcnlEYyh2zfcHoQ=",
+            "BaseHookName": null,
+            "HookCategory": "Firework"
+          }
         }
       ],
       "Modifiers": [
@@ -41711,6 +41811,46 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseFirework::OnAttacked",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseFirework",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "OnAttacked",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "HitInfo"
+            ]
+          },
+          "MSILHash": "x8FkxCPfHyzzYk8tm5S39EiTgBDuvcnlEYyh2zfcHoQ="
+        },
+        {
+          "Name": "PatternFirework::GetShellFuseLength",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatternFirework",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetShellFuseLength",
+            "FullTypeName": "System.Single",
+            "Parameters": []
+          },
+          "MSILHash": "CwEoQiLyzoVBKjphVuo6GxJVvvohVINTGp7fza7vF2Y="
         }
       ],
       "Fields": [

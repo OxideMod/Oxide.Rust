@@ -17647,6 +17647,32 @@
             "BaseHookName": "OnCollectiblePickup",
             "HookCategory": "Resource"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 99,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "ServerSetFireworkDesign",
+            "HookName": "OnServerSetFireworkDesign",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatternFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ServerSetFireworkDesign",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "NZuT3O3JNaQGzdu9LJN8F+EDbfSGghAJXtWXbUqhzws=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

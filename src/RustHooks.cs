@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using UnityEngine;
@@ -359,13 +360,13 @@ namespace Oxide.Game.Rust
             }
             catch (Exception ex)
             {
-                var innerException = ex;
-                var errorMessage = string.Empty;
-                var pluginName = string.Empty;
-                var stackTraceSb = new StringBuilder();
+                Exception innerException = ex;
+                string errorMessage = string.Empty;
+                string pluginName = string.Empty;
+                StringBuilder stackTraceSb = new StringBuilder();
                 while (innerException != null)
                 {
-                    var name = innerException.GetType().Name;
+                    string name = innerException.GetType().Name;
                     errorMessage = $"{name}: {innerException.Message}".TrimEnd(' ', ':');
                     stackTraceSb.AppendLine(innerException.StackTrace);
                     if (innerException.InnerException != null)
@@ -375,11 +376,11 @@ namespace Oxide.Game.Rust
                     innerException = innerException.InnerException;
                 }
 
-                var stackTrace = new StackTrace(ex, 0, true);
-                for (var i = 0; i < stackTrace.FrameCount; i++)
+                StackTrace stackTrace = new StackTrace(ex, 0, true);
+                for (int i = 0; i < stackTrace.FrameCount; i++)
                 {
-                    var frame = stackTrace.GetFrame(i);
-                    var method = frame.GetMethod();
+                    StackFrame frame = stackTrace.GetFrame(i);
+                    MethodBase method = frame.GetMethod();
                     if (method is null || method.DeclaringType is null) continue;
                     if (method.DeclaringType.Namespace == "Oxide.Plugins")
                     {

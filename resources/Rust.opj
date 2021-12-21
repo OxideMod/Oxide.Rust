@@ -17673,6 +17673,80 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnFireworkStarted",
+            "HookName": "OnFireworkStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Begin",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "a6MqfeKeRsfRPS38EntRz3Var7rhZCppcmT0NiTjnmY=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnFireworkExhausted",
+            "HookName": "OnFireworkExhausted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnExhausted",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "LsqryEDXtfmgBTlrRAQMo/kT3c6BWwV8cLF6c50f1lY=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnFireworkAttack",
+            "HookName": "OnFireworkAttack",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseFirework",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnAttacked",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "x8FkxCPfHyzzYk8tm5S39EiTgBDuvcnlEYyh2zfcHoQ=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [
@@ -41379,6 +41453,27 @@
             ]
           },
           "MSILHash": "PgzW/9B6wsf3/sPOLYR+6k+3CZenTev/ktffr4GGlM4="
+        },
+        {
+          "Name": "BaseFirework::OnAttacked",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseFirework",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "OnAttacked",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "HitInfo"
+            ]
+          },
+          "MSILHash": "x8FkxCPfHyzzYk8tm5S39EiTgBDuvcnlEYyh2zfcHoQ="
         }
       ],
       "Fields": [

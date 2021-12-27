@@ -41353,6 +41353,160 @@
             ]
           },
           "MSILHash": "PgzW/9B6wsf3/sPOLYR+6k+3CZenTev/ktffr4GGlM4="
+        },
+        {
+          "Name": "BaseNavigator::stuckCheckPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNavigator",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "stuckCheckPosition",
+            "FullTypeName": "UnityEngine.Vector3 BaseNavigator::stuckCheckPosition",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackEntity::StartAttackCooldownRaw",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "StartAttackCooldownRaw",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "i560nIYMblSZO+3tqVmOjtGvFWwJZ10j0cQZ/i1jCEM="
+        },
+        {
+          "Name": "AttackEntity::nextAttackTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextAttackTime",
+            "FullTypeName": "System.Single AttackEntity::nextAttackTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HeldEntity::ownerItemUID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HeldEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "ownerItemUID",
+            "FullTypeName": "System.UInt32 HeldEntity::ownerItemUID",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HeldEntity::holsterVisible",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HeldEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "holsterVisible",
+            "FullTypeName": "System.Boolean HeldEntity::holsterVisible",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HeldEntity::genericVisible",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HeldEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "genericVisible",
+            "FullTypeName": "System.Boolean HeldEntity::genericVisible",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SimpleShark::nextAttackTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SimpleShark",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextAttackTime",
+            "FullTypeName": "System.Single SimpleShark::nextAttackTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNpc::nextAttackTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNpc",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextAttackTime",
+            "FullTypeName": "System.Single BaseNpc::nextAttackTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

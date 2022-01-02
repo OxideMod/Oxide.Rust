@@ -1,3 +1,5 @@
+#Requires -Version 6.0
+
 param (
     [Parameter(Mandatory=$true)][string]$game_name,
     [Parameter(Mandatory=$true)][string]$dotnet,
@@ -13,15 +15,6 @@ param (
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-# Check PowerShell version
-$ps_version = $PSVersionTable.PSVersion.Major
-if ($ps_version -le 5)
-{
-    Write-Host "Error: PowerShell version 6 or higher required to continue, $ps_version currently installed"
-    if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
-    exit 1
-}
-
 # Format project name and set depot ID if provided
 $project = "Oxide." + $game_name
 if ($steam_depot) { $steam_depot = "-depot $steam_depot" }
@@ -34,14 +27,14 @@ $resources_dir = Join-Path $root_dir "resources"
 $deps_dir = Join-Path $project_dir "Dependencies"
 $platform_dir = Join-Path $deps_dir $platform
 $managed_dir = Join-Path $platform_dir $managed_dir # TODO: Make sure passed path is Linux-compatible
-$patcher_exe = Join-Path $tools_dir "OxidePatcher.exe"
+$patcher_exe = Join-Path $tools_dir "uModPatcherConsole.exe"
 $references_file = Join-Path $tools_dir ".references"
 New-Item "$tools_dir", "$managed_dir" -ItemType Directory -Force | Out-Null
 
 # Set URLs of dependencies and tools to download
 $steam_depotdl_url = "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_2.4.5/depotdownloader-2.4.5.zip"
-$de4dot_url = "https://github.com/0xd4d/de4dot/suites/507020524/artifacts/2658127"
-$patcher_url = "https://github.com/OxideMod/Oxide.Patcher/releases/download/latest/OxidePatcher.exe"
+$de4dot_url = "https://github.com/0xd4d/de4dot/suites/507020524/artifacts/2658127" # TODO: Replace expired artifact
+$patcher_url = "https://github.com/OxideMod/Oxide.Patcher/releases/download/latest/uModPatcherConsole.exe"
 
 # Set file path for patcher file (.opj)
 $patcher_file = Join-Path $resources_dir "$game_name.opj"
@@ -101,7 +94,7 @@ function Get-Downloader {
         # Download and extract DepotDownloader
         Write-Host "Downloading latest version of DepotDownloader"
         try {
-            Invoke-WebRequest $steam_depotdl_url -OutFile $steam_depotdl_zip -UseBasicParsing
+            Start-BitsTransfer $steam_depotdl_url $steam_depotdl_zip
         } catch {
             Write-Host "Error: Could not download DepotDownloader"
             Write-Host $_.Exception | Format-List -Force
@@ -223,8 +216,7 @@ function Get-Deobfuscators {
             # Download and extract de4dot
             Write-Host "Downloading latest version of de4dot" # TODO: Get and show version
             try {
-                Invoke-WebRequest $de4dot_url -OutFile $de4dot_zip -UseBasicParsing
-                #Invoke-WebRequest "https://github.com/0xd4d/de4dot/suites/266206734/artifacts/128547" -Out "$de4dot_dir\de4dot.zip"
+                Start-BitsTransfer $de4dot_url $de4dot_zip
             } catch {
                 Write-Host "Error: Could not download de4dot"
                 Write-Host $_.Exception | Format-List -Force
@@ -279,20 +271,20 @@ function Start-Deobfuscator {
 function Get-Patcher {
     # TODO: MD5 comparison of local patcher file and remote header
     # Check if patcher is already downloaded
-    if (!(Test-Path $patcher_exe) -or (Get-Item $patcher_exe).LastWriteTime -lt (Get-Date).AddDays(-7)) {
+    #if (!(Test-Path $patcher_exe) -or (Get-Item $patcher_exe).LastWriteTime -lt (Get-Date).AddDays(-7)) {
         # Download latest patcher build
-        Write-Host "Downloading latest version of Oxide patcher"
+        Write-Host "Downloading latest patcher"
         try {
-            Invoke-WebRequest $patcher_url -OutFile $patcher_exe -UseBasicParsing
+            Start-BitsTransfer $patcher_url $patcher_exe
         } catch {
-            Write-Host "Error: Could not download Oxide patcher"
+            Write-Host "Error: Could not download patcher"
             Write-Host $_.Exception | Format-List -Force
             if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
             exit 1
         }
-    } else {
-        Write-Host "Recent build of patcher already downloaded"
-    }
+    #} else {
+    #    Write-Host "Recent build of patcher already downloaded"
+    #}
 
     Start-Patcher
 }
@@ -309,9 +301,9 @@ function Start-Patcher {
     # Attempt to patch game using the patcher
     try {
         if ($IsLinux) {
-            Start-Process mono -WorkingDirectory $managed_dir -ArgumentList "$patcher_exe -c -p `"$managed_dir`" $patcher_file" -NoNewWindow -Wait
+            Start-Process mono -WorkingDirectory $managed_dir -ArgumentList "$patcher_exe $patcher_file -d `"$managed_dir`"" -NoNewWindow -Wait
         } elseif ($IsWindows) {
-            Start-Process $patcher_exe -WorkingDirectory $managed_dir -ArgumentList "-c -p `"$managed_dir`" $patcher_file" -NoNewWindow -Wait
+            Start-Process $patcher_exe -WorkingDirectory $managed_dir -ArgumentList "$patcher_file -d `"$managed_dir`"" -NoNewWindow -Wait
         }
     } catch {
         Write-Host "Error: Could not start or complete patching process"

@@ -9,9 +9,13 @@ using Oxide.Game.Rust.Libraries.Covalence;
 using Rust.Ai;
 using Rust.Ai.HTN;
 using Steamworks;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
+using System.Reflection;
+using System.Text;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
@@ -343,13 +347,48 @@ namespace Oxide.Game.Rust
                 return;
             }
 
-            // Is it a valid chat command?
-            if (!Covalence.CommandSystem.HandleChatMessage(basePlayer.IPlayer, str) && !cmdlib.HandleChatCommand(basePlayer, cmd, args))
+            try
             {
-                if (Interface.Oxide.Config.Options.Modded)
+                // Is it a valid chat command?
+                if (!Covalence.CommandSystem.HandleChatMessage(basePlayer.IPlayer, str) && !cmdlib.HandleChatCommand(basePlayer, cmd, args))
                 {
-                    basePlayer.IPlayer.Reply(string.Format(lang.GetMessage("UnknownCommand", this, basePlayer.IPlayer.Id), cmd));
+                    if (Interface.Oxide.Config.Options.Modded)
+                    {
+                        basePlayer.IPlayer.Reply(string.Format(lang.GetMessage("UnknownCommand", this, basePlayer.IPlayer.Id), cmd));
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                Exception innerException = ex;
+                string errorMessage = string.Empty;
+                string pluginName = string.Empty;
+                StringBuilder stackTraceSb = new StringBuilder();
+                while (innerException != null)
+                {
+                    string name = innerException.GetType().Name;
+                    errorMessage = $"{name}: {innerException.Message}".TrimEnd(' ', ':');
+                    stackTraceSb.AppendLine(innerException.StackTrace);
+                    if (innerException.InnerException != null)
+                    {
+                        stackTraceSb.AppendLine($"Rethrow as {name}");
+                    }
+                    innerException = innerException.InnerException;
+                }
+
+                StackTrace stackTrace = new StackTrace(ex, 0, true);
+                for (int i = 0; i < stackTrace.FrameCount; i++)
+                {
+                    StackFrame frame = stackTrace.GetFrame(i);
+                    MethodBase method = frame.GetMethod();
+                    if (method is null || method.DeclaringType is null) continue;
+                    if (method.DeclaringType.Namespace == "Oxide.Plugins")
+                    {
+                        pluginName = method.DeclaringType.Name;
+                    }
+                }
+
+                Interface.Oxide.LogError($"Failed to run command '/{cmd}' on plugin '{pluginName}'. ({errorMessage.Replace(Environment.NewLine, " ")}){Environment.NewLine}{stackTrace}");
             }
         }
 

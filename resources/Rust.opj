@@ -17647,6 +17647,38 @@
             "BaseHookName": "OnCollectiblePickup",
             "HookCategory": "Resource"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a4",
+            "HookTypeName": "Simple",
+            "Name": "CreateProjectileEffectClientside",
+            "HookName": "OnCreateProjectileEffectClientside",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseProjectile",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CreateProjectileEffectClientside",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "UnityEngine.Vector3",
+                "UnityEngine.Vector3",
+                "System.Int32",
+                "Network.Connection",
+                "System.Boolean",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "ZSy45ovlNawNBKDs4G0iJTqz5SB6soI/6ibT5XCI4EA=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

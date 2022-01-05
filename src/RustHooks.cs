@@ -6,8 +6,6 @@ using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using Oxide.Core.RemoteConsole;
 using Oxide.Game.Rust.Libraries.Covalence;
-using Rust.Ai;
-using Rust.Ai.HTN;
 using Steamworks;
 using System;
 using System.Collections.Generic;

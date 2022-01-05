@@ -11,7 +11,6 @@ param (
     [string]$steam_access = "anonymous"
 )
 
-Clear-Host
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 # Check PowerShell version

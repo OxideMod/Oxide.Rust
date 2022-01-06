@@ -41902,6 +41902,25 @@
             "Parameters": []
           },
           "MSILHash": "CwEoQiLyzoVBKjphVuo6GxJVvvohVINTGp7fza7vF2Y="
+        },
+        {
+          "Name": "EntityFuelSystem::GetFuelContainer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "EntityFuelSystem",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetFuelContainer",
+            "FullTypeName": "StorageContainer",
+            "Parameters": []
+          },
+          "MSILHash": "m6HprTc0nWRCS1dRPAqBt1Zo3NIpS7x/0ON8x9/kp4g="
         }
       ],
       "Fields": [

@@ -17754,8 +17754,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
             "HookTypeName": "Simple",
-            "Name": "OnSuppliesRequest",
-            "HookName": "OnSuppliesRequest",
+            "Name": "OnExcavatorSuppliesRequest",
+            "HookName": "OnExcavatorSuppliesRequest",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ExcavatorSignalComputer",
             "Flagged": false,
@@ -17780,8 +17780,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player, l0",
             "HookTypeName": "Simple",
-            "Name": "OnSuppliesRequested",
-            "HookName": "OnSuppliesRequested",
+            "Name": "OnExcavatorSuppliesRequested",
+            "HookName": "OnExcavatorSuppliesRequested",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ExcavatorSignalComputer",
             "Flagged": false,
@@ -17794,7 +17794,7 @@
               ]
             },
             "MSILHash": "xXBcJrTEu0k1x/ChH4YeWKYUDgLpfog7UQM8W958mb0=",
-            "BaseHookName": "OnSuppliesRequest",
+            "BaseHookName": "OnExcavatorSuppliesRequest",
             "HookCategory": "Electronic"
           }
         },

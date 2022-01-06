@@ -41507,6 +41507,27 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1::Senses",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "Senses",
+            "FullTypeName": "AIBrainSenses BaseAIBrain`1::Senses()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

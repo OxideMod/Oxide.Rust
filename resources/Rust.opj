@@ -17758,7 +17758,7 @@
             "HookName": "OnSuppliesRequest",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ExcavatorSignalComputer",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RequestSupplies",
@@ -17784,7 +17784,7 @@
             "HookName": "OnSuppliesRequested",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ExcavatorSignalComputer",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 2,
               "Name": "RequestSupplies",

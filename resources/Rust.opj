@@ -846,13 +846,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 85,
-            "ReturnBehavior": 0,
+            "InjectionIndex": 5,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnPlayerSleepEnded",
-            "HookName": "OnPlayerSleepEnded",
+            "Name": "OnPlayerSleepEnd",
+            "HookName": "OnPlayerSleepEnd",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
             "Flagged": false,
@@ -17646,6 +17646,105 @@
             "MSILHash": "Z0XlWvLMBWvsDpnMh4aaoJktkB/D5w3VI1eaU00UHJA=",
             "BaseHookName": "OnCollectiblePickup",
             "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnBradleyApcThink",
+            "HookName": "OnBradleyApcThink",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BradleyAPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoSimpleAI",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "bNaiCw+6TM6C7gxWXXe8dZy8OQUauXfHy1hn7xdITM4=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnTerrainCreate",
+            "HookName": "OnTerrainCreate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TerrainGenerator",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CreateTerrain",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Int32",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "WCX14Vuho/btIOoQs60IVO3MH3vV4fwFQ7hZL9sA9UE=",
+            "BaseHookName": null,
+            "HookCategory": "World"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 5,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.playerCollider",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerColliderEnable",
+            "HookName": "OnPlayerColliderEnable",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "EnablePlayerCollider",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "hoTrlCKAMm2Cm9UWm8ckiX/OaPSOJ+pJedr1Apd5bYw=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 91,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerSleepEnded",
+            "HookName": "OnPlayerSleepEnded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EndSleeping",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "T8C1px3DCgnnvpWfP8z1eJj3YjcgmuTtS75DNuEMQZA=",
+            "BaseHookName": "OnPlayerSleepEnd",
+            "HookCategory": "Player"
           }
         }
       ],

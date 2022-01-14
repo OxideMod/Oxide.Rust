@@ -18005,6 +18005,32 @@
             "BaseHookName": "IOnUpdateServerDescription",
             "HookCategory": "Server"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 115,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnSignUpdated [CarvablePumpkin]",
+            "HookName": "OnSignUpdated",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CarvablePumpkin",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateSign",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "uJnUoYfuESOz1Y793jMCgmHdr+Gki+1JUbGv2OZaaUo=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [

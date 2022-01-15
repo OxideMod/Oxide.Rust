@@ -42197,6 +42197,161 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "IndividualSpawner::nextSpawnTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IndividualSpawner",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextSpawnTime",
+            "FullTypeName": "System.Single IndividualSpawner::nextSpawnTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IndividualSpawner::oneTimeSpawner",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IndividualSpawner",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "oneTimeSpawner",
+            "FullTypeName": "System.Boolean IndividualSpawner::oneTimeSpawner",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IndividualSpawner::spawnInstance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IndividualSpawner",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spawnInstance",
+            "FullTypeName": "SpawnPointInstance IndividualSpawner::spawnInstance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IndividualSpawner::IsSpawned",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IndividualSpawner",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "IsSpawned",
+            "FullTypeName": "System.Boolean IndividualSpawner::IsSpawned()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IndividualSpawner::TryGetEntityBounds",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IndividualSpawner",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TryGetEntityBounds",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "UnityEngine.Bounds&"
+            ]
+          },
+          "MSILHash": "We97fbvtdUkJ/qyexs/3NmziKigLYN+XrqcPfPXUujk="
+        },
+        {
+          "Name": "IndividualSpawner::TrySpawnEntity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IndividualSpawner",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TrySpawnEntity",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "gocDH4zcxOoj5rt9yfZbrUpkyDCiVoryFnbf1iXqHIs="
+        },
+        {
+          "Name": "SpawnGroup::fillOnSpawn",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnGroup",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "fillOnSpawn",
+            "FullTypeName": "System.Boolean SpawnGroup::fillOnSpawn",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SpawnGroup::spawnInstances",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnGroup",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spawnInstances",
+            "FullTypeName": "System.Collections.Generic.List`1<SpawnPointInstance> SpawnGroup::spawnInstances",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

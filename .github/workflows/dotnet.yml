@@ -15,9 +15,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build with msbuild
-      run: |
-         cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\"
-         .\MSBuild.exe $env:GITHUB_WORKSPACE\src\${{ github.event.repository.name }}.csproj
+      run: dotnet msbuild -property:Configuration=Release
     - name: Pack for nuget
       run:
         dotnet pack --configuration Release --no-restore

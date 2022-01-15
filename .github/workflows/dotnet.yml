@@ -8,18 +8,16 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-2019
     steps:
     - name: Check out source
       uses: actions/checkout@v2
-    - name: Set up .NET
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 4.8.x
     - name: Restore dependencies
       run: dotnet restore
-    - name: Build source
-      run: dotnet build --no-restore
+    - name: Build with msbuild
+      run: |
+         cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\"
+         .\MSBuild.exe $env:GITHUB_WORKSPACE\src\${{ github.event.repository.name }}.csproj
     - name: Pack for nuget
       run:
         dotnet pack --configuration Release --no-restore

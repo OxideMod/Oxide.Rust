@@ -1,0 +1,25 @@
+name: .NET
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out source
+      uses: actions/checkout@v2
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 4.8.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build source
+      run: dotnet build --no-restore
+    - name: Pack for nuget
+      run:
+        dotnet pack --configuration Release --no-restore

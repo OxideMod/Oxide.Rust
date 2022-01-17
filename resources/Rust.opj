@@ -16728,7 +16728,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 20,
+            "InjectionIndex": 32,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, a0.player",
@@ -16746,7 +16746,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "PV4p+3QUqkkPThJEQ9mwTnPLJYbT/ZLJvWwk9q3lVPE=",
+            "MSILHash": "hj3oOBVvl2siH9B4TXqqNY42/dEjWaQyqG0oWU8CE0s=",
             "BaseHookName": null,
             "HookCategory": "Turret"
           }
@@ -16754,7 +16754,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 54,
+            "InjectionIndex": 66,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, a0.player",
@@ -16772,7 +16772,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "PV4p+3QUqkkPThJEQ9mwTnPLJYbT/ZLJvWwk9q3lVPE=",
+            "MSILHash": "hj3oOBVvl2siH9B4TXqqNY42/dEjWaQyqG0oWU8CE0s=",
             "BaseHookName": "OnTurretAssign",
             "HookCategory": "Turret"
           }

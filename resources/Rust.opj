@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-staging\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "4xF70/Mtea7E+tRWMyK456XXHg5dj1GH9xvX4f9RhGQ=",
+            "MSILHash": "WvOS2IFISbg3Q0DZWeQXpyzMATuOi/mjgRCcAXPW0Ig=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -760,7 +760,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "bLiVE2ghP/zaN5LJ3Wb86gFgp2NNiCFPMfOTdU7Uljo=",
+            "MSILHash": "9LNeArnyiRfuvWmiKP2Wm5kMJ4sl5TYvegxDebF0Iqk=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1429,7 +1429,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "Itjt4JhgqlYKWdbX08dRo/7d9c+lGjPzxJHH+U2ahEM=",
+            "MSILHash": "93NYR94vQ7NTHfZ4KuiEPSBNjC88bS/jDOVh1agJr/M=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -1697,7 +1697,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Xdiq1LH+Q1b0E5aOTwacOZL9x6QwdQ64/1Yb7GPSjRU=",
+            "MSILHash": "v7EyUSCVJ6XgiWftIjUF5ja8nWNGQ5NDPdVxBIMli00=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -2362,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "Os6JQpRDpqJ2DK4Jt2OVJbqcreu7rTZLBIQwnIvutLs=",
+            "MSILHash": "fq7lTyfQF1kTML6LkausLSpK/b4YgbTgrXi0QMTt6hY=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2389,7 +2389,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "rhwijdVxXfNshBBmvYIhef+2oKSCjLlzFN+GYOp+oUk=",
+            "MSILHash": "GaC0rp1N7Zpn83aiHVuDLrlgT3NWhwSfF3Ak7uXZ4so=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2440,7 +2440,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "rhwijdVxXfNshBBmvYIhef+2oKSCjLlzFN+GYOp+oUk=",
+            "MSILHash": "GaC0rp1N7Zpn83aiHVuDLrlgT3NWhwSfF3Ak7uXZ4so=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -3184,7 +3184,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "Q087cBihYP28eOyp459Yg2/mxaFBffjmXOCGMcfT8+I=",
+            "MSILHash": "YvqSLyTKsqr2SrD77/k+OE5BU2YUIYAEi6TpPhmUtJM=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -6519,7 +6519,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Y0RAOBGmf3ZDiciM1EfESPfLQXX9iw/e+uQmaxvLwN8=",
+            "MSILHash": "wW1Ay22/Lb4R74x9gkIN0V8KbRY0GWM2kSCeKWmyueM=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -7371,7 +7371,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 197,
+            "InjectionIndex": 210,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this.currentTeam, l3, this",
@@ -7387,7 +7387,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "AK5m41VbU+uzhOke9N1ZL9y8H/6VDmj7Kdl8xnkbsNw=",
+            "MSILHash": "+B38KNjPr03QVzJWxV69cRFj4Ddlnu4NJMXLPqFd5I8=",
             "BaseHookName": null,
             "HookCategory": "Team"
           }
@@ -9191,7 +9191,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 75,
+            "InjectionIndex": 119,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -9205,9 +9205,9 @@
                 "Operand": null
               },
               {
-                "OpCode": "ldloc_3",
-                "OpType": "None",
-                "Operand": null
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 6
               },
               {
                 "OpCode": "call",
@@ -9217,7 +9217,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 78
+                "Operand": 122
               }
             ],
             "HookTypeName": "Modify",
@@ -9232,7 +9232,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "kTIwaaM0uwzK3aDAj0vPI0lwRgY9dhIlnoh+6XR8WPc=",
+            "MSILHash": "skTOygZaa8yzG7QpYj3EFVneCJhwk+oxMxopjEOt8kw=",
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
@@ -9952,7 +9952,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 25,
+            "InjectionIndex": 31,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -9970,7 +9970,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "NzkbMXSEk4f6FM7Vh0cu/Noxo5/mfBdiDaUcIjv8BT0=",
+            "MSILHash": "yvqtfJDXBe9lza1sXTAv64+7EhE+WtEW0NAbZpZEaMg=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
@@ -14759,7 +14759,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "VVmQczZZC9ad7nkA6FTpnZKlrlOY3SncFx1cLrdNRm0=",
+            "MSILHash": "+NLITlqBC9zhonA2XkIsuYsHTRbsme8pz0rx3YGz0Rk=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -16972,7 +16972,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 25,
+            "InjectionIndex": 66,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -16998,7 +16998,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 37
+                "Operand": 81
               }
             ],
             "HookTypeName": "Modify",
@@ -17013,7 +17013,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "kTIwaaM0uwzK3aDAj0vPI0lwRgY9dhIlnoh+6XR8WPc=",
+            "MSILHash": "skTOygZaa8yzG7QpYj3EFVneCJhwk+oxMxopjEOt8kw=",
             "BaseHookName": "OnSamSiteTarget",
             "HookCategory": "Entity"
           }
@@ -17645,7 +17645,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "WCX14Vuho/btIOoQs60IVO3MH3vV4fwFQ7hZL9sA9UE=",
+            "MSILHash": "/2bsaQ/HHo1GS+PyvoLVbIm6xRXsqXanTwaY7dGj4O0=",
             "BaseHookName": null,
             "HookCategory": "World"
           }
@@ -17953,7 +17953,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "3sbrnkZyCCrLrpdgva7Zt2cpgWRXR4SnSYkQCgz+reg=",
+            "MSILHash": "4WCM3KhJ09U7tEXMhz9KnsAbr/Q86AAAlLOB80EKI9E=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -24733,28 +24733,6 @@
           "MSILHash": "+Ix5xuFhIXmDVfOBxxGI9tDNoFiL7bnjAqAPUxpf64A="
         },
         {
-          "Name": "ModularCar::DoCollisionDamage",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "DoCollisionDamage",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "BaseEntity",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "YdcRvlZXG9m9r27GA3sqVLbGnb1sKt9lPW7/W/ZA1DI="
-        },
-        {
           "Name": "ModularCar::GetCOMMultiplier",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "ModularCar",
@@ -24814,27 +24792,6 @@
             ]
           },
           "MSILHash": "Ee8CVVBzgDF79uha+5sUmqzOXDub4B2YLI80W75M1qU="
-        },
-        {
-          "Name": "ModularCar::ProcessCollision",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ProcessCollision",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "UnityEngine.Collision"
-            ]
-          },
-          "MSILHash": "h83xuo92Zt3CSsgQVjOWikImRbFVaDRxVhpKRpW8thU="
         },
         {
           "Name": "ModularCar::PropagateDamageToModules",
@@ -24920,27 +24877,6 @@
           "MSILHash": "MiwDZe2HsX3slbEpfW6PDiRdBPtE0Aivv6p9ivPWu6s="
         },
         {
-          "Name": "ModularCar::ShowCollisionFX",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ShowCollisionFX",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "UnityEngine.Collision"
-            ]
-          },
-          "MSILHash": "zGcl3x4kDkYwsYDzSTPdK5zkIGV+IeHtr1ayphqhngo="
-        },
-        {
           "Name": "ModularCar::SpawnPreassignedModules",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "ModularCar",
@@ -24979,27 +24915,6 @@
           "MSILHash": "u2CBZFRDpS2l2Mgay2BTOmls1zZGqlnKGh0M83sBDso="
         },
         {
-          "Name": "ModularCar::OnCollisionEnter",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "OnCollisionEnter",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "UnityEngine.Collision"
-            ]
-          },
-          "MSILHash": "qGXvU40mZcaZhTZaGVnt9pAtF3Zc3+Y8tCu+K5ws1x8="
-        },
-        {
           "Name": "ModularCar::airbourneCOMMultiplier",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "ModularCar",
@@ -25033,25 +24948,6 @@
             ],
             "Name": "cachedFuelFraction",
             "FullTypeName": "System.Single ModularCar::cachedFuelFraction",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "ModularCar::carAudio",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "carAudio",
-            "FullTypeName": "Rust.Modular.ModularCarAudio ModularCar::carAudio",
             "Parameters": []
           },
           "MSILHash": ""
@@ -25095,25 +24991,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "ModularCar::collisionEffect",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "collisionEffect",
-            "FullTypeName": "GameObjectRef ModularCar::collisionEffect",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "ModularCar::damageShowingRenderers",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "ModularCar",
@@ -25128,25 +25005,6 @@
             ],
             "Name": "damageShowingRenderers",
             "FullTypeName": "UnityEngine.MeshRenderer[] ModularCar::damageShowingRenderers",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "ModularCar::damageSinceLastTick",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "damageSinceLastTick",
-            "FullTypeName": "System.Collections.Generic.Dictionary`2<BaseEntity,System.Single> ModularCar::damageSinceLastTick",
             "Parameters": []
           },
           "MSILHash": ""
@@ -25204,25 +25062,6 @@
             ],
             "Name": "fuelStoragePoint",
             "FullTypeName": "UnityEngine.Transform ModularCar::fuelStoragePoint",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "ModularCar::fuelStoragePrefab",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "fuelStoragePrefab",
-            "FullTypeName": "GameObjectRef ModularCar::fuelStoragePrefab",
             "Parameters": []
           },
           "MSILHash": ""
@@ -25356,44 +25195,6 @@
             ],
             "Name": "mortalProtection",
             "FullTypeName": "ProtectionProperties ModularCar::mortalProtection",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "ModularCar::nextCollisionDamageTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "nextCollisionDamageTime",
-            "FullTypeName": "System.Single ModularCar::nextCollisionDamageTime",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "ModularCar::nextCollisionFXTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "nextCollisionFXTime",
-            "FullTypeName": "System.Single ModularCar::nextCollisionFXTime",
             "Parameters": []
           },
           "MSILHash": ""
@@ -25707,27 +25508,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "BaseModularVehicle::Velocity",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseModularVehicle",
-          "Type": 2,
-          "TargetExposure": [
-            2,
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              2,
-              0
-            ],
-            "Name": "Velocity",
-            "FullTypeName": "UnityEngine.Vector3 BaseModularVehicle::Velocity()",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BaseModularVehicle::TotalMass",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseModularVehicle",
@@ -25873,25 +25653,6 @@
           "MSILHash": "jALc5yDQNdmBSDnIY8pl6rXN7HLz8d7hZqtxbhkKI8U="
         },
         {
-          "Name": "BaseModularVehicle::OnPhysicsNeighbourChanged",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseModularVehicle",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "OnPhysicsNeighbourChanged",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "YwybJZRPvBNDfcul58V0ATNXSkmbNlcEuR5Ybd9TvSM="
-        },
-        {
           "Name": "BaseModularVehicle::RefreshModulesExcept",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseModularVehicle",
@@ -25932,27 +25693,6 @@
             ]
           },
           "MSILHash": "eLRCwr7qfbh3J1ij6W5zad6gsZZaVvjFgTm3W2I61ZE="
-        },
-        {
-          "Name": "BaseModularVehicle::SetLightsState",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseModularVehicle",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "SetLightsState",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "System.Boolean"
-            ]
-          },
-          "MSILHash": "NDe+M5JZqsENVwvuGnrf/ztOf2qiY42GmRWr1Q4Zt8g="
         },
         {
           "Name": "BaseModularVehicle::SetMass",
@@ -29955,27 +29695,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "Rust.Modular.EngineStorage::GetContainerItemsValueFor",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.EngineStorage",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GetContainerItemsValueFor",
-            "FullTypeName": "System.Single",
-            "Parameters": [
-              "System.Func`2<Rust.Modular.EngineStorage/EngineItemTypes,System.Boolean>"
-            ]
-          },
-          "MSILHash": "LyUiqly2utASZRrgC6p1WX/f4MfnHFcCztnz9lgb0EY="
-        },
-        {
           "Name": "Rust.Modular.EngineStorage::GetTierValue",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "Rust.Modular.EngineStorage",
@@ -30558,44 +30277,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "Rust.Modular.ModularCarPhysics::GetModifiedDrag",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GetModifiedDrag",
-            "FullTypeName": "System.Single",
-            "Parameters": []
-          },
-          "MSILHash": "KxCZj+drq6ef4xArJ9QT6FiYOtFFBy024TD4WXBurLY="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::timeSinceWaterCheck",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "timeSinceWaterCheck",
-            "FullTypeName": "TimeSince Rust.Modular.ModularCarPhysics::timeSinceWaterCheck",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BaseNetworkable::GetSubscribers",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseNetworkable",
@@ -31128,25 +30809,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "ModularCar::engineController",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "engineController",
-            "FullTypeName": "VehicleEngineController ModularCar::engineController",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "ModularCar::lastEngineOnTime",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "ModularCar",
@@ -31183,28 +30845,6 @@
             "Parameters": []
           },
           "MSILHash": "bOA55sXg5h2O0vJOMmostTbAURxvIF8sxK+mnQBzSm8="
-        },
-        {
-          "Name": "ModularCar::QueueCollisionDamage",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "QueueCollisionDamage",
-            "FullTypeName": "System.Single",
-            "Parameters": [
-              "BaseEntity",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "Ab6tuRSeONQadiOc4WvC9TUXv5ULCBWk5ghyPjynoS0="
         },
         {
           "Name": "Climate::defaultTemp",
@@ -33003,25 +32643,6 @@
             ]
           },
           "MSILHash": "tCBWkdtDqDi+dNpXa7oJj7sf8mEL1HDkw2Tas1fnMp4="
-        },
-        {
-          "Name": "BaseHelicopterVehicle::OnPhysicsNeighbourChanged",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "OnPhysicsNeighbourChanged",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "YwybJZRPvBNDfcul58V0ATNXSkmbNlcEuR5Ybd9TvSM="
         },
         {
           "Name": "BaseVehicle::clearRecentDriverAction",
@@ -36090,739 +35711,6 @@
           "MSILHash": "zgMgHGxQl6DY/dCpc/vZ4QMl7yltekTlGYOVDTOw6T4="
         },
         {
-          "Name": "Rust.Modular.ModularCarPhysics::dragMod",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "dragMod",
-            "FullTypeName": "System.Single Rust.Modular.ModularCarPhysics::dragMod",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::dragModDuration",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "dragModDuration",
-            "FullTypeName": "System.Single Rust.Modular.ModularCarPhysics::dragModDuration",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::hadDriver",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "hadDriver",
-            "FullTypeName": "System.Boolean Rust.Modular.ModularCarPhysics::hadDriver",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::hasDriver",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "hasDriver",
-            "FullTypeName": "System.Boolean Rust.Modular.ModularCarPhysics::hasDriver",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::lastMovingTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "lastMovingTime",
-            "FullTypeName": "System.Single Rust.Modular.ModularCarPhysics::lastMovingTime",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::midWheelPos",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "midWheelPos",
-            "FullTypeName": "System.Single Rust.Modular.ModularCarPhysics::midWheelPos",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::modularCar",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "modularCar",
-            "FullTypeName": "ModularCar Rust.Modular.ModularCarPhysics::modularCar",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::prevLocalCOM",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "prevLocalCOM",
-            "FullTypeName": "UnityEngine.Vector3 Rust.Modular.ModularCarPhysics::prevLocalCOM",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::rBody",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "rBody",
-            "FullTypeName": "UnityEngine.Rigidbody Rust.Modular.ModularCarPhysics::rBody",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::slowSpeedExitFlag",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "slowSpeedExitFlag",
-            "FullTypeName": "System.Boolean Rust.Modular.ModularCarPhysics::slowSpeedExitFlag",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::speedAngle",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "speedAngle",
-            "FullTypeName": "System.Single Rust.Modular.ModularCarPhysics::speedAngle",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::timeSinceDragModSet",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "timeSinceDragModSet",
-            "FullTypeName": "TimeSince Rust.Modular.ModularCarPhysics::timeSinceDragModSet",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::transform",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "transform",
-            "FullTypeName": "UnityEngine.Transform Rust.Modular.ModularCarPhysics::transform",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::vehicleSettings",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "vehicleSettings",
-            "FullTypeName": "Rust.Modular.ModularCarSettings Rust.Modular.ModularCarPhysics::vehicleSettings",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::wasSleeping",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "wasSleeping",
-            "FullTypeName": "System.Boolean Rust.Modular.ModularCarPhysics::wasSleeping",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::wheelData",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "wheelData",
-            "FullTypeName": "Rust.Modular.ModularCarPhysics/ServerWheelData[] Rust.Modular.ModularCarPhysics::wheelData",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::zeroFriction",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "zeroFriction",
-            "FullTypeName": "UnityEngine.WheelFrictionCurve Rust.Modular.ModularCarPhysics::zeroFriction",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::DriveWheelSlip",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 2,
-          "TargetExposure": [
-            2,
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              2,
-              0
-            ],
-            "Name": "DriveWheelSlip",
-            "FullTypeName": "System.Single Rust.Modular.ModularCarPhysics::DriveWheelSlip()",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::DriveWheelVelocity",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 2,
-          "TargetExposure": [
-            2,
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              2,
-              0
-            ],
-            "Name": "DriveWheelVelocity",
-            "FullTypeName": "System.Single Rust.Modular.ModularCarPhysics::DriveWheelVelocity()",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::InSlowSpeedExitMode",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 2,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0,
-              5
-            ],
-            "Name": "InSlowSpeedExitMode",
-            "FullTypeName": "System.Boolean Rust.Modular.ModularCarPhysics::InSlowSpeedExitMode()",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::SteerAngle",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 2,
-          "TargetExposure": [
-            2,
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              2,
-              0
-            ],
-            "Name": "SteerAngle",
-            "FullTypeName": "System.Single Rust.Modular.ModularCarPhysics::SteerAngle()",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::<.ctor>g__AddWheel|42_0",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "<.ctor>g__AddWheel|42_0",
-            "FullTypeName": "Rust.Modular.ModularCarPhysics/ServerWheelData",
-            "Parameters": [
-              "ModularCar/Wheel"
-            ]
-          },
-          "MSILHash": "JRXwIaytPsj7A7eRyLfz+fO2arfgxTt9EJ5afc3Qu1w="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::AdjustHitForces",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "AdjustHitForces",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "System.Int32",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "J9BRwoqtKVOnywuqIUfqguTzoDJjDOnzWdmueWHN5ws="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::ApplyTireForces",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ApplyTireForces",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "Rust.Modular.ModularCarPhysics/ServerWheelData"
-            ]
-          },
-          "MSILHash": "+YR7LfNV60/nIiYZOpLUYcaEaW8TdpEb4ue/XU5hTTg="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::COMChanged",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "COMChanged",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "5mRyPnc5fq+kOZ1ZaRpoGS0c4O+BTo3YFSf55EMQX/M="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::ComputeDriveForce",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ComputeDriveForce",
-            "FullTypeName": "System.Single",
-            "Parameters": [
-              "System.Single",
-              "System.Single",
-              "System.Single",
-              "System.Single",
-              "System.Single",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "OqXeKTzX/o9De03ARv5QAxKYttERsfQnIti1SFgMMRs="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::ComputeOverallForces",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ComputeOverallForces",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "0Dv9sjYgGLd2wZHKJCMf1Jte+v1NX03x/xZ3P8ZzMs8="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::ComputeSteerAngle",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ComputeSteerAngle",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "System.Single",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "N96qoQ6wtqgMwaxuBcsnSh9LDbuFvhc/dPv3wdG15vw="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::FixedUpdate",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              2
-            ],
-            "Name": "FixedUpdate",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "System.Single",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "W3gv/DCx1sIwbnAOqKoxTc6uE/qZGvMM/bNSihCTGcg="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::GetSidewaysForceAppPoint",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GetSidewaysForceAppPoint",
-            "FullTypeName": "UnityEngine.Vector3",
-            "Parameters": [
-              "Rust.Modular.ModularCarPhysics/ServerWheelData",
-              "UnityEngine.Vector3"
-            ]
-          },
-          "MSILHash": "c+4DPFadHlei7ZcnMqTT40+AggyNEp/1Ypq8mFjX7fU="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::GetWheelForceDistance",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GetWheelForceDistance",
-            "FullTypeName": "System.Single",
-            "Parameters": [
-              "UnityEngine.WheelCollider"
-            ]
-          },
-          "MSILHash": "SafWVZ58Lht9jwMjDELKBER10OqgUxEoSmg4MPfaoJ8="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::UpdateLocalFrame",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "UpdateLocalFrame",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "Rust.Modular.ModularCarPhysics/ServerWheelData",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "mytxCePdn9vqXG6NozYAuCgRLXWJgErXKjTXEC27G2E="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::UpdateSuspension",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "UpdateSuspension",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "Rust.Modular.ModularCarPhysics/ServerWheelData"
-            ]
-          },
-          "MSILHash": "12ye9ejI4votloX+ICaEYX279+YYIhbYqE81W94u5bs="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::ComputeCombinedSlip",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ComputeCombinedSlip",
-            "FullTypeName": "System.Single",
-            "Parameters": [
-              "UnityEngine.Vector2",
-              "UnityEngine.Vector2"
-            ]
-          },
-          "MSILHash": "GOSAi4Vn/OWWMp3iKWXXJ+jKMJL/d+10FHkFC9f3wss="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics::ComputeTireForces",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ComputeTireForces",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "Rust.Modular.ModularCarPhysics/ServerWheelData",
-              "System.Single",
-              "System.Single",
-              "System.Single",
-              "System.Single",
-              "System.Single",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "FHIO/8emUix3/VIrlRwGM6r3SC6wY5Ocn/9DvbuB6Q4="
-        },
-        {
-          "Name": "Rust.Modular.ModularCarPhysics/ServerWheelData",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Rust.Modular.ModularCarPhysics/ServerWheelData",
-          "Type": 3,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ServerWheelData",
-            "FullTypeName": "Rust.Modular.ModularCarPhysics/ServerWheelData",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BaseCrane::fuelSystem",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseCrane",
@@ -39216,25 +38104,6 @@
             "Parameters": []
           },
           "MSILHash": ""
-        },
-        {
-          "Name": "BaseSubmarine::ResetInputs",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseSubmarine",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ResetInputs",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "FAJTVIp19xthQh6PvTAX0r07mqPtqrCCc/C64Q52NHg="
         },
         {
           "Name": "BaseSubmarine::torpedoStorageInstance",
@@ -42330,6 +41199,48 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::GetContainerItemsValueFor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetContainerItemsValueFor",
+            "FullTypeName": "System.Single",
+            "Parameters": [
+              "System.Func`2<Rust.Modular.EngineStorage/EngineItemTypes,System.Boolean>"
+            ]
+          },
+          "MSILHash": "LyUiqly2utASZRrgC6p1WX/f4MfnHFcCztnz9lgb0EY="
+        },
+        {
+          "Name": "Rust.Modular.EngineStorage::GetValidSlot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Rust.Modular.EngineStorage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetValidSlot",
+            "FullTypeName": "System.Int32",
+            "Parameters": [
+              "Item"
+            ]
+          },
+          "MSILHash": "lbxKyxS7/GTNacSoZDE4iu368rJ0vDKXmClANeGkgh4="
         }
       ],
       "Fields": [

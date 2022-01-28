@@ -610,10 +610,10 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
-        /// Called when the server is updating Steam information
+        /// Called when the server has updated Steam information
         /// </summary>
-        [HookMethod("IOnUpdateServerInformation")]
-        private void IOnUpdateServerInformation()
+        [HookMethod("OnServerInformationUpdated")]
+        private void OnServerInformationUpdated()
         {
             // Add Steam tags for Oxide
             SteamServer.GameTags += ",oxide";
@@ -621,16 +621,6 @@ namespace Oxide.Game.Rust
             {
                 SteamServer.GameTags += ",modded";
             }
-        }
-
-        /// <summary>
-        /// Called when the server description is updating
-        /// </summary>
-        [HookMethod("IOnUpdateServerDescription")]
-        private void IOnUpdateServerDescription()
-        {
-            // Fix for server description not always updating
-            SteamServer.SetKey("description_0", string.Empty);
         }
 
         #endregion Server Hooks

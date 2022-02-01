@@ -41241,6 +41241,405 @@
             ]
           },
           "MSILHash": "lbxKyxS7/GTNacSoZDE4iu368rJ0vDKXmClANeGkgh4="
+        },
+        {
+          "Name": "CarPhysics`1::timeSinceWaterCheck",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CarPhysics`1",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceWaterCheck",
+            "FullTypeName": "TimeSince CarPhysics`1::timeSinceWaterCheck",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::airControlPower",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "airControlPower",
+            "FullTypeName": "System.Single Snowmobile::airControlPower",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::airControlStability",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "airControlStability",
+            "FullTypeName": "System.Single Snowmobile::airControlStability",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::badTerrainDrag",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "badTerrainDrag",
+            "FullTypeName": "System.Single Snowmobile::badTerrainDrag",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::carPhysics",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "carPhysics",
+            "FullTypeName": "CarPhysics`1<Snowmobile> Snowmobile::carPhysics",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::carSettings",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "carSettings",
+            "FullTypeName": "CarSettings Snowmobile::carSettings",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::engineKW",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineKW",
+            "FullTypeName": "System.Int32 Snowmobile::engineKW",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::hurtTriggerFront",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hurtTriggerFront",
+            "FullTypeName": "TriggerHurtNotChild Snowmobile::hurtTriggerFront",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::hurtTriggerMinSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hurtTriggerMinSpeed",
+            "FullTypeName": "System.Single Snowmobile::hurtTriggerMinSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::hurtTriggerRear",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hurtTriggerRear",
+            "FullTypeName": "TriggerHurtNotChild Snowmobile::hurtTriggerRear",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::idleFuelPerSec",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "idleFuelPerSec",
+            "FullTypeName": "System.Single Snowmobile::idleFuelPerSec",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::maxFuelPerSec",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxFuelPerSec",
+            "FullTypeName": "System.Single Snowmobile::maxFuelPerSec",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::prevTerrainModDrag",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "prevTerrainModDrag",
+            "FullTypeName": "System.Single Snowmobile::prevTerrainModDrag",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::riderProtection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "riderProtection",
+            "FullTypeName": "ProtectionProperties Snowmobile::riderProtection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::serverTerrainHandler",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "serverTerrainHandler",
+            "FullTypeName": "VehicleTerrainHandler Snowmobile::serverTerrainHandler",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::timeSinceLastUsed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceLastUsed",
+            "FullTypeName": "TimeSince Snowmobile::timeSinceLastUsed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Snowmobile::timeSinceTerrainModCheck",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Snowmobile",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceTerrainModCheck",
+            "FullTypeName": "TimeSince Snowmobile::timeSinceTerrainModCheck",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GroundVehicle::engineController",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GroundVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "engineController",
+            "FullTypeName": "VehicleEngineController`1<GroundVehicle> GroundVehicle::engineController",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GroundVehicle::waterloggedPoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GroundVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "waterloggedPoint",
+            "FullTypeName": "UnityEngine.Transform GroundVehicle::waterloggedPoint",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GroundVehicle::engineStartupTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GroundVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineStartupTime",
+            "FullTypeName": "System.Single GroundVehicle::engineStartupTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "VehicleEngineController`1::waterloggedPoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "VehicleEngineController`1",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "waterloggedPoint",
+            "FullTypeName": "UnityEngine.Transform VehicleEngineController`1::waterloggedPoint",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

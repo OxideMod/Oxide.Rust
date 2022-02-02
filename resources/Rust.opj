@@ -15200,14 +15200,9 @@
                 "Operand": 26
               },
               {
-                "OpCode": "ldnull",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ret",
-                "OpType": "None",
-                "Operand": null
+                "OpCode": "leave",
+                "OpType": "Instruction",
+                "Operand": 54
               }
             ],
             "HookTypeName": "Modify",
@@ -17427,14 +17422,9 @@
                 "Operand": 22
               },
               {
-                "OpCode": "ldnull",
-                "OpType": "None",
-                "Operand": null
-              },
-              {
-                "OpCode": "ret",
-                "OpType": "None",
-                "Operand": null
+                "OpCode": "leave",
+                "OpType": "Instruction",
+                "Operand": 93
               }
             ],
             "HookTypeName": "Modify",

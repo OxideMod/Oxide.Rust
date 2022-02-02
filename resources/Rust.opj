@@ -17973,6 +17973,158 @@
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 13,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnMlrsFire",
+            "HookName": "OnMlrsFire",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MLRS",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Fire",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "zG9+J/EQ0iOKiG+4heMoWAPgKQ8E4W52TI1Sx8Pcai8=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 53,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnMlrsFired",
+            "HookName": "OnMlrsFired",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MLRS",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Fire",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "zG9+J/EQ0iOKiG+4heMoWAPgKQ8E4W52TI1Sx8Pcai8=",
+            "BaseHookName": "OnMlrsFire",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 87,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l6",
+            "HookTypeName": "Simple",
+            "Name": "OnMlrsRocketFired",
+            "HookName": "OnMlrsRocketFired",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MLRS",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "FireNextRocket",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "kFYDwHbQtrgjXdGOk1kF7zy17PLXOCCnIsxz0xRNkLc=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 34,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnMlrsFiringEnded",
+            "HookName": "OnMlrsFiringEnded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MLRS",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "EndFiring",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "rLC6bm2DQj6o2IX1jEfjYKnGHQTVPPwIz6hX4Wi44HA=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 38,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, this._mounted",
+            "HookTypeName": "Simple",
+            "Name": "OnMlrsTarget",
+            "HookName": "OnMlrsTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MLRS",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SetUserTargetHitPos",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "vdDwguOV28/IMDu3GUkuO8qicwFKpeB+awrljmgF4U0=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 125,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.trueTargetHitPos, this._mounted",
+            "HookTypeName": "Simple",
+            "Name": "OnMlrsTargetSet",
+            "HookName": "OnMlrsTargetSet",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MLRS",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SetUserTargetHitPos",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "vdDwguOV28/IMDu3GUkuO8qicwFKpeB+awrljmgF4U0=",
+            "BaseHookName": "OnMlrsTarget",
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

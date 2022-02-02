@@ -14077,7 +14077,7 @@
             "InjectionIndex": 26,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0, a1, a2",
+            "ArgumentString": "this, a0, a1, a2, a3",
             "HookTypeName": "Simple",
             "Name": "OnVendingTransaction",
             "HookName": "OnVendingTransaction",
@@ -16591,7 +16591,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 257,
+            "InjectionIndex": 258,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, l13, a5, this, a3",
@@ -42317,6 +42317,44 @@
             ],
             "Name": "spawnInstances",
             "FullTypeName": "System.Collections.Generic.List`1<SpawnPointInstance> SpawnGroup::spawnInstances",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MarketTerminal::_onCurrencyRemovedCached",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MarketTerminal",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_onCurrencyRemovedCached",
+            "FullTypeName": "System.Action`2<BasePlayer,Item> MarketTerminal::_onCurrencyRemovedCached",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MarketTerminal::_onItemPurchasedCached",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MarketTerminal",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_onItemPurchasedCached",
+            "FullTypeName": "System.Action`2<BasePlayer,Item> MarketTerminal::_onItemPurchasedCached",
             "Parameters": []
           },
           "MSILHash": ""

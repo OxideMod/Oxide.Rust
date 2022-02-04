@@ -9500,7 +9500,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Hda0PnfScWKDMiyvCwN+rr2Z+4wM83xULvJbF3VERmk=",
+            "MSILHash": "K0d36FlcD3vP5TO9Itl0uDOOH/4LHDpM88EbW0HLQg0=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -15195,14 +15195,9 @@
                 "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
               },
               {
-                "OpCode": "brfalse_s",
+                "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 26
-              },
-              {
-                "OpCode": "leave",
-                "OpType": "Instruction",
-                "Operand": 54
+                "Operand": 46
               }
             ],
             "HookTypeName": "Modify",
@@ -17417,14 +17412,9 @@
                 "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
               },
               {
-                "OpCode": "brfalse_s",
+                "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 22
-              },
-              {
-                "OpCode": "leave",
-                "OpType": "Instruction",
-                "Operand": 93
+                "Operand": 85
               }
             ],
             "HookTypeName": "Modify",

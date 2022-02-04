@@ -41810,6 +41810,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::underWatercollisionEffect",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "underWatercollisionEffect",
+            "FullTypeName": "GameObjectRef BaseSubmarine::underWatercollisionEffect",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseSubmarine::aboveWatercollisionEffect",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseSubmarine",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "aboveWatercollisionEffect",
+            "FullTypeName": "GameObjectRef BaseSubmarine::aboveWatercollisionEffect",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

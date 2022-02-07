@@ -9826,6 +9826,16 @@
                 "Operand": 80
               },
               {
+                "OpCode": "ldarg_s",
+                "OpType": "Parameter",
+                "Operand": 5
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 77
+              },
+              {
                 "OpCode": "ldloc_0",
                 "OpType": "None",
                 "Operand": null

@@ -624,56 +624,5 @@ namespace Oxide.Game.Rust
         }
 
         #endregion Server Hooks
-
-        #region Deprecated Hooks
-
-        [HookMethod("OnExperimentStart")]
-        private object OnExperimentStart(Workbench workbench, BasePlayer player)
-        {
-            return Interface.Oxide.CallDeprecatedHook("CanExperiment", "OnExperimentStart(Workbench workbench, BasePlayer player)",
-                new System.DateTime(2021, 12, 31), player, workbench);
-        }
-
-        [HookMethod("OnPlayerCorpseSpawned")]
-        private object OnPlayerCorpseSpawned(BasePlayer player, BaseCorpse corpse)
-        {
-            return Interface.Oxide.CallDeprecatedHook("OnPlayerCorpse", "OnPlayerCorpseSpawned(BasePlayer player, BaseCorpse corpse)",
-                new System.DateTime(2021, 12, 31), player, corpse);
-        }
-
-        [HookMethod("OnVehiclePush")]
-        private object OnVehiclePush(BaseVehicle vehicle, BasePlayer player)
-        {
-            if (vehicle is MotorRowboat)
-            {
-                return Interface.Oxide.CallDeprecatedHook("CanPushBoat", "CanPushVehicle(BaseVehicle vehicle, BasePlayer player)",
-                new System.DateTime(2021, 12, 31), player, vehicle as MotorRowboat);
-            }
-
-            return null;
-        }
-
-        [HookMethod("OnFuelConsume")]
-        private void OnFuelConsume(BaseOven oven, Item fuel, ItemModBurnable burnable)
-        {
-            Interface.Oxide.CallDeprecatedHook("OnConsumeFuel", "OnFuelConsume(BaseOven oven, Item fuel, ItemModBurnable burnable)",
-                new System.DateTime(2021, 12, 31), oven, fuel, burnable);
-        }
-
-        [HookMethod("OnEntitySaved")]
-        private void OnEntitySaved(Elevator elevator, BaseNetworkable.SaveInfo saveInfo)
-        {
-            Interface.Oxide.CallDeprecatedHook("OnElevatorSaved", "OnEntitySaved(Elevator elevator, BaseNetworkable.SaveInfo saveInfo)",
-                new System.DateTime(2021, 12, 31), elevator, saveInfo);
-        }
-
-        [HookMethod("OnResearchCostDetermine")]
-        private object OnResearchCostDetermine(Item item, ResearchTable table)
-        {
-            return Interface.Oxide.CallDeprecatedHook("OnItemScrap", "OnResearchCostDetermine(Item item, ResearchTable table)",
-                new System.DateTime(2021, 12, 31), table, item);
-        }
-
-        #endregion Deprecated Hooks
     }
 }

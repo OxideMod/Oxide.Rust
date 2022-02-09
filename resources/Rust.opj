@@ -3141,8 +3141,8 @@
             "ArgumentBehavior": 2,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "IOnServerUsersSet",
-            "HookName": "IOnServerUsersSet",
+            "Name": "OnServerUserSet",
+            "HookName": "OnServerUserSet",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ServerUsers",
             "Flagged": false,
@@ -3160,7 +3160,7 @@
             },
             "MSILHash": "xV7xoaw67xlotYYSM4VsTCsfNika6BCFh71HT4Aj5SY=",
             "BaseHookName": null,
-            "HookCategory": "Player"
+            "HookCategory": "Server"
           }
         },
         {
@@ -4329,8 +4329,8 @@
             "ArgumentBehavior": 2,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "IOnServerUsersRemove",
-            "HookName": "IOnServerUsersRemove",
+            "Name": "OnServerUserRemove",
+            "HookName": "OnServerUserRemove",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ServerUsers",
             "Flagged": false,
@@ -4344,7 +4344,7 @@
             },
             "MSILHash": "B/7E/xTPMIsjrviOJptHAHwSPYhL7op2y09IrHVc6MA=",
             "BaseHookName": null,
-            "HookCategory": "Player"
+            "HookCategory": "Server"
           }
         },
         {

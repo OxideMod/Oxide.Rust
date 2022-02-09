@@ -181,8 +181,8 @@ namespace Oxide.Game.Rust
         /// <param name="playerName"></param>
         /// <param name="reason"></param>
         /// <param name="expiry"></param>
-        [HookMethod("IOnServerUsersSet")]
-        private void IOnServerUsersSet(ulong steamId, ServerUsers.UserGroup group, string playerName, string reason, long expiry)
+        [HookMethod("OnServerUserSet")]
+        private void OnServerUserSet(ulong steamId, ServerUsers.UserGroup group, string playerName, string reason, long expiry)
         {
             if (serverInitialized && group == ServerUsers.UserGroup.Banned)
             {
@@ -197,8 +197,8 @@ namespace Oxide.Game.Rust
         /// Called when a server group is removed for an ID (i.e. unbanned)
         /// </summary>
         /// <param name="steamId"></param>
-        [HookMethod("IOnServerUsersRemove")]
-        private void IOnServerUsersRemove(ulong steamId)
+        [HookMethod("OnServerUserRemove")]
+        private void OnServerUserRemove(ulong steamId)
         {
             if (serverInitialized && ServerUsers.users.ContainsKey(steamId) && ServerUsers.users[steamId].group == ServerUsers.UserGroup.Banned)
             {

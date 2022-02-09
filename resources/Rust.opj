@@ -18316,6 +18316,164 @@
             "BaseHookName": null,
             "HookCategory": "Queue"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 2,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnWaterBallSplash",
+            "HookName": "OnWaterBallSplash",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WaterBall",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoSplash",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "UnityEngine.Vector3",
+                "System.Single",
+                "ItemDefinition",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "pH+R1C2MzJDYi+Tz+fIixlpk4N4HyYLUmuVbH8jZe8w=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 199,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnSprinklerSplashed",
+            "HookName": "OnSprinklerSplashed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Sprinkler",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "DoSplash",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "lGASer4tLEfj3ISK4CqC53PryhP1MOPC1t51ATeR0k8=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a2, a0, a1, a3",
+            "HookTypeName": "Simple",
+            "Name": "CanWaterBallSplash",
+            "HookName": "CanWaterBallSplash",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WaterBall",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoSplash",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "UnityEngine.Vector3",
+                "System.Single",
+                "ItemDefinition",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "pH+R1C2MzJDYi+Tz+fIixlpk4N4HyYLUmuVbH8jZe8w=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanFireLiquidWeapon",
+            "HookName": "CanFireLiquidWeapon",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "LiquidWeapon",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CanFire",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "7eYVqa/Psf407g7scsrekwU5n+qAQTbTjKXrDdPWHm0=",
+            "BaseHookName": null,
+            "HookCategory": "Weapon"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 44,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnLiquidWeaponFired",
+            "HookName": "OnLiquidWeaponFired",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "LiquidWeapon",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "StartFiring",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "izm1ihZwICjD7hWbB4CIEifOaC6LCOh4zji1ICisZgw=",
+            "BaseHookName": null,
+            "HookCategory": "Weapon"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 22,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnLiquidWeaponFiringStopped",
+            "HookName": "OnLiquidWeaponFiringStopped",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "LiquidWeapon",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "StopFiring",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "scdJsRpVgoZlW7yUfpiGqraJA9l1m7qMIhQkysxY/Ao=",
+            "BaseHookName": null,
+            "HookCategory": "Weapon"
+          }
         }
       ],
       "Modifiers": [
@@ -42128,6 +42286,63 @@
             ]
           },
           "MSILHash": "dgVUoMhenf+c67qyI+9lEH7Wq7Og2t9UFdtJQV19fHg="
+        },
+        {
+          "Name": "Sprinkler::currentFuelType",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sprinkler",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentFuelType",
+            "FullTypeName": "ItemDefinition Sprinkler::currentFuelType",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "LiquidWeapon::pressure",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "LiquidWeapon",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "pressure",
+            "FullTypeName": "System.Int32 LiquidWeapon::pressure",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "LiquidWeapon::cooldownTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "LiquidWeapon",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cooldownTime",
+            "FullTypeName": "System.Single LiquidWeapon::cooldownTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

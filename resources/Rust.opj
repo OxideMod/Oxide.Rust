@@ -18125,7 +18125,35 @@
             "BaseHookName": "OnMlrsTarget",
             "HookCategory": "Vehicle"
           }
-        }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 238,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l10, this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnItemStacked",
+            "HookName": "OnItemStacked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Item",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MoveToContainer",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "ItemContainer",
+                "System.Int32",
+                "System.Boolean",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "+NLITlqBC9zhonA2XkIsuYsHTRbsme8pz0rx3YGz0Rk=",
+            "BaseHookName": "OnItemStacked",
+            "HookCategory": "Item"
+          }
       ],
       "Modifiers": [
         {

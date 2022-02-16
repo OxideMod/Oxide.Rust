@@ -14753,7 +14753,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "l3, this, a0",
             "HookTypeName": "Simple",
-            "Name": "OnItemStacked",
+            "Name": "OnItemStacked [1]",
             "HookName": "OnItemStacked",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Item",
@@ -18176,6 +18176,35 @@
             "MSILHash": "uk7N3ixgZwQtwM5Hr1v1fAWcG+nc4D/7aCYwFWbDUpw=",
             "BaseHookName": "OnEntityReskin",
             "HookCategory": "Crafting"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 238,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l10, this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnItemStacked [2]",
+            "HookName": "OnItemStacked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Item",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "MoveToContainer",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "ItemContainer",
+                "System.Int32",
+                "System.Boolean",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "+NLITlqBC9zhonA2XkIsuYsHTRbsme8pz0rx3YGz0Rk=",
+            "BaseHookName": "OnItemStacked [1]",
+            "HookCategory": "Item"
           }
         }
       ],

@@ -18125,6 +18125,111 @@
             "BaseHookName": "OnMlrsTarget",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0",
+            "HookTypeName": "Simple",
+            "Name": "OnConnectionDequeue",
+            "HookName": "OnConnectionDequeue",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConnectionQueue",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RemoveConnection",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Connection"
+              ]
+            },
+            "MSILHash": "7cX5HH7YSG/wsPlTQVkL9/Nvf33Sm1Exjh+1aA2F3QQ=",
+            "BaseHookName": null,
+            "HookCategory": "Queue"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0",
+            "HookTypeName": "Simple",
+            "Name": "OnConnectionQueue",
+            "HookName": "OnConnectionQueue",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConnectionQueue",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 3,
+              "Name": "Join",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Connection"
+              ]
+            },
+            "MSILHash": "5P0hfJtoVIrZgnd/xTh2H+C7lmTOVem+d92vjayyeYQ=",
+            "BaseHookName": null,
+            "HookCategory": "Queue"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnQueueMessage",
+            "HookName": "OnQueueMessage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConnectionQueue",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SendMessage",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Connection",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "dgVUoMhenf+c67qyI+9lEH7Wq7Og2t9UFdtJQV19fHg=",
+            "BaseHookName": null,
+            "HookCategory": "Queue"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0",
+            "HookTypeName": "Simple",
+            "Name": "OnQueueCycle",
+            "HookName": "OnQueueCycle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConnectionQueue",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Cycle",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "41WrAEWHTG9toc3a4uTkJAqBRAFWCJZTwtyb0Q/3yrY=",
+            "BaseHookName": null,
+            "HookCategory": "Queue"
+          }
         }
       ],
       "Modifiers": [
@@ -41877,6 +41982,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ConnectionQueue::SendMessages",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ConnectionQueue",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SendMessages",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "gB5lJ7eIS8amloaItusu64Obp4w2QJp1dbjIy0UEomM="
         }
       ],
       "Fields": [

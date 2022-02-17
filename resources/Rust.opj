@@ -41982,6 +41982,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ConnectionQueue::SendMessages",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ConnectionQueue",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SendMessages",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "gB5lJ7eIS8amloaItusu64Obp4w2QJp1dbjIy0UEomM="
         }
       ],
       "Fields": [

@@ -16219,9 +16219,14 @@
                 "Operand": null
               },
               {
+                "OpCode": "ldloc_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object,System.Object)"
               },
               {
                 "OpCode": "stloc",

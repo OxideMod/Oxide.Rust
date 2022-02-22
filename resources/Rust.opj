@@ -18125,6 +18125,58 @@
             "BaseHookName": "OnMlrsTarget",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 106,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": " l4, l9, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnEntityReskin",
+            "HookName": "OnEntityReskin",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SprayCan",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ChangeItemSkin",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "uk7N3ixgZwQtwM5Hr1v1fAWcG+nc4D/7aCYwFWbDUpw=",
+            "BaseHookName": null,
+            "HookCategory": "Crafting"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 501,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": " l4, l9, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnEntityReskinned",
+            "HookName": "OnEntityReskinned",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SprayCan",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ChangeItemSkin",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "uk7N3ixgZwQtwM5Hr1v1fAWcG+nc4D/7aCYwFWbDUpw=",
+            "BaseHookName": "OnEntityReskin",
+            "HookCategory": "Crafting"
+          }
         }
       ],
       "Modifiers": [

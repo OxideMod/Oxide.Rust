@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "WvOS2IFISbg3Q0DZWeQXpyzMATuOi/mjgRCcAXPW0Ig=",
+            "MSILHash": "n440tv4ikO09eGJxEejuYZJpzWDuTok+cPEQ/k7CZuA=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2362,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "fq7lTyfQF1kTML6LkausLSpK/b4YgbTgrXi0QMTt6hY=",
+            "MSILHash": "3jmJLsa/YfBwilUrcQ/SoD2Cjh8a7/JH7QRV20yPovQ=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2389,7 +2389,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "GaC0rp1N7Zpn83aiHVuDLrlgT3NWhwSfF3Ak7uXZ4so=",
+            "MSILHash": "9hcCa/ewwJxAa3h/aLCXRvxVWks55HEbq8jtmrevpBs=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2440,7 +2440,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "GaC0rp1N7Zpn83aiHVuDLrlgT3NWhwSfF3Ak7uXZ4so=",
+            "MSILHash": "9hcCa/ewwJxAa3h/aLCXRvxVWks55HEbq8jtmrevpBs=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -9500,7 +9500,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "K0d36FlcD3vP5TO9Itl0uDOOH/4LHDpM88EbW0HLQg0=",
+            "MSILHash": "dzYIExEQFopJ8Qn2a5GlneNufMINrhozxD6VAEogDAU=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -12267,7 +12267,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 31,
+            "InjectionIndex": 35,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l2, this, l0",
@@ -12285,7 +12285,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "IHO+841vJa+N2hmwdnU1rHW0jspyvnwA6PFFWyqwQ9w=",
+            "MSILHash": "tsfNCEFlSxSV18AW5AuM5HBIyYVyHuYapVzw6tlpjXE=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
@@ -12293,7 +12293,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 95,
+            "InjectionIndex": 99,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l2, this, l0",
@@ -12311,7 +12311,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "IHO+841vJa+N2hmwdnU1rHW0jspyvnwA6PFFWyqwQ9w=",
+            "MSILHash": "tsfNCEFlSxSV18AW5AuM5HBIyYVyHuYapVzw6tlpjXE=",
             "BaseHookName": "OnVehicleModuleSelect",
             "HookCategory": "Vehicle"
           }
@@ -12319,13 +12319,13 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 30,
+            "InjectionIndex": 34,
             "RemoveCount": 1,
             "Instructions": [
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 101
+                "Operand": 105
               }
             ],
             "HookTypeName": "Modify",
@@ -12342,7 +12342,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "IHO+841vJa+N2hmwdnU1rHW0jspyvnwA6PFFWyqwQ9w=",
+            "MSILHash": "tsfNCEFlSxSV18AW5AuM5HBIyYVyHuYapVzw6tlpjXE=",
             "BaseHookName": "OnVehicleModuleSelected",
             "HookCategory": "Vehicle"
           }
@@ -14133,7 +14133,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "8TixO6UCJGs1M8r7zymxg4Zr7xEWOcmgnGYClMR3qQI=",
+            "MSILHash": "sDDc/TvZxL8pvEndtjmcrPpyc59EfBzC+kb5ipjVanY=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -17932,7 +17932,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 271,
+            "InjectionIndex": 265,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 0,
             "ArgumentString": null,
@@ -17948,7 +17948,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "4WCM3KhJ09U7tEXMhz9KnsAbr/Q86AAAlLOB80EKI9E=",
+            "MSILHash": "oNWte9PFDKF+73AePLIkng9zae7nWn42vuSHG2IxnqQ=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -18134,10 +18134,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 106,
+            "InjectionIndex": 129,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": " l4, l9, a0.player",
+            "ArgumentString": " l4, l10, a0.player",
             "HookTypeName": "Simple",
             "Name": "OnEntityReskin",
             "HookName": "OnEntityReskin",
@@ -18152,7 +18152,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "uk7N3ixgZwQtwM5Hr1v1fAWcG+nc4D/7aCYwFWbDUpw=",
+            "MSILHash": "Jp1wxxQKwP3d55M+5SlLLxAbULHH5Jr+JOZUYe3I/Is=",
             "BaseHookName": null,
             "HookCategory": "Crafting"
           }
@@ -18160,10 +18160,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 501,
+            "InjectionIndex": 515,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": " l4, l9, a0.player",
+            "ArgumentString": " l4, l10, a0.player",
             "HookTypeName": "Simple",
             "Name": "OnEntityReskinned",
             "HookName": "OnEntityReskinned",
@@ -18178,7 +18178,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "uk7N3ixgZwQtwM5Hr1v1fAWcG+nc4D/7aCYwFWbDUpw=",
+            "MSILHash": "Jp1wxxQKwP3d55M+5SlLLxAbULHH5Jr+JOZUYe3I/Is=",
             "BaseHookName": "OnEntityReskin",
             "HookCategory": "Crafting"
           }
@@ -36334,28 +36334,9 @@
           "MSILHash": "zgMgHGxQl6DY/dCpc/vZ4QMl7yltekTlGYOVDTOw6T4="
         },
         {
-          "Name": "BaseCrane::fuelSystem",
+          "Name": "MagnetCrane::carPhysics",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseCrane",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "fuelSystem",
-            "FullTypeName": "EntityFuelSystem BaseCrane::fuelSystem",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "BaseCrane::handbrakeOn",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseCrane",
+          "TypeName": "MagnetCrane",
           "Type": 0,
           "TargetExposure": [
             2
@@ -36365,16 +36346,16 @@
             "Exposure": [
               0
             ],
-            "Name": "handbrakeOn",
-            "FullTypeName": "System.Boolean BaseCrane::handbrakeOn",
+            "Name": "carPhysics",
+            "FullTypeName": "CarPhysics`1<MagnetCrane> MagnetCrane::carPhysics",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseCrane::lastDamagePos",
+          "Name": "MagnetCrane::carSettings",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseCrane",
+          "TypeName": "MagnetCrane",
           "Type": 0,
           "TargetExposure": [
             2
@@ -36384,16 +36365,510 @@
             "Exposure": [
               0
             ],
-            "Name": "lastDamagePos",
-            "FullTypeName": "UnityEngine.Vector3 BaseCrane::lastDamagePos",
+            "Name": "carSettings",
+            "FullTypeName": "CarSettings MagnetCrane::carSettings",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseCrane::lastDrivenTime",
+          "Name": "MagnetCrane::engineKW",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseCrane",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineKW",
+            "FullTypeName": "System.Int32 MagnetCrane::engineKW",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::extensionArmState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "extensionArmState",
+            "FullTypeName": "System.Single MagnetCrane::extensionArmState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::Magnet",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Magnet",
+            "FullTypeName": "BaseMagnet MagnetCrane::Magnet",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::magnetDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "magnetDamage",
+            "FullTypeName": "TriggerHurtEx MagnetCrane::magnetDamage",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::maxDistanceFromOrigin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxDistanceFromOrigin",
+            "FullTypeName": "System.Single MagnetCrane::maxDistanceFromOrigin",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::maxFuelPerSec",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxFuelPerSec",
+            "FullTypeName": "System.Single MagnetCrane::maxFuelPerSec",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::myRigidbody",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "myRigidbody",
+            "FullTypeName": "UnityEngine.Rigidbody MagnetCrane::myRigidbody",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::nextInputTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextInputTime",
+            "FullTypeName": "System.Single MagnetCrane::nextInputTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::nextSelfHealTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextSelfHealTime",
+            "FullTypeName": "System.Single MagnetCrane::nextSelfHealTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::nextToggleTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextToggleTime",
+            "FullTypeName": "System.Single MagnetCrane::nextToggleTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::raiseArmInput",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "raiseArmInput",
+            "FullTypeName": "System.Single MagnetCrane::raiseArmInput",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::raiseArmMove",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "raiseArmMove",
+            "FullTypeName": "System.Single MagnetCrane::raiseArmMove",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::raiseArmState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "raiseArmState",
+            "FullTypeName": "System.Single MagnetCrane::raiseArmState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::selfDamageEffect",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "selfDamageEffect",
+            "FullTypeName": "GameObjectRef MagnetCrane::selfDamageEffect",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::serverTerrainHandler",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "serverTerrainHandler",
+            "FullTypeName": "VehicleTerrainHandler MagnetCrane::serverTerrainHandler",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::spawnOrigin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spawnOrigin",
+            "FullTypeName": "UnityEngine.Vector3 MagnetCrane::spawnOrigin",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::steerInput",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "steerInput",
+            "FullTypeName": "System.Single MagnetCrane::steerInput",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::throttleInput",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "throttleInput",
+            "FullTypeName": "System.Single MagnetCrane::throttleInput",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::turnYawSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "turnYawSpeed",
+            "FullTypeName": "System.Single MagnetCrane::turnYawSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::yawInput",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "yawInput",
+            "FullTypeName": "System.Single MagnetCrane::yawInput",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::yawMove",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "yawMove",
+            "FullTypeName": "System.Single MagnetCrane::yawMove",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::yawState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "yawState",
+            "FullTypeName": "System.Single MagnetCrane::yawState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::arm1Speed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "arm1Speed",
+            "FullTypeName": "System.Single MagnetCrane::arm1Speed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::arm2Speed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "arm2Speed",
+            "FullTypeName": "System.Single MagnetCrane::arm2Speed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::extensionInput",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "extensionInput",
+            "FullTypeName": "System.Single MagnetCrane::extensionInput",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::extensionMove",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "extensionMove",
+            "FullTypeName": "System.Single MagnetCrane::extensionMove",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::lastDrivenTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
           "Type": 0,
           "TargetExposure": [
             2
@@ -36404,15 +36879,34 @@
               0
             ],
             "Name": "lastDrivenTime",
-            "FullTypeName": "System.Single BaseCrane::lastDrivenTime",
+            "FullTypeName": "System.Single MagnetCrane::lastDrivenTime",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseCrane::lastExtensionArmState",
+          "Name": "MagnetCrane::handbrakeOn",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseCrane",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "handbrakeOn",
+            "FullTypeName": "System.Boolean MagnetCrane::handbrakeOn",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::lastExtensionArmState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
           "Type": 0,
           "TargetExposure": [
             2
@@ -36423,15 +36917,15 @@
               0
             ],
             "Name": "lastExtensionArmState",
-            "FullTypeName": "System.Single BaseCrane::lastExtensionArmState",
+            "FullTypeName": "System.Single MagnetCrane::lastExtensionArmState",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseCrane::lastRaiseArmState",
+          "Name": "MagnetCrane::lastRaiseArmState",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseCrane",
+          "TypeName": "MagnetCrane",
           "Type": 0,
           "TargetExposure": [
             2
@@ -36442,15 +36936,15 @@
               0
             ],
             "Name": "lastRaiseArmState",
-            "FullTypeName": "System.Single BaseCrane::lastRaiseArmState",
+            "FullTypeName": "System.Single MagnetCrane::lastRaiseArmState",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseCrane::lastYawState",
+          "Name": "MagnetCrane::lastYawState",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseCrane",
+          "TypeName": "MagnetCrane",
           "Type": 0,
           "TargetExposure": [
             2
@@ -36461,7 +36955,64 @@
               0
             ],
             "Name": "lastYawState",
-            "FullTypeName": "System.Single BaseCrane::lastYawState",
+            "FullTypeName": "System.Single MagnetCrane::lastYawState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::lastFixedUpdateTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastFixedUpdateTime",
+            "FullTypeName": "System.Single MagnetCrane::lastFixedUpdateTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::idleFuelPerSec",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "idleFuelPerSec",
+            "FullTypeName": "System.Single MagnetCrane::idleFuelPerSec",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MagnetCrane::lastDamagePos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MagnetCrane",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastDamagePos",
+            "FullTypeName": "UnityEngine.Vector3 MagnetCrane::lastDamagePos",
             "Parameters": []
           },
           "MSILHash": ""

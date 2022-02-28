@@ -238,7 +238,7 @@ namespace Oxide.Game.Rust
                     lang.SetLanguage(language, player.Id);
                 }
 
-                player.Reply(string.Format(language.GetMessage("PlayerLanguage", this, player.Id), language));
+                player.Reply(string.Format(lang.GetMessage("PlayerLanguage", this, player.Id), language));
             }
         }
 

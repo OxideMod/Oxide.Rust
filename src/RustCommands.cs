@@ -232,7 +232,6 @@ namespace Oxide.Game.Rust
             else
             {
                 var lang = args[0].ToLower();
-                // TODO: Check if language exists before setting, warn if not
                 if (lang.Length == 2 && Regex.IsMatch(lang, @"^[a-z]+$"))
                 {
                     lang.SetLanguage(lang, player.Id);

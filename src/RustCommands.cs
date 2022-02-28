@@ -231,13 +231,14 @@ namespace Oxide.Game.Rust
             }
             else
             {
+                var lang = args[0].ToLower();
                 // TODO: Check if language exists before setting, warn if not
-                if (args[0].Length == 2)
+                if (lang.Length == 2 && Regex.IsMatch(lang, @"^[a-z]+$"))
                 {
-                    lang.SetLanguage(args[0], player.Id);
+                    lang.SetLanguage(lang, player.Id);
                 }
 
-                player.Reply(string.Format(lang.GetMessage("PlayerLanguage", this, player.Id), args[0]));
+                player.Reply(string.Format(lang.GetMessage("PlayerLanguage", this, player.Id), lang));
             }
         }
 

@@ -254,7 +254,7 @@ namespace Oxide.Game.Rust
 					continue;
 				}
 
-				if (culture.TwoLetterISOLanguageName == twoLetterLanguageName) {
+				if (culture.TwoLetterISOLanguageName == twoLetterISOLanguageName) {
                     return true;
                 }
 			}

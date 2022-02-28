@@ -3,7 +3,7 @@ using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace Oxide.Game.Rust
 {
@@ -232,14 +232,34 @@ namespace Oxide.Game.Rust
             }
             else
             {
-                var lang = args[0].ToLower();
-                if (lang.Length == 2 && Regex.IsMatch(lang, @"^[a-z]+$"))
+                var language = args[0].ToLower();
+                if (language.Length == 2 && isKnowTwoLetterISOLanguageName(language))
                 {
-                    lang.SetLanguage(lang, player.Id);
+                    lang.SetLanguage(language, player.Id);
                 }
 
-                player.Reply(string.Format(lang.GetMessage("PlayerLanguage", this, player.Id), lang));
+                player.Reply(string.Format(language.GetMessage("PlayerLanguage", this, player.Id), language));
             }
+        }
+
+        private CultureInfo[] cultures = CultureInfo.GetCultures(CultureTypes.AllCultures);
+
+        private bool isKnowTwoLetterISOLanguageName(string twoLetterISOLanguageName) {
+            foreach (var culture in cultures) {
+                if ((culture.CultureTypes & CultureTypes.UserCustomCulture) == CultureTypes.UserCustomCulture) {
+					continue;
+				}
+
+                if (culture.TwoLetterISOLanguageName.Length != 2) {
+					continue;
+				}
+
+				if (culture.TwoLetterISOLanguageName == twoLetterLanguageName) {
+                    return true;
+                }
+			}
+
+            return false;
         }
 
         #endregion Lang Command

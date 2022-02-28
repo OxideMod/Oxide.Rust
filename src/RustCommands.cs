@@ -232,8 +232,7 @@ namespace Oxide.Game.Rust
             else
             {
                 // TODO: Check if language exists before setting, warn if not
-                string[] languages = lang.GetLanguages();
-                if (languages.Contains(args[0]))
+                if (args[0].Length == 2)
                 {
                     lang.SetLanguage(args[0], player.Id);
                 }

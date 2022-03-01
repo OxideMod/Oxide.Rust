@@ -41963,6 +41963,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "DecayEntity::lastDecayTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DecayEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastDecayTick",
+            "FullTypeName": "System.Single DecayEntity::lastDecayTick",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -1,7 +1,8 @@
-﻿using Oxide.Core;
+using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 namespace Oxide.Game.Rust
@@ -223,22 +224,26 @@ namespace Oxide.Game.Rust
                 return;
             }
 
+            string languageName = args[0];
+            try
+            {
+                languageName = new CultureInfo(languageName)?.TwoLetterISOLanguageName;
+            }
+            catch (CultureNotFoundException)
+            {
+                player.Reply(lang.GetMessage("InvalidLanguageName", this, player.Id), languageName);
+                return;
+            }
+
             if (player.IsServer)
             {
-                // TODO: Check if language exists before setting, warn if not
-                lang.SetServerLanguage(args[0]);
+                lang.SetServerLanguage(languageName);
                 player.Reply(string.Format(lang.GetMessage("ServerLanguage", this, player.Id), lang.GetServerLanguage()));
             }
             else
             {
-                // TODO: Check if language exists before setting, warn if not
-                string[] languages = lang.GetLanguages();
-                if (languages.Contains(args[0]))
-                {
-                    lang.SetLanguage(args[0], player.Id);
-                }
-
-                player.Reply(string.Format(lang.GetMessage("PlayerLanguage", this, player.Id), args[0]));
+                lang.SetLanguage(languageName, player.Id);
+                player.Reply(string.Format(lang.GetMessage("PlayerLanguage", this, player.Id), languageName));
             }
         }
 

@@ -18580,6 +18580,32 @@
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnTreeMarkerHit",
+            "HookName": "OnTreeMarkerHit",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TreeEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DidHitMarker",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "O2+7lYFvJReG9yz99YtjIpj2KooDsa0WwRu3CKTObSg=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

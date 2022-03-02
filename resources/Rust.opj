@@ -18474,6 +18474,58 @@
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 89,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l5, l1, l0, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnPhotoCapture",
+            "HookName": "OnPhotoCapture",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "InstantCameraTool",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "TakePhoto",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "b/TKup1X2BcBrFxpz6DnpmzKigc8I9U/GP16Bvs6/Hk=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 197,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l5, l1, l0, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnPhotoCaptured",
+            "HookName": "OnPhotoCaptured",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "InstantCameraTool",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "TakePhoto",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "b/TKup1X2BcBrFxpz6DnpmzKigc8I9U/GP16Bvs6/Hk=",
+            "BaseHookName": "OnPhotoCapture",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [
@@ -42340,6 +42392,25 @@
             ],
             "Name": "cooldownTime",
             "FullTypeName": "System.Single LiquidWeapon::cooldownTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "InstantCameraTool::_sinceLastPhoto",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "InstantCameraTool",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_sinceLastPhoto",
+            "FullTypeName": "TimeSince InstantCameraTool::_sinceLastPhoto",
             "Parameters": []
           },
           "MSILHash": ""

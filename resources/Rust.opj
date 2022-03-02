@@ -5224,7 +5224,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
             "HookTypeName": "Simple",
-            "Name": "OnDoorKnocked",
+            "Name": "OnDoorKnocked [Door]",
             "HookName": "OnDoorKnocked",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Door",
@@ -18525,6 +18525,32 @@
             "MSILHash": "b/TKup1X2BcBrFxpz6DnpmzKigc8I9U/GP16Bvs6/Hk=",
             "BaseHookName": "OnPhotoCapture",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnDoorKnocked [DoorKnocker]",
+            "HookName": "OnDoorKnocked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DoorKnocker",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Knock",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "6Angwxj0N+7xQ99H0x1XukkCVVjysacJjQ/iETty4JA=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
           }
         }
       ],

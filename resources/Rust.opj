@@ -18552,6 +18552,34 @@
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a1, a0, a2",
+            "HookTypeName": "Simple",
+            "Name": "OnNpcTargetSense",
+            "HookName": "OnNpcTargetSense",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.AI.SimpleAIMemory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetKnown",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity",
+                "BaseEntity",
+                "AIBrainSenses"
+              ]
+            },
+            "MSILHash": "cr2qnn8X5E+9+6+zqubOpSIny/KaBMCpIWV5Ll2NOkM=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

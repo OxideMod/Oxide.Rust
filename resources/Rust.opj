@@ -16224,17 +16224,22 @@
                 "Operand": null
               },
               {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Vector3"
+              },
+              {
                 "OpCode": "call",
                 "OpType": "Method",
                 "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object,System.Object)"
               },
               {
-                "OpCode": "stloc",
+                "OpCode": "stloc_s",
                 "OpType": "VariableIndex",
                 "Operand": "7"
               },
               {
-                "OpCode": "ldloc",
+                "OpCode": "ldloc_s",
                 "OpType": "VariableIndex",
                 "Operand": "7"
               },
@@ -16249,7 +16254,7 @@
                 "Operand": 28
               },
               {
-                "OpCode": "ldloc",
+                "OpCode": "ldloc_s",
                 "OpType": "VariableIndex",
                 "Operand": "7"
               },
@@ -16380,7 +16385,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 207,
+            "InjectionIndex": 208,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1, l2",

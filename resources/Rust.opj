@@ -18611,6 +18611,55 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 31,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnEngineStartFinished"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|VehicleEngineController`1|owner"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
+              },
+              {
+                "OpCode": "pop",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnEngineStartFinished",
+            "HookName": "OnEngineStartFinished",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleEngineController`1",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FinishStartingEngine",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "0wb4Vlitr5ajWgeBPb7WRR1NCbvs9ZTvn0BKw6SGdIo=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

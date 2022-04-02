@@ -18741,6 +18741,149 @@
             "BaseHookName": "OnVendingShopOpen [NPCTalking]",
             "HookCategory": "Vending"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnAdventGiftAward",
+            "HookName": "OnAdventGiftAward",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AdventCalendar",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AwardGift",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "Mr6ZIuWcd/2QmHDT4hdvo6v2GbYxPQulztiaSOj0gp4=",
+            "BaseHookName": null,
+            "HookCategory": "Seasonal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 118,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnAdventGiftAwarded",
+            "HookName": "OnAdventGiftAwarded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AdventCalendar",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AwardGift",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "Mr6ZIuWcd/2QmHDT4hdvo6v2GbYxPQulztiaSOj0gp4=",
+            "BaseHookName": "OnAdventGiftAward",
+            "HookCategory": "Seasonal"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "CanBeAwardedAdventGift"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "stloc_s",
+                "OpType": "VariableIndex",
+                "Operand": "2"
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "VariableIndex",
+                "Operand": "2"
+              },
+              {
+                "OpCode": "isinst",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Boolean"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "VariableIndex",
+                "Operand": "2"
+              },
+              {
+                "OpCode": "unbox_any",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.Boolean"
+              },
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ceq",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None",
+                "Operand": null
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanBeAwardedAdventGift",
+            "HookName": "CanBeAwardedAdventGift",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AdventCalendar",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "WasAwardedTodaysGift",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "h7hjK3lkbeNv04f4AkPqhMUVlmppBuVWH9rljfY1jGM=",
+            "BaseHookName": null,
+            "HookCategory": "Seasonal"
+          }
         }
       ],
       "Modifiers": [

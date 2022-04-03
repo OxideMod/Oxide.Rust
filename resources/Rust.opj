@@ -18660,6 +18660,34 @@
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnNetworkSubscriptionsGather",
+            "HookName": "OnNetworkSubscriptionsGather",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NetworkVisibilityGrid",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "GetVisibleFrom",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Visibility.Group",
+                "System.Collections.Generic.List`1<Network.Visibility.Group>",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "T3GfXROur+F4qwSy2RcYQavQBrw411u1ucN04HNNPM8=",
+            "BaseHookName": null,
+            "HookCategory": "Network"
+          }
         }
       ],
       "Modifiers": [

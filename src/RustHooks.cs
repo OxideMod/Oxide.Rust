@@ -624,5 +624,16 @@ namespace Oxide.Game.Rust
         }
 
         #endregion Server Hooks
+
+        #region Deprecated Hooks
+
+        [HookMethod("OnVendingShopOpened")]
+        private void OnVendingShopOpened(VendingMachine vendingMachine, BasePlayer player)
+        {
+            Interface.Oxide.CallDeprecatedHook("OnOpenVendingShop", "OnVendingShopOpened(VendingMachine vendingMachine, BasePlayer player)",
+                new System.DateTime(2022, 10, 6), vendingMachine, player);
+        }
+
+        #endregion
     }
 }

@@ -3058,13 +3058,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 18,
-            "ReturnBehavior": 0,
+            "InjectionIndex": 6,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
             "HookTypeName": "Simple",
-            "Name": "OnOpenVendingShop [VendingMachine]",
-            "HookName": "OnOpenVendingShop",
+            "Name": "OnVendingShopOpen [VendingMachine]",
+            "HookName": "OnVendingShopOpen",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "VendingMachine",
             "Flagged": false,
@@ -16637,13 +16637,13 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 29,
-            "ReturnBehavior": 0,
+            "InjectionIndex": 23,
+            "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l1, a0",
             "HookTypeName": "Simple",
-            "Name": "OnOpenVendingShop [NPCTalking]",
-            "HookName": "OnOpenVendingShop",
+            "Name": "OnVendingShopOpen [NPCTalking]",
+            "HookName": "OnVendingShopOpen",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "NPCTalking",
             "Flagged": false,
@@ -18610,6 +18610,59 @@
             "MSILHash": "O2+7lYFvJReG9yz99YtjIpj2KooDsa0WwRu3CKTObSg=",
             "BaseHookName": null,
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 26,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnVendingShopOpened [VendingMachine]",
+            "HookName": "OnVendingShopOpened",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VendingMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_OpenShop",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "AFTI9Jp3yFO2KqRgSh4Na714cxp3YOqSA5c9ECO75bU=",
+            "BaseHookName": "OnVendingShopOpen [VendingMachine]",
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 36,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnVendingShopOpened [NPCTalking]",
+            "HookName": "OnVendingShopOpened",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCTalking",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnConversationAction",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.String"
+              ]
+            },
+            "MSILHash": "1ITepcufk4Srnj36bU9AToXp1pzpa5qpflNodhl3s0o=",
+            "BaseHookName": "OnVendingShopOpen [NPCTalking]",
+            "HookCategory": "Vending"
           }
         }
       ],

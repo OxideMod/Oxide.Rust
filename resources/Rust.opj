@@ -43127,6 +43127,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "SpawnHandler::CharDistribution",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SpawnHandler",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "CharDistribution",
+            "FullTypeName": "SpawnDistribution SpawnHandler::CharDistribution",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

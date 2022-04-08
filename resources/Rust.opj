@@ -43407,6 +43407,27 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "TrainCar::FrontWheelSplineDist",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainCar",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "FrontWheelSplineDist",
+            "FullTypeName": "System.Single TrainCar::FrontWheelSplineDist()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

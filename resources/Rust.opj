@@ -18884,32 +18884,6 @@
             "BaseHookName": null,
             "HookCategory": "Seasonal"
           }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 117,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0, a0.player, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnItemPainted",
-            "HookName": "OnItemPainted",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "PaintedItemStorageEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "Server_UpdateImage",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "QuWIVjqQ8qsaZ4fUloIIOO2ekHliDlMavYcX9tt1X98=",
-            "BaseHookName": null,
-            "HookCategory": "Item"
-          }
         }
       ],
       "Modifiers": [
@@ -43229,25 +43203,6 @@
             ],
             "Name": "CharDistribution",
             "FullTypeName": "SpawnDistribution SpawnHandler::CharDistribution",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "PaintedItemStorageEntity::_currentImageCrc",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PaintedItemStorageEntity",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "_currentImageCrc",
-            "FullTypeName": "System.UInt32 PaintedItemStorageEntity::_currentImageCrc",
             "Parameters": []
           },
           "MSILHash": ""

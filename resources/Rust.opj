@@ -43383,6 +43383,499 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineLaunchPoint::ziplineTargets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineLaunchPoint",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ziplineTargets",
+            "FullTypeName": "System.Collections.Generic.List`1<UnityEngine.Vector3> ZiplineLaunchPoint::ziplineTargets",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineLaunchPoint::CalculateLineMidPoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineLaunchPoint",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CalculateLineMidPoint",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "0WPBnofnMSHqHADye+e0cGhbIiQRCbJd/+MvvnZzxvQ="
+        },
+        {
+          "Name": "ZiplineLaunchPoint::CheckLineOfSight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineLaunchPoint",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CheckLineOfSight",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "uOTmZyOlnBSo4Ipdfjf3qVKuRMthHKRywYstg/C+m9E="
+        },
+        {
+          "Name": "ZiplineLaunchPoint::ClearBusy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineLaunchPoint",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ClearBusy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "fDbOBjEdmhqLmSAc8rUvd6L1M1tuFzb7xyKLbpHb1ko="
+        },
+        {
+          "Name": "ZiplineLaunchPoint::FindZiplineTarget",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineLaunchPoint",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FindZiplineTarget",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Collections.Generic.List`1<UnityEngine.Vector3>&"
+            ]
+          },
+          "MSILHash": "xDcNANjm3Wj1y8MqAtkw8RK7LfuAKBQaDWoQnBU8iKc="
+        },
+        {
+          "Name": "ZiplineLaunchPoint::IsPlayerFacingValidDirection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineLaunchPoint",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsPlayerFacingValidDirection",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "Y5KMnOW99qGfvJWz177JGjfyjfe2Z7Zi9qtY6WqNgm4="
+        },
+        {
+          "Name": "ZiplineLaunchPoint::MountPlayer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineLaunchPoint",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MountPlayer",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity/RPCMessage"
+            ]
+          },
+          "MSILHash": "BYujgmBCbRY1jC/e83uctyAu6vKv2pGnxqJf2h7YoD0="
+        },
+        {
+          "Name": "ZiplineLaunchPoint::UpdateBuildingBlocks",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineLaunchPoint",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateBuildingBlocks",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "2cGbaeWRF4c3ppMf+sza3iAExjFgbNEun55bAbxVW6M="
+        },
+        {
+          "Name": "ZiplineMountable::additiveValue",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "additiveValue",
+            "FullTypeName": "System.Single ZiplineMountable::additiveValue",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineMountable::currentTravelDistance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentTravelDistance",
+            "FullTypeName": "System.Single ZiplineMountable::currentTravelDistance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineMountable::elapsedMoveTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "elapsedMoveTime",
+            "FullTypeName": "System.Single ZiplineMountable::elapsedMoveTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineMountable::endPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "endPosition",
+            "FullTypeName": "UnityEngine.Vector3 ZiplineMountable::endPosition",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineMountable::endRotation",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "endRotation",
+            "FullTypeName": "UnityEngine.Quaternion ZiplineMountable::endRotation",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineMountable::ignoreColliders",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ignoreColliders",
+            "FullTypeName": "System.Collections.Generic.List`1<UnityEngine.Collider> ZiplineMountable::ignoreColliders",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineMountable::isAnimatingIn",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "isAnimatingIn",
+            "FullTypeName": "System.Boolean ZiplineMountable::isAnimatingIn",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineMountable::mountTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "mountTime",
+            "FullTypeName": "TimeSince ZiplineMountable::mountTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineMountable::startPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "startPosition",
+            "FullTypeName": "UnityEngine.Vector3 ZiplineMountable::startPosition",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineMountable::startRotation",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "startRotation",
+            "FullTypeName": "UnityEngine.Quaternion ZiplineMountable::startRotation",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineMountable::EndZipline",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EndZipline",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "XhHOUCWI0/JirEBU19tZlRwmQbMKUlLSmiIo8O06n7Q="
+        },
+        {
+          "Name": "ZiplineMountable::GetLineEndPoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetLineEndPoint",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": []
+          },
+          "MSILHash": "CwVPM84WJDfQB/UHAlmEXMJHVX0BtG7Bz4lXnT3ywsA="
+        },
+        {
+          "Name": "ZiplineMountable::GetNextLinePoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetNextLinePoint",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "UnityEngine.Transform"
+            ]
+          },
+          "MSILHash": "LIG2c0T6MevyK8YIAnXyPSD0fipHVw+z2EceSxAKmM4="
+        },
+        {
+          "Name": "ZiplineMountable::MovePlayerToPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MovePlayerToPosition",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "+KJoG/uzGCWIluVk9KbK4ENHr+bx82PviFbnwZAOQeI="
+        },
+        {
+          "Name": "ZiplineMountable::ProcessBezierMovement",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ProcessBezierMovement",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "lTe50hH0zdyDeUqGKEV5LZli9PsPardRnBPuYJ1lMZs="
+        },
+        {
+          "Name": "ZiplineMountable::PushForward",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PushForward",
+            "FullTypeName": "BaseEntity/Flags ZiplineMountable::PushForward",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ZiplineMountable::ShowHandle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineMountable",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ShowHandle",
+            "FullTypeName": "BaseEntity/Flags ZiplineMountable::ShowHandle",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

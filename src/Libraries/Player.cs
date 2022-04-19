@@ -170,6 +170,7 @@ namespace Oxide.Game.Rust.Libraries
         {
             name = string.IsNullOrEmpty(name.Trim()) ? player.displayName : name;
 
+            ServerMgr.Instance.persistance.SetPlayerName(player.userID, name);
             player.net.connection.username = name;
             player.displayName = name;
             player._name = name;

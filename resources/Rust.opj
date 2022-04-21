@@ -3427,10 +3427,10 @@
             "InjectionIndex": 17,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l3",
+            "ArgumentString": "l3, this",
             "HookTypeName": "Simple",
-            "Name": "OnRecycleItem",
-            "HookName": "OnRecycleItem",
+            "Name": "OnItemRecycle",
+            "HookName": "OnItemRecycle",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Recycler",
             "Flagged": false,
@@ -3702,7 +3702,7 @@
               "Parameters": []
             },
             "MSILHash": "RFZu0mx4YZ58yn8eeo6E6V/4qNNvwORx0d5taoi6Cow=",
-            "BaseHookName": "OnRecycleItem",
+            "BaseHookName": "OnItemRecycle",
             "HookCategory": "_Patches"
           }
         },

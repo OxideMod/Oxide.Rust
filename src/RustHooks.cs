@@ -627,11 +627,18 @@ namespace Oxide.Game.Rust
 
         #region Deprecated Hooks
 
+        [HookMethod("OnItemRecycle")]
+        private object OnItemRecycle(Item item, Recycler recycler)
+        {
+            return Interface.Oxide.CallDeprecatedHook("OnRecycleItem", "OnItemRecycle(Item item, Recycler recycler)",
+                new DateTime(2022, 12, 31), recycler, item);
+        }
+
         [HookMethod("OnVendingShopOpened")]
         private void OnVendingShopOpened(VendingMachine vendingMachine, BasePlayer player)
         {
             Interface.Oxide.CallDeprecatedHook("OnOpenVendingShop", "OnVendingShopOpened(VendingMachine vendingMachine, BasePlayer player)",
-                new System.DateTime(2022, 10, 6), vendingMachine, player);
+                new DateTime(2022, 12, 31), vendingMachine, player);
         }
 
         #endregion

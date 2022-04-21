@@ -18919,8 +18919,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "l3, l4, this => l4",
             "HookTypeName": "Simple",
-            "Name": "OnRecycleAmount",
-            "HookName": "OnRecycleAmount",
+            "Name": "OnItemRecycleAmount",
+            "HookName": "OnItemRecycleAmount",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Recycler",
             "Flagged": false,
@@ -18932,7 +18932,7 @@
             },
             "MSILHash": "RFZu0mx4YZ58yn8eeo6E6V/4qNNvwORx0d5taoi6Cow=",
             "BaseHookName": null,
-            "HookCategory": "Entity"
+            "HookCategory": "Item"
           }
         }
       ],

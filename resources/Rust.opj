@@ -43945,6 +43945,46 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "TelephoneManager::allTelephones",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TelephoneManager",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "allTelephones",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.Int32,PhoneController> TelephoneManager::allTelephones",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TelephoneManager::maxAssignedPhoneNumber",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TelephoneManager",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxAssignedPhoneNumber",
+            "FullTypeName": "System.Int32 TelephoneManager::maxAssignedPhoneNumber",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

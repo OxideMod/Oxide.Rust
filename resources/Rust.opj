@@ -43646,6 +43646,297 @@
             ]
           },
           "MSILHash": "YU9MktPSZWBqtyfbuCpHmIKBFYOZKjjXUlI5BgQj3m8="
+        },
+        {
+          "Name": "CompleteTrain/StaticCollisionState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain/StaticCollisionState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StaticCollisionState",
+            "FullTypeName": "CompleteTrain/StaticCollisionState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::disposed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "disposed",
+            "FullTypeName": "System.Boolean CompleteTrain::disposed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::frontCollisionTrigger",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "frontCollisionTrigger",
+            "FullTypeName": "TriggerTrainCollisions CompleteTrain::frontCollisionTrigger",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::lastMovingTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastMovingTime",
+            "FullTypeName": "System.Single CompleteTrain::lastMovingTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::prevTrackSpeeds",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "prevTrackSpeeds",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<UnityEngine.Rigidbody,System.Single> CompleteTrain::prevTrackSpeeds",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::ranUpdateTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ranUpdateTick",
+            "FullTypeName": "System.Boolean CompleteTrain::ranUpdateTick",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::rearCollisionTrigger",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rearCollisionTrigger",
+            "FullTypeName": "TriggerTrainCollisions CompleteTrain::rearCollisionTrigger",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::staticCollidingAtFront",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "staticCollidingAtFront",
+            "FullTypeName": "CompleteTrain/StaticCollisionState CompleteTrain::staticCollidingAtFront",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::staticCollidingAtRear",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "staticCollidingAtRear",
+            "FullTypeName": "CompleteTrain/StaticCollisionState CompleteTrain::staticCollidingAtRear",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::timeSinceLastChange",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceLastChange",
+            "FullTypeName": "TimeSince CompleteTrain::timeSinceLastChange",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::trackSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "trackSpeed",
+            "FullTypeName": "System.Single CompleteTrain::trackSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::trainCars",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "trainCars",
+            "FullTypeName": "System.Collections.Generic.List`1<TrainCar> CompleteTrain::trainCars",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::PrimaryTrainCar",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "PrimaryTrainCar",
+            "FullTypeName": "TrainCar CompleteTrain::PrimaryTrainCar()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::TotalForces",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "TotalForces",
+            "FullTypeName": "System.Single CompleteTrain::TotalForces()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::TotalMass",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "TotalMass",
+            "FullTypeName": "System.Single CompleteTrain::TotalMass()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

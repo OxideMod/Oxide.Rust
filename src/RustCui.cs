@@ -188,10 +188,10 @@ namespace Oxide.Game.Rust.Cui
     public class CuiElement
     {
         [JsonProperty("name")]
-        public string Name { get; set; } = "AddUI CreatedPanel";
+        public string Name { get; set; }
 
         [JsonProperty("parent")]
-        public string Parent { get; set; } = "Hud";
+        public string Parent { get; set; }
 
         [JsonProperty("components")]
         public List<ICuiComponent> Components { get; } = new List<ICuiComponent>();
@@ -219,22 +219,22 @@ namespace Oxide.Game.Rust.Cui
 
         // The string value this text will display.
         [JsonProperty("text")]
-        public string Text { get; set; } = "Text";
+        public string Text { get; set; }
 
         // The size that the Font should render at
         [JsonProperty("fontSize")]
-        public int FontSize { get; set; } = 14;
+        public int FontSize { get; set; }
 
         // The Font used by the text
         [JsonProperty("font")]
-        public string Font { get; set; } = "RobotoCondensed-Bold.ttf";
+        public string Font { get; set; }
 
         // The positioning of the text relative to its RectTransform
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("align")]
-        public TextAnchor Align { get; set; } = TextAnchor.UpperLeft;
+        public TextAnchor Align { get; set; }
 
-        public string Color { get; set; } = "1.0 1.0 1.0 1.0";
+        public string Color { get; set; }
 
         [JsonProperty("fadeIn")]
         public float FadeIn { get; set; }
@@ -245,16 +245,16 @@ namespace Oxide.Game.Rust.Cui
         public string Type => "UnityEngine.UI.Image";
 
         [JsonProperty("sprite")]
-        public string Sprite { get; set; } = "Assets/Content/UI/UI.Background.Tile.psd";
+        public string Sprite { get; set; }
 
         [JsonProperty("material")]
-        public string Material { get; set; } = "Assets/Icons/IconMaterial.mat";
+        public string Material { get; set; }
 
-        public string Color { get; set; } = "1.0 1.0 1.0 1.0";
+        public string Color { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("imagetype")]
-        public Image.Type ImageType { get; set; } = Image.Type.Simple;
+        public Image.Type ImageType { get; set; }
 
         [JsonProperty("png")]
         public string Png { get; set; }
@@ -274,9 +274,9 @@ namespace Oxide.Game.Rust.Cui
         public string Type => "UnityEngine.UI.RawImage";
 
         [JsonProperty("sprite")]
-        public string Sprite { get; set; } = "Assets/Icons/rust.png";
+        public string Sprite { get; set; }
 
-        public string Color { get; set; } = "1.0 1.0 1.0 1.0";
+        public string Color { get; set; }
 
         [JsonProperty("material")]
         public string Material { get; set; }
@@ -303,18 +303,18 @@ namespace Oxide.Game.Rust.Cui
 
         // The sprite that is used to render this image
         [JsonProperty("sprite")]
-        public string Sprite { get; set; } = "Assets/Content/UI/UI.Background.Tile.psd";
+        public string Sprite { get; set; }
 
         // The Material set by the player
         [JsonProperty("material")]
-        public string Material { get; set; } = "Assets/Icons/IconMaterial.mat";
+        public string Material { get; set; }
 
-        public string Color { get; set; } = "1.0 1.0 1.0 1.0";
+        public string Color { get; set; }
 
         // How the Image is draw
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("imagetype")]
-        public Image.Type ImageType { get; set; } = Image.Type.Simple;
+        public Image.Type ImageType { get; set; }
 
         [JsonProperty("fadeIn")]
         public float FadeIn { get; set; }
@@ -325,11 +325,11 @@ namespace Oxide.Game.Rust.Cui
         public string Type => "UnityEngine.UI.Outline";
 
         // Color for the effect
-        public string Color { get; set; } = "1.0 1.0 1.0 1.0";
+        public string Color { get; set; }
 
         // How far is the shadow from the graphic
         [JsonProperty("distance")]
-        public string Distance { get; set; } = "1.0 -1.0";
+        public string Distance { get; set; }
 
         // Should the shadow inherit the alpha from the graphic
         [JsonProperty("useGraphicAlpha")]
@@ -346,21 +346,21 @@ namespace Oxide.Game.Rust.Cui
 
         // The size that the Font should render at
         [JsonProperty("fontSize")]
-        public int FontSize { get; set; } = 14;
+        public int FontSize { get; set; }
 
         // The Font used by the text
         [JsonProperty("font")]
-        public string Font { get; set; } = "RobotoCondensed-Bold.ttf";
+        public string Font { get; set; }
 
         // The positioning of the text relative to its RectTransform
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("align")]
-        public TextAnchor Align { get; set; } = TextAnchor.UpperLeft;
+        public TextAnchor Align { get; set; }
 
-        public string Color { get; set; } = "1.0 1.0 1.0 1.0";
+        public string Color { get; set; }
 
         [JsonProperty("characterLimit")]
-        public int CharsLimit { get; set; } = 100;
+        public int CharsLimit { get; set; }
 
         [JsonProperty("command")]
         public string Command { get; set; }
@@ -376,7 +376,7 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("lineType")]
-        public InputField.LineType LineType { get; set; } = InputField.LineType.SingleLine;
+        public InputField.LineType LineType { get; set; }
     }
 
     public class CuiCountdownComponent : ICuiComponent
@@ -390,7 +390,7 @@ namespace Oxide.Game.Rust.Cui
         public int StartTime { get; set; }
 
         [JsonProperty("step")]
-        public int Step { get; set; } = 1;
+        public int Step { get; set; }
 
         [JsonProperty("command")]
         public string Command { get; set; }
@@ -415,19 +415,19 @@ namespace Oxide.Game.Rust.Cui
 
         // The normalized position in the parent RectTransform that the lower left corner is anchored to
         [JsonProperty("anchormin")]
-        public string AnchorMin { get; set; } = "0.0 0.0";
+        public string AnchorMin { get; set; }
 
         // The normalized position in the parent RectTransform that the upper right corner is anchored to
         [JsonProperty("anchormax")]
-        public string AnchorMax { get; set; } = "1.0 1.0";
+        public string AnchorMax { get; set; }
 
         // The offset of the lower left corner of the rectangle relative to the lower left anchor
         [JsonProperty("offsetmin")]
-        public string OffsetMin { get; set; } = "0.0 0.0";
+        public string OffsetMin { get; set; }
 
         // The offset of the upper right corner of the rectangle relative to the upper right anchor
         [JsonProperty("offsetmax")]
-        public string OffsetMax { get; set; } = "0.0 0.0";
+        public string OffsetMax { get; set; }
     }
 
     public class ComponentConverter : JsonConverter

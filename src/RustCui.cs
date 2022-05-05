@@ -394,6 +394,9 @@ namespace Oxide.Game.Rust.Cui
         [JsonProperty("readOnly")]
         public bool ReadOnly { get; set; }
 
+        [JsonProperty("needsKeyboard")]
+        public bool NeedsKeyboard { get; set; }
+
         [DefaultValue(InputField.LineType.SingleLine)]
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("lineType")]

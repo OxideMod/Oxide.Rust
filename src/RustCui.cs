@@ -258,6 +258,12 @@ namespace Oxide.Game.Rust.Cui
         [JsonProperty("imagetype")]
         public Image.Type ImageType { get; set; } = Image.Type.Simple;
 
+        [JsonProperty("itemid")]
+        public int ItemId { get; set; }
+
+        [JsonProperty("skinid")]
+        public ulong SkinId { get; set; }
+
         [JsonProperty("png")]
         public string Png { get; set; }
 

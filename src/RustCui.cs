@@ -129,6 +129,7 @@ namespace Oxide.Game.Rust.Cui
                 Parent = parent,
                 FadeOut = panel.FadeOut
             };
+
             if (panel.Image != null)
             {
                 element.Components.Add(panel.Image);
@@ -140,9 +141,15 @@ namespace Oxide.Game.Rust.Cui
             }
 
             element.Components.Add(panel.RectTransform);
+
             if (panel.CursorEnabled)
             {
                 element.Components.Add(new CuiNeedsCursorComponent());
+            }
+
+            if (panel.KeyboardEnabled)
+            {
+                element.Components.Add(new CuiNeedsKeyboardComponent());
             }
 
             Add(element);
@@ -168,6 +175,7 @@ namespace Oxide.Game.Rust.Cui
         public CuiRawImageComponent RawImage { get; set; }
         public CuiRectTransformComponent RectTransform { get; } = new CuiRectTransformComponent();
         public bool CursorEnabled { get; set; }
+        public bool KeyboardEnabled { get; set; }
         public float FadeOut { get; set; }
     }
 
@@ -212,22 +220,22 @@ namespace Oxide.Game.Rust.Cui
     {
         public string Type => "UnityEngine.UI.Text";
 
-        //The string value this text will display.
+        // The string value this text will display.
         [DefaultValue("Text")]
         [JsonProperty("text")]
         public string Text { get; set; } = "Text";
 
-        //The size that the Font should render at.
+        // The size that the Font should render at
         [DefaultValue(14)]
         [JsonProperty("fontSize")]
         public int FontSize { get; set; } = 14;
 
-        //The Font used by the text.
+        // The Font used by the text
         [DefaultValue("RobotoCondensed-Bold.ttf")]
         [JsonProperty("font")]
         public string Font { get; set; } = "RobotoCondensed-Bold.ttf";
 
-        //The positioning of the text reliative to its RectTransform.
+        // The positioning of the text relative to its RectTransform
         [DefaultValue(TextAnchor.UpperLeft)]
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("align")]
@@ -263,6 +271,12 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonProperty("fadeIn")]
         public float FadeIn { get; set; }
+
+        [JsonProperty("itemid")]
+        public int ItemId { get; set; }
+
+        [JsonProperty("skinid")]
+        public ulong SkinId { get; set; }
     }
 
     public class CuiRawImageComponent : ICuiComponent, ICuiColor
@@ -298,19 +312,19 @@ namespace Oxide.Game.Rust.Cui
         [JsonProperty("close")]
         public string Close { get; set; }
 
-        //The sprite that is used to render this image.
+        // The sprite that is used to render this image
         [DefaultValue("Assets/Content/UI/UI.Background.Tile.psd")]
         [JsonProperty("sprite")]
         public string Sprite { get; set; } = "Assets/Content/UI/UI.Background.Tile.psd";
 
-        //The Material set by the player.
+        // The Material set by the player
         [DefaultValue("Assets/Icons/IconMaterial.mat")]
         [JsonProperty("material")]
         public string Material { get; set; } = "Assets/Icons/IconMaterial.mat";
 
         public string Color { get; set; } = "1.0 1.0 1.0 1.0";
 
-        //How the Image is draw.
+        // How the Image is draw
         [DefaultValue(Image.Type.Simple)]
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("imagetype")]
@@ -324,15 +338,15 @@ namespace Oxide.Game.Rust.Cui
     {
         public string Type => "UnityEngine.UI.Outline";
 
-        //Color for the effect.
+        // Color for the effect
         public string Color { get; set; } = "1.0 1.0 1.0 1.0";
 
-        //How far is the shadow from the graphic.
+        // How far is the shadow from the graphic
         [DefaultValue("1.0 -1.0")]
         [JsonProperty("distance")]
         public string Distance { get; set; } = "1.0 -1.0";
 
-        //Should the shadow inherit the alpha from the graphic?
+        // Should the shadow inherit the alpha from the graphic
         [DefaultValue(false)]
         [JsonProperty("useGraphicAlpha")]
         public bool UseGraphicAlpha { get; set; }
@@ -342,22 +356,22 @@ namespace Oxide.Game.Rust.Cui
     {
         public string Type => "UnityEngine.UI.InputField";
 
-        //The string value this text will display.
-        [DefaultValue("Text")]
+        // The string value this text will display
+        [DefaultValue("")]
         [JsonProperty("text")]
-        public string Text { get; set; } = "Text";
+        public string Text { get; set; } = string.Empty;
 
-        //The size that the Font should render at.
+        // The size that the Font should render at
         [DefaultValue(14)]
         [JsonProperty("fontSize")]
         public int FontSize { get; set; } = 14;
 
-        //The Font used by the text.
+        // The Font used by the text
         [DefaultValue("RobotoCondensed-Bold.ttf")]
         [JsonProperty("font")]
         public string Font { get; set; } = "RobotoCondensed-Bold.ttf";
 
-        //The positioning of the text reliative to its RectTransform.
+        // The positioning of the text relative to its RectTransform
         [DefaultValue(TextAnchor.UpperLeft)]
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("align")]
@@ -375,6 +389,36 @@ namespace Oxide.Game.Rust.Cui
         [DefaultValue(false)]
         [JsonProperty("password")]
         public bool IsPassword { get; set; }
+
+        [DefaultValue(false)]
+        [JsonProperty("readOnly")]
+        public bool ReadOnly { get; set; }
+
+        [DefaultValue(InputField.LineType.SingleLine)]
+        [JsonConverter(typeof(StringEnumConverter))]
+        [JsonProperty("lineType")]
+        public InputField.LineType LineType { get; set; } = InputField.LineType.SingleLine;
+    }
+
+    public class CuiCountdownComponent : ICuiComponent
+    {
+        public string Type => "Countdown";
+
+        [JsonProperty("endTime")]
+        public int EndTime { get; set; }
+
+        [JsonProperty("startTime")]
+        public int StartTime { get; set; }
+
+        [DefaultValue(1)]
+        [JsonProperty("step")]
+        public int Step { get; set; } = 1;
+
+        [JsonProperty("command")]
+        public string Command { get; set; }
+
+        [JsonProperty("fadeIn")]
+        public float FadeIn { get; set; }
     }
 
     public class CuiNeedsCursorComponent : ICuiComponent
@@ -382,26 +426,31 @@ namespace Oxide.Game.Rust.Cui
         public string Type => "NeedsCursor";
     }
 
+    public class CuiNeedsKeyboardComponent : ICuiComponent
+    {
+        public string Type => "NeedsKeyboard";
+    }
+
     public class CuiRectTransformComponent : ICuiComponent
     {
         public string Type => "RectTransform";
 
-        //The normalized position in the parent RectTransform that the lower left corner is anchored to.
+        // The normalized position in the parent RectTransform that the lower left corner is anchored to
         [DefaultValue("0.0 0.0")]
         [JsonProperty("anchormin")]
         public string AnchorMin { get; set; } = "0.0 0.0";
 
-        //The normalized position in the parent RectTransform that the upper right corner is anchored to.
+        // The normalized position in the parent RectTransform that the upper right corner is anchored to
         [DefaultValue("1.0 1.0")]
         [JsonProperty("anchormax")]
         public string AnchorMax { get; set; } = "1.0 1.0";
 
-        //The offset of the lower left corner of the rectangle relative to the lower left anchor.
+        // The offset of the lower left corner of the rectangle relative to the lower left anchor
         [DefaultValue("0.0 0.0")]
         [JsonProperty("offsetmin")]
         public string OffsetMin { get; set; } = "0.0 0.0";
 
-        //The offset of the upper right corner of the rectangle relative to the upper right anchor.
+        // The offset of the upper right corner of the rectangle relative to the upper right anchor
         [DefaultValue("0.0 0.0")]
         [JsonProperty("offsetmax")]
         public string OffsetMax { get; set; } = "0.0 0.0";
@@ -419,6 +468,7 @@ namespace Oxide.Game.Rust.Cui
             JObject jObject = JObject.Load(reader);
             string typeName = jObject["type"].ToString();
             Type type;
+
             switch (typeName)
             {
                 case "UnityEngine.UI.Text":
@@ -445,8 +495,16 @@ namespace Oxide.Game.Rust.Cui
                     type = typeof(CuiInputFieldComponent);
                     break;
 
+                case "Countdown":
+                    type = typeof(CuiCountdownComponent);
+                    break;
+
                 case "NeedsCursor":
                     type = typeof(CuiNeedsCursorComponent);
+                    break;
+
+                case "NeedsKeyboard":
+                    type = typeof(CuiNeedsKeyboardComponent);
                     break;
 
                 case "RectTransform":
@@ -456,6 +514,7 @@ namespace Oxide.Game.Rust.Cui
                 default:
                     return null;
             }
+
             object target = Activator.CreateInstance(type);
             serializer.Populate(jObject.CreateReader(), target);
             return target;

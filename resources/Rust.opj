@@ -18935,6 +18935,32 @@
             "BaseHookName": null,
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 19,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnTrainCarUncouple",
+            "HookName": "OnTrainCarUncouple",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TrainCar",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_WantsUncouple",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "B9Du/alO2ZuVbnh++H+FwNidECYsUhCseBXMVpXjIGA=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

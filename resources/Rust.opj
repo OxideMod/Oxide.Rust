@@ -18961,6 +18961,33 @@
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 16,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.owner, a0.owner",
+            "HookTypeName": "Simple",
+            "Name": "CanTrainCarCouple",
+            "HookName": "CanTrainCarCouple",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TrainCoupling",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryCouple",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "TrainCoupling",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "Icki1U8jnKc4q9M9x9ABDGPoR/zki8kz/Z3gyPjy0wQ=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

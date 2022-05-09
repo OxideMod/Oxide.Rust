@@ -43963,6 +43963,105 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::IMPACT_ENERGY_FRACTION",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IMPACT_ENERGY_FRACTION",
+            "FullTypeName": "System.Single CompleteTrain::IMPACT_ENERGY_FRACTION",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::MIN_COLLISION_FORCE",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MIN_COLLISION_FORCE",
+            "FullTypeName": "System.Single CompleteTrain::MIN_COLLISION_FORCE",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::SLEEP_DELAY",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SLEEP_DELAY",
+            "FullTypeName": "System.Single CompleteTrain::SLEEP_DELAY",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CompleteTrain::SLEEP_SPEED",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CompleteTrain",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SLEEP_SPEED",
+            "FullTypeName": "System.Single CompleteTrain::SLEEP_SPEED",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::Rails",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "Rails",
+            "FullTypeName": "System.Collections.Generic.List`1<PathList> TerrainPath::Rails",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

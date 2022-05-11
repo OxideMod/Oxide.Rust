@@ -14,11 +14,11 @@ namespace Oxide.Game.Rust.Libraries.Covalence
     /// </summary>
     public class RustServer : IServer
     {
-        #region Initialiation
+        #region Initialization
 
         internal readonly Server Server = new Server();
 
-        #endregion Initialiation
+        #endregion Initialization
 
         #region Information
 
@@ -122,12 +122,21 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         }
 
         /// <summary>
-        /// Gets/sets the current in-game time on the server
+        /// Gets/sets the current in-game date on the server
         /// </summary>
-        public DateTime Time
+        public DateTime Date
         {
             get => TOD_Sky.Instance.Cycle.DateTime;
             set => TOD_Sky.Instance.Cycle.DateTime = value;
+        }
+
+        /// <summary>
+        /// Gets/sets the current in-game time on the server
+        /// </summary>
+        public TimeSpan Time
+        {
+            get => TOD_Sky.Instance.Cycle.DateTime.TimeOfDay;
+            set => TOD_Sky.Instance.Cycle.Hour = value.Hours + value.Minutes / 60f + value.Seconds / 3600f + value.Milliseconds / 3600000f;
         }
 
         /// <summary>

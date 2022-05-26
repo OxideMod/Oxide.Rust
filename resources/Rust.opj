@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-staging\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -603,7 +603,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "7oXol3z5ZL+kaPe1KO3EgHr4Ic2Cxh6cIB12/7F07Q0=",
+            "MSILHash": "l3+ay+FnVsJOfan8/1JOeBYDLsySTZGOiV5i26WyEUc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "1vIwUcaymDUZW5H+Hd4B8Zcg/lVVjMQPoCuTwVG8aoA=",
+            "MSILHash": "c4pnmFL23BaGR4Xi0Nf1EWYdyTvzicmmgkjUDVF9cgI=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1017,7 +1017,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "WTzXXmuY1OctkeLvFyHkk5UevblB8ZDJBFca3cHjyjw=",
+            "MSILHash": "1+kddeuEs4t18y+ECyZHsioICc+O1B0zpqZdAMN3VMs=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1249,7 +1249,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "2BSWHyYcSyPMt3McAES5ZbLdEzisHGsgadnn+Qwgk8w=",
+            "MSILHash": "QCjfNRvHcJyrhSz49eFfWDdqiTDfE9aM61sOBhww/gI=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2278,7 +2278,7 @@
                 "System.UInt64"
               ]
             },
-            "MSILHash": "U9PQg0K4CnwBAWMFyDVWzPc4TXziwpJFDVjL/svEtGI=",
+            "MSILHash": "c3hIi7fGAMtI5fjBzf2bKLmlqfHaj6RJTRR+k6qpJKs=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2362,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "xZm+p/Z5UxqIMfR1x05WROLz7hftReneXakyTRkDTRc=",
+            "MSILHash": "0VAZPnj0pl4u/VOH7r9Dwhu34cFc/0VICGhd1XMOmsA=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2389,7 +2389,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "JU8cg8tdQG6NEFw8Znlrb5+kn7EFuHOyBUsLlCALlac=",
+            "MSILHash": "lLwaZgT9mJcilLoe3eKpeEQM5dOUZ5S+AwTWxZ/QEMo=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2440,7 +2440,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "JU8cg8tdQG6NEFw8Znlrb5+kn7EFuHOyBUsLlCALlac=",
+            "MSILHash": "lLwaZgT9mJcilLoe3eKpeEQM5dOUZ5S+AwTWxZ/QEMo=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -7973,7 +7973,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "6R2eaOSgpuk3wyTzbnDIE4Os5a8U79CRQxtF2RdrDtM=",
+            "MSILHash": "mz0gpWpMRLaVokXoObvCIpS0ULKoIN21WUj63/WemMo=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -8003,7 +8003,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "6R2eaOSgpuk3wyTzbnDIE4Os5a8U79CRQxtF2RdrDtM=",
+            "MSILHash": "mz0gpWpMRLaVokXoObvCIpS0ULKoIN21WUj63/WemMo=",
             "BaseHookName": "IOnPlayerCommand",
             "HookCategory": "Player"
           }
@@ -10359,7 +10359,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 64,
+            "InjectionIndex": 63,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
@@ -10375,7 +10375,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "O8L/6NWncmpGlTI17E9qJDyhCq/fFWAWnHET0epcH+I=",
+            "MSILHash": "h9tlecKlSNkrgLp+hLl3/8T/WXffF5S/grbOwvVKg2o=",
             "BaseHookName": null,
             "HookCategory": "Electronic"
           }
@@ -17954,7 +17954,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "42xfjkNOGeIYVQ6hkhDWbUYIFYpHEhHd6VIxkidQtNg=",
+            "MSILHash": "TeAK6qlvddbQzOHnwdHi9N0QKqF6OivcFzRNoxj6r+s=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -18158,7 +18158,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "lEUfdYfH7n9TNpb4y4JVpaejfyc3DTDTTYyg5xEXVnI=",
+            "MSILHash": "9c8i+un3yZtHuTKKhDxf48Jq+jZ63lsdeCk7KmEIFq8=",
             "BaseHookName": null,
             "HookCategory": "Crafting"
           }
@@ -18184,7 +18184,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "lEUfdYfH7n9TNpb4y4JVpaejfyc3DTDTTYyg5xEXVnI=",
+            "MSILHash": "9c8i+un3yZtHuTKKhDxf48Jq+jZ63lsdeCk7KmEIFq8=",
             "BaseHookName": "OnEntityReskin",
             "HookCategory": "Crafting"
           }
@@ -18582,7 +18582,7 @@
                 "AIBrainSenses"
               ]
             },
-            "MSILHash": "cr2qnn8X5E+9+6+zqubOpSIny/KaBMCpIWV5Ll2NOkM=",
+            "MSILHash": "d9SI0Dg1CGNB8MMfmej1LLTh4Duec1JN9zheeJdq+Gg=",
             "BaseHookName": null,
             "HookCategory": "NPC"
           }
@@ -26048,25 +26048,6 @@
             ],
             "Name": "driverSeatInputs",
             "FullTypeName": "ListDictionary`2<BaseMountable,ModularCar/DriverSeatInputs> ModularCar::driverSeatInputs",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "ModularCar::fuelStoragePoint",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCar",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "fuelStoragePoint",
-            "FullTypeName": "UnityEngine.Transform ModularCar::fuelStoragePoint",
             "Parameters": []
           },
           "MSILHash": ""
@@ -34219,6 +34200,7 @@
               "System.Boolean",
               "TrainTrackSpline&",
               "System.Boolean&",
+              "TrainTrackSpline",
               "TrainTrackSpline"
             ]
           },
@@ -34245,6 +34227,7 @@
               "TrainTrackSpline/TrackSelection",
               "System.Boolean",
               "System.Boolean",
+              "TrainTrackSpline",
               "TrainTrackSpline"
             ]
           },
@@ -43429,7 +43412,7 @@
           "Flagged": false,
           "Signature": {
             "Exposure": [
-              0
+              1
             ],
             "Name": "platformParentTrigger",
             "FullTypeName": "TriggerParent TrainCar::platformParentTrigger",
@@ -43461,30 +43444,6 @@
             ]
           },
           "MSILHash": "8PjvgxLsjWbX1NpEpCGaT9S5JhiFH9qx1jFL0OI6NX8="
-        },
-        {
-          "Name": "TrainCar::SetTheRestFromFrontWheelData",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "TrainCar",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "SetTheRestFromFrontWheelData",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "TrainTrackSpline&",
-              "UnityEngine.Vector3",
-              "UnityEngine.Vector3",
-              "TrainTrackSpline/TrackSelection"
-            ]
-          },
-          "MSILHash": "ckTFwXIaowATRY3pHXoXDywD0VOBcO8laCokY/DEn0c="
         },
         {
           "Name": "TrainCar::UpdateClients",
@@ -44108,6 +44067,31 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "TrainCar::SetTheRestFromFrontWheelData",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetTheRestFromFrontWheelData",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "TrainTrackSpline&",
+              "UnityEngine.Vector3",
+              "UnityEngine.Vector3",
+              "TrainTrackSpline/TrackSelection",
+              "TrainTrackSpline"
+            ]
+          },
+          "MSILHash": "fYdFyrQRHk9N9fFC5TAOh+chYfvUiggRzeg42lDvhJI="
         }
       ],
       "Fields": [

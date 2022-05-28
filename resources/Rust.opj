@@ -44089,6 +44089,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ElectricWindmill::serverWindSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElectricWindmill",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "serverWindSpeed",
+            "FullTypeName": "System.Single ElectricWindmill::serverWindSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

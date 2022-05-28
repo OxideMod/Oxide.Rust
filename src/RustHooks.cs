@@ -641,6 +641,20 @@ namespace Oxide.Game.Rust
                 new DateTime(2022, 12, 31), vendingMachine, player);
         }
 
+        [HookMethod("OnWindmillUpdate")]
+        private void OnWindmillUpdate(ElectricWindmill windmill)
+        {
+            Interface.Oxide.CallDeprecatedHook("OnWindUpdate", "OnWindmillUpdate(ElectricWindmill windmill)",
+                new DateTime(2022, 12, 31), windmill);
+        }
+
+        [HookMethod("OnWindmillUpdated")]
+        private void OnWindmillUpdated(ElectricWindmill windmill)
+        {
+            Interface.Oxide.CallDeprecatedHook("OnWindUpdated", "OnWindmillUpdated(ElectricWindmill windmill)",
+                new DateTime(2022, 12, 31), windmill);
+        }
+
         #endregion
     }
 }

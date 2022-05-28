@@ -15765,8 +15765,8 @@
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnWindUpdate",
-            "HookName": "OnWindUpdate",
+            "Name": "OnWindmillUpdate",
+            "HookName": "OnWindmillUpdate",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ElectricWindmill",
             "Flagged": false,
@@ -15789,8 +15789,8 @@
             "ArgumentBehavior": 1,
             "ArgumentString": null,
             "HookTypeName": "Simple",
-            "Name": "OnWindUpdated",
-            "HookName": "OnWindUpdated",
+            "Name": "OnWindmillUpdated",
+            "HookName": "OnWindmillUpdated",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ElectricWindmill",
             "Flagged": false,
@@ -15801,7 +15801,7 @@
               "Parameters": []
             },
             "MSILHash": "3oQJuRK8woZxc6W+Z0/iAZn5mBVPYccBw8xLu6hTRoU=",
-            "BaseHookName": "OnWindUpdate",
+            "BaseHookName": "OnWindmillUpdate",
             "HookCategory": "Entity"
           }
         },

@@ -44092,6 +44092,1166 @@
             ]
           },
           "MSILHash": "fYdFyrQRHk9N9fFC5TAOh+chYfvUiggRzeg42lDvhJI="
+        },
+        {
+          "Name": "BaseAIBrain`1/BasicAIState::AgrresiveState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BasicAIState",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              1
+            ],
+            "Name": "AgrresiveState",
+            "FullTypeName": "System.Boolean BaseAIBrain`1/BasicAIState::AgrresiveState()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BasicAIState::StateType",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BasicAIState",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "StateType",
+            "FullTypeName": "AIState BaseAIBrain`1/BasicAIState::StateType()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BasicAIState::TimeInState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BasicAIState",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "TimeInState",
+            "FullTypeName": "System.Single BaseAIBrain`1/BasicAIState::TimeInState()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BasicAIState::_lastStateExitTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BasicAIState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "_lastStateExitTime",
+            "FullTypeName": "System.Single BaseAIBrain`1/BasicAIState::_lastStateExitTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseAttackState::attack",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseAttackState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "attack",
+            "FullTypeName": "IAIAttack BaseAIBrain`1/BaseAttackState::attack",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseAttackState::StopAttacking",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseAttackState",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StopAttacking",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "UJSA2Pqep8Rd9y0aWx/GbqC98LBRUmzCBXdn16VId0I="
+        },
+        {
+          "Name": "BaseAIBrain`1/BasicAIState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BasicAIState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BasicAIState",
+            "FullTypeName": "BaseAIBrain`1/BasicAIState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseAttackState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseAttackState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseAttackState",
+            "FullTypeName": "BaseAIBrain`1/BaseAttackState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseAttackState::GetAimDirection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseAttackState",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetAimDirection",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "1IqiJVhqvaPkGbYNCO0aWMfeam7/7bj0Tc48b3reOLc="
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseChaseState::Stop",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseChaseState",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Stop",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "Z3iDE5G2jA0Ir8Jy1LKVH2vKLAUdHFqfE3SOpfVNXDk="
+        },
+        {
+          "Name": "BaseAIBrain`1/BasePatrolState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BasePatrolState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BasePatrolState",
+            "FullTypeName": "BaseAIBrain`1/BasePatrolState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseCooldownState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseCooldownState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseCooldownState",
+            "FullTypeName": "BaseAIBrain`1/BaseCooldownState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseDismountedState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseDismountedState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseDismountedState",
+            "FullTypeName": "BaseAIBrain`1/BaseDismountedState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFleeState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFleeState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseFleeState",
+            "FullTypeName": "BaseAIBrain`1/BaseFleeState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFleeState::nextInterval",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFleeState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextInterval",
+            "FullTypeName": "System.Single BaseAIBrain`1/BaseFleeState::nextInterval",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFleeState::stopFleeDistance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFleeState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "stopFleeDistance",
+            "FullTypeName": "System.Single BaseAIBrain`1/BaseFleeState::stopFleeDistance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseSleepState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseSleepState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseSleepState",
+            "FullTypeName": "BaseAIBrain`1/BaseSleepState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseNavigateHomeState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseNavigateHomeState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseNavigateHomeState",
+            "FullTypeName": "BaseAIBrain`1/BaseNavigateHomeState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFleeState::FleeFrom",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFleeState",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FleeFrom",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BaseEntity",
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "ekAX0cHZxqVHFyLN+uxrSYyO8Dv0B1weJ3sOrk0rv3o="
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseIdleState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseIdleState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseIdleState",
+            "FullTypeName": "BaseAIBrain`1/BaseIdleState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseMountedState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseMountedState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseMountedState",
+            "FullTypeName": "BaseAIBrain`1/BaseMountedState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseMoveTorwardsState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseMoveTorwardsState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseMoveTorwardsState",
+            "FullTypeName": "BaseAIBrain`1/BaseMoveTorwardsState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseMoveTorwardsState::Stop",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseMoveTorwardsState",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Stop",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "Z3iDE5G2jA0Ir8Jy1LKVH2vKLAUdHFqfE3SOpfVNXDk="
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseNavigateHomeState::status",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseNavigateHomeState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "status",
+            "FullTypeName": "StateStatus BaseAIBrain`1/BaseNavigateHomeState::status",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseNavigateHomeState::Stop",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseNavigateHomeState",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Stop",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "Z3iDE5G2jA0Ir8Jy1LKVH2vKLAUdHFqfE3SOpfVNXDk="
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFleeState::Stop",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFleeState",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Stop",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "Z3iDE5G2jA0Ir8Jy1LKVH2vKLAUdHFqfE3SOpfVNXDk="
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseRoamState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseRoamState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseRoamState",
+            "FullTypeName": "BaseAIBrain`1/BaseRoamState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseChaseState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseChaseState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseChaseState",
+            "FullTypeName": "BaseAIBrain`1/BaseChaseState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseSleepState::status",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseSleepState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "status",
+            "FullTypeName": "StateStatus BaseAIBrain`1/BaseSleepState::status",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseRoamState::lastDestinationTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseRoamState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastDestinationTime",
+            "FullTypeName": "System.Single BaseAIBrain`1/BaseRoamState::lastDestinationTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseRoamState::nextRoamPositionTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseRoamState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextRoamPositionTime",
+            "FullTypeName": "System.Single BaseAIBrain`1/BaseRoamState::nextRoamPositionTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseAttackState::StartAttacking",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseAttackState",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StartAttacking",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity"
+            ]
+          },
+          "MSILHash": "0JAntGnd3njerJstdVTh2/JCgn7AyuoMdTOuj2JEEIY="
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseAttackState::StateThink",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseAttackState",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "StateThink",
+            "FullTypeName": "StateStatus",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "ReaUExFocs6B26+IRBZlL2hUBkK9ZAtJS2s3EFZjxoI="
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFollowPathState::status",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFollowPathState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "status",
+            "FullTypeName": "StateStatus BaseAIBrain`1/BaseFollowPathState::status",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFollowPathState::currentNodeIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFollowPathState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentNodeIndex",
+            "FullTypeName": "System.Int32 BaseAIBrain`1/BaseFollowPathState::currentNodeIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFollowPathState::currentTargetPoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFollowPathState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentTargetPoint",
+            "FullTypeName": "AIMovePoint BaseAIBrain`1/BaseFollowPathState::currentTargetPoint",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFollowPathState::currentWaitTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFollowPathState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentWaitTime",
+            "FullTypeName": "System.Single BaseAIBrain`1/BaseFollowPathState::currentWaitTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFollowPathState::path",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFollowPathState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "path",
+            "FullTypeName": "AIMovePointPath BaseAIBrain`1/BaseFollowPathState::path",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFollowPathState::pathDirection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFollowPathState",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "pathDirection",
+            "FullTypeName": "AIMovePointPath/PathDirection BaseAIBrain`1/BaseFollowPathState::pathDirection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1/BaseFollowPathState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1/BaseFollowPathState",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "BaseFollowPathState",
+            "FullTypeName": "BaseAIBrain`1/BaseFollowPathState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1::disabled",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "disabled",
+            "FullTypeName": "System.Boolean BaseAIBrain`1::disabled",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1::lastMovementTickTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastMovementTickTime",
+            "FullTypeName": "System.Single BaseAIBrain`1::lastMovementTickTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1::lastThinkTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "lastThinkTime",
+            "FullTypeName": "System.Single BaseAIBrain`1::lastThinkTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1::loadedDesignIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "loadedDesignIndex",
+            "FullTypeName": "System.Int32 BaseAIBrain`1::loadedDesignIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1::thinkRate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "thinkRate",
+            "FullTypeName": "System.Single BaseAIBrain`1::thinkRate",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseAIBrain`1::AddEvents",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "AddEvents",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "06bMXOdViUMtGd7dY0EfN+k2/sdCOw737jZqxbzDNT0="
+        },
+        {
+          "Name": "BaseAIBrain`1::IAIDesign.CanPlayerDesignAI",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IAIDesign.CanPlayerDesignAI",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "sBxCZ9JG7iV8EU8L81ZZbO1VpSkKQDoJAXuKl+ywjnc="
+        },
+        {
+          "Name": "BaseAIBrain`1::IAISleepable.SleepAI",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IAISleepable.SleepAI",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "9M2kXurWSYk4VUrXq9iaw7+boj0NrA8sQ5G0UYxzA0Q="
+        },
+        {
+          "Name": "BaseAIBrain`1::IAISleepable.WakeAI",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IAISleepable.WakeAI",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "JAB4EYT76LRI590jIXKbvaKQ2CK/34KbHkuTVfOkCBk="
+        },
+        {
+          "Name": "BaseAIBrain`1::LoadAIDesign",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "LoadAIDesign",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "ProtoBuf.AIDesign",
+              "BasePlayer",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "YcHpP1a4k4HlotToT5eLctZua5sMX3B8/k3P0I8Z6zU="
+        },
+        {
+          "Name": "BaseAIBrain`1::PlayerCanDesignAI",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "PlayerCanDesignAI",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "lpL2HqK8KerZjngpGImHlLdnot9qoFkH8x50UAffBj4="
+        },
+        {
+          "Name": "BaseAIBrain`1::RequestAIDesign",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RequestAIDesign",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity/RPCMessage"
+            ]
+          },
+          "MSILHash": "UAPOH5Z6trdPF0AMVmeFe9613efniyjnKFYoCiUSWv0="
+        },
+        {
+          "Name": "BaseAIBrain`1::SendStateChangeEvent",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SendStateChangeEvent",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Int32",
+              "System.Int32",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "wrCwxTiW41T1NNyG4+UlynuedcUuTKYB7oJGPko8hPc="
+        },
+        {
+          "Name": "BaseAIBrain`1::StartMovementTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StartMovementTick",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "9HZoPCqtG7J2NOhYv4CGkryov8Q7T1xzIGHAiHlhDpc="
+        },
+        {
+          "Name": "BaseAIBrain`1::StopAIDesign",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StopAIDesign",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity/RPCMessage"
+            ]
+          },
+          "MSILHash": "r24Q3WmBXmA+CCaD3FlaDe9aldKOhs+49QbHQTBoPLo="
+        },
+        {
+          "Name": "BaseAIBrain`1::StopMovementTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "StopMovementTick",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "K413oPH2K7XYsRY8LqWpwYQ7GRAyuJIwCmVMzNO8bfc="
+        },
+        {
+          "Name": "BaseAIBrain`1::SubmitAIDesign",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SubmitAIDesign",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity/RPCMessage"
+            ]
+          },
+          "MSILHash": "vmYV1pCklTpqj90IYirtNXSj1FbTDo6Q5EgY21X9CbM="
+        },
+        {
+          "Name": "BaseAIBrain`1::UpdateAgressionTimer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateAgressionTimer",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "dupkTVbnoMk2xpt33z8yjT8/uIAg0ChNb/t6hNIFVwM="
+        },
+        {
+          "Name": "BaseAIBrain`1::UpdateGroup",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseAIBrain`1",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateGroup",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "h7KrkrKeGI5ogUYjcLAjxXQU9d5Kit7dhJiNgVlbJ4M="
         }
       ],
       "Fields": [

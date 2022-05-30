@@ -18988,6 +18988,32 @@
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 24,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "CanToggleDefenderMode",
+            "HookName": "CanToggleDefenderMode",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SamSite",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ToggleDefenderMode",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "DqtUMxWAD8AydlPJ43/1kc8KTT8nTPUJWmzn1pa2Dq8=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

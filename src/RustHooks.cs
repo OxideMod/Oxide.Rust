@@ -627,6 +627,13 @@ namespace Oxide.Game.Rust
 
         #region Deprecated Hooks
 
+        [HookMethod("OnDieselEngineToggle")]
+        private object OnDieselEngineToggle(DieselEngine engine, BasePlayer player)
+        {
+            return Interface.Oxide.CallDeprecatedHook("OnDieselEngineToggle", "OnDieselEngineToggle(DieselEngine engine, BasePlayer player)",
+                new DateTime(2022, 12, 31), player, engine);
+        }
+
         [HookMethod("OnItemRecycle")]
         private object OnItemRecycle(Item item, Recycler recycler)
         {

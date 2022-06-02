@@ -44134,6 +44134,28 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "ConVar.Chat::Record",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ConVar.Chat",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Record",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "ConVar.Chat/ChatEntry"
+            ]
+          },
+          "MSILHash": "smhX5fYa9D921b2ZFUGxgDfkfFt8NAKQDxCYrJOKtBE="
         }
       ],
       "Fields": [

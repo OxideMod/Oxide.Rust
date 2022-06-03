@@ -44140,6 +44140,25 @@
             ]
           },
           "MSILHash": "smhX5fYa9D921b2ZFUGxgDfkfFt8NAKQDxCYrJOKtBE="
+        },
+        {
+          "Name": "GroundVehicle::collisionEffect",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GroundVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "collisionEffect",
+            "FullTypeName": "GameObjectRef GroundVehicle::collisionEffect",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

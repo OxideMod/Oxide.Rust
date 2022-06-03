@@ -19014,6 +19014,32 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 89,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l5",
+            "HookTypeName": "Simple",
+            "Name": "OnSprayCreate",
+            "HookName": "OnSprayCreate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SprayCan",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CreateSpray",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Tmb28UwfOyyVO4BmEN6hLC5wn/joGEF9z1S9RQGkezU=",
+            "BaseHookName": null,
+            "HookCategory": "Crafting"
+          }
         }
       ],
       "Modifiers": [

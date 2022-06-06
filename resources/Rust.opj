@@ -19040,6 +19040,30 @@
             "BaseHookName": null,
             "HookCategory": "Crafting"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "DelayedModsChanged",
+            "HookName": "CanExtendMagazine",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseProjectile",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DelayedModsChanged",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "Iu3R7n8o6bioNlxIh2XITPPpAwuzxje+s1vC7FBcgao=",
+            "BaseHookName": null,
+            "HookCategory": null
+          }
         }
       ],
       "Modifiers": [

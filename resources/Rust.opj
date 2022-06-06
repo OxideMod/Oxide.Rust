@@ -19018,25 +19018,27 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
+            "InjectionIndex": 89,
             "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "ArgumentString": "",
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l5",
             "HookTypeName": "Simple",
-            "Name": "DelayedModsChanged",
-            "HookName": "CanExtendMagazine",
+            "Name": "OnSprayCreate",
+            "HookName": "OnSprayCreate",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseProjectile",
+            "TypeName": "SprayCan",
             "Flagged": false,
             "Signature": {
-              "Exposure": 2,
-              "Name": "DelayedModsChanged",
+              "Exposure": 0,
+              "Name": "CreateSpray",
               "ReturnType": "System.Void",
-              "Parameters": []
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
             },
-            "MSILHash": "Iu3R7n8o6bioNlxIh2XITPPpAwuzxje+s1vC7FBcgao=",
+            "MSILHash": "Tmb28UwfOyyVO4BmEN6hLC5wn/joGEF9z1S9RQGkezU=",
             "BaseHookName": null,
-            "HookCategory": null
+            "HookCategory": "Crafting"
           }
         }
       ],
@@ -44164,6 +44166,25 @@
             ]
           },
           "MSILHash": "smhX5fYa9D921b2ZFUGxgDfkfFt8NAKQDxCYrJOKtBE="
+        },
+        {
+          "Name": "GroundVehicle::collisionEffect",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GroundVehicle",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "collisionEffect",
+            "FullTypeName": "GameObjectRef GroundVehicle::collisionEffect",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

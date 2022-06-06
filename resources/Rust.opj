@@ -19040,6 +19040,32 @@
             "BaseHookName": null,
             "HookCategory": "Crafting"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnLockerSwap",
+            "HookName": "OnLockerSwap",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Locker",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_Equip",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "21x85yDrPNnHLvKQQPhkhu1THMWRPj8wF7NwPenJIcI=",
+            "BaseHookName": null,
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [

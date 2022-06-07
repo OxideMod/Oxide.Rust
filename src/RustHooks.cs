@@ -627,6 +627,13 @@ namespace Oxide.Game.Rust
 
         #region Deprecated Hooks
 
+        [HookMethod("OnAmmoSwitch")]
+        private object OnAmmoSwitch(BaseProjectile weapon, BasePlayer player)
+        {
+            return Interface.Oxide.CallDeprecatedHook("OnSwitchAmmo", "OnAmmoSwitch(BaseProjectile weapon, BasePlayer player)",
+                new DateTime(2022, 12, 31), weapon, player);
+        }
+
         [HookMethod("OnDieselEngineToggle")]
         private object OnDieselEngineToggle(DieselEngine engine, BasePlayer player)
         {
@@ -641,11 +648,25 @@ namespace Oxide.Game.Rust
                 new DateTime(2022, 12, 31), recycler, item);
         }
 
+        [HookMethod("OnMagazineReload")]
+        private object OnMagazineReload(BaseProjectile weapon, int desiredAmount, BasePlayer player)
+        {
+            return Interface.Oxide.CallDeprecatedHook("OnReloadMagazine", "OnMagazineReload(BaseProjectile weapon, int desiredAmount, BasePlayer player)",
+                new DateTime(2022, 12, 31), weapon, desiredAmount, player);
+        }
+
         [HookMethod("OnVendingShopOpened")]
         private void OnVendingShopOpened(VendingMachine vendingMachine, BasePlayer player)
         {
             Interface.Oxide.CallDeprecatedHook("OnOpenVendingShop", "OnVendingShopOpened(VendingMachine vendingMachine, BasePlayer player)",
                 new DateTime(2022, 12, 31), vendingMachine, player);
+        }
+
+        [HookMethod("OnWeaponReload")]
+        private object OnWeaponReload(BaseProjectile weapon, BasePlayer player)
+        {
+            return Interface.Oxide.CallDeprecatedHook("OnReloadWeapon", "OnWeaponReload(BaseProjectile weapon, BasePlayer player)",
+                new DateTime(2022, 12, 31), weapon, player);
         }
 
         [HookMethod("OnWindmillUpdate")]
@@ -660,6 +681,13 @@ namespace Oxide.Game.Rust
         {
             Interface.Oxide.CallDeprecatedHook("OnWindUpdated", "OnWindmillUpdated(ElectricWindmill windmill)",
                 new DateTime(2022, 12, 31), windmill);
+        }
+
+        [HookMethod("OnWorldProjectileCreate")]
+        private object OnWorldProjectileCreate(HitInfo hitInfo, ItemDefinition itemDefinition)
+        {
+            return Interface.Oxide.CallDeprecatedHook("OnCreateWorldProjectile", "OnWorldProjectileCreate(HitInfo hitInfo, ItemDefinition itemDefinition)",
+                new DateTime(2022, 12, 31), hitInfo, itemDefinition);
         }
 
         #endregion

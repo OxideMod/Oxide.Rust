@@ -666,7 +666,7 @@ namespace Oxide.Game.Rust
         private object OnWeaponReload(BaseProjectile weapon, BasePlayer player)
         {
             return Interface.Oxide.CallDeprecatedHook("OnReloadWeapon", "OnWeaponReload(BaseProjectile weapon, BasePlayer player)",
-                new DateTime(2022, 12, 31), weapon, player);
+                new DateTime(2022, 12, 31), player, weapon);
         }
 
         [HookMethod("OnWindmillUpdate")]

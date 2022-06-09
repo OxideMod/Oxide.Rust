@@ -652,7 +652,7 @@ namespace Oxide.Game.Rust
         private object OnMagazineReload(BaseProjectile weapon, int desiredAmount, BasePlayer player)
         {
             return Interface.Oxide.CallDeprecatedHook("OnReloadMagazine", "OnMagazineReload(BaseProjectile weapon, int desiredAmount, BasePlayer player)",
-                new DateTime(2022, 12, 31), weapon, desiredAmount, player);
+                new DateTime(2022, 12, 31), player, weapon, desiredAmount);
         }
 
         [HookMethod("OnVendingShopOpened")]

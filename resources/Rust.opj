@@ -15886,7 +15886,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 71,
+            "InjectionIndex": 70,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -15917,7 +15917,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 76
+                "Operand": 75
               }
             ],
             "HookTypeName": "Modify",
@@ -15979,14 +15979,9 @@
                 "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object,System.Object)"
               },
               {
-                "OpCode": "brfalse_s",
+                "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 31
-              },
-              {
-                "OpCode": "leave",
-                "OpType": "Instruction",
-                "Operand": 91
+                "Operand": 52
               }
             ],
             "HookTypeName": "Modify",

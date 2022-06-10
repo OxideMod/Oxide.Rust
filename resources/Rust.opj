@@ -15886,7 +15886,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 60,
+            "InjectionIndex": 71,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -15917,7 +15917,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 74
+                "Operand": 76
               }
             ],
             "HookTypeName": "Modify",
@@ -15933,7 +15933,7 @@
               "Parameters": []
             },
             "MSILHash": "6OtAzaKfUMiE57Pp/HCOOk0AH/e+qJlMxs37d+DEyB0=",
-            "BaseHookName": null,
+            "BaseHookName": "OnBigWheelWin",
             "HookCategory": "Entity"
           }
         },

@@ -19085,6 +19085,69 @@
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 13,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnSprayRemove",
+            "HookName": "OnSprayRemove",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SprayCanSpray",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Server_RequestWaterClear",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "P0cpmHbot5HPLNvlyXi3LVha31Dp12K/QfZVr4mxKAE=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 1,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|SprayCanSpray|splashThreshold"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "SplashThresholdField [SprayCanSpray]",
+            "HookName": "SplashThresholdField [SprayCanSpray]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SprayCanSpray",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "WantsSplash",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "ItemDefinition",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "bLHSp2pJULXHu2oNSn8YwcMt2IDByJrPw79lfylEAo4=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [
@@ -44230,6 +44293,207 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "SprayCanSpray_Freehand::colour",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SprayCanSpray_Freehand",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "colour",
+            "FullTypeName": "UnityEngine.Color SprayCanSpray_Freehand::colour",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SprayCanSpray_Freehand::editingPlayer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SprayCanSpray_Freehand",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "editingPlayer",
+            "FullTypeName": "EntityRef`1<BasePlayer> SprayCanSpray_Freehand::editingPlayer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SprayCanSpray_Freehand::width",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SprayCanSpray_Freehand",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "width",
+            "FullTypeName": "System.Single SprayCanSpray_Freehand::width",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SprayCanSpray::RainCheck",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SprayCanSpray",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RainCheck",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "bKWkol+hk4Irx6vpwqwbQ+n5cW8kBnOeazD872CA5TY="
+        },
+        {
+          "Name": "SprayCanSpray::Menu_WaterClear_ShowIf",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SprayCanSpray",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Menu_WaterClear_ShowIf",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "mwsHlC+qqou587KpzvaUemoYoCWFKOV5QHYI9bOwDCg="
+        },
+        {
+          "Name": "SprayCanSpray_Freehand::TimeoutEditing",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SprayCanSpray_Freehand",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TimeoutEditing",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "bUUHRTtB+p3Z3Un2rJGjA3FvRYQUKdIv3pnj/OLLhPY="
+        },
+        {
+          "Name": "SprayCanSpray_Freehand::CopyPoints",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SprayCanSpray_Freehand",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CopyPoints",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Collections.Generic.List`1<ProtoBuf.LinePoint>",
+              "System.Collections.Generic.List`1<AlignedLineDrawer/LinePoint>"
+            ]
+          },
+          "MSILHash": "gGEvAbEwro+AMrPgys6aFtDHyXkPd3e4NdHqoVX7320="
+        },
+        {
+          "Name": "SprayCanSpray_Freehand::CopyPoints",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SprayCanSpray_Freehand",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CopyPoints",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Collections.Generic.List`1<AlignedLineDrawer/LinePoint>",
+              "System.Collections.Generic.List`1<UnityEngine.Vector3>"
+            ]
+          },
+          "MSILHash": "CmG/sDwqmMsXg8dM2t4OdizHuKCubgRrYyALnZAA4bE="
+        },
+        {
+          "Name": "SprayCanSpray_Freehand::CopyPoints",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SprayCanSpray_Freehand",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CopyPoints",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Collections.Generic.List`1<AlignedLineDrawer/LinePoint>",
+              "System.Collections.Generic.List`1<ProtoBuf.LinePoint>"
+            ]
+          },
+          "MSILHash": "DGbR1ZmxOm9WkGwS9Ou7pWxZzu+fAlNgYGwuH0CQDHg="
+        },
+        {
+          "Name": "SprayCanSpray::ApplyOutOfAuthConditionPenalty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SprayCanSpray",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyOutOfAuthConditionPenalty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "wpR+vl20UgeZzsvNa4h42Cj2TUu/8wO1k51EsNt7/bk="
         }
       ],
       "Fields": [
@@ -44244,6 +44508,13 @@
           "Name": "consumptionAmount",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "AutoTurret",
+          "FieldType": "mscorlib|System.Int32",
+          "Flagged": false
+        },
+        {
+          "Name": "splashThreshold",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SprayCanSpray",
           "FieldType": "mscorlib|System.Int32",
           "Flagged": false
         }

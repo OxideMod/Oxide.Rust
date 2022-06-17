@@ -641,6 +641,13 @@ namespace Oxide.Game.Rust
                 new DateTime(2022, 12, 31), player, engine);
         }
 
+        [HookMethod("OnHelicopterAttack")]
+        private object OnHelicopterAttack(CH47HelicopterAIController heli)
+        {
+            return Interface.Oxide.CallDeprecatedHook("OnHelicopterAttacked", "OnHelicopterAttack(CH47HelicopterAIController heli)",
+                new DateTime(2022, 12, 31), heli);
+        }
+
         [HookMethod("OnItemRecycle")]
         private object OnItemRecycle(Item item, Recycler recycler)
         {

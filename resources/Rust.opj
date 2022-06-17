@@ -19148,6 +19148,32 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnHelicopterAttacked [BaseHelicopter]",
+            "HookName": "OnHelicopterAttacked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseHelicopter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Hurt",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "iSe/dEMVfykpUrQRYsCDbJNeZTZgEHTscaLKzEUtjdY=",
+            "BaseHookName": null,
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

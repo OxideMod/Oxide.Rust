@@ -23,7 +23,19 @@ namespace Oxide.Game.Rust.Libraries
         /// <summary>
         /// Gets the player's language
         /// </summary>
-        public CultureInfo Language(BasePlayer player) => CultureInfo.GetCultureInfo(player.net.connection.info.GetString("global.language") ?? "en");
+        public CultureInfo Language(BasePlayer player)
+        {
+            CultureInfo cultureInfo;
+            try
+            {
+                cultureInfo = CultureInfo.GetCultureInfo(player.net.connection.info.GetString("global.language", "") ?? "en");
+            }
+            catch (CultureNotFoundException)
+            {
+                cultureInfo = CultureInfo.GetCultureInfo("en");
+            }
+            return cultureInfo;
+        }
 
         /// <summary>
         /// Gets the player's IP address

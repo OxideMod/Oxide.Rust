@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "guYmBtbRLNB6ujK95ycUtacPWunhEjt/upSmoAy3kDA=",
+            "MSILHash": "opx9DHsZFNQU/Dxb9arepZEXeqLb2BQ/xx/AFqMNPS4=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -862,7 +862,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "T8C1px3DCgnnvpWfP8z1eJj3YjcgmuTtS75DNuEMQZA=",
+            "MSILHash": "mM4nAsv6O30IW203EqZ90amk9mp5jABw2clowKj9FnE=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1017,7 +1017,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "1+kddeuEs4t18y+ECyZHsioICc+O1B0zpqZdAMN3VMs=",
+            "MSILHash": "D1VR3a+Kdlv4jt3oOORO1gHswIvxrQ49zVYQG7RKxWw=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1301,7 +1301,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "GO5ISlXsq1fUzPpFs6HLVxRAbCl4XE/GnEmQtzQKlVM=",
+            "MSILHash": "4LdEHYqnfisrfWtQmGXTikAyVwFwfHSssM5ez5wX/L4=",
             "BaseHookName": null,
             "HookCategory": "Weapon"
           }
@@ -2362,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "DZbQxzORvudPHm6HfgSu+EPDo3zK7JCvSYR2Kg2lgik=",
+            "MSILHash": "abjSiKATYBqedhZbKBxLcV9Y2Sv290ecccU+IScU5mc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -4581,7 +4581,7 @@
             "HookName": "OnPlayerKicked",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "EACServer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 0,
               "Name": "HandleClientUpdate",
@@ -8385,7 +8385,7 @@
             "HookName": "OnPlayerBanned",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "EACServer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 0,
               "Name": "HandleClientUpdate",
@@ -14658,7 +14658,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "GO5ISlXsq1fUzPpFs6HLVxRAbCl4XE/GnEmQtzQKlVM=",
+            "MSILHash": "4LdEHYqnfisrfWtQmGXTikAyVwFwfHSssM5ez5wX/L4=",
             "BaseHookName": "OnWeaponFired",
             "HookCategory": "_Patches"
           }
@@ -14897,7 +14897,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "EeLGulYeJ7ZvwHqANi9E+5MRkXbfM384T4XhQCUfyOE=",
+            "MSILHash": "vibUpXhyPWT9EgEZp9Bn844Hf03teVWlohS7SF2nguQ=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -15050,7 +15050,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "PbkGC9LgOrgCN7drXYLFi6zzhoVlR5am4XgwHXApzk4=",
+            "MSILHash": "K3Is4iQD3MfoaYG3g0Te7z69d1FDMn9AuSGjO+tfvKA=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -17689,7 +17689,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "T8C1px3DCgnnvpWfP8z1eJj3YjcgmuTtS75DNuEMQZA=",
+            "MSILHash": "mM4nAsv6O30IW203EqZ90amk9mp5jABw2clowKj9FnE=",
             "BaseHookName": "OnPlayerSleepEnd",
             "HookCategory": "Player"
           }
@@ -17949,7 +17949,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "D/1YBtwflf83qhRWYYh3+BwU+bsOkEzX7Lx2p4ZdWSo=",
+            "MSILHash": "tdkx5XlCFTeICLX7qYUJ6cXUMOEWSC2zFRXZRVZ0EIQ=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }

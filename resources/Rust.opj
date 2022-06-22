@@ -19067,8 +19067,8 @@
           "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "ArgumentString": "",
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.GetOwnerPlayer()",
             "HookTypeName": "Simple",
             "Name": "OnWeaponModChange",
             "HookName": "OnWeaponModChange",

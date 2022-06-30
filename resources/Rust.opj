@@ -19174,6 +19174,30 @@
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnComposterUpdate",
+            "HookName": "OnComposterUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Composter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateComposting",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "A90803BDaTu2pO7ecfinIr2a5aG08HcdXXfzD4CYXQs=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [
@@ -44520,6 +44544,88 @@
             "Parameters": []
           },
           "MSILHash": "wpR+vl20UgeZzsvNa4h42Cj2TUu/8wO1k51EsNt7/bk="
+        },
+        {
+          "Name": "Composter::ProduceFertilizer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Composter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ProduceFertilizer",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "usu8jBMqhnwMtstYwDy+oTula/TcZ4CxGW2ehyIigw8="
+        },
+        {
+          "Name": "Composter::fertilizerProductionProgress",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Composter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fertilizerProductionProgress",
+            "FullTypeName": "System.Single Composter::fertilizerProductionProgress",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Composter::ItemIsFertilizer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Composter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ItemIsFertilizer",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item"
+            ]
+          },
+          "MSILHash": "9J0I/2omgn5DpgW3Vu0uMjlGwFQJnrXPQrXZHzfd7Qc="
+        },
+        {
+          "Name": "Composter::CompostItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Composter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CompostItem",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Item"
+            ]
+          },
+          "MSILHash": "6sy9uL40EdDO8wxLTng8ThwwRi/di+al3dwY1mYfltw="
         }
       ],
       "Fields": [

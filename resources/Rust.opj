@@ -524,7 +524,7 @@
                 "AttackEntity"
               ]
             },
-            "MSILHash": "FGPsxpWVTxyUsP0yXVOVSu9+amQsIhg4olc8h6PcCo0=",
+            "MSILHash": "IHWLzc7syRoKBTlKM4ysqNRbYHM98yvgB0udpXO/uDo=",
             "BaseHookName": null,
             "HookCategory": "Resource"
           }
@@ -629,7 +629,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "guYmBtbRLNB6ujK95ycUtacPWunhEjt/upSmoAy3kDA=",
+            "MSILHash": "wujZW0zsdBI6P6NGVRGFAkanvMJTNRpda3i17M4Z5Tg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -655,7 +655,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "PgzW/9B6wsf3/sPOLYR+6k+3CZenTev/ktffr4GGlM4=",
+            "MSILHash": "v5yOK9aT3HXjqN/MAMxFMR8WwSu13p47XXMkX6b2/WI=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -794,7 +794,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 115,
+            "InjectionIndex": 119,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player, l0",
@@ -812,7 +812,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "YPejaCvW0AbSqFbO8amlaZi8gP9kFXXhysrPxztvU60=",
+            "MSILHash": "L7AScDTLVDqZOKjou3r6pqV23NQ8qKeOhNZOvObi3aY=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -1017,7 +1017,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "1+kddeuEs4t18y+ECyZHsioICc+O1B0zpqZdAMN3VMs=",
+            "MSILHash": "DKXrM0GNt5YdaqykvJd1cAX/YUG0FAIBuP/wNhdD0fM=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -1197,7 +1197,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "/ePqmMUCpKCBnjtSkSqnCRPINnoQH/bSQF02uvamqUo=",
+            "MSILHash": "wM1NuWYNv9U2LR/nYN6iE6KptTysj7ayn0cMZLaWZa0=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -2362,7 +2362,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "DZbQxzORvudPHm6HfgSu+EPDo3zK7JCvSYR2Kg2lgik=",
+            "MSILHash": "Sk7OzzV0CjB4HwFUoVm0ccZqeESBTTzrNk13PWLbTCM=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -2389,7 +2389,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "lLwaZgT9mJcilLoe3eKpeEQM5dOUZ5S+AwTWxZ/QEMo=",
+            "MSILHash": "9+KvC6IFnEvwiDfkIFrrgAomAnHIREkIpnteBDuj16Y=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -2440,7 +2440,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "lLwaZgT9mJcilLoe3eKpeEQM5dOUZ5S+AwTWxZ/QEMo=",
+            "MSILHash": "9+KvC6IFnEvwiDfkIFrrgAomAnHIREkIpnteBDuj16Y=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -3210,7 +3210,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "WDUIgybUSSexZiI3g5mz6tuMpECXuSSa8L+qL+MNM+U=",
+            "MSILHash": "YzHWuZC8kaidrSm3GXkzHd2VOvGQ0Wzt7Zi+j5BoR7k=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -3600,7 +3600,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "oCVIfYayAEfvwuaTIYs0UqFxc3CVEFRp5up+iK+HRK8=",
+            "MSILHash": "b0aSuImQGiLy6zRBZJXYpvugy3UrKiJJx78maGgFL70=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -5819,7 +5819,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 65,
+            "InjectionIndex": 64,
             "RemoveCount": 2,
             "Instructions": [
               {
@@ -5842,7 +5842,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "oCVIfYayAEfvwuaTIYs0UqFxc3CVEFRp5up+iK+HRK8=",
+            "MSILHash": "b0aSuImQGiLy6zRBZJXYpvugy3UrKiJJx78maGgFL70=",
             "BaseHookName": "CanMoveItem",
             "HookCategory": "_Patches"
           }
@@ -6680,7 +6680,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "8Yv6mkgUmwFv5N7XtAwgCWMIh8LWI+0Q3guo+2Ghdi0=",
+            "MSILHash": "jcFlHmIm+uf/GK/dEXFVctreN5SLPQ43D41plczijyk=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -7387,7 +7387,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "+B38KNjPr03QVzJWxV69cRFj4Ddlnu4NJMXLPqFd5I8=",
+            "MSILHash": "GGnZOO/QZjgOHG7ftCRYG/mmCKRZAzevVf4n7TdGx/g=",
             "BaseHookName": null,
             "HookCategory": "Team"
           }
@@ -10177,7 +10177,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 44,
+            "InjectionIndex": 48,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -10195,7 +10195,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "htEW494J5H12tP29Vnb5VN545BaPL5AlwqyPyB5BiqQ=",
+            "MSILHash": "cRSJTTQW6J7/H29NU/nMYSBzfCwBZkmn1FyaE05wJOE=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -12235,7 +12235,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "274yT4IJ3fuxLHwhPNn2uaxwCSO8438cQhc49fPrshU=",
+            "MSILHash": "qowDxG0709YxWvZUbdDgWHWDfNYtnelLVk3IYjzKA50=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
@@ -12259,7 +12259,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "274yT4IJ3fuxLHwhPNn2uaxwCSO8438cQhc49fPrshU=",
+            "MSILHash": "qowDxG0709YxWvZUbdDgWHWDfNYtnelLVk3IYjzKA50=",
             "BaseHookName": "OnVehicleModulesAssign",
             "HookCategory": "Vehicle"
           }
@@ -14769,7 +14769,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "+NLITlqBC9zhonA2XkIsuYsHTRbsme8pz0rx3YGz0Rk=",
+            "MSILHash": "HH2ej4IO1tbRM2J8YIDlWdJw1j8/r+jAN+cNSmMgAfY=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -17899,7 +17899,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "NZuT3O3JNaQGzdu9LJN8F+EDbfSGghAJXtWXbUqhzws=",
+            "MSILHash": "ZTT/SYj94V4r8ppou94a9d/My53fiJm+1BzDWhB4+vc=",
             "BaseHookName": null,
             "HookCategory": "Firework"
           }
@@ -17907,7 +17907,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 106,
+            "InjectionIndex": 110,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, a0.player",
@@ -17925,7 +17925,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "NZuT3O3JNaQGzdu9LJN8F+EDbfSGghAJXtWXbUqhzws=",
+            "MSILHash": "ZTT/SYj94V4r8ppou94a9d/My53fiJm+1BzDWhB4+vc=",
             "BaseHookName": "OnFireworkDesignChange",
             "HookCategory": "Firework"
           }
@@ -17949,7 +17949,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "D/1YBtwflf83qhRWYYh3+BwU+bsOkEzX7Lx2p4ZdWSo=",
+            "MSILHash": "gZG57LqUmN7pD6faNBMxLXire+HXL10aQn0tKyKA2n0=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -17957,7 +17957,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 115,
+            "InjectionIndex": 119,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -17975,7 +17975,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "uJnUoYfuESOz1Y793jMCgmHdr+Gki+1JUbGv2OZaaUo=",
+            "MSILHash": "bkye+pZW7rMwi86faiR6xlIygRZlZgBlwNnQmW5ndVw=",
             "BaseHookName": null,
             "HookCategory": "Structure"
           }
@@ -18153,7 +18153,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "9c8i+un3yZtHuTKKhDxf48Jq+jZ63lsdeCk7KmEIFq8=",
+            "MSILHash": "HuRej843Nb+QVrDE3REOel0q8okXaj1m+VCT/ZI2uQk=",
             "BaseHookName": null,
             "HookCategory": "Crafting"
           }
@@ -18179,7 +18179,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "9c8i+un3yZtHuTKKhDxf48Jq+jZ63lsdeCk7KmEIFq8=",
+            "MSILHash": "HuRej843Nb+QVrDE3REOel0q8okXaj1m+VCT/ZI2uQk=",
             "BaseHookName": "OnEntityReskin",
             "HookCategory": "Crafting"
           }
@@ -18208,7 +18208,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "+NLITlqBC9zhonA2XkIsuYsHTRbsme8pz0rx3YGz0Rk=",
+            "MSILHash": "HH2ej4IO1tbRM2J8YIDlWdJw1j8/r+jAN+cNSmMgAfY=",
             "BaseHookName": "OnItemStacked [1]",
             "HookCategory": "Item"
           }
@@ -18884,7 +18884,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 117,
+            "InjectionIndex": 122,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, a0.player, l1",
@@ -18902,7 +18902,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "QuWIVjqQ8qsaZ4fUloIIOO2ekHliDlMavYcX9tt1X98=",
+            "MSILHash": "+GgEVP8YKHRvjyUeHpymORZUDfcepatgvpBXh2NzDNw=",
             "BaseHookName": null,
             "HookCategory": "Item"
           }
@@ -44651,88 +44651,6 @@
             "Parameters": []
           },
           "MSILHash": "wpR+vl20UgeZzsvNa4h42Cj2TUu/8wO1k51EsNt7/bk="
-        },
-        {
-          "Name": "Composter::ProduceFertilizer",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Composter",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ProduceFertilizer",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "System.Int32"
-            ]
-          },
-          "MSILHash": "usu8jBMqhnwMtstYwDy+oTula/TcZ4CxGW2ehyIigw8="
-        },
-        {
-          "Name": "Composter::fertilizerProductionProgress",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Composter",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "fertilizerProductionProgress",
-            "FullTypeName": "System.Single Composter::fertilizerProductionProgress",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Composter::ItemIsFertilizer",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Composter",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ItemIsFertilizer",
-            "FullTypeName": "System.Boolean",
-            "Parameters": [
-              "Item"
-            ]
-          },
-          "MSILHash": "9J0I/2omgn5DpgW3Vu0uMjlGwFQJnrXPQrXZHzfd7Qc="
-        },
-        {
-          "Name": "Composter::CompostItem",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Composter",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "CompostItem",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "Item"
-            ]
-          },
-          "MSILHash": "6sy9uL40EdDO8wxLTng8ThwwRi/di+al3dwY1mYfltw="
         }
       ],
       "Fields": [
@@ -45014,12 +44932,12 @@
       "Fields": []
     },
     {
-      "AssemblyName": "NewAssembly.dll",
+      "AssemblyName": "Rust.FileSystem.dll",
       "Hooks": [],
       "Modifiers": [
         {
           "Name": "FileSystemBackend::cache",
-          "AssemblyName": "NewAssembly.dll",
+          "AssemblyName": "Rust.FileSystem.dll",
           "TypeName": "FileSystemBackend",
           "Type": 0,
           "TargetExposure": [
@@ -45038,25 +44956,186 @@
           "MSILHash": ""
         },
         {
-          "Name": "AssetBundleBackend::LoadBundleAsync",
-          "AssemblyName": "NewAssembly.dll",
+          "Name": "AssetBundleBackend::assetPath",
+          "AssemblyName": "Rust.FileSystem.dll",
           "TypeName": "AssetBundleBackend",
-          "Type": 1,
+          "Type": 0,
           "TargetExposure": [
-            0
+            2
           ],
           "Flagged": false,
           "Signature": {
             "Exposure": [
               0
             ],
-            "Name": "LoadBundleAsync",
-            "FullTypeName": "UnityEngine.AssetBundleCreateRequest",
+            "Name": "assetPath",
+            "FullTypeName": "System.String AssetBundleBackend::assetPath",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AssetBundleBackend::bundles",
+          "AssemblyName": "Rust.FileSystem.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "bundles",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.AssetBundle> AssetBundleBackend::bundles",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AssetBundleBackend::files",
+          "AssemblyName": "Rust.FileSystem.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "files",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.String,UnityEngine.AssetBundle> AssetBundleBackend::files",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AssetBundleBackend::manifest",
+          "AssemblyName": "Rust.FileSystem.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "manifest",
+            "FullTypeName": "UnityEngine.AssetBundleManifest AssetBundleBackend::manifest",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AssetBundleBackend::rootBundle",
+          "AssemblyName": "Rust.FileSystem.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rootBundle",
+            "FullTypeName": "UnityEngine.AssetBundle AssetBundleBackend::rootBundle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AssetBundleBackend::LoadAsset",
+          "AssemblyName": "Rust.FileSystem.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "LoadAsset",
+            "FullTypeName": "T",
             "Parameters": [
               "System.String"
             ]
           },
-          "MSILHash": "S8pPw7DAl13pVCSxhdk61CL92OKyVkIYZRLsca9Qm3Y="
+          "MSILHash": "TOEwrIj1An+EdbAfPrYoSdIpQoFXv5W0+KlomJRd6/w="
+        },
+        {
+          "Name": "AssetBundleBackend::LoadAssetList",
+          "AssemblyName": "Rust.FileSystem.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "LoadAssetList",
+            "FullTypeName": "System.String[]",
+            "Parameters": [
+              "System.String",
+              "System.String"
+            ]
+          },
+          "MSILHash": "ho2+b6vC0vPzDpOM7/m0+GhXze8b8q0bb1jsvwlGUPE="
+        },
+        {
+          "Name": "AssetBundleBackend::LoadAssetsAsync",
+          "AssemblyName": "Rust.FileSystem.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "LoadAssetsAsync",
+            "FullTypeName": "LoadAssetsResult",
+            "Parameters": [
+              "System.Collections.Generic.List`1<System.String>",
+              "System.Int32",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "YPgVldtTrr71pExO8VjJNid7JZusY1bJjsY25k0ouEA="
+        },
+        {
+          "Name": "AssetBundleBackend::LoadBundle",
+          "AssemblyName": "Rust.FileSystem.dll",
+          "TypeName": "AssetBundleBackend",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "LoadBundle",
+            "FullTypeName": "UnityEngine.AssetBundle",
+            "Parameters": [
+              "System.String"
+            ]
+          },
+          "MSILHash": "WUbQuoaA14BZ5c3CXj6INVSx2B7Cp5h8bXXtCK1DE9o="
         }
       ],
       "Fields": []

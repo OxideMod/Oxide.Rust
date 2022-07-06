@@ -19252,6 +19252,59 @@
             "BaseHookName": null,
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnInventoryItemsFind",
+            "HookName": "OnInventoryItemsFind",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerInventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FindItemIDs",
+              "ReturnType": "System.Collections.Generic.List`1<Item>",
+              "Parameters": [
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "33gTbFbp0Rbw9096Nk+j2SVjbmJxsQt9NLeyz50ajAE=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnInventoryAmmoFind",
+            "HookName": "OnInventoryAmmoFind",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerInventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FindAmmo",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Collections.Generic.List`1<Item>",
+                "Rust.AmmoTypes"
+              ]
+            },
+            "MSILHash": "/4NWOtHEnUP/VVzQ3FWBpYpPnCJDQd6TzKcm2j3trJM=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

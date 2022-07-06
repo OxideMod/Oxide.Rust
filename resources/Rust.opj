@@ -19198,6 +19198,60 @@
             "BaseHookName": null,
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnInventoryItemsCount",
+            "HookName": "OnInventoryItemsCount",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerInventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GetAmount",
+              "ReturnType": "System.Int32",
+              "Parameters": [
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "cPr7MD/SwKmak+prSQj9ufDcYKKVOknvhCI/PSXPnn8=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnInventoryItemsTake",
+            "HookName": "OnInventoryItemsTake",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerInventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Take",
+              "ReturnType": "System.Int32",
+              "Parameters": [
+                "System.Collections.Generic.List`1<Item>",
+                "System.Int32",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "XQhkr56LFim15MiRXRj4uYXB7vVw7iChnHqABFnnlQM=",
+            "BaseHookName": null,
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

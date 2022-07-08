@@ -44732,6 +44732,203 @@
             ]
           },
           "MSILHash": "6sy9uL40EdDO8wxLTng8ThwwRi/di+al3dwY1mYfltw="
+        },
+        {
+          "Name": "BuildingBlock::IsUpgradeBlocked",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsUpgradeBlocked",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "qViaiKOlscAlINJWvBZx7Y+zRCajd/gSCwxMV/kTtq4="
+        },
+        {
+          "Name": "BuildingBlock::HasDemolishPrivilege",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HasDemolishPrivilege",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "K93neGRcGtkz80SQjcziKPSeSOkQik1R3Gh2RMJn9pk="
+        },
+        {
+          "Name": "BuildingBlock::HasRotationPrivilege",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HasRotationPrivilege",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "d+zoDMCpPaOLenv7eLdmacwUmbcizhjs1VHKqB9wgu0="
+        },
+        {
+          "Name": "BuildingBlock::HasUpgradePrivilege",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HasUpgradePrivilege",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BuildingGrade/Enum",
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "byVOrwPSrU9WRtzuOiyU7x/kiEugmwWPuAIYF0wkubw="
+        },
+        {
+          "Name": "BuildingBlock::IsDemolishable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsDemolishable",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "9bMsspsWnAcgfePPYXsu08CeJuy6jZYhaK/ILFK7I4Q="
+        },
+        {
+          "Name": "BuildingBlock::IsRotatable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsRotatable",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "sa0VttI5Nom6F/DE6vHeFmAmgL8NdpmoY6XL8eLDnYw="
+        },
+        {
+          "Name": "BuildingBlock::IsRotationBlocked",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsRotationBlocked",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "Uej2lG7KIBj/cx8B1pJcWI69mQumkQc9FxjqtD3vqXE="
+        },
+        {
+          "Name": "BuildingBlock::NeedsSkinChange",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "NeedsSkinChange",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "qHW/ZBVXWi0pg+ZAYZHiXuavXoPcHYwyvhBhypPdsZs="
+        },
+        {
+          "Name": "BuildingBlock::UpdateGrade",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateGrade",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "JATeR572hqhRj/SKfixU9sacceer0VQEaPxqrxdxLoQ="
+        },
+        {
+          "Name": "BuildingBlock::lastModelState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastModelState",
+            "FullTypeName": "System.Int32 BuildingBlock::lastModelState",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

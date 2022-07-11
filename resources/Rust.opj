@@ -18910,7 +18910,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 38,
+            "InjectionIndex": 62,
             "ReturnBehavior": 3,
             "ArgumentBehavior": 4,
             "ArgumentString": "l3, l4, this => l4",
@@ -18927,7 +18927,7 @@
               "Parameters": []
             },
             "MSILHash": "k041+UJqczO5cnzk8fFi3+vHh4AnJnHrFqETmaf3v+U=",
-            "BaseHookName": null,
+            "BaseHookName": "OnItemRecycle [2]",
             "HookCategory": "Item"
           }
         },

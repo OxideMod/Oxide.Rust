@@ -18321,35 +18321,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 2,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 3,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "OnWaterBallSplash",
-            "HookName": "OnWaterBallSplash",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "WaterBall",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "DoSplash",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "UnityEngine.Vector3",
-                "System.Single",
-                "ItemDefinition",
-                "System.Int32"
-              ]
-            },
-            "MSILHash": "pH+R1C2MzJDYi+Tz+fIixlpk4N4HyYLUmuVbH8jZe8w=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 199,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,

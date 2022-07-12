@@ -45497,6 +45497,42 @@
           "Flagged": false
         }
       ]
+    },
+    {
+      "AssemblyName": "EasyAntiCheat.Server.dll",
+      "Hooks": [
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a1, a2, a3",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerReport",
+            "HookName": "OnPlayerReport",
+            "AssemblyName": "EasyAntiCheat.Server.dll",
+            "TypeName": "EasyAntiCheat.Server.Scout.Scout",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SendPlayerReport",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "System.String",
+                "EasyAntiCheat.Server.Scout.PlayerReportCategory",
+                "System.String"
+              ]
+            },
+            "MSILHash": "V92N5MD6aIlJb+7QTW1EfpYeD8MEqGrubhSGJ7zTwHE=",
+            "BaseHookName": null,
+            "HookCategory": "Player"
+          }
+        }
+      ],
+      "Modifiers": [],
+      "Fields": []
     }
   ]
 }

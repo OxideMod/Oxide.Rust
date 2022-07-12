@@ -634,13 +634,6 @@ namespace Oxide.Game.Rust
                 new DateTime(2022, 12, 31), weapon, player);
         }
 
-        [HookMethod("OnDieselEngineToggle")]
-        private object OnDieselEngineToggle(DieselEngine engine, BasePlayer player)
-        {
-            return Interface.Oxide.CallDeprecatedHook("OnDieselEngineToggle", "OnDieselEngineToggle(DieselEngine engine, BasePlayer player)",
-                new DateTime(2022, 12, 31), player, engine);
-        }
-
         [HookMethod("OnHelicopterAttack")]
         private object OnHelicopterAttack(CH47HelicopterAIController heli)
         {

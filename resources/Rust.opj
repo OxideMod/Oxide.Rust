@@ -44900,6 +44900,296 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Sled::DecayOverTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DecayOverTime",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "wF/M5qIsnM5+fw4yBoL8kbWGpaHN0HJQIdz724MjRj4="
+        },
+        {
+          "Name": "Sled::BrakeOn",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "BrakeOn",
+            "FullTypeName": "BaseEntity/Flags Sled::BrakeOn",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Sled::IsGrounded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsGrounded",
+            "FullTypeName": "BaseEntity/Flags Sled::IsGrounded",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Sled::OnSand",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnSand",
+            "FullTypeName": "BaseEntity/Flags Sled::OnSand",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Sled::OnSnow",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnSnow",
+            "FullTypeName": "BaseEntity/Flags Sled::OnSnow",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Sled::DecayFrequency",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "DecayFrequency",
+            "FullTypeName": "System.Single Sled::DecayFrequency",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Sled::initialForceScale",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "initialForceScale",
+            "FullTypeName": "System.Single Sled::initialForceScale",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Sled::lastNudge",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastNudge",
+            "FullTypeName": "TimeSince Sled::lastNudge",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Sled::leftIce",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "leftIce",
+            "FullTypeName": "TimeSince Sled::leftIce",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Sled::terrainHandler",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "terrainHandler",
+            "FullTypeName": "VehicleTerrainHandler Sled::terrainHandler",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Sled::ApplyInitialForce",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyInitialForce",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "NBR0ZH3RJggwP5M4CbUAiWs5M5hYo/Z35IS9u+bSJhM="
+        },
+        {
+          "Name": "Sled::GetPhysicMaterial",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetPhysicMaterial",
+            "FullTypeName": "UnityEngine.PhysicMaterial",
+            "Parameters": []
+          },
+          "MSILHash": "peygMVevg9WkFb/RazwOVaahtwPxR+1bweGWAATpKMY="
+        },
+        {
+          "Name": "Sled::UpdateGroundedFlag",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateGroundedFlag",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "kJCgZfmxQimHmTltM5JJXpiuC2juclLCNZaKtxXvoic="
+        },
+        {
+          "Name": "Sled::UpdatePhysicsMaterial",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdatePhysicsMaterial",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "vbHdmCtX4Q31R4/JZRan1vdvFg3KYodk0iG1lvbGROE="
+        },
+        {
+          "Name": "Sled::cachedMaterial",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Sled",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cachedMaterial",
+            "FullTypeName": "UnityEngine.PhysicMaterial Sled::cachedMaterial",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

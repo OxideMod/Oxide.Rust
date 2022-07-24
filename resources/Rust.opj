@@ -19276,6 +19276,32 @@
             "BaseHookName": null,
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 187,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnDroppedItemCombined",
+            "HookName": "OnDroppedItemCombined",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DroppedItem",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnDroppedOn",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "DroppedItem"
+              ]
+            },
+            "MSILHash": "xPEzYttM7mW8A95SZ687gJIvUelXBJ8mqUYxDx0+mB0=",
+            "BaseHookName": "CanCombineDroppedItem [patch 1]",
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

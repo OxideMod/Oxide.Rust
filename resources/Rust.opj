@@ -45587,6 +45587,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "TrainCar::decayingFor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainCar",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "decayingFor",
+            "FullTypeName": "System.Single TrainCar::decayingFor",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

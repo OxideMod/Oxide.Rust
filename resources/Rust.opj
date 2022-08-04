@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust-staging\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -19325,6 +19325,11 @@
                 "Operand": null
               },
               {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "Assembly-CSharp|RandomItemDispenser/RandomItemChance"
+              },
+              {
                 "OpCode": "ldarg_2",
                 "OpType": "None",
                 "Operand": null
@@ -19333,6 +19338,11 @@
                 "OpCode": "ldarg_3",
                 "OpType": "None",
                 "Operand": null
+              },
+              {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Vector3"
               },
               {
                 "OpCode": "call",
@@ -19360,7 +19370,7 @@
             "HookName": "OnRandomItemAward",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "RandomItemDispenser",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 0,
               "Name": "TryAward",

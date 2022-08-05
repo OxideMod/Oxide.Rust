@@ -47003,6 +47003,83 @@
             "BaseHookName": null,
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 32,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "Database "
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "mscorlib|System.IO.Path|GetFileName(System.String)"
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": " opened, SQLite version: "
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None",
+                "Operand": null
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "select sqlite_version();"
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": ""
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Facepunch.Sqlite|Facepunch.Sqlite.Database|QueryString[System.String]"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "mscorlib|System.String|Concat(System.String,System.String,System.String,System.String)"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Debug|Log(System.Object)"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "LogSqliteVersion [patch]",
+            "HookName": "LogSqliteVersion",
+            "AssemblyName": "Facepunch.Sqlite.dll",
+            "TypeName": "Facepunch.Sqlite.Database",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Open",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "SUmpx25HsFF8Njw6L5UlJPAUL5UBP89Qpp68Z0llt+Q=",
+            "BaseHookName": null,
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [],

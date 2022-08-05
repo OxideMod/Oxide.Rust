@@ -46241,6 +46241,106 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "UserPersistance::identities",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "UserPersistance",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "identities",
+            "FullTypeName": "Facepunch.Sqlite.Database UserPersistance::identities",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "UserPersistance::nameCache",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "UserPersistance",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nameCache",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.UInt64,System.String> UserPersistance::nameCache",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "UserPersistance::playerState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "UserPersistance",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerState",
+            "FullTypeName": "Facepunch.Sqlite.Database UserPersistance::playerState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "UserPersistance::tokenCache",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "UserPersistance",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "tokenCache",
+            "FullTypeName": "MruDictionary`2<System.UInt64,System.ValueTuple`2<System.Int32,System.Boolean>> UserPersistance::tokenCache",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "UserPersistance::tokens",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "UserPersistance",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "tokens",
+            "FullTypeName": "Facepunch.Sqlite.Database UserPersistance::tokens",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -34,6 +34,7 @@
     <Reference Include="Facepunch.Console" />
     <Reference Include="Facepunch.Network" />
     <Reference Include="Facepunch.Rcon" />
+    <Reference Include="Facepunch.Sqlite" />
     <Reference Include="Facepunch.System" />
     <Reference Include="Facepunch.Unity" />
     <Reference Include="Facepunch.UnityEngine" />
@@ -54,7 +55,7 @@
     <None Remove="Bundle\**; dependencies\**; *.config; *.opj" />
   </ItemGroup>
   <ItemGroup>
-    <PatchedFiles Include="$(TargetDir)\Assembly-CSharp.dll; $(TargetDir)\Facepunch.Console.dll; $(TargetDir)\Facepunch.Network.dll; $(TargetDir)\Facepunch.Rcon.dll; $(TargetDir)\Facepunch.UnityEngine.dll" />
+    <PatchedFiles Include="$(TargetDir)\Assembly-CSharp.dll; $(TargetDir)\Facepunch.Console.dll; $(TargetDir)\Facepunch.Network.dll; $(TargetDir)\Facepunch.Rcon.dll; $(TargetDir)\Facepunch.Sqlite.dll; $(TargetDir)\Facepunch.UnityEngine.dll" />
   </ItemGroup>
   <Target Name="AddGitBranchMeta" BeforeTargets="CoreGenerateAssemblyInfo">
     <Exec Command="git rev-parse --abbrev-ref HEAD" WorkingDirectory="$(MSBuildProjectDirectory)" ConsoleToMSBuild="True">

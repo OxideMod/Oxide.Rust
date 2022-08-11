@@ -19385,6 +19385,34 @@
             "BaseHookName": null,
             "HookCategory": "Resource"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "Deprecation": null,
+            "HookTypeName": "Simple",
+            "Name": "OnRemoteIdentifierUpdate",
+            "HookName": "OnRemoteIdentifierUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PoweredRemoteControlEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UpdateIdentifier",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.String",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "vwY0NpE5JAbX4mnxVg7X23KWC+sO6nWMyVN086sQiJY=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

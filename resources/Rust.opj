@@ -19983,6 +19983,51 @@
             "BaseHookName": "OnItemStacked [2]",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "OnOvenStart",
+            "HookName": "OnOvenStart",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseOven",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartCooking",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "pMudNGBFkTX/0IO6bBzLn/bQwUH3wb4nMZGE82Uu/LU=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 30,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "OnOvenStarted",
+            "HookName": "OnOvenStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseOven",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartCooking",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "pMudNGBFkTX/0IO6bBzLn/bQwUH3wb4nMZGE82Uu/LU=",
+            "BaseHookName": "OnOvenStart",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

@@ -6275,10 +6275,11 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 28,
+            "InjectionIndex": 4,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l4, a0, this",
+            "ArgumentString": "this, a0",
+            "Deprecation": null,
             "HookTypeName": "Simple",
             "Name": "OnCollectiblePickup",
             "HookName": "OnCollectiblePickup",
@@ -16759,37 +16760,6 @@
             },
             "MSILHash": "QzntBqGab7O8R3/Jz7iyexrjicuzbZkdSiopYmyEGvY=",
             "HookCategory": "Seasonal"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 33,
-            "RemoveCount": 3,
-            "Instructions": [
-              {
-                "OpCode": "brtrue_s",
-                "OpType": "Instruction",
-                "Operand": 55
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnCollectiblePickup [continue]",
-            "HookName": "OnCollectiblePickup [continue]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "CollectibleEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "DoPickup",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BasePlayer"
-              ]
-            },
-            "MSILHash": "Z0XlWvLMBWvsDpnMh4aaoJktkB/D5w3VI1eaU00UHJA=",
-            "BaseHookName": "OnCollectiblePickup",
-            "HookCategory": "Resource"
           }
         },
         {

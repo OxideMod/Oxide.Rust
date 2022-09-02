@@ -3424,7 +3424,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "zwJ4yT/691ub5sXAI27OOh4alOLikpdzdJWH6oZsahU=",
+            "MSILHash": "oSib49ID3jU114LvzcOGGVcHQOMXiWcn3z4OSJnfXOU=",
             "HookCategory": "Item"
           }
         },
@@ -5566,7 +5566,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "zwJ4yT/691ub5sXAI27OOh4alOLikpdzdJWH6oZsahU=",
+            "MSILHash": "oSib49ID3jU114LvzcOGGVcHQOMXiWcn3z4OSJnfXOU=",
             "BaseHookName": "CanMoveItem",
             "HookCategory": "_Patches"
           }
@@ -6279,7 +6279,6 @@
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
-            "Deprecation": null,
             "HookTypeName": "Simple",
             "Name": "OnCollectiblePickup",
             "HookName": "OnCollectiblePickup",

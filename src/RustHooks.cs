@@ -592,7 +592,7 @@ namespace Oxide.Game.Rust
             }
 
             // Ignore all chat messages
-            if (arg.cmd.FullName == "chat.say" || arg.cmd.FullName == "chat.teamsay" | arg.cmd.FullName == "chat.localsay")
+            if (arg.cmd.FullName == "chat.say" || arg.cmd.FullName == "chat.teamsay" || arg.cmd.FullName == "chat.localsay")
             {
                 return null;
             }

@@ -18544,6 +18544,29 @@
             "BaseHookName": "OnOvenStart",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnGetTemperature",
+            "HookName": "OnGetTemperature",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseOven",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GetTemperature",
+              "ReturnType": "System.Single",
+              "Parameters": [
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "1HpMiNIJts1D2hdVTlSYqCimLmQPSRxwCdPheR/v2j4="
+          }
         }
       ],
       "Modifiers": [

@@ -18619,6 +18619,31 @@
             "MSILHash": "1HpMiNIJts1D2hdVTlSYqCimLmQPSRxwCdPheR/v2j4=",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnBuildingMerge",
+            "HookName": "OnBuildingMerge",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerBuildingManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Merge",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BuildingManager/Building",
+                "BuildingManager/Building"
+              ]
+            },
+            "MSILHash": "V+0fFCvff/OaNdbixi15Ma8iUXWXw00IEo46jCYpEFw=",
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [

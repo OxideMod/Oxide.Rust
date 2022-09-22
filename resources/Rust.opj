@@ -16210,6 +16210,56 @@
           }
         },
         {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnEyePosValidate",
+            "HookName": "OnEyePosValidate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AttackEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "ValidateEyePos",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "7ugxr565mggmptNmca8cfpRJ+VoQ1a1xQ8NsfvrT6fo=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0",
+            "HookTypeName": "Simple",
+            "Name": "OnImpactEffect",
+            "HookName": "OnImpactEffect",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Effect/server",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ImpactEffect",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "VLfMmAoFvKgSNbA1M/sG5wZmf3JZd252pcRIRQajJ6M="
+          }
+        },
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 66,

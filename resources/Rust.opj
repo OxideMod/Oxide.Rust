@@ -16159,6 +16159,32 @@
           }
         },
         {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnEyePosValidate",
+            "HookName": "OnEyePosValidate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AttackEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "ValidateEyePos",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "7ugxr565mggmptNmca8cfpRJ+VoQ1a1xQ8NsfvrT6fo=",
+            "HookCategory": "Player"
+          }
+        },
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 66,

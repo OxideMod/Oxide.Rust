@@ -16185,6 +16185,31 @@
           }
         },
         {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0",
+            "HookTypeName": "Simple",
+            "Name": "OnImpactEffectCreate",
+            "HookName": "OnImpactEffectCreate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Effect/server",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ImpactEffect",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "DtLCSVIzb93agV3chRFQoTyrMAUnQr2oE3f/mdHZyF8=",
+            "HookCategory": "Weapon"
+          }
+        },
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 66,

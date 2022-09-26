@@ -18544,6 +18544,81 @@
             "BaseHookName": "OnOvenStart",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 109,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Object|op_Implicit"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CombatLog [Patch 1]",
+            "HookName": "CombatLogPatch",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CombatLog",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Log",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity",
+                "AttackEntity",
+                "BaseCombatEntity",
+                "System.String",
+                "Projectile",
+                "System.Int32",
+                "System.Single",
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "GhUHXPAARgvw85oYD1C9YLZynnhNt3aRUhqlQnBT8zA=",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 122,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Object|op_Implicit"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CombatLog [Patch 2]",
+            "HookName": "CombatLogPatch",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CombatLog",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Log",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity",
+                "AttackEntity",
+                "BaseCombatEntity",
+                "System.String",
+                "Projectile",
+                "System.Int32",
+                "System.Single",
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "GhUHXPAARgvw85oYD1C9YLZynnhNt3aRUhqlQnBT8zA=",
+            "BaseHookName": "CombatLog [Patch 1]",
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

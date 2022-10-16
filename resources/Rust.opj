@@ -14728,24 +14728,24 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0",
+            "ArgumentString": "this.config, a0",
             "HookTypeName": "Simple",
             "Name": "CanAccessVendingMachine",
             "HookName": "CanAccessVendingMachine",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "DeliveryDroneConfig",
+            "TypeName": "MarketTerminal",
             "Flagged": false,
             "Signature": {
-              "Exposure": 2,
-              "Name": "IsVendingMachineAccessible",
+              "Exposure": 0,
+              "Name": "<GetDeliveryEligibleVendingMachines>g__IsEligible|24_0",
               "ReturnType": "System.Boolean",
               "Parameters": [
                 "VendingMachine",
                 "UnityEngine.Vector3",
-                "UnityEngine.RaycastHit&"
+                "System.Int32"
               ]
             },
-            "MSILHash": "/36CBLbvffYk8IyR7yLXTvN4wgp3pxt5j+vdZkfZFU0=",
+            "MSILHash": "xTkeMgoSF9iKpVgp1M1DdwGMCQrmcyfhlHio5xsXtZk=",
             "HookCategory": "Vending"
           }
         },

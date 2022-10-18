@@ -44997,6 +44997,26 @@
             ]
           },
           "MSILHash": "6VO+yws0COZ9aooqtkmj0wNwMG7fLCHxoIA05uVQBRs="
+        },
+        {
+          "Name": "Facepunch.RCon::listenerNew",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.RCon",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "listenerNew",
+            "FullTypeName": "Facepunch.Rcon.Listener Facepunch.RCon::listenerNew",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [
@@ -45250,8 +45270,8 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this.Socket.ConnectionInfo.ClientIpAddress, a0",
             "HookTypeName": "Simple",
-            "Name": "IOnRconCommand",
-            "HookName": "IOnRconCommand",
+            "Name": "IOnRconMessage",
+            "HookName": "IOnRconMessage",
             "AssemblyName": "Facepunch.Rcon.dll",
             "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass10_1",
             "Flagged": false,

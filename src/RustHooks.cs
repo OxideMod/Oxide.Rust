@@ -519,8 +519,8 @@ namespace Oxide.Game.Rust
         /// <returns></returns>
         /// <param name="ipAddress"></param>
         /// <param name="command"></param>
-        [HookMethod("IOnRconCommand")]
-        private object IOnRconCommand(IPAddress ipAddress, string command)
+        [HookMethod("IOnRconMessage")]
+        private object IOnRconMessage(IPAddress ipAddress, string command)
         {
             if (ipAddress != null && !string.IsNullOrEmpty(command))
             {
@@ -529,6 +529,11 @@ namespace Oxide.Game.Rust
                 if (string.IsNullOrEmpty(message?.Message))
                 {
                     return null;
+                }
+
+                if (Interface.CallHook("OnRconMessage", ipAddress, message) != null)
+                {
+                    return true;
                 }
 
                 string[] fullCommand = CommandLine.Split(message.Message);

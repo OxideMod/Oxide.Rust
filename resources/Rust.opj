@@ -598,7 +598,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "tQvCZdv/Lfwt2wvR2Ssm1WNALRdOIkx4GwbceljKuj0=",
+            "MSILHash": "g3wHfaw2N+Fp0bl/7P3zCu8dVqto9ESDO1IVB0LiYE0=",
             "HookCategory": "Player"
           }
         },
@@ -2243,7 +2243,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "ZnuX+4SVZZ5TbieIrkfPn1zASmdLhp+XthMRS0F4Jqc=",
+            "MSILHash": "iacQp4DjgtVKugeS8Nf7s2P3ySLujqKLPTLdwAlyFTE=",
             "HookCategory": "Player"
           }
         },
@@ -4769,7 +4769,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "GuFEIth116RZEjJ2o5dndENyApihw34+FK4f7LLMQKo=",
+            "MSILHash": "W7cRgjM0Ccgb+d/XxdNb9Pg6aUrplu1YZgd6TiYLBZU=",
             "HookCategory": "Player"
           }
         },
@@ -8170,16 +8170,18 @@
               "Exposure": 2,
               "Name": "EquipWeapon",
               "ReturnType": "System.Void",
-              "Parameters": []
+              "Parameters": [
+                "System.Boolean"
+              ]
             },
-            "MSILHash": "JNwpy8p+O/bRg5NejzC+UCvx8PXllh3hEr6eHEGmQGk=",
+            "MSILHash": "vge8FH30JInUKqPRq4xANKWx5c9PhahgVRBVbRB1WpE=",
             "HookCategory": "NPC"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 17,
+            "InjectionIndex": 18,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1",
@@ -8193,9 +8195,11 @@
               "Exposure": 2,
               "Name": "EquipWeapon",
               "ReturnType": "System.Void",
-              "Parameters": []
+              "Parameters": [
+                "System.Boolean"
+              ]
             },
-            "MSILHash": "IPewF8XH8zLOUElY12rZeZKRA3ReohOE1IGK0NmGAIw=",
+            "MSILHash": "o7d5Icrf9XZzAjHq7bJvZk+AsRbDVO02/x8zUyg1Sqs=",
             "HookCategory": "NPC"
           }
         },
@@ -8833,7 +8837,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 99,
+            "InjectionIndex": 103,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1",
@@ -8849,7 +8853,7 @@
               "ReturnType": "BaseCorpse",
               "Parameters": []
             },
-            "MSILHash": "vXPzmK5hSqqr3EW5LSeEL+np9HgabWa4SWRfWxS9PCo=",
+            "MSILHash": "aggmsj46/8a3SuKLhqU9vxIH4kLN4j3vLeABjJ4H3m0=",
             "HookCategory": "NPC"
           }
         },
@@ -9756,14 +9760,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "GqXNUfjLzCqjsnAimJsMdKAV5/F1Iy7BT0kVu4gZM9s=",
+            "MSILHash": "N5Yuc2cGhbg9EywNqAEVwXuDNj5KPttNThqD13L+fHg=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 200,
+            "InjectionIndex": 86,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this",
@@ -9779,7 +9783,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "GqXNUfjLzCqjsnAimJsMdKAV5/F1Iy7BT0kVu4gZM9s=",
+            "MSILHash": "N5Yuc2cGhbg9EywNqAEVwXuDNj5KPttNThqD13L+fHg=",
             "BaseHookName": "OnDefaultItemsReceive",
             "HookCategory": "Player"
           }
@@ -15877,7 +15881,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "WHznIULkMP9M6HYbtRr/aRvLdwo8FLWhx5XkkZJbXew=",
+            "MSILHash": "v9AcD1B3ehmoog17p5FnwmyY5jsspV/LEcFI3f9o0u0=",
             "HookCategory": "Mission"
           }
         },
@@ -15939,7 +15943,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 117,
+            "InjectionIndex": 121,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "HookTypeName": "Simple",
@@ -15957,7 +15961,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "WHznIULkMP9M6HYbtRr/aRvLdwo8FLWhx5XkkZJbXew=",
+            "MSILHash": "v9AcD1B3ehmoog17p5FnwmyY5jsspV/LEcFI3f9o0u0=",
             "BaseHookName": "OnMissionStart",
             "HookCategory": "Mission"
           }
@@ -16484,7 +16488,7 @@
               "ReturnType": "BaseCorpse",
               "Parameters": []
             },
-            "MSILHash": "zNZSHWXJPuTgNAmje8ZSKEkAHBW2+xIoHLlZrXxvXd4=",
+            "MSILHash": "smfMSB0abCgZ2ZwnHx0/2FoXKqbXhteNRIfgtTNOk4A=",
             "HookCategory": "NPC"
           }
         },
@@ -16975,7 +16979,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "CfPEUiQgXYJPRRuNVJ78t6F/9ETW1uIAYPbqEUhcqxA=",
+            "MSILHash": "7WxJ0L9dR8giZTd7V8jH+bquTo/aXQwj+nLU9xUt6ys=",
             "HookCategory": "Server"
           }
         },
@@ -40330,25 +40334,6 @@
             ],
             "Name": "lastWavedAtPlayer",
             "FullTypeName": "BasePlayer NPCShopKeeper::lastWavedAtPlayer",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "ScarecrowNPC::nextAttackTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ScarecrowNPC",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "nextAttackTime",
-            "FullTypeName": "System.Single ScarecrowNPC::nextAttackTime",
             "Parameters": []
           },
           "MSILHash": ""

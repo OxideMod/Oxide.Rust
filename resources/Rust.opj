@@ -18574,6 +18574,31 @@
             "BaseHookName": "OnFeedbackReported",
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnPortalUse",
+            "HookName": "OnPortalUse",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePortal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UsePortal",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "0tLnlLGAb9kp1fghP2PsdGpK+ihlozDtFk+Fgp1fTEE=",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

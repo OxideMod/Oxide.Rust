@@ -18549,6 +18549,31 @@
             "MSILHash": "VxoQ85nciHEouETuGEi8paAwpvAGqjmMaVleTxK7Jrc=",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 6,
+            "Instructions": [],
+            "HookTypeName": "Modify",
+            "Name": "OnFeedbackReported [patch]",
+            "HookName": "OnFeedbackReported",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnFeedbackReport",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "VxoQ85nciHEouETuGEi8paAwpvAGqjmMaVleTxK7Jrc=",
+            "BaseHookName": "OnFeedbackReported",
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

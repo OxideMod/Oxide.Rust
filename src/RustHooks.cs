@@ -350,6 +350,11 @@ namespace Oxide.Game.Rust
                 // Is it a valid chat command?
                 if (!Covalence.CommandSystem.HandleChatMessage(basePlayer.IPlayer, str) && !cmdlib.HandleChatCommand(basePlayer, cmd, args))
                 {
+                    if (Interface.CallHook("OnHandleUnknownChatCommand", basePlayer, cmd, args) != null)
+                    {
+                        return;
+                    }
+
                     if (Interface.Oxide.Config.Options.Modded)
                     {
                         basePlayer.IPlayer.Reply(string.Format(lang.GetMessage("UnknownCommand", this, basePlayer.IPlayer.Id), cmd));

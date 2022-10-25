@@ -530,7 +530,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 1807,
+            "InjectionIndex": 1802,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -548,7 +548,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Q3iRcvBtvfuc5VgD8OzV85c2dWRjVubD28R1ystKGQU=",
+            "MSILHash": "uj0HkDmY+IwA6pBNdum9QnvhXGojelVMBbv0p5Qa/y8=",
             "HookCategory": "Player"
           }
         },
@@ -598,7 +598,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "g3wHfaw2N+Fp0bl/7P3zCu8dVqto9ESDO1IVB0LiYE0=",
+            "MSILHash": "64lUqi94FlsRn1Xzui6EsnAP+iSduDwWga70a9i/9+o=",
             "HookCategory": "Player"
           }
         },
@@ -1818,7 +1818,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 177,
+            "InjectionIndex": 116,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
             "HookTypeName": "Simple",
@@ -1836,7 +1836,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "t4FcBDhmPRvvOBB82omLXHGLWIu+ZTzB6ZK4EUWLXHg=",
+            "MSILHash": "nLWesEt+WotiUW1hPIUPHlkRuw11mzZlLsCjiiV4pn0=",
             "HookCategory": "Item"
           }
         },
@@ -2243,7 +2243,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "iacQp4DjgtVKugeS8Nf7s2P3ySLujqKLPTLdwAlyFTE=",
+            "MSILHash": "dhAM41F3d2hgSGRScut/K7BUqu0XbSkYXS3uDpB1Piw=",
             "HookCategory": "Player"
           }
         },
@@ -2269,7 +2269,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "vmvmT2oqjSJz6DtjWDzamFM+gVLqtlPg3o9C3rDy2DA=",
+            "MSILHash": "nYR3tFGbTE4tptbFimpU9Y9KvhOPYB4twKw5j6dCUVY=",
             "HookCategory": "Server"
           }
         },
@@ -2317,7 +2317,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "vmvmT2oqjSJz6DtjWDzamFM+gVLqtlPg3o9C3rDy2DA=",
+            "MSILHash": "nYR3tFGbTE4tptbFimpU9Y9KvhOPYB4twKw5j6dCUVY=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -2459,7 +2459,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "c1RFbF1MVLDkFT9EbYzgjehGht2LygzvcV2CyczLR/E=",
+            "MSILHash": "U7NB2yRwL0zqmH0ndN0gbcH3aZvhDwuuRSIldGQ3e6g=",
             "HookCategory": "Turret"
           }
         },
@@ -3075,7 +3075,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "3yIxDnH/qeOytsXr/q9ghjjVMqjjtX6rqzwBN4PbpBk=",
+            "MSILHash": "KlNz3X1YqC3YYyayI9OYNvs0BNH4QzDpBvwp2IGqWfM=",
             "HookCategory": "Player"
           }
         },
@@ -7455,7 +7455,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "CWJfCOhJmW4/kDh/7EwFpoGJeiREUI4GEwnzqBE6LB4=",
+            "MSILHash": "hbvP9i8hnR8um96P2XaNlhmUErhCT0nVXvwrEbbKiAE=",
             "HookCategory": "Player"
           }
         },
@@ -7484,7 +7484,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "CWJfCOhJmW4/kDh/7EwFpoGJeiREUI4GEwnzqBE6LB4=",
+            "MSILHash": "hbvP9i8hnR8um96P2XaNlhmUErhCT0nVXvwrEbbKiAE=",
             "BaseHookName": "IOnPlayerCommand",
             "HookCategory": "Player"
           }
@@ -8356,7 +8356,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 158,
+            "InjectionIndex": 161,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -8373,7 +8373,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "lEqD9jmgKL/oSh0k7m/+VuKSWLuRXUYKINv62eP7MV4=",
+            "MSILHash": "7PtRk9H4ffGpoq3i5I34MGhS3s2P8KeP2rqNiaSVQF0=",
             "HookCategory": "Player"
           }
         },
@@ -13911,7 +13911,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 254,
+            "InjectionIndex": 267,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l10, this, a0",
@@ -13933,7 +13933,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "kqAdxolzPWIBKFUSqr+5s8u36O189VLwIuqBzBlUN0Q=",
+            "MSILHash": "s3G1YaRIXZM5VRulcb4giP5g5ToVJmaJUL1wOaCLr0s=",
             "HookCategory": "Item"
           }
         },
@@ -16010,7 +16010,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "IS+Mbdswkruz2Be4lW+bXtmtQv3lU0Qp4SoSUs861Lw=",
+            "MSILHash": "n1IfVx5Mf6ltKQ1Anif7nXq8THcXN2iAocGBC6iVs6Q=",
             "HookCategory": "Entity"
           }
         },
@@ -16979,7 +16979,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "7WxJ0L9dR8giZTd7V8jH+bquTo/aXQwj+nLU9xUt6ys=",
+            "MSILHash": "jQSQhYF57MbuKbbAYRjDv6xoKO/RGH9Goz2nRSXa6YU=",
             "HookCategory": "Server"
           }
         },
@@ -17125,14 +17125,14 @@
                 "UnityEngine.Vector3"
               ]
             },
-            "MSILHash": "vdDwguOV28/IMDu3GUkuO8qicwFKpeB+awrljmgF4U0=",
+            "MSILHash": "zfSJhJx+VJOBEXk+CmnxBegWs+r04AeLOrSfgw5kvVk=",
             "HookCategory": "Vehicle"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 125,
+            "InjectionIndex": 124,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, this.trueTargetHitPos, this._mounted",
@@ -17150,7 +17150,7 @@
                 "UnityEngine.Vector3"
               ]
             },
-            "MSILHash": "vdDwguOV28/IMDu3GUkuO8qicwFKpeB+awrljmgF4U0=",
+            "MSILHash": "zfSJhJx+VJOBEXk+CmnxBegWs+r04AeLOrSfgw5kvVk=",
             "BaseHookName": "OnMlrsTarget",
             "HookCategory": "Vehicle"
           }
@@ -17209,7 +17209,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 376,
+            "InjectionIndex": 407,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l5, this, a0",
@@ -17231,7 +17231,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "kqAdxolzPWIBKFUSqr+5s8u36O189VLwIuqBzBlUN0Q=",
+            "MSILHash": "s3G1YaRIXZM5VRulcb4giP5g5ToVJmaJUL1wOaCLr0s=",
             "BaseHookName": "OnItemStacked [1]",
             "HookCategory": "Item"
           }
@@ -18041,7 +18041,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "uhK9AXAMCJdKXDvFIHROBhYnJ3vWmngRvjRE5+JzlgI=",
+            "MSILHash": "HIqgSpQiEuDWGq0Ycr3wlee50jMaRJGxQzvBfiBCnOw=",
             "HookCategory": "Weapon"
           }
         },
@@ -36879,64 +36879,6 @@
           "MSILHash": "w/EEw6p0fF/dPYCAfTzu6NBNknLQRjlDtoAJMV0aq44="
         },
         {
-          "Name": "CardTable::CanSwapSeats",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "CardTable",
-          "Type": 2,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1,
-              5
-            ],
-            "Name": "CanSwapSeats",
-            "FullTypeName": "System.Boolean CardTable::CanSwapSeats()",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Facepunch.CardGames.CardGameController::playerData",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Facepunch.CardGames.CardGameController",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "playerData",
-            "FullTypeName": "Facepunch.CardGames.CardPlayerData[] Facepunch.CardGames.CardGameController::playerData",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Facepunch.CardGames.CardGameController::localPlayerCards",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Facepunch.CardGames.CardGameController",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "localPlayerCards",
-            "FullTypeName": "ProtoBuf.CardTable/CardList Facepunch.CardGames.CardGameController::localPlayerCards",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "Facepunch.CardGames.CardGameController::Owner",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "Facepunch.CardGames.CardGameController",
@@ -36997,108 +36939,6 @@
             "Parameters": []
           },
           "MSILHash": ""
-        },
-        {
-          "Name": "Facepunch.CardGames.CardGameController::winnerInfo",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Facepunch.CardGames.CardGameController",
-          "Type": 2,
-          "TargetExposure": [
-            2,
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              2,
-              0
-            ],
-            "Name": "winnerInfo",
-            "FullTypeName": "ProtoBuf.CardTable/WinnerBreakdown Facepunch.CardGames.CardGameController::winnerInfo()",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Facepunch.CardGames.CardGameController::AddAllToPot",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Facepunch.CardGames.CardGameController",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "AddAllToPot",
-            "FullTypeName": "System.Int32",
-            "Parameters": [
-              "Facepunch.CardGames.CardPlayerData"
-            ]
-          },
-          "MSILHash": "LARNUeHzZfPQj7FwYT6pneDT8f5YDcR9unYmgjXd+so="
-        },
-        {
-          "Name": "Facepunch.CardGames.CardGameController::AddToPot",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Facepunch.CardGames.CardGameController",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "AddToPot",
-            "FullTypeName": "System.Int32",
-            "Parameters": [
-              "Facepunch.CardGames.CardPlayerData",
-              "System.Int32"
-            ]
-          },
-          "MSILHash": "+3/YPT2nCK7EvXGFCK346ztrKOhTbT9yAQ6Yuo/RUGk="
-        },
-        {
-          "Name": "Facepunch.CardGames.CardGameController::ClearWinnerInfo",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Facepunch.CardGames.CardGameController",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "ClearWinnerInfo",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "bormxbfxSa/7Sv1YZsTEtsFChTMxMDNWBGeEV0b9qGo="
-        },
-        {
-          "Name": "Facepunch.CardGames.CardGameController::EndGameplay",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Facepunch.CardGames.CardGameController",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "EndGameplay",
-            "FullTypeName": "System.Void",
-            "Parameters": []
-          },
-          "MSILHash": "OFZfUg8AhqooIoN2A6KRM5c3dGxguYhZBH3o4sjIrrU="
         },
         {
           "Name": "Facepunch.CardGames.CardGameController::EndRound",
@@ -37179,49 +37019,6 @@
             ]
           },
           "MSILHash": "5/dUf5XX1ShLJhDxZPaHr2lgoo9XUWCZ33h5PjPwTLA="
-        },
-        {
-          "Name": "Facepunch.CardGames.CardGameController::PayOut",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Facepunch.CardGames.CardGameController",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "PayOut",
-            "FullTypeName": "System.Int32",
-            "Parameters": [
-              "Facepunch.CardGames.CardPlayerData",
-              "System.Int32"
-            ]
-          },
-          "MSILHash": "bFBGi3qLNq5q1ZSjJwM5KmBsStd8yI4w8TzIxRdT0+Q="
-        },
-        {
-          "Name": "Facepunch.CardGames.CardGameController::PayOutAll",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Facepunch.CardGames.CardGameController",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              1
-            ],
-            "Name": "PayOutAll",
-            "FullTypeName": "System.Int32",
-            "Parameters": [
-              "Facepunch.CardGames.CardPlayerData"
-            ]
-          },
-          "MSILHash": "G5zUROJX9aP3+rK7p0apAbpzZACDoGm6voiahk1kfvI="
         },
         {
           "Name": "Facepunch.CardGames.CardGameController::ReceivedInputFromPlayer",
@@ -37427,27 +37224,6 @@
             ],
             "Name": "LeftRoundEarly",
             "FullTypeName": "System.Boolean Facepunch.CardGames.CardPlayerData::LeftRoundEarly()",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "Facepunch.CardGames.CardPlayerData::hasActedThisTurn",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Facepunch.CardGames.CardPlayerData",
-          "Type": 2,
-          "TargetExposure": [
-            2,
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              2,
-              0
-            ],
-            "Name": "hasActedThisTurn",
-            "FullTypeName": "System.Boolean Facepunch.CardGames.CardPlayerData::hasActedThisTurn()",
             "Parameters": []
           },
           "MSILHash": ""
@@ -44619,27 +44395,6 @@
           "MSILHash": "0UO+dN53OmJtIUGQdNnZ5cmGyg2TZirYHCO7jO/cF9o="
         },
         {
-          "Name": "TrainEngine::PlayerIsOnPlatform",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "TrainEngine",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "PlayerIsOnPlatform",
-            "FullTypeName": "System.Boolean",
-            "Parameters": [
-              "BasePlayer"
-            ]
-          },
-          "MSILHash": "ictiKd/TXtacYzHOOQ/bwVO33FSpA5xEuhXsh0rfE+g="
-        },
-        {
           "Name": "TrainEngine::ServerFlagsChanged",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "TrainEngine",
@@ -45102,6 +44857,87 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::localPlayerCards",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "localPlayerCards",
+            "FullTypeName": "ProtoBuf.CardGame/CardList Facepunch.CardGames.CardGameController::localPlayerCards",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Facepunch.CardGames.CardGameController::PlayerData",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Facepunch.CardGames.CardGameController",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "PlayerData",
+            "FullTypeName": "Facepunch.CardGames.CardPlayerData[] Facepunch.CardGames.CardGameController::PlayerData()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseCardGameEntity::CanSwapSeats",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseCardGameEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "CanSwapSeats",
+            "FullTypeName": "System.Boolean BaseCardGameEntity::CanSwapSeats()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TrainCar::PlayerIsOnPlatform",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TrainCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "PlayerIsOnPlatform",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "ictiKd/TXtacYzHOOQ/bwVO33FSpA5xEuhXsh0rfE+g="
         }
       ],
       "Fields": [

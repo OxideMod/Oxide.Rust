@@ -18599,6 +18599,31 @@
             "MSILHash": "0tLnlLGAb9kp1fghP2PsdGpK+ihlozDtFk+Fgp1fTEE=",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 142,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnPortalUsed",
+            "HookName": "OnPortalUsed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePortal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "UsePortal",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "0tLnlLGAb9kp1fghP2PsdGpK+ihlozDtFk+Fgp1fTEE=",
+            "BaseHookName": "OnPortalUse"
+          }
         }
       ],
       "Modifiers": [

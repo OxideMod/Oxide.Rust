@@ -193,8 +193,8 @@ namespace Oxide.Game.Rust.Cui
         [JsonProperty("parent")]
         public string Parent { get; set; }
 
-        [JsonProperty("destroyUI", NullValueHandling=NullValueHandling.Ignore)]
-        public bool Recreate { get; set; }
+        [JsonProperty("destroyUi", NullValueHandling=NullValueHandling.Ignore)]
+        public string DestroyUi { get; set; }
 
         [JsonProperty("components")]
         public List<ICuiComponent> Components { get; } = new List<ICuiComponent>();

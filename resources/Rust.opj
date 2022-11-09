@@ -548,7 +548,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "uj0HkDmY+IwA6pBNdum9QnvhXGojelVMBbv0p5Qa/y8=",
+            "MSILHash": "An7qTarTRdhT0CsKARNTRx0k69HvsDPpK4yLN2y1DYw=",
             "HookCategory": "Player"
           }
         },
@@ -13911,10 +13911,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 267,
+            "InjectionIndex": 243,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l10, this, a0",
+            "ArgumentString": "l11, this, a0",
             "HookTypeName": "Simple",
             "Name": "OnItemStacked [1]",
             "HookName": "OnItemStacked",
@@ -13933,7 +13933,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "s3G1YaRIXZM5VRulcb4giP5g5ToVJmaJUL1wOaCLr0s=",
+            "MSILHash": "3+NGX7VIB90w9RQjjj9m/zwMmAppYvA5RcucTgKA2Rs=",
             "HookCategory": "Item"
           }
         },
@@ -17209,7 +17209,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 407,
+            "InjectionIndex": 406,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l5, this, a0",
@@ -17231,7 +17231,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "s3G1YaRIXZM5VRulcb4giP5g5ToVJmaJUL1wOaCLr0s=",
+            "MSILHash": "3+NGX7VIB90w9RQjjj9m/zwMmAppYvA5RcucTgKA2Rs=",
             "BaseHookName": "OnItemStacked [1]",
             "HookCategory": "Item"
           }
@@ -18622,7 +18622,8 @@
               ]
             },
             "MSILHash": "0tLnlLGAb9kp1fghP2PsdGpK+ihlozDtFk+Fgp1fTEE=",
-            "BaseHookName": "OnPortalUse"
+            "BaseHookName": "OnPortalUse",
+            "HookCategory": "Player"
           }
         }
       ],

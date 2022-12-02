@@ -2269,7 +2269,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "3Vz06rO6tA3vi5WxtUcpBL9N/jvm1a+3OGoCwOjmbak=",
+            "MSILHash": "bHK3H+wn+P/0F3h6QsMJY1o36D2QghvwPX+E9qUY09A=",
             "HookCategory": "Server"
           }
         },
@@ -2317,7 +2317,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "3Vz06rO6tA3vi5WxtUcpBL9N/jvm1a+3OGoCwOjmbak=",
+            "MSILHash": "bHK3H+wn+P/0F3h6QsMJY1o36D2QghvwPX+E9qUY09A=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -8890,7 +8890,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 90,
+            "InjectionIndex": 92,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -8905,7 +8905,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 98
+                "Operand": 100
               }
             ],
             "HookTypeName": "Modify",
@@ -8920,7 +8920,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "e2q4ymw6kv/j5fh+VsYf3UkmOMAe8HHM44jTbotFh+E=",
+            "MSILHash": "cOeSWPP8RsI/7xNABIs5sJdcU3++FEEdVz5rPv6lPvM=",
             "HookCategory": "_Patches"
           }
         },

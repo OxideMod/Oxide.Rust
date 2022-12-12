@@ -42295,7 +42295,9 @@
             ],
             "Name": "GetLineEndPoint",
             "FullTypeName": "UnityEngine.Vector3",
-            "Parameters": []
+            "Parameters": [
+              "System.Boolean"
+            ]
           },
           "MSILHash": "CwVPM84WJDfQB/UHAlmEXMJHVX0BtG7Bz4lXnT3ywsA="
         },

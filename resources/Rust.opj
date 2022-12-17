@@ -16497,6 +16497,29 @@
             "HookCategory": "NPC"
           }
         },
+		{
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 86,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [GingerbreadNPC]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GingerbreadNPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CreateCorpse",
+              "ReturnType": "BaseCorpse",
+              "Parameters": []
+            },
+            "MSILHash": "hrI7yMPnEADZt0kDhNqsrvE3tUBngupsxl9ZoMXJCdQ=",            
+            "HookCategory": "NPC"
+          }
+        },
         {
           "Type": "Modify",
           "Hook": {

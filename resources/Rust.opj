@@ -18630,6 +18630,56 @@
             "BaseHookName": "OnPortalUse",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "TryOpenWithCode",
+            "HookName": "CanOpenWithCode",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarCodeLock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryOpenWithCode",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.String"
+              ]
+            },
+            "MSILHash": "Nw8K+KP6GVXHi80WIgiPJ2q1alcE2u+ZXHkHfPhspiU=",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "RPC_RequestAddLock",
+            "HookName": "OnRequestAddLock",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarGarage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_RequestAddLock",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "kEwfWV3ZzTxXREcq+Pl4K2d8C2W04LxA7xT+EqPtVHc=",
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

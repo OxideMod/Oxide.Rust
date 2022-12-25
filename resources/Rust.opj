@@ -16497,7 +16497,7 @@
             "HookCategory": "NPC"
           }
         },
-		{
+        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 86,
@@ -16516,7 +16516,7 @@
               "ReturnType": "BaseCorpse",
               "Parameters": []
             },
-            "MSILHash": "hrI7yMPnEADZt0kDhNqsrvE3tUBngupsxl9ZoMXJCdQ=",            
+            "MSILHash": "hrI7yMPnEADZt0kDhNqsrvE3tUBngupsxl9ZoMXJCdQ=",
             "HookCategory": "NPC"
           }
         },
@@ -18675,6 +18675,57 @@
             },
             "MSILHash": "3SB3sEqoAxcvIxtBfNHyShZJH+ZZuGXgoER1M/K9hWo=",
             "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this, a1",
+            "HookTypeName": "Simple",
+            "Name": "CanUnlock [ModularCarCodeLock]",
+            "HookName": "CanUnlock",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarCodeLock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryOpenWithCode",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.String"
+              ]
+            },
+            "MSILHash": "Nw8K+KP6GVXHi80WIgiPJ2q1alcE2u+ZXHkHfPhspiU=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleLockRequest",
+            "HookName": "OnVehicleLockRequest",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarGarage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_RequestAddLock",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "kEwfWV3ZzTxXREcq+Pl4K2d8C2W04LxA7xT+EqPtVHc=",
+            "HookCategory": "Vehicle"
           }
         }
       ],

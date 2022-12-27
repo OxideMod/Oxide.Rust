@@ -381,7 +381,7 @@ namespace Oxide.Game.Rust.Libraries
 
             message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), args) : Formatter.ToUnity(message);
             string formatted = prefix != null ? $"{prefix} {message}" : message;
-            if (Interface.CallHook("OnMessagePlayer", text, formatted, userId) != null)
+            if (Interface.CallHook("OnMessagePlayer", formatted, player, userId) != null)
 			{
 				return;
 			}

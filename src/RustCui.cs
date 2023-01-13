@@ -239,6 +239,10 @@ namespace Oxide.Game.Rust.Cui
 
         public string Color { get; set; }
 
+        [JsonConverter(typeof(StringEnumConverter))]
+        [JsonProperty("verticalOverflow")]
+        public VerticalWrapMode VerticalOverflow { get; set; }
+
         [JsonProperty("fadeIn")]
         public float FadeIn { get; set; }
     }
@@ -380,6 +384,12 @@ namespace Oxide.Game.Rust.Cui
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("lineType")]
         public InputField.LineType LineType { get; set; }
+        
+        [JsonProperty("autofocus")]
+        public bool Autofocus { get; set; }
+        
+        [JsonProperty("hudMenuInput")]
+        public bool HudMenuInput { get; set; }
     }
 
     public class CuiCountdownComponent : ICuiComponent

@@ -18727,6 +18727,80 @@
             "MSILHash": "kEwfWV3ZzTxXREcq+Pl4K2d8C2W04LxA7xT+EqPtVHc=",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 7,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "stfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BoomBox|cachedCassette"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCassetteInserted",
+            "HookName": "CassetteInserted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BoomBox",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnCassetteInserted",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Cassette"
+              ]
+            },
+            "MSILHash": "KfTRPwDFZiIiGumUp2muTZ6B5qTqkfUnA3HGXbxiBxE="
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 7,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "stfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BoomBox|cachedCassette"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCassetteRemoved",
+            "HookName": "CassetteRemoved",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BoomBox",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnCassetteRemoved",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Cassette"
+              ]
+            },
+            "MSILHash": "nzKJ5ToYMYvEEwUdm2uyX2cVOF8GTHk9ikIJGq7JY40="
+          }
         }
       ],
       "Modifiers": [
@@ -45024,6 +45098,13 @@
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "SprayCanSpray",
           "FieldType": "mscorlib|System.Int32",
+          "Flagged": false
+        },
+        {
+          "Name": "cachedCassette",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BoomBox",
+          "FieldType": "Assembly-CSharp|Cassette",
           "Flagged": false
         }
       ]

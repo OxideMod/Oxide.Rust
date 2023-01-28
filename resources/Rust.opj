@@ -18727,6 +18727,115 @@
             "MSILHash": "kEwfWV3ZzTxXREcq+Pl4K2d8C2W04LxA7xT+EqPtVHc=",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "CanLootEntity"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 0
+              },
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanLootEntity [IndustrialCrafter]",
+            "HookName": "CanLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "IndustrialCrafter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerOpenLoot",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.String",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "Jutu2NTwVWpvkl94CSPmwdSGWzdNyYzV5WuAfWExGeU=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnSwitchToggle [IndustrialConveyor]",
+            "HookName": "OnSwitchToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "IndustrialConveyor",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SvSwitch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "W+btTPbJs67kVRiELXOewxbZtd1TDpusMdFhRliTGTk=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnSwitchToggled [IndustrialConveyor]",
+            "HookName": "OnSwitchToggled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "IndustrialConveyor",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SvSwitch",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "W+btTPbJs67kVRiELXOewxbZtd1TDpusMdFhRliTGTk=",
+            "BaseHookName": "OnSwitchToggle [IndustrialConveyor]",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

@@ -18795,6 +18795,31 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 27,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnConveyorFiltersChange",
+            "HookName": "OnConveyorFiltersChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "IndustrialConveyor",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_ChangeFilters",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "huhwsj8pMtPP2xh8NQ3hEuDwHmzdNbu5C8DuLlYmQbM=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 4,
             "ArgumentBehavior": 4,

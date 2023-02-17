@@ -90,7 +90,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <summary>
         /// Gets the public-facing network port of the server, if known
         /// </summary>
-        public ushort Port => (ushort)ConVar.Server.port;
+        public ushort Port => (ushort)ConVar.Server.queryport;
 
         /// <summary>
         /// Gets the version or build number of the server

@@ -148,7 +148,7 @@ namespace Oxide.Plugins
         /// <param name="args"></param>
         protected void PrintToChat(BasePlayer player, string format, params object[] args)
         {
-            if (player?.net != null)
+            if (player?.net != null && Interface.CallHook("OnPrintToChat", player, format, args) == null)
             {
                 player.SendConsoleCommand("chat.add", 2, 0, args.Length > 0 ? string.Format(format, args) : format);
             }
@@ -161,7 +161,7 @@ namespace Oxide.Plugins
         /// <param name="args"></param>
         protected void PrintToChat(string format, params object[] args)
         {
-            if (BasePlayer.activePlayerList.Count >= 1)
+            if (BasePlayer.activePlayerList.Count >= 1 && Interface.CallHook("OnPrintToChat", format, args) == null)
             {
                 ConsoleNetwork.BroadcastToAllClients("chat.add", 2, 0, args.Length > 0 ? string.Format(format, args) : format);
             }

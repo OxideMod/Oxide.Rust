@@ -60,7 +60,7 @@ namespace Oxide.Game.Rust.Cui
 
     public class CuiElementContainer : List<CuiElement>
     {
-        public string Add(CuiButton button, string parent = "Hud", string name = null)
+        public string Add(CuiButton button, string parent = "Hud", string name = null, string destroyUi = null)
         {
             if (string.IsNullOrEmpty(name))
             {
@@ -72,6 +72,7 @@ namespace Oxide.Game.Rust.Cui
                 Name = name,
                 Parent = parent,
                 FadeOut = button.FadeOut,
+                DestroyUi = destroyUi,
                 Components =
                 {
                     button.Button,
@@ -94,7 +95,7 @@ namespace Oxide.Game.Rust.Cui
             return name;
         }
 
-        public string Add(CuiLabel label, string parent = "Hud", string name = null)
+        public string Add(CuiLabel label, string parent = "Hud", string name = null, string destroyUi = null)
         {
             if (string.IsNullOrEmpty(name))
             {
@@ -106,6 +107,7 @@ namespace Oxide.Game.Rust.Cui
                 Name = name,
                 Parent = parent,
                 FadeOut = label.FadeOut,
+                DestroyUi = destroyUi,
                 Components =
                 {
                     label.Text,
@@ -115,7 +117,7 @@ namespace Oxide.Game.Rust.Cui
             return name;
         }
 
-        public string Add(CuiPanel panel, string parent = "Hud", string name = null)
+        public string Add(CuiPanel panel, string parent = "Hud", string name = null, string destroyUi = null)
         {
             if (string.IsNullOrEmpty(name))
             {
@@ -126,7 +128,8 @@ namespace Oxide.Game.Rust.Cui
             {
                 Name = name,
                 Parent = parent,
-                FadeOut = panel.FadeOut
+                FadeOut = panel.FadeOut,
+                DestroyUi = destroyUi
             };
 
             if (panel.Image != null)
@@ -384,10 +387,10 @@ namespace Oxide.Game.Rust.Cui
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("lineType")]
         public InputField.LineType LineType { get; set; }
-        
+
         [JsonProperty("autofocus")]
         public bool Autofocus { get; set; }
-        
+
         [JsonProperty("hudMenuInput")]
         public bool HudMenuInput { get; set; }
     }

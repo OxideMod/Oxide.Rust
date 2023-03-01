@@ -18890,6 +18890,32 @@
             "MSILHash": "dsxqSg02NFI3iGcIA9KFaLLwY/4kqfxaNuTSxJng+iQ=",
             "HookCategory": "Industrial"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 32,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,a1",
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleHornPressed",
+            "HookName": "OnVehicleHornPressed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehicleModuleSeating",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerServerInput",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "InputState",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "DmCDxDoSW5Q9I8alhw+1h2SI1/s7I6Paxl0pHypRl88=",
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

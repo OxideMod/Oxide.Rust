@@ -18814,7 +18814,7 @@
               ]
             },
             "MSILHash": "huhwsj8pMtPP2xh8NQ3hEuDwHmzdNbu5C8DuLlYmQbM=",
-            "HookCategory": "Entity"
+            "HookCategory": "Industrial"
           }
         },
         {
@@ -18866,6 +18866,29 @@
             "MSILHash": "W+btTPbJs67kVRiELXOewxbZtd1TDpusMdFhRliTGTk=",
             "BaseHookName": "OnSwitchToggle [IndustrialConveyor]",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 40,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnItemCraft [IndustrialCrafter]",
+            "HookName": "OnItemCraft",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "IndustrialCrafter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "RunJob",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "dsxqSg02NFI3iGcIA9KFaLLwY/4kqfxaNuTSxJng+iQ=",
+            "HookCategory": "Industrial"
           }
         }
       ],

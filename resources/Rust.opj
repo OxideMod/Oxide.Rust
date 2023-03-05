@@ -45119,6 +45119,886 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Drone::Flag_Flying",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Flag_Flying",
+            "FullTypeName": "BaseEntity/Flags Drone::Flag_Flying",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Drone::Flag_ThrottleUp",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Flag_ThrottleUp",
+            "FullTypeName": "BaseEntity/Flags Drone::Flag_ThrottleUp",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Drone::pitch",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "pitch",
+            "FullTypeName": "System.Single Drone::pitch",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Drone::lastGroundCheck",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastGroundCheck",
+            "FullTypeName": "TimeSince Drone::lastGroundCheck",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Drone::lastPlayerCheck",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastPlayerCheck",
+            "FullTypeName": "RealTimeSinceEx Drone::lastPlayerCheck",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Drone::CanChangeID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CanChangeID",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "TiQEdhmTAAJtPmpHtpphd4FsCv5Tk10YXY5NZF29jk8="
+        },
+        {
+          "Name": "Drone::Update_Server",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Drone",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "Update_Server",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "I2MrjQ9chs1cmyAXeZ9BR9XvNYaP3v2tlFfwwL1sG2g="
+        },
+        {
+          "Name": "RemoteControlEntity::CanChangeID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RemoteControlEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CanChangeID",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "wL3HzNwDhOFxHXaCqDApkCC+WmHxxZoY8PRLNgQcAZI="
+        },
+        {
+          "Name": "PoweredRemoteControlEntity::CanChangeID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PoweredRemoteControlEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CanChangeID",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "ZGM4X1OM0UFNDruRauC+qhnYB6vZzOkITireECKGyN0="
+        },
+        {
+          "Name": "ComputerStation::currentPlayerID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ComputerStation",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentPlayerID",
+            "FullTypeName": "System.UInt64 ComputerStation::currentPlayerID",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ComputerStation::nextAddTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ComputerStation",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextAddTime",
+            "FullTypeName": "System.Single ComputerStation::nextAddTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ComputerStation::BookmarkSplit",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ComputerStation",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "BookmarkSplit",
+            "FullTypeName": "System.Char[] ComputerStation::BookmarkSplit",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ComputerStation::CheckCCTVAchievement",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ComputerStation",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CheckCCTVAchievement",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "dTv9iqOGPFEHCt+iFE7vJRjc6VqW5ciVdzjgI7LGvXA="
+        },
+        {
+          "Name": "ElectricOven::spawnedIo",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElectricOven",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spawnedIo",
+            "FullTypeName": "EntityRef`1<IOEntity> ElectricOven::spawnedIo",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ElectricOven::resumeCookingWhenPowerResumes",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElectricOven",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "resumeCookingWhenPowerResumes",
+            "FullTypeName": "System.Boolean ElectricOven::resumeCookingWhenPowerResumes",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ElectricOven::SpawnIOEnt",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElectricOven",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SpawnIOEnt",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "WIFUgdjmYPxmZn6Ey0Ybm3t7ATBfp9bHcOiMZFmf0Eg="
+        },
+        {
+          "Name": "ElectricOven::CanRunWithNoFuel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ElectricOven",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "CanRunWithNoFuel",
+            "FullTypeName": "System.Boolean ElectricOven::CanRunWithNoFuel()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseOven/OvenItemType",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseOven/OvenItemType",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OvenItemType",
+            "FullTypeName": "BaseOven/OvenItemType",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseOven::GetCharcoalRate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseOven",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetCharcoalRate",
+            "FullTypeName": "System.Int32",
+            "Parameters": []
+          },
+          "MSILHash": "P3Mx+v3adUs95vU27ANKY5mvZxgLUs14zJrrTfI5vlw="
+        },
+        {
+          "Name": "BaseOven::GetFuelRate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseOven",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetFuelRate",
+            "FullTypeName": "System.Int32",
+            "Parameters": []
+          },
+          "MSILHash": "P3Mx+v3adUs95vU27ANKY5mvZxgLUs14zJrrTfI5vlw="
+        },
+        {
+          "Name": "BaseOven::IncreaseCookTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseOven",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IncreaseCookTime",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "t06FlaJFtjllZfzEnJ8RxUmmIuQ+Y5ZH2OSdG2CgiK4="
+        },
+        {
+          "Name": "BaseOven::CanRunWithNoFuel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseOven",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "CanRunWithNoFuel",
+            "FullTypeName": "System.Boolean BaseOven::CanRunWithNoFuel()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CCTV_RC::fovScaleIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CCTV_RC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fovScaleIndex",
+            "FullTypeName": "System.Int32 CCTV_RC::fovScaleIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CCTV_RC::fovScaleLerped",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CCTV_RC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fovScaleLerped",
+            "FullTypeName": "System.Single CCTV_RC::fovScaleLerped",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CCTV_RC::timeSinceLastServerTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CCTV_RC",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceLastServerTick",
+            "FullTypeName": "RealTimeSinceEx CCTV_RC::timeSinceLastServerTick",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CCTV_RC::UpdateManualAim",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CCTV_RC",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateManualAim",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "InputState"
+            ]
+          },
+          "MSILHash": "zP02Sds6lONF9YHHNIeWfB3VhctJ5vUCg9zDhfn2HlQ="
+        },
+        {
+          "Name": "AutoTurret::timeSinceLastServerTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceLastServerTick",
+            "FullTypeName": "RealTimeSinceEx AutoTurret::timeSinceLastServerTick",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::visibilityOffsets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "visibilityOffsets",
+            "FullTypeName": "System.Single[] AutoTurret::visibilityOffsets",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::ViewerCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "ViewerCount",
+            "FullTypeName": "System.Int32 AutoTurret::ViewerCount()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::ControllingViewerId",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "ControllingViewerId",
+            "FullTypeName": "System.Nullable`1<CameraViewerId> AutoTurret::ControllingViewerId()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::UpdateManualAim",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateManualAim",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "InputState"
+            ]
+          },
+          "MSILHash": "O0X5WLeYXWRqNj1osUvYENR6PDAkFWfN83ymKFAYSp0="
+        },
+        {
+          "Name": "AutoTurret::AddSelfAuthorize",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "AddSelfAuthorize",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "4v9WF8ZP1YDFPQZSh8RCD7vzeqmKPtqF66CVia/duDM="
+        },
+        {
+          "Name": "AutoTurret::CanChangeID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "CanChangeID",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "LxzXUa2yzl9MeSjzp9OS9WvHtEWLZkaY5idDjWjfGKQ="
+        },
+        {
+          "Name": "AutoTurret::Ignore",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "Ignore",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "RQzLETIQY8oCXnENh9Yiq2D0HFlL85DvhJ8pbAWKDf4="
+        },
+        {
+          "Name": "NPCAutoTurret::Ignore",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NPCAutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "Ignore",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "poAJOjSXMDyF1j+drOMO5f7QpnzGyTY9bQcbRJK+z04="
+        },
+        {
+          "Name": "PoweredRemoteControlEntity::ViewerCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PoweredRemoteControlEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "ViewerCount",
+            "FullTypeName": "System.Int32 PoweredRemoteControlEntity::ViewerCount()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PoweredRemoteControlEntity::ControllingViewerId",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PoweredRemoteControlEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "ControllingViewerId",
+            "FullTypeName": "System.Nullable`1<CameraViewerId> PoweredRemoteControlEntity::ControllingViewerId()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RemoteControlEntity::ViewerCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RemoteControlEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "ViewerCount",
+            "FullTypeName": "System.Int32 RemoteControlEntity::ViewerCount()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RemoteControlEntity::ControllingViewerId",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RemoteControlEntity",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "ControllingViewerId",
+            "FullTypeName": "System.Nullable`1<CameraViewerId> RemoteControlEntity::ControllingViewerId()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SamSite::lastAmmoCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastAmmoCount",
+            "FullTypeName": "System.Int32 SamSite::lastAmmoCount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SamSite::firedCount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "firedCount",
+            "FullTypeName": "System.Int32 SamSite::firedCount",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SamSite::MarkIODirty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MarkIODirty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "9r3xpZBYU++wgQPOYYtypWAd5ndiQOV3yJMpj5eWzkg="
+        },
+        {
+          "Name": "SamSite::OnItemAddedRemoved",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SamSite",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnItemAddedRemoved",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Item",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "MJK4AkCLpRMf+sOXWeGfKjy12E9Lc2BzJrUpTa/Y/mE="
+        },
+        {
+          "Name": "ZiplineLaunchPoint::CalculateZiplinePoints",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ZiplineLaunchPoint",
+          "Type": 1,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CalculateZiplinePoints",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Collections.Generic.List`1<UnityEngine.Vector3>",
+              "System.Collections.Generic.List`1<UnityEngine.Vector3>&"
+            ]
+          },
+          "MSILHash": "d1QNJAEvi3WkV/3P/K7xPNYGMWUNFzpgOnXE2YaJU78="
         }
       ],
       "Fields": [

@@ -18922,6 +18922,30 @@
             "MSILHash": "DmCDxDoSW5Q9I8alhw+1h2SI1/s7I6Paxl0pHypRl88=",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "CanExplosiveStick",
+            "HookName": "CanExplosiveStick",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TimedExplosive",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanStickTo",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BaseEntity"
+              ]
+            },
+            "MSILHash": "Jyke1BlU5xRjfvIHgO36zfw+LDLsElJfz0G7mrgbxhs=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

@@ -18946,6 +18946,52 @@
             "MSILHash": "Jyke1BlU5xRjfvIHgO36zfw+LDLsElJfz0G7mrgbxhs=",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0.inventory, this.fuelType",
+            "HookTypeName": "Simple",
+            "Name": "OnInventoryAmmoItemFind",
+            "HookName": "OnInventoryAmmoItemFind",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Chainsaw",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GetAmmo",
+              "ReturnType": "Item",
+              "Parameters": []
+            },
+            "MSILHash": "y8/5tiF5Dh3aKchhdreYMGATnJGV/W6lBvsWNlmj3aY=",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0.inventory, this.fuelType",
+            "HookTypeName": "Simple",
+            "Name": "OnInventoryAmmoItemFind",
+            "HookName": "OnInventoryAmmoItemFind",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FlameThrower",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GetAmmo",
+              "ReturnType": "Item",
+              "Parameters": []
+            },
+            "MSILHash": "rANwqSs1DJQ+CbqH2xLKAbn1FRHd2tr1sNyx+7vxrr4=",
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

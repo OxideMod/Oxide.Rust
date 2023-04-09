@@ -7469,7 +7469,7 @@
             "InjectionIndex": 167,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "a0.player, l8, l4, l10, l6",
+            "ArgumentString": "l0, l8, l4, l10, l6",
             "HookTypeName": "Simple",
             "Name": "OnWireConnect",
             "HookName": "OnWireConnect",
@@ -7544,13 +7544,13 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 179,
+            "InjectionIndex": 178,
             "RemoveCount": 0,
             "Instructions": [
               {
                 "OpCode": "ldloc_s",
                 "OpType": "Variable",
-                "Operand": 8
+                "Operand": 11
               },
               {
                 "OpCode": "ldfld",
@@ -7560,7 +7560,7 @@
               {
                 "OpCode": "ldloc_s",
                 "OpType": "Variable",
-                "Operand": 4
+                "Operand": 6
               },
               {
                 "OpCode": "ldelem_ref",

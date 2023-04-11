@@ -2,9 +2,13 @@ using Oxide.Core;
 using Oxide.Core.Libraries;
 using Oxide.Core.Libraries.Covalence;
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using Network;
+using System.Linq;
+using Facepunch;
 
 namespace Oxide.Game.Rust.Libraries
 {
@@ -191,7 +195,29 @@ namespace Oxide.Game.Rust.Libraries
             player.IPlayer.Name = name;
             permission.UpdateNickname(player.UserIDString, name);
 
-            Teleport(player, player.transform.position);
+            List<Connection> connections = Pool.GetList<Connection>();
+
+            for (int i = 0; i < Net.sv.connections.Count; i++)
+            {
+                Connection conn = Net.sv.connections[i];
+
+                if (conn.connected && conn.isAuthenticated && conn.player is BasePlayer && conn.player != player)
+                {
+                    connections.Add(conn);
+                }
+            }
+
+            player.OnNetworkSubscribersLeave(connections);
+            player.syncPosition = false;
+            player._limitedNetworking = true;
+            Pool.FreeList(ref connections);
+            Interface.Oxide.NextTick(() =>
+            {
+                player.syncPosition = true;
+                player._limitedNetworking = false;
+                player.UpdateNetworkGroup();
+                player.SendNetworkUpdate();
+            });
         }
 
         /// <summary>

@@ -7469,7 +7469,7 @@
             "InjectionIndex": 167,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l0, l8, l4, l10, l6",
+            "ArgumentString": "l0, l8, l4, l10, l6, l2",
             "HookTypeName": "Simple",
             "Name": "OnWireConnect",
             "HookName": "OnWireConnect",
@@ -7539,60 +7539,6 @@
             },
             "MSILHash": "BC7XeILwaz/7J9n1q0QqQAYo8676z9e6HZuGEBHzfmM=",
             "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 178,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldloc_s",
-                "OpType": "Variable",
-                "Operand": 11
-              },
-              {
-                "OpCode": "ldfld",
-                "OpType": "Field",
-                "Operand": "Assembly-CSharp|IOEntity|outputs"
-              },
-              {
-                "OpCode": "ldloc_s",
-                "OpType": "Variable",
-                "Operand": 6
-              },
-              {
-                "OpCode": "ldelem_ref",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldnull",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "stfld",
-                "OpType": "Field",
-                "Operand": "Assembly-CSharp|IOEntity/IOSlot|linePoints"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnWireConnect [patch]",
-            "HookName": "OnWireConnect",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "WireTool",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "MakeConnection",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "koexvF/Pf6UBEpJ2fWbEp2RXC54/9n1WKVftlwUhv/Y=",
-            "BaseHookName": "OnWireConnect",
-            "HookCategory": "_Patches"
           }
         },
         {

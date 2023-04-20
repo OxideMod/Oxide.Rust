@@ -2,10 +2,12 @@ using Oxide.Core;
 using Oxide.Core.Extensions;
 using Oxide.Plugins;
 using System;
+using System.ComponentModel;
 using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Threading.Tasks;
+using Oxide.Game.Rust.Json;
 
 namespace Oxide.Game.Rust
 {
@@ -121,6 +123,10 @@ namespace Oxide.Game.Rust
         /// </summary>
         public override void Load()
         {
+            TypeDescriptor.AddAttributes(typeof(NetworkableId), new TypeConverterAttribute(typeof(NetworkableIdTypeConverter)));
+            TypeDescriptor.AddAttributes(typeof(ItemId), new TypeConverterAttribute(typeof(ItemIdTypeConverter)));
+            TypeDescriptor.AddAttributes(typeof(ItemContainerId), new TypeConverterAttribute(typeof(ItemContainerIdTypeConverter)));
+
             Manager.RegisterLibrary("Rust", new Libraries.Rust());
             Manager.RegisterLibrary("Command", new Libraries.Command());
             Manager.RegisterLibrary("Item", new Libraries.Item());

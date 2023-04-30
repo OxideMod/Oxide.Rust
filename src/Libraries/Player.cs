@@ -64,7 +64,7 @@ namespace Oxide.Game.Rust.Libraries
         /// <summary>
         /// Returns if the player is admin
         /// </summary>
-        public bool IsAdmin(ulong id) => ServerUsers.Is(id, ServerUsers.UserGroup.Owner);
+        public bool IsAdmin(ulong id) => ServerUsers.Is(id, ServerUsers.UserGroup.Owner) || DeveloperList.Contains(id);
 
         /// <summary>
         /// Returns if the player is admin

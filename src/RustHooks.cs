@@ -231,7 +231,7 @@ namespace Oxide.Game.Rust
                 {
                     permission.AddUserGroup(connectionId, defaultGroups.Players);
                 }
-                if (authLevel == 2 && !permission.UserHasGroup(connectionId, defaultGroups.Administrators))
+                if (authLevel >= 2 && !permission.UserHasGroup(connectionId, defaultGroups.Administrators))
                 {
                     permission.AddUserGroup(connectionId, defaultGroups.Administrators);
                 }

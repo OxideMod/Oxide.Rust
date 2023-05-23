@@ -8,7 +8,7 @@
         {
           "Type": "InitOxide",
           "Hook": {
-            "InjectionIndex": 60,
+            "InjectionIndex": 58,
             "HookTypeName": "Initialize Oxide",
             "Name": "InitOxide",
             "HookName": "InitOxide",
@@ -21,7 +21,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "48AblgNrWob9J0ZnEdZdnmuWNf5MY5SobPvD4pzydLw=",
+            "MSILHash": "K7srfpJkmVDhSyL/xcH/gXmu+1rFZo8q+ftdk4yLWQw=",
             "HookCategory": "Server"
           }
         },
@@ -530,7 +530,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 1835,
+            "InjectionIndex": 1866,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -548,7 +548,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "lQ5f1dv9WWPI/YzAjvBbPHEbasiAYbT2r7kt1Afrvas=",
+            "MSILHash": "ZKr6r4gvrr/ZvmKDrscpHlBpSfGCGyn/4HFgsUMPrww=",
             "HookCategory": "Player"
           }
         },

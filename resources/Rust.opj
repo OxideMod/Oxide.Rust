@@ -46052,6 +46052,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+		{
+          "Name": "BuildingBlock::playerCustomColourToApply",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerCustomColourToApply",
+            "FullTypeName": "System.UInt32 BuildingBlock::playerCustomColourToApply",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

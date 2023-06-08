@@ -204,6 +204,9 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonProperty("fadeOut")]
         public float FadeOut { get; set; }
+        
+        [JsonProperty("update", NullValueHandling = NullValueHandling.Ignore)]
+		public bool Update { get; set; }
     }
 
     [JsonConverter(typeof(ComponentConverter))]

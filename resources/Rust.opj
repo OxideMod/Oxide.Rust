@@ -18990,6 +18990,81 @@
             "BaseHookName": "OnBonusItemDropped [patch 4]",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnCupboardAuthorize [VehiclePrivilege]",
+            "HookName": "OnCupboardAuthorize",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehiclePrivilege",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "AddSelfAuthorize",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "fCtD9ZSfpiVuIqEn/n7Wdop3Vfc2wQTEJ2jelymjV8s=",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnCupboardDeauthorize [VehiclePrivilege]",
+            "HookName": "OnCupboardDeauthorize",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehiclePrivilege",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RemoveSelfAuthorize",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "AYpZOYRkfh7tCByXcqxUc/xOu3xJhWpzdpBy071hN6w=",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnCupboardClearList [VehiclePrivilege]",
+            "HookName": "OnCupboardClearList",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "VehiclePrivilege",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ClearList",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "JWK+pnhdZLL+3vOzgqsogOGp5TkU7AQ+DCZNHSBESTI=",
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

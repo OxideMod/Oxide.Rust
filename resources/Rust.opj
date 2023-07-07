@@ -530,7 +530,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 1866,
+            "InjectionIndex": 1895,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -548,7 +548,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "j4Eeb+kOmcb0AriJv76oIzdYyA1hcYQoYOk3CyWvKJI=",
+            "MSILHash": "vPJGG5XuovBxDGS5RITnFT9qaxRs8n9jytuU/pFKIYQ=",
             "HookCategory": "Player"
           }
         },
@@ -1023,7 +1023,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 200,
+            "InjectionIndex": 214,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, l1",
@@ -1041,7 +1041,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "DWOKFSWZfKKWvXXWCB3Q3mUkAEHxRk3OIYtkrAxKe5M=",
+            "MSILHash": "v3KTuZKwCk4edH2ldfaUba4RAIlSEPx1MOMPHxcJnYg=",
             "HookCategory": "Weapon"
           }
         },
@@ -1262,7 +1262,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "8824VZdcUYuVJ1imDqD1h4MMSIQGcHoTxGg92uw6iBg=",
+            "MSILHash": "9/YDv0rei3c0BQAImCu+h8Aqk7yxx6UPhsTAqayx/6E=",
             "HookCategory": "Weapon"
           }
         },
@@ -3645,7 +3645,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "bXgTuOWIdTode9BZUZ+FIReTtrdHPFXkP1IAsdqIOck=",
+            "MSILHash": "T9mXOl/gdIAWt+oAGuxTSv7GSf+BcRB6NPJ4IN7cblg=",
             "HookCategory": "Player"
           }
         },
@@ -4855,7 +4855,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 233,
+            "InjectionIndex": 235,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -4874,7 +4874,7 @@
                 "Construction"
               ]
             },
-            "MSILHash": "GcGdXkfPcxaoAjAGpDyKpsgMilaJFdD3GvsnxTnf5rc=",
+            "MSILHash": "qRJWu/DqrEh4quUBx7AJunpzR2WdmXgMY5ReQ77Ua9M=",
             "HookCategory": "Structure"
           }
         },
@@ -13559,7 +13559,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 216,
+            "InjectionIndex": 230,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -13574,7 +13574,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 232
+                "Operand": 246
               }
             ],
             "HookTypeName": "Modify",
@@ -13591,7 +13591,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "8824VZdcUYuVJ1imDqD1h4MMSIQGcHoTxGg92uw6iBg=",
+            "MSILHash": "9/YDv0rei3c0BQAImCu+h8Aqk7yxx6UPhsTAqayx/6E=",
             "BaseHookName": "OnWeaponFired",
             "HookCategory": "_Patches"
           }
@@ -15833,7 +15833,7 @@
                 "UnityEngine.Vector3"
               ]
             },
-            "MSILHash": "B7NaEDkRTNrF5JikC6eufEKwUyAvaLEqSNXw5v6EPdQ=",
+            "MSILHash": "rSbBRA2yUvp83nHLVFWjXTM1K92sZ9FkSjMyZ68baDg=",
             "HookCategory": "Player"
           }
         },

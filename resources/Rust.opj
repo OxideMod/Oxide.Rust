@@ -46119,6 +46119,134 @@
             ]
           },
           "MSILHash": "IX3+vI0IBEur1VK0qaQ+5VJXi6qQHoXHgd5FRqu0qm0="
+        },
+        {
+          "Name": "WireTool::ValidateLine",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WireTool",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ValidateLine",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Collections.Generic.List`1<UnityEngine.Vector3>",
+              "IOEntity",
+              "IOEntity",
+              "BasePlayer",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "yaqVfZM5nyN2zr+hj/Amx9oUMvRpse/CE1Y6TkMtyrA="
+        },
+        {
+          "Name": "WireTool::VerifyLineOfSight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WireTool",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "VerifyLineOfSight",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Collections.Generic.List`1<UnityEngine.Vector3>",
+              "UnityEngine.Matrix4x4"
+            ]
+          },
+          "MSILHash": "DkqotV8dZeWRIcKMEMenLmg+nog6aAkMFcbZ/VBfOkM="
+        },
+        {
+          "Name": "WireTool::VerifyLineOfSight",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WireTool",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "VerifyLineOfSight",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "VCGXK2gj03K242dtFf6wksAaoHlvAgZojfjWwY+7G7E="
+        },
+        {
+          "Name": "WireTool::IntToColour",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WireTool",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IntToColour",
+            "FullTypeName": "WireTool/WireColour",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "vOxk90NSmx5Vn3wO7pQq4nsD541rCxaJjc6wRGZFrU4="
+        },
+        {
+          "Name": "IndustrialStorageAdaptor::_cachedParent",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IndustrialStorageAdaptor",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_cachedParent",
+            "FullTypeName": "BaseEntity IndustrialStorageAdaptor::_cachedParent",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IndustrialStorageAdaptor::cachedContainer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IndustrialStorageAdaptor",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "cachedContainer",
+            "FullTypeName": "ItemContainer IndustrialStorageAdaptor::cachedContainer",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

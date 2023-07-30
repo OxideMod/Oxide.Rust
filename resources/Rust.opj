@@ -46090,6 +46090,35 @@
             "Parameters": []
           },
           "MSILHash": "oelkElc5bsnDXWnt9pSlNOuOhhesKm4bpWqckRQm//Y="
+        },
+        {
+          "Name": "NexusServer::BuildTransferRequest",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "NexusServer",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "BuildTransferRequest",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity",
+              "System.String",
+              "System.String",
+              "System.String",
+              "ProtoBuf.Nexus.Request&",
+              "System.Collections.Generic.List`1<BaseNetworkable>&",
+              "System.Collections.Generic.List`1<BasePlayer>&",
+              "System.Collections.Generic.List`1<System.String>&"
+            ]
+          },
+          "MSILHash": "IX3+vI0IBEur1VK0qaQ+5VJXi6qQHoXHgd5FRqu0qm0="
         }
       ],
       "Fields": [

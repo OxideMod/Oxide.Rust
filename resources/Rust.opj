@@ -46052,6 +46052,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "F15::movePosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "F15",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "movePosition",
+            "FullTypeName": "UnityEngine.Vector3 F15::movePosition",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

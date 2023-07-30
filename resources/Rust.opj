@@ -46769,6 +46769,184 @@
       ],
       "Modifiers": [],
       "Fields": []
+    },
+    {
+      "AssemblyName": "Rust.Clans.Local.dll",
+      "Hooks": [
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 74,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, this.bySteamId",
+            "HookTypeName": "Simple",
+            "Name": "OnClanDisbanded",
+            "HookName": "OnClanDisbanded",
+            "HookDescription": "",
+            "AssemblyName": "Rust.Clans.Local.dll",
+            "TypeName": "LocalClan/<Disband>d__66",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MoveNext",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "XDWQZOmfSzEGPgKdkPN5fYr56kYryy+BD3BBPTLNL80=",
+            "HookCategory": "Clan"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 199,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l3, this.leaderSteamId",
+            "HookTypeName": "Simple",
+            "Name": "OnClanCreated",
+            "HookName": "OnClanCreated",
+            "HookDescription": "",
+            "AssemblyName": "Rust.Clans.Local.dll",
+            "TypeName": "LocalClanBackend/<Create>d__11",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MoveNext",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "635jwYcCfWiJfWKJFGaT8v7zfRJT0VND5GqMKxQMUVE=",
+            "HookCategory": "Clan"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 2,
+            "HookTypeName": "Simple",
+            "Name": "OnClanMemberAdded",
+            "HookName": "OnClanMemberAdded",
+            "HookDescription": "",
+            "AssemblyName": "Rust.Clans.Local.dll",
+            "TypeName": "LocalClanDatabase",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AcceptInvite",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.Int64",
+                "System.UInt64"
+              ]
+            },
+            "MSILHash": "MScHu07f2+n7VeegJIM3POCA/UWzOmCpoepEJVf8Nho=",
+            "HookCategory": "Clan"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 127,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, this.steamId",
+            "HookTypeName": "Simple",
+            "Name": "OnClanMemberLeft",
+            "HookName": "OnClanMemberLeft",
+            "HookDescription": "",
+            "AssemblyName": "Rust.Clans.Local.dll",
+            "TypeName": "LocalClan/<Kick>d__59",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MoveNext",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "G0T80QtR5XKlRmTJirLcQIm2xgXDjwacXTecqTbDcfY=",
+            "HookCategory": "Clan"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 144,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, this.steamId, this.bySteamId",
+            "HookTypeName": "Simple",
+            "Name": "OnClanMemberKicked",
+            "HookName": "OnClanMemberKicked",
+            "HookDescription": "",
+            "AssemblyName": "Rust.Clans.Local.dll",
+            "TypeName": "LocalClan/<Kick>d__59",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MoveNext",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "G0T80QtR5XKlRmTJirLcQIm2xgXDjwacXTecqTbDcfY=",
+            "BaseHookName": "OnClanMemberLeft",
+            "HookCategory": "Clan"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 54,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this.newColor, this.bySteamId",
+            "HookTypeName": "Simple",
+            "Name": "OnClanColorChanged",
+            "HookName": "OnClanColorChanged",
+            "HookDescription": "",
+            "AssemblyName": "Rust.Clans.Local.dll",
+            "TypeName": "LocalClan/<SetColor>d__55",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MoveNext",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "DDlDu5NvDPdKiJqvKJ602ZNrxU+xWygtdSm9UB4vyPg=",
+            "HookCategory": "Clan"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 62,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this.newLogo, this.bySteamId",
+            "HookTypeName": "Simple",
+            "Name": "OnClanLogoChanged",
+            "HookName": "OnClanLogoChanged",
+            "HookDescription": "",
+            "AssemblyName": "Rust.Clans.Local.dll",
+            "TypeName": "LocalClan/<SetLogo>d__54",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MoveNext",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "W9DXwfArtk7KyC5ZmddJrqrIcsrqmVg6KRXv2z0JB5I=",
+            "HookCategory": "Clan"
+          }
+        }
+      ],
+      "Modifiers": [],
+      "Fields": []
     }
   ]
 }

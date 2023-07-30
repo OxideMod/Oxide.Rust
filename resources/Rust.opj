@@ -46071,6 +46071,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::SendPingsToClient",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SendPingsToClient",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "oelkElc5bsnDXWnt9pSlNOuOhhesKm4bpWqckRQm//Y="
         }
       ],
       "Fields": [

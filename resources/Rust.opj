@@ -19015,6 +19015,28 @@
             "MSILHash": "jobkKJIzLJLeq63bBQ0H8rQv2yKq0U0110n0dsjiFlo=",
             "BaseHookName": "IOnPlayerChat"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 15,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "OnStashOccluded",
+            "HookName": "OnStashOccluded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "StashContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoOccludedCheck",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "qvQJZIKXkQUdlG16gT52yo3QeeiRQODz0CpcOSzV3hA=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

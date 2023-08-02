@@ -19087,6 +19087,30 @@
             "MSILHash": "JWK+pnhdZLL+3vOzgqsogOGp5TkU7AQ+DCZNHSBESTI=",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 92,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnBedMade",
+            "HookName": "OnBedMade",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SleepingBag",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_MakeBed",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "agpsTSPESkuew3fR5fBtQpN42vxGll/TnfNFlE9xml8="
+          }
         }
       ],
       "Modifiers": [

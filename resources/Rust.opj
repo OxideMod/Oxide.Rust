@@ -530,13 +530,14 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 1854,
+            "InjectionIndex": 1938,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
             "HookTypeName": "Simple",
             "Name": "OnPlayerAttack [Projectile]",
             "HookName": "OnPlayerAttack",
+            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
             "Flagged": false,
@@ -548,7 +549,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "asWGBZOU3zBho4qVOq917d3gWp+j8uIEdiNxWWwyFUo=",
+            "MSILHash": "ulQoXRKojYFZmRDTNBWUNY5p0+hNwF+1mj8qFyKMwq0=",
             "HookCategory": "Player"
           }
         },

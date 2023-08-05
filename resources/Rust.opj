@@ -10282,6 +10282,11 @@
                 "OpType": "None"
               },
               {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.UInt64"
+              },
+              {
                 "OpCode": "call",
                 "OpType": "Method",
                 "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
@@ -10329,6 +10334,7 @@
             "HookTypeName": "Simple",
             "Name": "OnSleepingBagDestroyed",
             "HookName": "OnSleepingBagDestroyed",
+            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "SleepingBag",
             "Flagged": false,
@@ -19041,6 +19047,7 @@
             "HookTypeName": "Simple",
             "Name": "OnBedMade",
             "HookName": "OnBedMade",
+            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "SleepingBag",
             "Flagged": false,

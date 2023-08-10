@@ -194,7 +194,7 @@ namespace Oxide.Game.Rust.Libraries
 
             player.IPlayer.Name = name;
             permission.UpdateNickname(player.UserIDString, name);
-            
+
             if (player.net.group == BaseNetworkable.LimboNetworkGroup)
             {
                 return;
@@ -213,9 +213,16 @@ namespace Oxide.Game.Rust.Libraries
             }
 
             player.OnNetworkSubscribersLeave(connections);
+            Pool.FreeList(ref connections);
+
+            if (player.limitNetworking)
+            {
+                return;
+            }
+
             player.syncPosition = false;
             player._limitedNetworking = true;
-            Pool.FreeList(ref connections);
+
             Interface.Oxide.NextTick(() =>
             {
                 player.syncPosition = true;

@@ -19192,6 +19192,30 @@
             "MSILHash": "I/QlI5mNK4InopFxl3FS+rpqaBbQ7Xa1KLRHvjDb9hs=",
             "BaseHookName": "CanChangeCode"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 6,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "Load",
+            "HookName": "OnEntityLoaded",
+            "HookDescription": "Called after a network object is loaded from a save (including trees)\r\nNo return behavior",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseNetworkable",
+            "Flagged": true,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Load",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseNetworkable/LoadInfo"
+              ]
+            },
+            "MSILHash": "ybkikILPIsaBXuU2GqfHtHRThEO5mM9yRIMWgOwuZ3M="
+          }
         }
       ],
       "Modifiers": [
@@ -47301,7 +47325,7 @@
             "BaseHookName": "OnClanLogoChanged",
             "HookCategory": "Clan"
           }
-        }
+        },
       ],
       "Modifiers": [
         {

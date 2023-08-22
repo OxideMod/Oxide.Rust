@@ -19464,6 +19464,31 @@
             "BaseHookName": "OnRackedWeaponLoad",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 6,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityLoaded",
+            "HookName": "OnEntityLoaded",
+            "HookDescription": "Called after a network object is loaded from a save (including trees)\r\nNo return behavior",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseNetworkable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Load",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseNetworkable/LoadInfo"
+              ]
+            },
+            "MSILHash": "FwNZxo+qwzmSg8CV/C4AeCqdMlORrFZ7MhV0An0YZCo=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

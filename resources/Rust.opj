@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-Staging\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -72,7 +72,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 23,
+            "InjectionIndex": 26,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, a0",
@@ -91,7 +91,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "CMn++5bdDJkW2uXyKFIV5mO1oRhU75ps/Zmq5jqQGuU=",
+            "MSILHash": "hNDK1BugQgAGUIsjsbwDFX9kvP9XSl0hEJkUNe6tczk=",
             "HookCategory": "Player"
           }
         },
@@ -161,7 +161,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "NcvvEy+BpCwFz0kUlLv7i20h/fZml9blaj11HX8qlEk=",
+            "MSILHash": "t9DATEZWTCzh0sIj2c2I/3mTW8nyx/zEkriNJfYZGLo=",
             "HookCategory": "Entity"
           }
         },
@@ -537,7 +537,6 @@
             "HookTypeName": "Simple",
             "Name": "OnPlayerAttack [Projectile]",
             "HookName": "OnPlayerAttack",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
             "Flagged": false,
@@ -574,7 +573,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "Fwl3eZkI+cILWVAHm7MN5E9JojCc7Q/wRfUlmF0VFw8=",
+            "MSILHash": "kwRBeaDF/lXGb5HX/0EDH6nwr/t32khnGPvv5lD1gus=",
             "HookCategory": "Player"
           }
         },
@@ -599,7 +598,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "LBUCbiapZ0Pfw+NY4bU5AxJvVHwvMegFTEcuzJaMFQ4=",
+            "MSILHash": "kIF53PW2EeSekxDSGtFDEldb9sgzGYh164py4xkJcks=",
             "HookCategory": "Player"
           }
         },
@@ -609,7 +608,7 @@
             "InjectionIndex": 32,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player, l0, l1",
+            "ArgumentString": "this, a0.player, l0.gradeBase.type, l0.gradeBase.skin",
             "HookTypeName": "Simple",
             "Name": "OnStructureUpgrade",
             "HookName": "OnStructureUpgrade",
@@ -624,7 +623,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "WaOfzqayYm5YvCBCwCogiYhetS8rSuSH4/rgFO1UKDs=",
+            "MSILHash": "Q+uUIaOWFvJbmEuMqeDuwaJPjKpTV2I8FUDpFL6sbzY=",
             "HookCategory": "Structure"
           }
         },
@@ -649,7 +648,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "WaOfzqayYm5YvCBCwCogiYhetS8rSuSH4/rgFO1UKDs=",
+            "MSILHash": "sudSwFxLzZ+/hROuZ8ko/W9JAvtQixapLmtMVd+HlTg=",
             "HookCategory": "Structure"
           }
         },
@@ -699,7 +698,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "rw3CDBvF03WJOVVzwxtVNxUwF8j91ha1W7cHknY9U1w=",
+            "MSILHash": "6kxaC5uVVYbrsVmQQqbGyEOTaESWakPh78pV5nwgghU=",
             "HookCategory": "Structure"
           }
         },
@@ -968,7 +967,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "tGsM/UYho2/AfsCcX8982ThNrPH2T3aHROME4FJsjkw=",
+            "MSILHash": "IuteuznqM0wdznrUTjmsu5SAlFjnAXTl35pxp/xsKM8=",
             "HookCategory": "Player"
           }
         },
@@ -992,7 +991,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "S1VstI3M8HhFWz6HcnM5IKzkNGPFnBC80IF6Dn3ZmnM=",
+            "MSILHash": "KpikXRH4QFbfZx8eWmEIKCWuBLJ7QwA1U2qSj8e/xcE=",
             "HookCategory": "Player"
           }
         },
@@ -1067,7 +1066,7 @@
                 "ItemCraftTask"
               ]
             },
-            "MSILHash": "LtmHMrUKZqPXgMyjdVJKjPxx6EYXBRG1yLkpRgMnFB0=",
+            "MSILHash": "mPLbgkLi48AsbdghaP6YZZL2duT6QduAiwKyTUQs3oQ=",
             "HookCategory": "Item"
           }
         },
@@ -1116,7 +1115,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "8S4ibAaLVnTSuLhnUuzdDUR5X3nOXxqDfxDJOIdMko4=",
+            "MSILHash": "I03z3tfykLxW+RvQhCpqhMbiJ3JOU6LiGMl3ktY+oio=",
             "HookCategory": "Player"
           }
         },
@@ -1141,7 +1140,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "8S4ibAaLVnTSuLhnUuzdDUR5X3nOXxqDfxDJOIdMko4=",
+            "MSILHash": "I03z3tfykLxW+RvQhCpqhMbiJ3JOU6LiGMl3ktY+oio=",
             "BaseHookName": "CanResearchItem",
             "HookCategory": "Item"
           }
@@ -1149,7 +1148,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 14,
+            "InjectionIndex": 13,
             "ReturnBehavior": 3,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2 => l2",
@@ -1165,7 +1164,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "oleKfGxTGScthl25Q6ho+sEjzA8DnWKT+GrqqQFKd4s=",
+            "MSILHash": "sji5zez7BRDy89XTW/qYjUmZr+BmNmnz6ocBaVoF4Fc=",
             "HookCategory": "Item"
           }
         },
@@ -1220,7 +1219,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 232,
+            "InjectionIndex": 233,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, l8",
@@ -1238,7 +1237,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "V2X17cKxnDN5dEWfKpFxE+jsTZvHdx1XdhTDK3cDano=",
+            "MSILHash": "atUv13s++wp7cG/L8rxxMpxR569Gl/xXZxVVNwSYUk8=",
             "HookCategory": "Weapon"
           }
         },
@@ -1812,7 +1811,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "oJ8XwdDf/sgo5c7lDDWm8eQDIOd8MFHvm4yaLAID4BI=",
+            "MSILHash": "cuGlDcgNPMjPRJJSayAR2Lr7erSR6Kmpwi0HvKpWJNw=",
             "HookCategory": "Item"
           }
         },
@@ -1837,7 +1836,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "ThL3lyH2iYRmkoKeOmGlsRSz1Sl/2fg1B1nbNUfbgnM=",
+            "MSILHash": "MHRMUOX8mfxkOyI1apgj5xABCNzyjwlEYx+/bOklOrs=",
             "HookCategory": "Item"
           }
         },
@@ -2270,7 +2269,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "PBGSYlYzABBkWuUETUZ5JAtpQvSIGCjjKvw/nWpO4u8=",
+            "MSILHash": "6JqPkZxOWkVJqeKOAjzafHh0Hi1DeMcV/9zLaOwbjUY=",
             "HookCategory": "Player"
           }
         },
@@ -2296,7 +2295,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "RWwFsb/1ZmBpLAe2XPzWUQaxEl9xjmgH06UghwhPT+0=",
+            "MSILHash": "/C9wwtXh1gWP+ltJs40NgwNTFc535YmjnLxSEBAD0Gk=",
             "HookCategory": "Server"
           }
         },
@@ -2344,7 +2343,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "RWwFsb/1ZmBpLAe2XPzWUQaxEl9xjmgH06UghwhPT+0=",
+            "MSILHash": "/C9wwtXh1gWP+ltJs40NgwNTFc535YmjnLxSEBAD0Gk=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -2508,7 +2507,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "ApdxQQbA2BPTdW0/+TTgPigMda2G6q8CxhoBcso4BK4=",
+            "MSILHash": "gMZnIKhJlMXCnwtWcDYL53VMHAZlHqZ10V1BPmf6l2c=",
             "HookCategory": "Player"
           }
         },
@@ -3077,7 +3076,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "YVdjtUoHx7uSRZTv8eABmQKJ3SqD23+m3XhXhVwAf0I=",
+            "MSILHash": "RyhE/KfgJJLJQOMRdhrG0/Zm1ipjJUkGKTdYzZIhVJ4=",
             "HookCategory": "Item"
           }
         },
@@ -3252,7 +3251,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "4g65O/I31LG8O6rv/X9qXqHTc/0ZH99b83SSOBhHtiI=",
+            "MSILHash": "oYWFh4ojuxo1FbMEn5yNzz0MoTXI7Q5Pi/5FQ/ogbiM=",
             "HookCategory": "Entity"
           }
         },
@@ -3451,7 +3450,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "yqadutjS0FwUPysGJz/93O1fj8DVCneIdPeEoRWXnRI=",
+            "MSILHash": "aSoDg5fdQnYHEjbi3Tr0qCvyZZxDE56QLXljX4Zf7LE=",
             "HookCategory": "Item"
           }
         },
@@ -3895,32 +3894,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "fQKr364eLdIbSKmgKTI0Irx8u0kRrTN1AiHbkKfwb4M=",
-            "HookCategory": "Weapon"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 7,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0, l0",
-            "HookTypeName": "Simple",
-            "Name": "OnMagazineReload",
-            "HookName": "OnMagazineReload",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseProjectile",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 1,
-              "Name": "ReloadMagazine",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.Int32"
-              ]
-            },
-            "MSILHash": "F9PwWRbq1e0Wz/oXOnFm3LNs+SrQyZ/v2GuhuibLm5w=",
+            "MSILHash": "OJNyVSCL5FjhepY/VEnq0Xf2WHlQkzSS7mNZCwncXyU=",
             "HookCategory": "Weapon"
           }
         },
@@ -4302,14 +4276,14 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "AIkUYmKENXxVZoH0HJv25UYa9d2AaTpDvE8niNTEOVU=",
+            "MSILHash": "Eteb8tnmPf3G1reNKCB2RFjoQRG51m/rAu45VwBc6+s=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 219,
+            "InjectionIndex": 223,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -4328,7 +4302,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "AIkUYmKENXxVZoH0HJv25UYa9d2AaTpDvE8niNTEOVU=",
+            "MSILHash": "Eteb8tnmPf3G1reNKCB2RFjoQRG51m/rAu45VwBc6+s=",
             "BaseHookName": "CanDismountEntity",
             "HookCategory": "Entity"
           }
@@ -4355,7 +4329,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "AIkUYmKENXxVZoH0HJv25UYa9d2AaTpDvE8niNTEOVU=",
+            "MSILHash": "Eteb8tnmPf3G1reNKCB2RFjoQRG51m/rAu45VwBc6+s=",
             "BaseHookName": "OnEntityDismounted",
             "HookCategory": "Entity"
           }
@@ -4381,14 +4355,14 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "lziaWNcq1nY18r5zDTMABr4lcPtom8RpCqyMh2UkpS8=",
+            "MSILHash": "ky62BWto+z2zH94R+NB0/7DP4bv4h8ix16tkkFrMap8=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 68,
+            "InjectionIndex": 73,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "HookTypeName": "Simple",
@@ -4405,7 +4379,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "lziaWNcq1nY18r5zDTMABr4lcPtom8RpCqyMh2UkpS8=",
+            "MSILHash": "ky62BWto+z2zH94R+NB0/7DP4bv4h8ix16tkkFrMap8=",
             "BaseHookName": "CanMountEntity",
             "HookCategory": "Player"
           }
@@ -4443,7 +4417,7 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "a0, this",
+            "ArgumentString": "a0",
             "HookTypeName": "Simple",
             "Name": "OnResearchCostDetermine [Item]",
             "HookName": "OnResearchCostDetermine",
@@ -4458,7 +4432,7 @@
                 "Item"
               ]
             },
-            "MSILHash": "oLInK0Yx43si9DHimnUGWhXl3PDsbqQtljOfCO4jg6s=",
+            "MSILHash": "NMdvEM14Zk9viUg1woWsOSNYLv+z8G8g8ntm9N4IQNU=",
             "HookCategory": "Item"
           }
         },
@@ -4856,7 +4830,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 235,
+            "InjectionIndex": 241,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2",
@@ -4875,7 +4849,7 @@
                 "Construction"
               ]
             },
-            "MSILHash": "qRJWu/DqrEh4quUBx7AJunpzR2WdmXgMY5ReQ77Ua9M=",
+            "MSILHash": "50mcRQ5ADBZmJ8Lxsv5obs7ydZCVPNyAXBOKv1lVtLk=",
             "HookCategory": "Structure"
           }
         },
@@ -5207,7 +5181,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "k6b4SLIrgo+NPSb+dvkqJgV4MfFEjsxmnFOXq3lIwY8=",
+            "MSILHash": "xoqem86hSzks9Qdhu7Srhet6pNQW+cDNi4sE7Tgh7YE=",
             "HookCategory": "Entity"
           }
         },
@@ -5322,7 +5296,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "/8ECzYGbrx39n5THWrrqLkeDKz6QB8SdtNgiC94bgJc=",
+            "MSILHash": "JYQAQzwZnXfNVOGZsbwonLYmC/t/NF2vPT2piAkipUk=",
             "HookCategory": "Vehicle"
           }
         },
@@ -5346,7 +5320,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "IxMMO5QT/IedH/aX+mbRtsuBcKqrNFip2U/ggioXuJ8=",
+            "MSILHash": "hNxV1oiPVDqmR9oVON25ZOX3BPqKYAe2OdQtLyfodvw=",
             "HookCategory": "Entity"
           }
         },
@@ -6118,7 +6092,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "6w4stUt6n3+3vU3xhEStULnO+GY923iX1oa0EpdPssA=",
+            "MSILHash": "DGL/0vOcxTg1NkI60TVDPfZaxaQNK0SwULjistkivyA=",
             "HookCategory": "Vehicle"
           }
         },
@@ -6219,7 +6193,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "7z98ahreyghIj6WkMevBXPKlbYJyTpDdqZFi4yUt9u8=",
+            "MSILHash": "aSqKpL3asLuwVwQrRUpIP5vsR8J84S8LcZ+vQd/Rd4g=",
             "HookCategory": "Player"
           }
         },
@@ -6555,7 +6529,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 17,
+            "InjectionIndex": 38,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": "",
@@ -6573,7 +6547,7 @@
                 "UnityEngine.Collision"
               ]
             },
-            "MSILHash": "qCfK0+6AitbE7+lw/mArLL0tZ9DFGbvAmkSc0zjyKb4=",
+            "MSILHash": "jRsT13dt4akH1qtUZexbPtArLKBKUNav0kArFvuYq8w=",
             "HookCategory": "Entity"
           }
         },
@@ -6672,7 +6646,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "jA2OpOeNTG4rdFq1nPsfWU+kCANAFHtgMCnFa5kEuxM=",
+            "MSILHash": "ETII2zpeBJtl9T0OTQ46jFCbgmjBMxo0gHAHGye8y8c=",
             "HookCategory": "Player"
           }
         },
@@ -8221,7 +8195,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 103,
+            "InjectionIndex": 50,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a2, a0",
@@ -8241,14 +8215,14 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "nC187feOXWmDXD8RfKmb+sW8TrP9lxDJqMHnR/9fYis=",
+            "MSILHash": "AJx6b0XmKlcAYc17my7fGAubbyzi1SJNPQct+0mhQ4s=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 161,
+            "InjectionIndex": 164,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -8265,7 +8239,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "j7Jiw+LdGLoPv8Q+RBcnNzA1eSsLR7p96d4NyMT2uuY=",
+            "MSILHash": "pQlW+sVgMV2+IXjDkviMepoBxg7zSCBHe5rI1i7vWeg=",
             "HookCategory": "Player"
           }
         },
@@ -8390,7 +8364,7 @@
               "ReturnType": "System.Boolean",
               "Parameters": []
             },
-            "MSILHash": "vPjYbP2250//FbwWzYrhovLNotYvrN6aOzJktgUz5Ds=",
+            "MSILHash": "dKba2Lbd3i5IPbwmGZMuOtcQffFmmFVyu4vsEF3Oi3A=",
             "HookCategory": "Resource"
           }
         },
@@ -8605,7 +8579,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "/FkFaVF+pcTzvljsnbC9Eg7fEpcnIfj0Pa3ZVlCa/V0=",
+            "MSILHash": "0T0DD7qKqMEJuiTNj0rwvacav+gTjhW1ieiCod5JxUI=",
             "HookCategory": "Entity"
           }
         },
@@ -9230,7 +9204,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "yvqtfJDXBe9lza1sXTAv64+7EhE+WtEW0NAbZpZEaMg=",
+            "MSILHash": "liZSQYyRYl4u5pod5wHlI0tzQ5dZvp2Dg+2DKZPuPrY=",
             "HookCategory": "Vehicle"
           }
         },
@@ -9554,14 +9528,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "9z5keIIdc0kErnhbVs4a79FxRy+8bgh/s6eudhoH0Cs=",
+            "MSILHash": "uqRbT78kK5n2fPBkm1Nxxw3CDmPamtwUj/hT9wqQWYg=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 91,
+            "InjectionIndex": 86,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this",
@@ -9577,7 +9551,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "9z5keIIdc0kErnhbVs4a79FxRy+8bgh/s6eudhoH0Cs=",
+            "MSILHash": "uqRbT78kK5n2fPBkm1Nxxw3CDmPamtwUj/hT9wqQWYg=",
             "BaseHookName": "OnDefaultItemsReceive",
             "HookCategory": "Player"
           }
@@ -9737,7 +9711,7 @@
               "ReturnType": "BaseCorpse",
               "Parameters": []
             },
-            "MSILHash": "tkN0dNLvWP5X3alq/Kh7OTBrEljDo7Z8X8esryszIbY=",
+            "MSILHash": "OmhFrGVvz5uLxWofWNR7Tj2GivBbFfYmXi92199dtTs=",
             "HookCategory": "Player"
           }
         },
@@ -9760,7 +9734,7 @@
               "ReturnType": "BaseCorpse",
               "Parameters": []
             },
-            "MSILHash": "tkN0dNLvWP5X3alq/Kh7OTBrEljDo7Z8X8esryszIbY=",
+            "MSILHash": "OmhFrGVvz5uLxWofWNR7Tj2GivBbFfYmXi92199dtTs=",
             "BaseHookName": "OnPlayerCorpseSpawn",
             "HookCategory": "Player"
           }
@@ -9788,7 +9762,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "qGxN2etBY5aN9c1Q0t1fCjs46OKZcKWyWfQ0Dix3ksg=",
+            "MSILHash": "PIpzJaZdTk+yhWsLqESutegdsUc1tktLxVO9WVsbtJ0=",
             "HookCategory": "Item"
           }
         },
@@ -10334,7 +10308,6 @@
             "HookTypeName": "Simple",
             "Name": "OnSleepingBagDestroyed",
             "HookName": "OnSleepingBagDestroyed",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "SleepingBag",
             "Flagged": false,
@@ -11157,7 +11130,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "iK4lWJaBq5DxYnn4SYdulp5RzI7Rg5McwLVVc+zr6wI=",
+            "MSILHash": "y6k93xYe85kqc/qb4DHOSaIkcP3K2PiJ/5umQh4MzO0=",
             "HookCategory": "Vehicle"
           }
         },
@@ -11213,7 +11186,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "iK4lWJaBq5DxYnn4SYdulp5RzI7Rg5McwLVVc+zr6wI=",
+            "MSILHash": "y6k93xYe85kqc/qb4DHOSaIkcP3K2PiJ/5umQh4MzO0=",
             "BaseHookName": "OnEngineStart [MotorRowboat]",
             "HookCategory": "Vehicle"
           }
@@ -11736,14 +11709,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "x7cfCfVJLzvL/ot/WPYBQI8MpdBgpW8acLm1AmVfzu8=",
+            "MSILHash": "dzBg1tUDwuyq4Otk/KCEsIY8LagH3cWW51z8kmWfgHo=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 27,
+            "InjectionIndex": 44,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -11761,7 +11734,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "x7cfCfVJLzvL/ot/WPYBQI8MpdBgpW8acLm1AmVfzu8=",
+            "MSILHash": "dzBg1tUDwuyq4Otk/KCEsIY8LagH3cWW51z8kmWfgHo=",
             "BaseHookName": "OnHotAirBalloonToggle",
             "HookCategory": "Entity"
           }
@@ -11769,7 +11742,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 39,
+            "InjectionIndex": 56,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -11787,7 +11760,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "x7cfCfVJLzvL/ot/WPYBQI8MpdBgpW8acLm1AmVfzu8=",
+            "MSILHash": "dzBg1tUDwuyq4Otk/KCEsIY8LagH3cWW51z8kmWfgHo=",
             "BaseHookName": "OnHotAirBalloonToggled [on]",
             "HookCategory": "Entity"
           }
@@ -12589,7 +12562,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 79,
+            "InjectionIndex": 80,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2, l0",
@@ -12607,14 +12580,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "xQBXNGksJAICDXOklbQNX/aoI1jckSbqF6Pdo8VssF4=",
+            "MSILHash": "dzPkhO+xfJxfxTBkUEJpjoEeZeMpB0yDJkl853bbzzQ=",
             "HookCategory": "TechTree"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 114,
+            "InjectionIndex": 115,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l2, l0",
@@ -12632,7 +12605,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "xQBXNGksJAICDXOklbQNX/aoI1jckSbqF6Pdo8VssF4=",
+            "MSILHash": "dzPkhO+xfJxfxTBkUEJpjoEeZeMpB0yDJkl853bbzzQ=",
             "BaseHookName": "OnTechTreeNodeUnlock",
             "HookCategory": "TechTree"
           }
@@ -13006,7 +12979,7 @@
                 "MarketTerminal"
               ]
             },
-            "MSILHash": "ZQCiaaZ/DzLk7Q3sGZk246cSm21txDqveEnEfeizO0w=",
+            "MSILHash": "U19TqOPnBEgfhTBThzUNeBDtso4VMBqkqoHmPhX9ZXk=",
             "HookCategory": "Vending"
           }
         },
@@ -13595,7 +13568,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "tGsM/UYho2/AfsCcX8982ThNrPH2T3aHROME4FJsjkw=",
+            "MSILHash": "IuteuznqM0wdznrUTjmsu5SAlFjnAXTl35pxp/xsKM8=",
             "BaseHookName": "IOnBasePlayerAttacked",
             "HookCategory": "_Patches"
           }
@@ -13822,7 +13795,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "2/4Z8lB6ie/WzGCCiG0TV/6aVcJNO+q12lSNvH+lnt0=",
+            "MSILHash": "IoS+H0+2Ht2r3r1onls4zbcQ4nEiHRe/ynPsjGHKZ9E=",
             "HookCategory": "Player"
           }
         },
@@ -14157,7 +14130,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "rYZ4ZkE3q9pEVaIxQJx8wjPWqa7UrtjajlHRP5rvXYw=",
+            "MSILHash": "s6LYun4ZRTqzl5KQPHa6jmiv7q9a805rQ7xZnPmXOzw=",
             "HookCategory": "_Patches"
           }
         },
@@ -15174,7 +15147,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "fZA8/cmSiuZyJp0HWa4KWvRQmVsmgNBxDPg/CSqv73o=",
+            "MSILHash": "JksdSX+yhp93VIy+HMpRI31oRN0bNPXYfdQSUO50MvM=",
             "HookCategory": "Fishing"
           }
         },
@@ -15341,7 +15314,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "fZA8/cmSiuZyJp0HWa4KWvRQmVsmgNBxDPg/CSqv73o=",
+            "MSILHash": "JksdSX+yhp93VIy+HMpRI31oRN0bNPXYfdQSUO50MvM=",
             "BaseHookName": "CanCatchFish",
             "HookCategory": "Fishing"
           }
@@ -15365,7 +15338,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "fZA8/cmSiuZyJp0HWa4KWvRQmVsmgNBxDPg/CSqv73o=",
+            "MSILHash": "JksdSX+yhp93VIy+HMpRI31oRN0bNPXYfdQSUO50MvM=",
             "BaseHookName": "OnFishCatch",
             "HookCategory": "Fishing"
           }
@@ -15422,7 +15395,7 @@
                 "MarketTerminal"
               ]
             },
-            "MSILHash": "ZQCiaaZ/DzLk7Q3sGZk246cSm21txDqveEnEfeizO0w=",
+            "MSILHash": "U19TqOPnBEgfhTBThzUNeBDtso4VMBqkqoHmPhX9ZXk=",
             "BaseHookName": "OnVendingTransaction",
             "HookCategory": "Vending"
           }
@@ -15449,7 +15422,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "FbCSocc2sW2qeDZQDAuHsJ84gN2oPAuPT9tTV0oNrxo=",
+            "MSILHash": "7t3x81DgyJYRIlQXBoFwcNsgYx9TrEtCJu1iX9vM+Wo=",
             "HookCategory": "Vending"
           }
         },
@@ -15782,7 +15755,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "STuATh4unnEVbT5+5kTfilLHUybwu29RLTasFHtNjuE=",
+            "MSILHash": "mVtVWhUrv+RBLqIsdpCCqhmbX+wdYgKSQ/0Mf6CfpWY=",
             "HookCategory": "Player"
           }
         },
@@ -16723,7 +16696,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "qDVbv9dxAQSGQmKrQTs0BOWSb6RAEEaeQTzWVTA+vr0=",
+            "MSILHash": "NvnsRLRjQP8UxrkccmxumioZ4RyHJfkwDr3VFwTjEww=",
             "HookCategory": "Server"
           }
         },
@@ -16806,7 +16779,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 108,
+            "InjectionIndex": 118,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l7",
@@ -16822,7 +16795,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "ZcWiZvEDkoesaDW4WsEMeEptTUgZWmPwWPCIrrZdusQ=",
+            "MSILHash": "2z4nMurMHt8/f86QBQRrlymHh8iZBY5UGcLR+ErjrWU=",
             "HookCategory": "Vehicle"
           }
         },
@@ -17225,14 +17198,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Wq8VSHx72B4CPjMedBFeeFuI/16JnL5tCaxBexgEt+Q=",
+            "MSILHash": "A7uPO0EEuXUWliJH0DBPj6+qHrH2B7YAYMddSHw/Szw=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 199,
+            "InjectionIndex": 198,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l5, l1, l0, l2",
@@ -17250,7 +17223,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Wq8VSHx72B4CPjMedBFeeFuI/16JnL5tCaxBexgEt+Q=",
+            "MSILHash": "A7uPO0EEuXUWliJH0DBPj6+qHrH2B7YAYMddSHw/Szw=",
             "BaseHookName": "OnPhotoCapture",
             "HookCategory": "Entity"
           }
@@ -17451,7 +17424,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "FbCSocc2sW2qeDZQDAuHsJ84gN2oPAuPT9tTV0oNrxo=",
+            "MSILHash": "7t3x81DgyJYRIlQXBoFwcNsgYx9TrEtCJu1iX9vM+Wo=",
             "BaseHookName": "OnVendingShopOpen [NPCTalking]",
             "HookCategory": "Vending"
           }
@@ -17763,7 +17736,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Yve/N7y7+MRmt1LVubeXbXVQBoUvSoxZSwFfHlDzRk4=",
+            "MSILHash": "epuFpLFUOx+pWKXMREVEHPqDS4BiGDDULz1J1GNy7v0=",
             "HookCategory": "Structure"
           }
         },
@@ -17786,7 +17759,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Fvhiu1VrisDqiCr3IG8YWjEi4v4lBBuXMta3USL5GIo=",
+            "MSILHash": "DzOnUz0JiTx2Lp+djmsCqULvNQKnAOvpiIJU0isykFQ=",
             "HookCategory": "Weapon"
           }
         },
@@ -17848,31 +17821,6 @@
             },
             "MSILHash": "bLHSp2pJULXHu2oNSn8YwcMt2IDByJrPw79lfylEAo4=",
             "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "OnHelicopterAttacked [BaseHelicopter]",
-            "HookName": "OnHelicopterAttacked",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseHelicopter",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Hurt",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "HitInfo"
-              ]
-            },
-            "MSILHash": "iSe/dEMVfykpUrQRYsCDbJNeZTZgEHTscaLKzEUtjdY=",
-            "HookCategory": "Vehicle"
           }
         },
         {
@@ -17963,7 +17911,7 @@
             "Flagged": false,
             "Signature": {
               "Exposure": 2,
-              "Name": "FindItemIDs",
+              "Name": "FindItemsByItemID",
               "ReturnType": "System.Collections.Generic.List`1<Item>",
               "Parameters": [
                 "System.Int32"
@@ -18648,7 +18596,7 @@
                 "BaseEntity"
               ]
             },
-            "MSILHash": "Ag3/wUllVmpV099xanXqU6x/rU7AA5kkVW3XLXpJ1V8=",
+            "MSILHash": "Jyke1BlU5xRjfvIHgO36zfw+LDLsElJfz0G7mrgbxhs=",
             "HookCategory": "Entity"
           }
         },
@@ -18671,7 +18619,7 @@
               "ReturnType": "Item",
               "Parameters": []
             },
-            "MSILHash": "y8/5tiF5Dh3aKchhdreYMGATnJGV/W6lBvsWNlmj3aY=",
+            "MSILHash": "/k08r6i58GdajI1UDJ9KfxiSMa8+rQG6VPZ7FJOVQ/Q=",
             "HookCategory": "Item"
           }
         },
@@ -18694,7 +18642,7 @@
               "ReturnType": "Item",
               "Parameters": []
             },
-            "MSILHash": "rANwqSs1DJQ+CbqH2xLKAbn1FRHd2tr1sNyx+7vxrr4=",
+            "MSILHash": "0AYbzCat3WpZSGjpKnLLOcp37KbOoadugSfybbOlf5g=",
             "HookCategory": "Item"
           }
         },
@@ -19047,7 +18995,6 @@
             "HookTypeName": "Simple",
             "Name": "OnBedMade",
             "HookName": "OnBedMade",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "SleepingBag",
             "Flagged": false,
@@ -19190,7 +19137,34 @@
               ]
             },
             "MSILHash": "I/QlI5mNK4InopFxl3FS+rpqaBbQ7Xa1KLRHvjDb9hs=",
-            "BaseHookName": "CanChangeCode"
+            "BaseHookName": "CanChangeCode",
+            "HookCategory": "Structure"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, this.GetOwnerPlayer()",
+            "HookTypeName": "Simple",
+            "Name": "OnMagazineReload",
+            "HookName": "OnMagazineReload",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseProjectile",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryReloadMagazine",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "IAmmoContainer",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "G0FEGYMW433vMdf2geJkrENVRKe1vwsDXbakx4xi3eE=",
+            "HookCategory": "Weapon"
           }
         }
       ],
@@ -20896,25 +20870,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "BuildingBlock::modelState",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BuildingBlock",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "modelState",
-            "FullTypeName": "System.Int32 BuildingBlock::modelState",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "DecayEntity::upkeepTimer",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "DecayEntity",
@@ -21469,25 +21424,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "SupplyDrop::parachute",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "SupplyDrop",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "parachute",
-            "FullTypeName": "BaseEntity SupplyDrop::parachute",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BuildingBlock::CanAffordUpgrade",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BuildingBlock",
@@ -21927,9 +21863,9 @@
           "MSILHash": "fsHHI5FocXNoa2xYZdN05b9D2/rWTs4QHqipxkKvSvs="
         },
         {
-          "Name": "BaseHelicopter::myAI",
+          "Name": "PatrolHelicopter::myAI",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopter",
+          "TypeName": "PatrolHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -21940,7 +21876,7 @@
               0
             ],
             "Name": "myAI",
-            "FullTypeName": "PatrolHelicopterAI BaseHelicopter::myAI",
+            "FullTypeName": "PatrolHelicopterAI PatrolHelicopter::myAI",
             "Parameters": []
           },
           "MSILHash": ""
@@ -26928,9 +26864,9 @@
           "MSILHash": ""
         },
         {
-          "Name": "MiniCopter::cachedFuelFraction",
+          "Name": "PlayerHelicopter::cachedFuelFraction",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
+          "TypeName": "PlayerHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -26941,15 +26877,15 @@
               0
             ],
             "Name": "cachedFuelFraction",
-            "FullTypeName": "System.Single MiniCopter::cachedFuelFraction",
+            "FullTypeName": "System.Single PlayerHelicopter::cachedFuelFraction",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "MiniCopter::cachedPitch",
+          "Name": "PlayerHelicopter::cachedPitch",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
+          "TypeName": "PlayerHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -26960,15 +26896,15 @@
               0
             ],
             "Name": "cachedPitch",
-            "FullTypeName": "System.Single MiniCopter::cachedPitch",
+            "FullTypeName": "System.Single PlayerHelicopter::cachedPitch",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "MiniCopter::cachedRoll",
+          "Name": "PlayerHelicopter::cachedRoll",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
+          "TypeName": "PlayerHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -26979,15 +26915,15 @@
               0
             ],
             "Name": "cachedRoll",
-            "FullTypeName": "System.Single MiniCopter::cachedRoll",
+            "FullTypeName": "System.Single PlayerHelicopter::cachedRoll",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "MiniCopter::cachedYaw",
+          "Name": "PlayerHelicopter::cachedYaw",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
+          "TypeName": "PlayerHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -26998,15 +26934,15 @@
               0
             ],
             "Name": "cachedYaw",
-            "FullTypeName": "System.Single MiniCopter::cachedYaw",
+            "FullTypeName": "System.Single PlayerHelicopter::cachedYaw",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "MiniCopter::isPushing",
+          "Name": "PlayerHelicopter::isPushing",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
+          "TypeName": "PlayerHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -27017,15 +26953,15 @@
               0
             ],
             "Name": "isPushing",
-            "FullTypeName": "System.Boolean MiniCopter::isPushing",
+            "FullTypeName": "System.Boolean PlayerHelicopter::isPushing",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "MiniCopter::ApplyForceAtWheels",
+          "Name": "PlayerHelicopter::ApplyForceAtWheels",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
+          "TypeName": "PlayerHelicopter",
           "Type": 1,
           "TargetExposure": [
             2
@@ -27042,9 +26978,9 @@
           "MSILHash": "kEkJiJDZ0SYS6CvpOEmQXtqglvIpFu2YFgf+cF6HlRM="
         },
         {
-          "Name": "MiniCopter::DoPushAction",
+          "Name": "PlayerHelicopter::DoPushAction",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
+          "TypeName": "PlayerHelicopter",
           "Type": 1,
           "TargetExposure": [
             2
@@ -27699,9 +27635,9 @@
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopterVehicle/HelicopterInputState",
+          "Name": "BaseHelicopter/HelicopterInputState",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle/HelicopterInputState",
+          "TypeName": "BaseHelicopter/HelicopterInputState",
           "Type": 3,
           "TargetExposure": [
             2
@@ -27712,15 +27648,15 @@
               2
             ],
             "Name": "HelicopterInputState",
-            "FullTypeName": "BaseHelicopterVehicle/HelicopterInputState",
+            "FullTypeName": "BaseHelicopter/HelicopterInputState",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopterVehicle::currentInputState",
+          "Name": "BaseHelicopter::currentInputState",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
+          "TypeName": "BaseHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -27731,15 +27667,15 @@
               1
             ],
             "Name": "currentInputState",
-            "FullTypeName": "BaseHelicopterVehicle/HelicopterInputState BaseHelicopterVehicle::currentInputState",
+            "FullTypeName": "BaseHelicopter/HelicopterInputState BaseHelicopter::currentInputState",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopterVehicle",
+          "Name": "BaseHelicopter",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
+          "TypeName": "BaseHelicopter",
           "Type": 3,
           "TargetExposure": [
             2
@@ -27749,16 +27685,16 @@
             "Exposure": [
               2
             ],
-            "Name": "BaseHelicopterVehicle",
-            "FullTypeName": "BaseHelicopterVehicle",
+            "Name": "BaseHelicopter",
+            "FullTypeName": "BaseHelicopter",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopterVehicle::lastPlayerInputTime",
+          "Name": "BaseHelicopter::lastPlayerInputTime",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
+          "TypeName": "BaseHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -27769,15 +27705,15 @@
               1
             ],
             "Name": "lastPlayerInputTime",
-            "FullTypeName": "System.Single BaseHelicopterVehicle::lastPlayerInputTime",
+            "FullTypeName": "System.Single BaseHelicopter::lastPlayerInputTime",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopterVehicle::hoverForceScale",
+          "Name": "BaseHelicopter::hoverForceScale",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
+          "TypeName": "BaseHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -27788,7 +27724,7 @@
               1
             ],
             "Name": "hoverForceScale",
-            "FullTypeName": "System.Single BaseHelicopterVehicle::hoverForceScale",
+            "FullTypeName": "System.Single BaseHelicopter::hoverForceScale",
             "Parameters": []
           },
           "MSILHash": ""
@@ -31943,9 +31879,9 @@
           "MSILHash": "V6yHMUVlWzJa3hl08izpmUrWJgqiOnYtAyBebDLR6vU="
         },
         {
-          "Name": "MiniCopter::engineController",
+          "Name": "PlayerHelicopter::engineController",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
+          "TypeName": "PlayerHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -31953,18 +31889,18 @@
           "Flagged": false,
           "Signature": {
             "Exposure": [
-              0
+              1
             ],
             "Name": "engineController",
-            "FullTypeName": "VehicleEngineController MiniCopter::engineController",
+            "FullTypeName": "VehicleEngineController PlayerHelicopter::engineController",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "MiniCopter::lastEngineOnTime",
+          "Name": "PlayerHelicopter::lastEngineOnTime",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
+          "TypeName": "PlayerHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -31975,15 +31911,15 @@
               0
             ],
             "Name": "lastEngineOnTime",
-            "FullTypeName": "System.Single MiniCopter::lastEngineOnTime",
+            "FullTypeName": "System.Single PlayerHelicopter::lastEngineOnTime",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "MiniCopter::CanPushNow",
+          "Name": "PlayerHelicopter::CanPushNow",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MiniCopter",
+          "TypeName": "PlayerHelicopter",
           "Type": 1,
           "TargetExposure": [
             2
@@ -32140,9 +32076,9 @@
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopter::lastNetworkUpdate",
+          "Name": "PatrolHelicopter::lastNetworkUpdate",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopter",
+          "TypeName": "PatrolHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -32153,15 +32089,15 @@
               0
             ],
             "Name": "lastNetworkUpdate",
-            "FullTypeName": "System.Single BaseHelicopter::lastNetworkUpdate",
+            "FullTypeName": "System.Single PatrolHelicopter::lastNetworkUpdate",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopter::flightEngineGainMod",
+          "Name": "PatrolHelicopter::flightEngineGainMod",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopter",
+          "TypeName": "PatrolHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -32172,15 +32108,15 @@
               0
             ],
             "Name": "flightEngineGainMod",
-            "FullTypeName": "SoundModulation/Modulator BaseHelicopter::flightEngineGainMod",
+            "FullTypeName": "SoundModulation/Modulator PatrolHelicopter::flightEngineGainMod",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopter::flightThwopsGainMod",
+          "Name": "PatrolHelicopter::flightThwopsGainMod",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopter",
+          "TypeName": "PatrolHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -32191,7 +32127,7 @@
               0
             ],
             "Name": "flightThwopsGainMod",
-            "FullTypeName": "SoundModulation/Modulator BaseHelicopter::flightThwopsGainMod",
+            "FullTypeName": "SoundModulation/Modulator PatrolHelicopter::flightThwopsGainMod",
             "Parameters": []
           },
           "MSILHash": ""
@@ -32967,9 +32903,9 @@
           "MSILHash": "5hgfebidJ9pmXXiCqYsM3nXFoBcXNWhB2cZpZPkbUsw="
         },
         {
-          "Name": "BaseHelicopterVehicle::avgTerrainHeight",
+          "Name": "BaseHelicopter::avgTerrainHeight",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
+          "TypeName": "BaseHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -32980,15 +32916,15 @@
               0
             ],
             "Name": "avgTerrainHeight",
-            "FullTypeName": "System.Single BaseHelicopterVehicle::avgTerrainHeight",
+            "FullTypeName": "System.Single BaseHelicopter::avgTerrainHeight",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopterVehicle::damageTorque",
+          "Name": "BaseHelicopter::damageTorque",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
+          "TypeName": "BaseHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -32999,15 +32935,15 @@
               1
             ],
             "Name": "damageTorque",
-            "FullTypeName": "UnityEngine.Vector3 BaseHelicopterVehicle::damageTorque",
+            "FullTypeName": "UnityEngine.Vector3 BaseHelicopter::damageTorque",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopterVehicle::nextDamageTime",
+          "Name": "BaseHelicopter::nextDamageTime",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
+          "TypeName": "BaseHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -33018,15 +32954,15 @@
               0
             ],
             "Name": "nextDamageTime",
-            "FullTypeName": "System.Single BaseHelicopterVehicle::nextDamageTime",
+            "FullTypeName": "System.Single BaseHelicopter::nextDamageTime",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopterVehicle::nextEffectTime",
+          "Name": "BaseHelicopter::nextEffectTime",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
+          "TypeName": "BaseHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -33037,15 +32973,15 @@
               0
             ],
             "Name": "nextEffectTime",
-            "FullTypeName": "System.Single BaseHelicopterVehicle::nextEffectTime",
+            "FullTypeName": "System.Single BaseHelicopter::nextEffectTime",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopterVehicle::pendingImpactDamage",
+          "Name": "BaseHelicopter::pendingImpactDamage",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
+          "TypeName": "BaseHelicopter",
           "Type": 0,
           "TargetExposure": [
             2
@@ -33056,15 +32992,15 @@
               0
             ],
             "Name": "pendingImpactDamage",
-            "FullTypeName": "System.Single BaseHelicopterVehicle::pendingImpactDamage",
+            "FullTypeName": "System.Single BaseHelicopter::pendingImpactDamage",
             "Parameters": []
           },
           "MSILHash": ""
         },
         {
-          "Name": "BaseHelicopterVehicle::OnCollisionEnter",
+          "Name": "BaseHelicopter::OnCollisionEnter",
           "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseHelicopterVehicle",
+          "TypeName": "BaseHelicopter",
           "Type": 1,
           "TargetExposure": [
             2
@@ -33072,7 +33008,7 @@
           "Flagged": false,
           "Signature": {
             "Exposure": [
-              0
+              1
             ],
             "Name": "OnCollisionEnter",
             "FullTypeName": "System.Void",
@@ -38073,7 +38009,7 @@
           "MSILHash": ""
         },
         {
-          "Name": "BaseSubmarine::maxFireRate",
+          "Name": "BaseSubmarine::reloadTime",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseSubmarine",
           "Type": 0,
@@ -38085,8 +38021,8 @@
             "Exposure": [
               0
             ],
-            "Name": "maxFireRate",
-            "FullTypeName": "System.Single BaseSubmarine::maxFireRate",
+            "Name": "reloadTime",
+            "FullTypeName": "System.Single BaseSubmarine::reloadTime",
             "Parameters": []
           },
           "MSILHash": ""
@@ -39267,28 +39203,6 @@
           "MSILHash": "JLvKVO0aTVARBYVPeuB8s68+zzHkmb0kJp79h1yTFDE="
         },
         {
-          "Name": "MLRS::GetAimToTarget",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MLRS",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GetAimToTarget",
-            "FullTypeName": "UnityEngine.Vector3",
-            "Parameters": [
-              "UnityEngine.Vector3",
-              "System.Single&"
-            ]
-          },
-          "MSILHash": "HFGh71E8pgj2NwWyubxA2dFZx+SYaWP2TpGu7Y5nQJI="
-        },
-        {
           "Name": "MLRS::GetDashboardContainer",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "MLRS",
@@ -39348,25 +39262,6 @@
           "MSILHash": "mpUpa1YZrTNd8THQs6k5+hw94T2tJ0g+nH2oMxSC9KQ="
         },
         {
-          "Name": "MLRS::GetTrueHitPos",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MLRS",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "GetTrueHitPos",
-            "FullTypeName": "UnityEngine.Vector3",
-            "Parameters": []
-          },
-          "MSILHash": "XtjRPCHVBPB20JUX6ZVTWjp7OH3B/5cD2qEDymFf/zo="
-        },
-        {
           "Name": "MLRS::HitPosToRotation",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "MLRS",
@@ -39389,28 +39284,6 @@
             ]
           },
           "MSILHash": "/7JT+0D6v6a/L1VznVzlK8qyBwhYlcWPEkyOxGHh3iQ="
-        },
-        {
-          "Name": "MLRS::NextRayHitSomething",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MLRS",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "NextRayHitSomething",
-            "FullTypeName": "System.Boolean",
-            "Parameters": [
-              "MLRS/TheoreticalProjectile&",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "GXQqgZDdr0YvsdFOuzJx4Xo04EDNBLhttnF2STKoAi0="
         },
         {
           "Name": "MLRS::SetRepaired",
@@ -39472,31 +39345,6 @@
             ]
           },
           "MSILHash": "sLaYUGGnM3swTnTCVVzuaR6bltkYwybBBJ6opN3wWkk="
-        },
-        {
-          "Name": "MLRS::ProjectileDistToGravity",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "MLRS",
-          "Type": 1,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ProjectileDistToGravity",
-            "FullTypeName": "System.Single",
-            "Parameters": [
-              "System.Single",
-              "System.Single",
-              "System.Single",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "qLFncVvS50Gzl1QKFoerbMBahmD8XBZMTtvYAfbAMZQ="
         },
         {
           "Name": "MLRS::ProjectileDistToSpeed",
@@ -46465,6 +46313,160 @@
             ],
             "Name": "Count",
             "FullTypeName": "System.Int32 SpawnDistribution::Count",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BuildingBlock::modelState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BuildingBlock",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "modelState",
+            "FullTypeName": "System.Int32 BuildingBlock::modelState()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::fuelPerSec",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelPerSec",
+            "FullTypeName": "System.Single PlayerHelicopter::fuelPerSec",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlanterBox::artificialLightExposure",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlanterBox",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "artificialLightExposure",
+            "FullTypeName": "TimeCachedValue`1<System.Single> PlanterBox::artificialLightExposure",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlanterBox::plantArtificalTemperature",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlanterBox",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "plantArtificalTemperature",
+            "FullTypeName": "TimeCachedValue`1<System.Single> PlanterBox::plantArtificalTemperature",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlanterBox::plantTemperature",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlanterBox",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "plantTemperature",
+            "FullTypeName": "TimeCachedValue`1<System.Single> PlanterBox::plantTemperature",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlanterBox::sunExposure",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlanterBox",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "sunExposure",
+            "FullTypeName": "TimeCachedValue`1<System.Single> PlanterBox::sunExposure",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::liftFraction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "liftFraction",
+            "FullTypeName": "System.Single BaseHelicopter::liftFraction",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::engineThrustMax",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "engineThrustMax",
+            "FullTypeName": "System.Single BaseHelicopter::engineThrustMax",
             "Parameters": []
           },
           "MSILHash": ""

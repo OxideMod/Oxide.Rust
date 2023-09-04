@@ -1,0 +1,25 @@
+name: Build and Upload Bundles to S3
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  build:
+    name: Run Build
+    uses: ./.github/workflows/build.yaml
+    secrets: inherit
+    with:
+      branch-postfix: "-${{ github.ref_name }}"
+
+  deploy:
+    name: Deploy to S3
+    uses: OxideMod/Actions/.github/workflows/r2-publish.yml@main
+    needs: build
+    with:
+      generate-filehash: true
+    secrets:
+      CLOUDFLARE_R2_KEY: ${{ secrets.CLOUDFLARE_R2_KEY }}
+      CLOUDFLARE_R2_SECRET: ${{ secrets.CLOUDFLARE_R2_SECRET }}
+      CLOUDFLARE_R2_ENDPOINT: ${{ secrets.CLOUDFLARE_R2_ENDPOINT }}

@@ -46470,6 +46470,120 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::currentThrottle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "currentThrottle",
+            "FullTypeName": "System.Single BaseHelicopter::currentThrottle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::avgThrust",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "avgThrust",
+            "FullTypeName": "System.Single BaseHelicopter::avgThrust",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::torqueScale",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "torqueScale",
+            "FullTypeName": "UnityEngine.Vector3 BaseHelicopter::torqueScale",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::liftDotMax",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "liftDotMax",
+            "FullTypeName": "System.Single BaseHelicopter::liftDotMax",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::thrustLerpSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "thrustLerpSpeed",
+            "FullTypeName": "System.Single BaseHelicopter::thrustLerpSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::altForceDotMin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "altForceDotMin",
+            "FullTypeName": "System.Single BaseHelicopter::altForceDotMin",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

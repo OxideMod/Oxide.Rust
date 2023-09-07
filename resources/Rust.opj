@@ -46584,6 +46584,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::serverGibs",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "serverGibs",
+            "FullTypeName": "GameObjectRef BaseHelicopter::serverGibs",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::fireBall",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fireBall",
+            "FullTypeName": "GameObjectRef BaseHelicopter::fireBall",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

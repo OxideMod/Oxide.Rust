@@ -46620,6 +46620,82 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+		{
+          "Name": "PlayerHelicopter/Wheel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter/Wheel",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "Wheel",
+            "FullTypeName": "PlayerHelicopter/Wheel",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::wheels",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "wheels",
+            "FullTypeName": "PlayerHelicopter/Wheel[] PlayerHelicopter::wheels",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::fuelStoragePrefab",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelStoragePrefab",
+            "FullTypeName": "GameObjectRef PlayerHelicopter::fuelStoragePrefab",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::killTriggers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "killTriggers",
+            "FullTypeName": "UnityEngine.GameObject[] BaseHelicopter::killTriggers",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

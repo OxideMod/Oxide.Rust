@@ -19,7 +19,6 @@ namespace Oxide.Game.Rust
         internal static AssemblyName AssemblyName = Assembly.GetName();
         internal static VersionNumber AssemblyVersion = new VersionNumber(AssemblyName.Version.Major, AssemblyName.Version.Minor, AssemblyName.Version.Build);
         internal static string AssemblyAuthors = ((AssemblyCompanyAttribute)Attribute.GetCustomAttribute(Assembly, typeof(AssemblyCompanyAttribute), false)).Company;
-        internal static string AssemblyBranch;
 
         private static readonly WebClient WebClient = new WebClient();
         private static VersionNumber LatestExtVersion = AssemblyVersion;
@@ -106,7 +105,6 @@ namespace Oxide.Game.Rust
         /// <param name="manager"></param>
         public RustExtension(ExtensionManager manager) : base(manager)
         {
-            AssemblyBranch = Branch ?? "master";
         }
 
         /// <summary>

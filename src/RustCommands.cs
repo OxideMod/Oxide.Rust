@@ -707,7 +707,7 @@ namespace Oxide.Game.Rust
             if (player.IsServer)
             {
                 string format = "Oxide.Rust Version: {0}\nOxide.Rust Branch: {1}";
-                player.Reply(string.Format(format, RustExtension.AssemblyVersion, RustExtension.AssemblyBranch));
+                player.Reply(string.Format(format, RustExtension.AssemblyVersion, Extension.Branch));
             }
             else
             {

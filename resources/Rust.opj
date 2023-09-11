@@ -46717,6 +46717,177 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::crashEffect",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "crashEffect",
+            "FullTypeName": "GameObjectRef BaseHelicopter::crashEffect",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterRockets::reloadTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterRockets",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "reloadTime",
+            "FullTypeName": "System.Single AttackHelicopterRockets::reloadTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterRockets::rocketsPerReload",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterRockets",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rocketsPerReload",
+            "FullTypeName": "System.Int32 AttackHelicopterRockets::rocketsPerReload",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterRockets::timeBetweenRockets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterRockets",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeBetweenRockets",
+            "FullTypeName": "System.Single AttackHelicopterRockets::timeBetweenRockets",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterRockets::timeSinceRocketFired",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterRockets",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceRocketFired",
+            "FullTypeName": "TimeSince AttackHelicopterRockets::timeSinceRocketFired",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::maxRotorSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxRotorSpeed",
+            "FullTypeName": "System.Single PlayerHelicopter::maxRotorSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::motorForceConstant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "motorForceConstant",
+            "FullTypeName": "System.Single PlayerHelicopter::motorForceConstant",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::brakeForceConstant",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "brakeForceConstant",
+            "FullTypeName": "System.Single PlayerHelicopter::brakeForceConstant",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::timeUntilMaxRotorSpeed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeUntilMaxRotorSpeed",
+            "FullTypeName": "System.Single PlayerHelicopter::timeUntilMaxRotorSpeed",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

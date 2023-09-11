@@ -19,10 +19,7 @@ namespace Oxide.Game.Rust
         internal static AssemblyName AssemblyName = Assembly.GetName();
         internal static VersionNumber AssemblyVersion = new VersionNumber(AssemblyName.Version.Major, AssemblyName.Version.Minor, AssemblyName.Version.Build);
         internal static string AssemblyAuthors = ((AssemblyCompanyAttribute)Attribute.GetCustomAttribute(Assembly, typeof(AssemblyCompanyAttribute), false)).Company;
-        internal static string AssemblyBranch =
-            Attribute.GetCustomAttributes(Assembly, typeof(AssemblyMetadataAttribute))
-                .Cast<AssemblyMetadataAttribute>()
-                .Single(attr => attr.Key == "GitBranch").Value;
+        internal static string AssemblyBranch;
 
         private static readonly WebClient WebClient = new WebClient();
         private static VersionNumber LatestExtVersion = AssemblyVersion;
@@ -46,11 +43,6 @@ namespace Oxide.Game.Rust
         /// Gets the version of this extension
         /// </summary>
         public override VersionNumber Version => AssemblyVersion;
-
-        /// <summary>
-        /// Gets the branch of this extension
-        /// </summary>
-        public override string Branch => AssemblyBranch;
 
         /// <summary>
         /// Default game-specific references for use in plugins
@@ -114,6 +106,7 @@ namespace Oxide.Game.Rust
         /// <param name="manager"></param>
         public RustExtension(ExtensionManager manager) : base(manager)
         {
+            AssemblyBranch = Branch ?? "master";
         }
 
         /// <summary>

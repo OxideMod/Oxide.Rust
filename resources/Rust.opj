@@ -19166,6 +19166,295 @@
             "MSILHash": "G0FEGYMW433vMdf2geJkrENVRKe1vwsDXbakx4xi3eE=",
             "HookCategory": "Weapon"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a1, this",
+            "HookTypeName": "Simple",
+            "Name": "OnRackedWeaponMount",
+            "HookName": "OnRackedWeaponMount",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WeaponRack",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MountWeapon",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "Item",
+                "BasePlayer",
+                "System.Int32",
+                "System.Int32",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "MM/eSBURllPwM/vGth1I5GcHZrhGaRNdEx6cjG/x4CU=",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 109,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, a1, this",
+            "HookTypeName": "Simple",
+            "Name": "OnRackedWeaponMounted",
+            "HookName": "OnRackedWeaponMounted",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WeaponRack",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MountWeapon",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "Item",
+                "BasePlayer",
+                "System.Int32",
+                "System.Int32",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "MM/eSBURllPwM/vGth1I5GcHZrhGaRNdEx6cjG/x4CU=",
+            "BaseHookName": "OnRackedWeaponMount",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 41,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, l2, a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnRackedWeaponSwap",
+            "HookName": "OnRackedWeaponSwap",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WeaponRack",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SwapPlayerWeapon",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Int32",
+                "System.Int32",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "i4POEPk6W3kN3Vj5YMfBYaczSAdndi5xQLYVIowM+HY=",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 71,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, l2, a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnRackedWeaponSwapped",
+            "HookName": "OnRackedWeaponSwapped",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WeaponRack",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SwapPlayerWeapon",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Int32",
+                "System.Int32",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "i4POEPk6W3kN3Vj5YMfBYaczSAdndi5xQLYVIowM+HY=",
+            "BaseHookName": "OnRackedWeaponSwap",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 21,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnRackedWeaponTake",
+            "HookName": "OnRackedWeaponTake",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WeaponRack",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "GivePlayerWeapon",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Int32",
+                "System.Int32",
+                "System.Boolean",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "xR2Zk8+1PQ/vyQ9T20KE+19ZVOX3uvkxXWqjdEG8g6c=",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 100,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnRackedWeaponTaken",
+            "HookName": "OnRackedWeaponTaken",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WeaponRack",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "GivePlayerWeapon",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Int32",
+                "System.Int32",
+                "System.Boolean",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "xR2Zk8+1PQ/vyQ9T20KE+19ZVOX3uvkxXWqjdEG8g6c=",
+            "BaseHookName": "OnRackedWeaponTake",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 21,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, a0,  this",
+            "HookTypeName": "Simple",
+            "Name": "OnRackedWeaponUnload",
+            "HookName": "OnRackedWeaponUnload",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WeaponRack",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "UnloadWeapon",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "wHSar191wQJxzMj8vURIfiMgSNN2E2HE2/bkcDOXusQ=",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 68,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, a0,  this",
+            "HookTypeName": "Simple",
+            "Name": "OnRackedWeaponUnloaded",
+            "HookName": "OnRackedWeaponUnloaded",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WeaponRack",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "UnloadWeapon",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "wHSar191wQJxzMj8vURIfiMgSNN2E2HE2/bkcDOXusQ=",
+            "BaseHookName": "OnRackedWeaponUnload",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 55,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l4, l7, l0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnRackedWeaponLoad",
+            "HookName": "OnRackedWeaponLoad",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WeaponRack",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "LoadWeaponAmmo",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "SHaMLlFniWBu6S6ieEfsxPcTSu48X+hpIycNFJ1nRkY=",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 132,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l4, l7, l0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnRackedWeaponLoaded",
+            "HookName": "OnRackedWeaponLoaded",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WeaponRack",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "LoadWeaponAmmo",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "SHaMLlFniWBu6S6ieEfsxPcTSu48X+hpIycNFJ1nRkY=",
+            "BaseHookName": "OnRackedWeaponLoad",
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

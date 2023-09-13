@@ -19464,6 +19464,31 @@
             "BaseHookName": "OnRackedWeaponLoad",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 114,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnExplosion",
+            "HookName": "OnExplosion",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TimedExplosive",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Explode",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "gQJOyKoJME1ZvEUOtUiSxmjl0rW4TP/6LzVP734z5wc=",
+            "HookCategory": "Weapon"
+          }
         }
       ],
       "Modifiers": [

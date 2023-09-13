@@ -19489,6 +19489,31 @@
             "MSILHash": "FwNZxo+qwzmSg8CV/C4AeCqdMlORrFZ7MhV0An0YZCo=",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 112,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnTimedExplosiveExplode",
+            "HookName": "OnTimedExplosiveExplode",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TimedExplosive",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Explode",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "gQJOyKoJME1ZvEUOtUiSxmjl0rW4TP/6LzVP734z5wc=",
+            "HookCategory": "Weapon"
+          }
         }
       ],
       "Modifiers": [

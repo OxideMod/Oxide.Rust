@@ -19464,6 +19464,32 @@
             "BaseHookName": "OnRackedWeaponLoad",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 47,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnFastTrackTask",
+            "HookName": "OnFastTrackTask",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemCrafter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FastTrackTask",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "DTKREDlIPiOhZlo2TNDVreqVi9OcB3j6kv4GEWqCFzo=",
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

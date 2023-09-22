@@ -19514,6 +19514,32 @@
             "MSILHash": "gQJOyKoJME1ZvEUOtUiSxmjl0rW4TP/6LzVP734z5wc=",
             "HookCategory": "Weapon"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 47,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l2, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanFastTrackCraftTask",
+            "HookName": "CanFastTrackCraftTask",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ItemCrafter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FastTrackTask",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "DTKREDlIPiOhZlo2TNDVreqVi9OcB3j6kv4GEWqCFzo=",
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

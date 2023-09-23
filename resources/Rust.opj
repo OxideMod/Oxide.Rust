@@ -19540,6 +19540,143 @@
             "MSILHash": "DTKREDlIPiOhZlo2TNDVreqVi9OcB3j6kv4GEWqCFzo=",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "CanBeHomingTargeted [BaseHelicopter]",
+            "HookName": "CanBeHomingTargeted",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseHelicopter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsValidHomingTarget",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "P3Mx+v3adUs95vU27ANKY5mvZxgLUs14zJrrTfI5vlw=",
+            "HookCategory": "Weapon"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "CanBeHomingTargeted [CH47Helicopter]",
+            "HookName": "CanBeHomingTargeted",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CH47Helicopter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsValidHomingTarget",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "RQzLETIQY8oCXnENh9Yiq2D0HFlL85DvhJ8pbAWKDf4=",
+            "HookCategory": "Weapon"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "CanBeHomingTargeted [PlayerHelicopter]",
+            "HookName": "CanBeHomingTargeted",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerHelicopter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsValidHomingTarget",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "+siYREOERSgQrx0QBVskg2kktPkO0V5owZ2dS0/CT4I=",
+            "HookCategory": "Weapon"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "CanBeHomingTargeted [PatrolHelicopter]",
+            "HookName": "CanBeHomingTargeted",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatrolHelicopter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsValidHomingTarget",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "P3Mx+v3adUs95vU27ANKY5mvZxgLUs14zJrrTfI5vlw=",
+            "HookCategory": "Weapon"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "CanBeHomingTargeted [AttackHeliPilotFlare]",
+            "HookName": "CanBeHomingTargeted",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AttackHeliPilotFlare",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsValidHomingTarget",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "P3Mx+v3adUs95vU27ANKY5mvZxgLUs14zJrrTfI5vlw=",
+            "HookCategory": "Weapon"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "CanBeHomingTargeted [RoadFlare]",
+            "HookName": "CanBeHomingTargeted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RoadFlare",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsValidHomingTarget",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "P3Mx+v3adUs95vU27ANKY5mvZxgLUs14zJrrTfI5vlw=",
+            "HookCategory": "Weapon"
+          }
         }
       ],
       "Modifiers": [
@@ -47262,6 +47399,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::LaunchFlare",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "LaunchFlare",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "aSLaDNlUukd1XX46UmoyLOhDKL8+gu1nUg2qnuU5iBs="
+        },
+        {
+          "Name": "AttackHelicopter::TryFireFlare",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TryFireFlare",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "3N4Pi+r8mqu3JS+UfJm0M0cxYG/71a93wtr1c3Ku4Ew="
         }
       ],
       "Fields": [

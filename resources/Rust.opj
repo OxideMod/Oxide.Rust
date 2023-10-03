@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-Staging\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -161,7 +161,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "t9DATEZWTCzh0sIj2c2I/3mTW8nyx/zEkriNJfYZGLo=",
+            "MSILHash": "Mz8OVOWfo7orZFsI5nNmOKsUjBHsFlgwvedMr703KDg=",
             "HookCategory": "Entity"
           }
         },
@@ -367,7 +367,7 @@
                 "BaseEntity"
               ]
             },
-            "MSILHash": "DXGYUOaN9sda+dl+OO0hPrEr9VjmbPOsKuMx6wNrzXk=",
+            "MSILHash": "PL+WDRIKPkt3YCPBOAr8Oku5TqmDJwatWPfRyo+9z1k=",
             "HookCategory": "Entity"
           }
         },
@@ -391,7 +391,7 @@
                 "BaseEntity"
               ]
             },
-            "MSILHash": "DniKWF6OJl3yPLsP62J/G27rzTuobqV//dx/kjqsUdc=",
+            "MSILHash": "Q1jnPKdxgh+TMzIGsV4bfm7WkZOriHDzngvu1+rmc7w=",
             "HookCategory": "Entity"
           }
         },
@@ -573,7 +573,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "kwRBeaDF/lXGb5HX/0EDH6nwr/t32khnGPvv5lD1gus=",
+            "MSILHash": "UKFxlBXQ93lglq2Q3Js1KhTAtajnnIHfiv3sxTk2VRQ=",
             "HookCategory": "Player"
           }
         },
@@ -598,7 +598,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "YnxwUYWUmSANrz0QGF4x370ozKhTqREfOFspFGXTMU0=",
+            "MSILHash": "NJbDSVyLfuUtLAfF6Xfxe3tWA/zI6CIexhqtvRXwjwM=",
             "HookCategory": "Player"
           }
         },
@@ -1687,7 +1687,7 @@
                 "BaseCombatEntity"
               ]
             },
-            "MSILHash": "ZH5ak15iTXgP0xA6IEchu4nYyBRHgrhC8XBxd2QALUY=",
+            "MSILHash": "aD0cCKc4pZ950o0mSwxdt/68LF5yd+qOgFj2ShjWodo=",
             "HookCategory": "Turret"
           }
         },
@@ -1775,7 +1775,6 @@
             "HookTypeName": "Simple",
             "Name": "CanBuild",
             "HookName": "CanBuild",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Planner",
             "Flagged": false,
@@ -2100,7 +2099,6 @@
             "HookTypeName": "Simple",
             "Name": "OnEntityKill",
             "HookName": "OnEntityKill",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseNetworkable",
             "Flagged": false,
@@ -2271,7 +2269,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "zR2A/SjU86SfOsfqw63WOW7Q1SzYgGKwv1d9CCKDBlI=",
+            "MSILHash": "F6VNIjEiOjlbHLysNwMyrywyZDlyLAATkkD5MoiqQ/U=",
             "HookCategory": "Player"
           }
         },
@@ -2297,7 +2295,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "gJNxyN7HgHoPO/UC1IlTbF584KpL3BOdkDrTg/QxWJY=",
+            "MSILHash": "YryLKH1+6QFi+k6RhUP15lE70h3C71jP1pPBrbkifHk=",
             "HookCategory": "Server"
           }
         },
@@ -2333,7 +2331,6 @@
             "HookTypeName": "Simple",
             "Name": "OnSaveLoad",
             "HookName": "OnSaveLoad",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "SaveRestore",
             "Flagged": false,
@@ -2346,7 +2343,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "gJNxyN7HgHoPO/UC1IlTbF584KpL3BOdkDrTg/QxWJY=",
+            "MSILHash": "YryLKH1+6QFi+k6RhUP15lE70h3C71jP1pPBrbkifHk=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -2488,7 +2485,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "U7NB2yRwL0zqmH0ndN0gbcH3aZvhDwuuRSIldGQ3e6g=",
+            "MSILHash": "MsV8IZsOPoXBXl7+xsRXG4aEz8Rt+/Ef6cw9rTLsobE=",
             "HookCategory": "Turret"
           }
         },
@@ -3325,7 +3322,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "x9b3b0VlCMhG9z6Ndn2js67WF3L1FUPVyIrbk/b/uaE=",
+            "MSILHash": "eFVc7lWJS7gs6EH4td8/MRQYHzF2umC0lAPpWH2p2Tc=",
             "HookCategory": "Turret"
           }
         },
@@ -3442,7 +3439,6 @@
             "HookTypeName": "Simple",
             "Name": "CanMoveItem",
             "HookName": "CanMoveItem",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlayerInventory",
             "Flagged": false,
@@ -3811,7 +3807,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 24,
+            "InjectionIndex": 32,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l4, this",
@@ -3827,7 +3823,7 @@
               "ReturnType": "System.Boolean",
               "Parameters": []
             },
-            "MSILHash": "t68NPVu8WJJM1QmdJr49YmSMRbJ+FnxpFZ7CY5tg/DA=",
+            "MSILHash": "homQiS7NKYWI4riKwxCktVUA0GRS9fLJQktNyDKFz2c=",
             "HookCategory": "Player"
           }
         },
@@ -4531,7 +4527,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "PwJhBRgtUrz+np3vm/EbMygQ1oS+BqLVMM1gTYrGe7c=",
+            "MSILHash": "UMzA/kbKqkDLIZ7Dy8J8FbjnRyf10wjreYNeplgjDqI=",
             "HookCategory": "Turret"
           }
         },
@@ -4700,13 +4696,13 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 33,
+            "InjectionIndex": 42,
             "RemoveCount": 0,
             "Instructions": [
               {
                 "OpCode": "ldloca_s",
                 "OpType": "Variable",
-                "Operand": 0
+                "Operand": 1
               },
               {
                 "OpCode": "call",
@@ -4726,7 +4722,7 @@
               "ReturnType": "System.Boolean",
               "Parameters": []
             },
-            "MSILHash": "t68NPVu8WJJM1QmdJr49YmSMRbJ+FnxpFZ7CY5tg/DA=",
+            "MSILHash": "homQiS7NKYWI4riKwxCktVUA0GRS9fLJQktNyDKFz2c=",
             "BaseHookName": "CanBeTargeted [GunTrap]",
             "HookCategory": "Player"
           }
@@ -6197,7 +6193,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "aSqKpL3asLuwVwQrRUpIP5vsR8J84S8LcZ+vQd/Rd4g=",
+            "MSILHash": "KnJKq3HEZpSqiKAGqEaxunvTxxfBHXZX1D0mvYnBf4Y=",
             "HookCategory": "Player"
           }
         },
@@ -7535,7 +7531,7 @@
                 "NetworkableId"
               ]
             },
-            "MSILHash": "VYsBd3YMbInMVW9XShSHiuypCh1rIc2p+CtTJ5+4cFw=",
+            "MSILHash": "VcRBDdMJnHALXLHuF6UBXtNaTMZePvw9HjKRmWPLdvc=",
             "HookCategory": "Player"
           }
         },
@@ -8780,7 +8776,6 @@
             "HookTypeName": "Modify",
             "Name": "NoLimboGroupForPlayers [patch]",
             "HookName": "NoLimboGroupForPlayers [patch]",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseEntity",
             "Flagged": false,
@@ -12048,7 +12043,6 @@
             "HookTypeName": "Simple",
             "Name": "IOnEntitySaved",
             "HookName": "IOnEntitySaved",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseNetworkable",
             "Flagged": false,
@@ -14066,7 +14060,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 71,
+            "InjectionIndex": 100,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -14081,7 +14075,7 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 72
+                "Operand": 101
               }
             ],
             "HookTypeName": "Modify",
@@ -14096,7 +14090,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "renQbznUp9JDuCmvNzwCrsp/QlCZlIC5xvSXfdoUZ+E=",
+            "MSILHash": "zeZ5SsKJAJWGKNoFxEBoqimwiGvH7ToIxySz3nzrTLU=",
             "HookCategory": "_Patches"
           }
         },
@@ -14158,7 +14152,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "qLkZbS6GCEy+x8D9oKqbYqdK6E8vzKp8HqEh8OPtrZ0=",
+            "MSILHash": "PmO97Qj5AzAthE4Hwrkf4y6WfSlU1qgORhoMv/lBmzQ=",
             "HookCategory": "Entity"
           }
         },
@@ -14468,7 +14462,7 @@
               }
             ],
             "HookTypeName": "Modify",
-            "Name": "ConsumptionAmountField [AutoTurret]",
+            "Name": "ConsumptionAmountField [AutoTurret] [2]",
             "HookName": "ConsumptionAmountField [AutoTurret]",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "AutoTurret",
@@ -14516,7 +14510,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "mIbD3Rl6nfk+d7ltjZvxZargDv0VrHUWm3jQ3VpmQyc=",
+            "MSILHash": "qCWdx/Inf9bjmJBc3cIEgfvADM7GKcZKMLZooJKteHU=",
             "HookCategory": "_Patches"
           }
         },
@@ -15204,7 +15198,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "TwY1lZ4WO7DMZAqCK313DMnBWirPuEdfRAZyIGJUu64=",
+            "MSILHash": "3kz+W02Xgg+61RovOIk9WbZXbkH9ni2R3N/xdOxT7n0=",
             "HookCategory": "Turret"
           }
         },
@@ -15478,7 +15472,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "e9mfsCAAxxCLkvzfBg8j8eZPUYp1uOHkaRyuL6Krzi0=",
+            "MSILHash": "CB3aZCS6JzJBTM6AvmfKuGo/tkEKJdF6FCFQFdLe3QQ=",
             "HookCategory": "Turret"
           }
         },
@@ -15503,7 +15497,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "e9mfsCAAxxCLkvzfBg8j8eZPUYp1uOHkaRyuL6Krzi0=",
+            "MSILHash": "CB3aZCS6JzJBTM6AvmfKuGo/tkEKJdF6FCFQFdLe3QQ=",
             "BaseHookName": "OnTurretAssign",
             "HookCategory": "Turret"
           }
@@ -16693,7 +16687,6 @@
             "HookTypeName": "Simple",
             "Name": "OnServerInformationUpdated",
             "HookName": "OnServerInformationUpdated",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ServerMgr",
             "Flagged": false,
@@ -16703,7 +16696,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "I1mFFoKnzXOR9/ZZL/AHTAI9AcshE4R7AQ7flBU6Ngw=",
+            "MSILHash": "kKLu62+eeFe+ACB98F5I8zCySPq/rB90mzY5PlHXWLc=",
             "HookCategory": "Server"
           }
         },
@@ -18135,7 +18128,6 @@
             "HookTypeName": "Simple",
             "Name": "OnPlayerBanned [EAC]",
             "HookName": "OnPlayerBanned",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "EACServer",
             "Flagged": false,
@@ -18161,7 +18153,6 @@
             "HookTypeName": "Simple",
             "Name": "OnPlayerKicked [EAC]",
             "HookName": "OnPlayerKicked",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "EACServer",
             "Flagged": false,
@@ -19186,7 +19177,6 @@
             "HookTypeName": "Simple",
             "Name": "OnRackedWeaponMount",
             "HookName": "OnRackedWeaponMount",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WeaponRack",
             "Flagged": false,
@@ -19216,7 +19206,6 @@
             "HookTypeName": "Simple",
             "Name": "OnRackedWeaponMounted",
             "HookName": "OnRackedWeaponMounted",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WeaponRack",
             "Flagged": false,
@@ -19247,7 +19236,6 @@
             "HookTypeName": "Simple",
             "Name": "OnRackedWeaponSwap",
             "HookName": "OnRackedWeaponSwap",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WeaponRack",
             "Flagged": false,
@@ -19276,7 +19264,6 @@
             "HookTypeName": "Simple",
             "Name": "OnRackedWeaponSwapped",
             "HookName": "OnRackedWeaponSwapped",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WeaponRack",
             "Flagged": false,
@@ -19306,7 +19293,6 @@
             "HookTypeName": "Simple",
             "Name": "OnRackedWeaponTake",
             "HookName": "OnRackedWeaponTake",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WeaponRack",
             "Flagged": false,
@@ -19336,7 +19322,6 @@
             "HookTypeName": "Simple",
             "Name": "OnRackedWeaponTaken",
             "HookName": "OnRackedWeaponTaken",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WeaponRack",
             "Flagged": false,
@@ -19367,7 +19352,6 @@
             "HookTypeName": "Simple",
             "Name": "OnRackedWeaponUnload",
             "HookName": "OnRackedWeaponUnload",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WeaponRack",
             "Flagged": false,
@@ -19394,7 +19378,6 @@
             "HookTypeName": "Simple",
             "Name": "OnRackedWeaponUnloaded",
             "HookName": "OnRackedWeaponUnloaded",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WeaponRack",
             "Flagged": false,
@@ -19422,7 +19405,6 @@
             "HookTypeName": "Simple",
             "Name": "OnRackedWeaponLoad",
             "HookName": "OnRackedWeaponLoad",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WeaponRack",
             "Flagged": false,
@@ -19448,7 +19430,6 @@
             "HookTypeName": "Simple",
             "Name": "OnRackedWeaponLoaded",
             "HookName": "OnRackedWeaponLoaded",
-            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "WeaponRack",
             "Flagged": false,
@@ -27389,63 +27370,6 @@
             ],
             "Name": "cachedFuelFraction",
             "FullTypeName": "System.Single PlayerHelicopter::cachedFuelFraction",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "PlayerHelicopter::cachedPitch",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlayerHelicopter",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "cachedPitch",
-            "FullTypeName": "System.Single PlayerHelicopter::cachedPitch",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "PlayerHelicopter::cachedRoll",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlayerHelicopter",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "cachedRoll",
-            "FullTypeName": "System.Single PlayerHelicopter::cachedRoll",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "PlayerHelicopter::cachedYaw",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "PlayerHelicopter",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "cachedYaw",
-            "FullTypeName": "System.Single PlayerHelicopter::cachedYaw",
             "Parameters": []
           },
           "MSILHash": ""

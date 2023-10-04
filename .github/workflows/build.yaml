@@ -25,11 +25,8 @@ jobs:
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1
 
-      - name: Restore Packages
-        run: nuget restore Oxide.Rust.sln
-
       - name: Build Solution
-        run: msbuild Oxide.Rust.sln -t:rebuild -property:Configuration=Release -property:Version=2.0.${{ vars.VERSION }}${{ inputs.branch-postfix }}
+        run: msbuild Oxide.Rust.sln -t:rebuild -restore -property:Configuration=Release -property:Version=2.0.${{ vars.VERSION }}${{ inputs.branch-postfix }}
 
       - name: Compress Bundles
         run: |

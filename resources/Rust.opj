@@ -2492,6 +2492,31 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnGetTurretsInInterferenceRange",
+            "HookName": "OnGetTurretsInInterferenceRange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "GetTurretsInInterferenceRange",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Collections.Generic.List`1<AutoTurret>"
+              ]
+            },
+            "MSILHash": "Un2nwXkanimxPH5sDBX7/3tyj8Ryzq/+MrRhBbNNPHY=",
+            "HookCategory": "Turret"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 4,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,

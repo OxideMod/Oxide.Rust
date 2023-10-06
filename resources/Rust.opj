@@ -19700,6 +19700,79 @@
             },
             "MSILHash": "GmjYIqIW4D8C6nSJdJj6kHL6vWcrHcDl4k41KBXk0Hg="
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 32,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player, this",
+            "HookTypeName": "Simple",
+            "Name": "OnEventCollectablePickup",
+            "HookName": "OnEventCollectablePickup",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CollectableEasterEgg",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_PickUp",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "ESTNpAB+j+LJFoFVQIv6rKDYvSXYfd5UIURPYiEiaLs=",
+            "HookCategory": "Seasonal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "OnHuntEventStart",
+            "HookName": "OnHuntEventStart",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "EggHuntEvent",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "StartEvent",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "qGflhcMzTgsapIjm5f6rjNVwwXmPumESopl7ttKGNFc=",
+            "HookCategory": "Seasonal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 41,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "OnHuntEventEnd",
+            "HookName": "OnHuntEventEnd",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "EggHuntEvent",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Update",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "hZC14qXPE8buqkhbh6P6OLbPiKnMZVdbJjnmbC5sHPI=",
+            "HookCategory": "Seasonal"
+          }
         }
       ],
       "Modifiers": [
@@ -47403,6 +47476,25 @@
             "Parameters": []
           },
           "MSILHash": "3N4Pi+r8mqu3JS+UfJm0M0cxYG/71a93wtr1c3Ku4Ew="
+        },
+        {
+          "Name": "EggHuntEvent::_eggHunters",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "EggHuntEvent",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_eggHunters",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<System.UInt64,EggHuntEvent/EggHunter> EggHuntEvent::_eggHunters",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

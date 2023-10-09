@@ -8,8 +8,11 @@ on:
 jobs:
   build:
     name: Run Build
-    uses: ./.github/workflows/build.yaml
-    secrets: inherit
+    uses: OxideMod/Actions/.github/workflows/game-build.yaml@main
+    with:
+      game: "Rust"
+    secrets:
+      REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
 
   release:
     name: Create Release

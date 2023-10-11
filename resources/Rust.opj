@@ -19658,6 +19658,48 @@
             "MSILHash": "P3Mx+v3adUs95vU27ANKY5mvZxgLUs14zJrrTfI5vlw=",
             "HookCategory": "Weapon"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 4,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "OnInterferenceUpdate",
+            "HookName": "OnInterferenceUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "UpdateInterference",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "K+qvx4ffisU/vqrGYYkE53V3hbXa6lQRqRn804PKsCI="
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "OnInterferenceOthersUpdate",
+            "HookName": "OnInterferenceOthersUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "UpdateInterferenceOnOthers",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "GmjYIqIW4D8C6nSJdJj6kHL6vWcrHcDl4k41KBXk0Hg="
+          }
         }
       ],
       "Modifiers": [

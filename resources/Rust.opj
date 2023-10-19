@@ -19773,6 +19773,31 @@
             "MSILHash": "hZC14qXPE8buqkhbh6P6OLbPiKnMZVdbJjnmbC5sHPI=",
             "HookCategory": "Seasonal"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnPatrolHelicopterTakeDamage",
+            "HookName": "OnPatrolHelicopterTakeDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatrolHelicopter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Hurt",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "eqmrk1cs/LjuiXQJ+nBw142N/5BaJ8i+unxJ7/AIP0M=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

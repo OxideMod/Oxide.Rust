@@ -47522,6 +47522,1243 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::lastFailedDecayPosition",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastFailedDecayPosition",
+            "FullTypeName": "UnityEngine.Vector3 HotAirBalloon::lastFailedDecayPosition",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::spawnTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "spawnTime",
+            "FullTypeName": "System.Single HotAirBalloon::spawnTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::safeAreaRadius",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "safeAreaRadius",
+            "FullTypeName": "System.Single HotAirBalloon::safeAreaRadius",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::safeAreaOrigin",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "safeAreaOrigin",
+            "FullTypeName": "UnityEngine.Vector3 HotAirBalloon::safeAreaOrigin",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::CheckGlobal",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CheckGlobal",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity/Flags"
+            ]
+          },
+          "MSILHash": "RlEDINGrw2sV6TB6CJ5mZY82qL6xl2JZwDlum3fMays="
+        },
+        {
+          "Name": "HotAirBalloon::Flag_CanModifyEquipment",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "Flag_CanModifyEquipment",
+            "FullTypeName": "BaseEntity/Flags HotAirBalloon::Flag_CanModifyEquipment",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::Flag_FullInflated",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "Flag_FullInflated",
+            "FullTypeName": "BaseEntity/Flags HotAirBalloon::Flag_FullInflated",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::Flag_Grounded",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "Flag_Grounded",
+            "FullTypeName": "BaseEntity/Flags HotAirBalloon::Flag_Grounded",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::Flag_HalfInflated",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "Flag_HalfInflated",
+            "FullTypeName": "BaseEntity/Flags HotAirBalloon::Flag_HalfInflated",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HotAirBalloon::Flag_HasFuel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HotAirBalloon",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "Flag_HasFuel",
+            "FullTypeName": "BaseEntity/Flags HotAirBalloon::Flag_HasFuel",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GroundWatch::fails",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GroundWatch",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fails",
+            "FullTypeName": "System.Int32 GroundWatch::fails",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "GroundWatch::OnGround",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GroundWatch",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnGround",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "VqKeC/x53KAlamtwUdrfgFmIJgW4lVNpUlDaiYRwuns="
+        },
+        {
+          "Name": "GroundWatch::OnPhysicsNeighbourChanged",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "GroundWatch",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnPhysicsNeighbourChanged",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "AMcdivzYh+Riea9hXa0iDRE0uHp8BHivQWZYBZ040yE="
+        },
+        {
+          "Name": "PlayerHelicopter::waterSample",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "waterSample",
+            "FullTypeName": "UnityEngine.Transform PlayerHelicopter::waterSample",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::rotorBlurThreshold",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rotorBlurThreshold",
+            "FullTypeName": "System.Single PlayerHelicopter::rotorBlurThreshold",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::maxPitchAnim",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxPitchAnim",
+            "FullTypeName": "System.Single PlayerHelicopter::maxPitchAnim",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::maxRollAnim",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxRollAnim",
+            "FullTypeName": "System.Single PlayerHelicopter::maxRollAnim",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::maxYawAnim",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxYawAnim",
+            "FullTypeName": "System.Single PlayerHelicopter::maxYawAnim",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::fuelGaugeMax",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "fuelGaugeMax",
+            "FullTypeName": "System.Single PlayerHelicopter::fuelGaugeMax",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::timeSinceCachedFuelFraction",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceCachedFuelFraction",
+            "FullTypeName": "TimeSince PlayerHelicopter::timeSinceCachedFuelFraction",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::DisablePushing",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DisablePushing",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "1qQJns2qK0seaMHcf+YEeUCQ/vVSGZJ2eIrO0Wn56nI="
+        },
+        {
+          "Name": "PlayerHelicopter::ClearRadarLock",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ClearRadarLock",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "CyFfiZ8feO9RAhdXNO2dMVDr3VbRhMt/ykzn0fLccdc="
+        },
+        {
+          "Name": "PlayerHelicopter::ClearRadarWarning",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ClearRadarWarning",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "yzRT0hv6x2ajvt9cnYJmq6a03QjClOfyztTRDFU+UF8="
+        },
+        {
+          "Name": "PlayerHelicopter::ApplyForceWithoutWheels",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ApplyForceWithoutWheels",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "ZqltK7/FsIQlL0By0aMugdKtgiOup51GFHn+Yc14B8A="
+        },
+        {
+          "Name": "PlayerHelicopter::cachedPitch",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "cachedPitch",
+            "FullTypeName": "System.Single PlayerHelicopter::cachedPitch()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::cachedRoll",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "cachedRoll",
+            "FullTypeName": "System.Single PlayerHelicopter::cachedRoll()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerHelicopter::cachedYaw",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerHelicopter",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "cachedYaw",
+            "FullTypeName": "System.Single PlayerHelicopter::cachedYaw()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterTurret::WEAPON_Z_OFFSET_SCALE",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "WEAPON_Z_OFFSET_SCALE",
+            "FullTypeName": "System.Single AttackHelicopterTurret::WEAPON_Z_OFFSET_SCALE",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterTurret::GunState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "GunState",
+            "FullTypeName": "AttackHelicopterTurret/GunStatus AttackHelicopterTurret::GunState()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterTurret::attachedHeldEntity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "attachedHeldEntity",
+            "FullTypeName": "EntityRef`1<HeldEntity> AttackHelicopterTurret::attachedHeldEntity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterTurret::lastSentX",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastSentX",
+            "FullTypeName": "System.Single AttackHelicopterTurret::lastSentX",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterTurret::lastSentY",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastSentY",
+            "FullTypeName": "System.Single AttackHelicopterTurret::lastSentY",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterTurret::muzzleYOffset",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "muzzleYOffset",
+            "FullTypeName": "System.Single AttackHelicopterTurret::muzzleYOffset",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterTurret::turretHorizontal",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "turretHorizontal",
+            "FullTypeName": "UnityEngine.Transform AttackHelicopterTurret::turretHorizontal",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterTurret::turretSocket",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "turretSocket",
+            "FullTypeName": "UnityEngine.Transform AttackHelicopterTurret::turretSocket",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterTurret::turretVertical",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "turretVertical",
+            "FullTypeName": "UnityEngine.Transform AttackHelicopterTurret::turretVertical",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopterTurret::CanAcceptItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanAcceptItem",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "Yckoco+Tjy/0Bx7oj9+U/Qs/EWaaLaiAopXAcXRpXpQ="
+        },
+        {
+          "Name": "AttackHelicopterTurret::ClampEyeAngle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ClampEyeAngle",
+            "FullTypeName": "UnityEngine.Vector3",
+            "Parameters": [
+              "UnityEngine.Transform",
+              "UnityEngine.Vector3",
+              "UnityEngine.Vector2",
+              "UnityEngine.Vector2"
+            ]
+          },
+          "MSILHash": "cYpOHE3FpdChwgR5o9IpS96ePsZyikBBxiwar+kKMxc="
+        },
+        {
+          "Name": "AttackHelicopterTurret::IsValidWeapon",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsValidWeapon",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item"
+            ]
+          },
+          "MSILHash": "IhWu1YEDOe2hJnvrb9MLX4y29jfd6enNebCg+MzijtQ="
+        },
+        {
+          "Name": "AttackHelicopterTurret::RefreshGunState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RefreshGunState",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "PN+3dE5pXXQCfJT7vKiw1bGGHRnnsL+Q8cays/mECek="
+        },
+        {
+          "Name": "AttackHelicopterTurret::SetGunRotation",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetGunRotation",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Single",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "LROLN+Fh7iwm4itTvHc+JeDRBH6/azpp9MygioTumAA="
+        },
+        {
+          "Name": "AttackHelicopterTurret::TryFireWeapon",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TryFireWeapon",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "MPUSRXMtvI2zlkNncvVs6801DJVqLosQc6dY7VGb920="
+        },
+        {
+          "Name": "AttackHelicopterTurret::TryReload",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TryReload",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "M9eSRtiJsOz09sem1heXk72kOCn+YOLEPpJfFWAAvlU="
+        },
+        {
+          "Name": "AttackHelicopterTurret::UpdateAttachedWeapon",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateAttachedWeapon",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "MwDdGxdCzYgk/0s7oWx6BEYo9/GZP/mqCWpuxHQV6jw="
+        },
+        {
+          "Name": "AttackHelicopterTurret::HasOwner",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopterTurret",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0,
+              5
+            ],
+            "Name": "HasOwner",
+            "FullTypeName": "System.Boolean AttackHelicopterTurret::HasOwner()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::turretInstance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "turretInstance",
+            "FullTypeName": "EntityRef`1<AttackHelicopterTurret> AttackHelicopter::turretInstance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::rocketsInstance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rocketsInstance",
+            "FullTypeName": "EntityRef`1<AttackHelicopterRockets> AttackHelicopter::rocketsInstance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::timeSinceFailedFlareRPC",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceFailedFlareRPC",
+            "FullTypeName": "TimeSince AttackHelicopter::timeSinceFailedFlareRPC",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::timeSinceFailedWeaponFireRPC",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceFailedWeaponFireRPC",
+            "FullTypeName": "TimeSince AttackHelicopter::timeSinceFailedWeaponFireRPC",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::timeSinceLastGunnerInput",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceLastGunnerInput",
+            "FullTypeName": "TimeSince AttackHelicopter::timeSinceLastGunnerInput",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::gunnerInputState",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "gunnerInputState",
+            "FullTypeName": "AttackHelicopter/GunnerInputState AttackHelicopter::gunnerInputState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::FlareFireFailed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FlareFireFailed",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "PhmX4s3rWvA++OBWPOv2Co7v2fUpFrSZrNWLeOYHQzE="
+        },
+        {
+          "Name": "AttackHelicopter::MarkAllMountedPlayersAsHostile",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MarkAllMountedPlayersAsHostile",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "GWwkJDa4vBQfgKmnoMcoWOR7WVRqufQ8mM7oysDQGzs="
+        },
+        {
+          "Name": "AttackHelicopter::WeaponFireFailed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "WeaponFireFailed",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Int32",
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "dBqRojuefnvmF5ux0GfETfPZupMtZNv596I/fb1ptRY="
+        },
+        {
+          "Name": "AttackHelicopter::IN_GUNNER_VIEW_FLAG",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "IN_GUNNER_VIEW_FLAG",
+            "FullTypeName": "BaseEntity/Flags AttackHelicopter::IN_GUNNER_VIEW_FLAG",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::IN_SAFE_ZONE_FLAG",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "IN_SAFE_ZONE_FLAG",
+            "FullTypeName": "BaseEntity/Flags AttackHelicopter::IN_SAFE_ZONE_FLAG",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::rightFlareLaunchPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "rightFlareLaunchPos",
+            "FullTypeName": "UnityEngine.Transform AttackHelicopter::rightFlareLaunchPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::leftFlareLaunchPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "leftFlareLaunchPos",
+            "FullTypeName": "UnityEngine.Transform AttackHelicopter::leftFlareLaunchPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::flareLaunchVel",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "flareLaunchVel",
+            "FullTypeName": "System.Single AttackHelicopter::flareLaunchVel",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::pilotFlare",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "pilotFlare",
+            "FullTypeName": "GameObjectRef AttackHelicopter::pilotFlare",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AttackHelicopter::flareFireFX",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AttackHelicopter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "flareFireFX",
+            "FullTypeName": "GameObjectRef AttackHelicopter::flareFireFX",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::autoHover",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              0
+            ],
+            "Name": "autoHover",
+            "FullTypeName": "System.Boolean BaseHelicopter::autoHover()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseHelicopter::ForceMovementHandling",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseHelicopter",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "ForceMovementHandling",
+            "FullTypeName": "System.Boolean BaseHelicopter::ForceMovementHandling()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

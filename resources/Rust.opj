@@ -19827,6 +19827,98 @@
             "MSILHash": "ejawyZrQREe89G3RByEb4hfv1PdoaV4bNhtdjCD+LHI=",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnCoalingTowerStart",
+            "HookName": "OnCoalingTowerStart",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CoalingTower",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_Unload",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "gEb1ELb/bsqFL+Zc2QqgwATuXg+i3vkKE2/ZigjGsEM=",
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 121,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnCoalingTowerGather"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 13
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 121
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "Variable",
+                "Operand": 13
+              },
+              {
+                "OpCode": "ldc_r4",
+                "OpType": "Single",
+                "Operand": "0"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|Item|Remove(System.Single)"
+              },
+              {
+                "OpCode": "br_s",
+                "OpType": "Instruction",
+                "Operand": 146
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCoalingTowerGather",
+            "HookName": "OnCoalingTowerGather",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CoalingTower",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "EmptyTenPercent",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "WKcAMSehLVw6QkaTKXlvgDM+JjR6Zp5ipw/gwLIzYcc=",
+            "HookCategory": "Resource"
+          }
         }
       ],
       "Modifiers": [

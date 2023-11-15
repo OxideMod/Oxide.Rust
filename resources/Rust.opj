@@ -19791,6 +19791,54 @@
             "MSILHash": "eqmrk1cs/LjuiXQJ+nBw142N/5BaJ8i+unxJ7/AIP0M=",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 121,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l13 => l13",
+            "HookTypeName": "Simple",
+            "Name": "OnCoalingTowerUnload",
+            "HookName": "OnCoalingTowerUnload",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CoalingTower",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "EmptyTenPercent",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "WKcAMSehLVw6QkaTKXlvgDM+JjR6Zp5ipw/gwLIzYcc=",
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnCoalingTowerBeginUnload",
+            "HookName": "OnCoalingTowerBeginUnload",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CoalingTower",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_Unload",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "gEb1ELb/bsqFL+Zc2QqgwATuXg+i3vkKE2/ZigjGsEM=",
+            "HookCategory": "Resource"
+          }
         }
       ],
       "Modifiers": [

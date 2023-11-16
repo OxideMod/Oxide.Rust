@@ -17,7 +17,8 @@ namespace Oxide.Game.Rust.Cui
             var options = new JsonSerializerOptions
             {
                 WriteIndented = format,
-                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
+                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
             };
             return JsonSerializer.Serialize(elements, options).Replace("\\n", "\n");
         }
@@ -245,7 +246,6 @@ namespace Oxide.Game.Rust.Cui
         [JsonPropertyName("align")]
         public TextAnchor Align { get; set; }
 
-        // The color of the text
         [JsonPropertyName("color")]
         public string Color { get; set; }
 
@@ -296,6 +296,7 @@ namespace Oxide.Game.Rust.Cui
         [JsonPropertyName("sprite")]
         public string Sprite { get; set; }
 
+        [JsonPropertyName("color")]
         public string Color { get; set; }
 
         [JsonPropertyName("material")]
@@ -330,7 +331,6 @@ namespace Oxide.Game.Rust.Cui
         [JsonPropertyName("material")]
         public string Material { get; set; }
 
-        // The color of the image
         [JsonPropertyName("color")]
         public string Color { get; set; }
 
@@ -348,7 +348,6 @@ namespace Oxide.Game.Rust.Cui
         [JsonPropertyName("type")]
         public string Type => "UnityEngine.UI.Outline";
 
-        // Color for the effect
         [JsonPropertyName("color")]
         public string Color { get; set; }
 
@@ -383,7 +382,6 @@ namespace Oxide.Game.Rust.Cui
         [JsonPropertyName("align")]
         public TextAnchor Align { get; set; }
 
-        // The color of the text
         [JsonPropertyName("color")]
         public string Color { get; set; }
 

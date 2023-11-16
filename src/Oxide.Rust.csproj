@@ -29,6 +29,7 @@
     <PackageReference Include="Oxide.MySql" Version="2.0.*" />
     <PackageReference Include="Oxide.SQLite" Version="2.0.*" />
     <PackageReference Include="Oxide.Unity" Version="2.0.*" />
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
     <Reference Include="Assembly-CSharp" />
     <Reference Include="Assembly-CSharp-firstpass" />
     <Reference Include="Facepunch.Console" />
@@ -61,7 +62,7 @@
   </ItemGroup>
   <Target Name="AddGitBranchMeta" BeforeTargets="CoreGenerateAssemblyInfo">
     <Exec Command="git name-rev --name-only HEAD" WorkingDirectory="$(MSBuildProjectDirectory)" ConsoleToMSBuild="True">
-      <Output TaskParameter="ConsoleOutput" PropertyName="GitBranch"/>
+      <Output TaskParameter="ConsoleOutput" PropertyName="GitBranch" />
     </Exec>
     <ItemGroup>
       <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute" Condition="$(GitBranch) != ''">

@@ -34,6 +34,15 @@
       <ContentFiles Include="$(NuGetPackageRoot)\oxide.mysql\**\lib\any\MySql.*.dll; $(NuGetPackageRoot)\oxide.mysql\**\lib\any\System.*.dll" />
       <ContentFiles Include="$(NuGetPackageRoot)\oxide.mysql\**\lib\$(TargetFramework)\*.*" />
       <ContentFiles Include="$(NuGetPackageRoot)\oxide.sqlite\**\lib\any\*.*; $(NuGetPackageRoot)\oxide.sqlite\**\lib\$(TargetFramework)\*.*" />
+      <ContentFiles Include="$(NuGetPackageRoot)\microsoft.bcl.asyncinterfaces\**\lib\net462\*.dll" />
+      <ContentFiles Include="$(NuGetPackageRoot)\system.buffers\**\lib\net461\*.dll" />
+      <ContentFiles Include="$(NuGetPackageRoot)\system.memory\**\lib\net461\*.dll" />
+      <ContentFiles Include="$(NuGetPackageRoot)\system.numerics.vectors\**\lib\net46\*.dll" />
+      <ContentFiles Include="$(NuGetPackageRoot)\system.runtime.compilerservices.unsafe\**\lib\net461\*.dll" />
+      <ContentFiles Include="$(NuGetPackageRoot)\system.text.encodings.web\**\lib\net462\*.dll" />
+      <ContentFiles Include="$(NuGetPackageRoot)\system.text.json\**\lib\net462\*.dll" />
+      <ContentFiles Include="$(NuGetPackageRoot)\system.threading.tasks.extensions\**\lib\net461\*.dll" />
+      <ContentFiles Include="$(NuGetPackageRoot)\system.valuetuple\**\lib\net47\*.dll" />
       <ContentFiles Include="$(ProjectDir)\Dependencies\Base\*.dll" />
       <ContentX64Files Include="$(NuGetPackageRoot)\oxide.references\**\lib\any\x64\*.*; $(NuGetPackageRoot)\oxide.sqlite\**\lib\any\x64\*.*" />
       <ContentX86Files Include="$(NuGetPackageRoot)\oxide.references\**\lib\any\x86\*.*; $(NuGetPackageRoot)\oxide.sqlite\**\lib\any\x86\*.*" />

@@ -1,11 +1,10 @@
 ﻿extern alias References;
 
 using Oxide.Core;
-using References::Newtonsoft.Json;
-using References::Newtonsoft.Json.Converters;
-using References::Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,13 +14,15 @@ namespace Oxide.Game.Rust.Cui
     {
         public static string ToJson(List<CuiElement> elements, bool format = false)
         {
-            return JsonConvert.SerializeObject(elements, format ? Formatting.Indented : Formatting.None, new JsonSerializerSettings
+            var options = new JsonSerializerOptions
             {
-                DefaultValueHandling = DefaultValueHandling.Ignore
-            }).Replace("\\n", "\n");
+                WriteIndented = format,
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault
+            };
+            return JsonSerializer.Serialize(elements, options).Replace("\\n", "\n");
         }
 
-        public static List<CuiElement> FromJson(string json) => JsonConvert.DeserializeObject<List<CuiElement>>(json);
+        public static List<CuiElement> FromJson(string json) => JsonSerializer.Deserialize<List<CuiElement>>(json);
 
         public static string GetGuid() => Guid.NewGuid().ToString().Replace("-", string.Empty);
 
@@ -190,35 +191,36 @@ namespace Oxide.Game.Rust.Cui
 
     public class CuiElement
     {
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
-        [JsonProperty("parent")]
+        [JsonPropertyName("parent")]
         public string Parent { get; set; }
 
-        [JsonProperty("destroyUi", NullValueHandling=NullValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        [JsonPropertyName("destroyUi")]
         public string DestroyUi { get; set; }
 
-        [JsonProperty("components")]
+        [JsonPropertyName("components")]
         public List<ICuiComponent> Components { get; } = new List<ICuiComponent>();
 
-        [JsonProperty("fadeOut")]
+        [JsonPropertyName("fadeOut")]
         public float FadeOut { get; set; }
-        
-        [JsonProperty("update", NullValueHandling = NullValueHandling.Ignore)]
-		public bool Update { get; set; }
+
+        [JsonPropertyName("update")]
+        public bool Update { get; set; }
     }
 
     [JsonConverter(typeof(ComponentConverter))]
     public interface ICuiComponent
     {
-        [JsonProperty("type")]
+        [JsonPropertyName("type")]
         string Type { get; }
     }
 
     public interface ICuiColor
     {
-        [JsonProperty("color")]
+        [JsonPropertyName("color")]
         string Color { get; set; }
     }
 
@@ -227,294 +229,305 @@ namespace Oxide.Game.Rust.Cui
         public string Type => "UnityEngine.UI.Text";
 
         // The string value this text will display.
-        [JsonProperty("text")]
+        [JsonPropertyName("text")]
         public string Text { get; set; }
 
         // The size that the Font should render at
-        [JsonProperty("fontSize")]
+        [JsonPropertyName("fontSize")]
         public int FontSize { get; set; }
 
         // The Font used by the text
-        [JsonProperty("font")]
+        [JsonPropertyName("font")]
         public string Font { get; set; }
 
         // The positioning of the text relative to its RectTransform
-        [JsonConverter(typeof(StringEnumConverter))]
-        [JsonProperty("align")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        [JsonPropertyName("align")]
         public TextAnchor Align { get; set; }
 
+        // The color of the text
+        [JsonPropertyName("color")]
         public string Color { get; set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]
-        [JsonProperty("verticalOverflow")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        [JsonPropertyName("verticalOverflow")]
         public VerticalWrapMode VerticalOverflow { get; set; }
 
-        [JsonProperty("fadeIn")]
+        [JsonPropertyName("fadeIn")]
         public float FadeIn { get; set; }
     }
 
     public class CuiImageComponent : ICuiComponent, ICuiColor
     {
+        [JsonPropertyName("type")]
         public string Type => "UnityEngine.UI.Image";
 
-        [JsonProperty("sprite")]
+        [JsonPropertyName("sprite")]
         public string Sprite { get; set; }
 
-        [JsonProperty("material")]
+        [JsonPropertyName("material")]
         public string Material { get; set; }
 
+        [JsonPropertyName("color")]
         public string Color { get; set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]
-        [JsonProperty("imagetype")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        [JsonPropertyName("imagetype")]
         public Image.Type ImageType { get; set; }
 
-        [JsonProperty("png")]
+        [JsonPropertyName("png")]
         public string Png { get; set; }
 
-        [JsonProperty("fadeIn")]
+        [JsonPropertyName("fadeIn")]
         public float FadeIn { get; set; }
 
-        [JsonProperty("itemid")]
+        [JsonPropertyName("itemid")]
         public int ItemId { get; set; }
 
-        [JsonProperty("skinid")]
+        [JsonPropertyName("skinid")]
         public ulong SkinId { get; set; }
     }
 
     public class CuiRawImageComponent : ICuiComponent, ICuiColor
     {
+        [JsonPropertyName("type")]
         public string Type => "UnityEngine.UI.RawImage";
 
-        [JsonProperty("sprite")]
+        [JsonPropertyName("sprite")]
         public string Sprite { get; set; }
 
         public string Color { get; set; }
 
-        [JsonProperty("material")]
+        [JsonPropertyName("material")]
         public string Material { get; set; }
 
-        [JsonProperty("url")]
+        [JsonPropertyName("url")]
         public string Url { get; set; }
 
-        [JsonProperty("png")]
+        [JsonPropertyName("png")]
         public string Png { get; set; }
 
-        [JsonProperty("fadeIn")]
+        [JsonPropertyName("fadeIn")]
         public float FadeIn { get; set; }
     }
 
     public class CuiButtonComponent : ICuiComponent, ICuiColor
     {
+        [JsonPropertyName("type")]
         public string Type => "UnityEngine.UI.Button";
 
-        [JsonProperty("command")]
+        [JsonPropertyName("command")]
         public string Command { get; set; }
 
-        [JsonProperty("close")]
+        [JsonPropertyName("close")]
         public string Close { get; set; }
 
         // The sprite that is used to render this image
-        [JsonProperty("sprite")]
+        [JsonPropertyName("sprite")]
         public string Sprite { get; set; }
 
         // The Material set by the player
-        [JsonProperty("material")]
+        [JsonPropertyName("material")]
         public string Material { get; set; }
 
+        // The color of the image
+        [JsonPropertyName("color")]
         public string Color { get; set; }
 
         // How the Image is draw
-        [JsonConverter(typeof(StringEnumConverter))]
-        [JsonProperty("imagetype")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        [JsonPropertyName("imagetype")]
         public Image.Type ImageType { get; set; }
 
-        [JsonProperty("fadeIn")]
+        [JsonPropertyName("fadeIn")]
         public float FadeIn { get; set; }
     }
 
     public class CuiOutlineComponent : ICuiComponent, ICuiColor
     {
+        [JsonPropertyName("type")]
         public string Type => "UnityEngine.UI.Outline";
 
         // Color for the effect
+        [JsonPropertyName("color")]
         public string Color { get; set; }
 
         // How far is the shadow from the graphic
-        [JsonProperty("distance")]
+        [JsonPropertyName("distance")]
         public string Distance { get; set; }
 
         // Should the shadow inherit the alpha from the graphic
-        [JsonProperty("useGraphicAlpha")]
+        [JsonPropertyName("useGraphicAlpha")]
         public bool UseGraphicAlpha { get; set; }
     }
 
     public class CuiInputFieldComponent : ICuiComponent, ICuiColor
     {
+        [JsonPropertyName("type")]
         public string Type => "UnityEngine.UI.InputField";
 
         // The string value this text will display
-        [JsonProperty("text")]
+        [JsonPropertyName("text")]
         public string Text { get; set; } = string.Empty;
 
         // The size that the Font should render at
-        [JsonProperty("fontSize")]
+        [JsonPropertyName("fontSize")]
         public int FontSize { get; set; }
 
         // The Font used by the text
-        [JsonProperty("font")]
+        [JsonPropertyName("font")]
         public string Font { get; set; }
 
         // The positioning of the text relative to its RectTransform
-        [JsonConverter(typeof(StringEnumConverter))]
-        [JsonProperty("align")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        [JsonPropertyName("align")]
         public TextAnchor Align { get; set; }
 
+        // The color of the text
+        [JsonPropertyName("color")]
         public string Color { get; set; }
 
-        [JsonProperty("characterLimit")]
+        [JsonPropertyName("characterLimit")]
         public int CharsLimit { get; set; }
 
-        [JsonProperty("command")]
+        [JsonPropertyName("command")]
         public string Command { get; set; }
 
-        [JsonProperty("password")]
+        [JsonPropertyName("password")]
         public bool IsPassword { get; set; }
 
-        [JsonProperty("readOnly")]
+        [JsonPropertyName("readOnly")]
         public bool ReadOnly { get; set; }
 
-        [JsonProperty("needsKeyboard")]
+        [JsonPropertyName("needsKeyboard")]
         public bool NeedsKeyboard { get; set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]
-        [JsonProperty("lineType")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        [JsonPropertyName("lineType")]
         public InputField.LineType LineType { get; set; }
 
-        [JsonProperty("autofocus")]
+        [JsonPropertyName("autofocus")]
         public bool Autofocus { get; set; }
 
-        [JsonProperty("hudMenuInput")]
+        [JsonPropertyName("hudMenuInput")]
         public bool HudMenuInput { get; set; }
     }
 
     public class CuiCountdownComponent : ICuiComponent
     {
+        [JsonPropertyName("type")]
         public string Type => "Countdown";
 
-        [JsonProperty("endTime")]
+        [JsonPropertyName("endTime")]
         public int EndTime { get; set; }
 
-        [JsonProperty("startTime")]
+        [JsonPropertyName("startTime")]
         public int StartTime { get; set; }
 
-        [JsonProperty("step")]
+        [JsonPropertyName("step")]
         public int Step { get; set; }
 
-        [JsonProperty("command")]
+        [JsonPropertyName("command")]
         public string Command { get; set; }
 
-        [JsonProperty("fadeIn")]
+        [JsonPropertyName("fadeIn")]
         public float FadeIn { get; set; }
     }
 
     public class CuiNeedsCursorComponent : ICuiComponent
     {
+        [JsonPropertyName("type")]
         public string Type => "NeedsCursor";
     }
 
     public class CuiNeedsKeyboardComponent : ICuiComponent
     {
+        [JsonPropertyName("type")]
         public string Type => "NeedsKeyboard";
     }
 
     public class CuiRectTransformComponent : ICuiComponent
     {
+        [JsonPropertyName("type")]
         public string Type => "RectTransform";
 
         // The normalized position in the parent RectTransform that the lower left corner is anchored to
-        [JsonProperty("anchormin")]
+        [JsonPropertyName("anchormin")]
         public string AnchorMin { get; set; }
 
         // The normalized position in the parent RectTransform that the upper right corner is anchored to
-        [JsonProperty("anchormax")]
+        [JsonPropertyName("anchormax")]
         public string AnchorMax { get; set; }
 
         // The offset of the lower left corner of the rectangle relative to the lower left anchor
-        [JsonProperty("offsetmin")]
+        [JsonPropertyName("offsetmin")]
         public string OffsetMin { get; set; }
 
         // The offset of the upper right corner of the rectangle relative to the upper right anchor
-        [JsonProperty("offsetmax")]
+        [JsonPropertyName("offsetmax")]
         public string OffsetMax { get; set; }
     }
 
-    public class ComponentConverter : JsonConverter
+    public class ComponentConverter : JsonConverter<ICuiComponent>
     {
-        public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+        public override ICuiComponent Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
-            throw new NotImplementedException();
-        }
-
-        public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
-        {
-            JObject jObject = JObject.Load(reader);
-            string typeName = jObject["type"].ToString();
-            Type type;
-
-            switch (typeName)
+            using (JsonDocument doc = JsonDocument.ParseValue(ref reader))
             {
-                case "UnityEngine.UI.Text":
-                    type = typeof(CuiTextComponent);
-                    break;
+                JsonElement root = doc.RootElement;
 
-                case "UnityEngine.UI.Image":
-                    type = typeof(CuiImageComponent);
-                    break;
+                string typeName = root.GetProperty("type").GetString();
+                Type type = null;
 
-                case "UnityEngine.UI.RawImage":
-                    type = typeof(CuiRawImageComponent);
-                    break;
+                switch (typeName)
+                {
+                    case "UnityEngine.UI.Text":
+                        type = typeof(CuiTextComponent);
+                        break;
+                    case "UnityEngine.UI.Image":
+                        type = typeof(CuiImageComponent);
+                        break;
+                    case "UnityEngine.UI.RawImage":
+                        type = typeof(CuiRawImageComponent);
+                        break;
+                    case "UnityEngine.UI.Button":
+                        type = typeof(CuiButtonComponent);
+                        break;
+                    case "UnityEngine.UI.Outline":
+                        type = typeof(CuiOutlineComponent);
+                        break;
+                    case "UnityEngine.UI.InputField":
+                        type = typeof(CuiInputFieldComponent);
+                        break;
+                    case "Countdown":
+                        type = typeof(CuiCountdownComponent);
+                        break;
+                    case "NeedsCursor":
+                        type = typeof(CuiNeedsCursorComponent);
+                        break;
+                    case "NeedsKeyboard":
+                        type = typeof(CuiNeedsKeyboardComponent);
+                        break;
+                    case "RectTransform":
+                        type = typeof(CuiRectTransformComponent);
+                        break;
+                }
 
-                case "UnityEngine.UI.Button":
-                    type = typeof(CuiButtonComponent);
-                    break;
+                if (type == null)
+                {
+                    throw new JsonException("Unknown type encountered in JSON.");
+                }
 
-                case "UnityEngine.UI.Outline":
-                    type = typeof(CuiOutlineComponent);
-                    break;
-
-                case "UnityEngine.UI.InputField":
-                    type = typeof(CuiInputFieldComponent);
-                    break;
-
-                case "Countdown":
-                    type = typeof(CuiCountdownComponent);
-                    break;
-
-                case "NeedsCursor":
-                    type = typeof(CuiNeedsCursorComponent);
-                    break;
-
-                case "NeedsKeyboard":
-                    type = typeof(CuiNeedsKeyboardComponent);
-                    break;
-
-                case "RectTransform":
-                    type = typeof(CuiRectTransformComponent);
-                    break;
-
-                default:
-                    return null;
+                var jsonString = root.GetRawText();
+                return (ICuiComponent)JsonSerializer.Deserialize(jsonString, type, options);
             }
-
-            object target = Activator.CreateInstance(type);
-            serializer.Populate(jObject.CreateReader(), target);
-            return target;
         }
 
-        public override bool CanConvert(Type objectType) => objectType == typeof(ICuiComponent);
+        public override void Write(Utf8JsonWriter writer, ICuiComponent value, JsonSerializerOptions options)
+        {
+            JsonSerializer.Serialize(writer, value, value.GetType(), options);
+        }
 
-        public override bool CanWrite => false;
+        public override bool CanConvert(Type typeToConvert) => typeof(ICuiComponent).IsAssignableFrom(typeToConvert);
     }
 }

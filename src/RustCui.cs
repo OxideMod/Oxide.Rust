@@ -509,11 +509,8 @@ namespace Oxide.Game.Rust.Cui
                     case "RectTransform":
                         type = typeof(CuiRectTransformComponent);
                         break;
-                }
-
-                if (type == null)
-                {
-                    throw new JsonException("Unknown type encountered in JSON.");
+                    default:
+                        return null;
                 }
 
                 var jsonString = root.GetRawText();

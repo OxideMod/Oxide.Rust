@@ -19791,7 +19791,31 @@
             "MSILHash": "eqmrk1cs/LjuiXQJ+nBw142N/5BaJ8i+unxJ7/AIP0M=",
             "HookCategory": "Entity"
           }
-        }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 21,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, l2.text, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnNoteUpdate",
+            "HookName": "OnNoteUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "note",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "update",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "vjKQdP0N46tTgjES2QVPW+X/Tz43PQTx7Q9qCWGPjmw="
+          }
+		}
       ],
       "Modifiers": [
         {

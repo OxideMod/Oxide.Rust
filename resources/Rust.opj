@@ -48905,6 +48905,46 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "IOEntity::_processQueues",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IOEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_processQueues",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<IOEntity/QueueType,System.Collections.Generic.Queue`1<IOEntity>> IOEntity::_processQueues",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "IOEntity::_processQueueProfilerString",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IOEntity",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_processQueueProfilerString",
+            "FullTypeName": "System.Collections.Generic.Dictionary`2<IOEntity/QueueType,System.String> IOEntity::_processQueueProfilerString",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

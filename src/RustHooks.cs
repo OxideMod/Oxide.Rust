@@ -286,6 +286,16 @@ namespace Oxide.Game.Rust
                 return true;
             }
 
+            // Check if chat command
+            string chatCommandPrefix = CommandHandler.GetChatCommandPrefix(message);
+            if ( chatCommandPrefix != null )
+            {
+                TryRunPlayerCommand( basePlayer, message.Substring( chatCommandPrefix.Length ) );
+                return false;
+            }
+
+            message = message.EscapeRichText();
+
             // Check if using Rust+ app
             if (basePlayer == null || !basePlayer.IsConnected)
             {
@@ -305,8 +315,7 @@ namespace Oxide.Game.Rust
         /// <param name="basePlayer"></param>
         /// <param name="message"></param>
         /// <returns></returns>
-        [HookMethod("IOnPlayerCommand")]
-        private void IOnPlayerCommand(BasePlayer basePlayer, string message)
+        private void TryRunPlayerCommand(BasePlayer basePlayer, string message)
         {
             if (basePlayer == null)
             {
@@ -316,13 +325,13 @@ namespace Oxide.Game.Rust
             string str = message.Replace("\n", "").Replace("\r", "").Trim();
 
             // Check if it is a chat command
-            if (string.IsNullOrEmpty(str) || str[0] != '/' || str.Length <= 1)
+            if (string.IsNullOrEmpty(str))
             {
                 return;
             }
 
             // Parse the command
-            ParseCommand(str.TrimStart('/'), out string cmd, out string[] args);
+            ParseCommand(str, out string cmd, out string[] args);
             if (cmd == null)
             {
                 return;

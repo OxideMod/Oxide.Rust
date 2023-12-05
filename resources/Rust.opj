@@ -19014,30 +19014,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 86,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this.player, this.message",
-            "HookTypeName": "Simple",
-            "Name": "IOnPlayerCommand",
-            "HookName": "IOnPlayerCommand",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ConVar.Chat/<sayAs>d__18",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "MoveNext",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "iYnKlc55a6+MPJFdD5TPPrlc3MCC9S8TqbfO9DTb0xQ=",
-            "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 101,
+            "InjectionIndex": 76,
             "ReturnBehavior": 3,
             "ArgumentBehavior": 4,
             "ArgumentString": "this.userId, this.username, this.<strChatText>5__2, this.targetChannel, this.player => l1",
@@ -19054,20 +19031,19 @@
               "Parameters": []
             },
             "MSILHash": "iYnKlc55a6+MPJFdD5TPPrlc3MCC9S8TqbfO9DTb0xQ=",
-            "BaseHookName": "IOnPlayerCommand",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 123,
+            "InjectionIndex": 98,
             "RemoveCount": 0,
             "Instructions": [
               {
                 "OpCode": "leave",
                 "OpType": "Instruction",
-                "Operand": 810
+                "Operand": 803
               }
             ],
             "HookTypeName": "Modify",
@@ -19090,13 +19066,13 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 119,
+            "InjectionIndex": 94,
             "RemoveCount": 1,
             "Instructions": [
               {
                 "OpCode": "beq_s",
                 "OpType": "Instruction",
-                "Operand": 124
+                "Operand": 99
               }
             ],
             "HookTypeName": "Modify",

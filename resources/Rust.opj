@@ -48945,6 +48945,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::puttingDistance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "puttingDistance",
+            "FullTypeName": "System.Boolean PatrolHelicopterAI::puttingDistance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::maxOrbitDuration",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxOrbitDuration",
+            "FullTypeName": "System.Single PatrolHelicopterAI::maxOrbitDuration",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

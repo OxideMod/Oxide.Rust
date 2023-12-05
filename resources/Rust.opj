@@ -19791,6 +19791,30 @@
             "MSILHash": "eqmrk1cs/LjuiXQJ+nBw142N/5BaJ8i+unxJ7/AIP0M=",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "CanLockerAcceptItem",
+            "HookName": "CanLockerAcceptItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Locker",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ItemFilter",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "Item",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "ejawyZrQREe89G3RByEb4hfv1PdoaV4bNhtdjCD+LHI="
+          }
         }
       ],
       "Modifiers": [
@@ -48663,6 +48687,247 @@
             ]
           },
           "MSILHash": "Bh7JvB640mkZTlhc80wdGW/72y1NwtrQ5V6l1RbFzco="
+        },
+        {
+          "Name": "Locker::attireSize",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "attireSize",
+            "FullTypeName": "System.Int32 Locker::attireSize",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Locker::backpackSlotIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "backpackSlotIndex",
+            "FullTypeName": "System.Int32 Locker::backpackSlotIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Locker::beltSize",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "beltSize",
+            "FullTypeName": "System.Int32 Locker::beltSize",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Locker::columnSize",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "columnSize",
+            "FullTypeName": "System.Int32 Locker::columnSize",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Locker::maxGearSets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxGearSets",
+            "FullTypeName": "System.Int32 Locker::maxGearSets",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Locker::setSize",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "setSize",
+            "FullTypeName": "System.Int32 Locker::setSize",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Locker::GetRowType",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "GetRowType",
+            "FullTypeName": "Locker/RowType",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "X142z9YvpEs8zIQAwQVeHJUcMTTZpl4YSvEQy1+Gxso="
+        },
+        {
+          "Name": "Locker::IsBackpackSlot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsBackpackSlot",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "JYg5lecbc6wb7lTgyzYx3l60Z9RZBnQg+xQuaufju+Y="
+        },
+        {
+          "Name": "Locker::DoesWearableConflictWithRow",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DoesWearableConflictWithRow",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "zJ/BsRtxg97nwijqGTT8Z6Icafq1rao2HG4fT2TQNuo="
+        },
+        {
+          "Name": "Locker/RowType",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker/RowType",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "RowType",
+            "FullTypeName": "Locker/RowType",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Locker::isTransferringIndustrialItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "isTransferringIndustrialItem",
+            "FullTypeName": "System.Boolean Locker::isTransferringIndustrialItem",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Locker::clothingBuffer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Locker",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "clothingBuffer",
+            "FullTypeName": "Item[] Locker::clothingBuffer",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

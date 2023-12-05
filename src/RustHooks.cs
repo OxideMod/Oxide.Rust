@@ -290,7 +290,7 @@ namespace Oxide.Game.Rust
             string chatCommandPrefix = CommandHandler.GetChatCommandPrefix(message);
             if ( chatCommandPrefix != null )
             {
-                TryRunPlayerCommand( basePlayer, message.Substring( chatCommandPrefix.Length ) );
+                TryRunPlayerCommand( basePlayer, message, chatCommandPrefix );
                 return false;
             }
 
@@ -315,7 +315,7 @@ namespace Oxide.Game.Rust
         /// <param name="basePlayer"></param>
         /// <param name="message"></param>
         /// <returns></returns>
-        private void TryRunPlayerCommand(BasePlayer basePlayer, string message)
+        private void TryRunPlayerCommand(BasePlayer basePlayer, string message, string commandPrefix)
         {
             if (basePlayer == null)
             {
@@ -331,7 +331,7 @@ namespace Oxide.Game.Rust
             }
 
             // Parse the command
-            ParseCommand(str, out string cmd, out string[] args);
+            ParseCommand(str.Substring(commandPrefix.Length), out string cmd, out string[] args);
             if (cmd == null)
             {
                 return;

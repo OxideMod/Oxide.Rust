@@ -48987,6 +48987,27 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Signage::LogEdit",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Signage",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "LogEdit",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BasePlayer"
+            ]
+          },
+          "MSILHash": "eNuCiWn8eTym4JirD9VpXY1bQc5CUfkBoONv78Du0BM="
         }
       ],
       "Fields": [

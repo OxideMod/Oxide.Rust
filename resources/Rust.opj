@@ -49077,6 +49077,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "SimplePrivilege::AtMaxAuthCapacity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SimplePrivilege",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "AtMaxAuthCapacity",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "vHOeWCPVGl2HYqhCUFpfU0uXUNx20rZ0M+7N6MTMTSU="
+        },
+        {
+          "Name": "SimplePrivilege::UpdateMaxAuthCapacity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SimplePrivilege",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "UpdateMaxAuthCapacity",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "IAIiIX4tyT9lmVHY9LhEsXVWfy18bw4ZLKuYsK1BO6U="
         }
       ],
       "Fields": [

@@ -19919,6 +19919,32 @@
             "MSILHash": "WKcAMSehLVw6QkaTKXlvgDM+JjR6Zp5ipw/gwLIzYcc=",
             "HookCategory": "Resource"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 15,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnPatrolHelicopterKill",
+            "HookName": "OnPatrolHelicopterKill",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatrolHelicopter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Hurt",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "eqmrk1cs/LjuiXQJ+nBw142N/5BaJ8i+unxJ7/AIP0M=",
+            "BaseHookName": "OnPatrolHelicopterTakeDamage",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

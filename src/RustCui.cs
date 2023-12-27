@@ -35,7 +35,7 @@ namespace Oxide.Game.Rust.Cui
                     }
                 }
             }
-            return stringBuilder.ToString().Replace("\\n", "\n");
+            return stringBuilder.Replace("\\n", "\n").ToString();
         }
 
 

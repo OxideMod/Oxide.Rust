@@ -638,16 +638,5 @@ namespace Oxide.Game.Rust
         }
 
         #endregion Server Hooks
-
-        #region Depricated Hooks
-
-        [HookMethod( "OnMapMarkerRemove" )]
-        private object OnMapMarkerRemove(BasePlayer player, List<ProtoBuf.MapNote> mapMarker, int index)
-        {
-            return Interface.Oxide.CallDeprecatedHook("OnMapMarkerRemove", "OnMapMarkerRemove(BasePlayer player, List<MapNote> mapMarker, int index)",
-                new DateTime(2023, 12, 31), player, mapMarker[index]);
-        }
-
-        #endregion
     }
 }

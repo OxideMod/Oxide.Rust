@@ -317,9 +317,10 @@ namespace Oxide.Game.Rust
 
             string output = $"Listing {loadedPlugins.Length + unloadedPluginErrors.Count} plugins:"; // TODO: Localization
             int number = 1;
+
             foreach (Plugin plugin in loadedPlugins.Where(p => p.Filename != null))
             {
-                output += $"\n  {number++:00} \"{plugin.Title}\" ({plugin.Version}) by {plugin.Author} ({plugin.TotalHookTime:0.00}s) - {plugin.Filename.Basename()}";
+                output += $"\n  {number++:00} \"{plugin.Title}\" ({plugin.Version}) by {plugin.Author} ({plugin.TotalHookTime:0.00}s) - ({FormatBytes(plugin.TotalHookMemory)}) - {plugin.Filename.Basename()}";
             }
 
             foreach (string pluginName in unloadedPluginErrors.Keys)
@@ -328,6 +329,14 @@ namespace Oxide.Game.Rust
             }
 
             player.Reply(output);
+        }
+
+        private static string FormatBytes(long bytes)
+        {
+            if (bytes < 1024) return $"{bytes:0} B";
+            if (bytes < 1048576) return $"{bytes / 1024:0} KB";
+            if (bytes < 1073741824) return $"{bytes / 1048576:0} MB";
+            return $"{bytes / 1073741824:0} GB";
         }
 
         #endregion Plugins Command

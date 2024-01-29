@@ -357,25 +357,25 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Text);
             }
 
-            if (!string.IsNullOrEmpty(Font) && Font != "robotocondensed-bold.ttf")
+            if (!string.IsNullOrEmpty(Font))
             {
                 jsonWriter.WritePropertyName("font");
                 jsonWriter.WriteValue(Font);
             }
 
-            if (FontSize != 14 && FontSize != 0)
+            if (FontSize != 0)
             {
                 jsonWriter.WritePropertyName("fontSize");
                 jsonWriter.WriteValue(FontSize);
             }
 
-            if (Align != TextAnchor.UpperLeft)
+            if (Align != default(TextAnchor))
             {
                 jsonWriter.WritePropertyName("align");
                 jsonWriter.WriteValue(Align.ToString());
             }
 
-            if (!string.IsNullOrEmpty(Color) && Color != "1 1 1 1")
+            if (!string.IsNullOrEmpty(Color))
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
@@ -432,19 +432,19 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("UnityEngine.UI.Image");
 
-            if (!string.IsNullOrEmpty(Sprite) && Sprite != "assets/content/ui/ui.background.tile.psd")
+            if (!string.IsNullOrEmpty(Sprite))
             {
                 jsonWriter.WritePropertyName("sprite");
                 jsonWriter.WriteValue(Sprite);
             }
 
-            if (!string.IsNullOrEmpty(Material) && Material != "assets/icons/iconmaterial.mat")
+            if (!string.IsNullOrEmpty(Material))
             {
                 jsonWriter.WritePropertyName("material");
                 jsonWriter.WriteValue(Material);
             }
 
-            if (!string.IsNullOrEmpty(Color) && Color != "1 1 1 1")
+            if (!string.IsNullOrEmpty(Color))
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
@@ -512,19 +512,19 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("UnityEngine.UI.RawImage");
 
-            if (!string.IsNullOrEmpty(Sprite) && Sprite != "assets/content/ui/ui.background.tile.psd")
+            if (!string.IsNullOrEmpty(Sprite))
             {
                 jsonWriter.WritePropertyName("sprite");
                 jsonWriter.WriteValue(Sprite);
             }
 
-            if (!string.IsNullOrEmpty(Color) && Color != "1 1 1 1")
+            if (!string.IsNullOrEmpty(Color))
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
             }
 
-            if (!string.IsNullOrEmpty(Material) && Material != "assets/icons/iconmaterial.mat")
+            if (!string.IsNullOrEmpty(Material))
             {
                 jsonWriter.WritePropertyName("material");
                 jsonWriter.WriteValue(Material);
@@ -599,19 +599,19 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Close);
             }
 
-            if (!string.IsNullOrEmpty(Sprite) && Sprite != "assets/content/ui/ui.background.tile.psd")
+            if (!string.IsNullOrEmpty(Sprite))
             {
                 jsonWriter.WritePropertyName("sprite");
                 jsonWriter.WriteValue(Sprite);
             }
 
-            if (!string.IsNullOrEmpty(Material) && Material != "assets/icons/iconmaterial.mat")
+            if (!string.IsNullOrEmpty(Material))
             {
                 jsonWriter.WritePropertyName("material");
                 jsonWriter.WriteValue(Material);
             }
 
-            if (!string.IsNullOrEmpty(Color) && Color != "1 1 1 1")
+            if (!string.IsNullOrEmpty(Color))
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
@@ -655,7 +655,7 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("UnityEngine.UI.Outline");
 
-            if (!string.IsNullOrEmpty(Color) && Color != "1 1 1 1")
+            if (!string.IsNullOrEmpty(Color))
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
@@ -738,25 +738,25 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Text);
             }
 
-            if (FontSize != 14 && FontSize != 0)
+            if (FontSize != 0)
             {
                 jsonWriter.WritePropertyName("fontSize");
                 jsonWriter.WriteValue(FontSize);
             }
 
-            if (!string.IsNullOrEmpty(Font) && Font != "robotocondensed-bold.ttf")
+            if (!string.IsNullOrEmpty(Font))
             {
                 jsonWriter.WritePropertyName("font");
                 jsonWriter.WriteValue(Font);
             }
 
-            if (Align != TextAnchor.UpperLeft)
+            if (Align != default(TextAnchor))
             {
                 jsonWriter.WritePropertyName("align");
                 jsonWriter.WriteValue(Align.ToString());
             }
 
-            if (!string.IsNullOrEmpty(Color) && Color != "1 1 1 1")
+            if (!string.IsNullOrEmpty(Color))
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
@@ -928,25 +928,25 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("RectTransform");
 
-            if (!string.IsNullOrEmpty(AnchorMin) && AnchorMin != "0 0")
+            if (!string.IsNullOrEmpty(AnchorMin))
             {
                 jsonWriter.WritePropertyName("anchormin");
                 jsonWriter.WriteValue(AnchorMin);
             }
 
-            if (!string.IsNullOrEmpty(AnchorMax) && AnchorMax != "1 1")
+            if (!string.IsNullOrEmpty(AnchorMax))
             {
                 jsonWriter.WritePropertyName("anchormax");
                 jsonWriter.WriteValue(AnchorMax);
             }
 
-            if (!string.IsNullOrEmpty(OffsetMin) && OffsetMin != "0 0")
+            if (!string.IsNullOrEmpty(OffsetMin))
             {
                 jsonWriter.WritePropertyName("offsetmin");
                 jsonWriter.WriteValue(OffsetMin);
             }
 
-            if (!string.IsNullOrEmpty(OffsetMax) && OffsetMax != "1 1")
+            if (!string.IsNullOrEmpty(OffsetMax))
             {
                 jsonWriter.WritePropertyName("offsetmax");
                 jsonWriter.WriteValue(OffsetMax);

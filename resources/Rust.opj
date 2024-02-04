@@ -17985,6 +17985,29 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 9,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnBackpackDrop",
+            "HookName": "OnBackpackDrop",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerInventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryDropBackpack",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "ogPLODIcNBZEZ/Su5e4sakg2XXga+cVxJ1hfqszaSO8=",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 171,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,

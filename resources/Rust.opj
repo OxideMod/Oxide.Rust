@@ -19968,6 +19968,31 @@
             "BaseHookName": "OnPatrolHelicopterTakeDamage",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerDig",
+            "HookName": "OnPlayerDig",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseDiggableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Dig",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "hwE5njN8uaZ8QPRT3en/QVQC+YO9h2fYtzlbHRdYV+4=",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

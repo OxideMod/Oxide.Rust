@@ -49234,6 +49234,25 @@
             "Parameters": []
           },
           "MSILHash": "IAIiIX4tyT9lmVHY9LhEsXVWfy18bw4ZLKuYsK1BO6U="
+        },
+        {
+          "Name": "LegacyShelter::lastInteractedWithDoor",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "LegacyShelter",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastInteractedWithDoor",
+            "FullTypeName": "System.Single LegacyShelter::lastInteractedWithDoor",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

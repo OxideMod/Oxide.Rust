@@ -5,79 +5,102 @@ using Oxide.Game.Rust.Libraries.Covalence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Event = Oxide.Core.Event;
 
 namespace Oxide.Game.Rust.Libraries
 {
-    /// <summary>
-    /// A library containing functions for adding console and chat commands
-    /// </summary>
     public class Command : Library
     {
-        internal struct PluginCallback
-        {
-            public readonly Plugin Plugin;
-            public readonly string Name;
-            public Func<ConsoleSystem.Arg, bool> Call;
+        private readonly HashSet<string> consoleCommands;
+        private readonly HashSet<string> chatCommands;
+        private readonly Dictionary<Plugin, Event.Callback<Plugin, PluginManager>> pluginRemovedFromManager;
 
-            public PluginCallback(Plugin plugin, string name)
+        public Command()
+        {
+            consoleCommands = new HashSet<string>();
+            chatCommands = new HashSet<string>();
+            pluginRemovedFromManager = new Dictionary<Plugin, Event.Callback<Plugin, PluginManager>>();
+        }
+
+        [LibraryFunction("AddChatCommand")]
+        public void AddChatCommand(string name, Plugin plugin, Action<BasePlayer, string, string[]> callback)
+        {
+            name = name.ToLowerInvariant();
+            if (!CanOverrideCommand(name, "chat"))
             {
-                Plugin = plugin;
-                Name = name;
-                Call = null;
+                Interface.Oxide.LogError($"{plugin?.Name ?? "An unknown plugin"} tried to register command '{name}', which already exists and cannot be overridden!");
+                return;
             }
 
-            public PluginCallback(Plugin plugin, Func<ConsoleSystem.Arg, bool> callback)
+            if (chatCommands.Contains(name))
             {
-                Plugin = plugin;
-                Call = callback;
-                Name = null;
+                Interface.Oxide.LogWarning($"{plugin?.Name ?? "An unknown plugin"} has replaced the '{name}' chat command previously registered.");
+            }
+
+            chatCommands.Add(name);
+            pluginRemovedFromManager[plugin] = plugin.OnRemovedFromManager.Add(plugin_OnRemovedFromManager);
+        }
+
+        [LibraryFunction("AddConsoleCommand")]
+        public void AddConsoleCommand(string command, Plugin plugin, Func<ConsoleSystem.Arg, bool> callback)
+        {
+            string name = GetCommandName(command);
+            if (!CanOverrideCommand(name, "console"))
+            {
+                Interface.Oxide.LogError($"{plugin?.Name ?? "An unknown plugin"} tried to register command '{name}', which already exists and cannot be overridden!");
+                return;
+            }
+
+            consoleCommands.Add(name);
+            pluginRemovedFromManager[plugin] = plugin.OnRemovedFromManager.Add(plugin_OnRemovedFromManager);
+        }
+
+        [LibraryFunction("RemoveChatCommand")]
+        public void RemoveChatCommand(string command, Plugin plugin)
+        {
+            command = command.ToLowerInvariant();
+            if (chatCommands.Remove(command))
+            {
+                pluginRemovedFromManager.Remove(plugin);
             }
         }
 
-        internal class ConsoleCommand
+        [LibraryFunction("RemoveConsoleCommand")]
+        public void RemoveConsoleCommand(string command, Plugin plugin)
         {
-            public readonly string Name;
-            public PluginCallback Callback;
-            public readonly ConsoleSystem.Command RustCommand;
-            public Action<ConsoleSystem.Arg> OriginalCallback;
-            internal readonly Permission permission = Interface.Oxide.GetLibrary<Permission>();
-
-            public ConsoleCommand(string name)
+            string name = GetCommandName(command);
+            if (consoleCommands.Remove(name))
             {
-                Name = name;
-                string[] splitName = Name.Split('.');
-                RustCommand = new ConsoleSystem.Command
-                {
-                    Name = splitName[1],
-                    Parent = splitName[0],
-                    FullName = name,
-                    ServerUser = true,
-                    ServerAdmin = true,
-                    Client = true,
-                    ClientInfo = false,
-                    Variable = false,
-                    Call = HandleCommand
-                };
-            }
-
-            public void AddCallback(Plugin plugin, string name) => Callback = new PluginCallback(plugin, name);
-
-            public void AddCallback(Plugin plugin, Func<ConsoleSystem.Arg, bool> callback) => Callback = new PluginCallback(plugin, callback);
-
-            public void HandleCommand(ConsoleSystem.Arg arg)
-            {
-                Callback.Plugin?.TrackStart();
-                Callback.Call(arg);
-                Callback.Plugin?.TrackEnd();
+                pluginRemovedFromManager.Remove(plugin);
             }
         }
 
-        internal class ChatCommand
+        private void plugin_OnRemovedFromManager(Plugin sender, PluginManager manager)
         {
-            public readonly string Name;
-            public readonly Plugin Plugin;
-            private readonly Action<BasePlayer, string, string[]> _callback;
+            consoleCommands.RemoveWhere(cmd => cmd.Plugin == sender);
+            chatCommands.RemoveWhere(cmd => cmd.Plugin == sender);
+            pluginRemovedFromManager.Remove(sender);
+        }
+
+        private string GetCommandName(string command)
+        {
+            string[] split = command.Split('.');
+            return split.Length >= 2 ? $"{split[0].Trim().ToLowerInvariant()}.{string.Join(".", split.Skip(1).ToArray())}" : split[0].Trim().ToLowerInvariant();
+        }
+
+        private bool CanOverrideCommand(string command, string type)
+        {
+            if (type == "chat")
+            {
+                return !chatCommands.Contains(command);
+            }
+            else if (type == "console")
+            {
+                return !consoleCommands.Contains(command);
+            }
+            return false;
+        }
+    }
+}
 
             public ChatCommand(string name, Plugin plugin, Action<BasePlayer, string, string[]> callback)
             {

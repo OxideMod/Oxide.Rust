@@ -19945,6 +19945,57 @@
             "BaseHookName": "OnPatrolHelicopterTakeDamage",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 47,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,l2,l0,l1",
+            "HookTypeName": "Simple",
+            "Name": "CanPoweredLightsAddPoint",
+            "HookName": "CanPoweredLightsAddPoint",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PoweredLightsDeployer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AddPoint",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "nuXk2GzymJvlqWPxO2Z9lQuOOR+eproc3t7wdC/3gYg=",
+            "HookCategory": "Structure"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 34,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnCopyInfoToSign",
+            "HookName": "OnCopyInfoToSign",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SignContent",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CopyInfoToSign",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ISignage",
+                "IUGCBrowserEntity"
+              ]
+            },
+            "MSILHash": "xbbd0GYEV2F/0CKPNd0P7N7ngS9luA2TXR1WMv+UkvE=",
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [

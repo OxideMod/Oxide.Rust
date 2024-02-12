@@ -49234,6 +49234,577 @@
             "Parameters": []
           },
           "MSILHash": "IAIiIX4tyT9lmVHY9LhEsXVWfy18bw4ZLKuYsK1BO6U="
+        },
+        {
+          "Name": "AutoTurret::authDirty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "authDirty",
+            "FullTypeName": "System.Boolean AutoTurret::authDirty",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::hasPotentialUnauthedTarget",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hasPotentialUnauthedTarget",
+            "FullTypeName": "System.Boolean AutoTurret::hasPotentialUnauthedTarget",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::nearbyTurrets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nearbyTurrets",
+            "FullTypeName": "System.Collections.Generic.HashSet`1<AutoTurret> AutoTurret::nearbyTurrets",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::interferenceUpdateList",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "interferenceUpdateList",
+            "FullTypeName": "System.Collections.Generic.HashSet`1<AutoTurret> AutoTurret::interferenceUpdateList",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "AutoTurret::OnEntityEnterTrigger",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnEntityEnterTrigger",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseNetworkable"
+            ]
+          },
+          "MSILHash": "6oocVEfPy3JaQpcrvhyiW5h2sU2Ii8G+sNaHscdj34I="
+        },
+        {
+          "Name": "AutoTurret::TryRegisterForInterferenceUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TryRegisterForInterferenceUpdate",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "meMXC636Z6wfHJYIMcLXM5ARSC1aLMBnKHrG7m9YM7w="
+        },
+        {
+          "Name": "AutoTurret::UpdateInterference",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateInterference",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "i0ew5dylOX3/lVp+DOZJlgiC9JgXT349ijPbCdS5hgE="
+        },
+        {
+          "Name": "AutoTurret::UpdateInterferenceOnOthers",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateInterferenceOnOthers",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "IlYsZZW6RY+cOgKlZmgfI1SWDOAb/HxBaRkxcZ+KcoA="
+        },
+        {
+          "Name": "AutoTurret::UpdateNearbyTurrets",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateNearbyTurrets",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "vZ3Q84yEKDxy1jdMTwOBDTEiYuNd+ZO8iIMZobA8CZo="
+        },
+        {
+          "Name": "AutoTurret::PreventDuplicatesInQueue",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "AutoTurret",
+          "Type": 2,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1,
+              5
+            ],
+            "Name": "PreventDuplicatesInQueue",
+            "FullTypeName": "System.Boolean AutoTurret::PreventDuplicatesInQueue()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PlayerInventory::AddBackpackContentsToList",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "AddBackpackContentsToList",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Collections.Generic.List`1<Item>"
+            ]
+          },
+          "MSILHash": "StRzOgoKrMiSA4xq1HX97RPpnPGzkQ3rpT2KWnIlaBM="
+        },
+        {
+          "Name": "PlayerInventory::OnContentsDirty",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnContentsDirty",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "vpHZ7Ts4G2gxXFN6coDVyjf3EqcmVsE4ZD0b1p+ESmQ="
+        },
+        {
+          "Name": "PlayerInventory::CanMoveItemsFrom",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanMoveItemsFrom",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "BaseEntity",
+              "Item"
+            ]
+          },
+          "MSILHash": "UghA5x6CjV1bo+yG9KJKKMhndGP9MW1BGHY8iYJ3hzU="
+        },
+        {
+          "Name": "PlayerInventory::OnClothingChanged",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnClothingChanged",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Item",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "4e4rHaVfNxrbTapUITWZTuHfOtwc/QagwJlFD3fo3rY="
+        },
+        {
+          "Name": "PlayerInventory::OnItemRemoved",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "OnItemRemoved",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Item"
+            ]
+          },
+          "MSILHash": "Q0qJEcdAkWaIqWScOnjPGhQOUoB0ob9zx3hZoRk39vc="
+        },
+        {
+          "Name": "PlayerInventory::CanStoreInInventory",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanStoreInInventory",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "P3Mx+v3adUs95vU27ANKY5mvZxgLUs14zJrrTfI5vlw="
+        },
+        {
+          "Name": "PlayerInventory::CanEquipItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanEquipItem",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "cuGlDcgNPMjPRJJSayAR2Lr7erSR6Kmpwi0HvKpWJNw="
+        },
+        {
+          "Name": "PlayerInventory::CanWearItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanWearItem",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "MHRMUOX8mfxkOyI1apgj5xABCNzyjwlEYx+/bOklOrs="
+        },
+        {
+          "Name": "PlayerInventory::CanWearItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanWearItem",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item",
+              "System.Boolean",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "Uh0F0OoFY8bqEmPGiWyzDGT5XHjkqe1t6L9uGwL0rUU="
+        },
+        {
+          "Name": "PlayerInventory::CanReplaceBackpack",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanReplaceBackpack",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item"
+            ]
+          },
+          "MSILHash": "hwccHF2X3vdxojRgqusVjfgd9LsaUQNqfiJTL5fQKZY="
+        },
+        {
+          "Name": "PlayerInventory::CanEquipParachute",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanEquipParachute",
+            "FullTypeName": "System.Boolean",
+            "Parameters": []
+          },
+          "MSILHash": "gIyjIT8/U6DBNgEK0tHOmSzQCibbrmiEhMUXbRT9NqE="
+        },
+        {
+          "Name": "ItemModBackpack::CanAcceptItem",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ItemModBackpack",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CanAcceptItem",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "Item",
+              "Item",
+              "System.Int32"
+            ]
+          },
+          "MSILHash": "tEBmg+3mBfLxJQJspJwYXOq2A+lLBgbaWZnxt5jjmbo="
+        },
+        {
+          "Name": "PlayerInventory::GetIdealPickupContainer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PlayerInventory",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "GetIdealPickupContainer",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "Item",
+              "ItemContainer&",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "Px4wS97RvL5w/otthFwCBmze5MiH19SdG36yKxyqmjQ="
+        },
+        {
+          "Name": "WantedPoster::imageCrc",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WantedPoster",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "imageCrc",
+            "FullTypeName": "System.UInt32 WantedPoster::imageCrc",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "WantedPoster::playerId",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WantedPoster",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerId",
+            "FullTypeName": "System.UInt64 WantedPoster::playerId",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "WantedPoster::playerName",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WantedPoster",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerName",
+            "FullTypeName": "System.String WantedPoster::playerName",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HuntingTrophy::CurrentTrophyData",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HuntingTrophy",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CurrentTrophyData",
+            "FullTypeName": "ProtoBuf.HeadData HuntingTrophy::CurrentTrophyData",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::DungeonBaseLinks",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DungeonBaseLinks",
+            "FullTypeName": "System.Collections.Generic.List`1<DungeonBaseLink> TerrainPath::DungeonBaseLinks",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

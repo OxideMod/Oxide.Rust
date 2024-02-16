@@ -21,6 +21,7 @@
     <ManagedDir>RustDedicated_Data/Managed</ManagedDir>
     <NoWarn>NU1701</NoWarn>
     <GitBranch></GitBranch>
+    <ReferencesOverride>regex:Managed/(.*).dll</ReferencesOverride>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Oxide.References" Version="2.0.*" />

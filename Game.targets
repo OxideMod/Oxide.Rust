@@ -14,9 +14,10 @@
       <BranchArg Condition="'$(SteamBranch)' != ''">-steam_branch $(SteamBranch)</BranchArg>
       <DepotArg Condition="'$(SteamDepot)' != ''">-steam_depot $(SteamDepot)</DepotArg>
       <LoginArg Condition="'$(SteamLogin)' != ''">-steam_access $(SteamLogin)</LoginArg>
+      <ReferencesOverrideArg Condition="'$(ReferencesOverride)' != ''">-references_override $(ReferencesOverride)</ReferencesOverrideArg>
     </PropertyGroup>
     <Message Text="Setting up environment for $(TargetPlatform)..." Importance="High" />
-    <Exec Command="$(SteamCommand) -game_name $(GameName) -dotnet $(TargetFramework) -target_dir $(TargetDir) -managed_dir $(ManagedDir) $(PlatformArg) $(DeobfArg) $(AppIdArg) $(BranchArg) $(DepotArg) $(LoginArg)" />
+    <Exec Command="$(SteamCommand) -game_name $(GameName) -dotnet $(TargetFramework) -target_dir $(TargetDir) -managed_dir $(ManagedDir) $(PlatformArg) $(DeobfArg) $(AppIdArg) $(BranchArg) $(DepotArg) $(LoginArg) $(ReferencesOverrideArg)" />
   </Target>
   <Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
     <ItemGroup>

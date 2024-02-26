@@ -7572,6 +7572,38 @@
                 "Operand": 10
               },
               {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnQuarryToggle"
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|player"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "bne_un_s",
+                "OpType": "Instruction",
+                "Operand": 10
+              },
+              {
                 "OpCode": "ldloc_0",
                 "OpType": "None"
               },
@@ -7638,6 +7670,38 @@
             "Instructions": [
               {
                 "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 10
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnQuarryToggle"
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|player"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "ldnull",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "bne_un_s",
                 "OpType": "Instruction",
                 "Operand": 10
               },

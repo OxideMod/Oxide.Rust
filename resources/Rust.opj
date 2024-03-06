@@ -20099,6 +20099,91 @@
             "MSILHash": "4UX5r03EqmiQCKgp0C9qRR44ntx2+fpTkb4/sfJaUwA=",
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 145,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l7",
+            "HookTypeName": "Simple",
+            "Name": "OnDispenserGathered",
+            "HookName": "OnDispenserGathered",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ResourceDispenser",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "GiveResourceFromItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "ItemAmount",
+                "System.Single",
+                "System.Single",
+                "AttackEntity"
+              ]
+            },
+            "MSILHash": "tAPg+c7XxZEuYwF3ZD06hCpA35NJnM4Nj4PQxApxPvE=",
+            "BaseHookName": "OnDispenserGather",
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 84,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l4",
+            "HookTypeName": "Simple",
+            "Name": "OnCollectiblePickedup",
+            "HookName": "OnCollectiblePickedup",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CollectibleEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "DoPickup",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "D7lqXOdYvb5/1WNQc+HIDbbkL1MnizNsBQVcmDLsYUg=",
+            "BaseHookName": "OnCollectiblePickup",
+            "HookCategory": "Resource"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 74,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l4",
+            "HookTypeName": "Simple",
+            "Name": "OnDispenserBonusReceived",
+            "HookName": "OnDispenserBonusReceived",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ResourceDispenser",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AssignFinishBonus",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Single",
+                "AttackEntity"
+              ]
+            },
+            "MSILHash": "NbzfN3g0717IEbl3mPHG8vYbopxdqKi38ipqoPt6A/4=",
+            "BaseHookName": "OnDispenserBonus",
+            "HookCategory": "Resource"
+          }
         }
       ],
       "Modifiers": [

@@ -20184,6 +20184,32 @@
             "BaseHookName": "OnDispenserBonus",
             "HookCategory": "Resource"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnItemFilter",
+            "HookName": "OnItemFilter",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "StorageContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ItemFilter",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "Item",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "RIrUvYG2k9omvKx8rKGlOVjmWOTQIUold950HrIb03M=",
+            "HookCategory": "Item"
+          }
         }
       ],
       "Modifiers": [

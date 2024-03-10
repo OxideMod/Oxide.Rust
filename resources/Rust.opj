@@ -20210,6 +20210,29 @@
             "MSILHash": "RIrUvYG2k9omvKx8rKGlOVjmWOTQIUold950HrIb03M=",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnPlaneterBoxFertilize",
+            "HookName": "OnPlaneterBoxFertilize",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlanterBox",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FertilizeGrowables",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "6U1++lkgMKwCgzKSDddNjNqfCaeM2XGJqvPRGCMfmSY=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

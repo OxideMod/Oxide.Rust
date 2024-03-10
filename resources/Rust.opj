@@ -20099,6 +20099,28 @@
             "MSILHash": "4UX5r03EqmiQCKgp0C9qRR44ntx2+fpTkb4/sfJaUwA=",
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "FertilizeGrowables",
+            "HookName": "OnFertilizeGrowables",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlanterBox",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FertilizeGrowables",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "6U1++lkgMKwCgzKSDddNjNqfCaeM2XGJqvPRGCMfmSY="
+          }
         }
       ],
       "Modifiers": [

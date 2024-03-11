@@ -20233,6 +20233,54 @@
             "MSILHash": "6U1++lkgMKwCgzKSDddNjNqfCaeM2XGJqvPRGCMfmSY=",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, v0",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerMarkersSend",
+            "HookName": "OnPlayerMarkersSend",
+            "HookDescription": "Called before map markers are sent to the client.\r\nAllows adding new or manipulating existing markers.",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SendMarkersToClient",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "m6FSGxaie2fDrwr4FZ40iM3AOWQtt8UnX18ER6p7D4U=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, v0",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerPingsSend",
+            "HookName": "OnPlayerPingsSend",
+            "HookDescription": "Called before ping markers are sent to the client.\r\nAllows adding new or manipulating existing markers",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SendPingsToClient",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "oelkElc5bsnDXWnt9pSlNOuOhhesKm4bpWqckRQm//Y=",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

@@ -20281,6 +20281,107 @@
             "MSILHash": "oelkElc5bsnDXWnt9pSlNOuOhhesKm4bpWqckRQm//Y=",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 1,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0",
+            "HookTypeName": "Simple",
+            "Name": "OnBoomboxStationValidate",
+            "HookName": "OnBoomboxStationValidate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BoomBox",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "IsStationValid",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "System.String"
+              ]
+            },
+            "MSILHash": "JjyGnUulaIPG6tvqQOKjP7CkdNltisMKzUDlDrWe8uA=",
+            "HookCategory": "Radio"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnBoomboxToggle",
+            "HookName": "OnBoomboxToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BoomBox",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ServerTogglePlay",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "RFh1F+MViq2HcWYH1BaSHq870CeI9OZtcVsxQ3mL1bE=",
+            "HookCategory": "Radio"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 6,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnBoomboxStationUpdate",
+            "HookName": "OnBoomboxStationUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BoomBox",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_UpdateRadioIP",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "KJbpFoNRkWjY3I5mEu2zZabe3EWil1dH3U91BB0aBAQ=",
+            "HookCategory": "Radio"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 40,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnBoomboxStationUpdated",
+            "HookName": "OnBoomboxStationUpdated",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BoomBox",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_UpdateRadioIP",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "KJbpFoNRkWjY3I5mEu2zZabe3EWil1dH3U91BB0aBAQ=",
+            "BaseHookName": "OnBoomboxStationUpdate",
+            "HookCategory": "Radio"
+          }
         }
       ],
       "Modifiers": [

@@ -20382,6 +20382,59 @@
             "BaseHookName": "OnBoomboxStationUpdate",
             "HookCategory": "Radio"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 25,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.CurrentState, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnAIBrainStateSwitch",
+            "HookName": "OnAIBrainStateSwitch",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseAIBrain",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SwitchToState",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BaseAIBrain/BasicAIState",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "tXnRtM/LVzwoJvJPB7lcQwXjK9Y39caJepLphFuLD8w=",
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 63,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.CurrentState",
+            "HookTypeName": "Simple",
+            "Name": "OnAIBrainStateSwitched",
+            "HookName": "OnAIBrainStateSwitched",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseAIBrain",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SwitchToState",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BaseAIBrain/BasicAIState",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "tXnRtM/LVzwoJvJPB7lcQwXjK9Y39caJepLphFuLD8w=",
+            "BaseHookName": "OnAIBrainStateSwitch",
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

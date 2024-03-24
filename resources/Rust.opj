@@ -20125,6 +20125,31 @@
             "MSILHash": "RIrUvYG2k9omvKx8rKGlOVjmWOTQIUold950HrIb03M=",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 9,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnHackableCrateLaptopAttack",
+            "HookName": "OnHackableCrateLaptopAttack",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HackableLockedCrate",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnAttacked",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "+/sLy4QRladVS1YSd5e4/fjVg5VG+tMbVPnhNw1FdiY=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

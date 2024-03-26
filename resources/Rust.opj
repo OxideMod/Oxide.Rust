@@ -20460,6 +20460,107 @@
             "MSILHash": "+/sLy4QRladVS1YSd5e4/fjVg5VG+tMbVPnhNw1FdiY=",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 8,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity/RPCMessage|read"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Facepunch.Network|Network.NetRead|Vector3"
+              },
+              {
+                "OpCode": "stloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnMetalDetectorFlagRequest"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 8
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnMetalDetectorFlagRequest",
+            "HookName": "OnMetalDetectorFlagRequest",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMetalDetector",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_RequestFlag",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "eSPtIv/vd+ukDV5VnEjrDXVh+IKNBoMl08nuFWzAE+A=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 27,
+            "RemoveCount": 4,
+            "Instructions": [],
+            "HookTypeName": "Modify",
+            "Name": "OnMetalDetectorFlagRequest [patch]",
+            "HookName": "OnMetalDetectorFlagRequest [patch]",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMetalDetector",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_RequestFlag",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "eSPtIv/vd+ukDV5VnEjrDXVh+IKNBoMl08nuFWzAE+A=",
+            "BaseHookName": "OnMetalDetectorFlagRequest",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [
@@ -23073,6 +23174,25 @@
             ],
             "Name": "nextCheckTime",
             "FullTypeName": "System.Single BasePlayer::nextCheckTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseMetalDetector::nearestSource",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseMetalDetector",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nearestSource",
+            "FullTypeName": "IMetalDetectable BaseMetalDetector::nearestSource",
             "Parameters": []
           },
           "MSILHash": ""
@@ -49532,6 +49652,82 @@
             ],
             "Name": "clothingBuffer",
             "FullTypeName": "Item[] Locker::clothingBuffer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "LockOnLauncher::lockRange",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "LockOnLauncher",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lockRange",
+            "FullTypeName": "System.Single LockOnLauncher::lockRange",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "LockOnLauncher::lockConeDot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "LockOnLauncher",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lockConeDot",
+            "FullTypeName": "System.Single LockOnLauncher::lockConeDot",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "LockOnLauncher::timeToLock",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "LockOnLauncher",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeToLock",
+            "FullTypeName": "System.Single LockOnLauncher::timeToLock",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "LockOnLauncher::timeToLoseLock",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "LockOnLauncher",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeToLoseLock",
+            "FullTypeName": "System.Single LockOnLauncher::timeToLoseLock",
             "Parameters": []
           },
           "MSILHash": ""

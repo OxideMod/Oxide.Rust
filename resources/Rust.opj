@@ -19782,6 +19782,32 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,a0",
+            "HookTypeName": "Simple",
+            "Name": "OnRequestFlag",
+            "HookName": "OnRequestFlag",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseMetalDetector",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_RequestFlag",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "eSPtIv/vd+ukDV5VnEjrDXVh+IKNBoMl08nuFWzAE+A=",
+            "HookCategory": "Player"
+          }
+	},
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 47,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -22712,6 +22738,25 @@
             ],
             "Name": "nextCheckTime",
             "FullTypeName": "System.Single BasePlayer::nextCheckTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+ 	{
+          "Name": "BaseMetalDetector::nearestSource",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseMetalDetector",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nearestSource",
+            "FullTypeName": "IMetalDetectable BaseMetalDetector::nearestSource",
             "Parameters": []
           },
           "MSILHash": ""
@@ -49171,6 +49216,82 @@
             ],
             "Name": "clothingBuffer",
             "FullTypeName": "Item[] Locker::clothingBuffer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+   {
+          "Name": "LockOnLauncher::lockRange",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "LockOnLauncher",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lockRange",
+            "FullTypeName": "System.Single LockOnLauncher::lockRange",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "LockOnLauncher::lockConeDot",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "LockOnLauncher",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lockConeDot",
+            "FullTypeName": "System.Single LockOnLauncher::lockConeDot",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "LockOnLauncher::timeToLock",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "LockOnLauncher",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeToLock",
+            "FullTypeName": "System.Single LockOnLauncher::timeToLock",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "LockOnLauncher::timeToLoseLock",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "LockOnLauncher",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeToLoseLock",
+            "FullTypeName": "System.Single LockOnLauncher::timeToLoseLock",
             "Parameters": []
           },
           "MSILHash": ""

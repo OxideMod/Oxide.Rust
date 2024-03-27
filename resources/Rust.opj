@@ -20099,6 +20099,54 @@
             "MSILHash": "4UX5r03EqmiQCKgp0C9qRR44ntx2+fpTkb4/sfJaUwA=",
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 5,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, v0",
+            "HookTypeName": "Simple",
+            "Name": "OnSendMarkersToClient",
+            "HookName": "OnSendMarkersToClient",
+            "HookDescription": "Calls a hook before sending the map markers to the client. Allows adding new or manipulating existing markers in the contained parameter \"mapNoteList\" ",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SendMarkersToClient",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "m6FSGxaie2fDrwr4FZ40iM3AOWQtt8UnX18ER6p7D4U=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 5,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, v0",
+            "HookTypeName": "Simple",
+            "Name": "OnSendPingsToClient",
+            "HookName": "OnSendPingsToClient",
+            "HookDescription": "Calls a hook before sending the ping markers to the client. Allows adding new or manipulating existing markers in the contained parameter \"mapNoteList\"",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SendPingsToClient",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "oelkElc5bsnDXWnt9pSlNOuOhhesKm4bpWqckRQm//Y=",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

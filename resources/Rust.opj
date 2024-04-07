@@ -20451,6 +20451,72 @@
             "MSILHash": "eSPtIv/vd+ukDV5VnEjrDXVh+IKNBoMl08nuFWzAE+A=",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "OnHarborApproach",
+            "HookName": "OnHarborApproach",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CargoShip",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "StartHarborApproach",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "MZ5D1YdPLOipwnDmtyBWXxiz2HDKXOHeAkicM0lmeH4=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 147,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "OnHarborArrived",
+            "HookName": "OnHarborArrived",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CargoShip",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnArrivedAtHarbor",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "nI6/BpMFYzHBEmf801JrlY54CzGTLPWDXQY8gmkZkj8=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 18,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 1,
+            "HookTypeName": "Simple",
+            "Name": "OnHarborLeave",
+            "HookName": "OnHarborLeave",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CargoShip",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "LeaveHarbor",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "fK15Oh5Fg8RYTGi9tUBbzcF+r0m04MzMQRMKBWtv8C0=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [
@@ -50595,6 +50661,139 @@
             "Parameters": []
           },
           "MSILHash": "MZ5D1YdPLOipwnDmtyBWXxiz2HDKXOHeAkicM0lmeH4="
+        },
+        {
+          "Name": "CargoShip::currentHarborApproachNode",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentHarborApproachNode",
+            "FullTypeName": "System.Int32 CargoShip::currentHarborApproachNode",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::harborApproachPath",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "harborApproachPath",
+            "FullTypeName": "BasePath CargoShip::harborApproachPath",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::harborIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "harborIndex",
+            "FullTypeName": "System.Int32 CargoShip::harborIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::hasDockedOnce",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hasDockedOnce",
+            "FullTypeName": "System.Boolean CargoShip::hasDockedOnce",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::startHarborApproachNode",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "startHarborApproachNode",
+            "FullTypeName": "System.Nullable`1<System.Int32> CargoShip::startHarborApproachNode",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::isDoingHarborApproach",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "isDoingHarborApproach",
+            "FullTypeName": "System.Boolean CargoShip::isDoingHarborApproach",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "CargoShip::proxManager",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CargoShip",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "proxManager",
+            "FullTypeName": "HarborProximityManager CargoShip::proxManager",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

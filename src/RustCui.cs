@@ -253,19 +253,19 @@ namespace Oxide.Game.Rust.Cui
         {
             jsonWriter.WriteStartObject();
 
-            if (!string.IsNullOrEmpty(Name))
+            if (Name != null)
             {
                 jsonWriter.WritePropertyName("name");
                 jsonWriter.WriteValue(Name);
             }
 
-            if (!string.IsNullOrEmpty(Parent))
+            if (Parent != null)
             {
                 jsonWriter.WritePropertyName("parent");
                 jsonWriter.WriteValue(Parent);
             }
 
-            if (!string.IsNullOrEmpty(DestroyUi))
+            if (DestroyUi != null)
             {
                 jsonWriter.WritePropertyName("destroyUi");
                 jsonWriter.WriteValue(DestroyUi);
@@ -351,13 +351,13 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("UnityEngine.UI.Text");
 
-            if (!string.IsNullOrEmpty(Text))
+            if (Text != null)
             {
                 jsonWriter.WritePropertyName("text");
                 jsonWriter.WriteValue(Text);
             }
 
-            if (!string.IsNullOrEmpty(Font))
+            if (Font != null)
             {
                 jsonWriter.WritePropertyName("font");
                 jsonWriter.WriteValue(Font);
@@ -375,7 +375,7 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Align.ToString());
             }
 
-            if (!string.IsNullOrEmpty(Color))
+            if (Color != null)
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
@@ -432,19 +432,19 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("UnityEngine.UI.Image");
 
-            if (!string.IsNullOrEmpty(Sprite))
+            if (Sprite != null)
             {
                 jsonWriter.WritePropertyName("sprite");
                 jsonWriter.WriteValue(Sprite);
             }
 
-            if (!string.IsNullOrEmpty(Material))
+            if (Material != null)
             {
                 jsonWriter.WritePropertyName("material");
                 jsonWriter.WriteValue(Material);
             }
 
-            if (!string.IsNullOrEmpty(Color))
+            if (Color != null)
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
@@ -456,7 +456,7 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(ImageType.ToString());
             }
 
-            if (!string.IsNullOrEmpty(Png))
+            if (Png != null)
             {
                 jsonWriter.WritePropertyName("png");
                 jsonWriter.WriteValue(Png);
@@ -512,31 +512,31 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("UnityEngine.UI.RawImage");
 
-            if (!string.IsNullOrEmpty(Sprite))
+            if (Sprite != null)
             {
                 jsonWriter.WritePropertyName("sprite");
                 jsonWriter.WriteValue(Sprite);
             }
 
-            if (!string.IsNullOrEmpty(Color))
+            if (Color != null)
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
             }
 
-            if (!string.IsNullOrEmpty(Material))
+            if (Material != null)
             {
                 jsonWriter.WritePropertyName("material");
                 jsonWriter.WriteValue(Material);
             }
 
-            if (!string.IsNullOrEmpty(Url))
+            if (Url != null)
             {
                 jsonWriter.WritePropertyName("url");
                 jsonWriter.WriteValue(Url);
             }
 
-            if (!string.IsNullOrEmpty(Png))
+            if (Png != null)
             {
                 jsonWriter.WritePropertyName("png");
                 jsonWriter.WriteValue(Png);
@@ -587,31 +587,31 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("UnityEngine.UI.Button");
 
-            if (!string.IsNullOrEmpty(Command))
+            if (Command != null)
             {
                 jsonWriter.WritePropertyName("command");
                 jsonWriter.WriteValue(Command);
             }
 
-            if (!string.IsNullOrEmpty(Close))
+            if (Close != null)
             {
                 jsonWriter.WritePropertyName("close");
                 jsonWriter.WriteValue(Close);
             }
 
-            if (!string.IsNullOrEmpty(Sprite))
+            if (Sprite != null)
             {
                 jsonWriter.WritePropertyName("sprite");
                 jsonWriter.WriteValue(Sprite);
             }
 
-            if (!string.IsNullOrEmpty(Material))
+            if (Material != null)
             {
                 jsonWriter.WritePropertyName("material");
                 jsonWriter.WriteValue(Material);
             }
 
-            if (!string.IsNullOrEmpty(Color))
+            if (Color != null)
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
@@ -655,13 +655,13 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("UnityEngine.UI.Outline");
 
-            if (!string.IsNullOrEmpty(Color))
+            if (Color != null)
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
             }
 
-            if (!string.IsNullOrEmpty(Distance))
+            if (Distance != null)
             {
                 jsonWriter.WritePropertyName("distance");
                 jsonWriter.WriteValue(Distance);
@@ -732,7 +732,7 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("UnityEngine.UI.InputField");
 
-            if (!string.IsNullOrEmpty(Text))
+            if (Text != null)
             {
                 jsonWriter.WritePropertyName("text");
                 jsonWriter.WriteValue(Text);
@@ -744,7 +744,7 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(FontSize);
             }
 
-            if (!string.IsNullOrEmpty(Font))
+            if (Font != null)
             {
                 jsonWriter.WritePropertyName("font");
                 jsonWriter.WriteValue(Font);
@@ -756,7 +756,7 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Align.ToString());
             }
 
-            if (!string.IsNullOrEmpty(Color))
+            if (Color != null)
             {
                 jsonWriter.WritePropertyName("color");
                 jsonWriter.WriteValue(Color);
@@ -768,7 +768,7 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(CharsLimit);
             }
 
-            if (!string.IsNullOrEmpty(Command))
+            if (Command != null)
             {
                 jsonWriter.WritePropertyName("command");
                 jsonWriter.WriteValue(Command);
@@ -858,7 +858,7 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Step);
             }
 
-            if (!string.IsNullOrEmpty(Command))
+            if (Command != null)
             {
                 jsonWriter.WritePropertyName("command");
                 jsonWriter.WriteValue(Command);
@@ -928,25 +928,25 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("RectTransform");
 
-            if (!string.IsNullOrEmpty(AnchorMin))
+            if (AnchorMin != null)
             {
                 jsonWriter.WritePropertyName("anchormin");
                 jsonWriter.WriteValue(AnchorMin);
             }
 
-            if (!string.IsNullOrEmpty(AnchorMax))
+            if (AnchorMax != null)
             {
                 jsonWriter.WritePropertyName("anchormax");
                 jsonWriter.WriteValue(AnchorMax);
             }
 
-            if (!string.IsNullOrEmpty(OffsetMin))
+            if (OffsetMin != null)
             {
                 jsonWriter.WritePropertyName("offsetmin");
                 jsonWriter.WriteValue(OffsetMin);
             }
 
-            if (!string.IsNullOrEmpty(OffsetMax))
+            if (OffsetMax != null)
             {
                 jsonWriter.WritePropertyName("offsetmax");
                 jsonWriter.WriteValue(OffsetMax);

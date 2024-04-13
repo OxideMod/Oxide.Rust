@@ -19083,7 +19083,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 21,
+            "InjectionIndex": 25,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l1, a0,  this",
@@ -19102,14 +19102,14 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "nTko9qfkKvVV8L+ph9TO8KrIAOka+jb4A0XHmYkKJ0U=",
+            "MSILHash": "XIeFqtW9gZ7A29u8NVnGCyqr+QxNnAez78d8Hi70LUo=",
             "HookCategory": "Item"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 68,
+            "InjectionIndex": 72,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l1, a0,  this",
@@ -19128,7 +19128,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "nTko9qfkKvVV8L+ph9TO8KrIAOka+jb4A0XHmYkKJ0U=",
+            "MSILHash": "XIeFqtW9gZ7A29u8NVnGCyqr+QxNnAez78d8Hi70LUo=",
             "BaseHookName": "OnRackedWeaponUnload",
             "HookCategory": "Item"
           }
@@ -19136,7 +19136,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 55,
+            "InjectionIndex": 59,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l4, l7, l0, this",
@@ -19154,14 +19154,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "p3iuXgvAwbjC1h2AEp6C07HZZgedj2L7JSVc1QPy+yA=",
+            "MSILHash": "27rhq6Fojuo9vtfaGhc2Zwk/Bo7wCDGk2t7Ov34iUaY=",
             "HookCategory": "Item"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 151,
+            "InjectionIndex": 155,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l4, l7, l0, this",
@@ -19179,7 +19179,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "p3iuXgvAwbjC1h2AEp6C07HZZgedj2L7JSVc1QPy+yA=",
+            "MSILHash": "27rhq6Fojuo9vtfaGhc2Zwk/Bo7wCDGk2t7Ov34iUaY=",
             "BaseHookName": "OnRackedWeaponLoad",
             "HookCategory": "Item"
           }

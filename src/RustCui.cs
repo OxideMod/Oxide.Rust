@@ -31,7 +31,7 @@ namespace Oxide.Game.Rust.Cui
         {
             if (player?.net != null && Interface.CallHook("CanUseUI", player, json) == null)
             {
-                CommunityEntity.ServerInstance.ClientRPCEx(new Network.SendInfo { connection = player.net.connection }, null, "AddUI", json);
+                CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Player("AddUI", player.net.connection ), json);
                 return true;
             }
 
@@ -43,7 +43,7 @@ namespace Oxide.Game.Rust.Cui
             if (player?.net != null)
             {
                 Interface.CallHook("OnDestroyUI", player, elem);
-                CommunityEntity.ServerInstance.ClientRPCEx(new Network.SendInfo { connection = player.net.connection }, null, "DestroyUI", elem);
+                CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Player("DestroyUI", player.net.connection ), elem);
                 return true;
             }
 

@@ -204,7 +204,7 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonProperty("fadeOut")]
         public float FadeOut { get; set; }
-        
+
         [JsonProperty("update", NullValueHandling = NullValueHandling.Ignore)]
 		public bool Update { get; set; }
     }
@@ -428,10 +428,13 @@ namespace Oxide.Game.Rust.Cui
         public string Type => "NeedsKeyboard";
     }
 
-    public class CuiRectTransformComponent : ICuiComponent
+    public class CuiRectTransformComponent : CuiRectTransform, ICuiComponent
     {
         public string Type => "RectTransform";
+    }
 
+    public class CuiRectTransform
+    {
         // The normalized position in the parent RectTransform that the lower left corner is anchored to
         [JsonProperty("anchormin")]
         public string AnchorMin { get; set; }
@@ -447,6 +450,72 @@ namespace Oxide.Game.Rust.Cui
         // The offset of the upper right corner of the rectangle relative to the upper right anchor
         [JsonProperty("offsetmax")]
         public string OffsetMax { get; set; }
+    }
+
+    public class CuiScrollViewComponent : ICuiComponent
+    {
+        public string Type => "UnityEngine.UI.ScrollView";
+
+        [JsonProperty("contentTransform")]
+        public CuiRectTransform ContentTransform { get; set; }
+
+        [JsonProperty("horizontal")]
+        public bool Horizontal { get; set; }
+
+        [JsonProperty("vertical")]
+        public bool Vertical { get; set; }
+
+        [JsonProperty("movementType")]
+        [JsonConverter(typeof(StringEnumConverter))]
+        public ScrollRect.MovementType MovementType { get; set; }
+
+        [JsonProperty("elasticity")]
+        public float Elasticity { get; set; }
+
+        [JsonProperty("inertia")]
+        public bool Inertia { get; set; }
+
+        [JsonProperty("decelerationRate")]
+        public float DecelerationRate { get; set; }
+
+        [JsonProperty("scrollSensitivity")]
+        public float ScrollSensitivity { get; set; }
+
+        [JsonProperty("horizontalScrollbar")]
+        public CuiScrollbar HorizontalScrollbar { get; set; }
+
+        [JsonProperty("verticalScrollbar")]
+        public CuiScrollbar VerticalScrollbar { get; set; }
+    }
+
+    public class CuiScrollbar
+    {
+        [JsonProperty("invert")]
+        public bool Invert { get; set; }
+
+        [JsonProperty("autoHide")]
+        public bool AutoHide { get; set; }
+
+        [JsonProperty("handleSprite")]
+        public string HandleSprite { get; set; }
+
+        [JsonProperty("size")]
+        public float Size { get; set; }
+
+        [JsonProperty("handleColor")]
+        public string HandleColor { get; set; }
+
+        [JsonProperty("highlightColor")]
+        public string HighlightColor { get; set; }
+
+        [JsonProperty("pressedColor")]
+        public string PressedColor { get; set; }
+
+        [JsonProperty("trackSprite")]
+        public string TrackSprite { get; set; }
+
+        [JsonProperty("trackColor")]
+        public string TrackColor { get; set; }
     }
 
     public class ComponentConverter : JsonConverter
@@ -502,6 +571,10 @@ namespace Oxide.Game.Rust.Cui
 
                 case "RectTransform":
                     type = typeof(CuiRectTransformComponent);
+                    break;
+
+                case "UnityEngine.UI.ScrollView":
+                    type = typeof(CuiScrollViewComponent);
                     break;
 
                 default:

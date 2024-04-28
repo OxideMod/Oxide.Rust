@@ -20,7 +20,7 @@ jobs:
     needs: build
     steps:
       - name: Download Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ${{ github.event.repository.name }}
           path: artifacts
@@ -48,13 +48,13 @@ jobs:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           ref: main
       - name: Download Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ${{ github.event.repository.name }}-docs
       - name: Commit and Push Changes
         run: |
-          git config --global user.email github-actions@github.com
-          git config --global user.name github-actions
+          git config --global user.email github@oxidemod.com
+          git config --global user.name oxidemod-bot
           git add docs.json
           git diff-index --quiet HEAD || git commit -m "Update hooks index to 2.0.${{ vars.VERSION }}"
           git push

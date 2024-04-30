@@ -346,7 +346,7 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WriteStartObject();
 
             jsonWriter.WritePropertyName("type");
-            jsonWriter.WriteValue("UnityEngine.UI.Text");
+            jsonWriter.WriteValue(Type);
 
             if (Text != null)
             {
@@ -415,7 +415,7 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WriteStartObject();
 
             jsonWriter.WritePropertyName("type");
-            jsonWriter.WriteValue("UnityEngine.UI.Image");
+            jsonWriter.WriteValue(Type);
 
             if (Sprite != null)
             {
@@ -483,7 +483,7 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WriteStartObject();
 
             jsonWriter.WritePropertyName("type");
-            jsonWriter.WriteValue("UnityEngine.UI.RawImage");
+            jsonWriter.WriteValue(Type);
 
             if (Sprite != null)
             {
@@ -555,7 +555,7 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WriteStartObject();
 
             jsonWriter.WritePropertyName("type");
-            jsonWriter.WriteValue("UnityEngine.UI.Button");
+            jsonWriter.WriteValue(Type);
 
             if (Command != null)
             {
@@ -617,7 +617,7 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WriteStartObject();
 
             jsonWriter.WritePropertyName("type");
-            jsonWriter.WriteValue("UnityEngine.UI.Outline");
+            jsonWriter.WriteValue(Type);
 
             if (Color != null)
             {
@@ -691,7 +691,7 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WriteStartObject();
 
             jsonWriter.WritePropertyName("type");
-            jsonWriter.WriteValue("UnityEngine.UI.InputField");
+            jsonWriter.WriteValue(Type);
 
             if (Text != null)
             {
@@ -772,7 +772,7 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WriteStartObject();
 
             jsonWriter.WritePropertyName("type");
-            jsonWriter.WriteValue("Countdown");
+            jsonWriter.WriteValue(Type);
 
             jsonWriter.WritePropertyName("endTime");
             jsonWriter.WriteValue(EndTime);
@@ -804,7 +804,7 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WriteStartObject();
 
             jsonWriter.WritePropertyName("type");
-            jsonWriter.WriteValue("NeedsCursor");
+            jsonWriter.WriteValue(Type);
 
             jsonWriter.WriteEndObject();
         }
@@ -818,7 +818,7 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WriteStartObject();
 
             jsonWriter.WritePropertyName("type");
-            jsonWriter.WriteValue("NeedsKeyboard");
+            jsonWriter.WriteValue(Type);
 
             jsonWriter.WriteEndObject();
         }
@@ -831,7 +831,7 @@ namespace Oxide.Game.Rust.Cui
         {
             jsonWriter.WriteStartObject();
             jsonWriter.WritePropertyName("type");
-            jsonWriter.WriteValue("RectTransform");
+            jsonWriter.WriteValue(Type);
 
             if (AnchorMin != null)
             {

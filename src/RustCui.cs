@@ -64,7 +64,7 @@ namespace Oxide.Game.Rust.Cui
 
         public static bool AddUi(List<BasePlayer> playerList, string json)
         {
-            List<Network.Connection> connections = new List<Network.Connection>();
+            List<Network.Connection> connections = Facepunch.Pool.GetList<Network.Connection>();
             foreach (var player in playerList)
             {
                 if (player?.net != null)
@@ -73,7 +73,14 @@ namespace Oxide.Game.Rust.Cui
                 }
             }
 
+            if(connections.Count == 0)
+            {
+                Facepunch.Pool.FreeList(ref connections);
+                return false;
+            }
+
             CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Players("AddUI", connections), json);
+            Facepunch.Pool.FreeList(ref connections);
             return true;
         }
 

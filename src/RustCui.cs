@@ -271,11 +271,8 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(DestroyUi);
             }
 
-            if (FadeOut != 0f)
-            {
-                jsonWriter.WritePropertyName("fadeOut");
-                jsonWriter.WriteValue(FadeOut);
-            }
+            jsonWriter.WritePropertyName("fadeOut");
+            jsonWriter.WriteValue(FadeOut);
 
             if (Update)
             {
@@ -363,17 +360,11 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Font);
             }
 
-            if (FontSize != 0)
-            {
-                jsonWriter.WritePropertyName("fontSize");
-                jsonWriter.WriteValue(FontSize);
-            }
+            jsonWriter.WritePropertyName("fontSize");
+            jsonWriter.WriteValue(FontSize);
 
-            if (Align != default(TextAnchor))
-            {
-                jsonWriter.WritePropertyName("align");
-                jsonWriter.WriteValue(Align.ToString());
-            }
+            jsonWriter.WritePropertyName("align");
+            jsonWriter.WriteValue(Align.ToString());
 
             if (Color != null)
             {
@@ -381,17 +372,11 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Color);
             }
 
-            if (VerticalOverflow != VerticalWrapMode.Truncate)
-            {
-                jsonWriter.WritePropertyName("verticalOverflow");
-                jsonWriter.WriteValue(VerticalOverflow.ToString());
-            }
+            jsonWriter.WritePropertyName("verticalOverflow");
+            jsonWriter.WriteValue(VerticalOverflow.ToString());
 
-            if (FadeIn > 0f)
-            {
-                jsonWriter.WritePropertyName("fadeIn");
-                jsonWriter.WriteValue(FadeIn);
-            }
+            jsonWriter.WritePropertyName("fadeIn");
+            jsonWriter.WriteValue(FadeIn);
 
             jsonWriter.WriteEndObject();
         }
@@ -450,11 +435,8 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Color);
             }
 
-            if (ImageType != default(Image.Type))
-            {
-                jsonWriter.WritePropertyName("imagetype");
-                jsonWriter.WriteValue(ImageType.ToString());
-            }
+            jsonWriter.WritePropertyName("imagetype");
+            jsonWriter.WriteValue(ImageType.ToString());
 
             if (Png != null)
             {
@@ -462,23 +444,14 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Png);
             }
 
-            if (FadeIn > 0f)
-            {
-                jsonWriter.WritePropertyName("fadeIn");
-                jsonWriter.WriteValue(FadeIn);
-            }
+            jsonWriter.WritePropertyName("fadeIn");
+            jsonWriter.WriteValue(FadeIn);
 
-            if (ItemId != 0)
-            {
-                jsonWriter.WritePropertyName("itemid");
-                jsonWriter.WriteValue(ItemId);
-            }
+            jsonWriter.WritePropertyName("itemid");
+            jsonWriter.WriteValue(ItemId);
 
-            if (SkinId != 0)
-            {
-                jsonWriter.WritePropertyName("skinid");
-                jsonWriter.WriteValue(SkinId);
-            }
+            jsonWriter.WritePropertyName("skinid");
+            jsonWriter.WriteValue(SkinId);
 
             jsonWriter.WriteEndObject();
         }
@@ -542,11 +515,8 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Png);
             }
 
-            if (FadeIn > 0f)
-            {
-                jsonWriter.WritePropertyName("fadeIn");
-                jsonWriter.WriteValue(FadeIn);
-            }
+            jsonWriter.WritePropertyName("fadeIn");
+            jsonWriter.WriteValue(FadeIn);
 
             jsonWriter.WriteEndObject();
         }
@@ -617,17 +587,11 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Color);
             }
 
-            if (ImageType != default(Image.Type))
-            {
-                jsonWriter.WritePropertyName("imagetype");
-                jsonWriter.WriteValue(ImageType.ToString());
-            }
+            jsonWriter.WritePropertyName("imagetype");
+            jsonWriter.WriteValue(ImageType.ToString());
 
-            if (FadeIn > 0f)
-            {
-                jsonWriter.WritePropertyName("fadeIn");
-                jsonWriter.WriteValue(FadeIn);
-            }
+            jsonWriter.WritePropertyName("fadeIn");
+            jsonWriter.WriteValue(FadeIn);
 
             jsonWriter.WriteEndObject();
         }
@@ -667,11 +631,8 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Distance);
             }
 
-            if (UseGraphicAlpha)
-            {
-                jsonWriter.WritePropertyName("useGraphicAlpha");
-                jsonWriter.WriteValue(UseGraphicAlpha);
-            }
+            jsonWriter.WritePropertyName("useGraphicAlpha");
+            jsonWriter.WriteValue(UseGraphicAlpha);
 
             jsonWriter.WriteEndObject();
         }
@@ -738,11 +699,8 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Text);
             }
 
-            if (FontSize != 0)
-            {
-                jsonWriter.WritePropertyName("fontSize");
-                jsonWriter.WriteValue(FontSize);
-            }
+            jsonWriter.WritePropertyName("fontSize");
+            jsonWriter.WriteValue(FontSize);
 
             if (Font != null)
             {
@@ -750,11 +708,8 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Font);
             }
 
-            if (Align != default(TextAnchor))
-            {
-                jsonWriter.WritePropertyName("align");
-                jsonWriter.WriteValue(Align.ToString());
-            }
+            jsonWriter.WritePropertyName("align");
+            jsonWriter.WriteValue(Align.ToString());
 
             if (Color != null)
             {
@@ -762,11 +717,8 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Color);
             }
 
-            if (CharsLimit != 0)
-            {
-                jsonWriter.WritePropertyName("characterLimit");
-                jsonWriter.WriteValue(CharsLimit);
-            }
+            jsonWriter.WritePropertyName("characterLimit");
+            jsonWriter.WriteValue(CharsLimit);
 
             if (Command != null)
             {
@@ -774,41 +726,23 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Command);
             }
 
-            if (IsPassword)
-            {
-                jsonWriter.WritePropertyName("password");
-                jsonWriter.WriteValue(IsPassword);
-            }
+            jsonWriter.WritePropertyName("password");
+            jsonWriter.WriteValue(IsPassword);
 
-            if (ReadOnly)
-            {
-                jsonWriter.WritePropertyName("readOnly");
-                jsonWriter.WriteValue(ReadOnly);
-            }
+            jsonWriter.WritePropertyName("readOnly");
+            jsonWriter.WriteValue(ReadOnly);
 
-            if (NeedsKeyboard)
-            {
-                jsonWriter.WritePropertyName("needsKeyboard");
-                jsonWriter.WriteValue(NeedsKeyboard);
-            }
+            jsonWriter.WritePropertyName("needsKeyboard");
+            jsonWriter.WriteValue(NeedsKeyboard);
 
-            if (LineType != default(InputField.LineType))
-            {
-                jsonWriter.WritePropertyName("lineType");
-                jsonWriter.WriteValue(LineType.ToString());
-            }
+            jsonWriter.WritePropertyName("lineType");
+            jsonWriter.WriteValue(LineType.ToString());
 
-            if (Autofocus)
-            {
-                jsonWriter.WritePropertyName("autofocus");
-                jsonWriter.WriteValue(Autofocus);
-            }
+            jsonWriter.WritePropertyName("autofocus");
+            jsonWriter.WriteValue(Autofocus);
 
-            if (HudMenuInput)
-            {
-                jsonWriter.WritePropertyName("hudMenuInput");
-                jsonWriter.WriteValue(HudMenuInput);
-            }
+            jsonWriter.WritePropertyName("hudMenuInput");
+            jsonWriter.WriteValue(HudMenuInput);
 
             jsonWriter.WriteEndObject();
         }
@@ -840,23 +774,14 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("type");
             jsonWriter.WriteValue("Countdown");
 
-            if (EndTime != 0)
-            {
-                jsonWriter.WritePropertyName("endTime");
-                jsonWriter.WriteValue(EndTime);
-            }
+            jsonWriter.WritePropertyName("endTime");
+            jsonWriter.WriteValue(EndTime);
 
-            if (StartTime != 0)
-            {
-                jsonWriter.WritePropertyName("startTime");
-                jsonWriter.WriteValue(StartTime);
-            }
+            jsonWriter.WritePropertyName("startTime");
+            jsonWriter.WriteValue(StartTime);
 
-            if (Step != 1)
-            {
-                jsonWriter.WritePropertyName("step");
-                jsonWriter.WriteValue(Step);
-            }
+            jsonWriter.WritePropertyName("step");
+            jsonWriter.WriteValue(Step);
 
             if (Command != null)
             {
@@ -864,11 +789,8 @@ namespace Oxide.Game.Rust.Cui
                 jsonWriter.WriteValue(Command);
             }
 
-            if (FadeIn > 0f)
-            {
-                jsonWriter.WritePropertyName("fadeIn");
-                jsonWriter.WriteValue(FadeIn);
-            }
+            jsonWriter.WritePropertyName("fadeIn");
+            jsonWriter.WriteValue(FadeIn);
 
             jsonWriter.WriteEndObject();
         }
@@ -905,7 +827,7 @@ namespace Oxide.Game.Rust.Cui
     public class CuiRectTransformComponent : CuiRectTransform, ICuiComponent
     {
         public string Type => "RectTransform";
-        public void WriteJson(JsonWriter jsonWriter)
+        public new void WriteJson(JsonWriter jsonWriter)
         {
             jsonWriter.WriteStartObject();
             jsonWriter.WritePropertyName("type");

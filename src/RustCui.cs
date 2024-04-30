@@ -902,26 +902,9 @@ namespace Oxide.Game.Rust.Cui
         }
     }
 
-    public class CuiRectTransformComponent : ICuiComponent
+    public class CuiRectTransformComponent : CuiRectTransform, ICuiComponent
     {
         public string Type => "RectTransform";
-
-        // The normalized position in the parent RectTransform that the lower left corner is anchored to
-        [JsonProperty("anchormin")]
-        public string AnchorMin { get; set; }
-
-        // The normalized position in the parent RectTransform that the upper right corner is anchored to
-        [JsonProperty("anchormax")]
-        public string AnchorMax { get; set; }
-
-        // The offset of the lower left corner of the rectangle relative to the lower left anchor
-        [JsonProperty("offsetmin")]
-        public string OffsetMin { get; set; }
-
-        // The offset of the upper right corner of the rectangle relative to the upper right anchor
-        [JsonProperty("offsetmax")]
-        public string OffsetMax { get; set; }
-
         public void WriteJson(JsonWriter jsonWriter)
         {
             jsonWriter.WriteStartObject();
@@ -950,6 +933,223 @@ namespace Oxide.Game.Rust.Cui
             {
                 jsonWriter.WritePropertyName("offsetmax");
                 jsonWriter.WriteValue(OffsetMax);
+            }
+
+            jsonWriter.WriteEndObject();
+        }
+    }
+
+    public class CuiRectTransform
+    {
+        // The normalized position in the parent RectTransform that the lower left corner is anchored to
+        [JsonProperty("anchormin")]
+        public string AnchorMin { get; set; }
+        // The normalized position in the parent RectTransform that the upper right corner is anchored to
+        [JsonProperty("anchormax")]
+        public string AnchorMax { get; set; }
+        // The offset of the lower left corner of the rectangle relative to the lower left anchor
+        [JsonProperty("offsetmin")]
+        public string OffsetMin { get; set; }
+        // The offset of the upper right corner of the rectangle relative to the upper right anchor
+        [JsonProperty("offsetmax")]
+        public string OffsetMax { get; set; }
+
+        public void WriteJson(JsonWriter jsonWriter)
+        {
+            jsonWriter.WriteStartObject();
+
+            if (AnchorMin != null)
+            {
+                jsonWriter.WritePropertyName("anchormin");
+                jsonWriter.WriteValue(AnchorMin);
+            }
+
+            if (AnchorMax != null)
+            {
+                jsonWriter.WritePropertyName("anchormax");
+                jsonWriter.WriteValue(AnchorMax);
+            }
+
+            if (OffsetMin != null)
+            {
+                jsonWriter.WritePropertyName("offsetmin");
+                jsonWriter.WriteValue(OffsetMin);
+            }
+
+            if (OffsetMax != null)
+            {
+                jsonWriter.WritePropertyName("offsetmax");
+                jsonWriter.WriteValue(OffsetMax);
+            }
+
+            jsonWriter.WriteEndObject();
+        }
+    }
+
+    public class CuiScrollViewComponent : ICuiComponent
+    {
+        public string Type => "UnityEngine.UI.ScrollView";
+
+        [JsonProperty("contentTransform")]
+        public CuiRectTransform ContentTransform { get; set; }
+
+        [JsonProperty("horizontal")]
+        public bool Horizontal { get; set; }
+
+        [JsonProperty("vertical")]
+        public bool Vertical { get; set; }
+
+        [JsonProperty("movementType")]
+        [JsonConverter(typeof(StringEnumConverter))]
+        public ScrollRect.MovementType MovementType { get; set; }
+
+        [JsonProperty("elasticity")]
+        public float Elasticity { get; set; }
+
+        [JsonProperty("inertia")]
+        public bool Inertia { get; set; }
+
+        [JsonProperty("decelerationRate")]
+        public float DecelerationRate { get; set; }
+
+        [JsonProperty("scrollSensitivity")]
+        public float ScrollSensitivity { get; set; }
+
+        [JsonProperty("horizontalScrollbar")]
+        public CuiScrollbar HorizontalScrollbar { get; set; }
+
+        [JsonProperty("verticalScrollbar")]
+        public CuiScrollbar VerticalScrollbar { get; set; }
+
+        public void WriteJson(JsonWriter jsonWriter)
+        {
+            jsonWriter.WriteStartObject();
+
+            if (Type != null)
+            {
+                jsonWriter.WritePropertyName("type");
+                jsonWriter.WriteValue(Type);
+            }
+
+            jsonWriter.WritePropertyName("horizontal");
+            jsonWriter.WriteValue(Horizontal);
+
+            jsonWriter.WritePropertyName("vertical");
+            jsonWriter.WriteValue(Vertical);
+
+            jsonWriter.WritePropertyName("movementType");
+            jsonWriter.WriteValue(MovementType.ToString());
+
+            jsonWriter.WritePropertyName("elasticity");
+            jsonWriter.WriteValue(Elasticity);
+
+            jsonWriter.WritePropertyName("inertia");
+            jsonWriter.WriteValue(Inertia);
+
+            jsonWriter.WritePropertyName("decelerationRate");
+            jsonWriter.WriteValue(DecelerationRate);
+
+            jsonWriter.WritePropertyName("scrollSensitivity");
+            jsonWriter.WriteValue(ScrollSensitivity);
+
+            if (ContentTransform != null)
+            {
+                jsonWriter.WritePropertyName("contentTransform");
+                ContentTransform.WriteJson(jsonWriter);
+            }
+
+            if (HorizontalScrollbar != null)
+            {
+                jsonWriter.WritePropertyName("horizontalScrollbar");
+                HorizontalScrollbar.WriteJson(jsonWriter);
+            }
+
+            if (VerticalScrollbar != null)
+            {
+                jsonWriter.WritePropertyName("verticalScrollbar");
+                VerticalScrollbar.WriteJson(jsonWriter);
+            }
+
+            jsonWriter.WriteEndObject();
+        }
+    }
+
+    public class CuiScrollbar
+    {
+        [JsonProperty("invert")]
+        public bool Invert { get; set; }
+
+        [JsonProperty("autoHide")]
+        public bool AutoHide { get; set; }
+
+        [JsonProperty("handleSprite")]
+        public string HandleSprite { get; set; }
+
+        [JsonProperty("size")]
+        public float Size { get; set; }
+
+        [JsonProperty("handleColor")]
+        public string HandleColor { get; set; }
+
+        [JsonProperty("highlightColor")]
+        public string HighlightColor { get; set; }
+
+        [JsonProperty("pressedColor")]
+        public string PressedColor { get; set; }
+
+        [JsonProperty("trackSprite")]
+        public string TrackSprite { get; set; }
+
+        [JsonProperty("trackColor")]
+        public string TrackColor { get; set; }
+
+        public void WriteJson(JsonWriter jsonWriter)
+        {
+            jsonWriter.WriteStartObject();
+
+            jsonWriter.WritePropertyName("invert");
+            jsonWriter.WriteValue(Invert);
+
+            jsonWriter.WritePropertyName("autoHide");
+            jsonWriter.WriteValue(AutoHide);
+
+            if (HandleSprite != null)
+            {
+                jsonWriter.WritePropertyName("handleSprite");
+                jsonWriter.WriteValue(HandleSprite);
+            }
+
+            jsonWriter.WritePropertyName("size");
+            jsonWriter.WriteValue(Size);
+
+            if (HandleColor != null)
+            {
+                jsonWriter.WritePropertyName("handleColor");
+                jsonWriter.WriteValue(HandleColor);
+            }
+
+            if (HighlightColor != null)
+            {
+                jsonWriter.WritePropertyName("highlightColor");
+                jsonWriter.WriteValue(HighlightColor);
+            }
+
+            if (PressedColor != null)
+            {
+                jsonWriter.WritePropertyName("pressedColor");
+                jsonWriter.WriteValue(PressedColor);
+            }
+
+            if (TrackSprite != null)
+            {
+                jsonWriter.WritePropertyName("trackSprite");
+                jsonWriter.WriteValue(TrackSprite);
+            }
+
+            if (TrackColor != null)
+            {
+                jsonWriter.WritePropertyName("trackColor");
+                jsonWriter.WriteValue(TrackColor);
             }
 
             jsonWriter.WriteEndObject();
@@ -1009,6 +1209,10 @@ namespace Oxide.Game.Rust.Cui
 
                 case "RectTransform":
                     type = typeof(CuiRectTransformComponent);
+                    break;
+
+                case "UnityEngine.UI.ScrollView":
+                    type = typeof(CuiScrollViewComponent);
                     break;
 
                 default:

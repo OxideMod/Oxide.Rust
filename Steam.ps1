@@ -8,7 +8,8 @@ param (
     [string]$steam_appid = "0",
     [string]$steam_branch = "public",
     [string]$steam_depot = "",
-    [string]$steam_access = "anonymous"
+    [string]$steam_access = "anonymous",
+    [string]$references_override = ""
 )
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -34,9 +35,10 @@ $resources_dir = Join-Path $root_dir "resources"
 $deps_dir = Join-Path $project_dir "Dependencies"
 $platform_dir = Join-Path $deps_dir $platform
 $managed_dir = Join-Path $platform_dir $managed_dir # TODO: Make sure passed path is Linux-compatible
+$docs_dir = Join-Path $root_dir "docs"
 $patcher_exe = Join-Path $tools_dir "OxidePatcher.exe"
 $references_file = Join-Path $tools_dir ".references"
-New-Item "$tools_dir", "$managed_dir" -ItemType Directory -Force | Out-Null
+New-Item "$tools_dir", "$managed_dir", "$docs_dir" -ItemType Directory -Force | Out-Null
 
 # Set URLs of dependencies and tools to download
 $steam_depotdl_url = "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_2.5.0/depotdownloader-2.5.0.zip"
@@ -78,8 +80,13 @@ function Find-Dependencies {
         Write-Host "Getting references for $steam_branch branch of $steam_appid"
         try {
             # TODO: Exclude dependencies included in repository
-            ($xml.selectNodes("//Reference") | Select-Object Include -ExpandProperty Include) -Replace "\S+$", "regex:$&.dll" | Out-File $references_file
-            Write-Host "References:" ((Get-Content $references_file).Replace('regex:', '') -Join ', ')
+            if ($references_override) {
+                $references_override | Out-File $references_file
+                Write-Host "References:" ((Get-Content $references_file) -Join ', ')
+            } else {
+                ($xml.selectNodes("//Reference") | Select-Object Include -ExpandProperty Include) -Replace "\S+$", "regex:$&.dll" | Out-File $references_file
+                Write-Host "References:" ((Get-Content $references_file).Replace('regex:', '') -Join ', ')
+            }
         } catch {
             Write-Host "Error: Could not get references or none found in $project.csproj"
             Write-Host $_.Exception | Format-List -Force
@@ -311,7 +318,7 @@ function Start-Patcher {
         if ($IsLinux) {
             Start-Process mono -WorkingDirectory $managed_dir -ArgumentList "$patcher_exe -c -p `"$managed_dir`" $patcher_file" -NoNewWindow -Wait
         } elseif ($IsWindows) {
-            Start-Process $patcher_exe -WorkingDirectory $managed_dir -ArgumentList "-c -p `"$managed_dir`" $patcher_file" -NoNewWindow -Wait
+            Start-Process $patcher_exe -WorkingDirectory $managed_dir -ArgumentList "-c -p `"$managed_dir`" -docs $docs_dir/docs.json $patcher_file" -NoNewWindow -Wait
         }
     } catch {
         Write-Host "Error: Could not start or complete patching process"

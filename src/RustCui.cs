@@ -947,11 +947,8 @@ namespace Oxide.Game.Rust.Cui
         {
             jsonWriter.WriteStartObject();
 
-            if (Type != null)
-            {
-                jsonWriter.WritePropertyName("type");
-                jsonWriter.WriteValue(Type);
-            }
+            jsonWriter.WritePropertyName("type");
+            jsonWriter.WriteValue(Type);
 
             jsonWriter.WritePropertyName("horizontal");
             jsonWriter.WriteValue(Horizontal);

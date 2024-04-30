@@ -20517,6 +20517,30 @@
             "MSILHash": "fK15Oh5Fg8RYTGi9tUBbzcF+r0m04MzMQRMKBWtv8C0=",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnNoGoZoneAdded",
+            "HookName": "OnNoGoZoneAdded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatrolHelicopterAI",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "NoGoZoneAdded",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "PatrolHelicopterAI/DangerZone"
+              ]
+            },
+            "MSILHash": "W7XQuXXoyfhBrsImRBEgXTUQUoCQ7Ga4oeO0ASFOOJw=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [
@@ -50791,6 +50815,128 @@
             ],
             "Name": "proxManager",
             "FullTypeName": "HarborProximityManager CargoShip::proxManager",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI/DangerZone",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI/DangerZone",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DangerZone",
+            "FullTypeName": "PatrolHelicopterAI/DangerZone",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::IsInDangerZone",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsInDangerZone",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "PatrolHelicopterAI/DangerZone&"
+            ]
+          },
+          "MSILHash": "VC2zhJLba0xHqj/BIFfBno9xlh5x+chnVPY9Z7SDVy4="
+        },
+        {
+          "Name": "PatrolHelicopterAI::IsInNoGoZone",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "IsInNoGoZone",
+            "FullTypeName": "System.Boolean",
+            "Parameters": [
+              "UnityEngine.Vector3"
+            ]
+          },
+          "MSILHash": "YDjlgYQEDXzGgPqWBPVw+/d3T1Wbhf6KDxo6QqqhblI="
+        },
+        {
+          "Name": "PatrolHelicopterAI::MakeZone",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "MakeZone",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "UnityEngine.Vector3",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "PFBAXWOn7M9VFDdht4Piy9cVDaGN4Klk9S5vQckBQ1o="
+        },
+        {
+          "Name": "PatrolHelicopterAI::noGoZones",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "noGoZones",
+            "FullTypeName": "System.Collections.Generic.List`1<PatrolHelicopterAI/DangerZone> PatrolHelicopterAI::noGoZones",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PatrolHelicopterAI::dangerZones",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PatrolHelicopterAI",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "dangerZones",
+            "FullTypeName": "System.Collections.Generic.List`1<PatrolHelicopterAI/DangerZone> PatrolHelicopterAI::dangerZones",
             "Parameters": []
           },
           "MSILHash": ""

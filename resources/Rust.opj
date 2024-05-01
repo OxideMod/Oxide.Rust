@@ -51139,6 +51139,145 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "HackableLockedCrate::hasBeenOpened",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HackableLockedCrate",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hasBeenOpened",
+            "FullTypeName": "System.Boolean HackableLockedCrate::hasBeenOpened",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HackableLockedCrate::mapMarkerInstance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HackableLockedCrate",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "mapMarkerInstance",
+            "FullTypeName": "BaseEntity HackableLockedCrate::mapMarkerInstance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HackableLockedCrate::originalHackerPlayer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HackableLockedCrate",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "originalHackerPlayer",
+            "FullTypeName": "BasePlayer HackableLockedCrate::originalHackerPlayer",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "HackableLockedCrate::originalHackerPlayerId",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "HackableLockedCrate",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "originalHackerPlayerId",
+            "FullTypeName": "System.UInt64 HackableLockedCrate::originalHackerPlayerId",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ItemDefinition::ItemModBurnable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ItemDefinition",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "ItemModBurnable",
+            "FullTypeName": "ItemModBurnable ItemDefinition::ItemModBurnable()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ItemDefinition::ItemModCookable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ItemDefinition",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "ItemModCookable",
+            "FullTypeName": "ItemModCookable ItemDefinition::ItemModCookable()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "ItemDefinition::ItemModWearable",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ItemDefinition",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "ItemModWearable",
+            "FullTypeName": "ItemModWearable ItemDefinition::ItemModWearable()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

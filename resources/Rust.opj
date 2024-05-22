@@ -20799,6 +20799,154 @@
             "BaseHookName": "OnCupboardAuthorize [BuildingPrivlidge]",
             "HookCategory": "Structure"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "OnNpcGetBestRoamPoint [HumanPathFinder]",
+            "HookName": "OnNpcGetBestRoamPoint",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "HumanPathFinder",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "GetBestRoamPoint",
+              "ReturnType": "AIMovePoint",
+              "Parameters": [
+                "UnityEngine.Vector3",
+                "UnityEngine.Vector3",
+                "UnityEngine.Vector3",
+                "System.Single",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "kHd/L8tiwso7TKINnh4tnYUbtY77uP0k1jO2Hba0nJE=",
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "this, a0 => a0",
+            "HookTypeName": "Simple",
+            "Name": "OnAICaresAbout[AIBrainSenses] ",
+            "HookName": "OnAICaresAbout",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AIBrainSenses",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "AiCaresAbout",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BaseEntity"
+              ]
+            },
+            "MSILHash": "sNojVubtXD5Q0hMFrFp4uGZS0SS1KxP2iDAklJZ+52Y=",
+            "HookCategory": "AI"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnTurretCheckHostile [AutoTurret]",
+            "HookName": "OnTurretCheckHostile",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsEntityHostile",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BaseCombatEntity"
+              ]
+            },
+            "MSILHash": "xGE919ZUhPG9kfJnxaLxgVBy0eaLnnS194iIIpBlYTM=",
+            "HookCategory": "Turret"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnTurretCheckHostile [NPCAutoTurret]",
+            "HookName": "OnTurretCheckHostile",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCAutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsEntityHostile",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BaseCombatEntity"
+              ]
+            },
+            "MSILHash": "zmVLO3qtPWBEkAExIS90YydDsQOXlGsV4vIGvE8eBVk=",
+            "HookCategory": "Turret"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnTurretShouldTarget [AutoTurret]",
+            "HookName": "OnTurretShouldTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ShouldTarget",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BaseCombatEntity"
+              ]
+            },
+            "MSILHash": "42RfkayimHkq5QJd2Bfhtn4hz99kzQpFf/FY9qG+8zg=",
+            "HookCategory": "Turret"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 131,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnAIInitialize [BaseAIBrain]",
+            "HookName": "OnAIInitialize",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseAIBrain",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "InitializeAI",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "DQug0ecDlsJYn+d1ffRY8zz2w7L2p1ZdWwkQrgbVhAQ=",
+            "HookCategory": "AI"
+          }
         }
       ],
       "Modifiers": [
@@ -51275,6 +51423,158 @@
             ],
             "Name": "ItemModWearable",
             "FullTypeName": "ItemModWearable ItemDefinition::ItemModWearable()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNavigator::navMeshQueryFilter",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNavigator",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "navMeshQueryFilter",
+            "FullTypeName": "UnityEngine.AI.NavMeshQueryFilter BaseNavigator::navMeshQueryFilter",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseNavigator::defaultAreaMask",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNavigator",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "defaultAreaMask",
+            "FullTypeName": "System.Int32 BaseNavigator::defaultAreaMask",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DynamicNavMesh::HasBuildOperationStarted",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DynamicNavMesh",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HasBuildOperationStarted",
+            "FullTypeName": "System.Boolean DynamicNavMesh::HasBuildOperationStarted",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DungeonNavmesh::HasBuildOperationStarted",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DungeonNavmesh",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HasBuildOperationStarted",
+            "FullTypeName": "System.Boolean DungeonNavmesh::HasBuildOperationStarted",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MonumentNavMesh::HasBuildOperationStarted",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MonumentNavMesh",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HasBuildOperationStarted",
+            "FullTypeName": "System.Boolean MonumentNavMesh::HasBuildOperationStarted",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DungeonNavmesh::agentTypeId",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DungeonNavmesh",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "agentTypeId",
+            "FullTypeName": "System.Int32 DungeonNavmesh::agentTypeId",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "DynamicNavMesh::agentTypeId",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DynamicNavMesh",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "agentTypeId",
+            "FullTypeName": "System.Int32 DynamicNavMesh::agentTypeId",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "MonumentNavMesh::agentTypeId",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "MonumentNavMesh",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "agentTypeId",
+            "FullTypeName": "System.Int32 MonumentNavMesh::agentTypeId",
             "Parameters": []
           },
           "MSILHash": ""

@@ -13548,7 +13548,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "bAMd/oHufDntxXhVJVihROtYHum0Nb04g6aEdYPFMzo=",
+            "MSILHash": "reOmLDroT7ybfK7UrZQJrOpf2wllCJhJSycvZza7cmI=",
             "HookCategory": "Item"
           }
         },
@@ -16865,10 +16865,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 478,
+            "InjectionIndex": 519,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l20, this, a0",
+            "ArgumentString": "l21, this, a0",
             "HookTypeName": "Simple",
             "Name": "OnItemStacked [2]",
             "HookName": "OnItemStacked",
@@ -16888,7 +16888,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "bAMd/oHufDntxXhVJVihROtYHum0Nb04g6aEdYPFMzo=",
+            "MSILHash": "reOmLDroT7ybfK7UrZQJrOpf2wllCJhJSycvZza7cmI=",
             "BaseHookName": "OnItemStacked [1]",
             "HookCategory": "Item"
           }

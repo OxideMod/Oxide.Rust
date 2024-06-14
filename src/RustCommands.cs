@@ -309,8 +309,10 @@ namespace Oxide.Game.Rust
 
             int pluginCount = 1;
 
-            foreach (var plugin in plugins.Where(p => p.Filename != null && !p.IsCorePlugin))
+            foreach (var plugin in plugins)
             {
+                if (plugin.Filename == null || plugin.IsCorePlugin) continue;
+
                 output.AppendLine()
                     .Append("  ")
                     .Append(pluginCount++.ToString("00"))

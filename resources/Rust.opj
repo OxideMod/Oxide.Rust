@@ -20840,6 +20840,107 @@
             "MSILHash": "yl9aYgR/KvsKEHdrLPDJa4SZrGnMINPqmslBjj5yUmQ=",
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.carOccupant, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnLockRemove",
+            "HookName": "OnLockRemove",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarGarage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_RequestRemoveLock",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "efBBrs4zGg2R1eus3EbB5sdGSwcTz+G4oemset+Eb5I=",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 24,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.carOccupant, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCodeChange",
+            "HookName": "OnCodeChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarGarage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_RequestNewCode",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "oO37LPeilRCXU4hBPqHTOOYJYU/nmNL8Yy6bLcCClL4=",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this, a1",
+            "HookTypeName": "Simple",
+            "Name": "CanDestroyLock",
+            "HookName": "CanDestroyLock",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCar",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PlayerCanDestroyLock",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "BaseVehicleModule"
+              ]
+            },
+            "MSILHash": "ZKnw6gLkxxwTgrKBLjNeJiwd7k2KgLr7BdEi7fqe+l4=",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this.owner, this",
+            "HookTypeName": "Simple",
+            "Name": "CanLock",
+            "HookName": "CanLock",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarCodeLock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "HasLockPermission",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "05Q1TBojJhwG/faYe33UR6LwOSut+xgSu3ArhnErlFY=",
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

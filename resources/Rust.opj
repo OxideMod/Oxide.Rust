@@ -20799,6 +20799,29 @@
             "BaseHookName": "OnCupboardAuthorize [BuildingPrivlidge]",
             "HookCategory": "Structure"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 71,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnWildlifeTrap [SurvivalFishTrap]",
+            "HookName": "OnWildlifeTrap",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SurvivalFishTrap",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TrapThink",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "kukZMW5Rb9gzXOE88Zo0iTyhS8IO09nLQ5p8T1d9Kq0=",
+            "HookCategory": "Traps"
+          }
         }
       ],
       "Modifiers": [

@@ -51279,6 +51279,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "IndustrialConveyor::mode",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "IndustrialConveyor",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "mode",
+            "FullTypeName": "IndustrialConveyor/ConveyorMode IndustrialConveyor::mode",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

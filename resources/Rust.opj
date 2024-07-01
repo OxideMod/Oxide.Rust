@@ -20822,6 +20822,31 @@
             "MSILHash": "kukZMW5Rb9gzXOE88Zo0iTyhS8IO09nLQ5p8T1d9Kq0=",
             "HookCategory": "Traps"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.Initiator, a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerPveDamage [BuildingBlock]",
+            "HookName": "OnPlayerPveDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BuildingBlock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Hurt",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "+87tqhW+o58zsQkND6Eswh0cMTdFPQOtgY/KJEcToak=",
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [

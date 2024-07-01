@@ -20761,6 +20761,85 @@
             "BaseHookName": "OnStructureUpgrade [Delayed]",
             "HookCategory": "Structure"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "CanDeployScientists [BradleyAPC]",
+            "HookName": "CanDeployScientists",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BradleyAPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CanDeployScientists",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BaseEntity",
+                "System.Collections.Generic.List`1<GameObjectRef>",
+                "System.Collections.Generic.List`1<UnityEngine.Vector3>"
+              ]
+            },
+            "MSILHash": "yJmG0f32C9+J7trNHLN4AdU4ilMblTied3qOVWzbdog=",
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 122,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnScientistInitialized [BradleyAPC]",
+            "HookName": "OnScientistInitialized",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BradleyAPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "InitScientist",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ScientistNPC",
+                "UnityEngine.Vector3",
+                "BasePlayer",
+                "System.Boolean",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "1TbHAd27cEn42xidJjKldd3qAEbDOzHhEluOfklvJ14=",
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 27,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnScientistRecalled [BradleyAPC]",
+            "HookName": "OnScientistRecalled",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BradleyAPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnScientistMounted",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ScientistNPC"
+              ]
+            },
+            "MSILHash": "yl9aYgR/KvsKEHdrLPDJa4SZrGnMINPqmslBjj5yUmQ=",
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

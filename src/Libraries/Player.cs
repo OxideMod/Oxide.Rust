@@ -255,7 +255,7 @@ namespace Oxide.Game.Rust.Libraries
 
                     // Teleport the player to position
                     player.MovePosition(destination);
-                    player.ClientRPCPlayer(null, player, "ForcePositionTo", destination);
+                    player.ClientRPC(RpcTarget.Player("ForcePositionTo", player), destination);
 
                     // Update network group if outside current group
                     /*if (!player.net.sv.visibility.IsInside(player.net.group, destination))

@@ -630,10 +630,10 @@ namespace Oxide.Game.Rust
         private void OnServerInformationUpdated()
         {
             // Add Steam tags for Oxide
-            SteamServer.GameTags += ",oxide";
+            SteamServer.GameTags += ",^o";
             if (Interface.Oxide.Config.Options.Modded)
             {
-                SteamServer.GameTags += ",modded";
+                SteamServer.GameTags += "^z";
             }
         }
 

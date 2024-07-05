@@ -638,5 +638,27 @@ namespace Oxide.Game.Rust
         }
 
         #endregion Server Hooks
+
+        #region Structure hooks
+
+        [HookMethod("IOnCupboardAuthorize")]
+        private object IOnCupboardAuthorize(ulong userID, BasePlayer player, BuildingPrivlidge privlidge)
+        {
+            if (userID == player.userID)
+            {
+                if (Interface.CallHook("OnCupboardAuthorize", privlidge, player) != null)
+                {
+                    return true;
+                }
+            }
+            else if (Interface.CallHook("OnCupboardAssign", privlidge, userID, player) != null)
+            {
+                return true;
+            }
+
+            return null;
+        }
+
+        #endregion
     }
 }

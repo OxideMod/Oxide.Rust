@@ -51245,6 +51245,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Bike::idleFuelPerSec",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "idleFuelPerSec",
+            "FullTypeName": "System.Single Bike::idleFuelPerSec",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::maxFuelPerSec",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "maxFuelPerSec",
+            "FullTypeName": "System.Single Bike::maxFuelPerSec",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

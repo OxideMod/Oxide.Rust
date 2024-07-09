@@ -51283,6 +51283,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Bike::hasSidecar",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "hasSidecar",
+            "FullTypeName": "System.Boolean Bike::hasSidecar",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

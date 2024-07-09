@@ -20709,6 +20709,58 @@
             "MSILHash": "jl3FY9HQkomvDw9iyNI/4wLarKRGLYSPWj6vNd5Zmb8=",
             "HookCategory": "Structure"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 166,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player, l0.gradeBase.type, l0.gradeBase.skin",
+            "HookTypeName": "Simple",
+            "Name": "OnStructureUpgraded",
+            "HookName": "OnStructureUpgraded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BuildingBlock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "DoUpgradeToGrade",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "yp4J7HoNm79dzq8feyTUfJ8HPOf4ICC2ZgZlLR2m6LI=",
+            "BaseHookName": "OnStructureUpgrade",
+            "HookCategory": "Structure"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 107,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnStructureUpgraded [Delayed]",
+            "HookName": "OnStructureUpgraded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BuildingBlock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "DoUpgradeToGrade_Delayed",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "U6X14oZlZ0LWqxlWFwEWZHBDp7wVUBs+Zh6daY7HqRU=",
+            "BaseHookName": "OnStructureUpgrade [Delayed]",
+            "HookCategory": "Structure"
+          }
         }
       ],
       "Modifiers": [

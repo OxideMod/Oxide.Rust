@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "J:\\rustserverNoOxide\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -2498,7 +2498,7 @@
             "HookName": "OnPlayerDeath",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "Die",
@@ -2507,7 +2507,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "f9SHfqbbYuVF2DswL9O9gT42L8tkZlqJhnPnEHbYj9c=",
+            "MSILHash": "n5X2YXUUVMrrQ/e2E3IfsYv4JFo0EpK3n1f1lR5Qimc=",
             "HookCategory": "Player"
           }
         },
@@ -2815,7 +2815,7 @@
             "HookName": "OnRefreshVendingStock",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "VendingMachine",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "RefreshSellOrderStockLevel",
@@ -2824,7 +2824,7 @@
                 "ItemDefinition"
               ]
             },
-            "MSILHash": "fIoxmywfio/9LoN7/3t8EOrEyuh0y6HzOdpGPaQD4bw=",
+            "MSILHash": "GiAMLx0OT0HO41q5KjQVvQUdzLbI9srBFMxqXhM1UyU=",
             "HookCategory": "Vending"
           }
         },
@@ -6159,7 +6159,7 @@
             "HookName": "CanSpectateTarget",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BasePlayer",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "UpdateSpectateTarget",
@@ -6168,7 +6168,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "qPy2UIWkEl109qmWQKLtYeH+BZw/qKRWpIy7rkxkCbs=",
+            "MSILHash": "pV2lSQF3HLG56EM4ZWGFOkx87zOcOHmSJ93VhEqvo7E=",
             "HookCategory": "Player"
           }
         },
@@ -9488,14 +9488,14 @@
             "HookName": "OnDefaultItemsReceive",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlayerInventory",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "GiveDefaultItems",
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "76ss2GSFNEMUPpgTQNsEGOpcOlTISfBmIihgfrLYR0Y=",
+            "MSILHash": "3zGLCYo/nwHXB0MmaI+CWVswp02vovZMpQ/4ES23v2U=",
             "HookCategory": "Player"
           }
         },
@@ -9511,14 +9511,14 @@
             "HookName": "OnDefaultItemsReceived",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "PlayerInventory",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "GiveDefaultItems",
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "76ss2GSFNEMUPpgTQNsEGOpcOlTISfBmIihgfrLYR0Y=",
+            "MSILHash": "3zGLCYo/nwHXB0MmaI+CWVswp02vovZMpQ/4ES23v2U=",
             "BaseHookName": "OnDefaultItemsReceive",
             "HookCategory": "Player"
           }
@@ -17594,14 +17594,14 @@
             "HookName": "OnWeaponModChange",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseProjectile",
-            "Flagged": false,
+            "Flagged": true,
             "Signature": {
               "Exposure": 2,
               "Name": "DelayedModsChanged",
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "isYZ3vlbQfLxtkT0mrV5iTmYQm62DpXW9cZwlKIdDnw=",
+            "MSILHash": "8N4eXpJHPFn4oX7MrIYoFOk03OZTOpPJgTVwdlEnNK4=",
             "HookCategory": "Weapon"
           }
         },
@@ -51228,7 +51228,7 @@
           "TargetExposure": [
             2
           ],
-          "Flagged": false,
+          "Flagged": true,
           "Signature": {
             "Exposure": [
               0
@@ -51351,6 +51351,215 @@
             ],
             "Name": "hasSidecar",
             "FullTypeName": "System.Boolean Bike::hasSidecar",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "Bike",
+            "FullTypeName": "Bike",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::snowmobileDrivingStyle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "snowmobileDrivingStyle",
+            "FullTypeName": "System.Boolean Bike::snowmobileDrivingStyle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::carPhysics",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "carPhysics",
+            "FullTypeName": "CarPhysics`1<Bike> Bike::carPhysics",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::carSettings",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "carSettings",
+            "FullTypeName": "CarSettings Bike::carSettings",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::engineKW",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineKW",
+            "FullTypeName": "System.Int32 Bike::engineKW",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::lastCrashDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            0
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastCrashDamage",
+            "FullTypeName": "System.Single Bike::lastCrashDamage",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::sprintRegenTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "sprintRegenTime",
+            "FullTypeName": "System.Single Bike::sprintRegenTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::sprintBoostPercent",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "sprintBoostPercent",
+            "FullTypeName": "System.Single Bike::sprintBoostPercent",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::percentFood",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "percentFood",
+            "FullTypeName": "System.Single Bike::percentFood",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::playerDeathThreshold",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerDeathThreshold",
+            "FullTypeName": "System.Single Bike::playerDeathThreshold",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::playerDamageThreshold",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerDamageThreshold",
+            "FullTypeName": "System.Single Bike::playerDamageThreshold",
             "Parameters": []
           },
           "MSILHash": ""

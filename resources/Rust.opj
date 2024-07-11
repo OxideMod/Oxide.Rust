@@ -51534,6 +51534,196 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Bike::snowmobileDrivingStyle",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "snowmobileDrivingStyle",
+            "FullTypeName": "System.Boolean Bike::snowmobileDrivingStyle",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::carPhysics",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "carPhysics",
+            "FullTypeName": "CarPhysics`1<Bike> Bike::carPhysics",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::carSettings",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "carSettings",
+            "FullTypeName": "CarSettings Bike::carSettings",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::engineKW",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "engineKW",
+            "FullTypeName": "System.Int32 Bike::engineKW",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::lastCrashDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastCrashDamage",
+            "FullTypeName": "System.Single Bike::lastCrashDamage",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::sprintRegenTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "sprintRegenTime",
+            "FullTypeName": "System.Single Bike::sprintRegenTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::sprintBoostPercent",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "sprintBoostPercent",
+            "FullTypeName": "System.Single Bike::sprintBoostPercent",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::percentFood",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "percentFood",
+            "FullTypeName": "System.Single Bike::percentFood",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::playerDeathThreshold",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerDeathThreshold",
+            "FullTypeName": "System.Single Bike::playerDeathThreshold",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::playerDamageThreshold",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerDamageThreshold",
+            "FullTypeName": "System.Single Bike::playerDamageThreshold",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

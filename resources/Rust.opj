@@ -51354,6 +51354,44 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "PhotoFrame::_photoEntity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PhotoFrame",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "_photoEntity",
+            "FullTypeName": "EntityRef PhotoFrame::_photoEntity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "SignContent::textureIDs",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "SignContent",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "textureIDs",
+            "FullTypeName": "System.UInt32[] SignContent::textureIDs",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -20761,6 +20761,30 @@
             "BaseHookName": "OnStructureUpgrade [Delayed]",
             "HookCategory": "Structure"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityFlagsChanged",
+            "HookName": "OnEntityFlagsChanged",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity",
+            "Flagged": true,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnFlagsChanged",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/Flags",
+                "BaseEntity/Flags"
+              ]
+            },
+            "MSILHash": "GD3jw/NxtPzaFr+eiL6GUULpTYPm3pQCd+7x+ikmMWY="
+          }
         }
       ],
       "Modifiers": [

@@ -20941,6 +20941,32 @@
             "MSILHash": "05Q1TBojJhwG/faYe33UR6LwOSut+xgSu3ArhnErlFY=",
             "HookCategory": "Vehicle"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnDebrisSpawn",
+            "HookName": "OnDebrisSpawn",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DecayEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SpawnDebris",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Vector3",
+                "UnityEngine.Quaternion",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "3YX1aB4YU4tTKzgh56WDa600ApfHeJiPFGW4LIvCt8Q=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

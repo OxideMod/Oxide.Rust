@@ -4486,7 +4486,7 @@
           "Hook": {
             "InjectionIndex": 12,
             "ReturnBehavior": 1,
-            "ArgumentBehavior": 2,
+            "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
             "HookTypeName": "Simple",
             "Name": "OnTurretClearList",
@@ -4503,30 +4503,6 @@
               ]
             },
             "MSILHash": "a30ZFl3bbNQtt4Nfl4v2WEo5iAEPgp+PrA6aZmxLvr8=",
-            "HookCategory": "Turret"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 21,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 1,
-            "HookTypeName": "Simple",
-            "Name": "OnTurretModeToggle",
-            "HookName": "OnTurretModeToggle",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "AutoTurret",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "SetPeacekeepermode",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.Boolean"
-              ]
-            },
-            "MSILHash": "72ptfXQq6hBgNhS+AzQtSQFnNj2Y1FCqf0FMo042lmg=",
             "HookCategory": "Turret"
           }
         },
@@ -20760,6 +20736,81 @@
             "MSILHash": "U6X14oZlZ0LWqxlWFwEWZHBDp7wVUBs+Zh6daY7HqRU=",
             "BaseHookName": "OnStructureUpgrade [Delayed]",
             "HookCategory": "Structure"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 5,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnTurretModeToggle [Peacekeeper]",
+            "HookName": "OnTurretModeToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SERVER_Peacekeeper",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "MiXb0qQtvw/9/g3mCsnSj+aM3qj8Uq3XQeLCWqW5pgg=",
+            "HookCategory": "Turret"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 5,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnTurretModeToggle [AttackAll]",
+            "HookName": "OnTurretModeToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SERVER_AttackAll",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "24wmfOuvonrnhU9AvAk5cXVL0hLoTx2vt2SM7QkCLfg=",
+            "HookCategory": "Turret"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 39,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnTurretSetID",
+            "HookName": "OnTurretSetID",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_SetID",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Zv0jW8gOwS31EWCrcTxqCb7x0k7eZhFFib5kVIWe7vM=",
+            "HookCategory": "Turret"
           }
         }
       ],

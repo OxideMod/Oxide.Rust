@@ -4486,7 +4486,7 @@
           "Hook": {
             "InjectionIndex": 12,
             "ReturnBehavior": 1,
-            "ArgumentBehavior": 2,
+            "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
             "HookTypeName": "Simple",
             "Name": "OnTurretClearList",
@@ -4509,24 +4509,25 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 21,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 1,
+            "InjectionIndex": 5,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
             "HookTypeName": "Simple",
-            "Name": "OnTurretModeToggle",
+            "Name": "OnTurretModeToggle [Peacekeeper]",
             "HookName": "OnTurretModeToggle",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "AutoTurret",
             "Flagged": false,
             "Signature": {
-              "Exposure": 2,
-              "Name": "SetPeacekeepermode",
+              "Exposure": 0,
+              "Name": "SERVER_Peacekeeper",
               "ReturnType": "System.Void",
               "Parameters": [
-                "System.Boolean"
+                "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "72ptfXQq6hBgNhS+AzQtSQFnNj2Y1FCqf0FMo042lmg=",
+            "MSILHash": "MiXb0qQtvw/9/g3mCsnSj+aM3qj8Uq3XQeLCWqW5pgg=",
             "HookCategory": "Turret"
           }
         },
@@ -20993,6 +20994,56 @@
             },
             "MSILHash": "3YX1aB4YU4tTKzgh56WDa600ApfHeJiPFGW4LIvCt8Q=",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 5,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnTurretModeToggle [AttackAll]",
+            "HookName": "OnTurretModeToggle",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SERVER_AttackAll",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "24wmfOuvonrnhU9AvAk5cXVL0hLoTx2vt2SM7QkCLfg=",
+            "HookCategory": "Turret"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 39,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnTurretIdentifierSet",
+            "HookName": "OnTurretIdentifierSet",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "AutoTurret",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Server_SetID",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Zv0jW8gOwS31EWCrcTxqCb7x0k7eZhFFib5kVIWe7vM=",
+            "HookCategory": "Turret"
           }
         }
       ],

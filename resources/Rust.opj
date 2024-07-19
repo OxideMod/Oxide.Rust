@@ -5546,6 +5546,33 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 36,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnArcadeScoreAdded",
+            "HookName": "OnArcadeScoreAdded",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseArcadeMachine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AddScore",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "LjVNNN9WHIf/6Q38keBvnpjmugIWErPT+ZOKGaNhpa4=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 1,

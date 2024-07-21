@@ -51885,6 +51885,47 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "WeaponRack::gridSlots",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WeaponRack",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "gridSlots",
+            "FullTypeName": "WeaponRackSlot[] WeaponRack::gridSlots",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "WeaponRack::SetGridCellContents",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "WeaponRack",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "SetGridCellContents",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "WeaponRackSlot",
+              "System.Boolean"
+            ]
+          },
+          "MSILHash": "PQds4LETFsLOyAMwvzoA5cq9J2aWCG8+WfJlmZYjuwo="
         }
       ],
       "Fields": [

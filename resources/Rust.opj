@@ -47669,7 +47669,7 @@
           "TypeName": "ZiplineLaunchPoint",
           "Type": 1,
           "TargetExposure": [
-            0
+            2
           ],
           "Flagged": false,
           "Signature": {
@@ -51993,6 +51993,120 @@
             ],
             "Name": "vendingMachine",
             "FullTypeName": "NPCVendingMachine TravellingVendor::vendingMachine",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "PuzzleReset::resetTimeElapsed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "PuzzleReset",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "resetTimeElapsed",
+            "FullTypeName": "System.Single PuzzleReset::resetTimeElapsed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::MainRoads",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "MainRoads",
+            "FullTypeName": "System.Collections.Generic.List`1<PathList> TerrainPath::MainRoads",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::SideRoads",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "SideRoads",
+            "FullTypeName": "System.Collections.Generic.List`1<PathList> TerrainPath::SideRoads",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainPath::TrailRoads",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainPath",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "TrailRoads",
+            "FullTypeName": "System.Collections.Generic.List`1<PathList> TerrainPath::TrailRoads",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Recycler::scrapRemainder",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Recycler",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "scrapRemainder",
+            "FullTypeName": "System.Single Recycler::scrapRemainder",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::timeSinceLastUsed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "timeSinceLastUsed",
+            "FullTypeName": "TimeSince Bike::timeSinceLastUsed",
             "Parameters": []
           },
           "MSILHash": ""

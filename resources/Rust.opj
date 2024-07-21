@@ -21045,6 +21045,57 @@
             "MSILHash": "Zv0jW8gOwS31EWCrcTxqCb7x0k7eZhFFib5kVIWe7vM=",
             "HookCategory": "Turret"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 9,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.vendingMachine, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnVendingShopOpen [TravellingVendor]",
+            "HookName": "OnVendingShopOpen",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TravellingVendor",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SV_OpenMenu",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "+fMEg4NkvoineQ31ZC5YloROL/KR9/Zg+FppE5WD9PM=",
+            "HookCategory": "Vending"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.vendingMachine, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnVendingShopOpened [TravellingVendor]",
+            "HookName": "OnVendingShopOpened",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TravellingVendor",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SV_OpenMenu",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "+fMEg4NkvoineQ31ZC5YloROL/KR9/Zg+FppE5WD9PM=",
+            "BaseHookName": "OnVendingShopOpen [TravellingVendor]",
+            "HookCategory": "Vending"
+          }
         }
       ],
       "Modifiers": [
@@ -51926,6 +51977,25 @@
             ]
           },
           "MSILHash": "PQds4LETFsLOyAMwvzoA5cq9J2aWCG8+WfJlmZYjuwo="
+        },
+        {
+          "Name": "TravellingVendor::vendingMachine",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TravellingVendor",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "vendingMachine",
+            "FullTypeName": "NPCVendingMachine TravellingVendor::vendingMachine",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

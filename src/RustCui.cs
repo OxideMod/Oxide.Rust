@@ -403,19 +403,42 @@ namespace Oxide.Game.Rust.Cui
         public string Type => "Countdown";
 
         [JsonProperty("endTime")]
-        public int EndTime { get; set; }
+        public float EndTime { get; set; }
 
         [JsonProperty("startTime")]
-        public int StartTime { get; set; }
+        public float StartTime { get; set; }
 
         [JsonProperty("step")]
-        public int Step { get; set; }
+        public float Step { get; set; }
+
+        [JsonProperty("interval")]
+        public float Interval { get; set; }
+
+        [JsonConverter(typeof(StringEnumConverter))]
+        [JsonProperty("timerFormat")]
+        public TimerFormat TimerFormat { get; set; }
+
+        [JsonProperty("numberFormat")]
+        public string NumberFormat { get; set; }
+
+        [JsonProperty("destroyIfDone")]
+        public bool DestroyIfDone { get; set; }
 
         [JsonProperty("command")]
         public string Command { get; set; }
 
         [JsonProperty("fadeIn")]
         public float FadeIn { get; set; }
+    }
+
+    public enum TimerFormat
+    {
+        None,
+        SecondsHundreth,
+        MinutesSeconds,
+        MinutesSecondsHundreth,
+        HoursMinutes,
+        HoursMinutesSeconds
     }
 
     public class CuiNeedsCursorComponent : ICuiComponent

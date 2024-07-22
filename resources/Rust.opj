@@ -20761,6 +20761,56 @@
             "BaseHookName": "OnStructureUpgrade [Delayed]",
             "HookCategory": "Structure"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleRemoveLockRequest [ModularCarGarage]",
+            "HookName": "OnVehicleRemoveLockRequest",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarGarage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_RequestRemoveLock",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "efBBrs4zGg2R1eus3EbB5sdGSwcTz+G4oemset+Eb5I=",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 24,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnVehicleNewLockRequest [ModularCarGarage]",
+            "HookName": "OnVehicleNewLockRequest",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ModularCarGarage",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_RequestNewCode",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "xAUMDWPGZ/b+vu7SOG0eA6USMPuC4fD25hMf1lH7bDY=",
+            "HookCategory": "Vehicle"
+          }
         }
       ],
       "Modifiers": [

@@ -51377,6 +51377,13 @@
           "TypeName": "SprayCanSpray",
           "FieldType": "mscorlib|System.Int32",
           "Flagged": false
+        },
+        {
+          "Name": "pluginID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseEntity",
+          "FieldType": "mscorlib|System.UInt64",
+          "Flagged": false
         }
       ]
     },

@@ -813,6 +813,22 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("step");
             jsonWriter.WriteValue(Step);
 
+            jsonWriter.WritePropertyName("interval");
+            jsonWriter.WriteValue(Interval);
+
+            jsonWriter.WritePropertyName("timerFormat");
+            jsonWriter.WriteValue(TimerFormat.ToString());
+
+            if (NumberFormat != null)
+            {
+                jsonWriter.WritePropertyName("numberFormat");
+                jsonWriter.WriteValue(NumberFormat);
+            }
+
+            jsonWriter.WritePropertyName("destroyIfDone");
+            jsonWriter.WriteValue(DestroyIfDone);
+
+
             if (Command != null)
             {
                 jsonWriter.WritePropertyName("command");

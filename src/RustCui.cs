@@ -98,6 +98,34 @@ namespace Oxide.Game.Rust.Cui
             return false;
         }
 
+        public static bool DestroyUi(List<Network.Connection> playerList, string elem)
+        {
+            CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Players("DestroyUI", playerList), elem);
+            return true;
+        }
+
+        public static bool DestroyUi(List<BasePlayer> playerList, string elem)
+        {
+            List<Network.Connection> connections = Facepunch.Pool.GetList<Network.Connection>();
+            foreach (var player in playerList)
+            {
+                if (player?.net != null)
+                {
+                    connections.Add(player.net.connection);
+                }
+            }
+
+            if (connections.Count == 0)
+            {
+                Facepunch.Pool.FreeList(ref connections);
+                return false;
+            }
+
+            CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Players("DestroyUI", connections), elem);
+            Facepunch.Pool.FreeList(ref connections);
+            return true;
+        }
+
         public static void SetColor(this ICuiColor elem, Color color)
         {
             elem.Color = $"{color.r} {color.g} {color.b} {color.a}";

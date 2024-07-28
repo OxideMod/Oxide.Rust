@@ -51815,6 +51815,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Bike::airControlTorquePower",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "airControlTorquePower",
+            "FullTypeName": "System.Single Bike::airControlTorquePower",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

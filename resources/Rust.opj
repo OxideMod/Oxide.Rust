@@ -51381,6 +51381,101 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "Bike::airControlTorquePower",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "airControlTorquePower",
+            "FullTypeName": "System.Single Bike::airControlTorquePower",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::sprintRegenTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "sprintRegenTime",
+            "FullTypeName": "System.Single Bike::sprintRegenTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::sprintBoostPercent",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "sprintBoostPercent",
+            "FullTypeName": "System.Single Bike::sprintBoostPercent",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::playerDamageThreshold",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerDamageThreshold",
+            "FullTypeName": "System.Single Bike::playerDamageThreshold",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Bike::playerDeathThreshold",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "playerDeathThreshold",
+            "FullTypeName": "System.Single Bike::playerDeathThreshold",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

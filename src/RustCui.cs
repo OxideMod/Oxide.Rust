@@ -801,7 +801,7 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("timerFormat")]
-        public TimerFormatEnum TimerFormat { get; set; }
+        public TimerFormat TimerFormat { get; set; }
 
         [JsonProperty("numberFormat")]
         public string NumberFormat { get; set; }
@@ -814,16 +814,6 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonProperty("fadeIn")]
         public float FadeIn { get; set; }
-
-        public enum TimerFormatEnum
-        {
-            None,
-            SecondsHundreth,
-            MinutesSeconds,
-            MinutesSecondsHundreth,
-            HoursMinutes,
-            HoursMinutesSeconds
-        }
 
         public void WriteJson(JsonWriter jsonWriter)
         {
@@ -868,6 +858,16 @@ namespace Oxide.Game.Rust.Cui
 
             jsonWriter.WriteEndObject();
         }
+    }
+
+    public enum TimerFormat
+    {
+        None,
+        SecondsHundreth,
+        MinutesSeconds,
+        MinutesSecondsHundreth,
+        HoursMinutes,
+        HoursMinutesSeconds
     }
 
     public class CuiNeedsCursorComponent : ICuiComponent

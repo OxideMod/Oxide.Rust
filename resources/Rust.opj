@@ -52056,6 +52056,82 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "TinCanAlarm::endPoint",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TinCanAlarm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "endPoint",
+            "FullTypeName": "UnityEngine.Vector3 TinCanAlarm::endPoint",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TinCanAlarm::lastTriggerTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TinCanAlarm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastTriggerTime",
+            "FullTypeName": "System.Single TinCanAlarm::lastTriggerTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TinCanAlarm::lastTriggerEntity",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TinCanAlarm",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastTriggerEntity",
+            "FullTypeName": "BaseEntity TinCanAlarm::lastTriggerEntity",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TinCanAlarm::TriggerAlarm",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TinCanAlarm",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TriggerAlarm",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "eeJPsqCgVqthi+jI5J29zO2Ol+uwta4sOPObn+2vWmk="
         }
       ],
       "Fields": [

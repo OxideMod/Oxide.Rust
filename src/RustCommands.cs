@@ -307,7 +307,7 @@ namespace Oxide.Game.Rust
             output.Append("Listing ") // Plugin count appended later on
                 .Append(" plugins:"); // TODO: Localization
 
-            int pluginCount = 1;
+            int pluginCount = 0;
 
             foreach (var plugin in plugins)
             {
@@ -329,7 +329,7 @@ namespace Oxide.Game.Rust
                     .Append(plugin.Filename.Basename());
             }
 
-            if (pluginCount < 1)
+            if (pluginCount == 0)
             {
                 player.Reply(lang.GetMessage("NoPluginsFound", this, player.Id));
                 Facepunch.Pool.Free(ref output);

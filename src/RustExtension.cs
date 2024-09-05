@@ -19,10 +19,6 @@ namespace Oxide.Game.Rust
         internal static AssemblyName AssemblyName = Assembly.GetName();
         internal static VersionNumber AssemblyVersion = new VersionNumber(AssemblyName.Version.Major, AssemblyName.Version.Minor, AssemblyName.Version.Build);
         internal static string AssemblyAuthors = ((AssemblyCompanyAttribute)Attribute.GetCustomAttribute(Assembly, typeof(AssemblyCompanyAttribute), false)).Company;
-        internal static string AssemblyBranch =
-            Attribute.GetCustomAttributes(Assembly, typeof(AssemblyMetadataAttribute))
-                .Cast<AssemblyMetadataAttribute>()
-                .Single(attr => attr.Key == "GitBranch").Value;
 
         private static readonly WebClient WebClient = new WebClient();
         private static VersionNumber LatestExtVersion = AssemblyVersion;
@@ -48,16 +44,11 @@ namespace Oxide.Game.Rust
         public override VersionNumber Version => AssemblyVersion;
 
         /// <summary>
-        /// Gets the branch of this extension
-        /// </summary>
-        public override string Branch => AssemblyBranch;
-
-        /// <summary>
         /// Default game-specific references for use in plugins
         /// </summary>
         public override string[] DefaultReferences => new[]
         {
-            "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks.Posix64", "Facepunch.System", "Facepunch.UnityEngine", "Facepunch.Steamworks.Win64", "Rust.Data",
+            "0Harmony", "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks.Posix64", "Facepunch.System", "Facepunch.UnityEngine", "Facepunch.Steamworks.Win64", "Rust.Data",
             "Rust.FileSystem", "Rust.Clans", "Rust.Clans.Local", "Rust.Global", "Rust.Localization", "Rust.Platform", "Rust.Platform.Common", "Rust.Platform.Steam", "Rust.Workshop",
             "Rust.World", "System.Drawing", "UnityEngine.AIModule", "UnityEngine.AssetBundleModule", "UnityEngine.CoreModule", "UnityEngine.GridModule", "UnityEngine.ImageConversionModule",
             "UnityEngine.Networking", "UnityEngine.PhysicsModule", "UnityEngine.TerrainModule", "UnityEngine.TerrainPhysicsModule", "UnityEngine.UI", "UnityEngine.UIModule",

@@ -21,6 +21,7 @@
     <ManagedDir>RustDedicated_Data/Managed</ManagedDir>
     <NoWarn>NU1701</NoWarn>
     <GitBranch></GitBranch>
+    <ReferencesOverride>regex:Managed/(.*).dll</ReferencesOverride>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Oxide.References" Version="2.0.*" />
@@ -61,7 +62,7 @@
   </ItemGroup>
   <Target Name="AddGitBranchMeta" BeforeTargets="CoreGenerateAssemblyInfo">
     <Exec Command="git name-rev --name-only HEAD" WorkingDirectory="$(MSBuildProjectDirectory)" ConsoleToMSBuild="True">
-      <Output TaskParameter="ConsoleOutput" PropertyName="GitBranch"/>
+      <Output TaskParameter="ConsoleOutput" PropertyName="GitBranch" />
     </Exec>
     <ItemGroup>
       <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute" Condition="$(GitBranch) != ''">

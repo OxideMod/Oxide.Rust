@@ -1,0 +1,60 @@
+name: Build and Create Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Run Build
+    uses: OxideMod/Actions/.github/workflows/game-build.yaml@main
+    with:
+      game: "Rust"
+    secrets:
+      REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+
+  release:
+    name: Create Release
+    runs-on: ubuntu-22.04
+    needs: build
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ github.event.repository.name }}
+          path: artifacts
+
+      - name: Deploy to GitHub Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            artifacts/Oxide.*.zip
+          tag_name: 2.0.${{ vars.VERSION }}
+          fail_on_unmatched_files: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          body: |
+            See https://umod.org/games/rust for changes
+
+  update-docs:
+    name: Update Documentation
+    runs-on: ubuntu-22.04
+    needs: build
+    steps:
+      - name: Checkout Docs Repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.repository.owner.name }}/Oxide.Docs
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          ref: main
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ github.event.repository.name }}-docs
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.email github@oxidemod.com
+          git config --global user.name oxidemod-bot
+          git add docs.json
+          git diff-index --quiet HEAD || git commit -m "Update hooks index to 2.0.${{ vars.VERSION }}"
+          git push

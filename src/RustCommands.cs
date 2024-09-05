@@ -344,6 +344,14 @@ namespace Oxide.Game.Rust
             Facepunch.Pool.FreeUnmanaged(ref output);
         }
 
+        private static string FormatBytes(long bytes)
+        {
+            if (bytes < 1024) return $"{bytes:0} B";
+            if (bytes < 1048576) return $"{bytes / 1024:0} KB";
+            if (bytes < 1073741824) return $"{bytes / 1048576:0} MB";
+            return $"{bytes / 1073741824:0} GB";
+        }
+
         #endregion Plugins Command
 
         #region Reload Command
@@ -721,7 +729,7 @@ namespace Oxide.Game.Rust
             if (player.IsServer)
             {
                 string format = "Oxide.Rust Version: {0}\nOxide.Rust Branch: {1}";
-                player.Reply(string.Format(format, RustExtension.AssemblyVersion, RustExtension.AssemblyBranch));
+                player.Reply(string.Format(format, RustExtension.AssemblyVersion, Extension.Branch));
             }
             else
             {

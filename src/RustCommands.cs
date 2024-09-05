@@ -302,7 +302,6 @@ namespace Oxide.Game.Rust
             var plugins = pluginManager.GetPlugins();
 
             var output = Facepunch.Pool.Get<StringBuilder>();
-            output.Clear(); //Fp does not clear stringbuilders after using them
 
             output.Append("Listing ") // Plugin count appended later on
                 .Append(" plugins:"); // TODO: Localization
@@ -313,26 +312,16 @@ namespace Oxide.Game.Rust
             {
                 if (plugin.Filename == null || plugin.IsCorePlugin) continue;
 
-                output.AppendLine()
-                    .Append("  ")
-                    .Append(pluginCount++.ToString("00"))
-                    .Append(" \"")
-                    .Append(plugin.Title)
-                    .Append("\"")
-                    .Append(" (")
-                    .Append(plugin.Version)
-                    .Append(") by ")
-                    .Append(plugin.Author)
-                    .Append(" (")
-                    .Append(plugin.TotalHookTime.ToString("0.00"))
-                    .Append("s) - ")
-                    .Append(plugin.Filename.Basename());
+                output.AppendLine().Append("  ").Append(pluginCount++.ToString("00")).Append(" \"").Append(plugin.Title)
+                    .Append("\"").Append(" (").Append(plugin.Version).Append(") by ").Append(plugin.Author).Append(" (")
+                    .Append(plugin.TotalHookTime.ToString("0.00")).Append("s) - ").Append("(")
+                    .Append(FormatBytes(plugin.TotalHookMemory)).Append(" - ").Append(plugin.Filename.Basename());
             }
 
             if (pluginCount == 0)
             {
                 player.Reply(lang.GetMessage("NoPluginsFound", this, player.Id));
-                Facepunch.Pool.Free(ref output);
+                Facepunch.Pool.FreeUnmanaged(ref output);
                 return;
             }
 
@@ -343,13 +332,8 @@ namespace Oxide.Game.Rust
 
                 foreach (var name in unloadedNames)
                 {
-                    output.AppendLine()
-                        .Append("  ")
-                        .Append(pluginCount++.ToString("00"))
-                        .Append(" ")
-                        .Append(name)
-                        .Append(" - ")
-                        .Append(loader.PluginErrors.TryGetValue(name, out var msg) ? msg : "Unloaded");
+                    output.AppendLine().Append("  ").Append(pluginCount++.ToString("00")).Append(" ").Append(name)
+                        .Append(" - ").Append(loader.PluginErrors.TryGetValue(name, out var msg) ? msg : "Unloaded");
                 }
             }
 
@@ -357,7 +341,7 @@ namespace Oxide.Game.Rust
 
             player.Reply(output.ToString());
 
-            Facepunch.Pool.Free(ref output);
+            Facepunch.Pool.FreeUnmanaged(ref output);
         }
 
         #endregion Plugins Command

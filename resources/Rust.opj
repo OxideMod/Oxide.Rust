@@ -605,7 +605,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 60,
+            "InjectionIndex": 72,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player, l0.gradeBase.type, l0.gradeBase.skin",
@@ -623,7 +623,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "kuJ/xEF9OEDQwOSb7Q1YBhOiy6yafVTx+sNR+VBT16I=",
+            "MSILHash": "eVbJX0W1FS41mAFw9BmvOvC+p4Qq9net1agrW4VuOQI=",
             "HookCategory": "Structure"
           }
         },
@@ -20750,7 +20750,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 220,
+            "InjectionIndex": 232,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player, l0.gradeBase.type, l0.gradeBase.skin",
@@ -20768,7 +20768,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "kuJ/xEF9OEDQwOSb7Q1YBhOiy6yafVTx+sNR+VBT16I=",
+            "MSILHash": "eVbJX0W1FS41mAFw9BmvOvC+p4Qq9net1agrW4VuOQI=",
             "BaseHookName": "OnStructureUpgrade",
             "HookCategory": "Structure"
           }

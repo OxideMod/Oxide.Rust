@@ -52284,6 +52284,243 @@
             "Parameters": []
           },
           "MSILHash": "eeJPsqCgVqthi+jI5J29zO2Ol+uwta4sOPObn+2vWmk="
+        },
+        {
+          "Name": "BaseBoat::secondsBetweenShoreDrift",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseBoat",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "secondsBetweenShoreDrift",
+            "FullTypeName": "System.Int32 BaseBoat::secondsBetweenShoreDrift",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BaseBoat::secondsUntilShoreDrift",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseBoat",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "secondsUntilShoreDrift",
+            "FullTypeName": "System.Int32 BaseBoat::secondsUntilShoreDrift",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Parachute::collisionDeath",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Parachute",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "collisionDeath",
+            "FullTypeName": "System.Boolean Parachute::collisionDeath",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Parachute::collisionImpulse",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Parachute",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "collisionImpulse",
+            "FullTypeName": "UnityEngine.Vector3 Parachute::collisionImpulse",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Parachute::collisionLocalPos",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Parachute",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "collisionLocalPos",
+            "FullTypeName": "UnityEngine.Vector3 Parachute::collisionLocalPos",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Parachute::collisionWorldNormal",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Parachute",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "collisionWorldNormal",
+            "FullTypeName": "UnityEngine.Vector3 Parachute::collisionWorldNormal",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "Parachute::DelayedDismount",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Parachute",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "DelayedDismount",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "qoWIMVlFJQm0BrO0bpcnTld0AeGe9HhWN12wSISoUlo="
+        },
+        {
+          "Name": "Parachute::ProcessDeath",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Parachute",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ProcessDeath",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "eV1WH+12E+1VVw16geks0vo4h/qaHscLUIipnMcSIyE="
+        },
+        {
+          "Name": "BaseBoat::UpdateShoreDriftInvokeOnAll",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseBoat",
+          "Type": 1,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "UpdateShoreDriftInvokeOnAll",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "lxvBly26l5DgzIk0XkRFsT/PbbEZSe2yIQ1BwKFb2dE="
+        },
+        {
+          "Name": "ModularCar::DoCollisionDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "DoCollisionDamage",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "6LN+mg6L0/rgd/DtnrwyhrTDGYc+nhxj5T9fYnPF5dw="
+        },
+        {
+          "Name": "ModularCar::HandleAdminBonus",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ModularCar",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "HandleAdminBonus",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "ebmmQ7G3eQ737Tzq/Tz0A13QgeqiC5Ut4tG7K5S2gkA="
+        },
+        {
+          "Name": "Bike::DoCollisionDamage",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "Bike",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "DoCollisionDamage",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "BaseEntity",
+              "System.Single"
+            ]
+          },
+          "MSILHash": "fUw0+yZo2ZhsPPKD5cPBcetAbMejTGxymcqEkuBkkXo="
         }
       ],
       "Fields": [

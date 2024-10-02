@@ -52520,7 +52520,165 @@
               "System.Single"
             ]
           },
-          "MSILHash": "fUw0+yZo2ZhsPPKD5cPBcetAbMejTGxymcqEkuBkkXo="
+          "MSILHash": "fUw0+yZo2ZhsPPKD5cPBcetAbMejTGxymcqEkuBkkXo=",
+        },
+        {
+          "Name": "BasePlayer::ServerUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              1
+            ],
+            "Name": "ServerUpdate",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "6N08z+IH0BNmHA9m3HpnzG3jle5X77m81Gf2Mu8ue0E="
+        },
+        {
+          "Name": "BasePlayer::FinalizeTick",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "FinalizeTick",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "W5GOmCCDQvJOrGrTrquhSnXaPAoOlK8AiN+roBnc8E8="
+        },
+        {
+          "Name": "BasePlayer::ConnectedPlayerUpdate",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ConnectedPlayerUpdate",
+            "FullTypeName": "System.Void",
+            "Parameters": [
+              "System.Single"
+            ]
+          },
+          "MSILHash": "V6ieGMf1Zd6BvHCpHLx7SSC59icG6cBF2ap+NUX5NIY="
+        },
+        {
+          "Name": "BasePlayer::TickPings",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TickPings",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "BEpO80hlnZokGo/B5RdjEtOdqvQ0FTVaEH3Y7xgT+kU="
+        },
+        {
+          "Name": "BasePlayer::<desyncTimeClamped>k__BackingField",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<desyncTimeClamped>k__BackingField",
+            "FullTypeName": "System.Single BasePlayer::<desyncTimeClamped>k__BackingField",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::<desyncTimeRaw>k__BackingField",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "<desyncTimeRaw>k__BackingField",
+            "FullTypeName": "System.Single BasePlayer::<desyncTimeRaw>k__BackingField",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainCollision::ignoredColliders",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainCollision",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "ignoredColliders",
+            "FullTypeName": "ListDictionary`2<UnityEngine.Collider,System.Collections.Generic.List`1<UnityEngine.Collider>> TerrainCollision::ignoredColliders",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "TerrainCollision::terrainCollider",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "TerrainCollision",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "terrainCollider",
+            "FullTypeName": "UnityEngine.TerrainCollider TerrainCollision::terrainCollider",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

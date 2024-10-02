@@ -21229,6 +21229,32 @@
             "BaseHookName": "OnVendingShopOpen [TravellingVendor]",
             "HookCategory": "Vending"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 37,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "L1, this",
+            "HookTypeName": "Simple",
+            "Name": "CanLootEntity",
+            "HookName": "CanLootEntity",
+            "HookDescription": "Called when a player tries to loot a WorldItem",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WorldItem",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "RPC_OpenLoot",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "xtzIj9GyuX8f+qgh462mLQoAM0ti3Sy8IFUWTiBntbw=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

@@ -605,6 +605,56 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,a0",
+            "HookTypeName": "Simple",
+            "Name": "OnWallpaperSet",
+            "HookName": "OnWallpaperSet",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BuildingBlock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetWallpaper",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.UInt64"
+              ]
+            },
+            "MSILHash": "dLQmzMp/E6zsPvlZS4ytwsld8d+pKct92hMtTOq52+w=",
+            "HookCategory": "Structure"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "OnWallpaperRemove",
+            "HookName": "OnWallpaperRemove",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BuildingBlock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RemoveWallpaper",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "FZOoc8dqfrhOJ1I3oCw9QSVutUtQWV3DVExwNczjWbo=",
+            "HookCategory": "Structure"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 72,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -7257,6 +7307,80 @@
               ]
             },
             "MSILHash": "6B7WwHjoQ3vn0xXb37RKRHeZxxVV1h/qZdsP4aYInUE=",
+            "HookCategory": "Electronic"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "OnDigitalClockRing",
+            "HookName": "OnDigitalClockRing",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DigitalClock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Ring",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "8R5LHnWaO9dBJE6Zqn+1l5QwyPMZfZk6IWAyMexeI+I=",
+            "HookCategory": "Electronic"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "OnDigitalClockRingStop",
+            "HookName": "OnDigitalClockRingStop",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DigitalClock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "StopRinging",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "v7qcdqabPNmtHb9LAJv5CNmmZVir9EfX9iD5I2/+rvU=",
+            "HookCategory": "Electronic"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnDigitalClockAlarmsSet",
+            "HookName": "OnDigitalClockAlarmsSet",
+            "HookDescription": "",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DigitalClock",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_SetAlarms",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "yccsnWX5DSptuG+c8mzRROMFGAxtFi2EAeGbU/V2raI=",
             "HookCategory": "Electronic"
           }
         },

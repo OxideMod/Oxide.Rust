@@ -52483,6 +52483,25 @@
             ]
           },
           "MSILHash": "AN3CqYv2hNAa3MNalvQdyhBXZ5x2RRFy88HUZo96K9Q="
+        },
+        {
+          "Name": "ItemContainer::availableSlots",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ItemContainer",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "availableSlots",
+            "FullTypeName": "System.Collections.Generic.List`1<ItemSlot> ItemContainer::availableSlots",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

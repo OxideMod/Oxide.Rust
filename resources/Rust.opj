@@ -52637,6 +52637,48 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::desyncTimeRaw",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "desyncTimeRaw",
+            "FullTypeName": "System.Single BasePlayer::desyncTimeRaw()",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "BasePlayer::desyncTimeClamped",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BasePlayer",
+          "Type": 2,
+          "TargetExposure": [
+            2,
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2,
+              0
+            ],
+            "Name": "desyncTimeClamped",
+            "FullTypeName": "System.Single BasePlayer::desyncTimeClamped()",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

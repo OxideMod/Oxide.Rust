@@ -971,7 +971,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "YvOPFOZrYzfWn1LgbgFkbcefPdMzAFsrv+qmtC7VY80=",
+            "MSILHash": "aKp4Pd1NE7Z61ZyLUNK9jAaYyITwPGOUMpew6fdf0v8=",
             "HookCategory": "Player"
           }
         },
@@ -5068,7 +5068,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "YvOPFOZrYzfWn1LgbgFkbcefPdMzAFsrv+qmtC7VY80=",
+            "MSILHash": "aKp4Pd1NE7Z61ZyLUNK9jAaYyITwPGOUMpew6fdf0v8=",
             "BaseHookName": "OnPlayerTick",
             "HookCategory": "Player"
           }
@@ -10107,14 +10107,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "jRZ9wbib/mw/m9PsvR17KZ6lRsBYEiuEBPZESURjwmk=",
+            "MSILHash": "ZEDvkr/PhuXZYo+DhRBPhfkHcc2y6QMMr5lEadN+Dd0=",
             "HookCategory": "Radio"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 39,
+            "InjectionIndex": 42,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, a0.player",
@@ -10132,7 +10132,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "jRZ9wbib/mw/m9PsvR17KZ6lRsBYEiuEBPZESURjwmk=",
+            "MSILHash": "ZEDvkr/PhuXZYo+DhRBPhfkHcc2y6QMMr5lEadN+Dd0=",
             "BaseHookName": "OnRfFrequencyChange [Receiver]",
             "HookCategory": "Radio"
           }

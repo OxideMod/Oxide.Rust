@@ -21150,6 +21150,57 @@
             "MSILHash": "lxTpsrJ5BuajwNCtQbnXOGuXaEgTIoc900JRYZ82ohY=",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 37,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 2,
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerHandcuff",
+            "HookName": "OnPlayerHandcuff",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Handcuffs",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SV_HandcuffVictim",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vETQZv49Y6YCarwyOUUM1NQ6W8q4hAaqVxNg5ECry+k=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 155,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 2,
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerHandcuffed",
+            "HookName": "OnPlayerHandcuffed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Handcuffs",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SV_HandcuffVictim",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vETQZv49Y6YCarwyOUUM1NQ6W8q4hAaqVxNg5ECry+k=",
+            "BaseHookName": "OnPlayerHandcuff",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

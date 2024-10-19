@@ -18478,7 +18478,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "l0.inventory, this.fuelType",
             "HookTypeName": "Simple",
-            "Name": "OnInventoryAmmoItemFind",
+            "Name": "OnInventoryAmmoItemFind [Chainsaw]",
             "HookName": "OnInventoryAmmoItemFind",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Chainsaw",
@@ -21101,6 +21101,54 @@
             },
             "MSILHash": "fcoqKk4EobNYGkzVR4q4EVkgOZfItr4P6tOM9pGuREs=",
             "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnInventoryItemFind",
+            "HookName": "OnInventoryItemFind",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerInventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FindItemByItemID",
+              "ReturnType": "Item",
+              "Parameters": [
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "mIgsOlsY5+agJeJrRGUOuKUpnUOk7hvTn7l/stA0PMI=",
+            "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnInventoryAmmoItemFind [PlayerInventory]",
+            "HookName": "OnInventoryAmmoItemFind",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerInventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "FindAmmo",
+              "ReturnType": "Item",
+              "Parameters": [
+                "Rust.AmmoTypes"
+              ]
+            },
+            "MSILHash": "lxTpsrJ5BuajwNCtQbnXOGuXaEgTIoc900JRYZ82ohY=",
+            "HookCategory": "Item"
           }
         }
       ],

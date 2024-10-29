@@ -52778,6 +52778,25 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "CH47HelicopterAIController::CheckSpawnScientists",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "CH47HelicopterAIController",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "CheckSpawnScientists",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [

@@ -41,7 +41,7 @@ namespace Oxide.Game.Rust.Cui
 
         public static List<CuiElement> FromJson(string json) => JsonConvert.DeserializeObject<List<CuiElement>>(json);
 
-        public static string GetGuid() => Guid.NewGuid().ToString().Replace("-", string.Empty);
+        public static string GetGuid() => Guid.NewGuid().ToString("N");
 
         public static bool AddUi(BasePlayer player, List<CuiElement> elements) => AddUi(player, ToJson(elements));
 
@@ -445,6 +445,9 @@ namespace Oxide.Game.Rust.Cui
         [JsonProperty("skinid")]
         public ulong SkinId { get; set; }
 
+        [JsonProperty("steamid")]
+        public ulong SteamId { get; set; } // Community PR #61
+
         public void WriteJson(JsonWriter jsonWriter)
         {
             jsonWriter.WriteStartObject();
@@ -487,6 +490,9 @@ namespace Oxide.Game.Rust.Cui
 
             jsonWriter.WritePropertyName("skinid");
             jsonWriter.WriteValue(SkinId);
+
+            jsonWriter.WritePropertyName("steamid");
+            jsonWriter.WriteValue(SteamId);
 
             jsonWriter.WriteEndObject();
         }

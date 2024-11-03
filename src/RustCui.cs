@@ -889,21 +889,6 @@ namespace Oxide.Game.Rust.Cui
         Custom
     }
 
-    public enum TimerFormat
-    {
-        None,
-        SecondsHundreth,
-        MinutesSeconds,
-        MinutesSecondsHundreth,
-        HoursMinutes,
-        HoursMinutesSeconds,
-        HoursMinutesSecondsMilliseconds,
-        HoursMinutesSecondsTenths,
-        DaysHoursMinutes,
-        DaysHoursMinutesSeconds,
-        Custom
-    }
-
     public class CuiNeedsCursorComponent : ICuiComponent
     {
         public string Type => "NeedsCursor";

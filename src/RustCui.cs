@@ -72,7 +72,7 @@ namespace Oxide.Game.Rust.Cui
 
         public static bool AddUi(List<BasePlayer> playerList, string json)
         {
-            List<Network.Connection> connections = Facepunch.Pool.GetList<Network.Connection>();
+            List<Network.Connection> connections = Facepunch.Pool.Get<List<Network.Connection>>();
             foreach (var player in playerList)
             {
                 if (player?.net != null)
@@ -83,12 +83,12 @@ namespace Oxide.Game.Rust.Cui
 
             if(connections.Count == 0)
             {
-                Facepunch.Pool.FreeList(ref connections);
+                Facepunch.Pool.FreeUnmanaged(ref connections);
                 return false;
             }
 
             CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Players("AddUI", connections), json);
-            Facepunch.Pool.FreeList(ref connections);
+            Facepunch.Pool.FreeUnmanaged(ref connections);
             return true;
         }
 
@@ -114,7 +114,7 @@ namespace Oxide.Game.Rust.Cui
 
         public static bool DestroyUi(List<BasePlayer> playerList, string elem)
         {
-            List<Network.Connection> connections = Facepunch.Pool.GetList<Network.Connection>();
+            List<Network.Connection> connections = Facepunch.Pool.Get<List<Network.Connection>>();
             foreach (var player in playerList)
             {
                 if (player?.net != null)
@@ -125,12 +125,12 @@ namespace Oxide.Game.Rust.Cui
 
             if (connections.Count == 0)
             {
-                Facepunch.Pool.FreeList(ref connections);
+                Facepunch.Pool.FreeUnmanaged(ref connections);
                 return false;
             }
 
             CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Players("DestroyUI", connections), elem);
-            Facepunch.Pool.FreeList(ref connections);
+            Facepunch.Pool.FreeUnmanaged(ref connections);
             return true;
         }
 

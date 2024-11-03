@@ -17,25 +17,33 @@ namespace Oxide.Game.Rust.Cui
     {
         public static string ToJson(List<CuiElement> elements, bool format = false)
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            using (StringWriter stringWriter = new StringWriter(stringBuilder))
+            StringBuilder stringBuilder = Facepunch.Pool.Get<StringBuilder>();
+            stringBuilder.Clear(); // As far as I remember the stringbuilder in the pool is not cleared.
+            try
             {
-                using (JsonWriter jsonWriter = new JsonTextWriter(stringWriter))
+                using (StringWriter stringWriter = new StringWriter(stringBuilder))
                 {
-                    jsonWriter.Formatting = Formatting.None;
-
-                    if (elements.Count > 0)
+                    using (JsonWriter jsonWriter = new JsonTextWriter(stringWriter))
                     {
-                        jsonWriter.WriteStartArray();
-                        foreach (var element in elements)
+                        jsonWriter.Formatting = Formatting.None;
+
+                        if (elements.Count > 0)
                         {
-                            element.WriteJson(jsonWriter);
+                            jsonWriter.WriteStartArray();
+                            foreach (var element in elements)
+                            {
+                                element.WriteJson(jsonWriter);
+                            }
+                            jsonWriter.WriteEndArray();
                         }
-                        jsonWriter.WriteEndArray();
                     }
                 }
+                return stringBuilder.Replace("\\n", "\n").ToString();
             }
-            return stringBuilder.Replace("\\n", "\n").ToString();
+            finally
+            {
+                Facepunch.Pool.FreeUnmanaged(ref stringBuilder);
+            }
         }
 
 

@@ -873,7 +873,12 @@ namespace Oxide.Game.Rust.Cui
         MinutesSeconds,
         MinutesSecondsHundreth,
         HoursMinutes,
-        HoursMinutesSeconds
+        HoursMinutesSeconds,
+        HoursMinutesSecondsMilliseconds,
+        HoursMinutesSecondsTenths,
+        DaysHoursMinutes,
+        DaysHoursMinutesSeconds,
+        Custom
     }
 
     public class CuiNeedsCursorComponent : ICuiComponent

@@ -4,6 +4,7 @@ using Oxide.Core;
 using References::Newtonsoft.Json;
 using References::Newtonsoft.Json.Converters;
 using References::Newtonsoft.Json.Linq;
+using Steamworks;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -445,9 +446,6 @@ namespace Oxide.Game.Rust.Cui
         [JsonProperty("skinid")]
         public ulong SkinId { get; set; }
 
-        [JsonProperty("steamid")]
-        public string SteamId { get; set; } // Community PR #61
-
         public void WriteJson(JsonWriter jsonWriter)
         {
             jsonWriter.WriteStartObject();
@@ -491,9 +489,6 @@ namespace Oxide.Game.Rust.Cui
             jsonWriter.WritePropertyName("skinid");
             jsonWriter.WriteValue(SkinId);
 
-            jsonWriter.WritePropertyName("steamid");
-            jsonWriter.WriteValue(SteamId);
-
             jsonWriter.WriteEndObject();
         }
     }
@@ -518,6 +513,9 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonProperty("fadeIn")]
         public float FadeIn { get; set; }
+
+        [JsonProperty("steamid")]
+        public string SteamId { get; set; } // Community PR #61
 
         public void WriteJson(JsonWriter jsonWriter)
         {
@@ -558,6 +556,9 @@ namespace Oxide.Game.Rust.Cui
 
             jsonWriter.WritePropertyName("fadeIn");
             jsonWriter.WriteValue(FadeIn);
+
+            jsonWriter.WritePropertyName("steamid");
+            jsonWriter.WriteValue(SteamId);
 
             jsonWriter.WriteEndObject();
         }

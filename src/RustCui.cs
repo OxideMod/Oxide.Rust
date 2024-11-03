@@ -4,7 +4,6 @@ using Oxide.Core;
 using References::Newtonsoft.Json;
 using References::Newtonsoft.Json.Converters;
 using References::Newtonsoft.Json.Linq;
-using Steamworks;
 using System;
 using System.Collections.Generic;
 using System.IO;

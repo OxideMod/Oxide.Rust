@@ -446,7 +446,7 @@ namespace Oxide.Game.Rust.Cui
         public ulong SkinId { get; set; }
 
         [JsonProperty("steamid")]
-        public ulong SteamId { get; set; } // Community PR #61
+        public string SteamId { get; set; } // Community PR #61
 
         public void WriteJson(JsonWriter jsonWriter)
         {

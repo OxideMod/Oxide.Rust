@@ -282,7 +282,7 @@ namespace Oxide.Game.Rust.Cui
         public ulong SkinId { get; set; }
 
         [JsonProperty("steamid")]
-        public ulong SteamId { get; set; }
+        public string SteamId { get; set; }
     }
 
     public class CuiRawImageComponent : ICuiComponent, ICuiColor

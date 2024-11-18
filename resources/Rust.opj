@@ -53645,6 +53645,141 @@
             "BaseHookName": "OnClanLogoChanged",
             "HookCategory": "Clan"
           }
+        },
+		{
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 6,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnDungProduction"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseRidableAnimal|Dung"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 6
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnDungProduction [BaseRidableAnimal]",
+            "HookName": "OnDungProduction",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseRidableAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "DoDung",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "A8OVPJZPZYLqWqjNJj65EhbyrnUs4tpfVj4cYwGq5NI=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 20,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "stloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnDungProduced [BaseRidableAnimal] [Variable]",
+            "HookName": "OnDungProduced",
+            "HookDescription": "Saving the created Item to a variable for its subsequent transfer in a hook.",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseRidableAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "DoDung",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "A8OVPJZPZYLqWqjNJj65EhbyrnUs4tpfVj4cYwGq5NI=",
+            "BaseHookName": "OnDungProduction [BaseRidableAnimal]",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 47,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnDungProduced"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "pop",
+                "OpType": "None"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnDungProduced [BaseRidableAnimal]",
+            "HookName": "OnDungProduced",
+            "HookDescription": "Call of the OnDungProduced hook",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseRidableAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "DoDung",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "A8OVPJZPZYLqWqjNJj65EhbyrnUs4tpfVj4cYwGq5NI=",
+            "BaseHookName": "OnDungProduced [BaseRidableAnimal] [Variable]",
+            "HookCategory": "Animal"
+          }
         }
       ],
       "Modifiers": [

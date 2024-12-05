@@ -21272,6 +21272,32 @@
             "BaseHookName": "OnItemSubmit",
             "HookCategory": "Item"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 65,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "IOnNpcTarget [SenseComponent]",
+            "HookName": "IOnNpcTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.SenseComponent",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanTarget",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BaseEntity"
+              ]
+            },
+            "MSILHash": "1IFiFqiPi/UAOwFf2XHRsTyhryQEa4oAooUITmm0s6k=",
+            "BaseHookName": null,
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

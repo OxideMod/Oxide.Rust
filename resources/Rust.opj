@@ -53667,6 +53667,57 @@
             "BaseHookName": "OnClanLogoChanged",
             "HookCategory": "Clan"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 48,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerVanish",
+            "HookName": "OnPlayerVanish",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Debugging",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "invis",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "IzdN5chchqSU/SzhkwmVml/q0gPr+p3c6D+Ldw1JS3U=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 92,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerUnvanish",
+            "HookName": "OnPlayerUnvanish",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Debugging",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "invis",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "IzdN5chchqSU/SzhkwmVml/q0gPr+p3c6D+Ldw1JS3U=",
+            "BaseHookName": "OnPlayerVanish",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

@@ -48,12 +48,12 @@ namespace Oxide.Game.Rust
         /// </summary>
         public override string[] DefaultReferences => new[]
         {
-            "0Harmony", "ApexAI", "ApexShared", "Facepunch.Network", "Facepunch.Steamworks.Posix64", "Facepunch.System", "Facepunch.UnityEngine", "Facepunch.Steamworks.Win64", "Rust.Data",
-            "Rust.FileSystem", "Rust.Clans", "Rust.Clans.Local", "Rust.Global", "Rust.Localization", "Rust.Platform", "Rust.Platform.Common", "Rust.Platform.Steam", "Rust.Workshop",
-            "Rust.World", "System.Drawing", "UnityEngine.AIModule", "UnityEngine.AssetBundleModule", "UnityEngine.CoreModule", "UnityEngine.GridModule", "UnityEngine.ImageConversionModule",
-            "UnityEngine.Networking", "UnityEngine.PhysicsModule", "UnityEngine.TerrainModule", "UnityEngine.TerrainPhysicsModule", "UnityEngine.UI", "UnityEngine.UIModule",
-            "UnityEngine.UIElementsModule", "UnityEngine.UnityWebRequestAudioModule","UnityEngine.UnityWebRequestModule", "UnityEngine.UnityWebRequestTextureModule",
-            "UnityEngine.UnityWebRequestWWWModule", "UnityEngine.VehiclesModule", "UnityEngine.WebModule", "netstandard"
+            "0Harmony", "Facepunch.Network", "Facepunch.Steamworks.Posix64", "Facepunch.System", "Facepunch.UnityEngine", "Facepunch.Steamworks.Win64", "Rust.Data", "Rust.FileSystem",
+            "Rust.Clans", "Rust.Clans.Local", "Rust.Global", "Rust.Localization", "Rust.Platform", "Rust.Platform.Common", "Rust.Platform.Steam", "Rust.Workshop", "Rust.World",
+            "System.Drawing", "UnityEngine.AIModule", "UnityEngine.AssetBundleModule", "UnityEngine.CoreModule", "UnityEngine.GridModule", "UnityEngine.ImageConversionModule",
+            "UnityEngine.PhysicsModule", "UnityEngine.TerrainModule", "UnityEngine.TerrainPhysicsModule", "UnityEngine.UI", "UnityEngine.UIModule", "UnityEngine.UIElementsModule",
+            "UnityEngine.UnityWebRequestAudioModule","UnityEngine.UnityWebRequestModule", "UnityEngine.UnityWebRequestTextureModule", "UnityEngine.UnityWebRequestWWWModule",
+            "UnityEngine.VehiclesModule", "netstandard"
         };
 
         /// <summary>

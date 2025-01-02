@@ -598,7 +598,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "JVcftTs45C7gds64n2r9FSnXhuJbxZ2wCMiuQYv9omk=",
+            "MSILHash": "F7KZMZdzEuGwG+pDx9DEZCpomv/hmUqRzZ5ZjsIl2Mc=",
             "HookCategory": "Player"
           }
         },
@@ -2271,7 +2271,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "WuZxEi77Sk058XHGAw1AvME2rBIcZ/1+pZL7QYCil1k=",
+            "MSILHash": "NeEs34zp+awltfpoa0t9yaXjp26LEz65hRDwOKaKxlE=",
             "HookCategory": "Player"
           }
         },
@@ -2297,7 +2297,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "57miQ0y78g0zwThdxu8FiPCR4m49/F3M16ge/F9DfIY=",
+            "MSILHash": "fKWRTKuIqmKmyVlzVYBfjKpEAhzwb1jmegd1sbAzoas=",
             "HookCategory": "Server"
           }
         },
@@ -2345,7 +2345,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "57miQ0y78g0zwThdxu8FiPCR4m49/F3M16ge/F9DfIY=",
+            "MSILHash": "fKWRTKuIqmKmyVlzVYBfjKpEAhzwb1jmegd1sbAzoas=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -16545,7 +16545,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "SGcuqfLnIDp4wNwPVupSOplS8ZJ2on0OCNL6wkwl5m0=",
+            "MSILHash": "jRAcAwn10lleUEr0ZTpi95DlcoRxcvSl6Y0PDMCjrz0=",
             "HookCategory": "Server"
           }
         },
@@ -21279,7 +21279,6 @@
             "InjectionIndex": 65,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
-            "ArgumentString": null,
             "HookTypeName": "Simple",
             "Name": "IOnNpcTarget [SenseComponent]",
             "HookName": "IOnNpcTarget",
@@ -21295,7 +21294,6 @@
               ]
             },
             "MSILHash": "1IFiFqiPi/UAOwFf2XHRsTyhryQEa4oAooUITmm0s6k=",
-            "BaseHookName": null,
             "HookCategory": "NPC"
           }
         },

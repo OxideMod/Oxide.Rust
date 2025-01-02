@@ -53646,46 +53646,14 @@
             "HookCategory": "Clan"
           }
         },
-		{
-          "Type": "Modify",
+	{
+          "Type": "Simple",
           "Hook": {
             "InjectionIndex": 6,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnDungProduction"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldfld",
-                "OpType": "Field",
-                "Operand": "Assembly-CSharp|BaseRidableAnimal|Dung"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
-              },
-              {
-                "OpCode": "brfalse_s",
-                "OpType": "Instruction",
-                "Operand": 6
-              },
-              {
-                "OpCode": "ret",
-                "OpType": "None"
-              }
-            ],
-            "HookTypeName": "Modify",
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.Dung",
+            "HookTypeName": "Simple",
             "Name": "OnDungProduction [BaseRidableAnimal]",
             "HookName": "OnDungProduction",
             "AssemblyName": "Assembly-CSharp.dll",
@@ -53704,7 +53672,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 20,
+            "InjectionIndex": 21,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -53735,38 +53703,15 @@
           }
         },
         {
-          "Type": "Modify",
+          "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 47,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnDungProduced"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldloc_1",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
-              },
-              {
-                "OpCode": "pop",
-                "OpType": "None"
-              }
-            ],
-            "HookTypeName": "Modify",
+            "InjectionIndex": 48,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
             "Name": "OnDungProduced [BaseRidableAnimal]",
             "HookName": "OnDungProduced",
-            "HookDescription": "Call of the OnDungProduced hook",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseRidableAnimal",
             "Flagged": false,

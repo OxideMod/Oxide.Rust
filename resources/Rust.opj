@@ -21349,6 +21349,56 @@
             "BaseHookName": "OnPlayerVanish",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnWakeFrankenstein [FrankensteinTable]",
+            "HookName": "OnWakeFrankenstein",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FrankensteinTable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "WakeFrankenstein",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "Y3BnnkUTii6fEh1idRr5Bfi9gF9ZOq4Ccim24sHhUeQ=",
+            "HookCategory": "Pet"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 34,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnSleepFrankenstein [FrankensteinTable]",
+            "HookName": "OnSleepFrankenstein",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FrankensteinTable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SleepFrankenstein",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "uJwLofe7AuaMTZc+FzCvNjAEcMI9cltmQR7KGd945oA=",
+            "HookCategory": "Pet"
+          }
         }
       ],
       "Modifiers": [

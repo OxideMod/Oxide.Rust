@@ -21347,6 +21347,252 @@
             "BaseHookName": "OnPlayerVanish",
             "HookCategory": "Player"
           }
+        },
+		{
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 199,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldsfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|ConVar.Inventory|silentGive"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 202
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "ItemGiveMsg [give]",
+            "HookName": "ItemGiveMsg",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Inventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "give",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "gyMbgBclr3eHbIYGq0QXaPLANKx34WvIc9MXBR/C7RI=",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 117,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldsfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|ConVar.Inventory|silentGive"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 152
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "ItemGiveMsg [giveall]",
+            "HookName": "ItemGiveMsg",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Inventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "giveall",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "VeFhhoIIf4cXzeX3xZ8SD3+VQysk4rSPIJbIJBS1/eY=",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 116,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldsfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|ConVar.Inventory|silentGive"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 157
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "ItemGiveMsg [giveto]",
+            "HookName": "ItemGiveMsg",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Inventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "giveto",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "lrHnFgprR1LM/xeR9kWJiscFIcsdCch1gWdvwoij46k=",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 95,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldsfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|ConVar.Inventory|silentGive"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 98
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "ItemGiveMsg [giveid]",
+            "HookName": "ItemGiveMsg",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Inventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "giveid",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "OlSuasn0HeAcbNXOKl8+7Txt+/7bUAUlu6vs8eZrRsg=",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 98,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldsfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|ConVar.Inventory|silentGive"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 101
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "ItemGiveMsg [givearm]",
+            "HookName": "ItemGiveMsg",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Inventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "givearm",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "joyMquw7watn8YkWNIt/bip+gi9NibahOgSw1uI8Ogw=",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 193,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldsfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|ConVar.Inventory|silentGive"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 196
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "ItemGiveMsg [copyTo]",
+            "HookName": "ItemGiveMsg",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Inventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "copyTo",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "0hSEYknHi/ez67MDDmWoz+TZlQF6CFLt9YKqrYbD8Vs=",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 108,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldsfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|ConVar.Inventory|silentGive"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 111
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "ItemGiveMsg [giveBp]",
+            "HookName": "ItemGiveMsg",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Inventory",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "giveBp",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "EYh50JiLS2o64oCoNIaDmHMNgTEzFci1y6uaHhnXmKI=",
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [
@@ -52883,6 +53129,26 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+		{
+          "Name": "ConVar.Inventory::silentGive",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ConVar.Inventory",
+          "Type": 0,
+          "TargetExposure": [
+            2,
+            4
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "silentGive",
+            "FullTypeName": "System.Boolean ConVar.Inventory::silentGive",
+            "Parameters": []
+          },
+          "MSILHash": ""
         }
       ],
       "Fields": [
@@ -52905,6 +53171,13 @@
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "SprayCanSpray",
           "FieldType": "mscorlib|System.Int32",
+          "Flagged": false
+        },
+		{
+          "Name": "silentGive",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "ConVar.Inventory",
+          "FieldType": "mscorlib|System.Boolean",
           "Flagged": false
         }
       ]

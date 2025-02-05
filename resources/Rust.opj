@@ -9281,129 +9281,16 @@
           }
         },
         {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 23,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnCatapultFire"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldarg_1",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldloc_1",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "box",
-                "OpType": "Type",
-                "Operand": "mscorlib|System.Single"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
-              },
-              {
-                "OpCode": "stloc_s",
-                "OpType": "VariableIndex",
-                "Operand": "14"
-              },
-              {
-                "OpCode": "ldloc_s",
-                "OpType": "VariableIndex",
-                "Operand": "14"
-              },
-              {
-                "OpCode": "isinst",
-                "OpType": "Type",
-                "Operand": "mscorlib|System.Single"
-              },
-              {
-                "OpCode": "brfalse_s",
-                "OpType": "Instruction",
-                "Operand": 23
-              },
-              {
-                "OpCode": "ldloc_s",
-                "OpType": "VariableIndex",
-                "Operand": "14"
-              },
-              {
-                "OpCode": "unbox_any",
-                "OpType": "Type",
-                "Operand": "mscorlib|System.Single"
-              },
-              {
-                "OpCode": "stloc_1",
-                "OpType": "None"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnCatapultFire [2]",
-            "HookName": "OnCatapultFire",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Catapult",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Fire",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "BasePlayer",
-                "System.Single"
-              ]
-            },
-            "MSILHash": "kCdfjEngZ1Gtb5+SYiH6uD5CHaTqq2b0e1dtymUKHfU=",
-            "BaseHookName": "OnCatapultFire [1]",
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 23,
-            "RemoveCount": 10,
-            "Instructions": [],
-            "HookTypeName": "Modify",
-            "Name": "OnCatapultFire [1]",
-            "HookName": "OnCatapultFire",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Catapult",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "Fire",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "BasePlayer",
-                "System.Single"
-              ]
-            },
-            "MSILHash": "kCdfjEngZ1Gtb5+SYiH6uD5CHaTqq2b0e1dtymUKHfU=",
-            "BaseHookName": "OnCatapultFire",
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 23,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 0,
-            "ArgumentString": "this,a0,l0",
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,a0,l0 => l1",
             "HookTypeName": "Simple",
-            "Name": "OnCatapultFire",
-            "HookName": "OnCatapultFire",
+            "Name": "OnCatapultFireForce",
+            "HookName": "OnCatapultFireForce",
+            "HookDescription": "Called before a catapult is fired, returning a float changes the force of the shot.",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Catapult",
             "Flagged": false,

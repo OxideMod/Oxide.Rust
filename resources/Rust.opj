@@ -9257,6 +9257,58 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,a0",
+            "HookTypeName": "Simple",
+            "Name": "CanRagdollDismount",
+            "HookName": "CanRagdollDismount",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseRagdoll",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AllowPlayerInstigatedDismount",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "RQzLETIQY8oCXnENh9Yiq2D0HFlL85DvhJ8pbAWKDf4=",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 3,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,a0,l1 => l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCatapultFireForce",
+            "HookName": "OnCatapultFireForce",
+            "HookDescription": "Called before a catapult is fired, returning a float changes the force of the shot.",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Catapult",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Fire",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "kCdfjEngZ1Gtb5+SYiH6uD5CHaTqq2b0e1dtymUKHfU=",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 15,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,

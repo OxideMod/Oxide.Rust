@@ -9276,7 +9276,7 @@
               ]
             },
             "MSILHash": "RQzLETIQY8oCXnENh9Yiq2D0HFlL85DvhJ8pbAWKDf4=",
-            "HookCategory": "Vehicle"
+            "HookCategory": "Player"
           }
         },
         {
@@ -9303,7 +9303,7 @@
               ]
             },
             "MSILHash": "kCdfjEngZ1Gtb5+SYiH6uD5CHaTqq2b0e1dtymUKHfU=",
-            "HookCategory": "Vehicle"
+            "HookCategory": "Primitive"
           }
         },
         {
@@ -21602,6 +21602,81 @@
             },
             "MSILHash": "HrXYh+KAS/QgmK/xMNjISa6EZJSb1tlXSiX+itjbuZo=",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnSiegeWeaponFire [Catapult]",
+            "HookName": "OnSiegeWeaponFire",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Catapult",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_WantsFire",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "NwN7zR0TmxvDdsUoL5hjJLF/fZQxTL8qG2v3OcOxiig=",
+            "HookCategory": "Primitive"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 36,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnSiegeWeaponFire [BatteringRam]",
+            "HookName": "OnSiegeWeaponFire",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BatteringRam",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_WantsAttack",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "hiGA7QgK9oz6ZBHqG3jTsXJnPD6REl4xUoY4DLn8A5Y=",
+            "HookCategory": "Primitive"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 39,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.ballistaOwner, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnSiegeWeaponFire [Ballista]",
+            "HookName": "OnSiegeWeaponFire",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BallistaGun",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SERVER_FireClientProjectile",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "HCVZ3/379kM9Pna0i05C6x2VcWuRVblJzZjifNYHQj0=",
+            "HookCategory": "Primitive"
           }
         }
       ],

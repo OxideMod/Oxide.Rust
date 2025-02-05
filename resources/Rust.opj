@@ -21526,6 +21526,31 @@
             "BaseHookName": "OnFreeableContainerRelease",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnFreeableContainerReleaseStarted",
+            "HookName": "OnFreeableContainerReleaseStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FreeableLootContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_FreeCrateTimer",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "HrXYh+KAS/QgmK/xMNjISa6EZJSb1tlXSiX+itjbuZo=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

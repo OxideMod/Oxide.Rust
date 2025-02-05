@@ -21477,6 +21477,55 @@
             "BaseHookName": "OnAnimalDungProduced [BaseRidableAnimal] [Variable]",
             "HookCategory": "Animal"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnFreeableContainerRelease",
+            "HookName": "OnFreeableContainerRelease",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FreeableLootContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Release",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "xMujK93Be9ZwuMtuN+geuUprBvrIitSU8qXTlTSRDVk=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 64,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnFreeableContainerReleased",
+            "HookName": "OnFreeableContainerReleased",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "FreeableLootContainer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Release",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "xMujK93Be9ZwuMtuN+geuUprBvrIitSU8qXTlTSRDVk=",
+            "BaseHookName": "OnFreeableContainerRelease",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

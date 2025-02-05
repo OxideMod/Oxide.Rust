@@ -9292,52 +9292,11 @@
                 "Operand": "OnCatapultFire"
               },
               {
-                "OpCode": "ldc_i4_3",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "newarr",
-                "OpType": "Type",
-                "Operand": "mscorlib|System.Object"
-              },
-              {
-                "OpCode": "dup",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldc_i4_0",
-                "OpType": "None"
-              },
-              {
                 "OpCode": "ldarg_0",
                 "OpType": "None"
               },
               {
-                "OpCode": "stelem_ref",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "dup",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldc_i4_1",
-                "OpType": "None"
-              },
-              {
                 "OpCode": "ldarg_1",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "stelem_ref",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "dup",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldc_i4_2",
                 "OpType": "None"
               },
               {
@@ -9350,13 +9309,9 @@
                 "Operand": "mscorlib|System.Single"
               },
               {
-                "OpCode": "stelem_ref",
-                "OpType": "None"
-              },
-              {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
               },
               {
                 "OpCode": "stloc_s",

@@ -7712,31 +7712,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 29,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0",
-            "HookTypeName": "Simple",
-            "Name": "OnHorseLead",
-            "HookName": "OnHorseLead",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseRidableAnimal",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "RPC_Lead",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "BDnxM2qkVLmovqSGo64aramtMcA8Va/YT5U2f7uvBtE=",
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 27,
             "ReturnBehavior": 3,
             "ArgumentBehavior": 4,
@@ -8512,31 +8487,6 @@
             },
             "MSILHash": "Uxmrq9em5HDH6H2ifPJXkaxWEn7uY0FXMFiAwScYSuI=",
             "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 32,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "l0, this",
-            "HookTypeName": "Simple",
-            "Name": "CanLootEntity [BaseRidableAnimal]",
-            "HookName": "CanLootEntity",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseRidableAnimal",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "RPC_OpenLoot",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "t0f0bHdwWQrXqmlQVq7eY6oqk1hj9nHCUXdYeaB2EQI=",
-            "HookCategory": "Player"
           }
         },
         {
@@ -11967,57 +11917,6 @@
             },
             "MSILHash": "PUIGz3G8WLHwwnStyG9b6NKpPAd4XToM3BJxwSaLBTI=",
             "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 24,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0, l2",
-            "HookTypeName": "Simple",
-            "Name": "OnRidableAnimalClaim",
-            "HookName": "OnRidableAnimalClaim",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseRidableAnimal",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "RPC_Claim",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "vBBXxQ+DwVpH+qlwyCwealmVejy/moaFiM46eJufAfQ=",
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 55,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0",
-            "HookTypeName": "Simple",
-            "Name": "OnRidableAnimalClaimed",
-            "HookName": "OnRidableAnimalClaimed",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseRidableAnimal",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "RPC_Claim",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "vBBXxQ+DwVpH+qlwyCwealmVejy/moaFiM46eJufAfQ=",
-            "BaseHookName": "OnRidableAnimalClaim",
-            "HookCategory": "Vehicle"
           }
         },
         {
@@ -21484,86 +21383,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 6,
-            "ReturnBehavior": 4,
-            "ArgumentBehavior": 1,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "OnAnimalDungProduce [BaseRidableAnimal]",
-            "HookName": "OnAnimalDungProduce",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseRidableAnimal",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "DoDung",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "A8OVPJZPZYLqWqjNJj65EhbyrnUs4tpfVj4cYwGq5NI=",
-            "HookCategory": "Animal"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 19,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "stloc_1",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldloc_1",
-                "OpType": "None"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnAnimalDungProduced [BaseRidableAnimal] [Variable]",
-            "HookName": "OnAnimalDungProduced",
-            "HookDescription": "Saving the created Item to a variable for its subsequent transfer in a hook.",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseRidableAnimal",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "DoDung",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "A8OVPJZPZYLqWqjNJj65EhbyrnUs4tpfVj4cYwGq5NI=",
-            "BaseHookName": "OnAnimalDungProduce [BaseRidableAnimal]",
-            "HookCategory": "Animal"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 46,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnAnimalDungProduced [BaseRidableAnimal]",
-            "HookName": "OnAnimalDungProduced",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseRidableAnimal",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "DoDung",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "A8OVPJZPZYLqWqjNJj65EhbyrnUs4tpfVj4cYwGq5NI=",
-            "BaseHookName": "OnAnimalDungProduced [BaseRidableAnimal] [Variable]",
-            "HookCategory": "Animal"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,
@@ -21786,6 +21605,182 @@
             "MSILHash": "babR4+j7aAnx0BsdgLneNOrBVv8ncpt+hh6scQhJ9TA=",
             "BaseHookName": "OnAnimalDungProduced [RidableHorse2] [Variable]",
             "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 24,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnRidableAnimalClaim",
+            "HookName": "OnRidableAnimalClaim",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_Claim",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "/8j806i8MYf39CswBGXKSGkgo+/VZbDu3I2kg82pY+4=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 55,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnRidableAnimalClaimed",
+            "HookName": "OnRidableAnimalClaimed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_Claim",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "/8j806i8MYf39CswBGXKSGkgo+/VZbDu3I2kg82pY+4=",
+            "BaseHookName": "OnRidableAnimalClaim",
+            "HookCategory": "Animal"
+          }
+        },
+		{
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 24,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnRidableAnimalLead",
+            "HookName": "OnRidableAnimalLead",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_Lead",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "4etJkG6FSFxF9qics6aKI91Dd1LJRG9TqvaA9/uFBxA=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 13,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnRidableAnimalTow",
+            "HookName": "OnRidableAnimalTow",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_RequestTow",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "A8rzERHW8Zk8JONT91+TcF5Hluxx2+fCU9hrDlKj19M=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 22,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnRidableAnimalDetach",
+            "HookName": "OnRidableAnimalDetach",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_RequestDetach",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "3AN2cTp85PvuiSdV7dx6kt1DEI21aoZWsLpzkzU6oKE=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 32,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnSaddleSwap",
+            "HookName": "OnSaddleSwap",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_RequestSaddleSwap",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Yaiepy29Fa1KRenyc5d2E6HZFJG1/qkK0H6L65rfwsQ=",
+            "HookCategory": "Animal"
+          }
+        },
+		{
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 33,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnTryLootEntity [RidableHorse2]",
+            "HookName": "OnTryLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SERVER_OpenLoot",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Qk9vfWngOL67eXM5BTQxD64uGdJ1ywhnJKFNtc1TnKw=",
+            "HookCategory": "Player"
           }
         }
       ],
@@ -25565,139 +25560,6 @@
             ],
             "Name": "currentAmmoVelocity",
             "FullTypeName": "System.Single AutoTurret::currentAmmoVelocity",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "RidableHorse::baseHorseProtection",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "RidableHorse",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "baseHorseProtection",
-            "FullTypeName": "ProtectionProperties RidableHorse::baseHorseProtection",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "RidableHorse::currentBreed",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "RidableHorse",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "currentBreed",
-            "FullTypeName": "System.Int32 RidableHorse::currentBreed",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "RidableHorse::currentHitch",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "RidableHorse",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "currentHitch",
-            "FullTypeName": "HitchTrough RidableHorse::currentHitch",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "RidableHorse::equipmentSpeedMod",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "RidableHorse",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "equipmentSpeedMod",
-            "FullTypeName": "System.Single RidableHorse::equipmentSpeedMod",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "RidableHorse::kmDistance",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "RidableHorse",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "kmDistance",
-            "FullTypeName": "System.Single RidableHorse::kmDistance",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "RidableHorse::riderProtection",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "RidableHorse",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "riderProtection",
-            "FullTypeName": "ProtectionProperties RidableHorse::riderProtection",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "RidableHorse::tempDistanceTravelled",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "RidableHorse",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "tempDistanceTravelled",
-            "FullTypeName": "System.Single RidableHorse::tempDistanceTravelled",
             "Parameters": []
           },
           "MSILHash": ""
@@ -31930,25 +31792,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "BaseRidableAnimal::lastEatTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseRidableAnimal",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "lastEatTime",
-            "FullTypeName": "System.Single BaseRidableAnimal::lastEatTime",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BaseRidableAnimal::lastInputTime",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseRidableAnimal",
@@ -31963,25 +31806,6 @@
             ],
             "Name": "lastInputTime",
             "FullTypeName": "System.Single BaseRidableAnimal::lastInputTime",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "BaseRidableAnimal::nextDecayTime",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BaseRidableAnimal",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "nextDecayTime",
-            "FullTypeName": "System.Single BaseRidableAnimal::nextDecayTime",
             "Parameters": []
           },
           "MSILHash": ""
@@ -53321,6 +53145,196 @@
             ],
             "Name": "_hotSpot",
             "FullTypeName": "OreHotSpot OreResourceEntity::_hotSpot",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::baseHorseProtection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "baseHorseProtection",
+            "FullTypeName": "ProtectionProperties RidableHorse2::baseHorseProtection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::currentBreed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentBreed",
+            "FullTypeName": "HorseBreed RidableHorse2::currentBreed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::currentBreedIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentBreedIndex",
+            "FullTypeName": "System.Int32 RidableHorse2::currentBreedIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::currentHitch",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentHitch",
+            "FullTypeName": "HitchTrough RidableHorse2::currentHitch",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::equipmentSpeedMod",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "equipmentSpeedMod",
+            "FullTypeName": "System.Single RidableHorse2::equipmentSpeedMod",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::kmDistance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "kmDistance",
+            "FullTypeName": "System.Single RidableHorse2::kmDistance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+		{
+          "Name": "RidableHorse2::lastEatTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastEatTime",
+            "FullTypeName": "System.Single RidableHorse2::lastEatTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+		{
+          "Name": "RidableHorse2::nextDecayTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextDecayTime",
+            "FullTypeName": "System.Single RidableHorse2::nextDecayTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::riderProtection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "riderProtection",
+            "FullTypeName": "ProtectionProperties RidableHorse2::riderProtection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::tempDistanceTravelled",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "tempDistanceTravelled",
+            "FullTypeName": "System.Single RidableHorse2::tempDistanceTravelled",
             "Parameters": []
           },
           "MSILHash": ""

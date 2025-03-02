@@ -7717,7 +7717,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
             "HookTypeName": "Simple",
-            "Name": "OnHorseLead",
+            "Name": "OnHorseLead [BaseRidableAnimal]",
             "HookName": "OnHorseLead",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseRidableAnimal",
@@ -7731,7 +7731,32 @@
               ]
             },
             "MSILHash": "BDnxM2qkVLmovqSGo64aramtMcA8Va/YT5U2f7uvBtE=",
-            "HookCategory": "Entity"
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 24,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnHorseLead [RidableHorse2]",
+            "HookName": "OnHorseLead",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_Lead",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "4etJkG6FSFxF9qics6aKI91Dd1LJRG9TqvaA9/uFBxA=",
+            "HookCategory": "Animal"
           }
         },
         {
@@ -8540,6 +8565,31 @@
           }
         },
         {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 33,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanLootEntity [RidableHorse2]",
+            "HookName": "CanLootEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SERVER_OpenLoot",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Qk9vfWngOL67eXM5BTQxD64uGdJ1ywhnJKFNtc1TnKw=",
+            "HookCategory": "Player"
+          }
+        },
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 117,
@@ -9017,7 +9067,7 @@
               ]
             },
             "MSILHash": "XTfPsD9XIOP0iCGSonevPBtHzykgZULylU5pv8h1tF0=",
-            "HookCategory": "Entity"
+            "HookCategory": "Animal"
           }
         },
         {
@@ -9042,7 +9092,7 @@
               ]
             },
             "MSILHash": "JXcAUGBDDkfTAJJSl+q6EFKkrcx+1OdouKDlo9xjFPg=",
-            "HookCategory": "Entity"
+            "HookCategory": "Animal"
           }
         },
         {
@@ -11977,7 +12027,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, l2",
             "HookTypeName": "Simple",
-            "Name": "OnRidableAnimalClaim",
+            "Name": "OnRidableAnimalClaim [BaseRidableAnimal]",
             "HookName": "OnRidableAnimalClaim",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseRidableAnimal",
@@ -11991,7 +12041,7 @@
               ]
             },
             "MSILHash": "vBBXxQ+DwVpH+qlwyCwealmVejy/moaFiM46eJufAfQ=",
-            "HookCategory": "Vehicle"
+            "HookCategory": "Animal"
           }
         },
         {
@@ -12002,7 +12052,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
             "HookTypeName": "Simple",
-            "Name": "OnRidableAnimalClaimed",
+            "Name": "OnRidableAnimalClaimed [BaseRidableAnimal]",
             "HookName": "OnRidableAnimalClaimed",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseRidableAnimal",
@@ -12016,8 +12066,59 @@
               ]
             },
             "MSILHash": "vBBXxQ+DwVpH+qlwyCwealmVejy/moaFiM46eJufAfQ=",
-            "BaseHookName": "OnRidableAnimalClaim",
-            "HookCategory": "Vehicle"
+            "BaseHookName": "OnRidableAnimalClaim [BaseRidableAnimal]",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 24,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnRidableAnimalClaim [RidableHorse2]",
+            "HookName": "OnRidableAnimalClaim",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_Claim",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "/8j806i8MYf39CswBGXKSGkgo+/VZbDu3I2kg82pY+4=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 55,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnRidableAnimalClaimed [RidableHorse2]",
+            "HookName": "OnRidableAnimalClaimed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_Claim",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "/8j806i8MYf39CswBGXKSGkgo+/VZbDu3I2kg82pY+4=",
+            "BaseHookName": "OnRidableAnimalClaim [RidableHorse2]",
+            "HookCategory": "Animal"
           }
         },
         {

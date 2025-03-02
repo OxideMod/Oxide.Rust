@@ -21912,6 +21912,207 @@
             "MSILHash": "PEMe9Qo7DLJ1yxndpff7pPcf3AiFoSFxKPLNylH957I=",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnSiegeWeaponDoorOpen [BatteringRam]",
+            "HookName": "OnSiegeWeaponDoorOpen",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BatteringRam",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "RPC_OpenDoor",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "XZ8ilS5Ac2/3ckx66FTXqOMOB7d7U/m/7h2iH78kQ+Q=",
+            "HookCategory": "Primitive"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 10,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnSiegeWeaponDoorClose [BatteringRam]",
+            "HookName": "OnSiegeWeaponDoorClose",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BatteringRam",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "RPC_CloseDoor",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "1Jt6suE/Ormb6EEHrBmxeGiVKH1immH50fdMC/YVI0M=",
+            "HookCategory": "Primitive"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnSiegeWeaponPull",
+            "HookName": "OnSiegeWeaponPull",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseSiegeWeapon",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_StartPulling",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "WV+au3i32a6i9ipirJZF0HDBg87L58lyQf6qygcrges=",
+            "HookCategory": "Primitive"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 0,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseEntity|get_OwnerID"
+              },
+              {
+                "OpCode": "stloc_0",
+                "OpType": "None"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OwnerID ConstructableEntity [patch]",
+            "HookName": "OwnerID ConstructableEntity [patch]",
+            "HookDescription": "Removal of base.Kill() call since OwnerID becomes 0 after Kill",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConstructableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnRepairFinished",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "qUIR6Mhvziw+jj7C8Vqk92B8gIQx16mHCTSaqFvArao=",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 20,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "stloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseEntity|set_OwnerID"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OwnerID ConstructableEntity [patch2]",
+            "HookName": "OwnerID ConstructableEntity [patch2]",
+            "HookDescription": "Inheritance of OwnerID for siege weapons after full repair and call of the removed base.Kill()",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConstructableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnRepairFinished",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "qUIR6Mhvziw+jj7C8Vqk92B8gIQx16mHCTSaqFvArao=",
+            "BaseHookName": "OwnerID ConstructableEntity [patch]",
+            "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 15,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseEntity|get_OwnerID"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseEntity|set_OwnerID"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OwnerID SiegeTowerDoor [patch]",
+            "HookName": "OwnerID SiegeTowerDoor [patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SiegeTower",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SetupDoor",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "SiegeTowerDoor"
+              ]
+            },
+            "MSILHash": "hB79AUeZUYWFEHlv3vKJ+VhguE2BMeLr73x/FS2Rm9c=",
+            "HookCategory": "_Patches"
+          }
         }
       ],
       "Modifiers": [

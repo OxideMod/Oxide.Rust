@@ -200,7 +200,7 @@ namespace Oxide.Game.Rust.Libraries
                 return;
             }
 
-            List<Connection> connections = Pool.GetList<Connection>();
+            List<Connection> connections = Pool.Get<List<Connection>>();
 
             for (int i = 0; i < Net.sv.connections.Count; i++)
             {
@@ -213,7 +213,7 @@ namespace Oxide.Game.Rust.Libraries
             }
 
             player.OnNetworkSubscribersLeave(connections);
-            Pool.FreeList(ref connections);
+            Pool.FreeUnmanaged(ref connections);
 
             if (player.limitNetworking)
             {

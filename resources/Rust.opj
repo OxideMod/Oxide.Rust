@@ -22113,6 +22113,81 @@
             "MSILHash": "hB79AUeZUYWFEHlv3vKJ+VhguE2BMeLr73x/FS2Rm9c=",
             "HookCategory": "_Patches"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 13,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnRidableAnimalTow",
+            "HookName": "OnRidableAnimalTow",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_RequestTow",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "A8rzERHW8Zk8JONT91+TcF5Hluxx2+fCU9hrDlKj19M=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 22,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnRidableAnimalDetach",
+            "HookName": "OnRidableAnimalDetach",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_RequestDetach",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "3AN2cTp85PvuiSdV7dx6kt1DEI21aoZWsLpzkzU6oKE=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 32,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnSaddleSwap",
+            "HookName": "OnSaddleSwap",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RidableHorse2",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SERVER_RequestSaddleSwap",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Yaiepy29Fa1KRenyc5d2E6HZFJG1/qkK0H6L65rfwsQ=",
+            "HookCategory": "Animal"
+          }
         }
       ],
       "Modifiers": [
@@ -53647,6 +53722,196 @@
             ],
             "Name": "_hotSpot",
             "FullTypeName": "OreHotSpot OreResourceEntity::_hotSpot",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::baseHorseProtection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "baseHorseProtection",
+            "FullTypeName": "ProtectionProperties RidableHorse2::baseHorseProtection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::currentBreed",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentBreed",
+            "FullTypeName": "HorseBreed RidableHorse2::currentBreed",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::currentBreedIndex",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentBreedIndex",
+            "FullTypeName": "System.Int32 RidableHorse2::currentBreedIndex",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::currentHitch",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "currentHitch",
+            "FullTypeName": "HitchTrough RidableHorse2::currentHitch",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::equipmentSpeedMod",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "equipmentSpeedMod",
+            "FullTypeName": "System.Single RidableHorse2::equipmentSpeedMod",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::kmDistance",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "kmDistance",
+            "FullTypeName": "System.Single RidableHorse2::kmDistance",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+		{
+          "Name": "RidableHorse2::lastEatTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "lastEatTime",
+            "FullTypeName": "System.Single RidableHorse2::lastEatTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+		{
+          "Name": "RidableHorse2::nextDecayTime",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "nextDecayTime",
+            "FullTypeName": "System.Single RidableHorse2::nextDecayTime",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::riderProtection",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "riderProtection",
+            "FullTypeName": "ProtectionProperties RidableHorse2::riderProtection",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "RidableHorse2::tempDistanceTravelled",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "RidableHorse2",
+          "Type": 0,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "tempDistanceTravelled",
+            "FullTypeName": "System.Single RidableHorse2::tempDistanceTravelled",
             "Parameters": []
           },
           "MSILHash": ""

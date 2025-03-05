@@ -21787,6 +21787,30 @@
             "BaseHookName": "OnAnimalDungProduced [RidableHorse2] [Variable]",
             "HookCategory": "Animal"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnActiveTelephoneUpdated [BasePlayer]",
+            "HookName": "OnActiveTelephoneUpdated",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetActiveTelephone",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "PhoneController"
+              ]
+            },
+            "MSILHash": "PEMe9Qo7DLJ1yxndpff7pPcf3AiFoSFxKPLNylH957I=",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

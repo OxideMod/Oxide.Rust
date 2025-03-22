@@ -8,16 +8,15 @@ on:
 jobs:
   build:
     name: Run Build
-    uses: OxideMod/Actions/.github/workflows/game-build.yaml@main
+    uses: OxideMod/Actions/.github/workflows/game-build.yml@main
     with:
       game: "Rust"
       branch-postfix: "-${{ github.ref_name }}"
-    secrets:
-      REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
-
+    secrets: inherit
+    
   deploy:
     name: Deploy to S3
-    uses: OxideMod/Actions/.github/workflows/r2-publish.yaml@main
+    uses: OxideMod/Actions/.github/workflows/r2-publish.yml@main
     needs: build
     with:
       generate-filehash: true

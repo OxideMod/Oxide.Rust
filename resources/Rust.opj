@@ -10558,21 +10558,65 @@
               {
                 "OpCode": "br_s",
                 "OpType": "Instruction",
-                "Operand": 1041
+                "Operand": 1050
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "VariableIndex",
+                "Operand": "1"
+              },
+              {
+                "OpCode": "isinst",
+                "OpType": "Type",
+                "Operand": "Assembly-CSharp|DecayEntity"
+              },
+              {
+                "OpCode": "stloc_s",
+                "OpType": "VariableIndex",
+                "Operand": "8"
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "VariableIndex",
+                "Operand": "8"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "UnityEngine.CoreModule|UnityEngine.Object|op_Implicit"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 1046
+              },
+              {
+                "OpCode": "ldloc_s",
+                "OpType": "VariableIndex",
+                "Operand": "8"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|DecayEntity|DoServerDestroy"
               },
               {
                 "OpCode": "ldloc_1",
                 "OpType": "None"
               },
               {
-                "OpCode": "ldc_r4",
-                "OpType": "Single",
-                "Operand": "0"
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseNetworkable|TerminateOnServer"
               },
               {
-                "OpCode": "call",
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "callvirt",
                 "OpType": "Method",
-                "Operand": "Assembly-CSharp|GameManager|Destroy(UnityEngine.CoreModule|UnityEngine.Component,System.Single)"
+                "Operand": "Assembly-CSharp|BaseNetworkable|EntityDestroy"
               },
               {
                 "OpCode": "ldnull",
@@ -53593,6 +53637,63 @@
             "Parameters": []
           },
           "MSILHash": ""
+        },
+        {
+          "Name": "DecayEntity::DoServerDestroy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "DecayEntity",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              3
+            ],
+            "Name": "DoServerDestroy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "O4CmMEP2xXDSwOSKHN0qnvr1++d9y7jbVnUFOITcgEQ="
+        },
+        {
+          "Name": "BaseNetworkable::TerminateOnServer",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "TerminateOnServer",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "T0btjE959oKE5f1iFr8FQi3PaFGWtTP4LUHOSNVtMZA="
+        },
+        {
+          "Name": "BaseNetworkable::EntityDestroy",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseNetworkable",
+          "Type": 1,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              0
+            ],
+            "Name": "EntityDestroy",
+            "FullTypeName": "System.Void",
+            "Parameters": []
+          },
+          "MSILHash": "1rwopToLikc/JTKFYzIYETJEzl66EyxkN40Mh5Pixws="
         }
       ],
       "Fields": [

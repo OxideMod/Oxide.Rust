@@ -10321,7 +10321,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 121,
+            "InjectionIndex": 122,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l5, l0, a1",
@@ -18632,7 +18632,7 @@
               {
                 "OpCode": "ble",
                 "OpType": "Instruction",
-                "Operand": 126
+                "Operand": 128
               }
             ],
             "HookTypeName": "Modify",
@@ -18664,7 +18664,7 @@
               {
                 "OpCode": "brfalse",
                 "OpType": "Instruction",
-                "Operand": 126
+                "Operand": 128
               }
             ],
             "HookTypeName": "Modify",
@@ -18696,7 +18696,7 @@
               {
                 "OpCode": "ble_un",
                 "OpType": "Instruction",
-                "Operand": 126
+                "Operand": 128
               }
             ],
             "HookTypeName": "Modify",
@@ -18728,7 +18728,7 @@
               {
                 "OpCode": "ble_s",
                 "OpType": "Instruction",
-                "Operand": 126
+                "Operand": 128
               }
             ],
             "HookTypeName": "Modify",
@@ -18760,7 +18760,7 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 126
+                "Operand": 128
               }
             ],
             "HookTypeName": "Modify",

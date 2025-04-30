@@ -21623,6 +21623,86 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 166,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnGibsSpawned",
+            "HookName": "OnGibsSpawned",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerGib",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CreateGibs",
+              "ReturnType": "System.Collections.Generic.List`1<ServerGib>",
+              "Parameters": [
+                "System.String",
+                "UnityEngine.GameObject",
+                "UnityEngine.GameObject",
+                "UnityEngine.Vector3",
+                "System.Single"
+              ]
+            },
+            "MSILHash": "stQdbMHO1IcIfMbBDyPRFZQgcl2wlPEOMm2vTG0h0lg=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 286,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l14",
+            "HookTypeName": "Simple",
+            "Name": "OnCrateSpawned [PatrolHelicopter]",
+            "HookName": "OnCrateSpawned",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PatrolHelicopter",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnDied",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "qDUuebrcHUQ6UIEBi/X1dChcpU5WtDqq3O900Aa+z6I=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 285,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l14",
+            "HookTypeName": "Simple",
+            "Name": "OnCrateSpawned [BradleyAPC]",
+            "HookName": "OnCrateSpawned",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BradleyAPC",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnDied",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "2DzsnLqvo2OBGzaK0u49h11pVxswiEBtj1dm3gt8Fpw=",
+            "BaseHookName": "OnEntityDestroy [BradleyAPC]",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 4,
             "ArgumentBehavior": 4,

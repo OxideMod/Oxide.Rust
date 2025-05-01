@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust-Release\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -6124,7 +6124,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "EiCt6GwqhvFayQ4ti+SwEQ69NNb5ByS23vCQ7Ggx++k=",
+            "MSILHash": "oyRqnIrskue77RDtX3cSscvLEw2F65Jfb3OYSkJQ1GE=",
             "HookCategory": "Player"
           }
         },
@@ -9736,7 +9736,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "uF5e/OFpapXgnKjnD7EVxfdLs/xhhhvg/iSjMXQPNvM=",
+            "MSILHash": "e09DwSVXYhwCUt68co5KZyCY9f6scbBzFstY6+x2x1I=",
             "HookCategory": "Player"
           }
         },
@@ -9765,7 +9765,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "uF5e/OFpapXgnKjnD7EVxfdLs/xhhhvg/iSjMXQPNvM=",
+            "MSILHash": "e09DwSVXYhwCUt68co5KZyCY9f6scbBzFstY6+x2x1I=",
             "BaseHookName": "OnPlayerCorpseSpawn",
             "HookCategory": "Player"
           }
@@ -13726,7 +13726,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "GplaLQFX58pBX8BSFFEhefHgoa6PquF8D0fQyk/de44=",
+            "MSILHash": "bIoaB+ZpJKsBJecj7W7vjoDyipTZAUlPyF1Fl3z7CTY=",
             "HookCategory": "Player"
           }
         },
@@ -21691,7 +21691,7 @@
             "Name": "OnFeedbackReported",
             "HookName": "OnFeedbackReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnFeedbackReport>d__598",
+            "TypeName": "BasePlayer/<OnFeedbackReport>d__597",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21699,7 +21699,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "iciNRGsjvjTSWpGXLbh+bnur7PMTkRyHRzBkVGxWy58=",
+            "MSILHash": "vWODwmlmfkTpVcmO9Na9Lw4yNk1RSr6fnfYyE+JR/6w=",
             "HookCategory": "Player"
           }
         },
@@ -21713,7 +21713,7 @@
             "Name": "OnFeedbackReported [patch]",
             "HookName": "OnFeedbackReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnFeedbackReport>d__598",
+            "TypeName": "BasePlayer/<OnFeedbackReport>d__597",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21721,7 +21721,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "iciNRGsjvjTSWpGXLbh+bnur7PMTkRyHRzBkVGxWy58=",
+            "MSILHash": "vWODwmlmfkTpVcmO9Na9Lw4yNk1RSr6fnfYyE+JR/6w=",
             "BaseHookName": "OnFeedbackReported",
             "HookCategory": "_Patches"
           }
@@ -21737,7 +21737,7 @@
             "Name": "OnPlayerReported",
             "HookName": "OnPlayerReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnPlayerReported>d__597",
+            "TypeName": "BasePlayer/<OnPlayerReported>d__596",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21745,7 +21745,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "UGQOaTbnx5iJDF/k0uSo6AsuZbpERaKUE6Od+u1X4g0=",
+            "MSILHash": "H0u/1o5sjtVrGGW4qMCzZ4voIYam5/ZJ5Vl/s3C72Uc=",
             "HookCategory": "Player"
           }
         }
@@ -52419,28 +52419,6 @@
             ]
           },
           "MSILHash": "W5GOmCCDQvJOrGrTrquhSnXaPAoOlK8AiN+roBnc8E8="
-        },
-        {
-          "Name": "BasePlayer::ConnectedPlayerUpdate",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BasePlayer",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "ConnectedPlayerUpdate",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "System.Single",
-              "System.Single"
-            ]
-          },
-          "MSILHash": "V6ieGMf1Zd6BvHCpHLx7SSC59icG6cBF2ap+NUX5NIY="
         },
         {
           "Name": "BasePlayer::TickPings",

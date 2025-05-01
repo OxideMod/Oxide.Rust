@@ -1412,7 +1412,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "0GrVEafd52PojVkK5RX1s9ImvnFSqGS7OI3t4XDo3S8=",
+            "MSILHash": "kmy2XLV2AIKtR0RvFAjpX7Xy8pqgvs7sMtbL0d3/PGM=",
             "HookCategory": "Structure"
           }
         },
@@ -2995,14 +2995,14 @@
             "TypeName": "BaseCombatEntity",
             "Flagged": false,
             "Signature": {
-              "Exposure": 2,
-              "Name": "CanPickup",
+              "Exposure": 1,
+              "Name": "CanCompletePickup",
               "ReturnType": "System.Boolean",
               "Parameters": [
                 "BasePlayer"
               ]
             },
-            "MSILHash": "X1MlB2O5/tMnqN3AvQKu+ex2VBcqP81CzCUeEKS5kQk=",
+            "MSILHash": "P3Mx+v3adUs95vU27ANKY5mvZxgLUs14zJrrTfI5vlw=",
             "HookCategory": "Player"
           }
         },
@@ -3325,7 +3325,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "ezHBspHgviTJmlTMH6qU6qWWz6S/wY5oAGWH00G6TBI=",
+            "MSILHash": "3/lim8QMFd1hVDHASE9RT4J0u7bUw0DDlENTJvwKwuQ=",
             "HookCategory": "Turret"
           }
         },
@@ -4532,7 +4532,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "xWsey9ljH7Gb+KnczykNmHZDrTZdlwFGasS8Qa+tSeo=",
+            "MSILHash": "W477Tn2g3dKAmPFow9ol74WQQpbxmvxDmOqNVaeORYY=",
             "HookCategory": "Turret"
           }
         },
@@ -13578,7 +13578,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "26t8A/OhUNXtaXMrV4ylsMsmSBoQOVtJoCzcRqunmso=",
+            "MSILHash": "nMVESLusnTeCOM5XMQUyKYydPo/k94WDejP1F2/8lvY=",
             "HookCategory": "Entity"
           }
         },
@@ -13602,7 +13602,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "26t8A/OhUNXtaXMrV4ylsMsmSBoQOVtJoCzcRqunmso=",
+            "MSILHash": "nMVESLusnTeCOM5XMQUyKYydPo/k94WDejP1F2/8lvY=",
             "BaseHookName": "OnWaterPurify",
             "HookCategory": "Entity"
           }
@@ -14965,7 +14965,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "1KDQJkAKukBf/m8bjrwhBX4yYeHSZPy32ZNDKprWroY=",
+            "MSILHash": "CC5Fap7lAABojOrYwRKFNii035OYswWh6ImrCc6vaRc=",
             "HookCategory": "Turret"
           }
         },
@@ -15239,7 +15239,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "rvUTXwI3GFExWX0JAaDb03yZerCxsD9V/DldPd9l7Rc=",
+            "MSILHash": "8huHAAzJuOImnzgfbiHH0LB2/VRdYlbzbqeoqF10s4I=",
             "HookCategory": "Turret"
           }
         },
@@ -15264,7 +15264,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "rvUTXwI3GFExWX0JAaDb03yZerCxsD9V/DldPd9l7Rc=",
+            "MSILHash": "8huHAAzJuOImnzgfbiHH0LB2/VRdYlbzbqeoqF10s4I=",
             "BaseHookName": "OnTurretAssign",
             "HookCategory": "Turret"
           }
@@ -16594,14 +16594,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "CYSuLyX4i1nL8zQdFxZm27/VitMrC0lWi1JHV6SjZkg=",
+            "MSILHash": "aAX02bJtDK8I4CuPD354SgrUeLbj9d6DhFFUzV2oBLE=",
             "HookCategory": "Crafting"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 952,
+            "InjectionIndex": 974,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": " l3, l7, a0.player",
@@ -16619,7 +16619,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "CYSuLyX4i1nL8zQdFxZm27/VitMrC0lWi1JHV6SjZkg=",
+            "MSILHash": "aAX02bJtDK8I4CuPD354SgrUeLbj9d6DhFFUzV2oBLE=",
             "BaseHookName": "OnEntityReskin",
             "HookCategory": "Crafting"
           }
@@ -23595,7 +23595,7 @@
           "MSILHash": ""
         },
         {
-          "Name": "WaterPurifier::waterStorage",
+          "Name": "WaterPurifier::purifiedWaterStorage",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "WaterPurifier",
           "Type": 0,
@@ -23607,8 +23607,8 @@
             "Exposure": [
               1
             ],
-            "Name": "waterStorage",
-            "FullTypeName": "LiquidContainer WaterPurifier::waterStorage",
+            "Name": "purifiedWaterStorage",
+            "FullTypeName": "LiquidContainer WaterPurifier::purifiedWaterStorage",
             "Parameters": []
           },
           "MSILHash": ""

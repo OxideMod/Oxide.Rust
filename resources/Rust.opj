@@ -21689,6 +21689,31 @@
             "MSILHash": "WV+au3i32a6i9ipirJZF0HDBg87L58lyQf6qygcrges=",
             "HookCategory": "Primitive"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0.player,this",
+            "HookTypeName": "Simple",
+            "Name": "ICanPickupEntity [RFTimedExplosive]",
+            "HookName": "ICanPickupEntity",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RFTimedExplosive",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Pickup",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "wqlaAG3eSQyXIKpW2QgqrfE5zGZ16N125WeWRT3zBDs=",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

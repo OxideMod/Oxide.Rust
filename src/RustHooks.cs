@@ -146,13 +146,13 @@ namespace Oxide.Game.Rust
         #region Player Hooks
 
         /// <summary>
-        /// Called when a player attempts to pickup a DoorCloser entity
+        /// Called when a player attempts to pick up a DoorCloser or RFTimedExplosive entity
         /// </summary>
         /// <param name="basePlayer"></param>
         /// <param name="entity"></param>
         /// <returns></returns>
         [HookMethod("ICanPickupEntity")]
-        private object ICanPickupEntity(BasePlayer basePlayer, DoorCloser entity)
+        private object ICanPickupEntity(BasePlayer basePlayer, BaseEntity entity)
         {
             object callHook = Interface.CallHook("CanPickupEntity", basePlayer, entity);
             return callHook is bool result && !result ? (object)true : null;

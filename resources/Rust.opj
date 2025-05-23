@@ -686,7 +686,7 @@
             "InjectionIndex": 10,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player, null",
+            "ArgumentString": "this, a0.player, true",
             "HookTypeName": "Simple",
             "Name": "OnStructureDemolish [immediate = true]",
             "HookName": "OnStructureDemolish",
@@ -1995,7 +1995,7 @@
             "InjectionIndex": 11,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0.player, null",
+            "ArgumentString": "this, a0.player, false",
             "HookTypeName": "Simple",
             "Name": "OnStructureDemolish [immediate = false]",
             "HookName": "OnStructureDemolish",
@@ -4974,76 +4974,6 @@
             },
             "MSILHash": "g1uVbpAa6ZXKhZlXTlMQSTESzDIBG1T84oZhF2cRGVg=",
             "BaseHookName": "OnPlayerAttack [Melee]",
-            "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 15,
-            "RemoveCount": 1,
-            "Instructions": [
-              {
-                "OpCode": "ldc_i4_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "box",
-                "OpType": "Type",
-                "Operand": "mscorlib|System.Boolean"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnStructureDemolish [false, patch]",
-            "HookName": "OnStructureDemolish [false, patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "StabilityEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "DoDemolish",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "tZXpEHCmtScT1FBIYwAcysBagsi7z8uIVr1IS9lPunc=",
-            "BaseHookName": "OnStructureDemolish [immediate = false]",
-            "HookCategory": "_Patches"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 14,
-            "RemoveCount": 1,
-            "Instructions": [
-              {
-                "OpCode": "ldc_i4_1",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "box",
-                "OpType": "Type",
-                "Operand": "mscorlib|System.Boolean"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnStructureDemolish [true, patch]",
-            "HookName": "OnStructureDemolish [true, patch]",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "StabilityEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "DoImmediateDemolish",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/RPCMessage"
-              ]
-            },
-            "MSILHash": "O/1gpHnA2EYRF53Tw7g59IWiue7rIIySuls/wgGJpsY=",
-            "BaseHookName": "OnStructureDemolish [immediate = true]",
             "HookCategory": "_Patches"
           }
         },

@@ -6712,7 +6712,7 @@
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, this, a1",
             "HookTypeName": "Simple",
-            "Name": "OnPayForPlacement",
+            "Name": "OnPayForPlacement [Planner]",
             "HookName": "OnPayForPlacement",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Planner",
@@ -6727,6 +6727,32 @@
               ]
             },
             "MSILHash": "hiRaFWj5I+r+Lsllu5XUjhN2x2rgY+zMInLHi8T3zVM=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnPayForPlacement [WallpaperPlanner]",
+            "HookName": "OnPayForPlacement",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WallpaperPlanner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "PayForPlacement",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "Construction"
+              ]
+            },
+            "MSILHash": "lHtPW74PGhKZN9/wnQ//SfyDmxCXTMbcK2//jo9QD+o=",
             "HookCategory": "Player"
           }
         },

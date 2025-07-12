@@ -41,7 +41,7 @@ $references_file = Join-Path $tools_dir ".references"
 New-Item "$tools_dir", "$managed_dir", "$docs_dir" -ItemType Directory -Force | Out-Null
 
 # Set URLs of dependencies and tools to download
-$steam_depotdl_url = "https://img.mrblue.io/bf641959245341c381cffc95f38a2bc6.zip"
+$steam_depotdl_url = "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_3.4.0/DepotDownloader-windows-x64.zip"
 $de4dot_url = "https://github.com/0xd4d/de4dot/suites/507020524/artifacts/2658127"
 $patcher_url = "https://github.com/OxideMod/Oxide.Patcher/releases/download/latest/OxidePatcher.exe"
 
@@ -157,6 +157,10 @@ function Get-Dependencies {
                 if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
                 exit 1
             }
+        }
+        elseif ($steam_access.ToLower() -eq "anonymous")
+        {
+            $steam_access = ""
         }
 
         # Cleanup existing game files, else they are not always the latest

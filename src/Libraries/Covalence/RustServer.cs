@@ -145,14 +145,18 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <param name="id"></param>
         /// <param name="reason"></param>
         /// <param name="duration"></param>
-        public void Ban(string id, string reason, TimeSpan duration = default)
-        {
-            if (!IsBanned(id))
-            {
-                ServerUsers.Set(ulong.Parse(id), ServerUsers.UserGroup.Banned, Name, reason);
-                ServerUsers.Save();
-            }
-        }
+    	public void Ban(string id, string reason, TimeSpan duration = default)
+    	{
+    		if (IsBanned(id)) return;
+    		long expiryUnixTime = -1L;
+    		if (duration != TimeSpan.Zero)
+    		{
+    			DateTime expiryTime = DateTime.UtcNow.Add(duration);
+    			expiryUnixTime = new DateTimeOffset(expiryTime).ToUnixTimeSeconds();
+    		}
+    		ServerUsers.Set(ulong.Parse(id), ServerUsers.UserGroup.Banned, Name, reason, expiryUnixTime);
+    		ServerUsers.Save();
+    	}
 
         /// <summary>
         /// Gets the amount of time remaining on the player's ban

@@ -28,6 +28,8 @@ namespace Oxide.Game.Rust
         internal bool isPlayerTakingDamage;
         internal static string ipPattern = @":{1}[0-9]{1}\d*";
 
+        private static readonly DateTime Eoy = new DateTime(2025, 12, 31);
+
         #region Entity Hooks
 
         /// <summary>
@@ -686,6 +688,20 @@ namespace Oxide.Game.Rust
             }
 
             return null;
+        }
+
+        #endregion
+
+        #region Deprecated Hooks
+
+        [HookMethod("OnTeamMemberPromote")]
+        private void OnTeamMemberPromote(RelationshipManager.PlayerTeam team, ulong newTeamLeader)
+        {
+            BasePlayer player = BasePlayer.FindByID(newTeamLeader);
+            if (player != null)
+            {
+                Interface.Oxide.CallDeprecatedHook("OnTeamPromote", "OnTeamMemberPromote(PlayerTeam team, ulong userId)", Eoy, team, player);
+            }
         }
 
         #endregion

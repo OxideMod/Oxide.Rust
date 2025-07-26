@@ -5703,31 +5703,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 43,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "l2, l1",
-            "HookTypeName": "Simple",
-            "Name": "OnTeamPromote",
-            "HookName": "OnTeamPromote",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "RelationshipManager",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "promote",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "ConsoleSystem/Arg"
-              ]
-            },
-            "MSILHash": "S9ziO6k9MgPxnVsMrfowLbIwZJT3FlCQMo3Tz1WRRFo=",
-            "HookCategory": "Team"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 19,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -21747,6 +21722,30 @@
             },
             "MSILHash": "H0u/1o5sjtVrGGW4qMCzZ4voIYam5/ZJ5Vl/s3C72Uc=",
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnTeamMemberPromote",
+            "HookName": "OnTeamMemberPromote",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager/PlayerTeam",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SetTeamLeader",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.UInt64"
+              ]
+            },
+            "MSILHash": "EcPI4zi+gCOie868IwMDV9kvVqH4TzCv+FtDcPWVzX8=",
+            "HookCategory": "Team"
           }
         }
       ],

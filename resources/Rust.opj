@@ -21747,6 +21747,29 @@
             "MSILHash": "EcPI4zi+gCOie868IwMDV9kvVqH4TzCv+FtDcPWVzX8=",
             "HookCategory": "Team"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 95,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1",
+            "HookTypeName": "Simple",
+            "Name": "OnSteamInventoryUpdated",
+            "HookName": "OnSteamInventoryUpdated",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SteamInventory/<UpdateSteamInventory>d__3",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MoveNext",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "CSgHxOV/a0y8H/xBV7cJ+MG4Vh6oHZKCy7GhYwJCMFY=",
+            "HookCategory": "Player"
+          }
         }
       ],
       "Modifiers": [

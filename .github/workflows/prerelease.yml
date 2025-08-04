@@ -28,7 +28,10 @@ jobs:
     needs: build
     with:
       generate-filehash: true
+      CLOUDFLARE_R2_PUBLIC_URL_BASE: ${{ vars.CLOUDFLARE_R2_PUBLIC_URL_BASE }}
     secrets:
       CLOUDFLARE_R2_KEY: ${{ secrets.CLOUDFLARE_R2_KEY }}
       CLOUDFLARE_R2_SECRET: ${{ secrets.CLOUDFLARE_R2_SECRET }}
       CLOUDFLARE_R2_ENDPOINT: ${{ secrets.CLOUDFLARE_R2_ENDPOINT }}
+      CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

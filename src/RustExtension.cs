@@ -2,7 +2,6 @@ using Oxide.Core;
 using Oxide.Core.Extensions;
 using Oxide.Plugins;
 using System;
-using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Threading.Tasks;

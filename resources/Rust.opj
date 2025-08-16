@@ -5657,6 +5657,10 @@
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, l3",
+            "Deprecation": {
+              "ReplacementHook": "OnTeamMemberInvite( PlayerTeam playerTeam, BasePlayer basePlayer, ulong PlayerID )",
+              "RemovalDate": "2025-12-31T00:40:19"
+            },
             "HookTypeName": "Simple",
             "Name": "OnTeamInvite",
             "HookName": "OnTeamInvite",
@@ -21771,6 +21775,103 @@
             },
             "MSILHash": "CSgHxOV/a0y8H/xBV7cJ+MG4Vh6oHZKCy7GhYwJCMFY=",
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 61,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, l0, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnTeamMemberInvite [sendofflineinvite]",
+            "HookName": "OnTeamMemberInvite",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "sendofflineinvite",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "dWK6CPwMeiALjcc8phPbUdJiAeQpn1Ur3LLqWU8fSSY=",
+            "HookCategory": "Team"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 77,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnTeamMemberInvite"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_3",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldflda",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BasePlayer|userID"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|EncryptedValue`1[System.UInt64]|Get"
+              },
+              {
+                "OpCode": "box",
+                "OpType": "Type",
+                "Operand": "mscorlib|System.UInt64"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 77
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnTeamMemberInvite [sendinvite]",
+            "HookName": "OnTeamMemberInvite",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RelationshipManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "sendinvite",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "ConsoleSystem/Arg"
+              ]
+            },
+            "MSILHash": "3dnmet2HBP7mbmrOVIIg9FP6+SpuiycBGdkT/r1l3x4=",
+            "BaseHookName": "OnTeamInvite",
+            "HookCategory": "Team"
           }
         }
       ],

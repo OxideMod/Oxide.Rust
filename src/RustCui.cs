@@ -1,4 +1,4 @@
-﻿extern alias References;
+extern alias References;
 
 using Oxide.Core;
 using References::Newtonsoft.Json;
@@ -6,27 +6,73 @@ using References::Newtonsoft.Json.Converters;
 using References::Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Text;
+using Facepunch;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Oxide.Game.Rust.Cui
 {
+    public sealed class JsonArrayPool<T> : IArrayPool<T>
+    {
+        public static readonly JsonArrayPool<T> Shared = new JsonArrayPool<T>();
+        private readonly ArrayPool<T> _pool = new ArrayPool<T>(50);
+        public T[] Rent(int minimumLength) => _pool.Rent(minimumLength);
+        public void Return(T[] array) => _pool.Return(array);
+    }
+
     public static class CuiHelper
     {
-        public static string ToJson(List<CuiElement> elements, bool format = false)
+        private static readonly StringBuilder sb = new StringBuilder(64 * 1024);
+        private static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
         {
-            return JsonConvert.SerializeObject(elements, format ? Formatting.Indented : Formatting.None, new JsonSerializerSettings
-            {
-                DefaultValueHandling = DefaultValueHandling.Ignore
-            }).Replace("\\n", "\n");
+            DefaultValueHandling = DefaultValueHandling.Ignore,
+            NullValueHandling = NullValueHandling.Ignore,
+            DateParseHandling = DateParseHandling.None,
+            FloatFormatHandling = FloatFormatHandling.Symbol,
+            StringEscapeHandling = StringEscapeHandling.Default
+        };
+
+        private static readonly JsonSerializer _serializer = JsonSerializer.Create(Settings);
+        private static readonly StringWriter sw = new StringWriter(sb, CultureInfo.InvariantCulture);
+        private static readonly JsonTextWriter jw = new JsonTextWriter(sw)
+        {
+            Formatting = Formatting.None,
+            ArrayPool = JsonArrayPool<char>.Shared,
+            CloseOutput = false
+        };
+        private static readonly JsonTextWriter jwFormated = new JsonTextWriter(sw)
+        {
+            Formatting = Formatting.Indented,
+            ArrayPool = JsonArrayPool<char>.Shared,
+            CloseOutput = false
+        };
+
+        public static string ToJson(IReadOnlyList<CuiElement> elements, bool format = false)
+        {
+            sb.Clear();
+            var writer = format ? jwFormated : jw;
+            _serializer.Serialize(writer, elements);
+            var json = sb.ToString().Replace("\\n", "\n");
+            return json;
         }
 
         public static List<CuiElement> FromJson(string json) => JsonConvert.DeserializeObject<List<CuiElement>>(json);
 
-        public static string GetGuid() => Guid.NewGuid().ToString().Replace("-", string.Empty);
+        public static string GetGuid() => Guid.NewGuid().ToString("N");
 
-        public static bool AddUi(BasePlayer player, List<CuiElement> elements) => AddUi(player, ToJson(elements));
+        public static bool AddUi(BasePlayer player, List<CuiElement> elements)
+        {
+            if (player?.net == null)
+            {
+                return false;
+            }
 
+            return AddUi(player, ToJson(elements));
+        }
+        
         public static bool AddUi(BasePlayer player, string json)
         {
             if (player?.net != null && Interface.CallHook("CanUseUI", player, json) == null)
@@ -52,7 +98,12 @@ namespace Oxide.Game.Rust.Cui
 
         public static void SetColor(this ICuiColor elem, Color color)
         {
-            elem.Color = $"{color.r} {color.g} {color.b} {color.a}";
+            sb.Clear();
+            sb.Append(color.r).Append(' ')
+                .Append(color.g).Append(' ')
+                .Append(color.b).Append(' ')
+                .Append(color.a);
+            elem.Color = sb.ToString();
         }
 
         public static Color GetColor(this ICuiColor elem) => ColorEx.Parse(elem.Color);
@@ -299,7 +350,7 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonProperty("png")]
         public string Png { get; set; }
-        
+
         [JsonProperty("steamid")]
         public string SteamId { get; set; }
 

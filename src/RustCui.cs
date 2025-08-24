@@ -4,106 +4,55 @@ using Oxide.Core;
 using References::Newtonsoft.Json;
 using References::Newtonsoft.Json.Converters;
 using References::Newtonsoft.Json.Linq;
-using References::ProtoBuf;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
-using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Oxide.Game.Rust.Cui
 {
-    public sealed class JsonArrayPool<T> : IArrayPool<T>
-    {
-        public static readonly JsonArrayPool<T> Shared = new JsonArrayPool<T>();
-        public T[] Rent(int minimumLength) => System.Buffers.ArrayPool<T>.Shared.Rent(minimumLength);
-        public void Return(T[] array) => System.Buffers.ArrayPool<T>.Shared.Return(array);
-    }
-
     public static class CuiHelper
     {
-        private static readonly StringBuilder sb = new StringBuilder(64 * 1024);
-
-        private static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
+        public static string ToJson(List<CuiElement> elements, bool format = false)
         {
-            DefaultValueHandling = DefaultValueHandling.Ignore,
-            NullValueHandling = NullValueHandling.Ignore,
-            DateParseHandling = DateParseHandling.None,
-            FloatFormatHandling = FloatFormatHandling.Symbol,
-            StringEscapeHandling = StringEscapeHandling.Default
-        };
-
-        private static readonly JsonSerializer _serializer = JsonSerializer.Create(Settings);
-        private static readonly StringWriter sw = new StringWriter(sb, CultureInfo.InvariantCulture);
-        private static readonly JsonTextWriter jw = new JsonTextWriter(sw)
-        {
-            Formatting = Formatting.None,
-            ArrayPool = JsonArrayPool<char>.Shared,
-            CloseOutput = false
-        };
-        private static readonly JsonTextWriter jwFormated = new JsonTextWriter(sw)
-        {
-            Formatting = Formatting.Indented,
-            ArrayPool = JsonArrayPool<char>.Shared,
-            CloseOutput = false
-        };
-
-        public static string ToJson(IReadOnlyList<CuiElement> elements, bool format = false)
-        {
-            sb.Clear();
-            var writer = format ? jwFormated : jw;
-            _serializer.Serialize(writer, elements);
-            var json = sb.ToString().Replace("\\n", "\n");
-            return json;
+            return JsonConvert.SerializeObject(elements, format ? Formatting.Indented : Formatting.None, new JsonSerializerSettings
+            {
+                DefaultValueHandling = DefaultValueHandling.Ignore
+            }).Replace("\\n", "\n");
         }
 
         public static List<CuiElement> FromJson(string json) => JsonConvert.DeserializeObject<List<CuiElement>>(json);
 
-        public static string GetGuid() => Guid.NewGuid().ToString("N");
+        public static string GetGuid() => Guid.NewGuid().ToString().Replace("-", string.Empty);
 
-        public static bool AddUi(BasePlayer player, List<CuiElement> elements)
-        {
-            if (player?.net == null)
-                return false;
-
-            var json = ToJson(elements);
-
-            if (Interface.CallHook("CanUseUI", player, json) != null)
-                return false;
-
-            CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Player("AddUI", player.net.connection), json);
-            return true;
-        }
+        public static bool AddUi(BasePlayer player, List<CuiElement> elements) => AddUi(player, ToJson(elements));
 
         public static bool AddUi(BasePlayer player, string json)
         {
-            if (player?.net == null || Interface.CallHook("CanUseUI", player, json) != null)
-                return false;
+            if (player?.net != null && Interface.CallHook("CanUseUI", player, json) == null)
+            {
+                CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Player("AddUI", player.net.connection ), json);
+                return true;
+            }
 
-            CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Player("AddUI", player.net.connection), json);
-            return true;
+            return false;
         }
 
         public static bool DestroyUi(BasePlayer player, string elem)
         {
-            if (player?.net == null)
-                return false;
+            if (player?.net != null)
+            {
+                Interface.CallHook("OnDestroyUI", player, elem);
+                CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Player("DestroyUI", player.net.connection ), elem);
+                return true;
+            }
 
-            Interface.CallHook("OnDestroyUI", player, elem);
-            CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Player("DestroyUI", player.net.connection ), elem);
-            return true;
+            return false;
         }
 
         public static void SetColor(this ICuiColor elem, Color color)
         {
-            sb.Clear();
-            sb.Append(color.r).Append(' ')
-                .Append(color.g).Append(' ')
-                .Append(color.b).Append(' ')
-                .Append(color.a);
-            elem.Color = sb.ToString();
+            elem.Color = $"{color.r} {color.g} {color.b} {color.a}";
         }
 
         public static Color GetColor(this ICuiColor elem) => ColorEx.Parse(elem.Color);
@@ -350,7 +299,7 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonProperty("png")]
         public string Png { get; set; }
-
+        
         [JsonProperty("steamid")]
         public string SteamId { get; set; }
 

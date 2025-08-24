@@ -6,6 +6,7 @@ using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
 using Oxide.Core.RemoteConsole;
 using Oxide.Game.Rust.Libraries.Covalence;
+using Rust.Ai.Gen2;
 using Steamworks;
 using System;
 using System.Collections.Generic;
@@ -26,6 +27,8 @@ namespace Oxide.Game.Rust
     {
         internal bool isPlayerTakingDamage;
         internal static string ipPattern = @":{1}[0-9]{1}\d*";
+
+        private static readonly DateTime Eoy = new DateTime(2025, 12, 31);
 
         #region Entity Hooks
 
@@ -63,6 +66,34 @@ namespace Oxide.Game.Rust
 
                 npc.playerTargetDecisionStartTime = 0f;
                 return 0f;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Called when an NPC tries to target an entity
+        /// </summary>
+        /// <param name="sense"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        [HookMethod("IOnNpcTarget")]
+        private object IOnNpcTarget(SenseComponent sense, BaseEntity target)
+        {
+            if (!sense || !target)
+            {
+                return null;
+            }
+
+            BaseEntity baseEntity = sense.baseEntity;
+            if (!baseEntity)
+            {
+                return null;
+            }
+
+            if (Interface.CallHook("OnNpcTarget", baseEntity, target) != null)
+            {
+                return false;
             }
 
             return null;
@@ -117,13 +148,13 @@ namespace Oxide.Game.Rust
         #region Player Hooks
 
         /// <summary>
-        /// Called when a player attempts to pickup a DoorCloser entity
+        /// Called when a player attempts to pick up a DoorCloser or RFTimedExplosive entity
         /// </summary>
         /// <param name="basePlayer"></param>
         /// <param name="entity"></param>
         /// <returns></returns>
         [HookMethod("ICanPickupEntity")]
-        private object ICanPickupEntity(BasePlayer basePlayer, DoorCloser entity)
+        private object ICanPickupEntity(BasePlayer basePlayer, BaseEntity entity)
         {
             object callHook = Interface.CallHook("CanPickupEntity", basePlayer, entity);
             return callHook is bool result && !result ? (object)true : null;
@@ -657,6 +688,20 @@ namespace Oxide.Game.Rust
             }
 
             return null;
+        }
+
+        #endregion
+
+        #region Deprecated Hooks
+
+        [HookMethod("OnTeamMemberPromote")]
+        private void OnTeamMemberPromote(RelationshipManager.PlayerTeam team, ulong newTeamLeader)
+        {
+            BasePlayer player = BasePlayer.FindByID(newTeamLeader);
+            if (player != null)
+            {
+                Interface.Oxide.CallDeprecatedHook("OnTeamPromote", "OnTeamMemberPromote(PlayerTeam team, ulong userId)", Eoy, team, player);
+            }
         }
 
         #endregion

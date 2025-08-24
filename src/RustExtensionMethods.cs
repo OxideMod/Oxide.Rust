@@ -2,6 +2,6 @@
 {
     public static class RustExtensionMethods
     {
-        public static bool IsSteamId(this BasePlayer.EncryptedValue<ulong> userID) => ((ulong)userID).IsSteamId();
+        public static bool IsSteamId(this EncryptedValue<ulong> userID) => ((ulong)userID).IsSteamId();
     }
 }

@@ -299,6 +299,9 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonProperty("png")]
         public string Png { get; set; }
+        
+        [JsonProperty("steamid")]
+        public string SteamId { get; set; }
 
         [JsonProperty("fadeIn")]
         public float FadeIn { get; set; }

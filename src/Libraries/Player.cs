@@ -120,7 +120,8 @@ namespace Oxide.Game.Rust.Libraries
         /// </summary>
         /// <param name="id"></param>
         /// <param name="reason"></param>
-        public void Ban(ulong id, string reason = "")
+        /// <param name="expiry"></param>
+        public void Ban(ulong id, string reason = "", long expiry = -1L)
         {
             if (IsBanned(id))
             {
@@ -128,7 +129,7 @@ namespace Oxide.Game.Rust.Libraries
             }
 
             BasePlayer player = FindById(id);
-            ServerUsers.Set(id, ServerUsers.UserGroup.Banned, player?.displayName ?? "Unknown", reason);
+            ServerUsers.Set(id, ServerUsers.UserGroup.Banned, player?.displayName ?? "Unknown", reason, expiry);
             ServerUsers.Save();
             if (player != null && IsConnected(player))
             {
@@ -141,14 +142,16 @@ namespace Oxide.Game.Rust.Libraries
         /// </summary>
         /// <param name="id"></param>
         /// <param name="reason"></param>
-        public void Ban(string id, string reason = "") => Ban(Convert.ToUInt64(id), reason);
+        /// <param name="expiry"></param>
+        public void Ban(string id, string reason = "", long expiry = -1L) => Ban(Convert.ToUInt64(id), reason, expiry);
 
         /// <summary>
         /// Bans the player from the server
         /// </summary>
         /// <param name="player"></param>
         /// <param name="reason"></param>
-        public void Ban(BasePlayer player, string reason = "") => Ban(player.UserIDString, reason);
+        /// <param name="expiry"></param>
+        public void Ban(BasePlayer player, string reason = "", long expiry = -1L) => Ban(player.UserIDString, reason, expiry);
 
         /// <summary>
         /// Heals the player by specified amount
@@ -200,7 +203,7 @@ namespace Oxide.Game.Rust.Libraries
                 return;
             }
 
-            List<Connection> connections = Pool.GetList<Connection>();
+            List<Connection> connections = Pool.Get<List<Connection>>();
 
             for (int i = 0; i < Net.sv.connections.Count; i++)
             {
@@ -213,7 +216,7 @@ namespace Oxide.Game.Rust.Libraries
             }
 
             player.OnNetworkSubscribersLeave(connections);
-            Pool.FreeList(ref connections);
+            Pool.FreeUnmanaged(ref connections);
 
             if (player.limitNetworking)
             {

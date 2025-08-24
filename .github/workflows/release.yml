@@ -4,14 +4,21 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Release note'
+        required: true
 
 jobs:
   build:
     name: Run Build
-    uses: OxideMod/Actions/.github/workflows/game-build.yaml@main
+    uses: OxideMod/Actions/.github/workflows/game-build.yml@main
     with:
       game: "Rust"
     secrets:
+      DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
       REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
 
   release:
@@ -30,7 +37,7 @@ jobs:
         with:
           files: |
             artifacts/Oxide.*.zip
-          tag_name: 2.0.${{ vars.VERSION }}
+          tag_name: ${{ needs.build.outputs.version }}
           fail_on_unmatched_files: true
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
@@ -44,7 +51,7 @@ jobs:
       - name: Checkout Docs Repository
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.event.repository.owner.name }}/Oxide.Docs
+          repository: ${{ github.repository_owner }}/Oxide.Docs
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           ref: main
       - name: Download Artifacts
@@ -56,5 +63,5 @@ jobs:
           git config --global user.email github@oxidemod.com
           git config --global user.name oxidemod-bot
           git add docs.json
-          git diff-index --quiet HEAD || git commit -m "Update hooks index to 2.0.${{ vars.VERSION }}"
+          git diff-index --quiet HEAD || git commit -m "Update hooks index to ${{ needs.build.outputs.version }}"
           git push

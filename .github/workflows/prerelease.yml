@@ -4,24 +4,34 @@ on:
   push:
     branches-ignore:
       - master
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Release note'
+        required: true
 
 jobs:
   build:
     name: Run Build
-    uses: OxideMod/Actions/.github/workflows/game-build.yaml@main
+    uses: OxideMod/Actions/.github/workflows/game-build.yml@main
     with:
       game: "Rust"
       branch-postfix: "-${{ github.ref_name }}"
     secrets:
+      DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
       REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
 
   deploy:
     name: Deploy to S3
-    uses: OxideMod/Actions/.github/workflows/r2-publish.yaml@main
+    uses: OxideMod/Actions/.github/workflows/r2-publish.yml@main
     needs: build
     with:
       generate-filehash: true
+      CLOUDFLARE_R2_PUBLIC_URL_BASE: ${{ vars.CLOUDFLARE_R2_PUBLIC_URL_BASE }}
     secrets:
       CLOUDFLARE_R2_KEY: ${{ secrets.CLOUDFLARE_R2_KEY }}
       CLOUDFLARE_R2_SECRET: ${{ secrets.CLOUDFLARE_R2_SECRET }}
       CLOUDFLARE_R2_ENDPOINT: ${{ secrets.CLOUDFLARE_R2_ENDPOINT }}
+      CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

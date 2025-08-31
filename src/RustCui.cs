@@ -9,7 +9,8 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
-using Facepunch;
+using System.Threading;
+using Oxide.Pooling;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,14 +19,50 @@ namespace Oxide.Game.Rust.Cui
     public sealed class JsonArrayPool<T> : IArrayPool<T>
     {
         public static readonly JsonArrayPool<T> Shared = new JsonArrayPool<T>();
-        private readonly ArrayPool<T> _pool = new ArrayPool<T>(50);
-        public T[] Rent(int minimumLength) => _pool.Rent(minimumLength);
-        public void Return(T[] array) => _pool.Return(array);
+        private static readonly IArrayPoolProvider<T> Provider = GetOrCreateProvider();
+
+        private static IArrayPoolProvider<T> GetOrCreateProvider()
+        {
+            if (Interface.Oxide.PoolFactory.IsHandledType<T[]>())
+            {
+                return Interface.Oxide.PoolFactory.GetArrayProvider<T>();
+            }
+
+            Interface.Oxide.PoolFactory.RegisterProvider<BaseArrayPoolProvider<T>>(out var provider, 1000, 16384);
+            return provider;
+        }
+
+        public T[] Rent(int minimumLength) => Provider.Take(minimumLength);
+        public void Return(T[] array) => Provider.Return(array);
     }
 
     public static class CuiHelper
     {
-        private static readonly StringBuilder sb = new StringBuilder(64 * 1024);
+        private class JsonWriterResources
+        {
+            public readonly StringBuilder StringBuilder = new StringBuilder(64 * 1024);
+            public readonly StringWriter StringWriter;
+            public readonly JsonTextWriter JsonWriter;
+            public readonly JsonSerializer Serializer;
+
+            public JsonWriterResources()
+            {
+                StringWriter = new StringWriter(StringBuilder, CultureInfo.InvariantCulture);
+                JsonWriter = new JsonTextWriter(StringWriter)
+                {
+                    ArrayPool = JsonArrayPool<char>.Shared,
+                    CloseOutput = false
+                };
+                Serializer = JsonSerializer.Create(Settings);
+            }
+
+            public void Reset(bool format = false)
+            {
+                StringBuilder.Clear();
+                JsonWriter.Formatting = format ? Formatting.Indented : Formatting.None;
+            }
+        }
+
         private static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
         {
             DefaultValueHandling = DefaultValueHandling.Ignore,
@@ -35,28 +72,18 @@ namespace Oxide.Game.Rust.Cui
             StringEscapeHandling = StringEscapeHandling.Default
         };
 
-        private static readonly JsonSerializer _serializer = JsonSerializer.Create(Settings);
-        private static readonly StringWriter sw = new StringWriter(sb, CultureInfo.InvariantCulture);
-        private static readonly JsonTextWriter jw = new JsonTextWriter(sw)
-        {
-            Formatting = Formatting.None,
-            ArrayPool = JsonArrayPool<char>.Shared,
-            CloseOutput = false
-        };
-        private static readonly JsonTextWriter jwFormated = new JsonTextWriter(sw)
-        {
-            Formatting = Formatting.Indented,
-            ArrayPool = JsonArrayPool<char>.Shared,
-            CloseOutput = false
-        };
+        private static readonly ThreadLocal<JsonWriterResources> SharedWriterResources =
+            new ThreadLocal<JsonWriterResources>(() => new JsonWriterResources());
 
         public static string ToJson(IReadOnlyList<CuiElement> elements, bool format = false)
         {
-            sb.Clear();
-            var writer = format ? jwFormated : jw;
-            _serializer.Serialize(writer, elements);
-            var json = sb.ToString().Replace("\\n", "\n");
-            return json;
+            var resources = SharedWriterResources.Value;
+            resources.Reset(format);
+
+            resources.Serializer.Serialize(resources.JsonWriter, elements);
+            resources.JsonWriter.Flush();
+
+            return resources.StringBuilder.ToString().Replace("\\n", "\n");
         }
 
         public static List<CuiElement> FromJson(string json) => JsonConvert.DeserializeObject<List<CuiElement>>(json);
@@ -72,7 +99,7 @@ namespace Oxide.Game.Rust.Cui
 
             return AddUi(player, ToJson(elements));
         }
-        
+
         public static bool AddUi(BasePlayer player, string json)
         {
             if (player?.net != null && Interface.CallHook("CanUseUI", player, json) == null)
@@ -98,12 +125,7 @@ namespace Oxide.Game.Rust.Cui
 
         public static void SetColor(this ICuiColor elem, Color color)
         {
-            sb.Clear();
-            sb.Append(color.r).Append(' ')
-                .Append(color.g).Append(' ')
-                .Append(color.b).Append(' ')
-                .Append(color.a);
-            elem.Color = sb.ToString();
+            elem.Color = $"{color.r} {color.g} {color.b} {color.a}";
         }
 
         public static Color GetColor(this ICuiColor elem) => ColorEx.Parse(elem.Color);

@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-Staging\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -18651,7 +18651,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "8TmiBqaDlxQbT1oUa4cmr1moYYB2uXP83NifmU4xpVM=",
+            "MSILHash": "dXWt6giISBqBSrbuvJ1dwXq7Q9S+UW7BLH0BM6j8lok=",
             "HookCategory": "Player"
           }
         },
@@ -18664,7 +18664,7 @@
               {
                 "OpCode": "leave",
                 "OpType": "Instruction",
-                "Operand": 751
+                "Operand": 756
               }
             ],
             "HookTypeName": "Modify",
@@ -18679,7 +18679,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "8TmiBqaDlxQbT1oUa4cmr1moYYB2uXP83NifmU4xpVM=",
+            "MSILHash": "dXWt6giISBqBSrbuvJ1dwXq7Q9S+UW7BLH0BM6j8lok=",
             "BaseHookName": "IOnPlayerChat",
             "HookCategory": "Player"
           }
@@ -18708,7 +18708,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "8TmiBqaDlxQbT1oUa4cmr1moYYB2uXP83NifmU4xpVM=",
+            "MSILHash": "dXWt6giISBqBSrbuvJ1dwXq7Q9S+UW7BLH0BM6j8lok=",
             "BaseHookName": "IOnPlayerChat[patch]",
             "HookCategory": "Player"
           }

@@ -14351,6 +14351,56 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 12,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "CanMannequinChangePose",
+            "HookName": "CanMannequinChangePose",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Mannequin",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Server_ChangePose",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "gtEjnM3uPUdyZL+KNDfOTpl3SaS/nVuhkGFb02WUlC0=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 15,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "CanMannequinSwap",
+            "HookName": "CanMannequinSwap",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Mannequin",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Server_RequestSwap",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "2YN4WVLyCuWNhdmrfCKRAgTZXCjtZcOs4Qz97mg7Ib8=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 1,

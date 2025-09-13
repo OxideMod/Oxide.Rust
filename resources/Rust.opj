@@ -21926,6 +21926,32 @@
             "MSILHash": "lsQCmZ4iLaRB+PWjCxlXAVKG8B9yRkhPzzh721+DfDU=",
             "HookCategory": "Bookmark"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 15,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, this.MixStartingPlayer, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnMixingTableFinished",
+            "HookName": "OnMixingTableFinished",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MixingTable",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ProduceItem",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Recipe",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "bMZGpOrYk+vd34VXtTARF9V0W0JzozYnbc0oTT/7ynQ=",
+            "HookCategory": "Entity"
+          }
         }
       ],
       "Modifiers": [

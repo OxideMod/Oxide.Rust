@@ -21952,6 +21952,61 @@
             "MSILHash": "bMZGpOrYk+vd34VXtTARF9V0W0JzozYnbc0oTT/7ynQ=",
             "HookCategory": "Entity"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 2,
+            "HookTypeName": "Simple",
+            "Name": "OnCuiDraggableDrag",
+            "HookName": "OnCuiDraggableDrag",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CommunityEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Hook_DragRPC",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.String",
+                "UnityEngine.Vector3",
+                "CommunityEntity/DraggablePositionSendType"
+              ]
+            },
+            "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk=",
+            "HookCategory": "CommunityUI"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 2,
+            "HookTypeName": "Simple",
+            "Name": "OnCuiDraggableDrop",
+            "HookName": "OnCuiDraggableDrop",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "CommunityEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Hook_DropRPC",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.String",
+                "System.String",
+                "System.String",
+                "System.String"
+              ]
+            },
+            "MSILHash": "+u2GCtSHTDWu7iqcjcFKh98FNKhbrQfPRx+LI73xrGk=",
+            "HookCategory": "CommunityUI"
+          }
         }
       ],
       "Modifiers": [

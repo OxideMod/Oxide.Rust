@@ -32,7 +32,7 @@ namespace Oxide.Game.Rust.Libraries
             CultureInfo cultureInfo;
             try
             {
-                cultureInfo = CultureInfo.GetCultureInfo(player.net.connection.info.GetString("global.language", "en"));
+                cultureInfo = CultureInfo.GetCultureInfo(player.net.connection.language ?? "en");
             }
             catch (CultureNotFoundException)
             {

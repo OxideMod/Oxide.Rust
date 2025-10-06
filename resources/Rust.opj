@@ -11829,7 +11829,7 @@
             "Signature": {
               "Exposure": 2,
               "Name": "CanMoveFrom",
-              "ReturnType": "System.Boolean",
+              "ReturnType": "PlayerInventory/CanMoveFromResponse",
               "Parameters": [
                 "BasePlayer",
                 "Item"

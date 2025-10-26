@@ -705,9 +705,9 @@ namespace Oxide.Game.Rust
         }
 
         [HookMethod("IOnTeamInvite")]
-        private void IOnTeamInvite(BasePlayer basePlayer, BasePlayer basePlayer2)
+        private object IOnTeamInvite(BasePlayer basePlayer, BasePlayer basePlayer2)
         {
-            Interface.Oxide.CallDeprecatedHook("OnTeamInvite", "OnTeamMemberInvite(PlayerTeam playerTeam, BasePlayer basePlayer, ulong userId)", Eoy, basePlayer, basePlayer2);
+            return Interface.Oxide.CallDeprecatedHook("OnTeamInvite", "OnTeamMemberInvite(PlayerTeam playerTeam, BasePlayer basePlayer, ulong userId)", Eoy, basePlayer, basePlayer2);
         }
 
         #endregion

@@ -2371,7 +2371,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "ySgLK6/HwRLCvtVKjK2ItuqwfGhJOkRJzAYYDQyvpnc=",
+            "MSILHash": "7ftPczOW0adS30bjvDSjhxAaQy85WgqSL/IfD1dpGZE=",
             "HookCategory": "Player"
           }
         },
@@ -6075,7 +6075,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "sW/kd+rbrzlCfFJWepAic+JYnW455fz5k9O9WojFUhs=",
+            "MSILHash": "fkmHY4v4XzmhctCJi7kYwHSnXQmwmJlvJVlsvEdycys=",
             "HookCategory": "Player"
           }
         },
@@ -53339,7 +53339,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 115
+                "Operand": 122
               }
             ],
             "HookTypeName": "Modify",
@@ -53392,7 +53392,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 53
+                "Operand": 60
               }
             ],
             "HookTypeName": "Modify",

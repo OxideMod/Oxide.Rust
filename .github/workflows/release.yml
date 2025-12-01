@@ -39,6 +39,7 @@ jobs:
             artifacts/Oxide.*.zip
           tag_name: ${{ needs.build.outputs.version }}
           fail_on_unmatched_files: true
+          target_commitish: ${{ github. sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
             See https://umod.org/games/rust for changes

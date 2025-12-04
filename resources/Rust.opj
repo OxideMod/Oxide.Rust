@@ -451,7 +451,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 104,
+            "InjectionIndex": 96,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -469,7 +469,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "qwRuIAKCpGcNwD+1DjGEqerYeQ3CdDbuduZaep2M1vo=",
+            "MSILHash": "AD5CKWBaVrOo6FCAFDfG3zGMR+yRPMqngf9PUw+sTRA=",
             "HookCategory": "Entity"
           }
         },
@@ -598,7 +598,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "3DeukwHtui1Uf0+VcEaEGhUhwuFjf+4VWtMOTD8Ics4=",
+            "MSILHash": "hmiGKn75g9buIWSAtcjRDdpeFC3KJFlyeidM+2jKXB4=",
             "HookCategory": "Player"
           }
         },
@@ -2273,7 +2273,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "Dzk0YPVz2oR7Nu9fqQKnYLb7ZjEpSAFONnVEP24cBe0=",
+            "MSILHash": "1oq70iTTIeHmOubDgO2Ym0gUReyYYf0eFuEK9l5I57c=",
             "HookCategory": "Player"
           }
         },
@@ -2299,7 +2299,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "R4WaBv57zGKDDaPHIGAuD0bbLKSz7KDqu5mW1j57yH0=",
+            "MSILHash": "rxLIJOVkdcIIn/XZ3PPCiLiLNxyl5PACyFmZcKRJFFg=",
             "HookCategory": "Server"
           }
         },
@@ -2347,7 +2347,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "R4WaBv57zGKDDaPHIGAuD0bbLKSz7KDqu5mW1j57yH0=",
+            "MSILHash": "rxLIJOVkdcIIn/XZ3PPCiLiLNxyl5PACyFmZcKRJFFg=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -8059,7 +8059,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "2czrz/a8inCGBfNlPS5yAf9smcXNtnorllDHMiYYoG4=",
+            "MSILHash": "nA44BFSoErJf8PbWZFlYQYPNYPVa9ckWsz4L98DV1Jw=",
             "HookCategory": "Entity"
           }
         },
@@ -16400,7 +16400,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Xn8GnazpvXzCt4+o98hTtsIv6gM+4utwWvo5wUatUqU=",
+            "MSILHash": "LZqaPPQIr1fidCYKvd1za+v19cLttB4M5NxeOyX9Px8=",
             "HookCategory": "Server"
           }
         },
@@ -21707,7 +21707,7 @@
             "InjectionIndex": 61,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l1, l0, l2, true",
+            "ArgumentString": "l1, l0, l2",
             "HookTypeName": "Simple",
             "Name": "OnTeamMemberInvite [sendofflineinvite]",
             "HookName": "OnTeamMemberInvite",
@@ -21765,18 +21765,9 @@
                 "Operand": "mscorlib|System.UInt64"
               },
               {
-                "OpCode": "ldc_i4_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "box",
-                "OpType": "Type",
-                "Operand": "mscorlib|System.Boolean"
-              },
-              {
                 "OpCode": "call",
                 "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object,System.Object)"
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
               },
               {
                 "OpCode": "brfalse_s",

@@ -7668,145 +7668,6 @@
           }
         },
         {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 9,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
-              },
-              {
-                "OpCode": "brtrue_s",
-                "OpType": "Instruction",
-                "Operand": 8
-              },
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnSignalBroadcast"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object)"
-              },
-              {
-                "OpCode": "ldnull",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "beq_s",
-                "OpType": "Instruction",
-                "Operand": 9
-              },
-              {
-                "OpCode": "ret",
-                "OpType": "None"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnSignalBroadcast",
-            "HookName": "OnSignalBroadcast",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "SignalBroadcast",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/Signal",
-                "Network.Connection"
-              ]
-            },
-            "MSILHash": "RlygwLzfqem6UhSMH2issh7vRSfBMHgfSgnLnp5UAzk=",
-            "HookCategory": "Network"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 9,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
-              },
-              {
-                "OpCode": "brtrue_s",
-                "OpType": "Instruction",
-                "Operand": 8
-              },
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnSignalBroadcast"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldarg_3",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
-              },
-              {
-                "OpCode": "ldnull",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "beq_s",
-                "OpType": "Instruction",
-                "Operand": 9
-              },
-              {
-                "OpCode": "ret",
-                "OpType": "None"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnSignalBroadcast",
-            "HookName": "OnSignalBroadcast",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BaseEntity",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "SignalBroadcast",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "BaseEntity/Signal",
-                "System.String",
-                "Network.Connection"
-              ]
-            },
-            "MSILHash": "SIMcb05wIU8oWX9uzzpbME0PW9ArP4AGBapvnhvBpOk=",
-            "HookCategory": "Player"
-          }
-        },
-        {
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 4,
@@ -22102,6 +21963,75 @@
             },
             "MSILHash": "rXPpyPIogZKd0hkIXe6+3dCtYPf+I4fwmxdfJSucYJs=",
             "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 9,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a2, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "OnSignalBroadcast",
+            "HookName": "OnSignalBroadcast",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SignalBroadcast",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/Signal",
+                "System.String",
+                "Network.Connection"
+              ]
+            },
+            "MSILHash": "SIMcb05wIU8oWX9uzzpbME0PW9ArP4AGBapvnhvBpOk=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 9,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|BaseNetworkable|get_limitNetworking"
+              },
+              {
+                "OpCode": "brtrue_s",
+                "OpType": "Instruction",
+                "Operand": 8
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "LimitNetworkingSignalBroadcast [Patch]",
+            "HookName": "LimitNetworkingSignalBroadcast [Patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SignalBroadcast",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/Signal",
+                "System.String",
+                "Network.Connection"
+              ]
+            },
+            "MSILHash": "SIMcb05wIU8oWX9uzzpbME0PW9ArP4AGBapvnhvBpOk=",
+            "BaseHookName": "OnSignalBroadcast",
+            "HookCategory": "_Patches"
           }
         }
       ],

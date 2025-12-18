@@ -25,7 +25,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Oxide.References" Version="2.0.*" />
-    <PackageReference Include="Oxide.Core" Version="2.0.*" />
+    <PackageReference Include="Oxide.Core" Version="2.0.4141-develop" />
     <PackageReference Include="Oxide.CSharp" Version="2.0.*" />
     <PackageReference Include="Oxide.MySql" Version="2.0.*" />
     <PackageReference Include="Oxide.SQLite" Version="2.0.*" />

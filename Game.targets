@@ -32,7 +32,8 @@
       <ContentFiles Include="$(NuGetPackageRoot)\oxide.references\**\lib\any\$(TargetFramework)\*.*" />
       <ContentFiles Include="$(NuGetPackageRoot)\oxide.core\**\lib\$(TargetFramework)\*.*" />
       <ContentFiles Include="$(NuGetPackageRoot)\oxide.csharp\**\lib\any\*.*; $(NuGetPackageRoot)\oxide.csharp\**\lib\$(TargetFramework)\*.*" />
-      <ContentFiles Include="$(NuGetPackageRoot)\oxide.mysql\**\lib\any\MySql.*.dll; $(NuGetPackageRoot)\oxide.mysql\**\lib\any\System.*.dll" />
+      <ContentFiles Include="$(NuGetPackageRoot)\mysql.data\**\lib\$(TargetFramework)\MySql.Data.dll" />
+      <ContentFiles Include="$(NuGetPackageRoot)\oxide.mysql\**\lib\any\System.*.dll" />
       <ContentFiles Include="$(NuGetPackageRoot)\oxide.mysql\**\lib\$(TargetFramework)\*.*" />
       <ContentFiles Include="$(NuGetPackageRoot)\oxide.sqlite\**\lib\any\*.*; $(NuGetPackageRoot)\oxide.sqlite\**\lib\$(TargetFramework)\*.*" />
       <ContentFiles Include="$(ProjectDir)\Dependencies\Base\*.dll" />

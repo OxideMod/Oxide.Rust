@@ -1,0 +1,46 @@
+﻿# git-cliff configuration for OxideMod
+# Generates changelog in the format:
+# ## Changes
+# - Fix memory leak ([#123](url)) @username
+# - Direct commit ([a1b2c3d](url)) @username
+# **Full Changelog**: compare_url
+
+[changelog]
+header = ""
+body = """
+## Changes
+{% for commit in commits -%}
+{% if commit.remote.pr_number -%}
+- {{ commit.remote.pr_title | trim }} ([#{{ commit.remote.pr_number }}](https://github.com/{{ remote.github.owner }}/{{ remote.github.repo }}/pull/{{ commit.remote.pr_number }})) @{{ commit.remote.username }}
+{% else -%}
+- {{ commit.message | split(pat="\n") | first | trim }} ([{{ commit.id | truncate(length=7, end="") }}](https://github.com/{{ remote.github.owner }}/{{ remote.github.repo }}/commit/{{ commit.id }})){% if commit.remote.username %} @{{ commit.remote.username }}{% endif %}
+{% endif -%}
+{% endfor %}
+{% if previous.version %}
+**Full Changelog**: https://github.com/{{ remote.github.owner }}/{{ remote.github.repo }}/compare/{{ previous.version }}...{{ version }}
+{% endif %}
+"""
+footer = ""
+trim = true
+
+[git]
+# Include all commits (not just conventional)
+conventional_commits = false
+filter_unconventional = false
+split_commits = false
+
+# Skip merge commits to avoid duplicates
+commit_parsers = [
+    { message = "^Merge pull request", skip = true },
+    { message = "^Merge branch", skip = true },
+    { message = ".*", group = "Changes" },
+]
+
+# Link parser for issues/PRs mentioned in commit messages
+link_parsers = [
+    { pattern = "#(\\d+)", href = "https://github.com/{{ remote.github.owner }}/{{ remote.github.repo }}/issues/$1" },
+]
+
+# Tag settings - matches your version format (e.g., 2.0.1234)
+tag_pattern = "[0-9]+\\.[0-9]+\\.[0-9]+"
+sort_commits = "newest"

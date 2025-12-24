@@ -26,6 +26,22 @@ jobs:
     runs-on: ubuntu-22.04
     needs: build
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Generate Changelog
+        uses: orhun/git-cliff-action@v4
+        id: changelog
+        with:
+          config: .github/cliff.toml
+          args: --unreleased --tag ${{ needs.build.outputs.version }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPO: ${{ github.repository }}
+
       - name: Download Artifacts
         uses: actions/download-artifact@v4
         with:
@@ -39,10 +55,9 @@ jobs:
             artifacts/Oxide.*.zip
           tag_name: ${{ needs.build.outputs.version }}
           fail_on_unmatched_files: true
-          target_commitish: ${{ github. sha }}
+          target_commitish: ${{ github.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          body: |
-            See https://umod.org/games/rust for changes
+          body: ${{ steps.changelog.outputs.content }}
 
   update-docs:
     name: Update Documentation

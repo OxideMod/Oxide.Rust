@@ -118,11 +118,6 @@ namespace Oxide.Game.Rust
             Manager.RegisterLibrary("Server", new Libraries.Server());
             Manager.RegisterPluginLoader(new RustPluginLoader());
 
-            if (Environment.OSVersion.Platform == PlatformID.Unix)
-            {
-                Cleanup.Add("Facepunch.Steamworks.Win64.dll"); // TODO: Remove after a few updates
-            }
-
             WebClient.Headers["User-Agent"] = $"Oxide.Rust {Version}";
         }
 

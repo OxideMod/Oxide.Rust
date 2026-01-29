@@ -408,7 +408,7 @@ namespace Oxide.Game.Rust
                     return;
                 }
 
-                if (!permission.GroupHasPermission(name, perm))
+                if (!perm.EndsWith("*") && !permission.GroupHasPermission(name, perm))
                 {
                     // TODO: Check if group is inheriting permission, mention
                     player.Reply(string.Format(lang.GetMessage("GroupDoesNotHavePermission", this, player.Id), name, perm));
@@ -442,7 +442,7 @@ namespace Oxide.Game.Rust
                     permission.UpdateNickname(userId, name);
                 }
 
-                if (!permission.UserHasPermission(userId, perm))
+                if (!perm.EndsWith("*") && !permission.UserHasPermission(userId, perm))
                 {
                     // TODO: Check if user is inheriting permission, mention
                     player.Reply(string.Format(lang.GetMessage("PlayerDoesNotHavePermission", this, player.Id), name, perm));

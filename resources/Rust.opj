@@ -9011,6 +9011,303 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnEngingeReverse",
+            "HookName": "OnEngingeReverse",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SmallEngine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SV_ToggleReverse",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "QGZvAOY5cLpuPLA3/KvSATwCQF5JlGm7iBLL0B67eO8=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanRotateSail",
+            "HookName": "CanRotateSail",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Sail",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanRotate",
+              "ReturnType": "System.Booleeen",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "zBpSRyG42djsatT1Iwxb1/7aKdwuNyHA59/+WI9fVxo=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanRaiseSail",
+            "HookName": "CanRaiseSail",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Sail",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanBeRaised",
+              "ReturnType": "System.Booleeen",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "xwD1LNP47Kt+pQksxphg/j25cntrOBym0yMrzxYqyQs=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanLowerSail",
+            "HookName": "CanLowerSail",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Sail",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanBeLowered",
+              "ReturnType": "System.Booleeen",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "SO+jqx+chzsg4o/uRLHw9A7GtEUe/nsf61GWbDxNyAo=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 40,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1, l4, a0, l3, a2",
+            "HookTypeName": "Simple",
+            "Name": "OnBoatGroupSpawn",
+            "HookName": "OnBoatGroupSpawn",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BoatGroupSpawner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SpawnBoatGroup",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Collections.Generic.HashSet`1<RHIB>",
+                "BoatAI/AILoadMode",
+                "System.Boolean",
+                "ScientistBoatOilrigManager"
+              ]
+            },
+            "MSILHash": "g//WWZ4wY7EUgxKgltGgkYuaz8uaM1XdNDe1NmIAoYo=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,  l0",
+            "HookTypeName": "Simple",
+            "Name": "OnBallistaGunReload",
+            "HookName": "OnBallistaGunReload",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BallistaGun",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "SERVER_ReloadStart",
+              "ReturnType": "System.Booleen",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "Kq6+DFDeS3NXy8+L4UoRGifPLXyNJz9VztOJh+PePyk=",
+            "HookCategory": "Primitive"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "CanLightCannonFuse",
+            "HookName": "CanLightCannonFuse",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Cannon",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CanLightFuse",
+              "ReturnType": "System.Booleen",
+              "Parameters": []
+            },
+            "MSILHash": "G3SYT72A7lDJuI7ML+012gUeUCYq46ejcPf5FwtFgNg=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnEngineStart [SmallEngine]",
+            "HookName": "OnEngineStart",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SmallEngine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TurnOn",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "CTLapTt4yvOy6R8DStsAc4rXfwetHy+B5KwdXpyupVU=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnEngineStop [SmallEngine]",
+            "HookName": "OnEngineStop",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "SmallEngine",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TurnOff",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "asozovzIMkVWr65N2o7PhmRDVKPB8XdfSBsqhMTdJjA=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 28,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this,l0, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerBoatCollide",
+            "HookName": "OnPlayerBoatCollide",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerBoat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ProcessCollision",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "UnityEngine.Collision"
+              ]
+            },
+            "MSILHash": "VjAaPx3X19+F58KZu7BGU5zMmdB9UhV1a5kRz5wuFi4=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 145,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1",
+            "HookTypeName": "Simple",
+            "Name": "OnDeepSeaClosed",
+            "HookName": "OnDeepSeaClosed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DeepSeaManager/<CloseDeepSeaAsync>d__106",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MoveNext",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "rGTLM2vuOiMrxud/2qEB/Ov0WUva157iN3MrN9FjePU=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 93,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1",
+            "HookTypeName": "Simple",
+            "Name": "OnDeapSeaOpened",
+            "HookName": "OnDeapSeaOpened",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "DeepSeaManager/<OpenDeepSeaAsync>d__104",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "MoveNext",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "iTZfGQuJjp2xiGbgpXY8SGTzX+900ANx3hEgQo79LJc=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
             "ArgumentString": "this,a0",
             "HookTypeName": "Simple",
             "Name": "CanRagdollDismount",
@@ -22000,6 +22297,143 @@
             "MSILHash": "SIMcb05wIU8oWX9uzzpbME0PW9ArP4AGBapvnhvBpOk=",
             "BaseHookName": "OnSignalBroadcast",
             "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this.Portal",
+            "HookTypeName": "Simple",
+            "Name": "CanTeleportDeepSea",
+            "HookName": "CanTeleportDeepSea",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "TriggerDeepSeaPortal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CanEntityTeleport",
+              "ReturnType": "System.ValueTuple`2<System.Boolean,Translate/Phrase>",
+              "Parameters": [
+                "BaseEntity"
+              ]
+            },
+            "MSILHash": "jdIp06xlHUeLhwdGdHHOn4RknkyoDjzdYHw/CYgBgv8=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 95,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1, l4, a0, l3, a2",
+            "HookTypeName": "Simple",
+            "Name": "OnBoatGroupSpawned",
+            "HookName": "OnBoatGroupSpawned",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BoatGroupSpawner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SpawnBoatGroup",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Collections.Generic.HashSet`1<RHIB>",
+                "BoatAI/AILoadMode",
+                "System.Boolean",
+                "ScientistBoatOilrigManager"
+              ]
+            },
+            "MSILHash": "g//WWZ4wY7EUgxKgltGgkYuaz8uaM1XdNDe1NmIAoYo=",
+            "BaseHookName": "OnBoatGroupSpawn",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 15,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "brfalse",
+                "OpType": "Instruction",
+                "Operand": 108
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnBoatGroupSpawned [Patch]",
+            "HookName": "OnBoatGroupSpawned",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BoatGroupSpawner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "SpawnBoatGroup",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Collections.Generic.HashSet`1<RHIB>",
+                "BoatAI/AILoadMode",
+                "System.Boolean",
+                "ScientistBoatOilrigManager"
+              ]
+            },
+            "MSILHash": "g//WWZ4wY7EUgxKgltGgkYuaz8uaM1XdNDe1NmIAoYo=",
+            "BaseHookName": "OnBoatGroupSpawned",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 66,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, this",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerBoatEditStarted",
+            "HookName": "OnPlayerBoatEditStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BoatBuildingStation",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ConvertPlayerBoatToConstruction",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "uD7gJxx+kkD/dmECAEeLKvx3AZSgB7lgApmGCzPVPOE=",
+            "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "CanEditPlayerBoat",
+            "HookName": "CanEditPlayerBoat",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PlayerBoat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CanStartEditing",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer",
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "EJY0A5JGrPSDY0Uf1+povJVi32IA929ef/HsUfG8FRc=",
+            "HookCategory": "Naval"
           }
         }
       ],

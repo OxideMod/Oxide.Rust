@@ -867,10 +867,10 @@ namespace Oxide.Game.Rust.Cui
         public CuiScrollbar VerticalScrollbar { get; set; }
 
         [JsonProperty("horizontalNormalizedPosition")]
-        public float HorizontalNormalizedPosition { get; set; }
+        public float? HorizontalNormalizedPosition { get; set; }
 
         [JsonProperty("verticalNormalizedPosition")]
-        public float VerticalNormalizedPosition { get; set; }
+        public float? VerticalNormalizedPosition { get; set; }
 
         public bool? Enabled { get; set; }
     }

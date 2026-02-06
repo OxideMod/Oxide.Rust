@@ -4256,14 +4256,14 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "bVPNHbdQwKggBbHYly2+wiTo0y5G2cVek6utsn+zdQQ=",
+            "MSILHash": "IR4O2ElnN9o4TOVJHRbtYoxRsZzyItVk8a3sskfqIb8=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 264,
+            "InjectionIndex": 270,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -4282,7 +4282,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "bVPNHbdQwKggBbHYly2+wiTo0y5G2cVek6utsn+zdQQ=",
+            "MSILHash": "IR4O2ElnN9o4TOVJHRbtYoxRsZzyItVk8a3sskfqIb8=",
             "BaseHookName": "CanDismountEntity",
             "HookCategory": "Entity"
           }
@@ -4309,7 +4309,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "bVPNHbdQwKggBbHYly2+wiTo0y5G2cVek6utsn+zdQQ=",
+            "MSILHash": "IR4O2ElnN9o4TOVJHRbtYoxRsZzyItVk8a3sskfqIb8=",
             "BaseHookName": "OnEntityDismounted",
             "HookCategory": "Entity"
           }

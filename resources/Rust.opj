@@ -3787,9 +3787,9 @@
           "Type": "Simple",
           "Hook": {
             "InjectionIndex": 44,
-            "ReturnBehavior": 1,
+            "ReturnBehavior": 3,
             "ArgumentBehavior": 4,
-            "ArgumentString": "l7, this",
+            "ArgumentString": "l7, this => l2",
             "HookTypeName": "Simple",
             "Name": "CanBeTargeted [GunTrap]",
             "HookName": "CanBeTargeted",
@@ -4686,32 +4686,18 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 53,
+            "InjectionIndex": 56,
             "RemoveCount": 0,
             "Instructions": [
               {
-                "OpCode": "ldloc_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "brfalse_s",
+                "OpCode": "leave",
                 "OpType": "Instruction",
-                "Operand": 53
-              },
-              {
-                "OpCode": "ldloca_s",
-                "OpType": "Variable",
-                "Operand": 0
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Facepunch.System|Facepunch.Pool|FreeUnmanaged[UnityEngine.PhysicsModule|UnityEngine.RaycastHit]"
+                "Operand": 147
               }
             ],
             "HookTypeName": "Modify",
-            "Name": "CanBeTargeted [GunTrap] [cleanup]",
-            "HookName": "CanBeTargeted [patch]",
+            "Name": "CanBeTargeted [GunTrap] [patch]",
+            "HookName": "CanBeTargeted",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "GunTrap",
             "Flagged": false,
@@ -9307,7 +9293,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 93,
+            "InjectionIndex": 95,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l1",
@@ -9323,7 +9309,7 @@
               "ReturnType": "System.Boolean",
               "Parameters": []
             },
-            "MSILHash": "RLaCbQ1I7I9zqNpjoxcMk/L6PpGazvQnKvv9SPNaYEY=",
+            "MSILHash": "dFwni8Sm/Bq5YkuCoWam9FyIJ4kkWHQmQxBORVNUCz8=",
             "HookCategory": "Naval"
           }
         },
@@ -22480,7 +22466,7 @@
               "ReturnType": "System.Boolean",
               "Parameters": []
             },
-            "MSILHash": "RLaCbQ1I7I9zqNpjoxcMk/L6PpGazvQnKvv9SPNaYEY=",
+            "MSILHash": "dFwni8Sm/Bq5YkuCoWam9FyIJ4kkWHQmQxBORVNUCz8=",
             "BaseHookName": "OnDeepSeaOpened",
             "HookCategory": "Naval"
           }
@@ -22507,6 +22493,35 @@
             "MSILHash": "2zYgH/baiSC6DJRMXB99h4y4Ouk5Yn4eB5s2r7+S9Qs=",
             "BaseHookName": "OnDeepSeaClosed",
             "HookCategory": "Naval"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 52,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 57
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "CanBeTargeted [GunTrap] [patch2]",
+            "HookName": "CanBeTargeted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GunTrap",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "CheckTrigger",
+              "ReturnType": "System.Boolean",
+              "Parameters": []
+            },
+            "MSILHash": "bhhwxqNNj7+zIW9hCKm0oPn+1MCIj4mLKG8Lb6cBizo=",
+            "BaseHookName": "CanBeTargeted [GunTrap] [patch]",
+            "HookCategory": "Player"
           }
         }
       ],

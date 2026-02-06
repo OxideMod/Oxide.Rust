@@ -22523,6 +22523,58 @@
             "BaseHookName": "CanBeTargeted [GunTrap] [patch]",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 51,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this.Owner, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCorpsePopulate [Rust.Ai.Gen2.State_Dead]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.State_Dead",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "StartRagdoll",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "0DMd2CBY5HJKEMuuxTeguhqDr6mxoz2jwSeBk5v8SmU=",
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 57,
+            "RemoveCount": 2,
+            "Instructions": [
+              {
+                "OpCode": "bne_un_s",
+                "OpType": "Instruction",
+                "Operand": 121
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCorpsePopulate [Rust.Ai.Gen2.State_Dead] [Patch]",
+            "HookName": "OnCorpsePopulate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.State_Dead",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "StartRagdoll",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "0DMd2CBY5HJKEMuuxTeguhqDr6mxoz2jwSeBk5v8SmU=",
+            "BaseHookName": "OnCorpsePopulate [Rust.Ai.Gen2.State_Dead]",
+            "HookCategory": "NPC"
+          }
         }
       ],
       "Modifiers": [

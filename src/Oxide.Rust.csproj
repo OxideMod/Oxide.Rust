@@ -22,14 +22,17 @@
     <NoWarn>NU1701</NoWarn>
     <GitBranch></GitBranch>
     <ReferencesOverride>regex:Managed/(.*).dll</ReferencesOverride>
+    <LangVersion>Latest</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Oxide.References" Version="2.0.*" />
-    <PackageReference Include="Oxide.Core" Version="2.0.*" />
-    <PackageReference Include="Oxide.CSharp" Version="2.0.*" />
-    <PackageReference Include="Oxide.MySql" Version="2.0.*" />
-    <PackageReference Include="Oxide.SQLite" Version="2.0.*" />
-    <PackageReference Include="Oxide.Unity" Version="2.0.*" />
+    <PackageReference Include="Oxide.References" Version="2.0.3805-develop" />
+    <PackageReference Include="Oxide.Common" Version="2.0.47-develop" />
+    <PackageReference Include="Oxide.Core" Version="2.0.4151-develop" />
+    <PackageReference Include="Oxide.CSharp" Version="2.0.4160-develop" />
+    <PackageReference Include="Oxide.MySql" Version="2.0.3787-develop" />
+    <PackageReference Include="Oxide.SQLite" Version="2.0.3810-develop" />
+    <PackageReference Include="Oxide.Unity" Version="2.0.3781-develop" />
     <Reference Include="Assembly-CSharp" />
     <Reference Include="Assembly-CSharp-firstpass" />
     <Reference Include="BoomlagoonJSON" />

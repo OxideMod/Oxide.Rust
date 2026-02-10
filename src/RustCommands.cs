@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -304,7 +305,14 @@ namespace Oxide.Game.Rust
             {
                 foreach (string name in loader.ScanDirectory(Interface.Oxide.PluginDirectory).Except(loadedPluginNames))
                 {
-                    unloadedPluginErrors[name] = loader.PluginErrors.TryGetValue(name, out string msg) ? msg : "Unloaded"; // TODO: Localization
+                    if (loader.PluginErrors.TryGetValue(name, out HashSet<string> errors))
+                    {
+                        unloadedPluginErrors[name] = errors.JoinValues(Environment.NewLine); // TODO: Localization
+                    }
+                    else
+                    {
+                        unloadedPluginErrors[name] = "Unloaded"; // TODO: Localization
+                    }
                 }
             }
 

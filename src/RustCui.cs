@@ -15,21 +15,10 @@ using UnityEngine.UI;
 
 namespace Oxide.Game.Rust.Cui
 {
-    public sealed class JsonArrayPool<T> : IArrayPool<T>
+    internal sealed class JsonArrayPool<T> : References::Newtonsoft.Json.IArrayPool<T>
     {
         public static readonly JsonArrayPool<T> Shared = new JsonArrayPool<T>();
-        private static readonly IArrayPoolProvider<T> Provider = GetOrCreateProvider();
-
-        private static IArrayPoolProvider<T> GetOrCreateProvider()
-        {
-            if (Interface.Oxide.PoolFactory.IsHandledType<T[]>())
-            {
-                return Interface.Oxide.PoolFactory.GetArrayProvider<T>();
-            }
-
-            Interface.Oxide.PoolFactory.RegisterProvider<BaseArrayPoolProvider<T>>(out var provider, 1000, 16384);
-            return provider;
-        }
+        private static readonly Pooling.IArrayPool<T> Provider = ArrayPool<T>.Custom(arrayMaxLength: 16384, arrayMaxPerPool: 1000);
 
         public T[] Rent(int minimumLength) => Provider.Take(minimumLength);
         public void Return(T[] array) => Provider.Return(array);

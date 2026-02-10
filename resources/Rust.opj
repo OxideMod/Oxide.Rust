@@ -22576,6 +22576,29 @@
             "BaseHookName": "OnCorpsePopulate [Rust.Ai.Gen2.State_Dead]",
             "HookCategory": "NPC"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 6,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnLootSpawn [LootFill]",
+            "HookName": "OnLootSpawn",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "LootFill",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "DelayFill",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "GpHJEcTdgHjoM8oT3mbslg/b0PM4xFyOQwIR3cSB/yU=",
+            "HookCategory": "Resource"
+          }
         }
       ],
       "Modifiers": [

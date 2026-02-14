@@ -22,6 +22,8 @@
     <NoWarn>NU1701</NoWarn>
     <GitBranch></GitBranch>
     <ReferencesOverride>regex:Managed/(.*).dll</ReferencesOverride>
+    <LangVersion>Latest</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Oxide.References" Version="2.0.3801-develop" />

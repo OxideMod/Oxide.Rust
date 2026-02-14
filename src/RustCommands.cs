@@ -1,3 +1,4 @@
+using System;
 using Oxide.Core;
 using Oxide.Core.Libraries.Covalence;
 using Oxide.Core.Plugins;
@@ -304,7 +305,8 @@ namespace Oxide.Game.Rust
             {
                 foreach (string name in loader.ScanDirectory(Interface.Oxide.PluginDirectory).Except(loadedPluginNames))
                 {
-                    unloadedPluginErrors[name] = loader.PluginErrors.TryGetValue(name, out string msg) ? msg : "Unloaded"; // TODO: Localization
+                    HashSet<string>? errors = loader.PluginErrors.GetValueOrDefault(name);
+                    unloadedPluginErrors[name] = errors?.Count > 0 ? errors.JoinValues(Environment.NewLine) : "Unloaded"; // TODO: Localization
                 }
             }
 

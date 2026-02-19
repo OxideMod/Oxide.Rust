@@ -4,6 +4,8 @@ using Oxide.Core.Plugins;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Text;
+using ConVar;
 
 namespace Oxide.Game.Rust
 {
@@ -297,37 +299,49 @@ namespace Oxide.Game.Rust
         [HookMethod("PluginsCommand")]
         private void PluginsCommand(IPlayer player)
         {
-            Plugin[] loadedPlugins = pluginManager.GetPlugins().Where(pl => !pl.IsCorePlugin).ToArray();
-            HashSet<string> loadedPluginNames = new HashSet<string>(loadedPlugins.Select(pl => pl.Name));
-            Dictionary<string, string> unloadedPluginErrors = new Dictionary<string, string>();
-            foreach (PluginLoader loader in Interface.Oxide.GetPluginLoaders())
+            var plugins = pluginManager.GetPlugins();
+
+            var output = Facepunch.Pool.Get<StringBuilder>();
+
+            output.Append("Listing ") // Plugin count appended later on
+                .Append(" plugins:"); // TODO: Localization
+
+            int pluginCount = 0;
+
+            foreach (var plugin in plugins)
             {
-                foreach (string name in loader.ScanDirectory(Interface.Oxide.PluginDirectory).Except(loadedPluginNames))
-                {
-                    unloadedPluginErrors[name] = loader.PluginErrors.TryGetValue(name, out string msg) ? msg : "Unloaded"; // TODO: Localization
-                }
+                if (plugin.Filename == null || plugin.IsCorePlugin) continue;
+
+                output.AppendLine().Append("  ").Append(pluginCount++.ToString("00")).Append(" \"").Append(plugin.Title)
+                    .Append("\"").Append(" (").Append(plugin.Version).Append(") by ").Append(plugin.Author).Append(" (")
+                    .Append(plugin.TotalHookTime.ToString("0.00")).Append("s) - ").Append("(")
+                    .Append(FormatBytes(plugin.TotalHookMemory)).Append(" - ").Append(plugin.Filename.Basename());
             }
 
-            int totalPluginCount = loadedPlugins.Length + unloadedPluginErrors.Count;
-            if (totalPluginCount < 1)
+            if (pluginCount == 0)
             {
                 player.Reply(lang.GetMessage("NoPluginsFound", this, player.Id));
+                Facepunch.Pool.FreeUnmanaged(ref output);
                 return;
             }
 
-            string output = $"Listing {loadedPlugins.Length + unloadedPluginErrors.Count} plugins:"; // TODO: Localization
-            int number = 1;
-            foreach (Plugin plugin in loadedPlugins.Where(p => p.Filename != null))
+            foreach (var loader in Interface.Oxide.GetPluginLoaders())
             {
-                output += $"\n  {number++:00} \"{plugin.Title}\" ({plugin.Version}) by {plugin.Author} ({plugin.TotalHookTime:0.00}s / {FormatBytes(plugin.TotalHookMemory)}) - {plugin.Filename.Basename()}";
+                var unloadedNames = loader.ScanDirectory(Interface.Oxide.PluginDirectory)
+                    .Except(plugins.Select(pl => pl.Name));
+
+                foreach (var name in unloadedNames)
+                {
+                    output.AppendLine().Append("  ").Append(pluginCount++.ToString("00")).Append(" ").Append(name)
+                        .Append(" - ").Append(loader.PluginErrors.TryGetValue(name, out var msg) ? msg : "Unloaded");
+                }
             }
 
-            foreach (string pluginName in unloadedPluginErrors.Keys)
-            {
-                output += $"\n  {number++:00} {pluginName} - {unloadedPluginErrors[pluginName]}";
-            }
+            output.Insert(8, pluginCount - 1);
 
-            player.Reply(output);
+            player.Reply(output.ToString());
+
+            Facepunch.Pool.FreeUnmanaged(ref output);
         }
 
         private static string FormatBytes(long bytes)

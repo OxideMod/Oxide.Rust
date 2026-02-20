@@ -1,4 +1,4 @@
-﻿using Oxide.Core.Libraries.Covalence;
+using Oxide.Core.Libraries.Covalence;
 
 namespace Oxide.Game.Rust.Libraries.Covalence
 {

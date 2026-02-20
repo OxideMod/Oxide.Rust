@@ -1,16 +1,15 @@
 extern alias References;
-
-using Oxide.Core;
-using References::Newtonsoft.Json;
-using References::Newtonsoft.Json.Converters;
-using References::Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
 using System.Threading;
+using Oxide.Core;
 using Oxide.Pooling;
+using References::Newtonsoft.Json;
+using References::Newtonsoft.Json.Converters;
+using References::Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -104,7 +103,7 @@ namespace Oxide.Game.Rust.Cui
         {
             if (player?.net != null && Interface.CallHook("CanUseUI", player, json) == null)
             {
-                CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Player("AddUI", player.net.connection ), json);
+                CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Player("AddUI", player.net.connection), json);
                 return true;
             }
 
@@ -116,7 +115,7 @@ namespace Oxide.Game.Rust.Cui
             if (player?.net != null)
             {
                 Interface.CallHook("OnDestroyUI", player, elem);
-                CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Player("DestroyUI", player.net.connection ), elem);
+                CommunityEntity.ServerInstance.ClientRPC(RpcTarget.Player("DestroyUI", player.net.connection), elem);
                 return true;
             }
 
@@ -279,7 +278,7 @@ namespace Oxide.Game.Rust.Cui
         public float FadeOut { get; set; }
 
         [JsonProperty("update")]
-		public bool Update { get; set; }
+        public bool Update { get; set; }
 
         [JsonProperty("activeSelf")]
         public bool? ActiveSelf { get; set; }

@@ -1,5 +1,5 @@
-﻿using Oxide.Core.Plugins;
 using System;
+using Oxide.Core.Plugins;
 
 namespace Oxide.Game.Rust
 {

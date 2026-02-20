@@ -1,3 +1,11 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Net;
+using System.Reflection;
+using System.Text;
+using System.Text.RegularExpressions;
 using ConVar;
 using Network;
 using Oxide.Core;
@@ -8,14 +16,6 @@ using Oxide.Core.RemoteConsole;
 using Oxide.Game.Rust.Libraries.Covalence;
 using Rust.Ai.Gen2;
 using Steamworks;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Net;
-using System.Reflection;
-using System.Text;
-using System.Text.RegularExpressions;
 using UnityEngine;
 
 namespace Oxide.Game.Rust
@@ -319,9 +319,9 @@ namespace Oxide.Game.Rust
 
             // Check if chat command
             string chatCommandPrefix = CommandHandler.GetChatCommandPrefix(message);
-            if ( chatCommandPrefix != null )
+            if (chatCommandPrefix != null)
             {
-                TryRunPlayerCommand( basePlayer, message, chatCommandPrefix );
+                TryRunPlayerCommand(basePlayer, message, chatCommandPrefix);
                 return false;
             }
 
@@ -419,7 +419,11 @@ namespace Oxide.Game.Rust
                 {
                     StackFrame frame = stackTrace.GetFrame(i);
                     MethodBase method = frame.GetMethod();
-                    if (method is null || method.DeclaringType is null) continue;
+                    if (method is null || method.DeclaringType is null)
+                    {
+                        continue;
+                    }
+
                     if (method.DeclaringType.Namespace == "Oxide.Plugins")
                     {
                         pluginName = method.DeclaringType.Name;

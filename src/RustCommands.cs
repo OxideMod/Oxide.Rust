@@ -1,9 +1,9 @@
-using Oxide.Core;
-using Oxide.Core.Libraries.Covalence;
-using Oxide.Core.Plugins;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using Oxide.Core;
+using Oxide.Core.Libraries.Covalence;
+using Oxide.Core.Plugins;
 
 namespace Oxide.Game.Rust
 {
@@ -332,9 +332,21 @@ namespace Oxide.Game.Rust
 
         private static string FormatBytes(long bytes)
         {
-            if (bytes < 1024) return $"{bytes:0} B";
-            if (bytes < 1048576) return $"{bytes / 1024:0} KB";
-            if (bytes < 1073741824) return $"{bytes / 1048576:0} MB";
+            if (bytes < 1024)
+            {
+                return $"{bytes:0} B";
+            }
+
+            if (bytes < 1048576)
+            {
+                return $"{bytes / 1024:0} KB";
+            }
+
+            if (bytes < 1073741824)
+            {
+                return $"{bytes / 1048576:0} MB";
+            }
+
             return $"{bytes / 1073741824:0} GB";
         }
 

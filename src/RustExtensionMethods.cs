@@ -1,4 +1,4 @@
-﻿namespace Oxide.Plugins
+namespace Oxide.Plugins
 {
     public static class RustExtensionMethods
     {

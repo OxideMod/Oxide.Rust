@@ -1,10 +1,10 @@
-using Oxide.Core;
-using Oxide.Core.Extensions;
-using Oxide.Plugins;
 using System;
 using System.Net;
 using System.Reflection;
 using System.Threading.Tasks;
+using Oxide.Core;
+using Oxide.Core.Extensions;
+using Oxide.Plugins;
 
 namespace Oxide.Game.Rust
 {
@@ -158,7 +158,8 @@ namespace Oxide.Game.Rust
             else
             {
                 GetLatestExtensionVersion().ContinueWith(
-                    task => {
+                    task =>
+                    {
                         if (task.Exception == null)
                         {
                             LatestExtVersion = task.Result;

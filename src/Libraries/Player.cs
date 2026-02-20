@@ -1,14 +1,14 @@
-using Oxide.Core;
-using Oxide.Core.Libraries;
-using Oxide.Core.Libraries.Covalence;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Text.RegularExpressions;
-using UnityEngine;
-using Network;
 using System.Linq;
+using System.Text.RegularExpressions;
 using Facepunch;
+using Network;
+using Oxide.Core;
+using Oxide.Core.Libraries;
+using Oxide.Core.Libraries.Covalence;
+using UnityEngine;
 
 namespace Oxide.Game.Rust.Libraries
 {
@@ -423,9 +423,9 @@ namespace Oxide.Game.Rust.Libraries
             message = args.Length > 0 ? string.Format(Formatter.ToUnity(message), args) : Formatter.ToUnity(message);
             string formatted = prefix != null ? $"{prefix} {message}" : message;
             if (Interface.CallHook("OnMessagePlayer", formatted, player, userId) != null)
-			{
-				return;
-			}
+            {
+                return;
+            }
             player.SendConsoleCommand("chat.add", 2, userId, formatted);
         }
 

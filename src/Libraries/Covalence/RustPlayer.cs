@@ -1,8 +1,8 @@
-﻿using Oxide.Core;
-using Oxide.Core.Libraries;
-using Oxide.Core.Libraries.Covalence;
 using System;
 using System.Globalization;
+using Oxide.Core;
+using Oxide.Core.Libraries;
+using Oxide.Core.Libraries.Covalence;
 using UnityEngine;
 
 namespace Oxide.Game.Rust.Libraries.Covalence

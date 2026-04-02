@@ -12613,9 +12613,9 @@
             "InjectionIndex": 179,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l18, l0",
+            "ArgumentString": "this, l18.itemDef, l0",
             "HookTypeName": "Simple",
-            "Name": "OnTechTreeNodeUnlocked",
+            "Name": "OnTechTreeNodeUnlocked [Group]",
             "HookName": "OnTechTreeNodeUnlocked",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Workbench",
@@ -22673,6 +22673,32 @@
             },
             "MSILHash": "8N0xXOnPsSHIh3RGrtjvLgfrBSVoO90EW4yZq4XUiAA=",
             "HookCategory": "Electronic"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 238,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l20, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnTechTreeNodeUnlocked [Non Group]",
+            "HookName": "OnTechTreeNodeUnlocked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Workbench",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RPC_TechTreeUnlock",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "owIxdY2beeuDz0VMB3bve18ZRJkdwNBhandlunzCWeg=",
+            "BaseHookName": "OnTechTreeNodeUnlocked [Group]",
+            "HookCategory": "TechTree"
           }
         }
       ],

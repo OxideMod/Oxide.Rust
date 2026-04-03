@@ -12471,58 +12471,6 @@
           }
         },
         {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, a1, this",
-            "HookTypeName": "Simple",
-            "Name": "CanUnlockTechTreeNode",
-            "HookName": "CanUnlockTechTreeNode",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "TechTreeData",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "PlayerCanUnlock",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "BasePlayer",
-                "TechTreeData/NodeInstance"
-              ]
-            },
-            "MSILHash": "WPJhUG1jOsBvp7evcScEK9ISfJPudHZ7e3PsrjzhWIM=",
-            "HookCategory": "TechTree"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "a0, a1, this",
-            "HookTypeName": "Simple",
-            "Name": "CanUnlockTechTreeNodePath",
-            "HookName": "CanUnlockTechTreeNodePath",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "TechTreeData",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "PlayerHasPathForUnlock",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "BasePlayer",
-                "TechTreeData/NodeInstance"
-              ]
-            },
-            "MSILHash": "HSv8gCPuE5vz7UGz+M0mOtg+w/aHizacM5rzOahKBn8=",
-            "HookCategory": "TechTree"
-          }
-        },
-        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 0,

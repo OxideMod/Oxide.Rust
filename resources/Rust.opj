@@ -12533,10 +12533,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 109,
+            "InjectionIndex": 43,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l13, l0",
+            "ArgumentString": "this, l4, l0",
             "HookTypeName": "Simple",
             "Name": "OnTechTreeNodeUnlock",
             "HookName": "OnTechTreeNodeUnlock",
@@ -12558,10 +12558,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 179,
+            "InjectionIndex": 218,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l18.itemDef, l0",
+            "ArgumentString": "this, l4, l0, l6",
             "HookTypeName": "Simple",
             "Name": "OnTechTreeNodeUnlocked [Group]",
             "HookName": "OnTechTreeNodeUnlocked",

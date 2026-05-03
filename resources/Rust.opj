@@ -5633,31 +5633,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 63,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "l0, l3",
-            "HookTypeName": "Simple",
-            "Name": "IOnTeamInvite",
-            "HookName": "IOnTeamInvite",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "RelationshipManager",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "sendinvite",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "ConsoleSystem/Arg"
-              ]
-            },
-            "MSILHash": "3dnmet2HBP7mbmrOVIIg9FP6+SpuiycBGdkT/r1l3x4=",
-            "HookCategory": "Team"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 27,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -21768,7 +21743,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 70,
+            "InjectionIndex": 63,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -21820,7 +21795,7 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 70
+                "Operand": 63
               },
               {
                 "OpCode": "ret",
@@ -21842,7 +21817,6 @@
               ]
             },
             "MSILHash": "3dnmet2HBP7mbmrOVIIg9FP6+SpuiycBGdkT/r1l3x4=",
-            "BaseHookName": "IOnTeamInvite",
             "HookCategory": "Team"
           }
         },

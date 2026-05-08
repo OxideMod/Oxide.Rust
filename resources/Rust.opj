@@ -598,7 +598,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "xx0AzBvgZJo30cNVrHpKSvWkATPHcDEBcWwHHbjJkQA=",
+            "MSILHash": "zOqXQQF2JGNZPCZw9uwYFcXrT4fqau/JRJYGY8WXcs4=",
             "HookCategory": "Player"
           }
         },
@@ -2274,7 +2274,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "+orA2q5H0IIzossvoS5Y1swe0+9EexuzlrLY8pfHGKo=",
+            "MSILHash": "DzSAABchmD+btbi3licyIhA+so9nDWq5kTN/GLnkvKo=",
             "HookCategory": "Player"
           }
         },
@@ -6057,7 +6057,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "u8EFtHT2IEmI5QJeFEJyDg31zZu++qrPYHIu7H09XoU=",
+            "MSILHash": "sL6NJ8FM+VrP4lMin1npgeyU/yO1nX2xwZBVrhpsP8A=",
             "HookCategory": "Player"
           }
         },
@@ -13788,7 +13788,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "jqJOypMRmGfB6CHgO5Rzavuyqe0sccSz9ibAWXfFHMA=",
+            "MSILHash": "gIMmUyLJunGMTlSbRGb6XNFELBeG66dT1vafQtIOEHg=",
             "HookCategory": "Player"
           }
         },
@@ -16440,7 +16440,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "pWYrQuo9E1AFo4a7vt55+nHN0A6HpbTe796zs1X1vTM=",
+            "MSILHash": "nlutfOL4/jp+b/8mKCpxAW5MEfmeXAOjjwrHt+hxxZs=",
             "HookCategory": "Server"
           }
         },
@@ -21612,7 +21612,7 @@
             "Name": "OnFeedbackReported",
             "HookName": "OnFeedbackReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnFeedbackReport>d__707",
+            "TypeName": "BasePlayer/<OnFeedbackReport>d__708",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21620,7 +21620,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "GZsXawxHCHKlw19L8Sy91qLlIq9ngfEevNgFArj5+d4=",
+            "MSILHash": "bgZewUbV8Df+cecEx7xPilPM1ip0Sybv44loQWK4khc=",
             "HookCategory": "Player"
           }
         },
@@ -21634,7 +21634,7 @@
             "Name": "OnFeedbackReported [patch]",
             "HookName": "OnFeedbackReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnFeedbackReport>d__707",
+            "TypeName": "BasePlayer/<OnFeedbackReport>d__708",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21642,7 +21642,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "GZsXawxHCHKlw19L8Sy91qLlIq9ngfEevNgFArj5+d4=",
+            "MSILHash": "bgZewUbV8Df+cecEx7xPilPM1ip0Sybv44loQWK4khc=",
             "BaseHookName": "OnFeedbackReported",
             "HookCategory": "_Patches"
           }
@@ -21658,7 +21658,7 @@
             "Name": "OnPlayerReported",
             "HookName": "OnPlayerReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnPlayerReported>d__706",
+            "TypeName": "BasePlayer/<OnPlayerReported>d__707",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21666,7 +21666,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "SOyoHosq2BtDRH9MLsIGwhZ/+xnpzBdtp8g1P48+fyY=",
+            "MSILHash": "GzRXNM7f1pcst7JPTlhwGJArzsWlsb7mRXk0Qg2hmtI=",
             "HookCategory": "Player"
           }
         },
@@ -22529,7 +22529,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 55,
+            "InjectionIndex": 59,
             "ReturnBehavior": 4,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, l1, l2, l3, l5",
@@ -22548,7 +22548,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "3smV/je1F9BlX/4LWbF477+80t0nZh5np/ATL8x8ouc=",
+            "MSILHash": "DCPbIPXrutNjgxZQ+0lC+uK0GrlL8KneHUgYyPM9eWk=",
             "HookCategory": "Player"
           }
         },

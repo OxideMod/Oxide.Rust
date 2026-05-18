@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-Release\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -8,7 +8,7 @@
         {
           "Type": "InitOxide",
           "Hook": {
-            "InjectionIndex": 83,
+            "InjectionIndex": 81,
             "HookTypeName": "Initialize Oxide",
             "Name": "InitOxide",
             "HookName": "InitOxide",
@@ -21,7 +21,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "iffwmTcA534JRcSqKAlS+TMVebvNmbI8tMpz5nUzdDo=",
+            "MSILHash": "wrfEkEe3H5m3UN2JMwZ9YFsbHsfyggYX6c0Nx9Qf594=",
             "HookCategory": "Server"
           }
         },

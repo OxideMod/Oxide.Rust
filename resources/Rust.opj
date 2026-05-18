@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-Staging\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -8,7 +8,7 @@
         {
           "Type": "InitOxide",
           "Hook": {
-            "InjectionIndex": 79,
+            "InjectionIndex": 82,
             "HookTypeName": "Initialize Oxide",
             "Name": "InitOxide",
             "HookName": "InitOxide",
@@ -21,7 +21,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "56vzzanQ3qZKdYj3x/3fwByzgWJNXAtneMgodp0KusU=",
+            "MSILHash": "avowtbmd5xYL/t5F7vKAcV0xyU5p5EeviVrxh94LJOs=",
             "HookCategory": "Server"
           }
         },
@@ -268,7 +268,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 80,
+            "InjectionIndex": 83,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, a1, a5",
@@ -289,10 +289,11 @@
                 "System.Int32",
                 "System.Int32",
                 "Item",
-                "System.Boolean"
+                "System.Boolean",
+                "System.Int32"
               ]
             },
-            "MSILHash": "lZe/h7OTeA8TM3K+jURAv1JfmgTcJbhuIK6eHKyQIm8=",
+            "MSILHash": "rUfq8TEKbo75ZN9WahM3j8m7mlJAQLNVKuoZJq+rr2I=",
             "HookCategory": "Item"
           }
         },
@@ -424,7 +425,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 204,
+            "InjectionIndex": 207,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1, l4",
@@ -444,14 +445,14 @@
                 "NetworkableId"
               ]
             },
-            "MSILHash": "pQNnzXXdn9T55gvsVMcW/Eb+udg5XIaIIonyZLnfhYQ=",
+            "MSILHash": "oAEyNtHMx708p3dMcUfgaO8ob+h5ySakuGbDJSdYd0k=",
             "HookCategory": "Item"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 224,
+            "InjectionIndex": 229,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -469,14 +470,14 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "DQhV18Jq+YC1jcOlX9tGYXAC3uFrV2j6UqDhI6rfxQc=",
+            "MSILHash": "m5ajE1718+FgQ6gPw63emuHPQVpi9dU2b+uE5K/3Fqk=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 119,
+            "InjectionIndex": 122,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0, l7",
@@ -498,7 +499,7 @@
                 "AttackEntity"
               ]
             },
-            "MSILHash": "cQaZ2qyGEY+Tdthx0DRIpVNZOs+TuUIr8fV+ByUOHvM=",
+            "MSILHash": "jiPA6m6faTUJK8WuPtpfLVk251EvGXd5eZaQe1V9sdQ=",
             "HookCategory": "Resource"
           }
         },
@@ -548,7 +549,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "omuWTkUmb3CEWHOyev2Lcx3PcO4IR/0/0cqDzzQmfmQ=",
+            "MSILHash": "UYRhz0S7FLHAT18S+HFJSTr3ivw5eIh3dRTQJn/k3aA=",
             "HookCategory": "Player"
           }
         },
@@ -573,7 +574,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "d/7ZlpTmzahnU0LbndgYqkIMteXZ/GPj41Ig6zGTD2o=",
+            "MSILHash": "KZR8hztQwkvZ03OGZxGBOEqPhuCBvujAwfXgjdNqhaU=",
             "HookCategory": "Player"
           }
         },
@@ -598,7 +599,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "YiBG5UfV1rs/gLCtt6oo8xuYCQaWfFOLO5/WCryINEQ=",
+            "MSILHash": "Z6xzhB6HHjfxQgdSBUwUwdfCcJY5Aq78GQn5vvgAGBA=",
             "HookCategory": "Player"
           }
         },
@@ -752,7 +753,7 @@
                 "ItemModBurnable"
               ]
             },
-            "MSILHash": "Sbb0d35L30Pwy6CoB86+etnNZz3Ecn5t1TB66sbxZDg=",
+            "MSILHash": "3v4XFz18whuZ4uNbVi0dCV79yUueiEfMkuhCqSvLGRI=",
             "HookCategory": "Fuel"
           }
         },
@@ -777,14 +778,14 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "asjyNRrhunrHn8WntHFMD4g2dUBie4GL/yfgPhUgDhc=",
+            "MSILHash": "5+k908eRXH/F8wdFqWdjM2u0KBRWInSa8CYNPtartLk=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 26,
+            "InjectionIndex": 25,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -802,14 +803,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "GlPPSHBX452XhvXV/fsNFzObDWXk5T8dOCeeZFXrCkA=",
+            "MSILHash": "z/JeWezPkHH+T2VPKQ81mP3IaGSvFC41BN6DcewGH3I=",
             "HookCategory": "Structure"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 120,
+            "InjectionIndex": 138,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player, l0",
@@ -827,7 +828,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "LC8QIKP51g80ZbU4Aq19qFOf+VqliMQ1X6W36CmeacA=",
+            "MSILHash": "9+xnIYkHeEMkGeo0j+ScWP7MQ+aJgWUOZhDdYs2hofM=",
             "HookCategory": "Structure"
           }
         },
@@ -873,7 +874,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "AaMXGfgrpLWu+Gm2vFGfT9MkVqDeb9BuSy5gtVKqnbo=",
+            "MSILHash": "VD3OXiR5cGILs42Vm77I5/EdTO86IZHqzeAzybaQt1s=",
             "HookCategory": "Player"
           }
         },
@@ -903,7 +904,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 167,
+            "InjectionIndex": 165,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -921,14 +922,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "CDF+D98jcyFLMr+2mwk4F584Nhz4BlJ1oSsdhS8eTmk=",
+            "MSILHash": "5SUW0MDL8+JcAfcjRUaP1/yG2JHK/u2nCsyDoV7pb3k=",
             "HookCategory": "Structure"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 93,
+            "InjectionIndex": 92,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -946,7 +947,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "cPfi0DgnaWmY/JITvYus7S7pDshtSD/sD/N458ltwDo=",
+            "MSILHash": "5NJ7XLHPcNaQrrAUGPqEVyKg3LTSlzl5uQ+OdIhTEDU=",
             "HookCategory": "Structure"
           }
         },
@@ -996,7 +997,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "lWK3R1CIVYMiFX28eaHhDL4Dzbz5rwUgwFXq+FfrWvk=",
+            "MSILHash": "cp/fn0WtNkhro8qCdwkt5KZgnkg2FevWMOhYiBol3jI=",
             "HookCategory": "Player"
           }
         },
@@ -1020,7 +1021,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "MGGMCrwGbPR5FeCZNPu/GNfF1A65Fgj0jgnJvW+Q4co=",
+            "MSILHash": "HTx/pC5uAFLxGAqPuFK000025CQgljeLTgTrRPHNOFI=",
             "HookCategory": "Player"
           }
         },
@@ -1052,7 +1053,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 261,
+            "InjectionIndex": 263,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, l1",
@@ -1070,14 +1071,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "7+xTtwcl7bN/dA4u7YiX4hKz+P+Fo1U5pZPPm1MpzZg=",
+            "MSILHash": "aHIFYK105NRgu1zhkHOsWNtkXyGe6MI9Rs2a8mHTMH0=",
             "HookCategory": "Weapon"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 212,
+            "InjectionIndex": 215,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, l1,this",
@@ -1095,7 +1096,7 @@
                 "ItemCraftTask"
               ]
             },
-            "MSILHash": "UyVdhwT3+AcVu4ZKMc9+tK90nP7iFWPcZq9GW1GLNvs=",
+            "MSILHash": "F8iiojf/pudxyE4YLOO20fWRW2/jxOpLOf1gXaZhol8=",
             "HookCategory": "Item"
           }
         },
@@ -1145,7 +1146,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "GHFEECIHOdajgWRlgUn5lZu9xh1mkY6zrbHAeD1bVvU=",
+            "MSILHash": "OrxrfOn5SHPnJp2hw0pyvx3lqdjahQyuwQ1ooRigSIw=",
             "HookCategory": "Player"
           }
         },
@@ -1170,7 +1171,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "GHFEECIHOdajgWRlgUn5lZu9xh1mkY6zrbHAeD1bVvU=",
+            "MSILHash": "OrxrfOn5SHPnJp2hw0pyvx3lqdjahQyuwQ1ooRigSIw=",
             "BaseHookName": "CanResearchItem",
             "HookCategory": "Item"
           }
@@ -1194,7 +1195,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "gIYCtfPtmhSoIx1rJzItspJISncHEdM7zgzm1NRMDpw=",
+            "MSILHash": "q3VzpBecpC6bk46uOqJygWdcWpJhsrZdC+YkUAiq0xQ=",
             "HookCategory": "Item"
           }
         },
@@ -1349,10 +1350,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 116,
+            "InjectionIndex": 118,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, r116",
+            "ArgumentString": "this, r118",
             "HookTypeName": "Simple",
             "Name": "OnSurveyGather",
             "HookName": "OnSurveyGather",
@@ -1365,7 +1366,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "CGcRR5/b8wCslkEidSKbvHUT9ZRIQc3wpkvv6xQu/z0=",
+            "MSILHash": "vw3MVT6RpmhMOmDkIehosUOhamVKS1SdslNJu1CvmRI=",
             "HookCategory": "Resource"
           }
         },
@@ -1492,7 +1493,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "50dahfxELzNmh4cQb3TJr/spsrK4HL5bkjyGYosCVvc=",
+            "MSILHash": "fsrfvy5JvdYW1fT4UUW6d5wn5zMN50CA+paF/BOFN8Q=",
             "HookCategory": "Traps"
           }
         },
@@ -1598,7 +1599,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 29,
+            "InjectionIndex": 31,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, l0, a2",
@@ -1618,7 +1619,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "rdsOwZ34vkkcR1Zy27pt2yqsd45f8giEqKYbaeFiWog=",
+            "MSILHash": "iuU0jeJaLhXriQy54D9vzMmE0grYffi5AXPRdkrpgXQ=",
             "HookCategory": "Item"
           }
         },
@@ -1691,7 +1692,7 @@
                 "BaseCombatEntity"
               ]
             },
-            "MSILHash": "87SKNodybZIOX+5x7zR5F8KuWbzDTINl9ss2VKImrgc=",
+            "MSILHash": "Z/y0WUCPQmtbAVML/UoxKVZ/UKV5ffPgecLYkMIEMcE=",
             "HookCategory": "Turret"
           }
         },
@@ -1772,7 +1773,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 284,
+            "InjectionIndex": 288,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1, l3",
@@ -1790,7 +1791,7 @@
                 "ProtoBuf.CreateBuilding"
               ]
             },
-            "MSILHash": "Vy2gH6WxbHd7GHjmMlpG4bsFCtlLvAnExSClLKu42jk=",
+            "MSILHash": "l7jDHWwzMEM4Vjd9fqGJGyEr/9VIl8qgqSWylLNVCrc=",
             "HookCategory": "Structure"
           }
         },
@@ -1912,7 +1913,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "oMZxtpYaNXnNvafHOqG0FVLJDazQPG67Yhuu/jPCz5E=",
+            "MSILHash": "5bd/vGtFVNSZgfxuc2AkuCg1PWFXmC5pROPdCOS2c9k=",
             "HookCategory": "Item"
           }
         },
@@ -1962,7 +1963,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "cjbdbozhml6IyxvQh+LcBfsigUlr8d8hT18TboWHmGI=",
+            "MSILHash": "npPl9/zW2RnOM4c2/Is0/VeKJlsZ980+c9zu6JTeX3s=",
             "HookCategory": "Player"
           }
         },
@@ -1987,7 +1988,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "zFUzhb16/jKJ5mdchUmrBB9VWZ7c4HXJ44m0KsXYWrI=",
+            "MSILHash": "o9rMFCIMd0T/SzMjkVLBbHXkcmWXcFBMMzVCxME3L6A=",
             "HookCategory": "Player"
           }
         },
@@ -2041,7 +2042,7 @@
                 "Item"
               ]
             },
-            "MSILHash": "BjpFqXT5IfbFgDD/u9BncVawd+iM7+gKgHIIdEjK8cw=",
+            "MSILHash": "K5UCzhM+HEPqnOYIk88Y6GrAVf4eqyU9AQMr89PjIU8=",
             "HookCategory": "Weapon"
           }
         },
@@ -2122,7 +2123,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 206,
+            "InjectionIndex": 202,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -2141,7 +2142,7 @@
                 "BaseEntity"
               ]
             },
-            "MSILHash": "7SwDjtCz2Clb/8AveVMKjYzCSvXuZqw65LsDcuEXXis=",
+            "MSILHash": "FuI0azjFKYeY0a1ntteE9uJcsZNecb9By0l33DFrA4g=",
             "HookCategory": "Player"
           }
         },
@@ -2299,7 +2300,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "oyI6+gCuMUvECXTIKKTfNOQA2OWek/DCXrsCo444OeA=",
+            "MSILHash": "+bttPtGYxNdrK+PvloplLad3XC5IjjS3VnqnvX4MIy8=",
             "HookCategory": "Player"
           }
         },
@@ -2325,7 +2326,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "UUL6rvKdxG6hpJ5vsHYp6+7Vj+49VD9THzkO9BPhuQs=",
+            "MSILHash": "baae1veXyec96zBEVhZu6Nf9vpAdrhvoZEgOhPRJ+oc=",
             "HookCategory": "Server"
           }
         },
@@ -2373,7 +2374,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "UUL6rvKdxG6hpJ5vsHYp6+7Vj+49VD9THzkO9BPhuQs=",
+            "MSILHash": "baae1veXyec96zBEVhZu6Nf9vpAdrhvoZEgOhPRJ+oc=",
             "BaseHookName": "OnNewSave",
             "HookCategory": "Server"
           }
@@ -2468,7 +2469,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "9DhsDIZ/bNgB27RrEtpwC0BEbuIeipjk0AxT74nWaXU=",
+            "MSILHash": "HVQOIZNEKZfvdk1o74I1wEy7NpCIWC2R7UoPN4iY1dU=",
             "HookCategory": "Turret"
           }
         },
@@ -2490,7 +2491,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "vaLplhl9/ugpA5OsNTTunGVDWSezyjissJt6QI3jrTg=",
+            "MSILHash": "wBw7YxHZogiUX8ATYUvt5CFf8JSuxv27fjb8tuq9gZ8=",
             "HookCategory": "Turret"
           }
         },
@@ -2515,7 +2516,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "KJajBTnNUmbRnc6Vw7yoNA29nwdCmP0ZedKy4kvZFjI=",
+            "MSILHash": "IkQOlFxHvIlcWbct1AZi9aQS1jLysrjLVPLVi4DRIvU=",
             "HookCategory": "Turret"
           }
         },
@@ -2537,7 +2538,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "SmR4cHKepgRjr7HCYO4F7o/dU7uR1WWAf0hbixwrrWs=",
+            "MSILHash": "6GBfkfD+lc3Ih48NQp836ghuLYBrMg8suZ9fifeFG7Y=",
             "HookCategory": "Player"
           }
         },
@@ -2587,7 +2588,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "SMmtGHnBL3iYQ5xpKIIakwlBpA4bAiPP81a8LAFqK00=",
+            "MSILHash": "k9VNCtzDfaKfXdALDSBaVuZ2/1QsrhOje2YcS6fP9D0=",
             "HookCategory": "Entity"
           }
         },
@@ -2828,7 +2829,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "DHDkwhRbSiEmAj0TwYX40OiHI+RXdjFvP5/8CUmoNkE=",
+            "MSILHash": "DYky5rgzRW5bwDMOB/4ZqvoxOgB/bJ1AeSg/o65Icvk=",
             "HookCategory": "Vending"
           }
         },
@@ -2853,14 +2854,14 @@
                 "ItemDefinition"
               ]
             },
-            "MSILHash": "ABrSHviF2B68vuyP8r4wLBl50rTira43WfGxBPASaVY=",
+            "MSILHash": "OUG0FLlSqPajhlRqabmZmD884Ayq9GGheUt3k6tuEZg=",
             "HookCategory": "Vending"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 17,
+            "InjectionIndex": 25,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
@@ -2878,7 +2879,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "pGoC17AFa7yrdHdroZnMdnqIQmy0JtWFRM6y8IqQUxY=",
+            "MSILHash": "YzvT/hbFPd4w2GXyioxdZoR6YwFJiwlOdi6VLvYDAL8=",
             "HookCategory": "Vending"
           }
         },
@@ -3105,7 +3106,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "S74fZ/+Uq+kQDcmP4UIqhKDzbe08Ru/Czr4vNd2o+2U=",
+            "MSILHash": "2zx8e7YQQakj/852ZNOoZcvvfpqffzgRc3fxu1X1VBc=",
             "HookCategory": "Player"
           }
         },
@@ -3130,7 +3131,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "fJNR1Z2uLn6FaFrFR7OYvPLib37jS9JYwK8p+bBxDQQ=",
+            "MSILHash": "OD5AT+lz624zo8iIWFvHA7BbnLMK7BdH2QDHCXoAIsw=",
             "HookCategory": "Structure"
           }
         },
@@ -3155,7 +3156,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "/75OflopB8xdzkODp1wzVhLmP4bz4thyCoBeloG8Z28=",
+            "MSILHash": "19P+Uu5muHTNM6AZ/KDq7Cj7owdee/pIsaKNbe0mDp8=",
             "HookCategory": "Player"
           }
         },
@@ -3180,7 +3181,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Vfybl/4apGOl20ZPWi2wjgMscqaLv9O0gI6m0ZY+X1M=",
+            "MSILHash": "Fko+XShEJaHF2fjcuQCWSoQkpQ3KMQD7pgLEFGSncMo=",
             "HookCategory": "Player"
           }
         },
@@ -3205,7 +3206,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "qZxGPdSmxfLlJBvSWlvX8SUxZ3sHTh7WdWNkOlIv/l8=",
+            "MSILHash": "nww216mftVhGo+j+4ImTru+gA7UJBByzIhmlnhYDxhQ=",
             "HookCategory": "Player"
           }
         },
@@ -3230,7 +3231,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "7bHQFk2bfu15KxoqHx/Yvs2svjwc/aTSIzV2itS/USU=",
+            "MSILHash": "DqHWZCPdSHReIFgexwcpG2dHDSy3Ylhe02/PCB9040s=",
             "HookCategory": "Player"
           }
         },
@@ -3301,7 +3302,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "XZyzOW+bMw1xmjFZgnK9+3hi+U0AWpjhrmKVZkeZx0c=",
+            "MSILHash": "ztSdepOqUzMvbHmWuR5Ta9aaTYDqbX2uFLaEl+rD9r0=",
             "HookCategory": "Item"
           }
         },
@@ -3351,7 +3352,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "EzEa9cjJIOIkBlEgHem5YvfGZmTGB3o2lU/o5B88/bY=",
+            "MSILHash": "eOTaqk9wufEpjtlY5zmBwxwvclrKW/cvO+walBftoKU=",
             "HookCategory": "Player"
           }
         },
@@ -3526,7 +3527,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 378
+                "Operand": 380
               },
               {
                 "OpCode": "ldarg_0",
@@ -3550,7 +3551,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "XZyzOW+bMw1xmjFZgnK9+3hi+U0AWpjhrmKVZkeZx0c=",
+            "MSILHash": "ztSdepOqUzMvbHmWuR5Ta9aaTYDqbX2uFLaEl+rD9r0=",
             "BaseHookName": "OnItemRecycle",
             "HookCategory": "Item"
           }
@@ -3649,7 +3650,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "HgVVC+l/hcsSzNbBgOtRGSwbwOVp97i40Yhvh/BoqPU=",
+            "MSILHash": "A52qe+fA/fQ/cPp7IM89THmnFifmpxV6I4SZvfBvzdQ=",
             "HookCategory": "Player"
           }
         },
@@ -3851,7 +3852,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "w+sFHi76nXviK0EBvtg35nb60JpnwirarPaQC4Z+Ioo=",
+            "MSILHash": "l2E4nvbXO64XBnJGb7j2oEnS4iMBDqo62ao62HpRBJ0=",
             "HookCategory": "Server"
           }
         },
@@ -3947,14 +3948,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "dv8id6lVJm3RpVC0WNbdYlSEs/VZa6vTOj9ySyZ3/tk=",
+            "MSILHash": "sYlOgjS+1gF1/XkG6kQAfNuZ5nA6QNV+kD2Qw9K9ut0=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 52,
+            "InjectionIndex": 55,
             "ReturnBehavior": 3,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0, l4 => l4",
@@ -3974,7 +3975,7 @@
                 "AttackEntity"
               ]
             },
-            "MSILHash": "+3UqbJiQfn/rHLV9XX0/DwzWnzWkIKnSSe5RdzRxaEk=",
+            "MSILHash": "DyptUpp17sVFIM4P81PIXbeDKOI6Ovva3TA9Vkq3xUs=",
             "HookCategory": "Resource"
           }
         },
@@ -4565,7 +4566,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 21,
+            "InjectionIndex": 23,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, l1",
@@ -4587,7 +4588,7 @@
                 "Item"
               ]
             },
-            "MSILHash": "BjpFqXT5IfbFgDD/u9BncVawd+iM7+gKgHIIdEjK8cw=",
+            "MSILHash": "K5UCzhM+HEPqnOYIk88Y6GrAVf4eqyU9AQMr89PjIU8=",
             "BaseHookName": "CanCreateWorldProjectile",
             "HookCategory": "Weapon"
           }
@@ -4638,32 +4639,8 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "jg/84l0knLUErGBqnWv8udyXjkb8DoqCxMPdcWOcnR8=",
+            "MSILHash": "tP0yB+HHI/LKOmRRoy9UkVKDfLT0ojUcJ1O9mcTvcnc=",
             "HookCategory": "Weapon"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 3,
-            "HookTypeName": "Simple",
-            "Name": "OnPlayerVoice",
-            "HookName": "OnPlayerVoice",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "OnReceivedVoice",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.Byte[]"
-              ]
-            },
-            "MSILHash": "5uu/IYYxD4/1IRtkelbsdMo0jlxwFu7fQ+OSt+j4VbA=",
-            "HookCategory": "Player"
           }
         },
         {
@@ -4784,7 +4761,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "y7msaDc3rsTWL53FKOJY5Y5+ZI6edPnaln7rDJWPhUo=",
+            "MSILHash": "geC8Gb9HxKclJC/oYfrILX/RAxosdDzXpZCdMg0eAfs=",
             "HookCategory": "Player"
           }
         },
@@ -4834,7 +4811,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "UmRxrLh/wEaMjzAMbyrmhILDxf1ZEZZCEsi3HVJgBoA=",
+            "MSILHash": "RZ+wxeFKz22acHLzCLMaP3gn37+PXDhP8c6T+7sfGeM=",
             "HookCategory": "Player"
           }
         },
@@ -5078,7 +5055,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "U3EDK8FupNAKn9IeT10Eq0VikkdY8h3UmJLbtUYWgMU=",
+            "MSILHash": "NI6sQA2Gz2MQE9poAWfrWgyUNGQP3DUkYhRo9ZpX2eU=",
             "HookCategory": "Entity"
           }
         },
@@ -5100,7 +5077,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "hS0AEpvItX2dYxywtFaxN2cqJEozU6TIUeE5ASE/PVI=",
+            "MSILHash": "+W2PveLYqs+b3zvqeeJQ6A2IVKYc7CxlbVxz1bIO43Y=",
             "HookCategory": "Entity"
           }
         },
@@ -5169,7 +5146,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "LuFb8vvG5d1UL+pCQwcR/bz78ZNCt5/xW7oWyAgW09A=",
+            "MSILHash": "qataW2cXVUaPEOBVVeqJQMIO0Xywzz1qTnP2oMmQGq0=",
             "HookCategory": "Player"
           }
         },
@@ -5237,7 +5214,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "JYQAQzwZnXfNVOGZsbwonLYmC/t/NF2vPT2piAkipUk=",
+            "MSILHash": "CdZjmvmztN9Xp4EbeUXEsNNNlNXTM/lmD3a2ecseXZA=",
             "HookCategory": "Vehicle"
           }
         },
@@ -5307,7 +5284,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "gsBCKBdwTrJoptWYMHLbrDafl+VhTqdwxN/Gx3br27M=",
+            "MSILHash": "xXNMACaDAzgIvORpC+y+xroAqHhdew0M5lsVh/4TgYU=",
             "HookCategory": "Vehicle"
           }
         },
@@ -5628,7 +5605,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Lgp58QAkQbUIw49D1sTiXDbWnZo6DkzN6lyohyYmZL0=",
+            "MSILHash": "ZMMDkwEJGlljp907bNWn0/5Jcmxs9+WgjywaX2y1zNQ=",
             "HookCategory": "Player"
           }
         },
@@ -6006,7 +5983,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "f9FkSjTJPyAnxKlt2DQ+0ku01LBa8w1BZLb5lWlcgYc=",
+            "MSILHash": "qX7MIhuzxl6o51yasoAnr2qfiwmi71EtnXPJN4iW9Es=",
             "HookCategory": "Resource"
           }
         },
@@ -6082,7 +6059,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "1DxyZcRUQUDIYRS4GwiHKag4VHOWsocxTr2cP2R9YsE=",
+            "MSILHash": "/PqngdEMTv+l0AWKG1hHMe5zm1IZsNzkS6+AJzbWzdQ=",
             "HookCategory": "Player"
           }
         },
@@ -6132,7 +6109,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "tnv08aLzh8kmah3WxHQ4q+C5PLJTz6AdILRfhZOmhz0=",
+            "MSILHash": "lqoIjhp3/ZYnjRQuItqbQOaICgDAkEYt1+usfJJQy4E=",
             "HookCategory": "Shop"
           }
         },
@@ -6233,7 +6210,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "+TglSA+/F3cnAFnoUZN3R0lboKFhjjT1huudDNGYeqk=",
+            "MSILHash": "7TXPifGPRftOHn6pE/EimCCR9S6/am3Uecq6Wtgk9ow=",
             "HookCategory": "Player"
           }
         },
@@ -6371,7 +6348,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 80,
+            "InjectionIndex": 82,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l8",
@@ -6387,7 +6364,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "ORinARfHFJEhP3YJKeGoocQw/S39+zwarJCpobhVwBQ=",
+            "MSILHash": "sBnKNk/dISiH0dDzXhHiq5H2pvNRAaExuWycF2I9wJw=",
             "HookCategory": "Resource"
           }
         },
@@ -6810,7 +6787,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "kotpprg+0Na+285rrFFmZtSbZv026hq5ShjgFbSSykE=",
+            "MSILHash": "O1HX2SQYpNGcqr82benXODQ3QXNcW5yqHdjVroR0e40=",
             "HookCategory": "Weapon"
           }
         },
@@ -6909,7 +6886,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 40,
+            "InjectionIndex": 48,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": "",
@@ -6925,14 +6902,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "SJzPRO4h7mA2kj6lXOnqJD/66lGs5MHR6OjOj/VvSRI=",
+            "MSILHash": "FVeSxn+O/mrKQkYJLt2Jb79Oupes0N+tst3wsBwAZ6Q=",
             "HookCategory": "Resource"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 14,
+            "InjectionIndex": 16,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": "",
@@ -6948,7 +6925,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Tz9yRo3uYd06x1P0O1e7Ebgu3ZBNp6CV/XHnBko8E8Q=",
+            "MSILHash": "hQf6B31fTwoa4Sj9UY5XfMkX4SNHK/hnDyrrYTyfUqM=",
             "HookCategory": "Resource"
           }
         },
@@ -6980,7 +6957,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 11,
+            "InjectionIndex": 19,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": "",
@@ -6996,14 +6973,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "NuyFrvshyYzE2fIq8HK11SSqJCnaUmp+A7ntYAT14Gw=",
+            "MSILHash": "LK3YzSzoytf/L3DyNhhTfTGCfDeG3uBpqovGGT/FTMw=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 11,
+            "InjectionIndex": 19,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "ArgumentString": "",
@@ -7019,7 +6996,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Hh5FDtS4Hl+CDjLQn5+A4qscok1eA0RHJIgvsu/2NME=",
+            "MSILHash": "2kXIruIPJRtnKhD3CUeFpzHC7+bWseRhLd6blN/grxY=",
             "HookCategory": "Entity"
           }
         },
@@ -7096,7 +7073,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "sc80/beDHyjQsrSTxSJtSM3TjGylWz4F+VY9jjnBs+Y=",
+            "MSILHash": "s6jK/SYHLAJFiMpZ9WJ1Op9m9NTsj7ebGgvCWtNlTOU=",
             "HookCategory": "Weapon"
           }
         },
@@ -7150,10 +7127,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 63,
+            "InjectionIndex": 64,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l1, a0.player",
+            "ArgumentString": "this, l2, l0",
             "HookTypeName": "Simple",
             "Name": "OnCardSwipe",
             "HookName": "OnCardSwipe",
@@ -7168,7 +7145,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "HvL4GC07JHso6ns12FO69GzNghXPDSylPxjyNXdbP+k=",
+            "MSILHash": "SQZDhK6KSNHG03gOfeZP6BwqzoYNJe17airW/OVLHmc=",
             "HookCategory": "Electronic"
           }
         },
@@ -7620,17 +7597,17 @@
                 "NetworkableId"
               ]
             },
-            "MSILHash": "HspISm2eYJvufT3FI3OaojsN78w5D9G2jKUqL/dZOFg=",
+            "MSILHash": "zRbcAvnDfbePzsHXuUX7xj6AtfSvVjcDOvj1x+uvu2k=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 22,
+            "InjectionIndex": 9,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0, a0.player",
+            "ArgumentString": "this, a0, this.currentPlayer",
             "HookTypeName": "Simple",
             "Name": "OnPhoneNameUpdate",
             "HookName": "OnPhoneNameUpdate",
@@ -7642,10 +7619,10 @@
               "Name": "UpdatePhoneName",
               "ReturnType": "System.Void",
               "Parameters": [
-                "BaseEntity/RPCMessage"
+                "System.String"
               ]
             },
-            "MSILHash": "hWv/7Dndy+Yy6pldY8cKD6bSDTwxkn9PX3jVT7nkjOg=",
+            "MSILHash": "bAMulxSqAd13zc85FoZMt0wGUQVv0KgLSoNo5FmbMfE=",
             "HookCategory": "Electronic"
           }
         },
@@ -7673,7 +7650,7 @@
                 "BuildingPrivlidge"
               ]
             },
-            "MSILHash": "RUNWZoeOUvuxaAmpTJpGVL4eBlNMIIKtBzk3QuknpxI=",
+            "MSILHash": "YUrgsv1ltUi/uxTv3lYofWEgZmvv0ccNt7mB2A4XnhY=",
             "HookCategory": "Entity"
           }
         },
@@ -7720,7 +7697,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "ZIhlcmpV0oZU8ogZuNRXJMtyFXp4ibPXTrCPjSO1ZHM=",
+            "MSILHash": "nPaY0zHXo8j96KbOr8l+90xW8usUIH5q9Ux9dbNsunQ=",
             "HookCategory": "Structure"
           }
         },
@@ -7742,7 +7719,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "W0ebD0XlzLxGoFAos/GKl6zbH4/APSnwXRnsxY2SKFk=",
+            "MSILHash": "lMWOK2wjWZGq3HRq7nyHyfKMLV8SvGKd5ZdyiIL1Ph8=",
             "HookCategory": "Entity"
           }
         },
@@ -8039,7 +8016,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 210,
+            "InjectionIndex": 212,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -8056,7 +8033,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "XEXE/nknGKK3Ks1/0LXjbkrQyVp3A6NxSYuWYO0hwSo=",
+            "MSILHash": "/WCwEj5tlMzf7f7rz6ubhMmX18rz5vbbxIGqZy1PWJA=",
             "HookCategory": "Player"
           }
         },
@@ -8080,7 +8057,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "Dh/6+QJbztWBiKnQQhnUq3PXvMk8SGOS5kNpGnlXx18=",
+            "MSILHash": "KRwkmdSKKD0F98Qx/FxHigSctOhxyWvxpL8mmvhF6gU=",
             "HookCategory": "Entity"
           }
         },
@@ -8137,7 +8114,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 50,
+            "InjectionIndex": 52,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, a0",
@@ -8158,7 +8135,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "/dRRIiUNoMeAGceoglNhWFL31yUax/6kx0LDdZVn+Ew=",
+            "MSILHash": "atOMiaBDoEujSCMmBK3hwZGiVSizqjLFU7kKF4mwuRY=",
             "HookCategory": "Resource"
           }
         },
@@ -8309,7 +8286,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "cnJgXpec+9y5kfP0qL1mtXg3Oa6nCI8SV1LKM9ChkW4=",
+            "MSILHash": "f8o+uqbnU0mt/HZeg2rYxC4UUp6vhWIVxb3ZYyydgMU=",
             "HookCategory": "Entity"
           }
         },
@@ -8367,7 +8344,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "GD2ye8oWVhZe9fj1qoCuTkMlNVn+cNFw0t53HjEpkoc=",
+            "MSILHash": "PLFMSqvkkiWIF9eobkMLy6JL9UXHmF1JfbB2FG58Awc=",
             "HookCategory": "Player"
           }
         },
@@ -8458,7 +8435,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 104,
+            "InjectionIndex": 118,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -8483,7 +8460,7 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 104
+                "Operand": 118
               },
               {
                 "OpCode": "ldloc",
@@ -8503,7 +8480,7 @@
               {
                 "OpCode": "br_s",
                 "OpType": "Instruction",
-                "Operand": 123
+                "Operand": 137
               }
             ],
             "HookTypeName": "Modify",
@@ -8518,7 +8495,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "rwPulGafPUr+IesgZ9D0qhVmi7sUg0bSDetSDw+Y/yM=",
+            "MSILHash": "dQuHzkp6CHqZZcNMeFkYFfME/gyZK+nibJV2jmyuqnM=",
             "HookCategory": "Resource"
           }
         },
@@ -8543,7 +8520,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "ZSpTEoBck2+EnbAoOT6/awyG5MwGYADvwNneN9ymO4A=",
+            "MSILHash": "Tar0QZ4JolNAkxmd8gAvkLRb5t+YmR4KScUe4aKzj54=",
             "HookCategory": "Item"
           }
         },
@@ -8789,13 +8766,13 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 88,
+            "InjectionIndex": 91,
             "RemoveCount": 2,
             "Instructions": [
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 93
+                "Operand": 96
               },
               {
                 "OpCode": "ldarg_s",
@@ -8805,7 +8782,7 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 90
+                "Operand": 93
               },
               {
                 "OpCode": "ldloc_0",
@@ -8819,7 +8796,7 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 90
+                "Operand": 93
               },
               {
                 "OpCode": "ldarg_s",
@@ -8858,10 +8835,11 @@
                 "System.Int32",
                 "System.Int32",
                 "Item",
-                "System.Boolean"
+                "System.Boolean",
+                "System.Int32"
               ]
             },
-            "MSILHash": "lZe/h7OTeA8TM3K+jURAv1JfmgTcJbhuIK6eHKyQIm8=",
+            "MSILHash": "rUfq8TEKbo75ZN9WahM3j8m7mlJAQLNVKuoZJq+rr2I=",
             "BaseHookName": "OnItemCraft",
             "HookCategory": "_Patches"
           }
@@ -8920,7 +8898,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "KIdUX6exP6FpK5QuOsJa20k0S1+3QNvFHm9E8tmrRUM=",
+            "MSILHash": "OKeBxIYPBlLrhscEOIPoPbD69+phpNLJHJ3PPiVSIrk=",
             "HookCategory": "Player"
           }
         },
@@ -8970,7 +8948,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "QGZvAOY5cLpuPLA3/KvSATwCQF5JlGm7iBLL0B67eO8=",
+            "MSILHash": "6r3VB/gdf5lczk5tQadUVJZZ4FAcuX8JIII7F+Z0Ayk=",
             "HookCategory": "Naval"
           }
         },
@@ -9123,7 +9101,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Kq6+DFDeS3NXy8+L4UoRGifPLXyNJz9VztOJh+PePyk=",
+            "MSILHash": "V5pmoSa4spWDXKixWlutdVJsfVt7XGawbDgsnp6NNpQ=",
             "HookCategory": "Primitive"
           }
         },
@@ -9228,7 +9206,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 148,
+            "InjectionIndex": 154,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l1",
@@ -9236,7 +9214,7 @@
             "Name": "OnDeepSeaClosed",
             "HookName": "OnDeepSeaClosed",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "DeepSeaManager/<CloseDeepSeaAsync>d__75",
+            "TypeName": "DeepSeaManager/<CloseDeepSeaAsync>d__77",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -9244,14 +9222,14 @@
               "ReturnType": "System.Boolean",
               "Parameters": []
             },
-            "MSILHash": "EIuSKMKI6wpfDGnJVH8KT1Bp2BHkfIjmaTkANrsRq+4=",
+            "MSILHash": "Vcm+lI248B4nnmv/qnXGuKhHEJLD79gpXH/SSAz04qI=",
             "HookCategory": "Naval"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 98,
+            "InjectionIndex": 104,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l1",
@@ -9259,7 +9237,7 @@
             "Name": "OnDeepSeaOpened",
             "HookName": "OnDeepSeaOpened",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "DeepSeaManager/<OpenDeepSeaAsync>d__73",
+            "TypeName": "DeepSeaManager/<OpenDeepSeaAsync>d__75",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -9267,7 +9245,7 @@
               "ReturnType": "System.Boolean",
               "Parameters": []
             },
-            "MSILHash": "9HjYTPHflKjObAEBHo5SVazlbE9qxh6n4KmVK8r9M9E=",
+            "MSILHash": "T13pGcxTJ0UtqDYZKMM5iWwKniZmMinLuSpZhMG6jzE=",
             "HookCategory": "Naval"
           }
         },
@@ -9377,7 +9355,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 26,
+            "InjectionIndex": 25,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -9395,7 +9373,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "rteELqtLutAxk4PSeD1ItCz0gQn3DmlXG1rC3pV0cCc=",
+            "MSILHash": "2Xzwj8T24fy6o4MxxZ53mcyHIidy/oGbY/+BN9tSIfM=",
             "HookCategory": "Structure"
           }
         },
@@ -9470,7 +9448,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "bqAsb4ft1+T5TUPikvzEicGeV3PI/L8kUkqq8ZJJgZw=",
+            "MSILHash": "E90d4ZFWvMqZMsVSGRPDYVTtfEKANajvSLbc3VX4yb0=",
             "HookCategory": "Bookmark"
           }
         },
@@ -9545,7 +9523,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "FV4pqFbVjjDd4UZqbbvoIfFGA12TvbDKZ1CcTuDriiI=",
+            "MSILHash": "fip2dxl1vOLf/26Om7l42WW0PXOF+YPBHmRMziF+gS4=",
             "HookCategory": "Bookmark"
           }
         },
@@ -9595,7 +9573,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "fJCVbSB0bam5D/dVBPQ2OlMAwJpw222SwdQItXiNtoQ=",
+            "MSILHash": "5tf9vQvVmO2U7xCbXm4gr5CkY8XKmg5VCz6VRydeBxk=",
             "HookCategory": "Server"
           }
         },
@@ -9618,7 +9596,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "PxCXkcnWVh8reaj/Vfe+k9psep7lD8Euc10LcuI2Jmc=",
+            "MSILHash": "dJUMJgVnarX9BbfSQVXYJLf/ZIv3J3QNx1a3bFhxWE0=",
             "HookCategory": "Player"
           }
         },
@@ -9641,7 +9619,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "PxCXkcnWVh8reaj/Vfe+k9psep7lD8Euc10LcuI2Jmc=",
+            "MSILHash": "dJUMJgVnarX9BbfSQVXYJLf/ZIv3J3QNx1a3bFhxWE0=",
             "BaseHookName": "OnDefaultItemsReceive",
             "HookCategory": "Player"
           }
@@ -9732,7 +9710,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 97,
+            "InjectionIndex": 99,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l5, l0, a1",
@@ -9751,7 +9729,7 @@
                 "ItemContainer"
               ]
             },
-            "MSILHash": "ppOnBjdLMm6frGtued1x7yRN27kNpXpL0KTBhxEmi5c=",
+            "MSILHash": "2YonPObQZHATyveltfySpbV5n90Gwu5t9S5oc05wJ80=",
             "HookCategory": "Item"
           }
         },
@@ -9807,14 +9785,14 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "a5ruqdzTY9vLZuqvFWWMsNTBffDrD7CX919dJXNeNAo=",
+            "MSILHash": "j46RGGEWBwaWN6Xm3n3+bsFAvH3XnUnLvUqq7vPF9X0=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 177,
+            "InjectionIndex": 185,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l3",
@@ -9836,7 +9814,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "a5ruqdzTY9vLZuqvFWWMsNTBffDrD7CX919dJXNeNAo=",
+            "MSILHash": "j46RGGEWBwaWN6Xm3n3+bsFAvH3XnUnLvUqq7vPF9X0=",
             "BaseHookName": "OnPlayerCorpseSpawn",
             "HookCategory": "Player"
           }
@@ -10289,7 +10267,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 122,
+            "InjectionIndex": 124,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l5, l0, a1",
@@ -10308,7 +10286,7 @@
                 "ItemContainer"
               ]
             },
-            "MSILHash": "ppOnBjdLMm6frGtued1x7yRN27kNpXpL0KTBhxEmi5c=",
+            "MSILHash": "2YonPObQZHATyveltfySpbV5n90Gwu5t9S5oc05wJ80=",
             "BaseHookName": "OnBonusItemDrop",
             "HookCategory": "Item"
           }
@@ -10334,7 +10312,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "Snv/JfbJLR/1ET3Cb2qB+9S8AabSdtEV5aiMupnaVh8=",
+            "MSILHash": "/QHwQS3OItFzy3Dvi+5AoDEKgZeGfkOZ+A2iin72JgI=",
             "HookCategory": "Resource"
           }
         },
@@ -10760,7 +10738,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "zFUzhb16/jKJ5mdchUmrBB9VWZ7c4HXJ44m0KsXYWrI=",
+            "MSILHash": "o9rMFCIMd0T/SzMjkVLBbHXkcmWXcFBMMzVCxME3L6A=",
             "HookCategory": "Player"
           }
         },
@@ -10785,7 +10763,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "hUQkp9o77h7IUIIYhZkdfu6QtpYJA2X10F5WkOXycOw=",
+            "MSILHash": "L/evqqMp4exg0CdeQOpCbxzwO8ac1B+fKdTasqO7P4I=",
             "HookCategory": "Player"
           }
         },
@@ -11131,7 +11109,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "kVjU9t8StoAg0uWRlzVi78kxjzOUx+mDall6+ui4vd8=",
+            "MSILHash": "SUlEboJzLzYB0AFcxglnPY8kj2jxyAXZiICvxNYEaYM=",
             "HookCategory": "Electronic"
           }
         },
@@ -11160,7 +11138,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "kVjU9t8StoAg0uWRlzVi78kxjzOUx+mDall6+ui4vd8=",
+            "MSILHash": "SUlEboJzLzYB0AFcxglnPY8kj2jxyAXZiICvxNYEaYM=",
             "BaseHookName": "OnCounterModeToggle",
             "HookCategory": "Electronic"
           }
@@ -11233,7 +11211,7 @@
                 "Operand": "Assembly-CSharp|BaseVehicle|GetDriver"
               },
               {
-                "OpCode": "stloc_0",
+                "OpCode": "stloc_1",
                 "OpType": "None"
               },
               {
@@ -11255,7 +11233,7 @@
                 "OpType": "None"
               },
               {
-                "OpCode": "ldloc_0",
+                "OpCode": "ldloc_1",
                 "OpType": "None"
               },
               {
@@ -11287,64 +11265,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "4Nd/IEQTTZTejpd//A2PB+Hjersp0Yj301R5MB5tKZY=",
-            "HookCategory": "Vehicle"
-          }
-        },
-        {
-          "Type": "Modify",
-          "Hook": {
-            "InjectionIndex": 23,
-            "RemoveCount": 0,
-            "Instructions": [
-              {
-                "OpCode": "ldarg_1",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "brfalse_s",
-                "OpType": "Instruction",
-                "Operand": 23
-              },
-              {
-                "OpCode": "ldstr",
-                "OpType": "String",
-                "Operand": "OnEngineStarted"
-              },
-              {
-                "OpCode": "ldarg_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "ldloc_0",
-                "OpType": "None"
-              },
-              {
-                "OpCode": "call",
-                "OpType": "Method",
-                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object)"
-              },
-              {
-                "OpCode": "pop",
-                "OpType": "None"
-              }
-            ],
-            "HookTypeName": "Modify",
-            "Name": "OnEngineStarted [MotorRowboat]",
-            "HookName": "OnEngineStarted",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "MotorRowboat",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "EngineToggle",
-              "ReturnType": "System.Void",
-              "Parameters": [
-                "System.Boolean"
-              ]
-            },
-            "MSILHash": "4Nd/IEQTTZTejpd//A2PB+Hjersp0Yj301R5MB5tKZY=",
-            "BaseHookName": "OnEngineStart [MotorRowboat]",
+            "MSILHash": "5ImmnGPGpadwo0qmuhWmwYBoF/iOnCXDHaULocCpuAU=",
             "HookCategory": "Vehicle"
           }
         },
@@ -11418,14 +11339,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "1Ys6TnAx59tBzGrXPHAbDt3YOUQERuucEj2Lo+g7bfE=",
+            "MSILHash": "U4gbGBHTAcKssn5KEfRYxMK+iucMVWNJgZP9L+43UhA=",
             "HookCategory": "Vehicle"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 90,
+            "InjectionIndex": 92,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0.socketItemDefs",
@@ -11441,7 +11362,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "1Ys6TnAx59tBzGrXPHAbDt3YOUQERuucEj2Lo+g7bfE=",
+            "MSILHash": "U4gbGBHTAcKssn5KEfRYxMK+iucMVWNJgZP9L+43UhA=",
             "BaseHookName": "OnVehicleModulesAssign",
             "HookCategory": "Vehicle"
           }
@@ -11641,7 +11562,7 @@
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
-              "Name": "<CallElevator>b__25_0",
+              "Name": "<CallElevator>b__26_0",
               "ReturnType": "System.Void",
               "Parameters": [
                 "Elevator"
@@ -11710,7 +11631,7 @@
                 "Elevator"
               ]
             },
-            "MSILHash": "2jL4xSe1crIXZgZW24CCSSh4GGToophwwgmy2/kvD88=",
+            "MSILHash": "qDQmIBjUiaRguV+xDvjU1A3Rd+eFeAdi8gwX3IKIxD8=",
             "HookCategory": "Elevator"
           }
         },
@@ -11735,14 +11656,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "dzBg1tUDwuyq4Otk/KCEsIY8LagH3cWW51z8kmWfgHo=",
+            "MSILHash": "CZ6A4Ixu9yA5GFvQovytMmJjn/y9ob9e20F94rg5LZQ=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 44,
+            "InjectionIndex": 52,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -11760,7 +11681,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "dzBg1tUDwuyq4Otk/KCEsIY8LagH3cWW51z8kmWfgHo=",
+            "MSILHash": "CZ6A4Ixu9yA5GFvQovytMmJjn/y9ob9e20F94rg5LZQ=",
             "BaseHookName": "OnHotAirBalloonToggle",
             "HookCategory": "Entity"
           }
@@ -11768,7 +11689,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 56,
+            "InjectionIndex": 64,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -11786,7 +11707,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "dzBg1tUDwuyq4Otk/KCEsIY8LagH3cWW51z8kmWfgHo=",
+            "MSILHash": "CZ6A4Ixu9yA5GFvQovytMmJjn/y9ob9e20F94rg5LZQ=",
             "BaseHookName": "OnHotAirBalloonToggled [on]",
             "HookCategory": "Entity"
           }
@@ -11816,7 +11737,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 32,
+            "InjectionIndex": 39,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -11831,14 +11752,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "W9re9WIOUB2YvJd8CsBe3IgULUg+4CpHUPd9Now9PW8=",
+            "MSILHash": "yO5WgUQrnw3fgAiLPKoSUZWkoRda+o98jKrryEQUuI0=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 191,
+            "InjectionIndex": 190,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
@@ -11856,7 +11777,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "LuFb8vvG5d1UL+pCQwcR/bz78ZNCt5/xW7oWyAgW09A=",
+            "MSILHash": "qataW2cXVUaPEOBVVeqJQMIO0Xywzz1qTnP2oMmQGq0=",
             "BaseHookName": "OnExperimentStart",
             "HookCategory": "Player"
           }
@@ -11879,14 +11800,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "65jEc2icFaPCSLczNxDPbm3cLr4J0XfItVb7vU5DuHY=",
+            "MSILHash": "jLt3gPpR1VimFb8sTiIg4xG0GiMgPytiHc+/6QVQOMA=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 105,
+            "InjectionIndex": 106,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -11901,7 +11822,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "65jEc2icFaPCSLczNxDPbm3cLr4J0XfItVb7vU5DuHY=",
+            "MSILHash": "jLt3gPpR1VimFb8sTiIg4xG0GiMgPytiHc+/6QVQOMA=",
             "BaseHookName": "OnExperimentEnd",
             "HookCategory": "Player"
           }
@@ -12003,14 +11924,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Z1i7rut4GcoFr8o7r+RiqapGHuH7YTevh/4/zgPqsqs=",
+            "MSILHash": "UXS4ZaR4ZOpU5ozRs1cza2hupCSzPwEetEoywcNMV7c=",
             "HookCategory": "Animal"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 56,
+            "InjectionIndex": 64,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
@@ -12028,7 +11949,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Z1i7rut4GcoFr8o7r+RiqapGHuH7YTevh/4/zgPqsqs=",
+            "MSILHash": "UXS4ZaR4ZOpU5ozRs1cza2hupCSzPwEetEoywcNMV7c=",
             "BaseHookName": "OnRidableAnimalClaim [RidableHorse]",
             "HookCategory": "Animal"
           }
@@ -12036,10 +11957,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 38,
+            "InjectionIndex": 25,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, this.PhoneName, a0.player",
+            "ArgumentString": "this, this.PhoneName, this.currentPlayer",
             "HookTypeName": "Simple",
             "Name": "OnPhoneNameUpdated",
             "HookName": "OnPhoneNameUpdated",
@@ -12051,10 +11972,10 @@
               "Name": "UpdatePhoneName",
               "ReturnType": "System.Void",
               "Parameters": [
-                "BaseEntity/RPCMessage"
+                "System.String"
               ]
             },
-            "MSILHash": "hWv/7Dndy+Yy6pldY8cKD6bSDTwxkn9PX3jVT7nkjOg=",
+            "MSILHash": "bAMulxSqAd13zc85FoZMt0wGUQVv0KgLSoNo5FmbMfE=",
             "BaseHookName": "OnPhoneNameUpdate",
             "HookCategory": "Electronic"
           }
@@ -12107,7 +12028,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "B/BAQykLGGBbiPthJholAnYbz9BwrPepX6Vgm3D+d90=",
+            "MSILHash": "D0V8KSGePW/InHs1Iwe61wItEGZF2bpyy97omoq2N7E=",
             "HookCategory": "Entity"
           }
         },
@@ -12203,14 +12124,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "pZYkxZ57UXENgLmWvbP5Xjygb9OMwvrfVYOXnS2XmuQ=",
+            "MSILHash": "cVbt+TtEHuBgO1Ic7sHejXa6XjZnvD+ZuUGcs8/vvQU=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 88,
+            "InjectionIndex": 91,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, this",
@@ -12226,7 +12147,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "pZYkxZ57UXENgLmWvbP5Xjygb9OMwvrfVYOXnS2XmuQ=",
+            "MSILHash": "cVbt+TtEHuBgO1Ic7sHejXa6XjZnvD+ZuUGcs8/vvQU=",
             "BaseHookName": "OnDemoRecordingStart",
             "HookCategory": "Player"
           }
@@ -12332,7 +12253,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 125,
+            "InjectionIndex": 127,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "HookTypeName": "Simple",
@@ -12350,7 +12271,7 @@
                 "ItemModBurnable"
               ]
             },
-            "MSILHash": "Sbb0d35L30Pwy6CoB86+etnNZz3Ecn5t1TB66sbxZDg=",
+            "MSILHash": "3v4XFz18whuZ4uNbVi0dCV79yUueiEfMkuhCqSvLGRI=",
             "BaseHookName": "OnFuelConsume",
             "HookCategory": "Fuel"
           }
@@ -12902,7 +12823,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "aareV7CQYrMG2441fXMAS0fiFduALhqMtfbO/WYeb8w=",
+            "MSILHash": "0/PUShKGql5lxDhiJshrfzJcmdHUqgd+LyKuT/FCZ28=",
             "HookCategory": "Entity"
           }
         },
@@ -12956,7 +12877,7 @@
                 "MarketTerminal"
               ]
             },
-            "MSILHash": "xuWeuHq4/ZcNXoZzG1f4rYEe/wRp7JQgkHDFoPHCb7M=",
+            "MSILHash": "+FHtBsuF8kgHmo6fz0g/z+XMBIVcPe65NaHUGVi9thQ=",
             "HookCategory": "Vending"
           }
         },
@@ -13031,7 +12952,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "bqAsb4ft1+T5TUPikvzEicGeV3PI/L8kUkqq8ZJJgZw=",
+            "MSILHash": "E90d4ZFWvMqZMsVSGRPDYVTtfEKANajvSLbc3VX4yb0=",
             "BaseHookName": "OnBookmarkControl",
             "HookCategory": "Bookmark"
           }
@@ -13039,7 +12960,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 64,
+            "InjectionIndex": 62,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0, l0",
@@ -13057,7 +12978,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "FV4pqFbVjjDd4UZqbbvoIfFGA12TvbDKZ1CcTuDriiI=",
+            "MSILHash": "fip2dxl1vOLf/26Om7l42WW0PXOF+YPBHmRMziF+gS4=",
             "BaseHookName": "OnBookmarkControlEnd",
             "HookCategory": "Bookmark"
           }
@@ -13115,7 +13036,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "7/UMYTN4sBY4FcHOkYG6Pt5Hl+1lyTFEx+GZ33QOW8k=",
+            "MSILHash": "SvOzVD8Sfsh/sz6pA6e8BHIzch7uIbqKVqfYND0c8aI=",
             "HookCategory": "Player"
           }
         },
@@ -13138,7 +13059,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "qp9mKIZGLAnp/s8BoXECf0gzBf15MhufMAWFmH/0TeI=",
+            "MSILHash": "HC8ATvpuUS/KBnn2GmEsMlVNKGYJJwrJBMQ5g1PdzPs=",
             "HookCategory": "Entity"
           }
         },
@@ -13166,7 +13087,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "qp9mKIZGLAnp/s8BoXECf0gzBf15MhufMAWFmH/0TeI=",
+            "MSILHash": "HC8ATvpuUS/KBnn2GmEsMlVNKGYJJwrJBMQ5g1PdzPs=",
             "BaseHookName": "OnCargoPlaneSignaled",
             "HookCategory": "_Patches"
           }
@@ -13302,7 +13223,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "bqAsb4ft1+T5TUPikvzEicGeV3PI/L8kUkqq8ZJJgZw=",
+            "MSILHash": "E90d4ZFWvMqZMsVSGRPDYVTtfEKANajvSLbc3VX4yb0=",
             "BaseHookName": "OnBookmarkControlStarted",
             "HookCategory": "Bookmark"
           }
@@ -13333,7 +13254,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "bqAsb4ft1+T5TUPikvzEicGeV3PI/L8kUkqq8ZJJgZw=",
+            "MSILHash": "E90d4ZFWvMqZMsVSGRPDYVTtfEKANajvSLbc3VX4yb0=",
             "BaseHookName": "OnBookmarkControlEnded [2]",
             "HookCategory": "Bookmark"
           }
@@ -13450,7 +13371,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 221,
+            "InjectionIndex": 242,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -13466,7 +13387,7 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 221
+                "Operand": 242
               },
               {
                 "OpCode": "ldloc_s",
@@ -13481,7 +13402,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 243
+                "Operand": 264
               }
             ],
             "HookTypeName": "Modify",
@@ -13498,7 +13419,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "lWK3R1CIVYMiFX28eaHhDL4Dzbz5rwUgwFXq+FfrWvk=",
+            "MSILHash": "cp/fn0WtNkhro8qCdwkt5KZgnkg2FevWMOhYiBol3jI=",
             "BaseHookName": "IOnBasePlayerAttacked",
             "HookCategory": "_Patches"
           }
@@ -13524,7 +13445,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "nH4Ej01jPLJZW3rgibRD8IQAo26k07diDhuXA5+we0U=",
+            "MSILHash": "gYtUCFf691Jz6i2BDc44OCosRpQR5++oX/j1UdpNOwk=",
             "HookCategory": "Item"
           }
         },
@@ -13600,14 +13521,14 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "nMVESLusnTeCOM5XMQUyKYydPo/k94WDejP1F2/8lvY=",
+            "MSILHash": "6a8UZ/MJl9Fc/5nx2nrZrsGV0ehst0T0cHJmoaPPIaw=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 178,
+            "InjectionIndex": 180,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "HookTypeName": "Simple",
@@ -13624,7 +13545,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "nMVESLusnTeCOM5XMQUyKYydPo/k94WDejP1F2/8lvY=",
+            "MSILHash": "6a8UZ/MJl9Fc/5nx2nrZrsGV0ehst0T0cHJmoaPPIaw=",
             "BaseHookName": "OnWaterPurify",
             "HookCategory": "Entity"
           }
@@ -13727,7 +13648,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "FlHnUfCgC9yxaDwb/RFroT/mOldQ6cci4FOH++b3xuI=",
+            "MSILHash": "1OOquoTKEsGftLj6yj/XSb0w+oMUd2iQmvm12HaQXk8=",
             "HookCategory": "Player"
           }
         },
@@ -14123,7 +14044,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "ncKgIsNGf0CbX6pGw3ljIrQUIhG2veN93R1bF+UwN4o=",
+            "MSILHash": "0T7VwwTsppd25lBOVRzoX3cR5C6nDWL59e6HcoariQw=",
             "HookCategory": "Player"
           }
         },
@@ -14170,7 +14091,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "ncKgIsNGf0CbX6pGw3ljIrQUIhG2veN93R1bF+UwN4o=",
+            "MSILHash": "0T7VwwTsppd25lBOVRzoX3cR5C6nDWL59e6HcoariQw=",
             "BaseHookName": "OnPlayerRecover",
             "HookCategory": "Player"
           }
@@ -14224,7 +14145,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "ezg0QHOVF5KeGTnhLtTqbboDQNk0NtKM7r4w6WMvjGo=",
+            "MSILHash": "i2dAoNEInzarbehyQ3udz8eTYoyEv+eBlUOw/2bKqEw=",
             "HookCategory": "Vending"
           }
         },
@@ -14293,7 +14214,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "wIZL3rchgTocRP7uE5Uds9qZXeG97Jr2xpI92o4bYzg=",
+            "MSILHash": "/4gfAKPl/seqHdUWPGTGiEhpitw+v6Un8AtHA+/wn3g=",
             "HookCategory": "_Patches"
           }
         },
@@ -14439,7 +14360,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "3jLWLmKvI6Zu3lQS084yRQaXjrSNk4QvgMeiCvnpz+o=",
+            "MSILHash": "VGGSYnGVp25aWdRuxfXdmdA8rV0WfAzT0yD0iQTCaTE=",
             "HookCategory": "Entity"
           }
         },
@@ -14781,14 +14702,14 @@
                 "TrappableWildlife"
               ]
             },
-            "MSILHash": "jFIjCoQ6jltGS6BPeoTKcmTlFRcxtv5EvDmLfcjKLKI=",
+            "MSILHash": "C0llXrxlnGLxECmYQdEM6HuAA1DyqUKMsdSZdhIRMg0=",
             "HookCategory": "Traps"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 71,
+            "InjectionIndex": 78,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -14806,7 +14727,7 @@
                 "BaseFishingRod/FailReason"
               ]
             },
-            "MSILHash": "KNWuRT39lKotLttmz/XqmR+6D4X6K2/2E+VWfdyevZU=",
+            "MSILHash": "P1K+2Vm2XSYZfgcAekKKl15wBenxcjDYNwB7ysiQZlg=",
             "HookCategory": "Fishing"
           }
         },
@@ -14850,12 +14771,12 @@
               {
                 "OpCode": "stloc_s",
                 "OpType": "VariableIndex",
-                "Operand": "10"
+                "Operand": "11"
               },
               {
                 "OpCode": "ldloc_s",
                 "OpType": "VariableIndex",
-                "Operand": "10"
+                "Operand": "11"
               },
               {
                 "OpCode": "isinst",
@@ -14870,7 +14791,7 @@
               {
                 "OpCode": "ldloc_s",
                 "OpType": "VariableIndex",
-                "Operand": "10"
+                "Operand": "11"
               },
               {
                 "OpCode": "unbox_any",
@@ -14901,14 +14822,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "m1Igv0Qv06oRnlIpWVxMIFJY65zmzBFtXdA//85tr8M=",
+            "MSILHash": "LJZEAV19u8anoW6s/7IDVE+fOGRGVIU2vXQdeBAMsVQ=",
             "HookCategory": "Fishing"
           }
         },
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 514,
+            "InjectionIndex": 527,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -14917,7 +14838,7 @@
                 "Operand": "CanCatchFish"
               },
               {
-                "OpCode": "ldloc_1",
+                "OpCode": "ldloc_2",
                 "OpType": "None"
               },
               {
@@ -14927,7 +14848,7 @@
               {
                 "OpCode": "ldloc",
                 "OpType": "Variable",
-                "Operand": 14
+                "Operand": 16
               },
               {
                 "OpCode": "call",
@@ -14937,12 +14858,12 @@
               {
                 "OpCode": "stloc",
                 "OpType": "VariableIndex",
-                "Operand": "16"
+                "Operand": "18"
               },
               {
                 "OpCode": "ldloc",
                 "OpType": "VariableIndex",
-                "Operand": "16"
+                "Operand": "18"
               },
               {
                 "OpCode": "isinst",
@@ -14952,12 +14873,12 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 514
+                "Operand": 527
               },
               {
                 "OpCode": "ldloc",
                 "OpType": "VariableIndex",
-                "Operand": "16"
+                "Operand": "18"
               },
               {
                 "OpCode": "unbox_any",
@@ -14967,7 +14888,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 514
+                "Operand": 527
               },
               {
                 "OpCode": "ret",
@@ -14986,14 +14907,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "nkMxhvt0QahVwJFiExwCob9OuSWP5vBdvOpqFhXq5lo=",
+            "MSILHash": "9p4VYEBU4U/zO6aoppK7R3VW/eaytUU1/w+bnbAwCSo=",
             "HookCategory": "Fishing"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 226,
+            "InjectionIndex": 234,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1, l2",
@@ -15011,7 +14932,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "m1Igv0Qv06oRnlIpWVxMIFJY65zmzBFtXdA//85tr8M=",
+            "MSILHash": "LJZEAV19u8anoW6s/7IDVE+fOGRGVIU2vXQdeBAMsVQ=",
             "BaseHookName": "CanCastFishingRod",
             "HookCategory": "Fishing"
           }
@@ -15044,7 +14965,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 527,
+            "InjectionIndex": 540,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -15055,14 +14976,14 @@
               {
                 "OpCode": "ldloc_s",
                 "OpType": "Variable",
-                "Operand": 14
+                "Operand": 16
               },
               {
                 "OpCode": "ldarg_0",
                 "OpType": "None"
               },
               {
-                "OpCode": "ldloc_1",
+                "OpCode": "ldloc_2",
                 "OpType": "None"
               },
               {
@@ -15073,12 +14994,12 @@
               {
                 "OpCode": "stloc_s",
                 "OpType": "VariableIndex",
-                "Operand": "17"
+                "Operand": "19"
               },
               {
                 "OpCode": "ldloc_s",
                 "OpType": "VariableIndex",
-                "Operand": "17"
+                "Operand": "19"
               },
               {
                 "OpCode": "isinst",
@@ -15088,12 +15009,12 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 527
+                "Operand": 540
               },
               {
                 "OpCode": "ldloc_s",
                 "OpType": "VariableIndex",
-                "Operand": "17"
+                "Operand": "19"
               },
               {
                 "OpCode": "isinst",
@@ -15103,17 +15024,17 @@
               {
                 "OpCode": "ldloc_s",
                 "OpType": "Variable",
-                "Operand": 14
+                "Operand": 16
               },
               {
                 "OpCode": "beq_s",
                 "OpType": "Instruction",
-                "Operand": 527
+                "Operand": 540
               },
               {
                 "OpCode": "ldloc_s",
                 "OpType": "Variable",
-                "Operand": 14
+                "Operand": 16
               },
               {
                 "OpCode": "ldc_r4",
@@ -15128,7 +15049,7 @@
               {
                 "OpCode": "ldloc_s",
                 "OpType": "VariableIndex",
-                "Operand": "17"
+                "Operand": "19"
               },
               {
                 "OpCode": "castclass",
@@ -15138,7 +15059,7 @@
               {
                 "OpCode": "stloc_s",
                 "OpType": "Variable",
-                "Operand": 14
+                "Operand": 16
               }
             ],
             "HookTypeName": "Modify",
@@ -15153,7 +15074,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "nkMxhvt0QahVwJFiExwCob9OuSWP5vBdvOpqFhXq5lo=",
+            "MSILHash": "9p4VYEBU4U/zO6aoppK7R3VW/eaytUU1/w+bnbAwCSo=",
             "BaseHookName": "CanCatchFish",
             "HookCategory": "Fishing"
           }
@@ -15161,10 +15082,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 633,
+            "InjectionIndex": 641,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this.currentFishTarget, this, l1",
+            "ArgumentString": "this.currentFishTarget, this, l2",
             "HookTypeName": "Simple",
             "Name": "OnFishCaught",
             "HookName": "OnFishCaught",
@@ -15177,7 +15098,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "nkMxhvt0QahVwJFiExwCob9OuSWP5vBdvOpqFhXq5lo=",
+            "MSILHash": "9p4VYEBU4U/zO6aoppK7R3VW/eaytUU1/w+bnbAwCSo=",
             "BaseHookName": "OnFishCatch",
             "HookCategory": "Fishing"
           }
@@ -15234,7 +15155,7 @@
                 "MarketTerminal"
               ]
             },
-            "MSILHash": "xuWeuHq4/ZcNXoZzG1f4rYEe/wRp7JQgkHDFoPHCb7M=",
+            "MSILHash": "+FHtBsuF8kgHmo6fz0g/z+XMBIVcPe65NaHUGVi9thQ=",
             "BaseHookName": "OnVendingTransaction",
             "HookCategory": "Vending"
           }
@@ -15596,7 +15517,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "Ar4Sz1D3Rx4DYu9u3FMvuQwjl+zXsPumfzbFxIytQMA=",
+            "MSILHash": "PDXo1OyXsIz8lYSZGh20VdBNsY7gxVGkbydybZu4w98=",
             "HookCategory": "Player"
           }
         },
@@ -15668,7 +15589,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "cnJgXpec+9y5kfP0qL1mtXg3Oa6nCI8SV1LKM9ChkW4=",
+            "MSILHash": "f8o+uqbnU0mt/HZeg2rYxC4UUp6vhWIVxb3ZYyydgMU=",
             "BaseHookName": "OnSamSiteTarget",
             "HookCategory": "Entity"
           }
@@ -15824,14 +15745,14 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "AnxSRChg7ma/wZAYxk5l40aAgBl1/H3gTjQjzdnCezA=",
+            "MSILHash": "S6Tgbo19W6qkAJsibHA7FO1ivvkZPPXbiYOePJzm+G0=",
             "HookCategory": "Vehicle"
           }
         },
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 60,
+            "InjectionIndex": 65,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -15876,7 +15797,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "AnxSRChg7ma/wZAYxk5l40aAgBl1/H3gTjQjzdnCezA=",
+            "MSILHash": "S6Tgbo19W6qkAJsibHA7FO1ivvkZPPXbiYOePJzm+G0=",
             "BaseHookName": "OnEngineStart",
             "HookCategory": "Vehicle"
           }
@@ -15932,14 +15853,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "3+IgLAcTzvLlMBDcoh/2eKeYBZ1jXbMr88yf71mQdwo=",
+            "MSILHash": "FF7t6jZ7S/pwewVN+04iRu9ocWMF0106y8HDjb1sHT4=",
             "HookCategory": "Vehicle"
           }
         },
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 34,
+            "InjectionIndex": 39,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -15978,7 +15899,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "3+IgLAcTzvLlMBDcoh/2eKeYBZ1jXbMr88yf71mQdwo=",
+            "MSILHash": "FF7t6jZ7S/pwewVN+04iRu9ocWMF0106y8HDjb1sHT4=",
             "BaseHookName": "OnEngineStop",
             "HookCategory": "Vehicle"
           }
@@ -16069,7 +15990,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "4/Lix3wnQcQyh2A5vMu32FvHnpUW9W0mLVOTaZWD5dQ=",
+            "MSILHash": "FFrrM78jbSgI+4NnVTpYTz94wyXMu/vgsQRucddCUIE=",
             "HookCategory": "Seasonal"
           }
         },
@@ -16136,7 +16057,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 11,
+            "InjectionIndex": 19,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -16151,7 +16072,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "0L/4BLJQC8RBGYV+uGnIytP4Nky5qqt70f/RoPG4qSk=",
+            "MSILHash": "iB2SbmFWDATDdTjwq1z2wChio14bj0PmcRuFaGLeMXs=",
             "HookCategory": "Vehicle"
           }
         },
@@ -16199,14 +16120,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "2qQR3Jq60fYMjr8R+78+sRtZ1q4SKWemy0Mh1QVOSP8=",
+            "MSILHash": "s17k5cT0IRxxuYtyH2G6dAbOp7Yh6OhxuaINMA3NLSo=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 124,
+            "InjectionIndex": 127,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -16221,7 +16142,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "AaMXGfgrpLWu+Gm2vFGfT9MkVqDeb9BuSy5gtVKqnbo=",
+            "MSILHash": "VD3OXiR5cGILs42Vm77I5/EdTO86IZHqzeAzybaQt1s=",
             "BaseHookName": "OnPlayerSleepEnd",
             "HookCategory": "Player"
           }
@@ -16247,7 +16168,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "3d9+TrGxt9Rr0BK0PupvgxO8NhZDosddEQqIbhLtiFg=",
+            "MSILHash": "5nuTuyAN5ippTYV4ozGJ55KXj+RBDT9SL2J3teN6En8=",
             "HookCategory": "Electronic"
           }
         },
@@ -16272,7 +16193,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "3d9+TrGxt9Rr0BK0PupvgxO8NhZDosddEQqIbhLtiFg=",
+            "MSILHash": "5nuTuyAN5ippTYV4ozGJ55KXj+RBDT9SL2J3teN6En8=",
             "BaseHookName": "OnExcavatorSuppliesRequest",
             "HookCategory": "Electronic"
           }
@@ -16338,7 +16259,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 14,
+            "InjectionIndex": 19,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -16353,14 +16274,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "a6MqfeKeRsfRPS38EntRz3Var7rhZCppcmT0NiTjnmY=",
+            "MSILHash": "4zrQ0nhJTUcBLsoYfgXASXAv7UqfoX/h0OUfTyZC85Y=",
             "HookCategory": "Firework"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 23,
+            "InjectionIndex": 29,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -16375,7 +16296,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "LsqryEDXtfmgBTlrRAQMo/kT3c6BWwV8cLF6c50f1lY=",
+            "MSILHash": "FVlVd3pN6Z8vJWLh9Yg2Z9KhI5JqMnwSWytFuj9/1p4=",
             "HookCategory": "Firework"
           }
         },
@@ -16472,7 +16393,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "CuSAqHjkP4ot35Meqaw/hjh8YHNVmX9MVFB8wf6pjUg=",
+            "MSILHash": "4hzoWBzi5Yld/HsU0rQ2cMZxB0RU6Y7ZSE4zqAUbZr4=",
             "HookCategory": "Server"
           }
         },
@@ -16504,7 +16425,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 12,
+            "InjectionIndex": 33,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -16522,14 +16443,14 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "Zn3U2eYpKd7EZ/oCLGiM3oHx4i47vrbyxPXcK8ODAqg=",
+            "MSILHash": "TPY2riA0+deyKmmOz+dO/VK2T2fnIwyDRpquEKU9znk=",
             "HookCategory": "Vehicle"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 52,
+            "InjectionIndex": 81,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0",
@@ -16547,7 +16468,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "Zn3U2eYpKd7EZ/oCLGiM3oHx4i47vrbyxPXcK8ODAqg=",
+            "MSILHash": "TPY2riA0+deyKmmOz+dO/VK2T2fnIwyDRpquEKU9znk=",
             "BaseHookName": "OnMlrsFire",
             "HookCategory": "Vehicle"
           }
@@ -16578,7 +16499,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 34,
+            "InjectionIndex": 41,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -16593,7 +16514,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "rLC6bm2DQj6o2IX1jEfjYKnGHQTVPPwIz6hX4Wi44HA=",
+            "MSILHash": "wYUaW/Fef1KmBdYSljVy8iTRT/5oew+WfzCiJ/MSKtU=",
             "HookCategory": "Vehicle"
           }
         },
@@ -16651,7 +16572,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 50,
+            "InjectionIndex": 54,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": " l4, l5, a0.player",
@@ -16669,14 +16590,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "aetWyNpISYcq/17pmW0q+HpRczmZWtvR39s8caaRylI=",
+            "MSILHash": "4fot8jMv5n4B0ND2Tz+8EpbCogvi9mqv7wR/gs5SkWk=",
             "HookCategory": "Crafting"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 110,
+            "InjectionIndex": 113,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": " l4, l5, a0.player",
@@ -16694,7 +16615,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "aetWyNpISYcq/17pmW0q+HpRczmZWtvR39s8caaRylI=",
+            "MSILHash": "4fot8jMv5n4B0ND2Tz+8EpbCogvi9mqv7wR/gs5SkWk=",
             "BaseHookName": "OnEntityReskin",
             "HookCategory": "Crafting"
           }
@@ -16849,7 +16770,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "vhdM5IaQxcchS7+f/HPu9V4s3Bc/Rl+xQON+5vUq0CI=",
+            "MSILHash": "PaXnaU9RJq9AfLEzLA+xId8FGqJMIuqHPf3LGaIp+Ns=",
             "HookCategory": "Entity"
           }
         },
@@ -16910,7 +16831,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 47,
+            "InjectionIndex": 55,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
@@ -16928,14 +16849,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "azZTTQDDYyiv38no2MlXgJKGZD3NWTe8WvrNhOltUBw=",
+            "MSILHash": "J945KQ8bcjkVMkyRse3Sj21MzKmvpqK/Tbjww/n2a7k=",
             "HookCategory": "Weapon"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 23,
+            "InjectionIndex": 31,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -16950,14 +16871,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Xi6RV7gakPE9PjbttJwFuA7t/IKqfy/YT5GIemcZ2I8=",
+            "MSILHash": "4tVQgaqSWiOEkBKZ4SmUIaFU1s4jW9pM39YqG6U6IEI=",
             "HookCategory": "Weapon"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 93,
+            "InjectionIndex": 95,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l5, l1, l0, l2",
@@ -16975,14 +16896,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "34GB57+i2k1eYwtxNxgNk2mJGjCBJEh9ucpbQDS2VJI=",
+            "MSILHash": "D7gNOzP9xe6OtZpwiPTF0iN+JKlhgVW218g9R7mrHHc=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 230,
+            "InjectionIndex": 232,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l5, l1, l0, l2",
@@ -17000,7 +16921,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "34GB57+i2k1eYwtxNxgNk2mJGjCBJEh9ucpbQDS2VJI=",
+            "MSILHash": "D7gNOzP9xe6OtZpwiPTF0iN+JKlhgVW218g9R7mrHHc=",
             "BaseHookName": "OnPhotoCapture",
             "HookCategory": "Entity"
           }
@@ -17084,7 +17005,7 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 31,
+            "InjectionIndex": 36,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -17123,7 +17044,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "0wb4Vlitr5ajWgeBPb7WRR1NCbvs9ZTvn0BKw6SGdIo=",
+            "MSILHash": "08EQ/imNGgII7JGpRDChKKQCn67V6DJ/Dc7ttecOnDM=",
             "HookCategory": "Vehicle"
           }
         },
@@ -17227,14 +17148,14 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "UK6CcotBKO4SJ2MkvZyyb67ScdxiR6c54FyqQVK38w4=",
+            "MSILHash": "NTfgGu7WZz19SUPftq6PBJj5dmAFglpeYKECaAusi6g=",
             "HookCategory": "Seasonal"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 179,
+            "InjectionIndex": 181,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "ArgumentString": "",
@@ -17252,7 +17173,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "UK6CcotBKO4SJ2MkvZyyb67ScdxiR6c54FyqQVK38w4=",
+            "MSILHash": "NTfgGu7WZz19SUPftq6PBJj5dmAFglpeYKECaAusi6g=",
             "BaseHookName": "OnAdventGiftAward",
             "HookCategory": "Seasonal"
           }
@@ -17386,7 +17307,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "XZyzOW+bMw1xmjFZgnK9+3hi+U0AWpjhrmKVZkeZx0c=",
+            "MSILHash": "ztSdepOqUzMvbHmWuR5Ta9aaTYDqbX2uFLaEl+rD9r0=",
             "BaseHookName": "OnItemRecycle [2]",
             "HookCategory": "Item"
           }
@@ -17438,7 +17359,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "O3tjxyeCkfLmc35TO5xe3JXKD/8AUc/BKYu3c9WT+ws=",
+            "MSILHash": "+44PdFzl/QNAXBaAN9MfJEfX7askzOH0fXoLGpQiDgQ=",
             "HookCategory": "Vehicle"
           }
         },
@@ -17463,14 +17384,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "pS4fzXnB6XYv8T2EV5eAP5Xkr9Q00M1OnTVijhw0O7A=",
+            "MSILHash": "XIZas76MWv3/hLXAw4ijntO631J9jf6ouR/DL5sedAU=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 83,
+            "InjectionIndex": 91,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, l5",
@@ -17488,14 +17409,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "VD99NXL9IkFIuxVVeMrUAwnH8CrDrSZQXGZ4fo3kQH4=",
+            "MSILHash": "lf1E5quqZch0VK6/luq/7XvFFfxc4P2NE6FUeZCUUgg=",
             "HookCategory": "Crafting"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 11,
+            "InjectionIndex": 12,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0, a0.player",
@@ -17513,7 +17434,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "kQmwopmLrE4D6LUNguVnda6232Jdx19ECkbVo0K1s0E=",
+            "MSILHash": "zY53Ydj7izEihNRod2fUGBKjs1//D213hQfxZX6Ii1w=",
             "HookCategory": "Structure"
           }
         },
@@ -17536,7 +17457,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Ndghnfz9RpcmrcIsjDuFt46MWyAknBcd+No1GdjSD90=",
+            "MSILHash": "kEII6LIjani1Ky7h9rA2SoYly51lYgmw2GjxvU7JPkI=",
             "HookCategory": "Weapon"
           }
         },
@@ -17847,7 +17768,7 @@
                 "UnityEngine.Vector3"
               ]
             },
-            "MSILHash": "6I9f4+ms6h36dU1fpcjxdma0TUIzUK9CJ4pCduZMT/4=",
+            "MSILHash": "462BVrNV1n4qqtJNQebJB1lDqqCsEqRof29z7N2I5/U=",
             "HookCategory": "Resource"
           }
         },
@@ -17895,14 +17816,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "igp+5AmFVmRY74ctSp6OIhKQpe78Xay2N/Bxc6oAZJw=",
+            "MSILHash": "Kkvx9DXgj1F68PKy0PZl82ttAzarb4rW69pGJqOcDac=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 37,
+            "InjectionIndex": 45,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -17917,7 +17838,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "igp+5AmFVmRY74ctSp6OIhKQpe78Xay2N/Bxc6oAZJw=",
+            "MSILHash": "Kkvx9DXgj1F68PKy0PZl82ttAzarb4rW69pGJqOcDac=",
             "BaseHookName": "OnOvenStart",
             "HookCategory": "Entity"
           }
@@ -18118,7 +18039,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "JIqY/47RZdp4m12a/vqTOAOI+fWOLn0DEhSmEj5Yshc=",
+            "MSILHash": "SCicEPJTBi1SOeaTXVtvpd95LisYoE0zkRRsunCwKD4=",
             "HookCategory": "Player"
           }
         },
@@ -18201,7 +18122,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "17XiCBpT6deK4LBzcp46ve3/NUymZM6PGptI+IDRaHc=",
+            "MSILHash": "ZMH5nSbSbKYDW09Cv7ihkujTtV6JSNYU1tmNAt/tO8A=",
             "HookCategory": "Player"
           }
         },
@@ -18300,14 +18221,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "Bb63Ic+rcAlgPSitfvpCDFhYKhAvKlpZz0lchDIA/dw=",
+            "MSILHash": "BRuzEIenZVJpqKGiCSeEsIsYXjZBt9W+xJvC/yrk95c=",
             "HookCategory": "Industrial"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 32,
+            "InjectionIndex": 38,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this,a1",
@@ -18326,7 +18247,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "DmCDxDoSW5Q9I8alhw+1h2SI1/s7I6Paxl0pHypRl88=",
+            "MSILHash": "nr7jVgtiyQawV0IITDMQ7F92FF71raKCHvmqc8xCiJI=",
             "HookCategory": "Vehicle"
           }
         },
@@ -18409,7 +18330,7 @@
               {
                 "OpCode": "ble",
                 "OpType": "Instruction",
-                "Operand": 128
+                "Operand": 130
               }
             ],
             "HookTypeName": "Modify",
@@ -18427,7 +18348,7 @@
                 "ItemContainer"
               ]
             },
-            "MSILHash": "ppOnBjdLMm6frGtued1x7yRN27kNpXpL0KTBhxEmi5c=",
+            "MSILHash": "2YonPObQZHATyveltfySpbV5n90Gwu5t9S5oc05wJ80=",
             "BaseHookName": "OnBonusItemDropped",
             "HookCategory": "Item"
           }
@@ -18441,7 +18362,7 @@
               {
                 "OpCode": "brfalse",
                 "OpType": "Instruction",
-                "Operand": 128
+                "Operand": 130
               }
             ],
             "HookTypeName": "Modify",
@@ -18459,7 +18380,7 @@
                 "ItemContainer"
               ]
             },
-            "MSILHash": "ppOnBjdLMm6frGtued1x7yRN27kNpXpL0KTBhxEmi5c=",
+            "MSILHash": "2YonPObQZHATyveltfySpbV5n90Gwu5t9S5oc05wJ80=",
             "BaseHookName": "OnBonusItemDropped [patch 1]",
             "HookCategory": "Item"
           }
@@ -18473,7 +18394,7 @@
               {
                 "OpCode": "ble_un",
                 "OpType": "Instruction",
-                "Operand": 128
+                "Operand": 130
               }
             ],
             "HookTypeName": "Modify",
@@ -18491,7 +18412,7 @@
                 "ItemContainer"
               ]
             },
-            "MSILHash": "ppOnBjdLMm6frGtued1x7yRN27kNpXpL0KTBhxEmi5c=",
+            "MSILHash": "2YonPObQZHATyveltfySpbV5n90Gwu5t9S5oc05wJ80=",
             "BaseHookName": "OnBonusItemDropped [patch 2]",
             "HookCategory": "Item"
           }
@@ -18505,7 +18426,7 @@
               {
                 "OpCode": "ble_s",
                 "OpType": "Instruction",
-                "Operand": 128
+                "Operand": 130
               }
             ],
             "HookTypeName": "Modify",
@@ -18523,7 +18444,7 @@
                 "ItemContainer"
               ]
             },
-            "MSILHash": "ppOnBjdLMm6frGtued1x7yRN27kNpXpL0KTBhxEmi5c=",
+            "MSILHash": "2YonPObQZHATyveltfySpbV5n90Gwu5t9S5oc05wJ80=",
             "BaseHookName": "OnBonusItemDropped [patch 3]",
             "HookCategory": "Item"
           }
@@ -18531,13 +18452,13 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 96,
+            "InjectionIndex": 98,
             "RemoveCount": 1,
             "Instructions": [
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 128
+                "Operand": 130
               }
             ],
             "HookTypeName": "Modify",
@@ -18555,7 +18476,7 @@
                 "ItemContainer"
               ]
             },
-            "MSILHash": "ppOnBjdLMm6frGtued1x7yRN27kNpXpL0KTBhxEmi5c=",
+            "MSILHash": "2YonPObQZHATyveltfySpbV5n90Gwu5t9S5oc05wJ80=",
             "BaseHookName": "OnBonusItemDropped [patch 4]",
             "HookCategory": "Item"
           }
@@ -18660,7 +18581,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 93,
+            "InjectionIndex": 81,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -18678,7 +18599,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "eAbmEplewLKmKf/TsmeFjK1q6KwIaP7+0gRfTI1PicY=",
+            "MSILHash": "b92j8R6TrNm9rUutQEd+yYfz+egOGwD/kt6XzZz+MJs=",
             "HookCategory": "Entity"
           }
         },
@@ -18693,7 +18614,7 @@
             "Name": "IOnPlayerChat",
             "HookName": "IOnPlayerChat",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ConVar.Chat/<sayAs>d__19",
+            "TypeName": "ConVar.Chat/<sayAs>d__22",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -18701,7 +18622,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "dXWt6giISBqBSrbuvJ1dwXq7Q9S+UW7BLH0BM6j8lok=",
+            "MSILHash": "2T83wNrrf8oqZTZCoMD0R50mTdHNJPZN2gH2pg5MNLM=",
             "HookCategory": "Player"
           }
         },
@@ -18721,7 +18642,7 @@
             "Name": "IOnPlayerChat[patch]",
             "HookName": "IOnPlayerChat[patch]",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ConVar.Chat/<sayAs>d__19",
+            "TypeName": "ConVar.Chat/<sayAs>d__22",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -18729,7 +18650,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "dXWt6giISBqBSrbuvJ1dwXq7Q9S+UW7BLH0BM6j8lok=",
+            "MSILHash": "2T83wNrrf8oqZTZCoMD0R50mTdHNJPZN2gH2pg5MNLM=",
             "BaseHookName": "IOnPlayerChat",
             "HookCategory": "Player"
           }
@@ -18750,7 +18671,7 @@
             "Name": "IOnPlayerChat[patch2]",
             "HookName": "IOnPlayerChat[patch2]",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "ConVar.Chat/<sayAs>d__19",
+            "TypeName": "ConVar.Chat/<sayAs>d__22",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -18758,7 +18679,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "dXWt6giISBqBSrbuvJ1dwXq7Q9S+UW7BLH0BM6j8lok=",
+            "MSILHash": "2T83wNrrf8oqZTZCoMD0R50mTdHNJPZN2gH2pg5MNLM=",
             "BaseHookName": "IOnPlayerChat[patch]",
             "HookCategory": "Player"
           }
@@ -18766,7 +18687,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 114,
+            "InjectionIndex": 122,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.player, this, l0, l1",
@@ -18784,7 +18705,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "qZxGPdSmxfLlJBvSWlvX8SUxZ3sHTh7WdWNkOlIv/l8=",
+            "MSILHash": "nww216mftVhGo+j+4ImTru+gA7UJBByzIhmlnhYDxhQ=",
             "BaseHookName": "CanChangeCode",
             "HookCategory": "Structure"
           }
@@ -18808,10 +18729,11 @@
               "ReturnType": "System.Boolean",
               "Parameters": [
                 "IAmmoContainer",
-                "System.Int32"
+                "System.Int32",
+                "System.Boolean"
               ]
             },
-            "MSILHash": "3jylGFoHAGSFQm4LPYlwtk99Lw7wMUWxoK5xxgrwx6Y=",
+            "MSILHash": "0Rhb5jVpHavOjNhRblZfUvmHV9678L30lXWmbdXtxro=",
             "HookCategory": "Weapon"
           }
         },
@@ -18840,7 +18762,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "zYiTrVW2W6CBgWeyw5kRW9L/vtkVwaj6wmXdyQUMxkg=",
+            "MSILHash": "ApWQAkEuUwl5+0cYI0AW/0VBGgSzz+EjjrNRGvX/A2A=",
             "HookCategory": "Item"
           }
         },
@@ -18869,7 +18791,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "zYiTrVW2W6CBgWeyw5kRW9L/vtkVwaj6wmXdyQUMxkg=",
+            "MSILHash": "ApWQAkEuUwl5+0cYI0AW/0VBGgSzz+EjjrNRGvX/A2A=",
             "BaseHookName": "OnRackedWeaponMount",
             "HookCategory": "Item"
           }
@@ -18898,7 +18820,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "yvXHr9/eMEjmJLl7T48aqiMfccjX5nOHRW0FpeMK2ps=",
+            "MSILHash": "AD/giC9s0U5Jgs+D2u8K+oAxYH+clLrB3UBqlicU7n0=",
             "HookCategory": "Item"
           }
         },
@@ -18926,7 +18848,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "yvXHr9/eMEjmJLl7T48aqiMfccjX5nOHRW0FpeMK2ps=",
+            "MSILHash": "AD/giC9s0U5Jgs+D2u8K+oAxYH+clLrB3UBqlicU7n0=",
             "BaseHookName": "OnRackedWeaponSwap",
             "HookCategory": "Item"
           }
@@ -19064,14 +18986,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "kKkfnQdedvVsKHzzQG0pf+u3y5Y7S43POkBSlUOwbS4=",
+            "MSILHash": "SIXPvVy5CVz1WAESNMxZNguAVBmQbOX1qpZRaPkbaqc=",
             "HookCategory": "Item"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 155,
+            "InjectionIndex": 158,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l4, l7, l0, this",
@@ -19089,7 +19011,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "kKkfnQdedvVsKHzzQG0pf+u3y5Y7S43POkBSlUOwbS4=",
+            "MSILHash": "SIXPvVy5CVz1WAESNMxZNguAVBmQbOX1qpZRaPkbaqc=",
             "BaseHookName": "OnRackedWeaponLoad",
             "HookCategory": "Item"
           }
@@ -19097,7 +19019,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 6,
+            "InjectionIndex": 5,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "HookTypeName": "Simple",
@@ -19115,7 +19037,7 @@
                 "BaseNetworkable/LoadInfo"
               ]
             },
-            "MSILHash": "FwNZxo+qwzmSg8CV/C4AeCqdMlORrFZ7MhV0An0YZCo=",
+            "MSILHash": "A6/fuNRYwwMheaiG4qz4VgWA49GcwihZL9V/8lmv1+8=",
             "HookCategory": "Entity"
           }
         },
@@ -19321,7 +19243,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "FDZ5inuJoWLeCUKB+RG5+ISac1suCSQcC2d2uGcQZgY=",
+            "MSILHash": "S0t99QYl1tx94rUNBaoxvjo9JynRWAa/SF5lYC7Z+MU=",
             "HookCategory": "Seasonal"
           }
         },
@@ -19350,7 +19272,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 41,
+            "InjectionIndex": 44,
             "ReturnBehavior": 4,
             "ArgumentBehavior": 4,
             "ArgumentString": "this",
@@ -19366,7 +19288,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "85Cu+7lwfXnxR7cSRM2iNujZ489qBSywpeFalyTn1pE=",
+            "MSILHash": "/fQGyeE4OTKezKxJpZAIWDjrVQUsqu8YjHdjPD6aBuk=",
             "HookCategory": "Seasonal"
           }
         },
@@ -19391,7 +19313,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "IvIOSNqaSWlaiJJh46bfKb5MFDwTJp4vdvZXNek7anw=",
+            "MSILHash": "9rr/NLjUDNkNfEEmgmVi4fhUYd+4Qf01PU6JKw1ZMRw=",
             "HookCategory": "Entity"
           }
         },
@@ -19533,7 +19455,7 @@
                 "HitInfo"
               ]
             },
-            "MSILHash": "IvIOSNqaSWlaiJJh46bfKb5MFDwTJp4vdvZXNek7anw=",
+            "MSILHash": "9rr/NLjUDNkNfEEmgmVi4fhUYd+4Qf01PU6JKw1ZMRw=",
             "BaseHookName": "OnPatrolHelicopterTakeDamage",
             "HookCategory": "Entity"
           }
@@ -19844,7 +19766,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "K3eiuADbgM2h/GDi5ImhIZ7HkHqBmGGZKEB5ddSqLOo=",
+            "MSILHash": "HaeP7c+vSfrZDBV2oMXaa6oESusH+gqepyD9FL8RJD8=",
             "HookCategory": "NPC"
           }
         },
@@ -19869,14 +19791,14 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "mupBh+1d4vE4nxBw37rVnNJUbnBwuqrTQcHBmN7Xqvw=",
+            "MSILHash": "rYVcPt/mjzeOzrB5cQV4mdudFEKw7OMaG37e3f9rEbw=",
             "HookCategory": "NPC"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 149,
+            "InjectionIndex": 152,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0, l7",
@@ -19898,7 +19820,7 @@
                 "AttackEntity"
               ]
             },
-            "MSILHash": "cQaZ2qyGEY+Tdthx0DRIpVNZOs+TuUIr8fV+ByUOHvM=",
+            "MSILHash": "jiPA6m6faTUJK8WuPtpfLVk251EvGXd5eZaQe1V9sdQ=",
             "BaseHookName": "OnDispenserGather",
             "HookCategory": "Resource"
           }
@@ -19906,10 +19828,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 116,
+            "InjectionIndex": 146,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0, l6",
+            "ArgumentString": "this, a0, l9",
             "HookTypeName": "Simple",
             "Name": "OnCollectiblePickedup",
             "HookName": "OnCollectiblePickedup",
@@ -19925,7 +19847,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "f9FkSjTJPyAnxKlt2DQ+0ku01LBa8w1BZLb5lWlcgYc=",
+            "MSILHash": "qX7MIhuzxl6o51yasoAnr2qfiwmi71EtnXPJN4iW9Es=",
             "BaseHookName": "OnCollectiblePickup",
             "HookCategory": "Resource"
           }
@@ -19933,7 +19855,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 79,
+            "InjectionIndex": 82,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0, l4",
@@ -19953,7 +19875,7 @@
                 "AttackEntity"
               ]
             },
-            "MSILHash": "+3UqbJiQfn/rHLV9XX0/DwzWnzWkIKnSSe5RdzRxaEk=",
+            "MSILHash": "DyptUpp17sVFIM4P81PIXbeDKOI6Ovva3TA9Vkq3xUs=",
             "BaseHookName": "OnDispenserBonus",
             "HookCategory": "Resource"
           }
@@ -20335,7 +20257,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 129,
+            "InjectionIndex": 130,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -20350,14 +20272,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "xshL8w3zu+azKnkoNVotyQrunoEtDrEvSbSt47Vx6AI=",
+            "MSILHash": "KTmWWwRlctaNznEFuuhx+R6xUTkn4gDmzIFchkWcUI8=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 24,
+            "InjectionIndex": 31,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -20372,7 +20294,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "WHkwpz7s/0rjYoShe4fWcKRnfudX4hCeWEru34oyNLs=",
+            "MSILHash": "OcvBDzaW89mD9fNcCRxKEQeglnEdFL/1j1Ymlm44YUQ=",
             "HookCategory": "Entity"
           }
         },
@@ -20428,7 +20350,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 15,
+            "InjectionIndex": 8,
             "ReturnBehavior": 4,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player, l0, l1",
@@ -20446,7 +20368,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "gTPwXew8zXQOD+ZKU3oEodYWdJVIMPl6LzRMFFP14JQ=",
+            "MSILHash": "Y7DE8/7EOtdL6zQeq2Jg9kLQpkQjOFXUO4vi/RjA124=",
             "HookCategory": "Elevator"
           }
         },
@@ -20491,7 +20413,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "VGKuTFBO/6masSQsqA+MWrlBv3O7FHk1t3XdVnXobOU=",
+            "MSILHash": "WQ6JXdymZaLXQBVRYZK3G4O7Wo+XUuDigL+OdHHcNQM=",
             "HookCategory": "Traps"
           }
         },
@@ -20875,14 +20797,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "1PnzvrZHE1aHIp3okEaKFuaoPmIIoICqoXAJ4Z48+FU=",
+            "MSILHash": "B+6xOFH1ycQJjkpByBUEGgniCd45YoElnpSzVStPNuE=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 114,
+            "InjectionIndex": 121,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l1",
@@ -20904,7 +20826,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "uuD2mF/XX46/s3CvDHj2mQZ7kdkl4L8PF7YgvpwsLYk=",
+            "MSILHash": "48Cp+uJIJ7otDETLuNJM0y2Wb+MyZQPx3dj2HQtrEKQ=",
             "HookCategory": "NPC"
           }
         },
@@ -21053,7 +20975,7 @@
               {
                 "OpCode": "br_s",
                 "OpType": "Instruction",
-                "Operand": 56
+                "Operand": 64
               }
             ],
             "HookTypeName": "Modify",
@@ -21070,7 +20992,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "nH4Ej01jPLJZW3rgibRD8IQAo26k07diDhuXA5+we0U=",
+            "MSILHash": "gYtUCFf691Jz6i2BDc44OCosRpQR5++oX/j1UdpNOwk=",
             "BaseHookName": "OnItemSubmit",
             "HookCategory": "Item"
           }
@@ -21247,14 +21169,14 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "mui8lV0CP4MmV5aDF+ljAeR+l+FFpDBlDi6cveOuZes=",
+            "MSILHash": "SSVsYhN1P3sHj/OQcebY8+CxN/SkN7t95k6oIKv3IxM=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 68,
+            "InjectionIndex": 76,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 3,
             "HookTypeName": "Simple",
@@ -21271,7 +21193,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "mui8lV0CP4MmV5aDF+ljAeR+l+FFpDBlDi6cveOuZes=",
+            "MSILHash": "SSVsYhN1P3sHj/OQcebY8+CxN/SkN7t95k6oIKv3IxM=",
             "BaseHookName": "OnFreeableContainerRelease",
             "HookCategory": "Entity"
           }
@@ -21347,7 +21269,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Cjjcn9r1oXW2isizTTcJkqcnaqTQR6nsk2mki6vqHM0=",
+            "MSILHash": "cOOLNX7AofTgn1M+ZjfFVJFAelMDN5mhrGosgslTmOQ=",
             "HookCategory": "Primitive"
           }
         },
@@ -21369,14 +21291,14 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "mxq2YJRNeajNr3uJwGq1Xichxg/wmMeSlS2fg7vm1W0=",
+            "MSILHash": "pDu/THbNOUZwiiC3dtRGPIjKV5+SCd7xu2oKkWUUhKk=",
             "HookCategory": "Animal"
           }
         },
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 41,
+            "InjectionIndex": 43,
             "RemoveCount": 0,
             "Instructions": [
               {
@@ -21400,7 +21322,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "mxq2YJRNeajNr3uJwGq1Xichxg/wmMeSlS2fg7vm1W0=",
+            "MSILHash": "pDu/THbNOUZwiiC3dtRGPIjKV5+SCd7xu2oKkWUUhKk=",
             "BaseHookName": "OnAnimalDungProduce [RidableHorse]",
             "HookCategory": "Animal"
           }
@@ -21408,7 +21330,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 61,
+            "InjectionIndex": 64,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this,l2",
@@ -21424,7 +21346,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "mxq2YJRNeajNr3uJwGq1Xichxg/wmMeSlS2fg7vm1W0=",
+            "MSILHash": "pDu/THbNOUZwiiC3dtRGPIjKV5+SCd7xu2oKkWUUhKk=",
             "BaseHookName": "OnAnimalDungProduced [RidableHorse] [Variable]",
             "HookCategory": "Animal"
           }
@@ -21629,7 +21551,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "il8CauK67gq18SQS95YrtXOIZRk68Qmn9uNEM+gucJo=",
+            "MSILHash": "eYYvKSHLM0T/3eeqWreDMYQCRSEUNJSxxH6kytcsuos=",
             "HookCategory": "Player"
           }
         },
@@ -21644,7 +21566,7 @@
             "Name": "OnFeedbackReported",
             "HookName": "OnFeedbackReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnFeedbackReport>d__756",
+            "TypeName": "BasePlayer/<OnFeedbackReport>d__774",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21652,7 +21574,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "RTSQZ2VjQh3gEyoW72bMDD6dsluFPI+qAJ5fqIq7j5E=",
+            "MSILHash": "zzjaOEMrJzG9AfrE7x5X3KMwNt4b3BDLMvyBie/kKA4=",
             "HookCategory": "Player"
           }
         },
@@ -21666,7 +21588,7 @@
             "Name": "OnFeedbackReported [patch]",
             "HookName": "OnFeedbackReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnFeedbackReport>d__756",
+            "TypeName": "BasePlayer/<OnFeedbackReport>d__774",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21674,7 +21596,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "RTSQZ2VjQh3gEyoW72bMDD6dsluFPI+qAJ5fqIq7j5E=",
+            "MSILHash": "zzjaOEMrJzG9AfrE7x5X3KMwNt4b3BDLMvyBie/kKA4=",
             "BaseHookName": "OnFeedbackReported",
             "HookCategory": "_Patches"
           }
@@ -21690,7 +21612,7 @@
             "Name": "OnPlayerReported",
             "HookName": "OnPlayerReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnPlayerReported>d__755",
+            "TypeName": "BasePlayer/<OnPlayerReported>d__773",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21698,7 +21620,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "EjBz7qQ5KTAG+n95MtNLsJUo4rApqhbOIj+NRttzbaE=",
+            "MSILHash": "3tgvI06smAvofRwsn45CSS8DsRhIWE3gYgY273msH5E=",
             "HookCategory": "Player"
           }
         },
@@ -22147,7 +22069,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "WzrsajIRzhfByVEA6ols9qg4cIsduQLIlbXtIqBKrBw=",
+            "MSILHash": "hLsQoq1PdeO8PPx1SQkUaRkloAtyqEnjMqTAOcnu8jo=",
             "HookCategory": "Entity"
           }
         },
@@ -22368,7 +22290,7 @@
             "Name": "OnDeepSeaOpen",
             "HookName": "OnDeepSeaOpen",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "DeepSeaManager/<OpenDeepSeaAsync>d__73",
+            "TypeName": "DeepSeaManager/<OpenDeepSeaAsync>d__75",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -22376,7 +22298,7 @@
               "ReturnType": "System.Boolean",
               "Parameters": []
             },
-            "MSILHash": "9HjYTPHflKjObAEBHo5SVazlbE9qxh6n4KmVK8r9M9E=",
+            "MSILHash": "T13pGcxTJ0UtqDYZKMM5iWwKniZmMinLuSpZhMG6jzE=",
             "BaseHookName": "OnDeepSeaOpened",
             "HookCategory": "Naval"
           }
@@ -22392,7 +22314,7 @@
             "Name": "OnDeepSeaClose",
             "HookName": "OnDeepSeaClose",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "DeepSeaManager/<CloseDeepSeaAsync>d__75",
+            "TypeName": "DeepSeaManager/<CloseDeepSeaAsync>d__77",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -22400,7 +22322,7 @@
               "ReturnType": "System.Boolean",
               "Parameters": []
             },
-            "MSILHash": "EIuSKMKI6wpfDGnJVH8KT1Bp2BHkfIjmaTkANrsRq+4=",
+            "MSILHash": "Vcm+lI248B4nnmv/qnXGuKhHEJLD79gpXH/SSAz04qI=",
             "BaseHookName": "OnDeepSeaClosed",
             "HookCategory": "Naval"
           }
@@ -22528,7 +22450,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "ho6fI+ocvhKdXbCAnzWyIQnuTfB1vbwqGOG5wXhu5Hc=",
+            "MSILHash": "Eg04JkTwTff+zo2yFo8ekN66pSw8ZYCubBsjJ81xds8=",
             "HookCategory": "Player"
           }
         },
@@ -22554,7 +22476,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "fjX91ul7Rof3wMP5V1tmX1t6oqeTp914qAolo7HWlAs=",
+            "MSILHash": "epqlBmZAk4vllV8i3Njp3edI4KVsNh0ksisYeXcMY3o=",
             "HookCategory": "Player"
           }
         },
@@ -22662,7 +22584,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "omuWTkUmb3CEWHOyev2Lcx3PcO4IR/0/0cqDzzQmfmQ=",
+            "MSILHash": "UYRhz0S7FLHAT18S+HFJSTr3ivw5eIh3dRTQJn/k3aA=",
             "BaseHookName": "OnPlayerAttack [Projectile]",
             "HookCategory": "_Patches"
           }
@@ -22675,7 +22597,7 @@
             "ArgumentBehavior": 2,
             "ArgumentString": "",
             "HookTypeName": "Simple",
-            "Name": "OnPlayerActionBroadcast",
+            "Name": "OnPlayerActionBroadcast [2]",
             "HookName": "OnPlayerActionBroadcast",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ConVar.Chat",
@@ -22742,7 +22664,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "X4aLVdtJ/4WGPu8uMJlIX6LihcCicnJn+J4+0wyLxRM=",
+            "MSILHash": "cj4fUapZEWh9KViZPHJ3R1Oovgtu+gCBpKDZLrfB/3c=",
             "HookCategory": "Apartments"
           }
         },
@@ -23121,6 +23043,31 @@
             "MSILHash": "rqiQyzPB9vXipI8H5R1MTzuOdn1ZYtM9NQKjGA9jy1M=",
             "BaseHookName": "OnRentableShopBreakInComplete",
             "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 19,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerVoice",
+            "HookName": "OnPlayerVoice",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ServerMgr",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "OnPlayerVoice",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "Network.Message"
+              ]
+            },
+            "MSILHash": "3uqA3b2tYX3srmHur5SkdRQoJfCuPSEpEOm1SnfzgK8=",
+            "HookCategory": "Player"
           }
         }
       ],
@@ -31437,27 +31384,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "BasePlayer::RefreshColliderSize",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "BasePlayer",
-          "Type": 1,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "RefreshColliderSize",
-            "FullTypeName": "System.Void",
-            "Parameters": [
-              "System.Boolean"
-            ]
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "BasePlayer::_lastSetName",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BasePlayer",
@@ -35259,44 +35185,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "ModularCarSeat::leftFootIKPos",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCarSeat",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "leftFootIKPos",
-            "FullTypeName": "UnityEngine.Vector3 ModularCarSeat::leftFootIKPos",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
-          "Name": "ModularCarSeat::rightFootIKPos",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ModularCarSeat",
-          "Type": 0,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "rightFootIKPos",
-            "FullTypeName": "UnityEngine.Vector3 ModularCarSeat::rightFootIKPos",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "TrainEngine::buttonHoldTime",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "TrainEngine",
@@ -36902,26 +36790,6 @@
             "Parameters": []
           },
           "MSILHash": "P0+oXGq1MOrCmJ7Ad6TPAb4phvrlufGKCElFaWF/gpQ="
-        },
-        {
-          "Name": "ElevatorStatic::LiftRecentlyArrived",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "ElevatorStatic",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "LiftRecentlyArrived",
-            "FullTypeName": "BaseEntity/Flags ElevatorStatic::LiftRecentlyArrived",
-            "Parameters": []
-          },
-          "MSILHash": ""
         },
         {
           "Name": "BasePlayer::activeTelephone",
@@ -50692,26 +50560,6 @@
           "MSILHash": ""
         },
         {
-          "Name": "Locker::maxGearSets",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "Locker",
-          "Type": 0,
-          "TargetExposure": [
-            2,
-            4
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              0
-            ],
-            "Name": "maxGearSets",
-            "FullTypeName": "System.Int32 Locker::maxGearSets",
-            "Parameters": []
-          },
-          "MSILHash": ""
-        },
-        {
           "Name": "Locker::setSize",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "Locker",
@@ -53836,7 +53684,7 @@
             "Name": "OnRconConnection [web]",
             "HookName": "OnRconConnection",
             "AssemblyName": "Facepunch.Rcon.dll",
-            "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass30_0",
+            "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass27_0",
             "Flagged": false,
             "Signature": {
               "Exposure": 3,
@@ -53846,7 +53694,7 @@
                 "Fleck.IWebSocketConnection"
               ]
             },
-            "MSILHash": "sPiJlvSqKkRwQYDnFBjHyWV+qiVDnjhm/gUtQb90YJ0=",
+            "MSILHash": "rhevQla4ZSbSM7n9zfC05Sx5nNknvkP+YEG1QAD7nWk=",
             "HookCategory": "Server"
           }
         },
@@ -53866,7 +53714,7 @@
             "Name": "OnRconConnection [web, patch]",
             "HookName": "OnRconConnection",
             "AssemblyName": "Facepunch.Rcon.dll",
-            "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass30_0",
+            "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass27_0",
             "Flagged": false,
             "Signature": {
               "Exposure": 3,
@@ -53876,7 +53724,7 @@
                 "Fleck.IWebSocketConnection"
               ]
             },
-            "MSILHash": "sPiJlvSqKkRwQYDnFBjHyWV+qiVDnjhm/gUtQb90YJ0=",
+            "MSILHash": "rhevQla4ZSbSM7n9zfC05Sx5nNknvkP+YEG1QAD7nWk=",
             "BaseHookName": "OnRconConnection [web]",
             "HookCategory": "_Patches"
           }
@@ -53892,7 +53740,7 @@
             "Name": "IOnRconMessage",
             "HookName": "IOnRconMessage",
             "AssemblyName": "Facepunch.Rcon.dll",
-            "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass30_1",
+            "TypeName": "Facepunch.Rcon.Listener/<>c__DisplayClass27_1",
             "Flagged": false,
             "Signature": {
               "Exposure": 3,
@@ -53902,7 +53750,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "Up6g5UHFXSOAlfMtVcyAPuVXXqFjdK9AV7X6K36iEak=",
+            "MSILHash": "TKz9mgZar2eHDqwcT4e6jgBTFp8pEduQE6Uq7JURE9U=",
             "HookCategory": "Server"
           }
         }
@@ -53916,7 +53764,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 20,
+            "InjectionIndex": 17,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "a1, a0",
@@ -53935,7 +53783,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "hZJU8yQzs6bx5cOEtawWDqHrs36rX9EmylIEjlHLtvw=",
+            "MSILHash": "6IMUWqPpWISUbx0Jg2ksUSSJh/b6J977mqnwWwgWgzs=",
             "HookCategory": "Player"
           }
         },
@@ -54249,7 +54097,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 199,
+            "InjectionIndex": 211,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l3, this.leaderSteamId",
@@ -54265,7 +54113,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "635jwYcCfWiJfWKJFGaT8v7zfRJT0VND5GqMKxQMUVE=",
+            "MSILHash": "2fryvtABc9jbiXMuMDwBwrurrCfPQRd0jcmtbyO8x/I=",
             "HookCategory": "Clan"
           }
         },
@@ -54313,7 +54161,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "62/QTxOyuPZPfI+WHzTtDKG8nTkO2eUYFFmMnQlmZa0=",
+            "MSILHash": "+xcUpMTIpm8YfEKKYNCJVyb8nJrxMXN963eo3dwUqQg=",
             "HookCategory": "Clan"
           }
         },
@@ -54336,7 +54184,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "62/QTxOyuPZPfI+WHzTtDKG8nTkO2eUYFFmMnQlmZa0=",
+            "MSILHash": "+xcUpMTIpm8YfEKKYNCJVyb8nJrxMXN963eo3dwUqQg=",
             "BaseHookName": "OnClanMemberLeft",
             "HookCategory": "Clan"
           }

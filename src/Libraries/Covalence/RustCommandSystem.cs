@@ -381,7 +381,7 @@ namespace Oxide.Game.Rust.Libraries.Covalence
                 return new string[0];
             }
 
-            return arg.FullString.SplitQuotesStrings();
+            return arg.FullString.ToString().SplitQuotesStrings();
         }
 
         #endregion Helpers

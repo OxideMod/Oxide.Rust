@@ -7388,7 +7388,8 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 1031
+                "Operand": 7,
+                "ReferencesNewInstruction": true
               },
               {
                 "OpCode": "ldloc_0",
@@ -7410,7 +7411,8 @@
               {
                 "OpCode": "br_s",
                 "OpType": "Instruction",
-                "Operand": 1035
+                "Operand": 11,
+                "ReferencesNewInstruction": true
               },
               {
                 "OpCode": "ldloc_0",
@@ -7463,7 +7465,8 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 1045
+                "Operand": 21,
+                "ReferencesNewInstruction": true
               },
               {
                 "OpCode": "ldc_i4_0",
@@ -10459,7 +10462,8 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 1038
+                "Operand": 14,
+                "ReferencesNewInstruction": true
               },
               {
                 "OpCode": "ldloc_1",
@@ -10473,7 +10477,8 @@
               {
                 "OpCode": "br_s",
                 "OpType": "Instruction",
-                "Operand": 1050
+                "Operand": 26,
+                "ReferencesNewInstruction": true
               },
               {
                 "OpCode": "ldloc_s",
@@ -10503,7 +10508,8 @@
               {
                 "OpCode": "brfalse_s",
                 "OpType": "Instruction",
-                "Operand": 1046
+                "Operand": 22,
+                "ReferencesNewInstruction": true
               },
               {
                 "OpCode": "ldloc_s",
@@ -15687,7 +15693,8 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 1032
+                "Operand": 8,
+                "ReferencesNewInstruction": true
               },
               {
                 "OpCode": "ldstr",

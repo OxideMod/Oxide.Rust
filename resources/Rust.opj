@@ -530,10 +530,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 1895,
+            "InjectionIndex": 1847,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l2",
+            "ArgumentString": "this, l0.hitInfo",
             "HookTypeName": "Simple",
             "Name": "OnPlayerAttack [Projectile]",
             "HookName": "OnPlayerAttack",
@@ -548,7 +548,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "DCk38D8bnJ80CIfgWJ3Yu1n/UOez2Xf0qwF4eB9MEGQ=",
+            "MSILHash": "omuWTkUmb3CEWHOyev2Lcx3PcO4IR/0/0cqDzzQmfmQ=",
             "HookCategory": "Player"
           }
         },
@@ -22609,18 +22609,18 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 1900,
+            "InjectionIndex": 1853,
             "RemoveCount": 2,
             "Instructions": [
               {
                 "OpCode": "beq_s",
                 "OpType": "Instruction",
-                "Operand": 1902
+                "Operand": 1855
               },
               {
                 "OpCode": "leave",
                 "OpType": "Instruction",
-                "Operand": 2022
+                "Operand": 2005
               }
             ],
             "HookTypeName": "Modify",
@@ -22637,7 +22637,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "DCk38D8bnJ80CIfgWJ3Yu1n/UOez2Xf0qwF4eB9MEGQ=",
+            "MSILHash": "omuWTkUmb3CEWHOyev2Lcx3PcO4IR/0/0cqDzzQmfmQ=",
             "BaseHookName": "OnPlayerAttack [Projectile]",
             "HookCategory": "_Patches"
           }

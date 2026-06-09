@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Project>
   <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
   <PropertyGroup>
@@ -20,7 +20,7 @@
     <GameExe>RustDedicated.exe;RustDedicated</GameExe>
     <ManagedDir>RustDedicated_Data/Managed</ManagedDir>
     <NoWarn>NU1701</NoWarn>
-    <GitBranch></GitBranch>
+    <GitBranch />
     <ReferencesOverride>regex:Managed/(.*).dll</ReferencesOverride>
   </PropertyGroup>
   <ItemGroup>
@@ -59,7 +59,9 @@
     <None Remove="Bundle\**; dependencies\**; *.config; *.opj" />
   </ItemGroup>
   <ItemGroup>
-    <PatchedFiles Include="$(TargetDir)\Assembly-CSharp.dll; $(TargetDir)\Facepunch.Console.dll; $(TargetDir)\Facepunch.Network.dll; $(TargetDir)\Facepunch.Rcon.dll; $(TargetDir)\Facepunch.Sqlite.dll; $(TargetDir)\Facepunch.UnityEngine.dll; $(TargetDir)\Rust.Clans.Local.dll" />
+    <PatchedFiles
+      Include="$(TargetDir)\Assembly-CSharp.dll; $(TargetDir)\Facepunch.Console.dll; $(TargetDir)\Facepunch.Network.dll; $(TargetDir)\Facepunch.Rcon.dll; $(TargetDir)\Facepunch.Sqlite.dll; $(TargetDir)\Facepunch.UnityEngine.dll; $(TargetDir)\Rust.Clans.Local.dll"
+    />
   </ItemGroup>
   <Target Name="AddGitBranchMeta" BeforeTargets="CoreGenerateAssemblyInfo">
     <Exec Command="git name-rev --name-only HEAD" WorkingDirectory="$(MSBuildProjectDirectory)" ConsoleToMSBuild="True">

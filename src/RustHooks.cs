@@ -29,7 +29,6 @@ namespace Oxide.Game.Rust
         internal static string ipPattern = @":{1}[0-9]{1}\d*";
 
         private static readonly DateTime Eoy = new DateTime(2026, 12, 31);
-        private static readonly DateTime OnEntityReskinDeprecationDate = new DateTime(2026, 6, 30);
 
         #region Entity Hooks
 
@@ -699,19 +698,6 @@ namespace Oxide.Game.Rust
 
         #region Deprecated Hooks
 
-        [HookMethod("OnEntityReskin")]
-        private object OnEntityReskin(BaseEntity entity, ulong skinId, BasePlayer player)
-        {
-            ItemSkinDirectory.Skin skin = ItemSkinDirectory.FindByInventoryDefinitionId((int)skinId);
-            return Interface.Oxide.CallDeprecatedHook("OnEntityReskin", "OnEntityReskin(BaseEntity entity, ulong skinId, BasePlayer player)", OnEntityReskinDeprecationDate, entity, skin, player);
-        }
-
-        [HookMethod("OnEntityReskinned")]
-        private void OnEntityReskinned(BaseEntity entity, ulong skinId, BasePlayer player)
-        {
-            ItemSkinDirectory.Skin skin = ItemSkinDirectory.FindByInventoryDefinitionId((int)skinId);
-            Interface.Oxide.CallDeprecatedHook("OnEntityReskinned", "OnEntityReskinned(BaseEntity entity, ulong skinId, BasePlayer player)", OnEntityReskinDeprecationDate, entity, skin, player);
-        }
         #endregion
     }
 }

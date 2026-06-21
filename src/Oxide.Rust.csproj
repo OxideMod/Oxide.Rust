@@ -41,7 +41,10 @@
     <Reference Include="Facepunch.Unity" />
     <Reference Include="Facepunch.UnityEngine" />
     <Reference Include="Fleck" />
-    <Reference Include="mscorlib" />
+    <Reference Include="mscorlib">
+      <HintPath>Dependencies\$(TargetPlatform)\$(ManagedDir)\mscorlib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <Reference Include="Rust.Clans" />
     <Reference Include="Rust.Clans.Local" />
     <Reference Include="Rust.Data" />

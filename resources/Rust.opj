@@ -2200,6 +2200,31 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 2,
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerActionBroadcast",
+            "HookName": "OnPlayerActionBroadcast",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Chat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "BroadcastPlayerAction",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.String"
+              ]
+            },
+            "MSILHash": "eJJihqmthzshS2Zz1qXkliFLz7lQNBGnHsG+xaXzfEU=",
+            "HookCategory": "Server"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 16,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -22640,6 +22665,34 @@
             "MSILHash": "omuWTkUmb3CEWHOyev2Lcx3PcO4IR/0/0cqDzzQmfmQ=",
             "BaseHookName": "OnPlayerAttack [Projectile]",
             "HookCategory": "_Patches"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 2,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerActionBroadcast",
+            "HookName": "OnPlayerActionBroadcast",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ConVar.Chat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "BroadcastPlayerAction",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "System.String",
+                "BasePlayer",
+                "System.String"
+              ]
+            },
+            "MSILHash": "OWzLzbEhW6i82D0RfFhxC3dynCd4Gh/n0woDACSEugA=",
+            "HookCategory": "Server"
           }
         }
       ],

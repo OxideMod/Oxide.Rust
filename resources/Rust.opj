@@ -22694,6 +22694,434 @@
             "MSILHash": "OWzLzbEhW6i82D0RfFhxC3dynCd4Gh/n0woDACSEugA=",
             "HookCategory": "Server"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 33,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnEngineStarted [MotorRowboat]",
+            "HookName": "OnEngineStarted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MotorRowboat",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "EngineToggle",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "5ImmnGPGpadwo0qmuhWmwYBoF/iOnCXDHaULocCpuAU=",
+            "BaseHookName": "OnEngineStart [MotorRowboat]",
+            "HookCategory": "Vehicle"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnRentableShopClose",
+            "HookName": "OnRentableShopClose",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RentableShop",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CloseStore",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "X4aLVdtJ/4WGPu8uMJlIX6LihcCicnJn+J4+0wyLxRM=",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 94,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "",
+            "HookTypeName": "Simple",
+            "Name": "OnRentableShopClosed",
+            "HookName": "OnRentableShopClosed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RentableShop",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnShopClosed",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.Boolean"
+              ]
+            },
+            "MSILHash": "KRTZLhCpeBWF6efoTeSiN2UqGEXuCDd9t8iZSJ3KIQc=",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 144,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "OnRentableShopOpened",
+            "HookName": "OnRentableShopOpened",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RentableShop",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnShopOpened",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vetht2GAjIDI9jdGOgt+OY7sp4qSJHN0GVpPdxZW8Qk=",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnRentableShopBreakInComplete",
+            "HookName": "OnRentableShopBreakInComplete",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RentableShop",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CompleteBreakIn",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "rqiQyzPB9vXipI8H5R1MTzuOdn1ZYtM9NQKjGA9jy1M=",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 29,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnApartmentRoomBreakInComplete",
+            "HookName": "OnApartmentRoomBreakInComplete",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ApartmentDoor",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CompleteBreakIn",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "ImCAhINsicByhooIDIU722EwO4Id/RsHmC0js3n53s4=",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 21,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": " l0, a0, a1, this",
+            "HookTypeName": "Simple",
+            "Name": "OnApartmentRoomUpgrade",
+            "HookName": "OnApartmentRoomUpgrade",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ApartmentBuilding",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryUpgradeRoom",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "ApartmentSize"
+              ]
+            },
+            "MSILHash": "vdbTDSKfUh1tyKNOGjf3g+VVsrurspMZhL39HvU5o0Y=",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 6,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0.player",
+            "HookTypeName": "Simple",
+            "Name": "OnRentableShopOpen",
+            "HookName": "OnRentableShopOpen",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RentableShop",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Server_OpenStore",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "n1jc6I183TSHuij/rAgne9naFR7UVn5HJf29aon866w=",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 10,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldstr",
+                "OpType": "String",
+                "Operand": "OnApartmentRoomCheckout"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "call",
+                "OpType": "Method",
+                "Operand": "Oxide.Core|Oxide.Core.Interface|CallHook(System.String,System.Object,System.Object,System.Object)"
+              },
+              {
+                "OpCode": "stloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 10
+              },
+              {
+                "OpCode": "ldc_i4_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ret",
+                "OpType": "None"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnApartmentRoomCheckout",
+            "HookName": "OnApartmentRoomCheckout",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ApartmentBuilding",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryCheckout",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "at1W/7jR98tlwwFvJSUpl18tW6vizsYeIHBsteNGgGo=",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnApartmentRoomCheckedout",
+            "HookName": "OnApartmentRoomCheckedout",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ApartmentBuilding",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryCheckout",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "at1W/7jR98tlwwFvJSUpl18tW6vizsYeIHBsteNGgGo=",
+            "BaseHookName": "OnApartmentRoomCheckout",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 14,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": " l0, a0, a1, this",
+            "HookTypeName": "Simple",
+            "Name": "OnApartmentRoomPurchase",
+            "HookName": "OnApartmentRoomPurchase",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ApartmentBuilding",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "PurchaseRoom",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "ApartmentSize"
+              ]
+            },
+            "MSILHash": "x1lYUIJYJhBKwMx1M252afZB8ww3+1LL5Fie+ITBjUI=",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 87,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": " l1, a0, a1, this",
+            "HookTypeName": "Simple",
+            "Name": "OnApartmentRoomUpgraded",
+            "HookName": "OnApartmentRoomUpgraded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ApartmentBuilding",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryUpgradeRoom",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "ApartmentSize"
+              ]
+            },
+            "MSILHash": "vdbTDSKfUh1tyKNOGjf3g+VVsrurspMZhL39HvU5o0Y=",
+            "BaseHookName": "OnApartmentRoomUpgrade",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 49,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": " l0, a0, a1, this",
+            "HookTypeName": "Simple",
+            "Name": "OnApartmentRoomPurchased",
+            "HookName": "OnApartmentRoomPurchased",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ApartmentBuilding",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "PurchaseRoom",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "ApartmentSize"
+              ]
+            },
+            "MSILHash": "x1lYUIJYJhBKwMx1M252afZB8ww3+1LL5Fie+ITBjUI=",
+            "BaseHookName": "OnApartmentRoomPurchase",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 90,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "l1, a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnApartmentRoomBreakInCompleted",
+            "HookName": "OnApartmentRoomBreakInCompleted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "ApartmentDoor",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CompleteBreakIn",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "ImCAhINsicByhooIDIU722EwO4Id/RsHmC0js3n53s4=",
+            "BaseHookName": "OnApartmentRoomBreakInComplete",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 95,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnRentableShopBreakInCompleted",
+            "HookName": "OnRentableShopBreakInCompleted",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "RentableShop",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "CompleteBreakIn",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "rqiQyzPB9vXipI8H5R1MTzuOdn1ZYtM9NQKjGA9jy1M=",
+            "BaseHookName": "OnRentableShopBreakInComplete",
+            "HookCategory": "Apartments"
+          }
         }
       ],
       "Modifiers": [

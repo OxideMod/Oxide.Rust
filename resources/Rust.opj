@@ -2854,7 +2854,7 @@
                 "ItemDefinition"
               ]
             },
-            "MSILHash": "OUG0FLlSqPajhlRqabmZmD884Ayq9GGheUt3k6tuEZg=",
+            "MSILHash": "IosjiQLkHVnZOWDFpOBczvUlHdVbD8DbLPMrzs/J3qY=",
             "HookCategory": "Vending"
           }
         },
@@ -2911,7 +2911,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 16,
+            "InjectionIndex": 17,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0",
@@ -2929,7 +2929,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "QqaQb7VZ9woVUh7Dg78po8t4qwh/ROxMoH0CCovQBX4=",
+            "MSILHash": "J0NrSWUwGf86iAsrqAa+UCdfkKP3kVLvcrnbvQiHVio=",
             "HookCategory": "Vending"
           }
         },
@@ -2954,7 +2954,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "xGW5MAEItnfyCcRn3y+XnaFBglRG/f9ZO1dRbIOL0kU=",
+            "MSILHash": "DMiOapcuLhhDnrfK1Lov1QzkmLV0opnIK4RnVWHHo8Y=",
             "HookCategory": "Vending"
           }
         },
@@ -4001,7 +4001,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "bEd17ubcwc8ZtNdepSzUodJI6Bj4U1v8OHvbmXkeS00=",
+            "MSILHash": "6TZr+bRrTRpxPE2VSl2bxn7nwC2K4MMimfo0o9V1bKo=",
             "HookCategory": "Vending"
           }
         },
@@ -12877,7 +12877,7 @@
                 "MarketTerminal"
               ]
             },
-            "MSILHash": "+FHtBsuF8kgHmo6fz0g/z+XMBIVcPe65NaHUGVi9thQ=",
+            "MSILHash": "g9g6w0SDVAqXAo/gqX7H0NFR4TGAbJBVqsAZz2ZhKiY=",
             "HookCategory": "Vending"
           }
         },
@@ -15155,7 +15155,7 @@
                 "MarketTerminal"
               ]
             },
-            "MSILHash": "+FHtBsuF8kgHmo6fz0g/z+XMBIVcPe65NaHUGVi9thQ=",
+            "MSILHash": "g9g6w0SDVAqXAo/gqX7H0NFR4TGAbJBVqsAZz2ZhKiY=",
             "BaseHookName": "OnVendingTransaction",
             "HookCategory": "Vending"
           }
@@ -17077,7 +17077,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 18,
+            "InjectionIndex": 20,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -17095,7 +17095,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "xGW5MAEItnfyCcRn3y+XnaFBglRG/f9ZO1dRbIOL0kU=",
+            "MSILHash": "DMiOapcuLhhDnrfK1Lov1QzkmLV0opnIK4RnVWHHo8Y=",
             "BaseHookName": "OnVendingShopOpen [VendingMachine]",
             "HookCategory": "Vending"
           }
@@ -20745,14 +20745,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "+fMEg4NkvoineQ31ZC5YloROL/KR9/Zg+FppE5WD9PM=",
+            "MSILHash": "1iQ1asGklqSoKgI0k0RoG7Wd2Ix93lHDv761UoHI08I=",
             "HookCategory": "Vending"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 23,
+            "InjectionIndex": 26,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this.vendingMachine, a0.player",
@@ -20770,7 +20770,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "+fMEg4NkvoineQ31ZC5YloROL/KR9/Zg+FppE5WD9PM=",
+            "MSILHash": "1iQ1asGklqSoKgI0k0RoG7Wd2Ix93lHDv761UoHI08I=",
             "BaseHookName": "OnVendingShopOpen [TravellingVendor]",
             "HookCategory": "Vending"
           }

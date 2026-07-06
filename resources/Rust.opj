@@ -23048,6 +23048,57 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0",
+            "HookTypeName": "Simple",
+            "Name": "OnApartmentMasterKeyPurchase",
+            "HookName": "OnApartmentMasterKeyPurchase",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCApartmentSecurity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnPurchaseKey",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "ns0HGEYjJMJNl+88iEvnO5heZZWPeJrOdS+OVjXHEzI=",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "CanAffordApartmentMasterKey",
+            "HookName": "CanAffordApartmentMasterKey",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCApartmentSecurity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Conversation_CanAffordMasterKey",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "HD2yBKP8SB6tIGajCHdDIHV1HPIgKyWnZ7p0GtucxE4=",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 19,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -23068,6 +23119,65 @@
             },
             "MSILHash": "3uqA3b2tYX3srmHur5SkdRQoJfCuPSEpEOm1SnfzgK8=",
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 53,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, l3",
+            "HookTypeName": "Simple",
+            "Name": "OnApartmentMasterKeyPurchased",
+            "HookName": "OnApartmentMasterKeyPurchased",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCApartmentSecurity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnPurchaseKey",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "ns0HGEYjJMJNl+88iEvnO5heZZWPeJrOdS+OVjXHEzI=",
+            "BaseHookName": "OnApartmentMasterKeyPurchase",
+            "HookCategory": "Apartments"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 43,
+            "RemoveCount": 1,
+            "Instructions": [
+              {
+                "OpCode": "brfalse_s",
+                "OpType": "Instruction",
+                "Operand": 58
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnApartmentMasterKeyPurchased [Patch]",
+            "HookName": "OnApartmentMasterKeyPurchased [Patch]",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "NPCApartmentSecurity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnPurchaseKey",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer",
+                "UnityEngine.Vector3"
+              ]
+            },
+            "MSILHash": "ns0HGEYjJMJNl+88iEvnO5heZZWPeJrOdS+OVjXHEzI=",
+            "BaseHookName": "OnApartmentMasterKeyPurchased",
+            "HookCategory": "Apartments"
           }
         }
       ],

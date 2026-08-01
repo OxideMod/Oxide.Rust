@@ -122,6 +122,38 @@ namespace Oxide.Game.Rust.Cui
             return false;
         }
 
+        public static bool DestroyUi(BasePlayer player, List<string> elems)
+        {
+            if (player?.net == null || elems == null || elems.Count == 0)
+            {
+                return false;
+            }
+
+            for (int i = 0; i < elems.Count; i++)
+            {
+                Interface.CallHook("OnDestroyUI", player, elems[i]);
+            }
+
+            CommunityEntity.ServerInstance.SendDestroyUIs(player, elems);
+            return true;
+        }
+
+        public static bool DestroyUi(BasePlayer player, string[] elems)
+        {
+            if (player?.net == null || elems == null || elems.Length == 0)
+            {
+                return false;
+            }
+
+            for (int i = 0; i < elems.Length; i++)
+            {
+                Interface.CallHook("OnDestroyUI", player, elems[i]);
+            }
+
+            CommunityEntity.ServerInstance.SendDestroyUIs(player, elems);
+            return true;
+        }
+
         public static void SetColor(this ICuiColor elem, Color color)
         {
             elem.Color = $"{color.r} {color.g} {color.b} {color.a}";
@@ -298,6 +330,9 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonProperty("placeholderParentId")]
         string PlaceholderParentId { get; set; }
+
+        [JsonProperty("blocksRaycast")]
+        bool? BlocksRaycast { get; set; }
     }
 
     public interface ICuiColor
@@ -343,6 +378,8 @@ namespace Oxide.Game.Rust.Cui
 
         public string PlaceholderParentId { get; set; }
 
+        public bool? BlocksRaycast { get; set; }
+
         public bool? Enabled { get; set; }
     }
 
@@ -377,9 +414,14 @@ namespace Oxide.Game.Rust.Cui
         [JsonProperty("skinid")]
         public ulong SkinId { get; set; }
 
+        [JsonProperty("ppuMultiplier")]
+        public float PixelsPerUnitMultiplier { get; set; }
+
         public float FadeIn { get; set; }
 
         public string PlaceholderParentId { get; set; }
+
+        public bool? BlocksRaycast { get; set; }
 
         public bool? Enabled { get; set; }
     }
@@ -408,6 +450,8 @@ namespace Oxide.Game.Rust.Cui
         public float FadeIn { get; set; }
 
         public string PlaceholderParentId { get; set; }
+
+        public bool? BlocksRaycast { get; set; }
 
         public bool? Enabled { get; set; }
     }
@@ -456,11 +500,16 @@ namespace Oxide.Game.Rust.Cui
         public float ColorMultiplier { get; set; }
 
         [JsonProperty("fadeDuration")]
-        public float FadeDuration { get; set; }
+        public float? FadeDuration { get; set; }
+
+        [JsonProperty("interactable")]
+        public bool? Interactable { get; set; }
 
         public float FadeIn { get; set; }
 
         public string PlaceholderParentId { get; set; }
+
+        public bool? BlocksRaycast { get; set; }
 
         public bool? Enabled { get; set; }
     }
@@ -520,7 +569,7 @@ namespace Oxide.Game.Rust.Cui
         public bool ReadOnly { get; set; }
 
         [JsonProperty("placeholderId")]
-        private string PlaceholderId { get; set; }
+        public string PlaceholderId { get; set; }
 
         [JsonProperty("password", DefaultValueHandling = DefaultValueHandling.Include)]
         public bool IsPassword { get; set; }
@@ -534,9 +583,14 @@ namespace Oxide.Game.Rust.Cui
         [JsonProperty("autofocus")]
         public bool Autofocus { get; set; }
 
+        [JsonProperty("interactable")]
+        public bool? Interactable { get; set; }
+
         public float FadeIn { get; set; }
 
         public string PlaceholderParentId { get; set; }
+
+        public bool? BlocksRaycast { get; set; }
 
         public bool? Enabled { get; set; }
     }
@@ -695,6 +749,61 @@ namespace Oxide.Game.Rust.Cui
 
         [JsonProperty("ignoreLayout")]
         public bool? IgnoreLayout { get; set; }
+
+        public bool? Enabled { get; set; }
+    }
+
+    public class CuiCanvasGroupComponent : ICuiComponent
+    {
+        public string Type => "UnityEngine.UI.CanvasGroup";
+
+        [JsonProperty("alpha")]
+        public float? Alpha { get; set; }
+
+        [JsonProperty("blocksRaycasts")]
+        public bool? BlocksRaycasts { get; set; }
+
+        [JsonProperty("interactable")]
+        public bool? Interactable { get; set; }
+
+        [JsonProperty("fade")]
+        public string Fade { get; set; }
+    }
+
+    public class CuiMaskComponent : ICuiComponent, ICuiEnableable
+    {
+        public string Type => "UnityEngine.UI.Mask";
+
+        [JsonProperty("showMaskGraphic")]
+        public bool? ShowMaskGraphic { get; set; }
+
+        public bool? Enabled { get; set; }
+    }
+
+    public class CuiTooltipComponent : ICuiComponent, ICuiEnableable
+    {
+        public string Type => "Tooltip";
+
+        [JsonProperty("text")]
+        public string Text { get; set; }
+
+        [JsonConverter(typeof(StringEnumConverter))]
+        [JsonProperty("tooltipType")]
+        public CommunityEntity.TooltipType TooltipType { get; set; }
+
+        [JsonProperty("offset")]
+        public string Offset { get; set; }
+
+        [JsonProperty("useCentre")]
+        public bool? UseCentre { get; set; }
+
+        [JsonConverter(typeof(StringEnumConverter))]
+        [JsonProperty("delay")]
+        public Tooltip.DelayType Delay { get; set; }
+
+        [JsonConverter(typeof(StringEnumConverter))]
+        [JsonProperty("position")]
+        public TooltipContainer.PositionMode Position { get; set; }
 
         public bool? Enabled { get; set; }
     }
@@ -903,6 +1012,9 @@ namespace Oxide.Game.Rust.Cui
         [JsonProperty("trackColor")]
         public string TrackColor { get; set; }
 
+        [JsonProperty("fadeDuration")]
+        public float? FadeDuration { get; set; }
+
         public bool? Enabled { get; set; }
     }
 
@@ -967,6 +1079,18 @@ namespace Oxide.Game.Rust.Cui
 
                 case "UnityEngine.UI.LayoutElement":
                     type = typeof(CuiLayoutElementComponent);
+                    break;
+
+                case "UnityEngine.UI.CanvasGroup":
+                    type = typeof(CuiCanvasGroupComponent);
+                    break;
+
+                case "UnityEngine.UI.Mask":
+                    type = typeof(CuiMaskComponent);
+                    break;
+
+                case "Tooltip":
+                    type = typeof(CuiTooltipComponent);
                     break;
 
                 case "Draggable":

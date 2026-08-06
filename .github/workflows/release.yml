@@ -23,7 +23,7 @@ jobs:
 
   release:
     name: Create Release
-    runs-on: blacksmith-4vcpu-ubuntu-2204
+    runs-on: ubuntu-22.04
     needs: build
     steps:
       - name: Checkout
@@ -61,7 +61,7 @@ jobs:
 
   update-docs:
     name: Update Documentation
-    runs-on: blacksmith-4vcpu-ubuntu-2204
+    runs-on: ubuntu-22.04
     needs: build
     steps:
       - name: Checkout Docs Repository

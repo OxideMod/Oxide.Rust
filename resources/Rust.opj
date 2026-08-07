@@ -18608,7 +18608,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 76,
+            "InjectionIndex": 85,
             "ReturnBehavior": 3,
             "ArgumentBehavior": 4,
             "ArgumentString": "this.userId, this.username, this.<strChatText>5__2, this.targetChannel, this.player => l1",
@@ -18624,20 +18624,20 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "2T83wNrrf8oqZTZCoMD0R50mTdHNJPZN2gH2pg5MNLM=",
+            "MSILHash": "z3evSuQIZLPfgqnTxY/1IX8hP8ZrOCyJeplqwXr4Y7w=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 98,
+            "InjectionIndex": 107,
             "RemoveCount": 0,
             "Instructions": [
               {
                 "OpCode": "leave",
                 "OpType": "Instruction",
-                "Operand": 756
+                "Operand": 765
               }
             ],
             "HookTypeName": "Modify",
@@ -18652,7 +18652,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "2T83wNrrf8oqZTZCoMD0R50mTdHNJPZN2gH2pg5MNLM=",
+            "MSILHash": "z3evSuQIZLPfgqnTxY/1IX8hP8ZrOCyJeplqwXr4Y7w=",
             "BaseHookName": "IOnPlayerChat",
             "HookCategory": "Player"
           }
@@ -18660,13 +18660,13 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 94,
+            "InjectionIndex": 103,
             "RemoveCount": 1,
             "Instructions": [
               {
                 "OpCode": "beq_s",
                 "OpType": "Instruction",
-                "Operand": 99
+                "Operand": 108
               }
             ],
             "HookTypeName": "Modify",
@@ -18681,7 +18681,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "2T83wNrrf8oqZTZCoMD0R50mTdHNJPZN2gH2pg5MNLM=",
+            "MSILHash": "z3evSuQIZLPfgqnTxY/1IX8hP8ZrOCyJeplqwXr4Y7w=",
             "BaseHookName": "IOnPlayerChat[patch]",
             "HookCategory": "Player"
           }

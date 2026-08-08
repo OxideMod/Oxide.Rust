@@ -481,7 +481,7 @@ namespace Oxide.Game.Rust.Libraries
             for (int s = 0; s < inventory.containerMain.capacity; s++)
             {
                 global::Item i = inventory.containerMain.GetSlot(s);
-                if (i.info.itemid == itemId)
+                if (i != null && i.info.itemid == itemId)
                 {
                     i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
                 }
@@ -489,7 +489,7 @@ namespace Oxide.Game.Rust.Libraries
             for (int s = 0; s < inventory.containerBelt.capacity; s++)
             {
                 global::Item i = inventory.containerBelt.GetSlot(s);
-                if (i.info.itemid == itemId)
+                if (i != null && i.info.itemid == itemId)
                 {
                     i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
                 }
@@ -497,7 +497,7 @@ namespace Oxide.Game.Rust.Libraries
             for (int s = 0; s < inventory.containerWear.capacity; s++)
             {
                 global::Item i = inventory.containerWear.GetSlot(s);
-                if (i.info.itemid == itemId)
+                if (i != null && i.info.itemid == itemId)
                 {
                     i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
                 }

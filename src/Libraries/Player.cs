@@ -476,30 +476,28 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="itemId"></param>
         public void DropItem(BasePlayer player, int itemId)
         {
-            Vector3 position = player.transform.position;
             PlayerInventory inventory = Inventory(player);
-            for (int s = 0; s < inventory.containerMain.capacity; s++)
+
+            using (PooledList<global::Item> items = Pool.Get<PooledList<global::Item>>())
             {
-                global::Item i = inventory.containerMain.GetSlot(s);
-                if (i.info.itemid == itemId)
+                if (inventory.containerMain != null)
                 {
-                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                    inventory.containerMain.FindItemsByItemID(items, itemId);
                 }
-            }
-            for (int s = 0; s < inventory.containerBelt.capacity; s++)
-            {
-                global::Item i = inventory.containerBelt.GetSlot(s);
-                if (i.info.itemid == itemId)
+
+                if (inventory.containerBelt != null)
                 {
-                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                    inventory.containerBelt.FindItemsByItemID(items, itemId);
                 }
-            }
-            for (int s = 0; s < inventory.containerWear.capacity; s++)
-            {
-                global::Item i = inventory.containerWear.GetSlot(s);
-                if (i.info.itemid == itemId)
+
+                if (inventory.containerWear != null)
                 {
-                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
+                    inventory.containerWear.FindItemsByItemID(items, itemId);
+                }
+
+                for (int i = 0; i < items.Count; i++)
+                {
+                    items[i].Drop(player.GetDropPosition(), player.GetDropVelocity());
                 }
             }
         }
@@ -511,32 +509,24 @@ namespace Oxide.Game.Rust.Libraries
         /// <param name="item"></param>
         public void DropItem(BasePlayer player, global::Item item)
         {
-            Vector3 position = player.transform.position;
+            if (item == null)
+            {
+                return;
+            }
+
+            ItemContainer container = item.parent;
+            if (container == null)
+            {
+                return;
+            }
+
             PlayerInventory inventory = Inventory(player);
-            for (int s = 0; s < inventory.containerMain.capacity; s++)
+            if (container != inventory.containerMain && container != inventory.containerBelt && container != inventory.containerWear)
             {
-                global::Item i = inventory.containerMain.GetSlot(s);
-                if (i == item)
-                {
-                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
-                }
+                return;
             }
-            for (int s = 0; s < inventory.containerBelt.capacity; s++)
-            {
-                global::Item i = inventory.containerBelt.GetSlot(s);
-                if (i == item)
-                {
-                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
-                }
-            }
-            for (int s = 0; s < inventory.containerWear.capacity; s++)
-            {
-                global::Item i = inventory.containerWear.GetSlot(s);
-                if (i == item)
-                {
-                    i.Drop(position + new Vector3(0f, 1f, 0f) + position / 2f, (position + new Vector3(0f, 0.2f, 0f)) * 8f);
-                }
-            }
+
+            item.Drop(player.GetDropPosition(), player.GetDropVelocity());
         }
 
         /// <summary>

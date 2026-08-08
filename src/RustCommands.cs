@@ -85,7 +85,7 @@ namespace Oxide.Game.Rust
                     permission.UpdateNickname(userId, name);
                 }
 
-                if (permission.UserHasPermission(name, perm))
+                if (permission.UserHasPermission(userId, perm))
                 {
                     player.Reply(string.Format(lang.GetMessage("PlayerAlreadyHasPermission", this, player.Id), userId, perm));
                     return;

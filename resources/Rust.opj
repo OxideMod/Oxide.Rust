@@ -53548,6 +53548,13 @@
           "TypeName": "SprayCanSpray",
           "FieldType": "mscorlib|System.Int32",
           "Flagged": false
+        },
+		{
+          "Name": "ModificationID",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "BaseEntity",
+          "FieldType": "mscorlib|System.UInt64",
+          "Flagged": false
         }
       ]
     },

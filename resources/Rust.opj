@@ -23182,6 +23182,87 @@
             "BaseHookName": "OnApartmentMasterKeyPurchased",
             "HookCategory": "Apartments"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 33,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnPowergridStageChange",
+            "HookName": "OnPowergridStageChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PowergridManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ServerTick",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "6sFeuZkvvIzSM5chGBnLqiQ+iJZZ8YS8yz3jpM6B++k=",
+            "HookCategory": "Electronic"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 62,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l2",
+            "HookTypeName": "Simple",
+            "Name": "OnPowergridStageChanged",
+            "HookName": "OnPowergridStageChanged",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PowergridManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ServerTick",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "6sFeuZkvvIzSM5chGBnLqiQ+iJZZ8YS8yz3jpM6B++k=",
+            "BaseHookName": "OnPowergridStageChange [Patch]",
+            "HookCategory": "Electronic"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 39,
+            "RemoveCount": 2,
+            "Instructions": [
+              {
+                "OpCode": "beq_s",
+                "OpType": "Instruction",
+                "Operand": 41
+              },
+              {
+                "OpCode": "leave",
+                "OpType": "Instruction",
+                "Operand": 90
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnPowergridStageChange [Patch]",
+            "HookName": "OnPowergridStageChange",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "PowergridManager",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "ServerTick",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "6sFeuZkvvIzSM5chGBnLqiQ+iJZZ8YS8yz3jpM6B++k=",
+            "BaseHookName": "OnPowergridStageChange",
+            "HookCategory": "Electronic"
+          }
         }
       ],
       "Modifiers": [

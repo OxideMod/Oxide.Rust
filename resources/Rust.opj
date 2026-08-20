@@ -23182,6 +23182,112 @@
             "BaseHookName": "OnApartmentMasterKeyPurchased",
             "HookCategory": "Apartments"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 139,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseNetworkable/SaveInfo|msg"
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Rust.Data|ProtoBuf.Entity|baseEntity"
+              },
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity|ModificationID"
+              },
+              {
+                "OpCode": "stfld",
+                "OpType": "Field",
+                "Operand": "Rust.Data|ProtoBuf.BaseEntity|modificationID"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "ModificationID [BaseEntity.Save]",
+            "HookName": "ModificationID",
+            "HookDescription": "Adding ModificationID saving immediately after skinID",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Save",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseNetworkable/SaveInfo"
+              ]
+            },
+            "MSILHash": "ar+THd4rWLZG719YqHBxU0l/GpTpAMqvLCMEfrvR7uo="
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 40,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldarg_0",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseNetworkable/SaveInfo|msg"
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Rust.Data|ProtoBuf.Entity|baseEntity"
+              },
+              {
+                "OpCode": "ldfld",
+                "OpType": "Field",
+                "Operand": "Rust.Data|ProtoBuf.BaseEntity|modificationID"
+              },
+              {
+                "OpCode": "stfld",
+                "OpType": "Field",
+                "Operand": "Assembly-CSharp|BaseEntity|ModificationID"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "ModificationID [BaseEntity.Load]",
+            "HookName": "ModificationID",
+            "HookDescription": "Adding ModificationID loading immediately after OnSkinChanged",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Load",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseNetworkable/LoadInfo"
+              ]
+            },
+            "MSILHash": "hybXjXSNGmni7o08RyhwcSSni+wBodfmTeWhwAtbGk0="
+          }
         }
       ],
       "Modifiers": [
@@ -53553,6 +53659,20 @@
           "Name": "ModificationID",
           "AssemblyName": "Assembly-CSharp.dll",
           "TypeName": "BaseEntity",
+          "FieldType": "mscorlib|System.UInt64",
+          "Flagged": false
+        }
+      ]
+    },
+    {
+      "AssemblyName": "Rust.Data.dll",
+      "Hooks": [],
+      "Modifiers": [],
+      "Fields": [
+        {
+          "Name": "modificationID",
+          "AssemblyName": "Rust.Data.dll",
+          "TypeName": "ProtoBuf.BaseEntity",
           "FieldType": "mscorlib|System.UInt64",
           "Flagged": false
         }

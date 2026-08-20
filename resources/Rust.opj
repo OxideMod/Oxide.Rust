@@ -3334,7 +3334,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 30,
+            "InjectionIndex": 31,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.player, this",
@@ -3352,7 +3352,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "eOTaqk9wufEpjtlY5zmBwxwvclrKW/cvO+walBftoKU=",
+            "MSILHash": "OpcNDEKWeWv0lem3opaDr4Gps4YHMvcEnc8GQAVJqZ8=",
             "HookCategory": "Player"
           }
         },
@@ -3437,7 +3437,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 45,
+            "InjectionIndex": 49,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l5, this, l1, l2, l3, l4",
@@ -3455,7 +3455,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "8ZdfK5bxsBfSlxJY5XPviXLrLXq94gszdaBozq7B5yQ=",
+            "MSILHash": "S5R1X4OuXyQ/2jIhxYNrQk0imn+9JHDHQ3GV7fY0834=",
             "HookCategory": "Item"
           }
         },
@@ -5291,7 +5291,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 11,
+            "InjectionIndex": 12,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.player, this, l0",
@@ -5309,7 +5309,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "fvL9vRWQy2BKC91kblSjnPntKUnVt8UjS89VsZIq9ZA=",
+            "MSILHash": "C9hLctXs1SfSbYlACAOHHKFG9j3BuJWb3vrr7hqruRY=",
             "HookCategory": "Player"
           }
         },
@@ -6494,10 +6494,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 25,
+            "InjectionIndex": 30,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "a0.connection, l2.name, l2.value",
+            "ArgumentString": "a0.connection, l3.name, l3.value",
             "HookTypeName": "Simple",
             "Name": "OnPlayerSetInfo [server]",
             "HookName": "OnPlayerSetInfo",
@@ -6512,7 +6512,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "1AiyFp/3vtPsMs1W0IJdTFBMjvaUQZvdbXqrOjKJA94=",
+            "MSILHash": "WHkNp/NuLTXcFvLFTdllEOOBMSbTwYO/ROrJjU6Yvak=",
             "HookCategory": "Player"
           }
         },
@@ -8017,7 +8017,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 212,
+            "InjectionIndex": 223,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
             "HookTypeName": "Simple",
@@ -8034,7 +8034,7 @@
                 "Network.Connection"
               ]
             },
-            "MSILHash": "VBecLQez2XpctNMbNObWVNUzFj9hkxe3rREfVJPiXCQ=",
+            "MSILHash": "NpG9W0iSEfo7x4Cg+5wXNYN5ffRL72g//x7L8gWWrGY=",
             "HookCategory": "Player"
           }
         },
@@ -14023,7 +14023,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "1yqd5SyXXHvuIRGg+8KQEo/J2Exi70B7UGk5cXnxepY=",
+            "MSILHash": "OzfKJUslbVlGso9wAGRZ0Qzbc2cOQEosZFP3IrLBEWw=",
             "HookCategory": "Player"
           }
         },
@@ -17435,7 +17435,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "zY53Ydj7izEihNRod2fUGBKjs1//D213hQfxZX6Ii1w=",
+            "MSILHash": "p9lSPQ4wTlONUrbxHO3SXJzV4GvOBGwyBrMiNd0Z7jg=",
             "HookCategory": "Structure"
           }
         },
@@ -18583,7 +18583,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 81,
+            "InjectionIndex": 82,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0.player",
@@ -18601,7 +18601,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "b92j8R6TrNm9rUutQEd+yYfz+egOGwD/kt6XzZz+MJs=",
+            "MSILHash": "q+dxc/PbrSwYkBvH04qOg8IZZ7RKijHWwpuvUmRkEe8=",
             "HookCategory": "Entity"
           }
         },

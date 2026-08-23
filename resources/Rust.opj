@@ -19490,6 +19490,56 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerDigComplete",
+            "HookName": "OnPlayerDigComplete",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BaseDiggableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnFullyDug",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "mhMjWkGBo1XBcxXDuNH0p2+2npdQ7+S9i79ygTx0c78=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this",
+            "HookTypeName": "Simple",
+            "Name": "OnPlayerDigComplete [MetalDetectorFlag]",
+            "HookName": "OnPlayerDigComplete",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MetalDetectorFlag",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnFullyDug",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "1v6nMgklsTmy5u6BTYSiR9KZC2/bUn9dQm89sK5k9cI=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 69,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

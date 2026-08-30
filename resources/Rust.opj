@@ -17525,28 +17525,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "HookTypeName": "Simple",
-            "Name": "OnComposterUpdate",
-            "HookName": "OnComposterUpdate",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "Composter",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "UpdateComposting",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "A90803BDaTu2pO7ecfinIr2a5aG08HcdXXfzD4CYXQs=",
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 4,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 3,

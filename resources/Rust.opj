@@ -6225,6 +6225,32 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 51,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCuttingTake",
+            "HookName": "OnCuttingTake",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GrowableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "TakeClones",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "7TXPifGPRftOHn6pE/EimCCR9S6/am3Uecq6Wtgk9ow=",
+            "BaseHookName": "CanTakeCutting",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 4,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
@@ -23301,6 +23327,72 @@
             "MSILHash": "F3uGmitzeCUdrZ1j6gbM0us04xT7x1EzkPeIHdCQHOQ=",
             "BaseHookName": "OnPowergridStageChange",
             "HookCategory": "Electronic"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 58,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldc_r4",
+                "OpType": "Single",
+                "Operand": "0"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|Item|Remove(System.Single)"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCuttingTake [Patch]",
+            "HookName": "OnCuttingTake",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GrowableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "TakeClones",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "7TXPifGPRftOHn6pE/EimCCR9S6/am3Uecq6Wtgk9ow=",
+            "BaseHookName": "OnCuttingTake",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 100,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCuttingTaken",
+            "HookName": "OnCuttingTaken",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GrowableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "TakeClones",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "7TXPifGPRftOHn6pE/EimCCR9S6/am3Uecq6Wtgk9ow=",
+            "BaseHookName": "OnCuttingTake [Patch]",
+            "HookCategory": "Player"
           }
         }
       ],

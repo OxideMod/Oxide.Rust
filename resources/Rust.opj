@@ -6225,6 +6225,32 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 60,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "a0, this, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnTakeCutting",
+            "HookName": "OnTakeCutting",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "GrowableEntity",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "TakeClones",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "7TXPifGPRftOHn6pE/EimCCR9S6/am3Uecq6Wtgk9ow=",
+            "BaseHookName": "CanTakeCutting",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 4,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

@@ -29,7 +29,6 @@ namespace Oxide.Game.Rust
         internal static string ipPattern = @":{1}[0-9]{1}\d*";
 
         private static readonly DateTime Eoy = new DateTime(2026, 12, 31);
-        private static readonly DateTime OctoberForceWipe = new DateTime(2026, 10, 1);
 
         #region Entity Hooks
 
@@ -47,7 +46,7 @@ namespace Oxide.Game.Rust
             {
                 return null;
             }
-            
+
             return Interface.CallHook("OnEntityTakeDamage", entity, hitInfo);
         }
 
@@ -703,12 +702,6 @@ namespace Oxide.Game.Rust
         #endregion
 
         #region Deprecated Hooks
-
-        [HookMethod("OnOvenCook")]
-        private object OnOvenCook(Composter composter, Item fuel)
-        {
-            return Interface.Oxide.CallDeprecatedHook("OnComposterUpdate", "OnOvenCook(Composter composter, Item fuel)", OctoberForceWipe, composter);
-        }
 
         #endregion
     }

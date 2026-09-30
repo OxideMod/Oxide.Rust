@@ -23394,6 +23394,108 @@
             "BaseHookName": "OnCuttingTake [Patch]",
             "HookCategory": "Player"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityTakeDamage [LivestockAnimal]",
+            "HookName": "OnEntityTakeDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.LivestockAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "Hurt",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "lm8flarZ5Oh793ZSs6T2rDsYeLhlGOXKaUV6KWzWxek=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnLivestockAnimalFamiliarityAdd",
+            "HookName": "OnLivestockAnimalFamiliarityAdd",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.LivestockAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AddFamiliarity",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.UInt64",
+                "System.Single",
+                "Rust.Ai.Gen2.LivestockAnimal/FamiliarityReason"
+              ]
+            },
+            "MSILHash": "1PlUKdJc84mbBNU9XYOU8bMsxBbL+DH/Vk36JPR8dr4=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 20,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnLivestockAnimalFamiliarityAdded",
+            "HookName": "OnLivestockAnimalFamiliarityAdded",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.LivestockAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "AddFamiliarity",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "System.UInt64",
+                "System.Single",
+                "Rust.Ai.Gen2.LivestockAnimal/FamiliarityReason"
+              ]
+            },
+            "MSILHash": "1PlUKdJc84mbBNU9XYOU8bMsxBbL+DH/Vk36JPR8dr4=",
+            "BaseHookName": "OnLivestockAnimalFamiliarityAdd",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 11,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, l0",
+            "HookTypeName": "Simple",
+            "Name": "CanLivestockAnimalRefuseTarget",
+            "HookName": "CanLivestockAnimalRefuseTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.LivestockAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "RefusesToTarget",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BaseEntity"
+              ]
+            },
+            "MSILHash": "sgIDe53Yn0Nts09dxYTmFSB5UFUlF9OGfD1+xUcxprY=",
+            "HookCategory": "Animal"
+          }
         }
       ],
       "Modifiers": [

@@ -43,7 +43,12 @@ namespace Oxide.Game.Rust
         [HookMethod("IOnBaseCombatEntityHurt")]
         private object IOnBaseCombatEntityHurt(BaseCombatEntity entity, HitInfo hitInfo)
         {
-            return entity is BasePlayer ? null : Interface.CallHook("OnEntityTakeDamage", entity, hitInfo);
+            if (entity is BasePlayer || entity is LivestockAnimal)
+            {
+                return null;
+            }
+            
+            return Interface.CallHook("OnEntityTakeDamage", entity, hitInfo);
         }
 
         /// <summary>

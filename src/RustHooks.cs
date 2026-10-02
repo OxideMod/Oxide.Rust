@@ -105,6 +105,30 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
+        /// Called when a wildlife hazard (e.g. a snake) is about to start its hazard on a player
+        /// </summary>
+        /// <param name="hazard"></param>
+        /// <param name="player"></param>
+        /// <returns></returns>
+        [HookMethod("IOnNpcTarget")]
+        private object IOnNpcTarget(WildlifeHazard hazard, BasePlayer player)
+        {
+            return Interface.CallHook("OnNpcTarget", hazard, player) != null ? (object)false : null;
+        }
+
+        /// <summary>
+        /// Called when boat AI checks whether a player is a valid target
+        /// </summary>
+        /// <param name="boatAI"></param>
+        /// <param name="player"></param>
+        /// <returns></returns>
+        [HookMethod("IOnNpcTarget")]
+        private object IOnNpcTarget(BoatAI boatAI, BasePlayer player)
+        {
+            return Interface.CallHook("OnNpcTarget", boatAI, player) != null ? (object)false : null;
+        }
+
+        /// <summary>
         /// Called after a BaseNetworkable has been saved into a ProtoBuf object that is about to
         /// be serialized for a network connection or cache
         /// </summary>

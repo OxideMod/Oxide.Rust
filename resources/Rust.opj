@@ -21094,6 +21094,56 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 51,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "IOnNpcTarget [WildlifeHazard]",
+            "HookName": "IOnNpcTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "WildlifeHazard",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 1,
+              "Name": "ShouldStartHazard",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "2Tm6bsdxnSPmfBw+lRt+ur82CIPX88ltE+llP55BM+0=",
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 48,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "IOnNpcTarget [BoatAI]",
+            "HookName": "IOnNpcTarget",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BoatAI",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "IsPlayerTargetValid",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "oBKL0Nj3Q7HxHT6/ohDwEu/HsBkUemnI5CEcRM9MQUk=",
+            "HookCategory": "NPC"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 21,
             "ReturnBehavior": 4,
             "ArgumentBehavior": 4,

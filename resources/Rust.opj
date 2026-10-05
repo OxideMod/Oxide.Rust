@@ -23551,15 +23551,14 @@
           }
         },
         {
-          "Type": "Simple",
+          "Type": "Modify",
           "Hook": {
             "InjectionIndex": 23,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0, l0",
-            "HookTypeName": "Simple",
-            "Name": "OnCowMilk",
-            "HookName": "OnCowMilk",
+            "RemoveCount": 1,
+            "Instructions": [],
+            "HookTypeName": "Modify",
+            "Name": "OnLivestockMilk [patch 1]",
+            "HookName": "OnLivestockMilk",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Rust.Ai.Gen2.Cow",
             "Flagged": false,
@@ -23576,15 +23575,27 @@
           }
         },
         {
-          "Type": "Simple",
+          "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 70,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 4,
-            "ArgumentString": "this, a0, l0",
-            "HookTypeName": "Simple",
-            "Name": "OnCowMilked",
-            "HookName": "OnCowMilked",
+            "InjectionIndex": 32,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "stloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnLivestockMilk [patch 2]",
+            "HookName": "OnLivestockMilk",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "Rust.Ai.Gen2.Cow",
             "Flagged": false,
@@ -23597,7 +23608,99 @@
               ]
             },
             "MSILHash": "vNhDtK9vwBE31caHBguugxQ7BPuOrb38t5icwnGN9hE=",
-            "BaseHookName": "OnCowMilk",
+            "BaseHookName": "OnLivestockMilk [patch 1]",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 33,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnLivestockMilk",
+            "HookName": "OnLivestockMilk",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.Cow",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryMilk",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vNhDtK9vwBE31caHBguugxQ7BPuOrb38t5icwnGN9hE=",
+            "BaseHookName": "OnLivestockMilk [patch 2]",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 41,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldc_r4",
+                "OpType": "Single",
+                "Operand": "0"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|Item|Remove(System.Single)"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnLivestockMilk [patch 3]",
+            "HookName": "OnLivestockMilk",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.Cow",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryMilk",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vNhDtK9vwBE31caHBguugxQ7BPuOrb38t5icwnGN9hE=",
+            "BaseHookName": "OnLivestockMilk",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 77,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnLivestockMilked",
+            "HookName": "OnLivestockMilked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.Cow",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryMilk",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vNhDtK9vwBE31caHBguugxQ7BPuOrb38t5icwnGN9hE=",
+            "BaseHookName": "OnLivestockMilk [patch 3]",
             "HookCategory": "Animal"
           }
         }

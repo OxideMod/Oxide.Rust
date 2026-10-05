@@ -23549,6 +23549,57 @@
             "MSILHash": "NHpwWLCRtTQBQw1ndiH1lpWS8VyyI/vjNFrkCT5h9m0=",
             "HookCategory": "Animal"
           }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 23,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnCowMilk",
+            "HookName": "OnCowMilk",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.Cow",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryMilk",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vNhDtK9vwBE31caHBguugxQ7BPuOrb38t5icwnGN9hE=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 70,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l0",
+            "HookTypeName": "Simple",
+            "Name": "OnCowMilked",
+            "HookName": "OnCowMilked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.Cow",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryMilk",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vNhDtK9vwBE31caHBguugxQ7BPuOrb38t5icwnGN9hE=",
+            "BaseHookName": "OnCowMilk",
+            "HookCategory": "Animal"
+          }
         }
       ],
       "Modifiers": [

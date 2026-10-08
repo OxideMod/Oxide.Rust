@@ -2290,7 +2290,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 118,
+            "InjectionIndex": 134,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0.connection",
@@ -2308,7 +2308,7 @@
                 "Network.Message"
               ]
             },
-            "MSILHash": "0331c3PJ7U3JAsLnLbp8byFRaLAXx8g6A2rOgvaf300=",
+            "MSILHash": "rzFzsPEYv+CKUQC3MsVK0J1cAvwNOpSbVaGIHkDuAYM=",
             "HookCategory": "Player"
           }
         },
@@ -6069,7 +6069,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "fpfQ5bvK8eCLUVR0jr5STEhTNQHAhr+TiF8ePWuR7jo=",
+            "MSILHash": "R7ldxDCfdO7S1dp+DVsi18NqbHxgMo9P8TYZkxvWYR4=",
             "HookCategory": "Player"
           }
         },
@@ -9611,7 +9611,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "5tf9vQvVmO2U7xCbXm4gr5CkY8XKmg5VCz6VRydeBxk=",
+            "MSILHash": "AcGzwXdeXfQAIW2gqtCA2szhmgs0mMsvWqVAF5u2gA8=",
             "HookCategory": "Server"
           }
         },
@@ -9685,7 +9685,7 @@
                 "AuthResponse"
               ]
             },
-            "MSILHash": "Rvts+5eCwaY62obfmdCwNq/66SL4Hm4JyXNdSUcMYsA=",
+            "MSILHash": "X5Nxw3hq9gepI/x4QzRmiOoJMGDT6ich6Az54C0WJPs=",
             "HookCategory": "Player"
           }
         },
@@ -9823,7 +9823,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "0FT/yQz+K3fKetMfJ5lLK2I4rEcrmSyTUbeXLXLNDuo=",
+            "MSILHash": "ucHCBCP4jXnRt6wu+L+b8ju2r9ftfK0UazQepIQ0puY=",
             "HookCategory": "Player"
           }
         },
@@ -9852,7 +9852,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "0FT/yQz+K3fKetMfJ5lLK2I4rEcrmSyTUbeXLXLNDuo=",
+            "MSILHash": "ucHCBCP4jXnRt6wu+L+b8ju2r9ftfK0UazQepIQ0puY=",
             "BaseHookName": "OnPlayerCorpseSpawn",
             "HookCategory": "Player"
           }
@@ -13686,7 +13686,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "by3ou70ZwGkojlWaXpKSYS3RAuOT+EhO5Ys8VX/irt8=",
+            "MSILHash": "Vs4rEZQ+6zlyjXAFprHX5G9Wql/2xGW7NtbHMp3pJPw=",
             "HookCategory": "Player"
           }
         },
@@ -21686,7 +21686,7 @@
             "Name": "OnFeedbackReported",
             "HookName": "OnFeedbackReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnFeedbackReport>d__777",
+            "TypeName": "BasePlayer/<OnFeedbackReport>d__779",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21694,7 +21694,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "L5uOLjcKKuAAiZ6NKIwVLcN9RIHYKFwqqmHfO0Rk+4g=",
+            "MSILHash": "kfVis8c6oIidPA1AnCLxRKKp6NMj5nSMoWh1mwH2qcA=",
             "HookCategory": "Player"
           }
         },
@@ -21708,7 +21708,7 @@
             "Name": "OnFeedbackReported [patch]",
             "HookName": "OnFeedbackReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnFeedbackReport>d__777",
+            "TypeName": "BasePlayer/<OnFeedbackReport>d__779",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21716,7 +21716,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "L5uOLjcKKuAAiZ6NKIwVLcN9RIHYKFwqqmHfO0Rk+4g=",
+            "MSILHash": "kfVis8c6oIidPA1AnCLxRKKp6NMj5nSMoWh1mwH2qcA=",
             "BaseHookName": "OnFeedbackReported",
             "HookCategory": "_Patches"
           }
@@ -21732,7 +21732,7 @@
             "Name": "OnPlayerReported",
             "HookName": "OnPlayerReported",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BasePlayer/<OnPlayerReported>d__776",
+            "TypeName": "BasePlayer/<OnPlayerReported>d__778",
             "Flagged": false,
             "Signature": {
               "Exposure": 0,
@@ -21740,7 +21740,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "2B/Cvau5jtWLqjeIKShkKgSfQBiNRMICQUMx2jtULQ4=",
+            "MSILHash": "f8AhbdsgqfZKCph+1vCiRlY8OR1xk0PpK2EX3O41WIs=",
             "HookCategory": "Player"
           }
         },

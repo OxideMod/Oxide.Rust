@@ -1055,7 +1055,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 265,
+            "InjectionIndex": 329,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, l1",
@@ -1073,7 +1073,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "NxLwKYsySQPkmPRhbpYWxGS0KiYFw94G4iI9gbZRmgU=",
+            "MSILHash": "Bnbp7Zdjg85DnBhS1GXEXb6zshvlcc91ZlipR7qaOoY=",
             "HookCategory": "Weapon"
           }
         },
@@ -1295,7 +1295,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "ZiZCFl4qm+33CFJDHAPX7YLlwA/ziVTWhoxl8e4IbXE=",
+            "MSILHash": "d3D1Y2Zn7MtIc8S51Qwrrk5610ghOrKmGpil+/hwgzs=",
             "HookCategory": "Weapon"
           }
         },
@@ -1569,7 +1569,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "0h45IGgOcz47eBbJYKk5UmcHwvAEKYDExMelk/m3Y0w=",
+            "MSILHash": "TPrP4ji6hqHGtjrjs+CLrZesQJK2SBkz1wtrIA6ymXs=",
             "HookCategory": "Item"
           }
         },
@@ -5500,7 +5500,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 36,
+            "InjectionIndex": 64,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, a0, a1",
@@ -5520,7 +5520,7 @@
                 "System.Int32"
               ]
             },
-            "MSILHash": "XKp35EmWbLuX1RglTudTKNFG0+5OJDv2kyOe+Wuge9A=",
+            "MSILHash": "4LeOXCmBauM0uBBwsVkmdpw6d4aTfl/8JvyEA0flyAU=",
             "HookCategory": "Entity"
           }
         },
@@ -6326,7 +6326,7 @@
                 "System.Object[]"
               ]
             },
-            "MSILHash": "7JGmu59EJ934IxNg5Q0CQLZSFPyPZ7TAiWPIDO/k2Fk=",
+            "MSILHash": "XJHa6CbgRtyRRiq7mAt3uoaKhm8UQloydfMB/tuW7nM=",
             "HookCategory": "Server"
           }
         },
@@ -7362,7 +7362,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 279,
+            "InjectionIndex": 303,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l0, l5, l3, l6, l4, l1.linePoints, l8",
@@ -7380,7 +7380,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "LHiaX0YUvxq5casl0hxcS75UEokx70quS8aBB9+06iI=",
+            "MSILHash": "jNd/oczJPbtRHsedryGS0IJSVsUkdGwQCjEpYWTF5R0=",
             "HookCategory": "Player"
           }
         },
@@ -13384,7 +13384,7 @@
               {
                 "OpCode": "brtrue_s",
                 "OpType": "Instruction",
-                "Operand": 273
+                "Operand": 278
               }
             ],
             "HookTypeName": "Modify",
@@ -13401,7 +13401,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "ZiZCFl4qm+33CFJDHAPX7YLlwA/ziVTWhoxl8e4IbXE=",
+            "MSILHash": "d3D1Y2Zn7MtIc8S51Qwrrk5610ghOrKmGpil+/hwgzs=",
             "BaseHookName": "OnWeaponFired",
             "HookCategory": "_Patches"
           }
@@ -16916,7 +16916,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 95,
+            "InjectionIndex": 96,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l5, l1, l0, l2",
@@ -16934,14 +16934,14 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "o+Cn/7rv1s13UzwCSrhSoHSi5GvPOmPNckCafB/RMLE=",
+            "MSILHash": "3z6WMLdwNe9g/er7PjtNf3cBGNt5fkHakDb9yFdQOxk=",
             "HookCategory": "Entity"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 241,
+            "InjectionIndex": 242,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "l5, l1, l0, l2",
@@ -16959,7 +16959,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "o+Cn/7rv1s13UzwCSrhSoHSi5GvPOmPNckCafB/RMLE=",
+            "MSILHash": "3z6WMLdwNe9g/er7PjtNf3cBGNt5fkHakDb9yFdQOxk=",
             "BaseHookName": "OnPhotoCapture",
             "HookCategory": "Entity"
           }

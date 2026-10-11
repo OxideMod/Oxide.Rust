@@ -23549,6 +23549,139 @@
             "MSILHash": "NHpwWLCRtTQBQw1ndiH1lpWS8VyyI/vjNFrkCT5h9m0=",
             "HookCategory": "Animal"
           }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 33,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "stloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "pop",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldarg_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCowMilk [patch 1]",
+            "HookName": "OnCowMilk",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.Cow",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryMilk",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vNhDtK9vwBE31caHBguugxQ7BPuOrb38t5icwnGN9hE=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 35,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCowMilk",
+            "HookName": "OnCowMilk",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.Cow",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryMilk",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vNhDtK9vwBE31caHBguugxQ7BPuOrb38t5icwnGN9hE=",
+            "BaseHookName": "OnCowMilk [patch 1]",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Modify",
+          "Hook": {
+            "InjectionIndex": 43,
+            "RemoveCount": 0,
+            "Instructions": [
+              {
+                "OpCode": "ldloc_1",
+                "OpType": "None"
+              },
+              {
+                "OpCode": "ldc_r4",
+                "OpType": "Single",
+                "Operand": "0"
+              },
+              {
+                "OpCode": "callvirt",
+                "OpType": "Method",
+                "Operand": "Assembly-CSharp|Item|Remove(System.Single)"
+              }
+            ],
+            "HookTypeName": "Modify",
+            "Name": "OnCowMilk [patch 2]",
+            "HookName": "OnCowMilk",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.Cow",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryMilk",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vNhDtK9vwBE31caHBguugxQ7BPuOrb38t5icwnGN9hE=",
+            "BaseHookName": "OnCowMilk",
+            "HookCategory": "Animal"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 79,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, l1",
+            "HookTypeName": "Simple",
+            "Name": "OnCowMilked",
+            "HookName": "OnCowMilked",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.Cow",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "TryMilk",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "BasePlayer"
+              ]
+            },
+            "MSILHash": "vNhDtK9vwBE31caHBguugxQ7BPuOrb38t5icwnGN9hE=",
+            "BaseHookName": "OnCowMilk [patch 2]",
+            "HookCategory": "Animal"
+          }
         }
       ],
       "Modifiers": [

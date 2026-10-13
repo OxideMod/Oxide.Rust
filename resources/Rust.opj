@@ -7673,6 +7673,7 @@
             "HookTypeName": "Simple",
             "Name": "OnBuildingPrivilege",
             "HookName": "OnBuildingPrivilege",
+            "HookDescription": "",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "BaseEntity",
             "Flagged": false,
@@ -7684,10 +7685,11 @@
                 "OBB",
                 "System.Boolean",
                 "System.Single",
-                "BuildingPrivlidge"
+                "BuildingPrivlidge",
+                "System.Boolean"
               ]
             },
-            "MSILHash": "YUrgsv1ltUi/uxTv3lYofWEgZmvv0ccNt7mB2A4XnhY=",
+            "MSILHash": "GgPMwSVPsEA4ojSs2/X4cYYWPS4Y6jbtFiEHnIHjnms=",
             "HookCategory": "Entity"
           }
         },

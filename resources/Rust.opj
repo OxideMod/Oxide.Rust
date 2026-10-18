@@ -6755,6 +6755,54 @@
         {
           "Type": "Simple",
           "Hook": {
+            "InjectionIndex": 7,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityTakeDamage [MonumentBlocker]",
+            "HookName": "OnEntityTakeDamage",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MonumentBlocker",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnAttacked",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "v4Wukzd9VM9ZMKN14+9enTFx8IApSKWphdHs0QmOay0=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 3,
+            "ReturnBehavior": 0,
+            "ArgumentBehavior": 3,
+            "HookTypeName": "Simple",
+            "Name": "OnEntityDeath [MonumentBlocker]",
+            "HookName": "OnEntityDeath",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "MonumentBlocker",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "OnDied",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitInfo"
+              ]
+            },
+            "MSILHash": "10kB1Tbkb4hOT18LiR/LQ4ZgNDue4bgTXzKo9hNBy58=",
+            "HookCategory": "Entity"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,

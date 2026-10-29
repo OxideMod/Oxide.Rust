@@ -727,6 +727,12 @@ namespace Oxide.Game.Rust
 
         #region Deprecated Hooks
 
+        [HookMethod("OnMountedWeaponReload")]
+        private object OnMountedWeaponReload(BaseMountedWeapon weapon, BasePlayer player)
+        {
+            return Interface.Oxide.CallDeprecatedHook("OnBallistaGunReload", "OnMountedWeaponReload(BaseMountedWeapon weapon, BasePlayer player)", Eoy, weapon, player);
+        }
+
         #endregion
     }
 }

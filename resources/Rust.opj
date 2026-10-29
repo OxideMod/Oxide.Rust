@@ -9171,25 +9171,25 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 23,
-            "ReturnBehavior": 1,
+            "InjectionIndex": 25,
+            "ReturnBehavior": 4,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this,  l0",
+            "ArgumentString": "this, a0",
             "HookTypeName": "Simple",
-            "Name": "OnBallistaGunReload",
-            "HookName": "OnBallistaGunReload",
+            "Name": "OnMountedWeaponReload",
+            "HookName": "OnMountedWeaponReload",
             "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "BallistaGun",
+            "TypeName": "BaseMountedWeapon",
             "Flagged": false,
             "Signature": {
-              "Exposure": 0,
-              "Name": "SERVER_ReloadStart",
+              "Exposure": 2,
+              "Name": "ServerStartReload",
               "ReturnType": "System.Boolean",
               "Parameters": [
-                "BaseEntity/RPCMessage"
+                "BasePlayer"
               ]
             },
-            "MSILHash": "V5pmoSa4spWDXKixWlutdVJsfVt7XGawbDgsnp6NNpQ=",
+            "MSILHash": "ATudGBVQi4KyrW3zXK3wTfNork3UqMZ+eoMR203gyB0=",
             "HookCategory": "Primitive"
           }
         },

@@ -23668,6 +23668,31 @@
           }
         },
         {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 8,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0",
+            "HookTypeName": "Simple",
+            "Name": "OnLivestockAnimalClaim",
+            "HookName": "OnLivestockAnimalClaim",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "Rust.Ai.Gen2.LivestockAnimal",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "ClaimByTrough",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "HitchTrough"
+              ]
+            },
+            "MSILHash": "GnBanEebuKhqsLjjUJ3FOLjase/AQr7ZTAxn3ypKhGw=",
+            "HookCategory": "Animal"
+          }
+        },
+        {
           "Type": "Modify",
           "Hook": {
             "InjectionIndex": 43,

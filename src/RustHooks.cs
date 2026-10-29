@@ -51,32 +51,6 @@ namespace Oxide.Game.Rust
         }
 
         /// <summary>
-        /// Called when an NPC animal tries to target an entity
-        /// </summary>
-        /// <param name="npc"></param>
-        /// <param name="target"></param>
-        /// <returns></returns>
-        [HookMethod("IOnNpcTarget")]
-        private object IOnNpcTarget(BaseNpc npc, BaseEntity target)
-        {
-            if (Interface.CallHook("OnNpcTarget", npc, target) != null)
-            {
-                npc.SetFact(BaseNpc.Facts.HasEnemy, 0);
-                npc.SetFact(BaseNpc.Facts.EnemyRange, 3);
-                npc.SetFact(BaseNpc.Facts.AfraidRange, 1);
-
-                //TODO: Find replacements of those:
-                // npc.AiContext.EnemyPlayer = null;
-                // npc.AiContext.LastEnemyPlayerScore = 0f;
-
-                npc.playerTargetDecisionStartTime = 0f;
-                return 0f;
-            }
-
-            return null;
-        }
-
-        /// <summary>
         /// Called when an NPC tries to target an entity
         /// </summary>
         /// <param name="sense"></param>

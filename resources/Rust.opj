@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "D:\\Servers\\Rust-Staging\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -18485,7 +18485,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 85,
+            "InjectionIndex": 91,
             "ReturnBehavior": 3,
             "ArgumentBehavior": 4,
             "ArgumentString": "this.userId, this.username, this.<strChatText>5__2, this.targetChannel, this.player => l1",
@@ -18501,20 +18501,20 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "z3evSuQIZLPfgqnTxY/1IX8hP8ZrOCyJeplqwXr4Y7w=",
+            "MSILHash": "HXcVMGP95ocXJHX0o16mDdcgv21aL9todtfmhA+8AO4=",
             "HookCategory": "Player"
           }
         },
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 107,
+            "InjectionIndex": 113,
             "RemoveCount": 0,
             "Instructions": [
               {
                 "OpCode": "leave",
                 "OpType": "Instruction",
-                "Operand": 765
+                "Operand": 771
               }
             ],
             "HookTypeName": "Modify",
@@ -18529,7 +18529,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "z3evSuQIZLPfgqnTxY/1IX8hP8ZrOCyJeplqwXr4Y7w=",
+            "MSILHash": "HXcVMGP95ocXJHX0o16mDdcgv21aL9todtfmhA+8AO4=",
             "BaseHookName": "IOnPlayerChat",
             "HookCategory": "Player"
           }
@@ -18537,13 +18537,13 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 103,
+            "InjectionIndex": 109,
             "RemoveCount": 1,
             "Instructions": [
               {
                 "OpCode": "beq_s",
                 "OpType": "Instruction",
-                "Operand": 108
+                "Operand": 114
               }
             ],
             "HookTypeName": "Modify",
@@ -18558,7 +18558,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "z3evSuQIZLPfgqnTxY/1IX8hP8ZrOCyJeplqwXr4Y7w=",
+            "MSILHash": "HXcVMGP95ocXJHX0o16mDdcgv21aL9todtfmhA+8AO4=",
             "BaseHookName": "IOnPlayerChat[patch]",
             "HookCategory": "Player"
           }
@@ -20999,7 +20999,7 @@
                 "BasePlayer"
               ]
             },
-            "MSILHash": "ey1CTfog4MILujrked9wjx83w0qVs1SQ9SQU4szZ134=",
+            "MSILHash": "ZwGrF5cRf8kv/PAOfBdIBUt0AHnQaA95WF/zz6HVYR0=",
             "HookCategory": "NPC"
           }
         },

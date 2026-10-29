@@ -533,7 +533,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 1872,
+            "InjectionIndex": 1868,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "this, l0.hitInfo",
@@ -551,7 +551,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Fw03xI6xAEvTT6ZUBjbnkFbMs+KGufVtM4wCKKTr1IY=",
+            "MSILHash": "wAmR5bPWa4AvvKSUBwW/TbbrziVarPD6jyoWaDEB77g=",
             "HookCategory": "Player"
           }
         },
@@ -3865,7 +3865,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "l2E4nvbXO64XBnJGb7j2oEnS4iMBDqo62ao62HpRBJ0=",
+            "MSILHash": "dS/Vs4IurGjz9a6Mm/7DUqORxhLWnQCExB70n+RzipQ=",
             "HookCategory": "Server"
           }
         },
@@ -9392,7 +9392,7 @@
                 "System.Single"
               ]
             },
-            "MSILHash": "kCdfjEngZ1Gtb5+SYiH6uD5CHaTqq2b0e1dtymUKHfU=",
+            "MSILHash": "hgAX1vaCtjuBUKR4sx4bjKLQ7rNcDsFzxpEraqx+ryM=",
             "HookCategory": "Primitive"
           }
         },
@@ -22569,18 +22569,18 @@
         {
           "Type": "Modify",
           "Hook": {
-            "InjectionIndex": 1878,
+            "InjectionIndex": 1874,
             "RemoveCount": 2,
             "Instructions": [
               {
                 "OpCode": "beq_s",
                 "OpType": "Instruction",
-                "Operand": 1880
+                "Operand": 1876
               },
               {
                 "OpCode": "leave",
                 "OpType": "Instruction",
-                "Operand": 2060
+                "Operand": 2056
               }
             ],
             "HookTypeName": "Modify",
@@ -22597,7 +22597,7 @@
                 "BaseEntity/RPCMessage"
               ]
             },
-            "MSILHash": "Fw03xI6xAEvTT6ZUBjbnkFbMs+KGufVtM4wCKKTr1IY=",
+            "MSILHash": "wAmR5bPWa4AvvKSUBwW/TbbrziVarPD6jyoWaDEB77g=",
             "BaseHookName": "OnPlayerAttack [Projectile]",
             "HookCategory": "_Patches"
           }

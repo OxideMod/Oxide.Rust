@@ -11565,10 +11565,10 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 187,
+            "InjectionIndex": 150,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0, l6, l20",
+            "ArgumentString": "this, a0, l0, l1, a2",
             "HookTypeName": "Simple",
             "Name": "OnNpcConversationRespond",
             "HookName": "OnNpcConversationRespond",
@@ -11577,23 +11577,28 @@
             "Flagged": false,
             "Signature": {
               "Exposure": 2,
-              "Name": "Server_ResponsePressed",
+              "Name": "HandleResponse",
               "ReturnType": "System.Void",
               "Parameters": [
-                "BaseEntity/RPCMessage"
+                "BasePlayer",
+                "System.Int32",
+                "System.Int32",
+                "System.UInt32",
+                "System.UInt32",
+                "NetworkableId"
               ]
             },
-            "MSILHash": "yb9EbUhMUXw7bgpFvqXr+7DvKw1N3Yqeet2uM3BTwGg=",
+            "MSILHash": "/bxMDAthIiLeOZnaEQKPun38Z5VnlGYl8FtH9a4nJEc=",
             "HookCategory": "NPC"
           }
         },
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 246,
+            "InjectionIndex": 176,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
-            "ArgumentString": "this, l0, l6, l20",
+            "ArgumentString": "this, a0, l0, l1, a2",
             "HookTypeName": "Simple",
             "Name": "OnNpcConversationResponded",
             "HookName": "OnNpcConversationResponded",
@@ -11602,13 +11607,18 @@
             "Flagged": false,
             "Signature": {
               "Exposure": 2,
-              "Name": "Server_ResponsePressed",
+              "Name": "HandleResponse",
               "ReturnType": "System.Void",
               "Parameters": [
-                "BaseEntity/RPCMessage"
+                "BasePlayer",
+                "System.Int32",
+                "System.Int32",
+                "System.UInt32",
+                "System.UInt32",
+                "NetworkableId"
               ]
             },
-            "MSILHash": "yb9EbUhMUXw7bgpFvqXr+7DvKw1N3Yqeet2uM3BTwGg=",
+            "MSILHash": "/bxMDAthIiLeOZnaEQKPun38Z5VnlGYl8FtH9a4nJEc=",
             "BaseHookName": "OnNpcConversationRespond",
             "HookCategory": "NPC"
           }

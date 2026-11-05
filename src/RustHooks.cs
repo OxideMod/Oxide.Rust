@@ -749,6 +749,11 @@ namespace Oxide.Game.Rust
         private void OnNpcConversationResponded(NPCTalking npcTalking, BasePlayer player, ConversationData conversationData, ConversationData.AbstractSpeechNodeData speechNode, int responseIndex)
         {
             ConversationData.ResponseNode responseNode = (uint)responseIndex < (uint)speechNode.responses.Length ? speechNode.responses[responseIndex] : null;
+            if (responseNode == null)
+            {
+                return;
+            }
+
             Interface.Oxide.CallDeprecatedHook("OnNpcConversationResponded", "OnNpcConversationResponded(NPCTalking npcTalking, BasePlayer player, ConversationData conversationData, ConversationData.AbstractSpeechNodeData speechNode, int responseIndex)", Eoy, npcTalking, player, conversationData, responseNode);
         }
 

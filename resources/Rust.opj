@@ -16709,6 +16709,32 @@
             "InjectionIndex": 0,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
+            "ArgumentString": "this, a0, a1",
+            "HookTypeName": "Simple",
+            "Name": "CanBeSplashed",
+            "HookName": "CanBeSplashed",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "BasePlayer",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 2,
+              "Name": "WantsSplash",
+              "ReturnType": "System.Boolean",
+              "Parameters": [
+                "ItemDefinition",
+                "System.Int32"
+              ]
+            },
+            "MSILHash": "y1uO3NeX5axiRa850HZaDYqbBWfdUggYrOXKoZT7uJ0=",
+            "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 4,
             "ArgumentString": "a0, this",
             "HookTypeName": "Simple",
             "Name": "CanFireLiquidWeapon",

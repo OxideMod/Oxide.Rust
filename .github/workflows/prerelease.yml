@@ -17,10 +17,7 @@ jobs:
     with:
       game: "Rust"
       branch-postfix: "-${{ github.ref_name }}"
-    secrets:
-      DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
-      REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+    secrets: inherit
 
   deploy:
     name: Deploy to S3

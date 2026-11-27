@@ -16,10 +16,7 @@ jobs:
     uses: OxideMod/Actions/.github/workflows/game-build.yml@main
     with:
       game: "Rust"
-    secrets:
-      DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
-      REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+    secrets: inherit
 
   release:
     name: Create Release
